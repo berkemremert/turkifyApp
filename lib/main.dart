@@ -1,17 +1,14 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:turkify_bem/groupChatScreen.dart';
 import 'package:turkify_bem/EntryScreen.dart';
 import 'package:turkify_bem/calendarFiles/calendarScreen.dart';
 
-
 Future main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: FirebaseOptions(
-      apiKey: 'AIzaSyCyKX--El_6_yUommY-0C0rCiKUA75lRqQ',
-      appId: '1:87830231887:android:588114f53dbb2af164633a',
-      messagingSenderId: '87830231887',
-      projectId: 'turkishapp-47ea9'));
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform );
   runApp(const EntryScreen());
 }
 

@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:turkify_bem/groupChatScreen.dart';
@@ -11,12 +12,12 @@ import 'loginMainScreenFiles/transition_route_observer.dart';
 import 'loginMainScreenFiles/widgets/fade_in.dart';
 import 'loginMainScreenFiles/widgets/round_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'loginMainScreenFiles/login_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
   static const routeName = '/dashboard';
 
   const DashboardScreen({super.key});
-
   @override
   State<DashboardScreen> createState() => _DashboardScreenState();
 }
@@ -123,6 +124,8 @@ class _DashboardScreenState extends State<DashboardScreen>
       }
     }
 
+    final user = FirebaseAuth.instance.currentUser!;
+
     return ScaleTransition(
       scale: _headerScaleAnimation,
       child: FadeIn(
@@ -137,7 +140,7 @@ class _DashboardScreenState extends State<DashboardScreen>
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  firstName + '\n' + lastName,
+                  '${user.displayName}\n$lastName',
                   textAlign: TextAlign.center,
                   style: theme.textTheme.displaySmall!.copyWith(
                     fontWeight: FontWeight.w500,

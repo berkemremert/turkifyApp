@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:flutter_login/flutter_login.dart';
-import '../personList.dart';
 import 'constants.dart';
 import 'custom_route.dart';
 import '../dashboard_screen.dart';
@@ -24,38 +23,41 @@ class LoginScreen extends StatelessWidget {
 
   Duration get loginTime => Duration(milliseconds: timeDilation.ceil() * 225);
 
-  //Future signIn() async{
-  //  await FirebaseAuth instance.signInWithEmailAndPassword(
-  //    email: emailController.text.trim(),
-  //    password: passwordController.text.trim(),
-  //  ):
-  //}
-
   Future<String?> _loginUser(LoginData data) async {
     try {
       await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: data.name,
         password: data.password,
       );
+
       return null; // Return null if login is successful
     } catch (e) {
       return e.toString(); // Return error message if login fails
     }
   }
 
-  Future<String?> _signupUser(SignupData data) {
-    return Future.delayed(loginTime).then((_) {
-      return null;
-    });
+  Future<String?> _signupUser(SignupData data) async {
+    try {
+      await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: data.name ?? "",
+        password: data.password ?? "",
+      );
+      return null; // Return null if signup is successful
+    } catch (e) {
+      return e.toString(); // Return error message if signup fails
+    }
   }
 
-  Future<String?> _recoverPassword(String name) {
-    return Future.delayed(loginTime).then((_) {
-      if (!mockUsers.containsKey(name)) {
-        return 'User not exists';
-      }
-      return null;
-    });
+
+  Future<String?> _recoverPassword(String name) async {
+    try {
+      await FirebaseAuth.instance.sendPasswordResetEmail(email: name);
+      print('Password reset email sent successfully');
+      // You can provide feedback to the user indicating that the reset email was sent successfully
+    } catch (e) {
+      print('Error sending password reset email: $e');
+      // You can handle errors here, such as displaying an error message to the user
+    }
   }
 
   Future<String?> _signupConfirm(String error, LoginData data) {
@@ -247,4 +249,3 @@ class IntroWidget extends StatelessWidget {
     );
   }
 }
-
