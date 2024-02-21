@@ -4,7 +4,6 @@ import 'firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:turkify_bem/groupChatScreen.dart';
 import 'package:turkify_bem/EntryScreen.dart';
-import 'package:turkify_bem/calendarFiles/calendarScreen.dart';
 
 Future main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,54 +26,6 @@ class MyApp extends StatelessWidget {
 class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text(
-          'Lise Karatahta',
-          style: TextStyle(color: Colors.white),
-        ),
-        backgroundColor: Colors.deepPurple,
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                // Navigate to the ChatScreen when the button is pressed
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => ChatPage()),
-                );
-              },
-              child: Text(
-                'Open Chat',
-                style: TextStyle(color: Colors.white),
-              ),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.deepPurple,
-              ),
-            ),
-            SizedBox(height: 20), // Add some space between buttons
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => CalendarScreen()),
-                );
-              },
-              child: Text(
-                'Calendar',
-                style: TextStyle(color: Colors.white),
-              ),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.deepPurple,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
+    throw UnimplementedError();
   }
 }

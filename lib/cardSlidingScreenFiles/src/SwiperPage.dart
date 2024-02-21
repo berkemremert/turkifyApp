@@ -1,7 +1,6 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 
-import '../../calendarFiles/app_colors.dart';
 import '../../listingPageFiles/presentation/pages/home/widgets/search_and_filter.dart';
 import '../../listingPageFiles/presentation/themes/config_files/screen_size_config.dart';
 import 'forms/dictionaryBar.dart';
@@ -105,7 +104,7 @@ class _SwiperState extends State<SwiperPage>
                 )
               else
                 Container(
-                  color: AppColors.lightNavyBlue,
+                  color: Colors.deepPurpleAccent,
                   child: Center(
                     child: Text(
                       word.text,
@@ -149,7 +148,7 @@ class _SwiperState extends State<SwiperPage>
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: AppColors.navyBlue,
+                      color: Colors.deepPurpleAccent,
                     ),
                   ),
                   const SizedBox(height: 20), // Adding another SizedBox for spacing

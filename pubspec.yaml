@@ -39,9 +39,7 @@ dependencies:
   open_filex: ^4.3.2
   path_provider: ^2.0.15
   uuid: ^3.0.7
-  calendar_view: ^1.0.4
   flutter_colorpicker: ^1.0.3
-  table_calendar: ^3.0.9
   flutter_login: ^5.0.0
   dropdown_model_list: ^2.0.2
   flutter_svg: ^1.0.0
@@ -59,6 +57,7 @@ dependencies:
   sozluk: ^2.4.0
   firebase_core: ^2.25.4
   firebase_auth: ^4.17.4
+  cloud_firestore: ^4.15.2
 
 
   # The following adds the Cupertino Icons font to your application.

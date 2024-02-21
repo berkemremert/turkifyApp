@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:turkify_bem/groupChatScreen.dart';
 import 'package:turkify_bem/EntryScreen.dart';
 
-import 'calendarFiles/calendarScreen.dart';
-
 void main() {
   runApp(const EntryScreen());
 }

@@ -3,8 +3,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:turkify_bem/groupChatScreen.dart';
 import 'package:turkify_bem/personList.dart';
-import 'package:turkify_bem/taskCalendarScreenFiles/taskScreenBase.dart';
-import 'calendarFiles/calendarScreen.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
 import 'cardSlidingScreenFiles/src/SwiperPage.dart';
 import 'listingPageFiles/listingScreen.dart';
@@ -178,12 +176,9 @@ class _DashboardScreenState extends State<DashboardScreen>
             MaterialPageRoute(builder: (context) => ChatPage()),
           );
         } else if (identifier == 'calendar') {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => CalendarScreen()),
-          );
+          //FILL HERE -BERK
         } else if (identifier == 'task'){
-          taskScreenCalendarMain();
+          //FILL HERE -BERK
         } else if (identifier == 'match'){
           Navigator.push(
             context,
