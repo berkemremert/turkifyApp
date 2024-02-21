@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:turkify_bem/loginPageFiles/login_register_app.dart';
 import 'dashboard_screen.dart';
 import 'loginMainScreenFiles/login_screen.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
@@ -49,7 +50,7 @@ class EntryScreen extends StatelessWidget {
       navigatorObservers: [TransitionRouteObserver()],
       initialRoute: LoginScreen.routeName,
       routes: {
-        LoginScreen.routeName: (context) => LoginScreen(),
+        LoginScreen.routeName: (context) => LoginRegisterApp(),
         DashboardScreen.routeName: (context) => const DashboardScreen(),
       },
     );

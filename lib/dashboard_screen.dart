@@ -10,7 +10,6 @@ import 'loginMainScreenFiles/transition_route_observer.dart';
 import 'loginMainScreenFiles/widgets/fade_in.dart';
 import 'loginMainScreenFiles/widgets/round_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'loginMainScreenFiles/login_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
   static const routeName = '/dashboard';
