@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "780612013827",
+    "project_id": "turkifyapp",
+    "storage_bucket": "turkifyapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780612013827:android:b13280fd150e7ecf41e336",
+        "android_client_info": {
+          "package_name": "com.example.turkify_bem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvkqRZ0Rpof4xkFOEQTxrHLs4lBy4tzes"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
