@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
@@ -43,6 +44,15 @@ class LoginScreen extends StatelessWidget {
         email: data.name ?? "",
         password: data.password ?? "",
       );
+
+      await FirebaseFirestore.instance.collection('users').doc(data.name).set({
+        'username': data.additionalSignupData?['Username'],
+        'name': data.additionalSignupData?['Name'],
+        'surname': data.additionalSignupData?['Surname'],
+        'phoneNumber': data.additionalSignupData?['phone_number'],
+        // Add more fields as needed
+      });
+
       return null; // Return null if signup is successful
     } catch (e) {
       return e.toString(); // Return error message if signup fails

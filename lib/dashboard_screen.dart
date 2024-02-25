@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -339,4 +340,25 @@ class _DashboardScreenState extends State<DashboardScreen>
       ),
     );
   }
+
+  Future<void> _fetchUserData() async {
+    try {
+      // Access 'users' collection in Firestore
+      QuerySnapshot querySnapshot =
+      await FirebaseFirestore.instance.collection('users').get();
+
+      // Extract user data from query snapshot
+      querySnapshot.docs.forEach((doc) {
+        // Access document fields
+        String username = doc['username'];
+        String name = doc['name'];
+        String surname = doc['surname'];
+        String phoneNumber = doc['phoneNumber'];
+      });
+    } catch (e) {
+      print('Error fetching user data: $e');
+      // Handle errors, such as displaying an error message to the user
+    }
+  }
 }
+
