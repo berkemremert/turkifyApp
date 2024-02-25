@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:turkify_bem/APPColors.dart';
 import 'text_config.dart';
 
 import '../colors.dart';
@@ -23,7 +24,7 @@ const kButtonSecondaryTextColor = kColorText2;
 
 ///
 ////// Accent Button color
-const kButtonAccentColor = kColorAccent;
+const kButtonAccentColor = Colors.redAccent;
 const kButtonAccentTextColor = kColorWhite;
 
 ///

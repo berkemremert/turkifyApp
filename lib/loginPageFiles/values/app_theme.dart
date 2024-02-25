@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'app_colors.dart';
+import '../../APPColors.dart';
 
 class AppTheme {
   static const textFormFieldBorder = OutlineInputBorder(
@@ -10,8 +10,8 @@ class AppTheme {
 
   static final ThemeData themeData = ThemeData(
     useMaterial3: true,
-    colorSchemeSeed: AppColors.primaryColor,
-    scaffoldBackgroundColor: Colors.white,
+    colorSchemeSeed: baseDeepColor,
+    scaffoldBackgroundColor: white,
     textTheme: const TextTheme(
       titleLarge: TextStyle(
         fontWeight: FontWeight.bold,
@@ -46,7 +46,7 @@ class AppTheme {
     ),
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
-        foregroundColor: AppColors.primaryColor,
+        foregroundColor: baseLightColor,
         padding: const EdgeInsets.all(4),
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(8)),
@@ -56,7 +56,7 @@ class AppTheme {
     ),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
-        foregroundColor: AppColors.primaryColor,
+        foregroundColor: baseLightColor,
         minimumSize: const Size(double.infinity, 50),
         side: BorderSide(color: Colors.grey.shade200),
         shape: const RoundedRectangleBorder(
@@ -67,7 +67,7 @@ class AppTheme {
     filledButtonTheme: FilledButtonThemeData(
       style: FilledButton.styleFrom(
         foregroundColor: Colors.black,
-        backgroundColor: AppColors.primaryColor,
+        backgroundColor: baseLightColor,
         disabledBackgroundColor: Colors.grey.shade300,
         minimumSize: const Size(double.infinity, 52),
         shape: const RoundedRectangleBorder(

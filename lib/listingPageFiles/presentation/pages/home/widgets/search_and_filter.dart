@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:turkify_bem/APPColors.dart';
 
 import '../../../../gen/assets.gen.dart';
 import '../../../themes/colors.dart';
@@ -49,7 +50,7 @@ class SearchAndFilter extends StatelessWidget {
               height: 48,
               width: 48,
               decoration: BoxDecoration(
-                color: Colors.deepPurple,
+                color: baseDeepColor,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Icon(FontAwesomeIcons.search, color: Colors.white,),

@@ -58,7 +58,8 @@ dependencies:
   firebase_core: ^2.25.4
   firebase_auth: ^4.17.4
   cloud_firestore: ^4.15.2
-
+  loading_overlay: ^0.3.0
+  rflutter_alert: ^2.0.7
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

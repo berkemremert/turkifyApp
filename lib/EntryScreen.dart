@@ -1,6 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:turkify_bem/loginPageFiles/login_register_app.dart';
+import 'package:turkify_bem/APPColors.dart';
+import 'package:turkify_bem/basicLoginPage/basicLoginPage.dart';
+import 'package:turkify_bem/loginPageFiles/screens/login_screen.dart';
 import 'dashboard_screen.dart';
 import 'loginMainScreenFiles/login_screen.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
@@ -15,6 +19,8 @@ class EntryScreen extends StatelessWidget {
       theme: ThemeData(
         textSelectionTheme:
             const TextSelectionThemeData(cursorColor: Colors.orange),
+        primaryColor: baseDeepColor,
+        hintColor: baseLightColor,
         // fontFamily: 'SourceSansPro',
         textTheme: TextTheme(
           displaySmall: const TextStyle(
@@ -31,7 +37,7 @@ class EntryScreen extends StatelessWidget {
             fontFamily: 'NotoSans',
             fontSize: 12.0,
             fontWeight: FontWeight.normal,
-            color: Colors.deepPurple[300],
+            color: baseDeepColor,
           ),
           displayLarge: const TextStyle(fontFamily: 'Quicksand'),
           displayMedium: const TextStyle(fontFamily: 'Quicksand'),
@@ -44,13 +50,11 @@ class EntryScreen extends StatelessWidget {
           titleSmall: const TextStyle(fontFamily: 'NotoSans'),
           labelSmall: const TextStyle(fontFamily: 'NotoSans'),
         ),
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple)
-            .copyWith(secondary: Colors.orange),
       ),
       navigatorObservers: [TransitionRouteObserver()],
       initialRoute: LoginScreen.routeName,
       routes: {
-        LoginScreen.routeName: (context) => LoginRegisterApp(),
+        LoginScreen.routeName: (context) => LoginScreen(),
         DashboardScreen.routeName: (context) => const DashboardScreen(),
       },
     );

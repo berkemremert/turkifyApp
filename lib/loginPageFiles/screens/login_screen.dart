@@ -154,8 +154,8 @@ class _LoginPageState extends State<LoginPage> {
                   Builder(
                     builder: (context) {
                       return FilledButton(
-                        onPressed: () {
-                          if (true) {
+                        onPressed: () async {
+                          if (await login()) {
                             if (mounted) {
                               Navigator.of(context).pushReplacement(
                                 FadePageRoute(
@@ -183,32 +183,6 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       Expanded(child: Divider(color: Colors.grey.shade200)),
-                    ],
-                  ),
-                  const SizedBox(height: 20),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: OutlinedButton.icon(
-                          onPressed: () {},
-                          icon: SvgPicture.asset(Vectors.google, width: 14),
-                          label: const Text(
-                            AppStrings.google,
-                            style: TextStyle(color: Colors.black),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 20),
-                      Expanded(
-                        child: OutlinedButton.icon(
-                          onPressed: () {},
-                          icon: SvgPicture.asset(Vectors.facebook, width: 14),
-                          label: const Text(
-                            AppStrings.facebook,
-                            style: TextStyle(color: Colors.black),
-                          ),
-                        ),
-                      ),
                     ],
                   ),
                 ],

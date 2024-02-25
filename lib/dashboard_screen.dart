@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:turkify_bem/APPColors.dart';
 import 'package:turkify_bem/groupChatScreen.dart';
 import 'package:turkify_bem/personList.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
@@ -71,7 +72,7 @@ class _DashboardScreenState extends State<DashboardScreen>
   AppBar _buildAppBar(ThemeData theme) {
     final signOutBtn = IconButton(
       icon: const Icon(FontAwesomeIcons.rightFromBracket),
-      color: Colors.deepPurple,
+      color: baseDeepColor,
       onPressed: () => _goToLogin(context),
     );
 
@@ -91,16 +92,8 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   Widget _buildHeader(ThemeData theme) {
-    final primaryColor =
-        Colors.primaries.where((c) => c == theme.primaryColor).first;
-    final accentColor =
-        Colors.primaries.where((c) => c == theme.colorScheme.secondary).first;
-    final linearGradient = LinearGradient(
-      colors: [
-        primaryColor.shade800,
-        primaryColor.shade200,
-      ],
-    ).createShader(const Rect.fromLTWH(0.0, 0.0, 418.0, 78.0));
+    final primaryColor = baseDeepColor;
+    final accentColor = baseLightColor;
 
     List<String> nameParts = currentUser.name.split(' ');
 
@@ -141,7 +134,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                   textAlign: TextAlign.center,
                   style: theme.textTheme.displaySmall!.copyWith(
                     fontWeight: FontWeight.w500,
-                    color: Colors.deepPurple,
+                    color: baseDeepColor,
                   ),
                 ),
                 const SizedBox(width: 5),
@@ -154,13 +147,15 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   Widget _buildButton({
-    Widget? icon,
+    required IconData icon,
     String? label,
     required Interval interval,
     required String identifier,
+    required iconColor,
   }) {
+    _loadingController!.forward();
     return RoundButton(
-      icon: icon,
+      icon: Icon(icon, color: iconColor,),
       label: label,
       loadingController: _loadingController,
       interval: Interval(
@@ -168,33 +163,41 @@ class _DashboardScreenState extends State<DashboardScreen>
         interval.end,
         curve: const ElasticOutCurve(0.42),
       ),
-      onPressed: () {
+      onPressed: () async {
         if (identifier == 'chat') {
+          _loadingController!.reverse();
+          await Future.delayed(Duration(milliseconds: 1300));
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => ChatPage()),
           );
         } else if (identifier == 'calendar') {
           //FILL HERE -BERK
-        } else if (identifier == 'task'){
+        } else if (identifier == 'task') {
           //FILL HERE -BERK
-        } else if (identifier == 'match'){
+        } else if (identifier == 'match') {
+          _loadingController!.reverse();
+          await Future.delayed(Duration(milliseconds: 1300));
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const ScaffoldWidget(
-              child: listingScreen(),
-              title: "",
-            ),),
+            MaterialPageRoute(
+              builder: (context) => const ScaffoldWidget(
+                child: listingScreen(),
+                title: "",
+              ),
+            ),
           );
-        } else if (identifier == 'profile'){
+        } else if (identifier == 'profile') {
           //FILL HERE -BERK
-        } else if (identifier == 'settings'){
+        } else if (identifier == 'settings') {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const ScaffoldWidget(
-              child: SwiperPage(),
-              title: "Kelime Kartları",
-            ),),
+            MaterialPageRoute(
+              builder: (context) => const ScaffoldWidget(
+                child: SwiperPage(),
+                title: "Kelime Kartları",
+              ),
+            ),
           );
         }
       },
@@ -204,6 +207,8 @@ class _DashboardScreenState extends State<DashboardScreen>
   Widget _buildDashboardGrid() {
     const step = 0.04;
     const aniInterval = 0.75;
+
+    Color iconColor = darkRed;
 
     return GridView.count(
       padding: const EdgeInsets.symmetric(
@@ -215,48 +220,46 @@ class _DashboardScreenState extends State<DashboardScreen>
       crossAxisCount: 3,
       children: [
         _buildButton(
-          icon: const Icon(FontAwesomeIcons.user),
+          icon: FontAwesomeIcons.user,
           label: 'Profile',
           interval: const Interval(0, aniInterval),
-          identifier: 'profile'
+          identifier: 'profile',
+          iconColor: iconColor,
         ),
         _buildButton(
-          icon: Container(
-            // fix icon is not centered like others for some reasons
-            padding: const EdgeInsets.only(left: 16.0),
-            alignment: Alignment.centerLeft,
-            child: const Icon(
-              FontAwesomeIcons.comments,
-              size: 20,
-            ),
-          ),
+          icon: FontAwesomeIcons.comments,
           label: 'Group Chat',
           interval: const Interval(step, aniInterval + step),
-          identifier: 'chat'
+          identifier: 'chat',
+          iconColor: iconColor,
         ),
         _buildButton(
-          icon: const Icon(FontAwesomeIcons.calendar),
+          icon: FontAwesomeIcons.calendar,
           label: 'Calendar',
           interval: const Interval(step * 2, aniInterval + step * 2),
-          identifier: 'calendar'
+          identifier: 'calendar',
+          iconColor: iconColor,
         ),
         _buildButton(
-          icon: const Icon(FontAwesomeIcons.listCheck),
+          icon: FontAwesomeIcons.listCheck,
           label: 'Tasks',
           interval: const Interval(0, aniInterval),
-          identifier: 'task'
+          identifier: 'task',
+          iconColor: iconColor,
         ),
         _buildButton(
-          icon: const Icon(FontAwesomeIcons.personMilitaryToPerson),
+          icon: FontAwesomeIcons.personMilitaryToPerson,
           label: 'Match',
           interval: const Interval(step * 2, aniInterval + step * 2),
-          identifier: 'match'
+          identifier: 'match',
+          iconColor: iconColor,
         ),
         _buildButton(
-          icon: const Icon(FontAwesomeIcons.sliders, size: 20),
+          icon: FontAwesomeIcons.sliders,
           label: 'Settings',
           interval: const Interval(step * 2, aniInterval + step * 2),
-          identifier: 'settings'
+          identifier: 'settings',
+          iconColor: iconColor,
         ),
       ],
     );
@@ -293,9 +296,9 @@ class _DashboardScreenState extends State<DashboardScreen>
         child: Scaffold(
           appBar: _buildAppBar(theme),
           body: Container(
+            color: Colors.white,
             width: double.infinity,
             height: double.infinity,
-            color: Colors.white,
             child: Stack(
               children: <Widget>[
                 Column(
@@ -314,10 +317,10 @@ class _DashboardScreenState extends State<DashboardScreen>
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
                             colors: <Color>[
-                              Colors.deepPurpleAccent.shade100,
-                              Colors.deepPurple.shade100,
-                              Colors.deepPurple.shade100,
-                              Colors.deepPurple.shade100,
+                              baseDeepColor,
+                              verLightRed,
+                              verLightRed,
+                              baseDeepColor,
                               // Colors.red,
                               // Colors.yellow,
                             ],

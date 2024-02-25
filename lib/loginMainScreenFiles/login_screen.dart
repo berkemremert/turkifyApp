@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:flutter_login/flutter_login.dart';
+import 'package:turkify_bem/APPColors.dart';
 import 'constants.dart';
 import 'custom_route.dart';
 import '../dashboard_screen.dart';
@@ -78,11 +79,6 @@ class LoginScreen extends StatelessWidget {
       loginAfterSignUp: false,
       termsOfService: [
         TermOfService(
-          id: 'newsletter',
-          mandatory: false,
-          text: 'Newsletter subscription',
-        ),
-        TermOfService(
           id: 'general-term',
           mandatory: true,
           text: 'Term of services',
@@ -137,9 +133,9 @@ class LoginScreen extends StatelessWidget {
       //   providersTitle: 'login with'
       // ),
       theme: LoginTheme(
-        primaryColor: Colors.deepPurple,
-        pageColorLight: Colors.indigo.shade300,
-        pageColorDark: Colors.deepPurple,
+        primaryColor: baseDeepColor,
+        pageColorLight: baseLightColor,
+        pageColorDark: baseDeepColor,
         logoWidth: 0.80,
         titleStyle: TextStyle(
           color: Color.fromRGBO(240, 230, 230, 1.0),
@@ -208,8 +204,6 @@ class LoginScreen extends StatelessWidget {
         );
       },
       onRecoverPassword: (name) {
-        debugPrint('Recover password info');
-        debugPrint('Name: $name');
         return _recoverPassword(name);
         // Show new password dialog
       },

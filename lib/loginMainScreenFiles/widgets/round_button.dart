@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:turkify_bem/APPColors.dart';
 
 class RoundButton extends StatefulWidget {
   const RoundButton({
@@ -61,8 +64,7 @@ class _RoundButtonState extends State<RoundButton>
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final primaryColor =
-        Colors.primaries.where((c) => c == theme.primaryColor).first;
+    final primaryColor = baseDeepColor;
 
     return Padding(
       padding: const EdgeInsets.all(8.0),
@@ -80,14 +82,12 @@ class _RoundButtonState extends State<RoundButton>
                   child: FloatingActionButton(
                     // allow more than 1 FAB in the same screen (hero tag cannot be duplicated)
                     heroTag: null,
-                    backgroundColor: primaryColor.shade400,
                     onPressed: () {
                       _pressController.forward().then((_) {
                         _pressController.reverse();
                       });
                       widget.onPressed();
                     },
-                    foregroundColor: Colors.white,
                     child: widget.icon,
                   ),
                 ),
@@ -97,7 +97,7 @@ class _RoundButtonState extends State<RoundButton>
             Text(
               widget.label!,
               style: theme.textTheme.bodySmall!
-                  .copyWith(color: theme.primaryColor),
+                  .copyWith(color: darkRed),
               textAlign: TextAlign.center,
             ),
           ],
