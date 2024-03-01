@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:turkify_bem/APPColors.dart';
 
 import '../../../listingPageFiles/gen/assets.gen.dart';
 import '../../../listingPageFiles/presentation/themes/colors.dart';
@@ -51,7 +52,7 @@ class dictionaryBar extends StatelessWidget {
               height: 48,
               width: 48,
               decoration: BoxDecoration(
-                color: Colors.deepPurple,
+                color: baseDeepColor,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Icon(FontAwesomeIcons.search, color: Colors.white,),

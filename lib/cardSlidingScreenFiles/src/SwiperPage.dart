@@ -1,8 +1,6 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
-
-import '../../listingPageFiles/presentation/pages/home/widgets/search_and_filter.dart';
-import '../../listingPageFiles/presentation/themes/config_files/screen_size_config.dart';
+import 'package:turkify_bem/APPColors.dart';
 import 'forms/dictionaryBar.dart';
 
 class SwiperPage extends StatefulWidget {
@@ -104,13 +102,13 @@ class _SwiperState extends State<SwiperPage>
                 )
               else
                 Container(
-                  color: Colors.deepPurpleAccent,
+                  color: baseDeepColor,
                   child: Center(
                     child: Text(
                       word.text,
                       style: TextStyle(
                         fontSize: 40,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.white,
                         fontWeight: FontWeight.bold,
                         shadows: <Shadow>[
                           Shadow(
@@ -148,7 +146,7 @@ class _SwiperState extends State<SwiperPage>
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: Colors.deepPurpleAccent,
+                      color: Colors.redAccent,
                     ),
                   ),
                   const SizedBox(height: 20), // Adding another SizedBox for spacing
