@@ -80,6 +80,7 @@ class _RoundButtonState extends State<RoundButton>
                 height: widget.size,
                 child: FittedBox(
                   child: FloatingActionButton(
+                    backgroundColor: baseDeepColor,
                     // allow more than 1 FAB in the same screen (hero tag cannot be duplicated)
                     heroTag: null,
                     onPressed: () {

@@ -32,21 +32,7 @@ PreferredSize appbar__widget() {
               Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  const BodySmall__text(text: 'Location', color: kColorText2),
-                  const SizedBox(height: 4),
-                  Row(
-                    children: [
-                      const TitleLarge__text(text: 'İstanbul'),
-                      kSizedBoxWidth_8,
-                      Icon(FontAwesomeIcons.locationDot,
-                        color: Colors.deepPurple,
-                        size: 14,),
-                    ],
-                  ),
-                ],
               ),
-              const Spacer(),
               IconWithBadge__widget(
                 badgeVisibility: false,
                 iconAsset: Assets.icons.notification.svg,

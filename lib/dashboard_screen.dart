@@ -93,27 +93,8 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   Widget _buildHeader(ThemeData theme) {
-    final primaryColor = baseDeepColor;
-    final accentColor = baseLightColor;
-
-    List<String> nameParts = currentUser.name.split(' ');
-
-    String firstName = '';
-    String lastName = '';
-
-    for (int i = 0; i < nameParts.length; i++) {
-      if (i != nameParts.length - 1) {
-        if(i == nameParts.length - 2){
-          firstName += nameParts[i];
-        }
-        else {
-          firstName += nameParts[i] + ' ';
-        }
-      }
-      else{
-        lastName = nameParts[i];
-      }
-    }
+    String firstName = 'Berk Emre';
+    String lastName = 'Mert';
 
     final user = FirebaseAuth.instance.currentUser!;
 
@@ -131,7 +112,7 @@ class _DashboardScreenState extends State<DashboardScreen>
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  '${user.displayName}\n$lastName',
+                  '$firstName\n$lastName',
                   textAlign: TextAlign.center,
                   style: theme.textTheme.displaySmall!.copyWith(
                     fontWeight: FontWeight.w500,
@@ -209,7 +190,7 @@ class _DashboardScreenState extends State<DashboardScreen>
     const step = 0.04;
     const aniInterval = 0.75;
 
-    Color iconColor = darkRed;
+    Color iconColor = Colors.white;
 
     return GridView.count(
       padding: const EdgeInsets.symmetric(
@@ -311,25 +292,8 @@ class _DashboardScreenState extends State<DashboardScreen>
                     ),
                     Expanded(
                       flex: 10,
-                      child: ShaderMask(
-                        // blendMode: BlendMode.srcOver,
-                        shaderCallback: (Rect bounds) {
-                          return LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: <Color>[
-                              baseDeepColor,
-                              verLightRed,
-                              verLightRed,
-                              baseDeepColor,
-                              // Colors.red,
-                              // Colors.yellow,
-                            ],
-                          ).createShader(bounds);
-                        },
-                        child: _buildDashboardGrid(),
+                      child: _buildDashboardGrid(),
                       ),
-                    ),
                   ],
                 ),
                 if (!kReleaseMode) _buildDebugButtons(),
@@ -341,23 +305,26 @@ class _DashboardScreenState extends State<DashboardScreen>
     );
   }
 
-  Future<void> _fetchUserData() async {
+  Future<Map<String, dynamic>?> getUserData(String documentId) async {
     try {
-      // Access 'users' collection in Firestore
-      QuerySnapshot querySnapshot =
-      await FirebaseFirestore.instance.collection('users').get();
+      DocumentSnapshot userSnapshot = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(documentId)
+          .get();
 
-      // Extract user data from query snapshot
-      querySnapshot.docs.forEach((doc) {
-        // Access document fields
-        String username = doc['username'];
-        String name = doc['name'];
-        String surname = doc['surname'];
-        String phoneNumber = doc['phoneNumber'];
-      });
+      // Check if the document exists
+      if (userSnapshot.exists) {
+        // Access the data from the document snapshot
+        Map<String, dynamic> userData = userSnapshot.data() as Map<String, dynamic>;
+        return userData;
+      } else {
+        // Document doesn't exist
+        return null;
+      }
     } catch (e) {
-      print('Error fetching user data: $e');
-      // Handle errors, such as displaying an error message to the user
+      // Handle any errors
+      print('Error retrieving user data: $e');
+      return null;
     }
   }
 }

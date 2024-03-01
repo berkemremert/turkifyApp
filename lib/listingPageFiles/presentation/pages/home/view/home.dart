@@ -20,14 +20,13 @@ class ScreenHome extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: kColorScaffold,
-      appBar: appbar__widget(),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             children: [
               SearchAndFilter(),
               kSizedBoxHeight_8,
-              TitleBar__widget(title: 'Near from you', ontap: () {
+              TitleBar__widget(title: 'Best tutors for you', ontap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => SeeAllNear()),
@@ -35,7 +34,7 @@ class ScreenHome extends StatelessWidget {
               }),
               CardHorizontalList__widget(),
               kSizedBoxHeight_8,
-              TitleBar__widget(title: 'Best for you', ontap: () {}),
+              TitleBar__widget(title: 'Friends profiles', ontap: () {}),
               CaerdVerticalList__widget(),
               kSizedBoxHeight_16,
             ],

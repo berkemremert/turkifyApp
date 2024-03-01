@@ -1,10 +1,6 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:turkify_bem/APPColors.dart';
-import 'package:turkify_bem/basicLoginPage/basicLoginPage.dart';
-import 'package:turkify_bem/loginPageFiles/screens/login_screen.dart';
 import 'dashboard_screen.dart';
 import 'loginMainScreenFiles/login_screen.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';

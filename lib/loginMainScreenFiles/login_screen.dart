@@ -50,12 +50,12 @@ class LoginScreen extends StatelessWidget {
         'name': data.additionalSignupData?['Name'],
         'surname': data.additionalSignupData?['Surname'],
         'phoneNumber': data.additionalSignupData?['phone_number'],
-        // Add more fields as needed
+        'friends' : [],
       });
 
-      return null; // Return null if signup is successful
+      return null;
     } catch (e) {
-      return e.toString(); // Return error message if signup fails
+      return e.toString(); // ERROR MESSAGE
     }
   }
 
@@ -92,7 +92,7 @@ class LoginScreen extends StatelessWidget {
           id: 'general-term',
           mandatory: true,
           text: 'Term of services',
-          linkUrl: 'https://github.com/NearHuscarl/flutter_login',
+          linkUrl: 'https://github.com/berkemremert/turkifyApp',
         ),
       ],
       additionalSignupFields: [
@@ -172,7 +172,7 @@ class LoginScreen extends StatelessWidget {
       // ),
       userValidator: (value) {
         if (!value!.contains('@') || (!value.endsWith('.com') & !value.endsWith('.edu.tr'))){
-          return "Email must contain '@' and end with '.com'";
+          return "Email must contain '@' and end with '.com or .ku.edu.tr'";
         }
         return null;
       },
@@ -244,7 +244,7 @@ class IntroWidget extends StatelessWidget {
             Expanded(child: Divider()),
             Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text("Matching"),
+              child: Text(Constants.appName),
             ),
             Expanded(child: Divider()),
           ],
