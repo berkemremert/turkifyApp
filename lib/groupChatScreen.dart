@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -36,6 +37,8 @@ class _ChatPageState extends State<ChatPage> {
     setState(() {
       _messages.insert(0, message);
     });
+
+    FirebaseFirestore.instance.collection('messages').add(message.toJson());
   }
 
   void _handleAttachmentPressed() {
@@ -198,15 +201,19 @@ class _ChatPageState extends State<ChatPage> {
   }
 
   void _loadMessages() async {
-    final response = await rootBundle.loadString('assets/messages.json');
-    final messages = (jsonDecode(response) as List)
-        .map((e) => types.Message.fromJson(e as Map<String, dynamic>))
-        .toList();
+    final messagesSnapshot =
+    await FirebaseFirestore.instance.collection('messages').get();
+
+    final messages = messagesSnapshot.docs.map((doc) {
+      final data = doc.data() as Map<String, dynamic>;
+      return types.Message.fromJson(data);
+    }).toList();
 
     setState(() {
       _messages = messages;
     });
   }
+
 
   @override
   Widget build(BuildContext context) => Scaffold(

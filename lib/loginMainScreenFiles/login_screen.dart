@@ -27,12 +27,17 @@ class LoginScreen extends StatelessWidget {
 
   Future<String?> _loginUser(LoginData data) async {
     try {
-      await FirebaseAuth.instance.signInWithEmailAndPassword(
+      UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: data.name,
         password: data.password,
       );
 
-      return null; // Return null if login is successful
+      if (userCredential.user?.emailVerified == false) {
+        return "Email verification pending. Please verify your email address.";
+      }
+
+      String name = data.name;
+      return null;
     } catch (e) {
       return e.toString(); // Return error message if login fails
     }
@@ -40,20 +45,30 @@ class LoginScreen extends StatelessWidget {
 
   Future<String?> _signupUser(SignupData data) async {
     try {
-      await FirebaseAuth.instance.createUserWithEmailAndPassword(
-        email: data.name ?? "",
-        password: data.password ?? "",
+      // Check if email and password are provided
+      if (data.name == null || data.password == null || data.name!.isEmpty || data.password!.isEmpty) {
+        return "Email and password are required.";
+      }
+
+      // Create user in Firebase Authentication
+      UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: data.name!,
+        password: data.password!,
       );
 
+      // Send email verification
+      await userCredential.user?.sendEmailVerification();
+
+      // Email is verified, store user data in Firestore
       await FirebaseFirestore.instance.collection('users').doc(data.name).set({
         'username': data.additionalSignupData?['Username'],
         'name': data.additionalSignupData?['Name'],
         'surname': data.additionalSignupData?['Surname'],
         'phoneNumber': data.additionalSignupData?['phone_number'],
-        'friends' : [],
+        'friends': [],
       });
 
-      return null;
+      return "Your account is created but you need to verify your email first.";
     } catch (e) {
       return e.toString(); // ERROR MESSAGE
     }
@@ -85,7 +100,6 @@ class LoginScreen extends StatelessWidget {
       titleTag: Constants.titleTag,
       navigateBackAfterRecovery: true,
       onConfirmRecover: _signupConfirm,
-      onConfirmSignup: _signupConfirm,
       loginAfterSignUp: false,
       termsOfService: [
         TermOfService(
