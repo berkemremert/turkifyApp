@@ -7,21 +7,46 @@ import 'loginMainScreenFiles/transition_route_observer.dart';
 
 class EntryScreen extends StatelessWidget {
   const EntryScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Entry',
       theme: ThemeData(
-        textSelectionTheme:
-            const TextSelectionThemeData(cursorColor: Colors.orange),
-        // fontFamily: 'SourceSansPro',
+        primaryColor: baseDeepColor,
+        hintColor: baseLightColor,
+        canvasColor: baseDeepColor,
+        splashColor: baseDeepColor,
+        scaffoldBackgroundColor: baseDeepColor,
+        dialogBackgroundColor: Colors.white,
+        hoverColor: baseDeepColor,
+        indicatorColor: baseDeepColor,
+        highlightColor: baseDeepColor,
+        focusColor: baseDeepColor,
+        primaryColorDark: baseDeepColor,
+        secondaryHeaderColor: baseDeepColor,
+        disabledColor: baseDeepColor,
+        primaryColorLight: baseLightColor,
+        unselectedWidgetColor: baseDeepColor,
+        shadowColor: baseLightColor,
+        buttonTheme: ButtonThemeData(
+          buttonColor: baseDeepColor, // Sets the default button color
+          textTheme: ButtonTextTheme.primary, // Sets the text color of buttons
+        ),
+        dialogTheme: DialogTheme(
+          backgroundColor: Colors.white,
+          contentTextStyle: TextStyle(
+            color: Colors.black, // Change content text color
+            fontSize: 16, // Change content font size
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10.0), // Change dialog border radius
+          ),
+        ),
         textTheme: TextTheme(
           displaySmall: const TextStyle(
             fontFamily: 'OpenSans',
             fontSize: 45.0,
             // fontWeight: FontWeight.w400,
-            color: Colors.orange,
           ),
           labelLarge: const TextStyle(
             // OpenSans is similar to NotoSans but the uppercases look a bit better IMO
