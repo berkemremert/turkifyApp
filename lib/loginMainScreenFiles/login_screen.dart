@@ -78,11 +78,9 @@ class LoginScreen extends StatelessWidget {
   Future<String?> _recoverPassword(String name) async {
     try {
       await FirebaseAuth.instance.sendPasswordResetEmail(email: name);
-      print('Password reset email sent successfully');
-      // You can provide feedback to the user indicating that the reset email was sent successfully
+      return "Password reset link has been sent. Please check your emails.";
     } catch (e) {
-      print('Error sending password reset email: $e');
-      // You can handle errors here, such as displaying an error message to the user
+      return "$e";
     }
   }
 
