@@ -15,8 +15,6 @@ class EntryScreen extends StatelessWidget {
       theme: ThemeData(
         textSelectionTheme:
             const TextSelectionThemeData(cursorColor: Colors.orange),
-        primaryColor: baseDeepColor,
-        hintColor: baseLightColor,
         // fontFamily: 'SourceSansPro',
         textTheme: TextTheme(
           displaySmall: const TextStyle(

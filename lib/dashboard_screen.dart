@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:turkify_bem/APPColors.dart';
 import 'package:turkify_bem/groupChatScreen.dart';
 import 'package:turkify_bem/personList.dart';
+import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
 import 'cardSlidingScreenFiles/src/SwiperPage.dart';
 import 'listingPageFiles/listingScreen.dart';
@@ -170,14 +171,22 @@ class _DashboardScreenState extends State<DashboardScreen>
             ),
           );
         } else if (identifier == 'profile') {
-          //FILL HERE -BERK
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const ScaffoldWidget(
+                title: 'Kelime Kartları',
+                child: SwiperPage(),
+              ),
+            ),
+          );
         } else if (identifier == 'settings') {
           Navigator.push(
             context,
             MaterialPageRoute(
               builder: (context) => const ScaffoldWidget(
-                child: SwiperPage(),
-                title: "Kelime Kartları",
+                title: 'Settings',
+                child: settingsPage(),
               ),
             ),
           );

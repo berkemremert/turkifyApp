@@ -124,6 +124,7 @@ class LoginScreen extends StatelessWidget {
             );
             if (value != null &&
                 value.length < 7 &&
+                !value.startsWith("0") &&
                 !phoneRegExp.hasMatch(value)) {
               return "This isn't a valid phone number";
             }
@@ -158,12 +159,22 @@ class LoginScreen extends StatelessWidget {
         primaryColor: baseDeepColor,
         pageColorLight: baseLightColor,
         pageColorDark: baseDeepColor,
+        footerBackgroundColor: baseDeepColor,
+        primaryColorAsInputLabel: false,
+        accentColor: baseDeepColor,
+        errorColor: Colors.red,
         logoWidth: 0.80,
         titleStyle: TextStyle(
           color: Color.fromRGBO(240, 230, 230, 1.0),
           fontFamily: 'NotoSans',
           letterSpacing: 2,
           fontWeight: FontWeight.w600,
+        ),
+        buttonTheme: LoginButtonTheme(
+          backgroundColor: Colors.red,
+          splashColor: darkRed,
+          highlightColor:baseLightColor,
+          elevation: 5.0,
         ),
         // beforeHeroFontSize: 50,
         // afterHeroFontSize: 20,
