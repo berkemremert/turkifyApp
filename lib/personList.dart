@@ -4,7 +4,7 @@ List<Person> persons = [
   Person(distance: 0.2,
     name: 'Berk Emre Mert',
     age: 21,
-    offer1: skillMap['Mathematics']!,
+    offer1: Skill(skill: "Cucumber", description: ""),
     wish1: skillMap['Turkish']!,
     wish2: skillMap['Biology']!,
     wish3: skillMap['Design']!,

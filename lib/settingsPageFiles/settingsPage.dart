@@ -16,14 +16,20 @@ class settingsPage extends StatelessWidget {
             children: [
               // user card
               Container(
-                width: MediaQuery.of(context).size.width - 30,
-                height: MediaQuery.of(context).size.width - 30,
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.width - 200,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: NetworkImage("https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"),
                   ),
                 ),
+              ),
+              SizedBox(height: 15,),
+              Text(
+                "Berk Emre Mert",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24,),
+                textAlign: TextAlign.center,
               ),
               SizedBox(height: 15,),
               SettingsGroup(
