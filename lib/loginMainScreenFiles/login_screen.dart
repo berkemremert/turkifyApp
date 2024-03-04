@@ -50,17 +50,15 @@ class LoginScreen extends StatelessWidget {
         return "Email and password are required.";
       }
 
-      // Create user in Firebase Authentication
       UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: data.name!,
         password: data.password!,
       );
 
-      // Send email verification
+      // email verification
       await userCredential.user?.sendEmailVerification();
 
-      // Email is verified, store user data in Firestore
-      await FirebaseFirestore.instance.collection('users').doc(data.name).set({
+      await FirebaseFirestore.instance.collection('users').doc(userCredential.user?.uid).set({
         'username': data.additionalSignupData?['Username'],
         'name': data.additionalSignupData?['Name'],
         'surname': data.additionalSignupData?['Surname'],

@@ -181,6 +181,8 @@ class _DashboardScreenState extends State<DashboardScreen>
             ),
           );
         } else if (identifier == 'settings') {
+          _loadingController!.reverse();
+          await Future.delayed(Duration(milliseconds: 1300));
           Navigator.push(
             context,
             MaterialPageRoute(

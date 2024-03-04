@@ -118,41 +118,49 @@ class settingsPage extends StatelessWidget {
   }
 
   void _changeEmail(BuildContext context) async {
-    // Get the current user
     User? user = FirebaseAuth.instance.currentUser;
 
-    if (user != null) {
-      // Prompt the user to enter their new email address
-      String? newEmail = await showDialog(
-        context: context,
-        builder: (context) => _buildChangeEmailDialog(context),
-      );
+    Map<String, String?>? result = await showDialog(
+      context: context,
+      builder: (context) => _buildChangeEmailDialog(context),
+    );
 
-      if (newEmail != null && newEmail.isNotEmpty) {
-        try {
-          // Update the user's email address
-          await user.updateEmail(newEmail);
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Email address changed successfully')),
-          );
-        } catch (e) {
-          print(e.toString());
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Failed to change email address')),
-          );
-        }
-      }
+    if (result != null && result['newEmail'] != null && result['password'] != null) {
+      String newEmail = result['newEmail']!;
+      String password = result['password']!;
+
+      reauthenticateUser(newEmail, password);
     }
+
+    //if (user != null && (newEmail != null && newEmail.isNotEmpty)) {
+    //  try{
+    //    user.updateEmail(newEmail);
+    //  }
+    //  catch (e) {
+    //    print(e);
+    //  }
+    //}
   }
 
   Widget _buildChangeEmailDialog(BuildContext context) {
     TextEditingController emailController = TextEditingController();
+    TextEditingController passwordController = TextEditingController();
 
     return AlertDialog(
       title: Text('Change Email'),
-      content: TextField(
-        controller: emailController,
-        decoration: InputDecoration(labelText: 'New Email Address'),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          TextField(
+            controller: emailController,
+            decoration: InputDecoration(labelText: 'New Email Address'),
+          ),
+          TextField(
+            controller: passwordController,
+            obscureText: true,
+            decoration: InputDecoration(labelText: 'Your Password'),
+          ),
+        ],
       ),
       actions: <Widget>[
         TextButton(
@@ -164,11 +172,36 @@ class settingsPage extends StatelessWidget {
         ElevatedButton(
           onPressed: () {
             String newEmail = emailController.text.trim();
-            Navigator.of(context).pop(newEmail);
+            String password = passwordController.text.trim();
+            if (newEmail.isNotEmpty && password.isNotEmpty) {
+              // Pass both the new email and password to the callback
+              Navigator.of(context).pop({'newEmail': newEmail, 'password': password});
+            } else {
+              // Handle case where either email or password is empty
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text('Email and password are required.')),
+              );
+            }
           },
           child: Text('Change'),
         ),
       ],
     );
+  }
+
+
+  void reauthenticateUser(String email, String password) async {
+    try {
+      User? user = FirebaseAuth.instance.currentUser;
+      if (user != null) {
+        AuthCredential credential = EmailAuthProvider.credential(email: email, password: password);
+        await user.reauthenticateWithCredential(credential);
+        print('User re-authenticated successfully.');
+      } else {
+        print('User is not signed in.');
+      }
+    } catch (e) {
+      print('Error re-authenticating user: $e');
+    }
   }
 }
