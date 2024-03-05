@@ -118,7 +118,7 @@ class settingsPage extends StatelessWidget {
   }
 
   void _changeEmail(BuildContext context) async {
-    User? user = FirebaseAuth.instance.currentUser;
+    //User? user = FirebaseAuth.instance.currentUser;
 
     Map<String, String?>? result = await showDialog(
       context: context,
@@ -128,19 +128,27 @@ class settingsPage extends StatelessWidget {
     if (result != null && result['newEmail'] != null && result['password'] != null) {
       String newEmail = result['newEmail']!;
       String password = result['password']!;
+     //try {
+        FirebaseAuth.instance.currentUser?.updateEmail(newEmail);
+        // Re-authenticate user
+        //AuthCredential credential = EmailAuthProvider.credential(
+        //    email: user!.email!,
+        //    password: password,
+        //);
 
-      reauthenticateUser(newEmail, password);
+        //UserCredential newCredential = await user.reauthenticateWithCredential(credential);
+        //print("Re-authentication successful.");
+
+
+        // Update email
+        //await newCredential.user?.updateEmail(newEmail);
+        //print("Email updated successfully to $newEmail.");
+      //} catch (e) {
+        //print("Error updating email: $e");
+      //}
     }
-
-    //if (user != null && (newEmail != null && newEmail.isNotEmpty)) {
-    //  try{
-    //    user.updateEmail(newEmail);
-    //  }
-    //  catch (e) {
-    //    print(e);
-    //  }
-    //}
   }
+
 
   Widget _buildChangeEmailDialog(BuildContext context) {
     TextEditingController emailController = TextEditingController();
