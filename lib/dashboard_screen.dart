@@ -4,7 +4,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:turkify_bem/APPColors.dart';
 import 'package:turkify_bem/groupChatScreen.dart';
-import 'package:turkify_bem/personList.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
 import 'cardSlidingScreenFiles/src/SwiperPage.dart';
@@ -186,7 +185,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const ScaffoldWidget(
+              builder: (context) => ScaffoldWidget(
                 title: 'Settings',
                 child: settingsPage(),
               ),
