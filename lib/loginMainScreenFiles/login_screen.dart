@@ -72,7 +72,6 @@ class LoginScreen extends StatelessWidget {
     }
   }
 
-
   Future<String?> _recoverPassword(String name) async {
     try {
       await FirebaseAuth.instance.sendPasswordResetEmail(email: name);

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:turkify_bem/APPColors.dart';
 import 'package:turkify_bem/groupChatScreen.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
+import 'FilterPage.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
 import 'cardSlidingScreenFiles/src/SwiperPage.dart';
 import 'listingPageFiles/listingScreen.dart';
@@ -154,7 +155,18 @@ class _DashboardScreenState extends State<DashboardScreen>
             MaterialPageRoute(builder: (context) => ChatPage()),
           );
         } else if (identifier == 'calendar') {
-          //FILL HERE -BERK
+          //FILL HERE -deniz
+          _loadingController!.reverse();
+          await Future.delayed(Duration(milliseconds: 1300));
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const ScaffoldWidget(
+                title: '',
+                child: FilterPage(),
+              ),
+            ),
+          );
         } else if (identifier == 'task') {
           //FILL HERE -BERK
         } else if (identifier == 'match') {
