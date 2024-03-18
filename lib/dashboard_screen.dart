@@ -34,10 +34,13 @@ class _DashboardScreenState extends State<DashboardScreen>
   static const headerAniInterval = Interval(.1, .3, curve: Curves.easeOut);
   late Animation<double> _headerScaleAnimation;
   AnimationController? _loadingController;
+  User? user = FirebaseAuth.instance.currentUser;
+  Map<String, dynamic> _userData = {};
 
   @override
   void initState() {
     super.initState();
+    gettUserData();
 
     _loadingController = AnimationController(
       vsync: this,
@@ -94,10 +97,8 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   Widget _buildHeader(ThemeData theme) {
-    String firstName = 'Berk Emre';
-    String lastName = 'Mert';
-
-    final user = FirebaseAuth.instance.currentUser!;
+    String firstName = _userData['name'] ?? "Name";
+    String lastName = _userData['surname'] ?? "Surname";
 
     return ScaleTransition(
       scale: _headerScaleAnimation,
@@ -199,7 +200,7 @@ class _DashboardScreenState extends State<DashboardScreen>
             MaterialPageRoute(
               builder: (context) => ScaffoldWidget(
                 title: 'Settings',
-                child: settingsPage(),
+                child: SettingsPage(), // Use SettingsPage widget
               ),
             ),
           );
@@ -348,6 +349,14 @@ class _DashboardScreenState extends State<DashboardScreen>
       print('Error retrieving user data: $e');
       return null;
     }
+  }
+
+  void gettUserData() async {
+    DocumentSnapshot userDoc = await FirebaseFirestore.instance.collection('users').doc(user?.uid).get();
+    Map<String, dynamic> userData = (userDoc.data() as Map<String, dynamic>) ?? {};
+    setState(() {
+      _userData = userData; // Update user data in the state
+    });
   }
 }
 

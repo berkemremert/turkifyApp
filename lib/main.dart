@@ -3,10 +3,13 @@ import 'package:turkify_bem/APPColors.dart';
 import 'firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:turkify_bem/EntryScreen.dart';
+import 'package:firebase_app_check/firebase_app_check.dart';
+
 
 Future main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform );
+  await FirebaseAppCheck.instance.activate();
   runApp(const MyApp());
 }
 
