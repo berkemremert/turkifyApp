@@ -101,7 +101,7 @@ class LoginScreen extends StatelessWidget {
           id: 'general-term',
           mandatory: true,
           text: 'Term of services',
-          linkUrl: 'https://github.com/berkemremert/turkifyApp',
+          linkUrl: 'https://github.com/berkemremert',
         ),
       ],
       additionalSignupFields: [
