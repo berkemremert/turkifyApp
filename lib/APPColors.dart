@@ -8,3 +8,5 @@ Color darkRed = Color.fromARGB(169, 128, 0, 0);
 Color baseLightColor = Color.fromARGB(169, 255, 188, 188);
 Color verLightRed = Color.fromARGB(169, 255, 224, 224);
 Color loginPageWarnings = Color.fromARGB(255, 136, 136, 136);
+Color black = Colors.black;
+Color darkGrey = Colors.black12;
