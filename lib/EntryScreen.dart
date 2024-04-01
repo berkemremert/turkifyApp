@@ -1,77 +1,105 @@
+import 'dart:convert';
+
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/APPColors.dart';
 import 'dashboard_screen.dart';
+import 'loginMainScreenFiles/constants.dart';
 import 'loginMainScreenFiles/login_screen.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
 
 class EntryScreen extends StatelessWidget {
   const EntryScreen({super.key});
+
+  Future<bool> autoLogin() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String? email = prefs.getString('email');
+    String? password = prefs.getString('password');
+
+    if (email != null && password != null) {
+      try {
+        UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
+          email: email,
+          password: password,
+        );
+
+        if (userCredential.user?.emailVerified == false) {
+          return false;
+        }
+
+        return true;
+      } catch (e) {
+        print('Auto login failed: $e');
+      }
+    }
+
+    return false;
+  }
+
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Entry',
-      theme: ThemeData(
-        primaryColor: baseDeepColor,
-        hintColor: baseLightColor,
-        canvasColor: baseDeepColor,
-        splashColor: baseDeepColor,
-        dialogBackgroundColor: Colors.white,
-        highlightColor: baseDeepColor,
-        focusColor: baseDeepColor,
-        primaryColorDark: baseDeepColor,
-        secondaryHeaderColor: baseDeepColor,
-        disabledColor: baseDeepColor,
-        primaryColorLight: baseLightColor,
-        unselectedWidgetColor: baseDeepColor,
-        shadowColor: baseLightColor,
-        buttonTheme: ButtonThemeData(
-          buttonColor: baseDeepColor, // Sets the default button color
-          textTheme: ButtonTextTheme.primary, // Sets the text color of buttons
-        ),
-        dialogTheme: DialogTheme(
-          backgroundColor: Colors.white,
-          contentTextStyle: TextStyle(
-            color: Colors.black, // Change content text color
-            fontSize: 16, // Change content font size
-          ),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.0), // Change dialog border radius
-          ),
-        ),
-        textTheme: TextTheme(
-          displaySmall: const TextStyle(
-            fontFamily: 'OpenSans',
-            fontSize: 45.0,
-            // fontWeight: FontWeight.w400,
-          ),
-          labelLarge: const TextStyle(
-            // OpenSans is similar to NotoSans but the uppercases look a bit better IMO
-            fontFamily: 'OpenSans',
-          ),
-          bodySmall: TextStyle(
-            fontFamily: 'NotoSans',
-            fontSize: 12.0,
-            fontWeight: FontWeight.normal,
-            color: baseDeepColor,
-          ),
-          displayLarge: const TextStyle(fontFamily: 'Quicksand'),
-          displayMedium: const TextStyle(fontFamily: 'Quicksand'),
-          headlineMedium: const TextStyle(fontFamily: 'Quicksand'),
-          headlineSmall: const TextStyle(fontFamily: 'NotoSans'),
-          titleLarge: const TextStyle(fontFamily: 'NotoSans'),
-          titleMedium: const TextStyle(fontFamily: 'NotoSans'),
-          bodyLarge: const TextStyle(fontFamily: 'NotoSans'),
-          bodyMedium: const TextStyle(fontFamily: 'NotoSans'),
-          titleSmall: const TextStyle(fontFamily: 'NotoSans'),
-          labelSmall: const TextStyle(fontFamily: 'NotoSans'),
-        ),
-      ),
-      navigatorObservers: [TransitionRouteObserver()],
-      initialRoute: LoginScreen.routeName,
-      routes: {
-        LoginScreen.routeName: (context) => LoginScreen(),
-        DashboardScreen.routeName: (context) => const DashboardScreen(),
+  Widget build(BuildContext context){
+    return FutureBuilder<bool>(
+      future: autoLogin(),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const Scaffold(
+            body: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    Constants.appName,
+                    style: TextStyle(
+                      color: Colors.red,
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 16),
+                  CircularProgressIndicator(), // You can customize this loading indicator
+                  SizedBox(height: 16),
+                  Text(
+                    'Logging In...',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                ],
+              ),
+            ),
+          );
+        } else {
+          // Check the result of auto-login and navigate accordingly
+          if (snapshot.hasData && snapshot.data!) {
+            // If auto-login successful, navigate to DashboardScreen
+            return MaterialApp(
+              title: 'Entry',
+              theme: ThemeData(
+                // Your theme data
+              ),
+              navigatorObservers: [TransitionRouteObserver()],
+              initialRoute: DashboardScreen.routeName,
+              routes: {
+                LoginScreen.routeName: (context) => LoginScreen(),
+                DashboardScreen.routeName: (context) => const DashboardScreen(),
+              },
+            );
+          } else {
+            // If auto-login unsuccessful, navigate to LoginScreen
+            return MaterialApp(
+              title: 'Entry',
+              theme: ThemeData(
+                // Your theme data
+              ),
+              navigatorObservers: [TransitionRouteObserver()],
+              initialRoute: LoginScreen.routeName,
+              routes: {
+                LoginScreen.routeName: (context) => LoginScreen(),
+                DashboardScreen.routeName: (context) => const DashboardScreen(),
+              },
+            );
+          }
+        }
       },
     );
   }

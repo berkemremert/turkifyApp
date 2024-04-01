@@ -64,6 +64,8 @@ dependencies:
   cupertino_icons: ^1.0.6
   firebase_app_check: ^0.2.1
   image_cropper: ^4.0.1
+  flutter_webrtc: ^0.9.45
+  cloud_firestore_web: ^3.4.3
 
 dev_dependencies:
   flutter_test:

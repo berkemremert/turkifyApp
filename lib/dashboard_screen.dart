@@ -1,10 +1,14 @@
+import 'dart:math';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/APPColors.dart';
 import 'package:turkify_bem/groupChatScreen.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
+import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
 import 'FilterPage.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
 import 'cardSlidingScreenFiles/src/SwiperPage.dart';
@@ -74,11 +78,20 @@ class _DashboardScreenState extends State<DashboardScreen>
   @override
   void didPushAfterTransition() => _loadingController!.forward();
 
+  Future<void> logOut() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.remove('email');
+    await prefs.remove('password');
+    await FirebaseAuth.instance.signOut();
+  }
+
   AppBar _buildAppBar(ThemeData theme) {
     final signOutBtn = IconButton(
       icon: const Icon(FontAwesomeIcons.rightFromBracket),
       color: baseDeepColor,
-      onPressed: () => _goToLogin(context),
+      onPressed: () {
+        logOut();
+        _goToLogin(context);}
     );
 
     return AppBar(
@@ -150,7 +163,7 @@ class _DashboardScreenState extends State<DashboardScreen>
       onPressed: () async {
         if (identifier == 'chat') {
           _loadingController!.reverse();
-          await Future.delayed(Duration(milliseconds: 1300));
+          await Future.delayed(Duration(milliseconds: 1295));
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => ChatPage()),
@@ -169,7 +182,12 @@ class _DashboardScreenState extends State<DashboardScreen>
             ),
           );
         } else if (identifier == 'task') {
-          //FILL HERE -BERK
+          _loadingController!.reverse();
+          await Future.delayed(Duration(milliseconds: 1300));
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => VideoMeetingPage()),
+          );
         } else if (identifier == 'match') {
           _loadingController!.reverse();
           await Future.delayed(Duration(milliseconds: 1300));

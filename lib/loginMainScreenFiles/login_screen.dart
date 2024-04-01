@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:flutter_login/flutter_login.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/APPColors.dart';
 import 'constants.dart';
 import 'custom_route.dart';
@@ -32,11 +33,11 @@ class LoginScreen extends StatelessWidget {
         password: data.password,
       );
 
+      await _saveUserInfo(data.name, data.password);
+
       if (userCredential.user?.emailVerified == false) {
         return "Email verification pending. Please verify your email address.";
       }
-
-      String name = data.name;
       return null;
     } catch (e) {
       return e.toString(); // Return error message if login fails
@@ -85,6 +86,12 @@ class LoginScreen extends StatelessWidget {
     return Future.delayed(loginTime).then((_) {
       return null;
     });
+  }
+
+  Future<void> _saveUserInfo(String email, String password) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setString('email', email);
+    await prefs.setString('password', password);
   }
 
   @override
