@@ -150,7 +150,7 @@ class _DashboardScreenState extends State<DashboardScreen>
       onPressed: () async {
         if (identifier == 'chat') {
           _loadingController!.reverse();
-          await Future.delayed(Duration(milliseconds: 1300));
+          await Future.delayed(Duration(milliseconds: 1295));
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => ChatPage()),

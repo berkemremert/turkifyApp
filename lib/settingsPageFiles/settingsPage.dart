@@ -85,6 +85,21 @@ class _SettingsPageState extends State<SettingsPage> {
                   subtitleMaxLine: 1,
                 ),
                 SettingsItem(
+                  onTap: () async {
+                    _updateProfilePicture();
+                  },
+                  icons: CupertinoIcons.pencil,
+                  iconStyle: IconStyle(
+                    iconsColor: Colors.white,
+                    withBackground: true,
+                    backgroundColor: baseDeepColor,
+                  ),
+                  title: 'Name',
+                  subtitle: "Change your name",
+                  titleMaxLine: 1,
+                  subtitleMaxLine: 1,
+                ),
+                SettingsItem(
                   onTap: () {},
                   icons: Icons.notifications,
                   iconStyle: IconStyle(
