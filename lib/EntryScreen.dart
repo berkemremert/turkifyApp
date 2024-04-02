@@ -4,7 +4,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:turkify_bem/APPColors.dart';
 import 'dashboard_screen.dart';
 import 'loginMainScreenFiles/constants.dart';
 import 'loginMainScreenFiles/login_screen.dart';
@@ -58,7 +57,7 @@ class EntryScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 16),
-                  CircularProgressIndicator(), // You can customize this loading indicator
+                  CircularProgressIndicator(),
                   SizedBox(height: 16),
                   Text(
                     'Logging In...',
@@ -69,13 +68,10 @@ class EntryScreen extends StatelessWidget {
             ),
           );
         } else {
-          // Check the result of auto-login and navigate accordingly
           if (snapshot.hasData && snapshot.data!) {
-            // If auto-login successful, navigate to DashboardScreen
             return MaterialApp(
               title: 'Entry',
               theme: ThemeData(
-                // Your theme data
               ),
               navigatorObservers: [TransitionRouteObserver()],
               initialRoute: DashboardScreen.routeName,
@@ -85,11 +81,9 @@ class EntryScreen extends StatelessWidget {
               },
             );
           } else {
-            // If auto-login unsuccessful, navigate to LoginScreen
             return MaterialApp(
               title: 'Entry',
               theme: ThemeData(
-                // Your theme data
               ),
               navigatorObservers: [TransitionRouteObserver()],
               initialRoute: LoginScreen.routeName,
