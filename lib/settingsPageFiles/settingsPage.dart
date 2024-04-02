@@ -11,6 +11,7 @@ import 'package:babstrap_settings_screen/babstrap_settings_screen.dart';
 import 'package:flutter/widgets.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:turkify_bem/APPColors.dart';
+import 'package:turkify_bem/PermCheckers.dart';
 import 'package:turkify_bem/constLinks.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -165,6 +166,9 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   Future<void> _updateProfilePicture() async {
+    if(!(await checkPermissionsStorage()))
+      requestPermissionsStorage();
+
     String? imageUrl = await updateProfilePicture(context);
 
     if (imageUrl != null) {
