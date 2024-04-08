@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
@@ -12,10 +13,12 @@ import 'package:image_picker/image_picker.dart';
 import 'package:mime/mime.dart';
 import 'package:open_filex/open_filex.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:turkify_bem/personList.dart';
 import 'package:uuid/uuid.dart';
 
 class ChatPage extends StatefulWidget {
-  const ChatPage({super.key});
+  final Map<String, dynamic> data;
+  const ChatPage({super.key, required this.data});
 
   @override
   State<ChatPage> createState() => _ChatPageState();
@@ -23,9 +26,12 @@ class ChatPage extends StatefulWidget {
 
 class _ChatPageState extends State<ChatPage> {
   List<types.Message> _messages = [];
-  final _user = const types.User(
-    id: '82091008-a484-4a89-ae75-a22bf8d6f3ac',
+  final _user1 = FirebaseAuth.instance.currentUser;
+  final types.User _user = types.User(
+    id: FirebaseAuth.instance.currentUser!.uid,
   );
+  Map<String, dynamic> get data => widget.data;
+
 
   @override
   void initState() {
@@ -189,25 +195,64 @@ class _ChatPageState extends State<ChatPage> {
     });
   }
 
-  void _handleSendPressed(types.PartialText message) {
+  void _handleSendPressed(types.PartialText message) async {
+    String curID = _user1?.uid ?? "-";
+    String roomID = "";
+
+    if (_user1 != null) {
+      final curUsernameSnapshot = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(curID)
+          .get();
+      final curUsernameData = curUsernameSnapshot.data();
+      final String curUsername = curUsernameData?['username'] ?? "";
+
+      final String recipientUsername = data['username'];
+
+      if (curUsername.compareTo(recipientUsername) <= 0) {
+        roomID = '$curUsername${data['username']}';
+      } else {
+        roomID = '${data['username']}$curUsername';
+      }
+    }
+
     final textMessage = types.TextMessage(
       author: _user,
       createdAt: DateTime.now().millisecondsSinceEpoch,
       id: const Uuid().v4(),
       text: message.text,
+      roomId: roomID,
     );
 
     _addMessage(textMessage);
   }
 
   void _loadMessages() async {
-    final messagesSnapshot =
-    await FirebaseFirestore.instance.collection('messages').get();
+    final messagesSnapshot = await FirebaseFirestore.instance.collection('messages').get();
+    String wantID;
+    String curID = _user1?.uid ?? "-";
+    final curUsernameSnapshot = await FirebaseFirestore.instance
+        .collection('users')
+        .doc(curID)
+        .get();
+    final curUsernameData = curUsernameSnapshot.data();
+    final String curUsername = curUsernameData?['username'] ?? "";
 
-    final messages = messagesSnapshot.docs.map((doc) {
-      final data = doc.data() as Map<String, dynamic>;
-      return types.Message.fromJson(data);
-    }).toList();
+    if(curUsername.compareTo(data['username']) <= 0){
+      wantID = curUsername + data['username'];
+    }
+    else{
+      wantID = data['username'] + curUsername;
+    }
+    print("wantID: $wantID");
+    final messages = messagesSnapshot.docs
+        .map((doc) {
+      final data = doc.data();
+      final message = types.Message.fromJson(data);
+      return message;
+    })
+        .where((message) => message.roomId == wantID)
+        .toList();
 
     setState(() {
       _messages = messages;
@@ -215,8 +260,13 @@ class _ChatPageState extends State<ChatPage> {
   }
 
 
+
   @override
-  Widget build(BuildContext context) => Scaffold(
+  Widget build(BuildContext context){
+    return Scaffold(
+    appBar: AppBar(
+      title: Text(data['name']),
+    ),
         body: Chat(
           messages: _messages,
           onAttachmentPressed: _handleAttachmentPressed,
@@ -228,4 +278,5 @@ class _ChatPageState extends State<ChatPage> {
           user: _user,
         ),
       );
+  }
 }

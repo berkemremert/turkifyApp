@@ -8,6 +8,7 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/APPColors.dart';
 import 'package:turkify_bem/groupChatScreen.dart';
+import 'package:turkify_bem/myChats.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
 import 'FilterPage.dart';
@@ -167,7 +168,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           await Future.delayed(Duration(milliseconds: 1295));
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => ChatPage()),
+            MaterialPageRoute(builder: (context) => MyChats()),
           );
         } else if (identifier == 'calendar') {
           //FILL HERE -deniz
