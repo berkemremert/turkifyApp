@@ -17,6 +17,8 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
   TextEditingController textEditingController =
   TextEditingController(text: '');
 
+  bool _cameraOpened = false;
+
   @override
   void initState() {
     _localRenderer.initialize();
@@ -66,7 +68,7 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.grey), // Add border
+                        border: Border.all(color: Colors.grey),
                       ),
                       child: RTCVideoView(_remoteRenderer),
                     ),
@@ -109,8 +111,13 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   IconButton(
-                    onPressed: () {
-                      signaling.openUserMedia(_localRenderer, _remoteRenderer);                          },
+                    onPressed: () async{
+                      signaling.openUserMedia(_localRenderer, _remoteRenderer);
+                      await Future.delayed(Duration(seconds: 1));
+                      setState(() {
+                        _cameraOpened = true;
+                      });
+                      },
                     icon: Icon(Icons.camera),
                     color: Colors.white,
                   ),
@@ -134,8 +141,9 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                     color: Colors.white,
                   ),
                   IconButton(
-                    onPressed: () {
+                    onPressed: () async {
                       signaling.hangUp(_localRenderer);
+                      Navigator.pop(context);
                     },
                     icon: Icon(Icons.exit_to_app),
                     color: Colors.white,
