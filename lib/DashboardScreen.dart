@@ -356,8 +356,8 @@ class _DashboardScreenState extends State<DashboardScreen>
                       child: _buildHeader(theme),
                     ),
                     ImagedButton(
-                        imagePath: _isBeingCalled ? "assets/callGreen.png" : "assets/callLightRed.png",
-                        buttonText: "YOUR TUTOR IS\nCALLING YOU",
+                        imagePath: _isBeingCalled ? "assets/callGreen.png" : "assets/callGrey.png",
+                        buttonText: _isBeingCalled ? "CALL" : "NO CALL",
                         onTap: () async {
                           _loadingController!.reverse();
                           await Future.delayed(Duration(milliseconds: 1300));

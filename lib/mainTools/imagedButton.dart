@@ -49,7 +49,7 @@ class ImagedButton extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'Roboto',
                     color: Colors.white,
-                    fontSize: 18,
+                    fontSize: 36,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
