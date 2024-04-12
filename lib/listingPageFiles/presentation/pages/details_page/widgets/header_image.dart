@@ -121,35 +121,6 @@ class HeaderImage__widget extends StatelessWidget {
   }
 }
 
-class BedAndBathSection extends StatelessWidget {
-  const BedAndBathSection({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        Row(
-          children: [
-            SquareIconButton__widget(icon: Assets.icons.bed.svg),
-            kSizedBoxWidth_8,
-            const BodySmall__text(text: '6 Bedroom', color: kColorText3),
-          ],
-        ),
-        kSizedBoxWidth_32,
-        Row(
-          children: [
-            SquareIconButton__widget(icon: Assets.icons.bath.svg),
-            kSizedBoxWidth_8,
-            const BodySmall__text(text: '4 Bathroom', color: kColorText3),
-          ],
-        ),
-      ],
-    );
-  }
-}
-
 class RoundIconButton__widget extends StatelessWidget {
   const RoundIconButton__widget({
     Key? key,

@@ -13,7 +13,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:mime/mime.dart';
 import 'package:open_filex/open_filex.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:turkify_bem/personList.dart';
+import 'package:turkify_bem/mainTools/personList.dart';
 import 'package:uuid/uuid.dart';
 
 class ChatPage extends StatefulWidget {

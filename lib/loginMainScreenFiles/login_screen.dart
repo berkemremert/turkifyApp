@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:flutter_login/flutter_login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:turkify_bem/APPColors.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'constants.dart';
 import 'custom_route.dart';
-import '../dashboard_screen.dart';
+import '../DashboardScreen.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginScreen extends StatelessWidget {

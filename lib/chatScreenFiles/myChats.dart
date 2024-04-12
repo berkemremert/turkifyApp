@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:turkify_bem/APPColors.dart';
-import 'package:turkify_bem/groupChatScreen.dart';
-import 'package:turkify_bem/constLinks.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
+import 'GroupChatScreen.dart';
+import 'package:turkify_bem/mainTools/constLinks.dart';
 
 
 class MyChats extends StatefulWidget {

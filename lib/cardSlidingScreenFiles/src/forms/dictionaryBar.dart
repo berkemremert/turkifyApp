@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:turkify_bem/APPColors.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
 
 import '../../../listingPageFiles/gen/assets.gen.dart';
 import '../../../listingPageFiles/presentation/themes/colors.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:turkify_bem/listingPageFiles/presentation/pages/home/widgets/personDetails.dart';
-import '../../../../../personList.dart';
+import '../../../../../mainTools/personList.dart';
 import '../../../../core/utils/navigator.dart';
 import '../../../../gen/assets.gen.dart';
 import '../../details_page/view/details.dart';

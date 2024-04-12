@@ -24,9 +24,18 @@ class Signaling {
   String? currentRoomText;
   StreamStateCallback? onAddRemoteStream;
 
-  Future<String> createRoom(RTCVideoRenderer remoteRenderer) async {
+  Future<String> createRoom(
+      RTCVideoRenderer remoteRenderer,
+      String userId,
+      String calleeId,
+      ) async {
     FirebaseFirestore db = FirebaseFirestore.instance;
     DocumentReference roomRef = db.collection('rooms').doc();
+
+    await db.collection('currentCalls').doc(roomRef.id).set({
+      'callerId': userId,
+      'calleeId': calleeId,
+    });
 
     print('Create PeerConnection with configuration: $configuration');
 

@@ -10,9 +10,9 @@ import 'package:flutter/material.dart';
 import 'package:babstrap_settings_screen/babstrap_settings_screen.dart';
 import 'package:flutter/widgets.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:turkify_bem/APPColors.dart';
-import 'package:turkify_bem/PermCheckers.dart';
-import 'package:turkify_bem/constLinks.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
+import 'package:turkify_bem/mainTools/PermCheckers.dart';
+import 'package:turkify_bem/mainTools/constLinks.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({Key? key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../personList.dart';
+import '../../../../../mainTools/personList.dart';
 import '../view/seeAllNear.dart';
 
 class SelectableButtons extends StatelessWidget {

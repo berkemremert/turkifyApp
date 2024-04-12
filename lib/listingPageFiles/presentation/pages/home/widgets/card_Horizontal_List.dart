@@ -6,7 +6,7 @@ import '../../../components/text.dart';
 import '../../details_page/view/details.dart';
 import '../../../themes/colors.dart';
 import '../../../themes/config.dart';
-import 'package:turkify_bem/personList.dart';
+import 'package:turkify_bem/mainTools/personList.dart';
 
 class CardHorizontalList__widget extends StatelessWidget {
   CardHorizontalList__widget({Key? key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
-import 'package:turkify_bem/APPColors.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'forms/dictionaryBar.dart';
 
 class SwiperPage extends StatefulWidget {

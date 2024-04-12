@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 import '../listingPageFiles/presentation/pages/home/widgets/personDetails.dart';
-import '../personList.dart';
+import '../mainTools/personList.dart';
 
 void main() {
   runApp(MyApp());

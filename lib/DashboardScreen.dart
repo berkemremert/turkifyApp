@@ -1,29 +1,29 @@
-import 'dart:math';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:permission_handler/permission_handler.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:turkify_bem/APPColors.dart';
-import 'package:turkify_bem/groupChatScreen.dart';
-import 'package:turkify_bem/myChats.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
+import 'package:turkify_bem/mainTools/imagedButton.dart';
+import 'package:turkify_bem/chatScreenFiles/myChats.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
-import 'FilterPage.dart';
+
+import 'filterPageFiles/FilterPage.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
 import 'cardSlidingScreenFiles/src/SwiperPage.dart';
 import 'listingPageFiles/listingScreen.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
 import 'loginMainScreenFiles/widgets/fade_in.dart';
 import 'loginMainScreenFiles/widgets/round_button.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'videoMeetingFiles/videoMeetingMain.dart';
 
 class DashboardScreen extends StatefulWidget {
   static const routeName = '/dashboard';
 
   const DashboardScreen({super.key});
+
   @override
   State<DashboardScreen> createState() => _DashboardScreenState();
 }
@@ -42,6 +42,7 @@ class _DashboardScreenState extends State<DashboardScreen>
   AnimationController? _loadingController;
   User? user = FirebaseAuth.instance.currentUser;
   Map<String, dynamic> _userData = {};
+  bool _isBeingCalled = false;
 
   @override
   void initState() {
@@ -51,6 +52,7 @@ class _DashboardScreenState extends State<DashboardScreen>
     _loadingController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 1250),
+      value: 1,
     );
 
     _headerScaleAnimation = Tween<double>(begin: .6, end: 1).animate(
@@ -59,6 +61,8 @@ class _DashboardScreenState extends State<DashboardScreen>
         curve: headerAniInterval,
       ),
     );
+
+    _checkIfBeingCalled();
   }
 
   @override
@@ -89,12 +93,12 @@ class _DashboardScreenState extends State<DashboardScreen>
 
   AppBar _buildAppBar(ThemeData theme) {
     final signOutBtn = IconButton(
-      icon: const Icon(FontAwesomeIcons.rightFromBracket),
-      color: baseDeepColor,
-      onPressed: () {
-        logOut();
-        _goToLogin(context);}
-    );
+        icon: const Icon(FontAwesomeIcons.rightFromBracket),
+        color: baseDeepColor,
+        onPressed: () {
+          logOut();
+          _goToLogin(context);
+        });
 
     return AppBar(
       actions: <Widget>[
@@ -136,7 +140,6 @@ class _DashboardScreenState extends State<DashboardScreen>
                     color: baseDeepColor,
                   ),
                 ),
-                const SizedBox(width: 5),
               ],
             ),
           ],
@@ -154,7 +157,10 @@ class _DashboardScreenState extends State<DashboardScreen>
   }) {
     _loadingController!.forward();
     return RoundButton(
-      icon: Icon(icon, color: iconColor,),
+      icon: Icon(
+        icon,
+        color: iconColor,
+      ),
       label: label,
       loadingController: _loadingController,
       interval: Interval(
@@ -184,12 +190,7 @@ class _DashboardScreenState extends State<DashboardScreen>
             ),
           );
         } else if (identifier == 'task') {
-          _loadingController!.reverse();
-          await Future.delayed(Duration(milliseconds: 1300));
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => VideoMeetingPage()),
-          );
+        //IT'S AVAILABLE TO USE
         } else if (identifier == 'match') {
           _loadingController!.reverse();
           await Future.delayed(Duration(milliseconds: 1300));
@@ -220,7 +221,7 @@ class _DashboardScreenState extends State<DashboardScreen>
             MaterialPageRoute(
               builder: (context) => ScaffoldWidget(
                 title: 'Settings',
-                child: SettingsPage(), // Use SettingsPage widget
+                child: SettingsPage(),
               ),
             ),
           );
@@ -238,9 +239,8 @@ class _DashboardScreenState extends State<DashboardScreen>
     return GridView.count(
       padding: const EdgeInsets.symmetric(
         horizontal: 32.0,
-        vertical: 100,
       ),
-      childAspectRatio: .9,
+      childAspectRatio: 1,
       // crossAxisSpacing: 5,
       crossAxisCount: 3,
       children: [
@@ -301,7 +301,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           MaterialButton(
             materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
             color: Colors.red,
-            onPressed: ()  => _loadingController!.value == 0
+            onPressed: () => _loadingController!.value == 0
                 ? _loadingController!.forward()
                 : _loadingController!.reverse(),
             child: const Text('loading', style: textStyle),
@@ -309,6 +309,28 @@ class _DashboardScreenState extends State<DashboardScreen>
         ],
       ),
     );
+  }
+
+  Future<String?> isBeingCalled(String userId) async {
+    FirebaseFirestore db = FirebaseFirestore.instance;
+
+    var callSnapshot = await db
+        .collection('currentCalls')
+        .where('calleeId', isEqualTo: userId)
+        .get();
+
+    if (callSnapshot.docs.isNotEmpty) {
+      return callSnapshot.docs.first.id;
+    } else {
+      return null;
+    }
+  }
+
+  Future<void> _checkIfBeingCalled() async {
+    bool beingCalled = (await isBeingCalled(user!.uid)) as bool;
+    setState(() {
+      _isBeingCalled = beingCalled;
+    });
   }
 
   @override
@@ -328,15 +350,28 @@ class _DashboardScreenState extends State<DashboardScreen>
               children: <Widget>[
                 Column(
                   children: <Widget>[
-                    const SizedBox(height: 60),
+                    const SizedBox(height: 20),
                     Expanded(
                       flex: 5,
                       child: _buildHeader(theme),
                     ),
+                    ImagedButton(
+                        imagePath: _isBeingCalled ? "assets/callGreen.png" : "assets/callLightRed.png",
+                        buttonText: "YOUR TUTOR IS\nCALLING YOU",
+                        onTap: () async {
+                          _loadingController!.reverse();
+                          await Future.delayed(Duration(milliseconds: 1300));
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => VideoMeetingPage()),
+                          );
+                        },
+                    ),
+                    const SizedBox(height: 60),
                     Expanded(
-                      flex: 10,
+                      flex: 8,
                       child: _buildDashboardGrid(),
-                      ),
+                    ),
                   ],
                 ),
                 if (!kReleaseMode) _buildDebugButtons(),
@@ -358,25 +393,27 @@ class _DashboardScreenState extends State<DashboardScreen>
       // Check if the document exists
       if (userSnapshot.exists) {
         // Access the data from the document snapshot
-        Map<String, dynamic> userData = userSnapshot.data() as Map<String, dynamic>;
+        Map<String, dynamic> userData =
+            userSnapshot.data() as Map<String, dynamic>;
         return userData;
       } else {
-        // Document doesn't exist
         return null;
       }
     } catch (e) {
-      // Handle any errors
       print('Error retrieving user data: $e');
       return null;
     }
   }
 
   void gettUserData() async {
-    DocumentSnapshot userDoc = await FirebaseFirestore.instance.collection('users').doc(user?.uid).get();
-    Map<String, dynamic> userData = (userDoc.data() as Map<String, dynamic>) ?? {};
+    DocumentSnapshot userDoc = await FirebaseFirestore.instance
+        .collection('users')
+        .doc(user?.uid)
+        .get();
+    Map<String, dynamic> userData =
+        (userDoc.data() as Map<String, dynamic>) ?? {};
     setState(() {
-      _userData = userData; // Update user data in the state
+      _userData = userData;
     });
   }
 }
-

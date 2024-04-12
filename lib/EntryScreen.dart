@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'dashboard_screen.dart';
+import 'DashboardScreen.dart';
 import 'loginMainScreenFiles/constants.dart';
 import 'loginMainScreenFiles/login_screen.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';

@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_typing_uninitialized_variables, camel_case_types
 
 import 'package:flutter/material.dart';
-import 'package:turkify_bem/APPColors.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
 import '../themes/config.dart';
 
 ////////////////////////////////////////////////////////

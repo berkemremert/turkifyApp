@@ -1,4 +1,4 @@
-import 'listingPageFiles/presentation/pages/home/widgets/personDetails.dart';
+import '../listingPageFiles/presentation/pages/home/widgets/personDetails.dart';
 
 List<Person> persons = [
   Person(distance: 0.2,
