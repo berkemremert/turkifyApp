@@ -5,6 +5,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_webrtc/flutter_webrtc.dart';
+import '../DashboardScreen.dart';
+import '../loginMainScreenFiles/custom_route.dart';
 import 'signaling.dart';
 
 class VideoMeetingPage extends StatefulWidget {
@@ -90,20 +92,45 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
         .listen((snapshot) {
       if (snapshot.exists) {
         setState(() {
-          _calleeCameraOpened = snapshot.data()?['calleeCamera'];
-          _calleeMicOpened = snapshot.data()?['calleeMic'];
+          if(_isBeingCalled){
+            _cameraOpened = snapshot.data()?['callerCamera'];
+            _micOpened = snapshot.data()?['callerMic'];
+          }
+          else{
+            _calleeCameraOpened = snapshot.data()?['calleeCamera'];
+            _calleeMicOpened = snapshot.data()?['calleeMic'];
+          }
           _onCall(roomId!);
         });
+      }
+      else{
+        if(_isBeingCalled){
+          dispose();
+          Navigator.of(context).pushReplacement(
+            FadePageRoute(
+              builder: (context) => const DashboardScreen(),
+            ),
+          );
+        }
       }
     });
   }
 
   void _onCall(String roomId) async {
     FirebaseFirestore db = FirebaseFirestore.instance;
-    await db.collection('currentCalls').doc(roomId).update({
-      'callerCamera': _cameraOpened,
-      'callerMic' : _micOpened,
-    });
+    if(_isBeingCalled) {
+      await db.collection('currentCalls').doc(roomId).update({
+        'calleeCamera': _calleeCameraOpened,
+        'calleeMic': _calleeMicOpened,
+        'isActive' : true,
+      });
+    }
+    else{
+      await db.collection('currentCalls').doc(roomId).update({
+        'callerCamera': _cameraOpened,
+        'callerMic': _micOpened,
+      });
+    }
   }
 
   Future<String?> isBeingCalled(String userId) async {
@@ -129,6 +156,7 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
         await Future.delayed(Duration(seconds: 1));
         await signaling.joinRoom(roomIdLocal, _remoteRenderer);
         setState(() {
+          _isBeingCalled = true;
           roomId = roomIdLocal;
           _subscribeToCalls();
         });
@@ -154,7 +182,7 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: (_isBeingCalled ? _cameraOpened : _calleeCameraOpened)
+                      child: (_isBeingCalled ? _calleeCameraOpened : _cameraOpened)
                           ?
                       RTCVideoView(_localRenderer, mirror: true) :
                       Container(
@@ -180,7 +208,7 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: (_isBeingCalled ? _calleeCameraOpened : _cameraOpened)
+                      child: (_isBeingCalled ? _cameraOpened : _calleeCameraOpened)
                           ? RTCVideoView(_remoteRenderer)
                           : Center(
                         child: Text(
@@ -213,33 +241,55 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                   if(roomId != null)
                     IconButton(
                       onPressed: () async{
-                        if(_cameraOpened) {
-                          _cameraOpened = false;
-                          _onCall(roomId!);
-                        } else {
-                          _cameraOpened = true;
-                          _onCall(roomId!);
+                        if(_isBeingCalled){
+                          if (_calleeCameraOpened) {
+                            _calleeCameraOpened = false;
+                            _onCall(roomId!);
+                          } else {
+                            _calleeCameraOpened = true;
+                            _onCall(roomId!);
+                          }
+                        }
+                        else{
+                          if (_cameraOpened) {
+                            _cameraOpened = false;
+                            _onCall(roomId!);
+                          } else {
+                            _cameraOpened = true;
+                            _onCall(roomId!);
+                          }
                         }
                         setState(() {
                         });
                         },
-                      icon: _cameraOpened ? Icon(Icons.videocam) : Icon(Icons.videocam_off),
+                      icon: (_isBeingCalled ? _calleeCameraOpened : _cameraOpened) ? Icon(Icons.videocam) : Icon(Icons.videocam_off),
                       color: Colors.white,
                     ),
                   if(roomId != null)
                     IconButton(
                       onPressed: () async{
-                        if(_micOpened) {
-                          _micOpened = false;
-                          _onCall(roomId!);
-                        } else {
-                          _micOpened = true;
-                          _onCall(roomId!);
+                        if(_isBeingCalled) {
+                          if (_calleeMicOpened) {
+                            _calleeMicOpened = false;
+                            _onCall(roomId!);
+                          } else {
+                            _calleeMicOpened = true;
+                            _onCall(roomId!);
+                          }
+                        }
+                        else{
+                          if (_micOpened) {
+                            _micOpened = false;
+                            _onCall(roomId!);
+                          } else {
+                            _micOpened = true;
+                            _onCall(roomId!);
+                          }
                         }
                         setState(() {
                         });
                       },
-                      icon: _micOpened ? Icon(Icons.mic) : Icon(Icons.mic_off),
+                      icon: (_isBeingCalled ? _calleeMicOpened : _micOpened) ? Icon(Icons.mic) : Icon(Icons.mic_off),
                       color: Colors.white,
                     ),
                   if (!_isBeingCalled && roomId == null)
@@ -274,7 +324,17 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                       onPressed: () async {
                         signaling.hangUp(_localRenderer);
                         await FirebaseFirestore.instance.collection('currentCalls').doc(roomId).delete();
-                        Navigator.pop(context);
+                        if(_isBeingCalled){
+                          dispose();
+                          Navigator.of(context).pushReplacement(
+                            FadePageRoute(
+                              builder: (context) => const DashboardScreen(),
+                            ),
+                          );
+                        }
+                        else{
+                          Navigator.pop(context);
+                        }
                       },
                       icon: Icon(Icons.phone_disabled),
                       color: Colors.white,

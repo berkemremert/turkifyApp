@@ -1,26 +1,25 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:turkify_bem/chatScreenFiles/FriendsListScreenChat.dart';
-import 'package:turkify_bem/mainTools/APPColors.dart';
-import 'package:turkify_bem/mainTools/FriendsListScreen.dart';
-import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/chatScreenFiles/myChats.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
+import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
 import 'package:turkify_bem/videoMeetingFiles/FriendsListScreenVideoMeeting.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
 
-import 'filterPageFiles/FilterPage.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
 import 'cardSlidingScreenFiles/src/SwiperPage.dart';
+import 'filterPageFiles/FilterPage.dart';
 import 'listingPageFiles/listingScreen.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
 import 'loginMainScreenFiles/widgets/fade_in.dart';
 import 'loginMainScreenFiles/widgets/round_button.dart';
-import 'videoMeetingFiles/videoMeetingMain.dart';
 
 class DashboardScreen extends StatefulWidget {
   static const routeName = '/dashboard';
@@ -46,11 +45,14 @@ class _DashboardScreenState extends State<DashboardScreen>
   User? user = FirebaseAuth.instance.currentUser;
   Map<String, dynamic> _userData = {};
   bool _isBeingCalled = false;
+  StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _callStream;
 
   @override
   void initState() {
     super.initState();
     gettUserData();
+
+    _listenToCallField();
 
     _loadingController = AnimationController(
       vsync: this,
@@ -66,6 +68,24 @@ class _DashboardScreenState extends State<DashboardScreen>
     );
 
     _checkIfBeingCalled();
+  }
+
+  Future<void> _listenToCallField() async {
+    _callStream = FirebaseFirestore.instance
+        .collection('currentCalls')
+        .where('calleeId', isEqualTo: user!.uid)
+        .snapshots()
+        .listen((snapshot) {
+      for (QueryDocumentSnapshot<Map<String, dynamic>> doc in snapshot.docs) {
+        if (doc.exists) {
+          _isBeingCalled = true;
+          setState(() {});
+        } else {
+          _isBeingCalled = false;
+          setState(() {});
+        }
+      }
+    });
   }
 
   @override
@@ -343,9 +363,8 @@ class _DashboardScreenState extends State<DashboardScreen>
 
   Future<void> _checkIfBeingCalled() async {
     bool beingCalled = (await isBeingCalled(user!.uid)) as bool;
-    setState(() {
-      _isBeingCalled = beingCalled;
-    });
+    _isBeingCalled = beingCalled;
+    setState(() {});
   }
 
   @override
@@ -371,11 +390,21 @@ class _DashboardScreenState extends State<DashboardScreen>
                       child: _buildHeader(theme),
                     ),
                     ImagedButton(
-                        imagePath: _isBeingCalled ? "assets/callGreen.png" : "assets/callLightRed.png",
-                        buttonText: _isBeingCalled ? "CALL" : "NO CALL",
-                        onTap: () async {
-                          _loadingController!.reverse();
-                          await Future.delayed(Duration(milliseconds: 1300));
+                      imagePath: _isBeingCalled
+                          ? "assets/callGreen.png"
+                          : "assets/callLightRed.png",
+                      buttonText: _isBeingCalled ? "CALL" : "NO CALL",
+                      onTap: () async {
+                        _loadingController!.reverse();
+                        await Future.delayed(Duration(milliseconds: 1300));
+                        if (_isBeingCalled) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => VideoMeetingPage(calleeId: user!.uid),
+                            ),
+                          );
+                        } else {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -385,7 +414,8 @@ class _DashboardScreenState extends State<DashboardScreen>
                               ),
                             ),
                           );
-                        },
+                        }
+                      },
                     ),
                     const SizedBox(height: 60),
                     Expanded(
