@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
+import 'package:turkify_bem/mainTools/FriendsListScreen.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/chatScreenFiles/myChats.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
@@ -190,7 +191,17 @@ class _DashboardScreenState extends State<DashboardScreen>
             ),
           );
         } else if (identifier == 'task') {
-        //IT'S AVAILABLE TO USE
+          _loadingController!.reverse();
+          await Future.delayed(Duration(milliseconds: 1300));
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ScaffoldWidget(
+                child: FriendsListScreen(),
+                title: "",
+              ),
+            ),
+          );
         } else if (identifier == 'match') {
           _loadingController!.reverse();
           await Future.delayed(Duration(milliseconds: 1300));
@@ -356,7 +367,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                       child: _buildHeader(theme),
                     ),
                     ImagedButton(
-                        imagePath: _isBeingCalled ? "assets/callGreen.png" : "assets/callGrey.png",
+                        imagePath: _isBeingCalled ? "assets/callGreen.png" : "assets/callLightRed.png",
                         buttonText: _isBeingCalled ? "CALL" : "NO CALL",
                         onTap: () async {
                           _loadingController!.reverse();

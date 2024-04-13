@@ -12,7 +12,6 @@ import 'package:flutter/widgets.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/PermCheckers.dart';
-import 'package:turkify_bem/mainTools/constLinks.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({Key? key}) : super(key: key);
@@ -27,13 +26,22 @@ class _SettingsPageState extends State<SettingsPage> {
   final FirebaseStorage _storage = FirebaseStorage.instance;
   final ImagePicker _picker = ImagePicker();
   String? profilePictureUrl;
-  Map<String, dynamic> _userData = {}; // To store user data
+  Map<String, dynamic> _userData = {};
 
   @override
   void initState(){
     super.initState();
-    profilePictureUrl = user?.photoURL;
-    getUserData();
+    getUserDataa();
+  }
+
+  void getUserDataa() async {
+    User? currentUser = _auth.currentUser;
+    if (currentUser != null) {
+      DocumentSnapshot<Map<String, dynamic>> userSnapshot = await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).get();
+      setState(() {
+        profilePictureUrl = userSnapshot.data()?['profileImageUrl'];
+      });
+    }
   }
 
   @override
@@ -48,16 +56,15 @@ class _SettingsPageState extends State<SettingsPage> {
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.width - 200,
               decoration: BoxDecoration(
-                shape: BoxShape.circle, // Make the container a circle
+                shape: BoxShape.circle,
                 image: DecorationImage(
-                  fit: BoxFit.contain, // Ensure the photo fits within the circular area
-                  alignment: Alignment.center, // Center the photo within the circular area
-                  image: NetworkImage(
-                    profilePictureUrl ?? profileDefault,
-                  ),
+                  fit: BoxFit.contain,
+                  alignment: Alignment.center,
+                  image: profilePictureUrl != null ?
+                  NetworkImage(profilePictureUrl!)
+                        : AssetImage('assets/defaultProfilePicture.jpeg') as ImageProvider<Object>,
                 ),
               ),
-              // Provide a key to the Container for updating the image
               key: ValueKey(profilePictureUrl),
             ),
 
@@ -184,11 +191,9 @@ class _SettingsPageState extends State<SettingsPage> {
   Future<String?> updateProfilePicture(BuildContext context) async {
     try {
       final ImagePicker _picker = ImagePicker();
-      // Pick image from gallery
       XFile? pickedFile = await _picker.pickImage(source: ImageSource.gallery);
       if (pickedFile == null) return null;
 
-      // Display the selected image for preview
       File imageFile = File(pickedFile.path);
       String? imageUrl = await showDialog<String?>(
         context: context,
@@ -232,10 +237,8 @@ class _SettingsPageState extends State<SettingsPage> {
 
   Future<String?> uploadAndCropImage(File imageFile) async {
     try {
-      // Load the image
       ui.Image? image = await loadImage(imageFile);
       if (image != null) {
-        // Crop the image
         int size = image.width < image.height ? image.width : image.height;
         ui.Rect square = ui.Rect.fromCenter(
           center: Offset(image.width / 2, image.height / 2),
@@ -256,6 +259,11 @@ class _SettingsPageState extends State<SettingsPage> {
 
           // Get download URL of uploaded image
           String imageUrl = await snapshot.ref.getDownloadURL();
+
+          await FirebaseFirestore.instance.collection('users').doc(user?.uid).update({
+            'profileImageUrl': imageUrl,
+          });
+
           return imageUrl;
         }
       }
