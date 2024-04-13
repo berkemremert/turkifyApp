@@ -1,13 +1,16 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_webrtc/flutter_webrtc.dart';
 import 'signaling.dart';
 
 class VideoMeetingPage extends StatefulWidget {
-  final String userId;
+  final String calleeId;
 
-  VideoMeetingPage({Key? key, required this.userId}) : super(key: key);
+  VideoMeetingPage({Key? key, required this.calleeId}) : super(key: key);
 
   @override
   _VideoMeetingPageState createState() => _VideoMeetingPageState();
@@ -19,11 +22,16 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
   RTCVideoRenderer _localRenderer = RTCVideoRenderer();
   RTCVideoRenderer _remoteRenderer = RTCVideoRenderer();
   String? roomId;
-  TextEditingController textEditingController =
-  TextEditingController(text: '');
+  late StreamSubscription<DocumentSnapshot> _subscription;
+
+  bool _isTutor = false;
+  bool _calleeCameraOpened = false;
+  bool _calleeMicOpened = false;
 
   bool _cameraOpened = false;
+  bool _micOpened = false;
   String? userId;
+  bool _isBeingCalled = false;
 
   @override
   void initState() {
@@ -32,14 +40,31 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
 
     _getCurrentUserId();
 
+    _isTutorCheck();
+
     signaling.onAddRemoteStream = ((stream) {
       _remoteRenderer.srcObject = stream;
       setState(() {});
     });
 
+    signaling.openUserMedia(_localRenderer, _remoteRenderer);
+
     _checkIfBeingCalled();
 
+    _subscribeToCalls();
+
     super.initState();
+  }
+
+  Future<void> _isTutorCheck() async{
+    FirebaseFirestore db = FirebaseFirestore.instance;
+
+    DocumentSnapshot<Map<String, dynamic>> snapshot = await db
+        .collection('users')
+        .doc(userId)
+        .get();
+
+    _isTutor = snapshot.data()?['isTutor'];
   }
 
   Future<void> _getCurrentUserId() async {
@@ -53,7 +78,32 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
   void dispose() {
     _localRenderer.dispose();
     _remoteRenderer.dispose();
+    _subscription.cancel();
     super.dispose();
+  }
+
+  Future<void> _subscribeToCalls() async {
+    _subscription = FirebaseFirestore.instance
+        .collection('currentCalls')
+        .doc(roomId)
+        .snapshots()
+        .listen((snapshot) {
+      if (snapshot.exists) {
+        setState(() {
+          _calleeCameraOpened = snapshot.data()?['calleeCamera'];
+          _calleeMicOpened = snapshot.data()?['calleeMic'];
+          _onCall(roomId!);
+        });
+      }
+    });
+  }
+
+  void _onCall(String roomId) async {
+    FirebaseFirestore db = FirebaseFirestore.instance;
+    await db.collection('currentCalls').doc(roomId).update({
+      'callerCamera': _cameraOpened,
+      'callerMic' : _micOpened,
+    });
   }
 
   Future<String?> isBeingCalled(String userId) async {
@@ -73,14 +123,14 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
 
   Future<void> _checkIfBeingCalled() async {
     if (userId != null) {
-      String? roomId = await isBeingCalled(userId!);
-      if (roomId != null) {
+      String? roomIdLocal = await isBeingCalled(userId!);
+      if (roomIdLocal != null) {
         signaling.openUserMedia(_localRenderer, _remoteRenderer);
         await Future.delayed(Duration(seconds: 1));
-        await signaling.joinRoom(roomId, _remoteRenderer);
-        textEditingController.text = roomId;
+        await signaling.joinRoom(roomIdLocal, _remoteRenderer);
         setState(() {
-          _cameraOpened = true;
+          roomId = roomIdLocal;
+          _subscribeToCalls();
         });
       }
     }
@@ -89,14 +139,10 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Video Meeting Page Turkify"),
-        elevation: 5,
-      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          SizedBox(height: 8),
+          SizedBox(height: 40),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -106,9 +152,26 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.grey), // Add border
+                        border: Border.all(color: Colors.grey),
                       ),
-                      child: RTCVideoView(_localRenderer, mirror: true),
+                      child: (_isBeingCalled ? _cameraOpened : _calleeCameraOpened)
+                          ?
+                      RTCVideoView(_localRenderer, mirror: true) :
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            'Your camera\nis off',
+                            style: TextStyle(
+                              fontSize: 25,
+                              color: Colors.grey,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                   SizedBox(width: 8),
@@ -117,37 +180,27 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey),
                       ),
-                      child: RTCVideoView(_remoteRenderer),
+                      child: (_isBeingCalled ? _calleeCameraOpened : _cameraOpened)
+                          ? RTCVideoView(_remoteRenderer)
+                          : Center(
+                        child: Text(
+                          _isTutor ?
+                          'Student\'s camera\nis off' :
+                          'Tutor\'s camera\nis off',
+                          style: TextStyle(
+                            fontSize: 25,
+                            color: Colors.grey,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
                     ),
                   ),
                 ],
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "Join the following Room: ",
-                  style: TextStyle(fontSize: 18),
-                ),
-                SizedBox(width: 8),
-                Flexible(
-                  child: TextFormField(
-                    controller: textEditingController,
-                    style: TextStyle(fontSize: 18),
-                    decoration: InputDecoration(
-                      contentPadding: EdgeInsets.symmetric(vertical: 16),
-                    ),
-                  ),
-                )
-              ],
-            ),
-          ),
           SizedBox(height: 8),
-
           Positioned(
             bottom: 0,
             left: 0,
@@ -157,28 +210,55 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  IconButton(
-                    onPressed: () async{
-                      signaling.openUserMedia(_localRenderer, _remoteRenderer);
-                      await Future.delayed(Duration(seconds: 1));
-                      setState(() {
-                        _cameraOpened = true;
-                      });
+                  if(roomId != null)
+                    IconButton(
+                      onPressed: () async{
+                        if(_cameraOpened) {
+                          _cameraOpened = false;
+                          _onCall(roomId!);
+                        } else {
+                          _cameraOpened = true;
+                          _onCall(roomId!);
+                        }
+                        setState(() {
+                        });
+                        },
+                      icon: _cameraOpened ? Icon(Icons.videocam) : Icon(Icons.videocam_off),
+                      color: Colors.white,
+                    ),
+                  if(roomId != null)
+                    IconButton(
+                      onPressed: () async{
+                        if(_micOpened) {
+                          _micOpened = false;
+                          _onCall(roomId!);
+                        } else {
+                          _micOpened = true;
+                          _onCall(roomId!);
+                        }
+                        setState(() {
+                        });
                       },
-                    icon: Icon(Icons.videocam),
-                    color: Colors.white,
-                  ),
-                  IconButton(
-                    onPressed: () async {
-                      roomId = await signaling.createRoom(
-                        _remoteRenderer, userId!, "fMY0J7iFHydYK9yf2lqAx2Ue4gn1",
-                      );
-                      textEditingController.text = roomId!;
-                      setState(() {});
-                    },
-                    icon: Icon(Icons.phone),
-                    color: Colors.white,
-                  ),
+                      icon: _micOpened ? Icon(Icons.mic) : Icon(Icons.mic_off),
+                      color: Colors.white,
+                    ),
+                  if (!_isBeingCalled && roomId == null)
+                    IconButton(
+                      onPressed: () async {
+                        roomId = await signaling.createRoom(
+                          _remoteRenderer,
+                          userId!,
+                          _cameraOpened,
+                          _micOpened,
+                          widget.calleeId,
+                        );
+                        setState(() {
+                          _subscribeToCalls();
+                        });
+                      },
+                      icon: Icon(Icons.phone),
+                      color: Colors.white,
+                    ),
                   // IconButton(
                   //   onPressed: () {
                   //     signaling.joinRoom(
@@ -189,15 +269,16 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                   //   icon: Icon(Icons.join_full),
                   //   color: Colors.white,
                   // ),
-                  IconButton(
-                    onPressed: () async {
-                      signaling.hangUp(_localRenderer);
-                      await FirebaseFirestore.instance.collection('currentCalls').doc(roomId).delete();
-                      Navigator.pop(context);
-                    },
-                    icon: Icon(Icons.phone_disabled),
-                    color: Colors.white,
-                  ),
+                  if(roomId != null)
+                    IconButton(
+                      onPressed: () async {
+                        signaling.hangUp(_localRenderer);
+                        await FirebaseFirestore.instance.collection('currentCalls').doc(roomId).delete();
+                        Navigator.pop(context);
+                      },
+                      icon: Icon(Icons.phone_disabled),
+                      color: Colors.white,
+                    ),
                 ],
               ),
             ),

@@ -4,11 +4,13 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:turkify_bem/chatScreenFiles/FriendsListScreenChat.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/FriendsListScreen.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/chatScreenFiles/myChats.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
+import 'package:turkify_bem/videoMeetingFiles/FriendsListScreenVideoMeeting.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
 
 import 'filterPageFiles/FilterPage.dart';
@@ -376,7 +378,12 @@ class _DashboardScreenState extends State<DashboardScreen>
                           await Future.delayed(Duration(milliseconds: 1300));
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => FriendsListScreen()),
+                            MaterialPageRoute(
+                              builder: (context) => ScaffoldWidget(
+                                title: "",
+                                child: FriendsListScreenVideoMeeting(),
+                              ),
+                            ),
                           );
                         },
                     ),

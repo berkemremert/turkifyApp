@@ -27,14 +27,21 @@ class Signaling {
   Future<String> createRoom(
       RTCVideoRenderer remoteRenderer,
       String userId,
+      bool callerCamera,
+      bool callerMic,
       String calleeId,
       ) async {
     FirebaseFirestore db = FirebaseFirestore.instance;
     DocumentReference roomRef = db.collection('rooms').doc();
 
     await db.collection('currentCalls').doc(roomRef.id).set({
+      'isActive' : false,
       'callerId': userId,
+      'callerCamera' : callerCamera,
+      'callerMic' : callerMic,
       'calleeId': calleeId,
+      'calleeCamera' : false,
+      'calleeMic' : false,
     });
 
     print('Create PeerConnection with configuration: $configuration');
@@ -196,7 +203,20 @@ class Signaling {
     RTCVideoRenderer remoteVideo,
   ) async {
     var stream = await navigator.mediaDevices
-        .getUserMedia({'video': true, 'audio': false});
+        .getUserMedia({'video': true, 'audio': true});
+
+    localVideo.srcObject = stream;
+    localStream = stream;
+
+    remoteVideo.srcObject = await createLocalMediaStream('key');
+  }
+
+  Future<void> closeUserMedia(
+      RTCVideoRenderer localVideo,
+      RTCVideoRenderer remoteVideo,
+      ) async {
+    var stream = await navigator.mediaDevices
+        .getUserMedia({'video': false, 'audio': false});
 
     localVideo.srcObject = stream;
     localStream = stream;
