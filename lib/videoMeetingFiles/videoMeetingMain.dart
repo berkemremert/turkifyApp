@@ -5,7 +5,9 @@ import 'package:flutter_webrtc/flutter_webrtc.dart';
 import 'signaling.dart';
 
 class VideoMeetingPage extends StatefulWidget {
-  VideoMeetingPage({Key? key}) : super(key: key);
+  final String userId;
+
+  VideoMeetingPage({Key? key, required this.userId}) : super(key: key);
 
   @override
   _VideoMeetingPageState createState() => _VideoMeetingPageState();

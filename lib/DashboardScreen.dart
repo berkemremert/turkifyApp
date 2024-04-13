@@ -203,17 +203,7 @@ class _DashboardScreenState extends State<DashboardScreen>
             ),
           );
         } else if (identifier == 'task') {
-          _loadingController!.reverse();
-          await Future.delayed(Duration(milliseconds: 1300));
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => ScaffoldWidget(
-                child: FriendsListScreen(),
-                title: "",
-              ),
-            ),
-          );
+          // IT'S AVAILABLE
         } else if (identifier == 'match') {
           _loadingController!.reverse();
           await Future.delayed(Duration(milliseconds: 1300));
@@ -386,7 +376,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                           await Future.delayed(Duration(milliseconds: 1300));
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => VideoMeetingPage()),
+                            MaterialPageRoute(builder: (context) => FriendsListScreen()),
                           );
                         },
                     ),

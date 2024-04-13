@@ -44,7 +44,10 @@ class _ChatPageState extends State<ChatPage> {
       _messages.insert(0, message);
     });
 
-    FirebaseFirestore.instance.collection('messages').add(message.toJson());
+    // FirebaseFirestore.instance.collection('messages').add(message.toJson());
+    // FirebaseFirestore.instance.collection('meetingTimes').add("bırakıyom");
+    // TODO:
+  //   BANA TARIHLERI HANGI FORMATTA KAYDETTIIGINI SOYLEMEYI UNUTMA!!!!
   }
 
   void _handleAttachmentPressed() {

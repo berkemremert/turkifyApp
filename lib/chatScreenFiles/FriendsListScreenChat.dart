@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-class FriendsListScreen extends StatefulWidget {
+class FriendsListScreenChat extends StatefulWidget {
   @override
-  _FriendsListScreenState createState() => _FriendsListScreenState();
+  _FriendsListScreenChatState createState() => _FriendsListScreenChatState();
 }
 
-class _FriendsListScreenState extends State<FriendsListScreen> {
+class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
