@@ -133,12 +133,24 @@ class _DashboardScreenState extends State<DashboardScreen>
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text(
-                  '$firstName\n$lastName',
-                  textAlign: TextAlign.center,
-                  style: theme.textTheme.displaySmall!.copyWith(
-                    fontWeight: FontWeight.w500,
-                    color: baseDeepColor,
+                Container(
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.05),
+                        spreadRadius: 5,
+                        blurRadius: 30,
+                        offset: Offset(0, 2),
+                      ),
+                    ],
+                  ),
+                  child: Text(
+                    '$firstName\n$lastName',
+                    textAlign: TextAlign.center,
+                    style: theme.textTheme.displaySmall!.copyWith(
+                      fontWeight: FontWeight.w500,
+                      color: baseDeepColor,
+                    ),
                   ),
                 ),
               ],

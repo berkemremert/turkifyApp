@@ -18,44 +18,66 @@ class ImagedButton extends StatelessWidget {
       onTap: onTap,
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 55.0),
-        child: Stack(
-          children: [
-            AspectRatio(
-              aspectRatio: 5 / 2,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.red,
-                  borderRadius: BorderRadius.circular(20),
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage(imagePath),
+        child: Container(
+          decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.5),
+                spreadRadius: 2,
+                blurRadius: 5,
+                offset: Offset(0, 2),
+              ),
+            ],
+            borderRadius: BorderRadius.circular(20),
+            color: Colors.black.withOpacity(0.1),
+          ),
+          child: Stack(
+            children: [
+              AspectRatio(
+                aspectRatio: 5 / 2,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(20),
+                    image: DecorationImage(
+                      colorFilter: ColorFilter.mode(
+                        Colors.black.withOpacity(0.15),
+                        BlendMode.darken,
+                      ),
+                      fit: BoxFit.cover,
+                      image: AssetImage(imagePath),
+                    ),
                   ),
                 ),
               ),
-            ),
-            Positioned.fill(
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.3),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-              ),
-            ),
-            Positioned.fill(
-              child: Center(
-                child: Text(
-                  buttonText,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'Roboto',
-                    color: Colors.white,
-                    fontSize: 36,
-                    fontWeight: FontWeight.bold,
+              Positioned.fill(
+                child: Center(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.05),
+                          spreadRadius: 10,
+                          blurRadius: 7,
+                          offset: Offset(0, 2),
+                        ),
+                      ],
+                    ),
+                    child: Text(
+                      buttonText,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontFamily: 'Roboto',
+                        color: Colors.white,
+                        fontSize: 36,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
