@@ -35,7 +35,7 @@ const double kConfig_LabelSmall_FontSize = 16.0;
 
 // const double kConfig_BodyLarge_FontSize = 16.0;
 const double kConfig_BodyMedium_FontSize = kDefaultFontSize;
-const double kConfig_BodySmall_FontSize = kDefaultFontSize;
+const double kConfig_BodySmall_FontSize = 14;
 
 // const double kConfig_Button_FontSize = kDefaultFontSize;
 

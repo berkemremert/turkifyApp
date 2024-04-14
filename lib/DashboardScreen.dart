@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'dart:math';
+import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -45,6 +47,9 @@ class _DashboardScreenState extends State<DashboardScreen>
   User? user = FirebaseAuth.instance.currentUser;
   Map<String, dynamic> _userData = {};
   bool _isBeingCalled = false;
+  Map<String, dynamic> _callerData = {};
+  String _callerName = "";
+  bool _isLoadingCall = true;
   StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _callStream;
 
   @override
@@ -76,15 +81,12 @@ class _DashboardScreenState extends State<DashboardScreen>
         .where('calleeId', isEqualTo: user!.uid)
         .snapshots()
         .listen((snapshot) {
-      for (QueryDocumentSnapshot<Map<String, dynamic>> doc in snapshot.docs) {
-        if (doc.exists) {
-          _isBeingCalled = true;
-          setState(() {});
-        } else {
-          _isBeingCalled = false;
-          setState(() {});
-        }
+      if (snapshot.docs.isNotEmpty) {
+        _isBeingCalled = true;
+      } else {
+        _isBeingCalled = false;
       }
+      setState(() {});
     });
   }
 
@@ -142,6 +144,29 @@ class _DashboardScreenState extends State<DashboardScreen>
     String firstName = _userData['name'] ?? "Name";
     String lastName = _userData['surname'] ?? "Surname";
 
+    DateTime now = DateTime.now();
+    int currentHour = now.hour;
+
+    int index = 0;
+    if (currentHour >= 6 && currentHour < 12) {
+      index = 0;
+    } else if(currentHour >= 12 && currentHour < 14.30){
+      index = 1;
+    } else if(currentHour >= 14.30 && currentHour < 23){
+      index = 2;
+    } else {
+      index = 3;
+    }
+
+    List<String> welcomingWords = [
+      'Good morning',
+      'Good afternoon',
+      'Good evening',
+      'Good night',
+    ];
+
+    String welcoming = welcomingWords[index];
+
     return ScaleTransition(
       scale: _headerScaleAnimation,
       child: FadeIn(
@@ -166,13 +191,28 @@ class _DashboardScreenState extends State<DashboardScreen>
                       ),
                     ],
                   ),
-                  child: Text(
-                    '$firstName\n$lastName',
-                    textAlign: TextAlign.center,
-                    style: theme.textTheme.displaySmall!.copyWith(
-                      fontWeight: FontWeight.w500,
-                      color: baseDeepColor,
-                    ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        welcoming,
+                        textAlign: TextAlign.center,
+                        style: theme.textTheme.displaySmall!.copyWith(
+                          fontWeight: FontWeight.w300,
+                          color: darkRed,
+                          fontSize: 25,
+                        ),
+                      ),
+                      Text(
+                        firstName,
+                        textAlign: TextAlign.center,
+                        style: theme.textTheme.displaySmall!.copyWith(
+                          fontWeight: FontWeight.w400,
+                          color: baseDeepColor,
+                          fontSize: 40,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -325,27 +365,6 @@ class _DashboardScreenState extends State<DashboardScreen>
     );
   }
 
-  Widget _buildDebugButtons() {
-    const textStyle = TextStyle(fontSize: 12, color: Colors.white);
-
-    return Positioned(
-      bottom: 0,
-      right: 0,
-      child: Row(
-        children: <Widget>[
-          MaterialButton(
-            materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-            color: Colors.red,
-            onPressed: () => _loadingController!.value == 0
-                ? _loadingController!.forward()
-                : _loadingController!.reverse(),
-            child: const Text('loading', style: textStyle),
-          ),
-        ],
-      ),
-    );
-  }
-
   Future<String?> isBeingCalled(String userId) async {
     FirebaseFirestore db = FirebaseFirestore.instance;
 
@@ -355,8 +374,20 @@ class _DashboardScreenState extends State<DashboardScreen>
         .get();
 
     if (callSnapshot.docs.isNotEmpty) {
+      for (var doc in callSnapshot.docs) {
+        var callerId = doc.data()['callerId'];
+        var callerData = await getUserData(callerId);
+        setState(() {
+          _callerData = callerData as Map<String, dynamic>;
+          _callerName = _callerData['name'];
+          _isLoadingCall = false;
+        });
+      }
       return callSnapshot.docs.first.id;
     } else {
+      setState(() {
+        _isLoadingCall = false;
+      });
       return null;
     }
   }
@@ -385,15 +416,46 @@ class _DashboardScreenState extends State<DashboardScreen>
                 Column(
                   children: <Widget>[
                     const SizedBox(height: 20),
-                    Expanded(
-                      flex: 5,
-                      child: _buildHeader(theme),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.25,
+                      child: Stack(
+                        children: [
+                          _buildHeader(theme),
+                          Positioned.fill(
+                            child: Container(
+                              child: BackdropFilter(
+                                filter: ImageFilter.blur(sigmaX: _isBeingCalled ? 5.0 : 0.0, sigmaY:  _isBeingCalled ? 5.0 : 0.0), // Adjust sigma values for blur intensity
+                                child: Container(
+                                  color: Colors.transparent,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                    ImagedButton(
+                    const SizedBox(height: 10),
+                    _isLoadingCall ?
+                    SizedBox(
+                      width: 100,
+                      height: 113,
+                      child: Transform.scale(
+                        scale: 0.3,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 13,
+                          valueColor: AlwaysStoppedAnimation<Color>(baseDeepColor),
+                        ),
+                      ),
+                    )
+              :
+                    _buildImagedButton(
                       imagePath: _isBeingCalled
                           ? "assets/callGreen.png"
                           : "assets/callLightRed.png",
-                      buttonText: _isBeingCalled ? "CALL" : "NO CALL",
+                      buttonText: _isBeingCalled ?
+                      "$_callerName\nis calling you"
+                          :
+                      "NO CALL",
                       onTap: () async {
                         _loadingController!.reverse();
                         await Future.delayed(Duration(milliseconds: 1300));
@@ -416,15 +478,27 @@ class _DashboardScreenState extends State<DashboardScreen>
                           );
                         }
                       },
+                      animationController: _loadingController!,
                     ),
                     const SizedBox(height: 60),
-                    Expanded(
-                      flex: 8,
-                      child: _buildDashboardGrid(),
+                    Stack(
+                      children: [
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.25,
+                          child: _buildDashboardGrid(),
+                        ),
+                        ClipRect(
+                          child: BackdropFilter(
+                            filter: ImageFilter.blur(sigmaX: _isBeingCalled ? 5 : 0.0, sigmaY: _isBeingCalled ? 5 : 0.0),
+                            child: Container(
+                              height: MediaQuery.of(context).size.height * 0.25,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
-                if (!kReleaseMode) _buildDebugButtons(),
               ],
             ),
           ),
@@ -440,9 +514,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           .doc(documentId)
           .get();
 
-      // Check if the document exists
       if (userSnapshot.exists) {
-        // Access the data from the document snapshot
         Map<String, dynamic> userData =
             userSnapshot.data() as Map<String, dynamic>;
         return userData;
@@ -465,5 +537,25 @@ class _DashboardScreenState extends State<DashboardScreen>
     setState(() {
       _userData = userData;
     });
+  }
+
+  Widget _buildImagedButton({
+    required String imagePath,
+    required String buttonText,
+    required void Function() onTap,
+    required AnimationController animationController,
+  }) {
+    return FadeIn(
+      controller: animationController,
+      curve: headerAniInterval,
+      fadeDirection: FadeDirection.bottomToTop,
+      offset: .5,
+      child: ImagedButton(
+        imagePath: imagePath,
+        buttonText: buttonText,
+        onTap: onTap,
+        isCall: _isBeingCalled,
+      ),
+    );
   }
 }

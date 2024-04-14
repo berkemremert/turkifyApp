@@ -8,6 +8,7 @@ import 'DashboardScreen.dart';
 import 'loginMainScreenFiles/constants.dart';
 import 'loginMainScreenFiles/login_screen.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
+import 'mainTools/APPColors.dart';
 
 class EntryScreen extends StatelessWidget {
   const EntryScreen({super.key});
@@ -57,7 +58,9 @@ class EntryScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 16),
-                  CircularProgressIndicator(),
+                  CircularProgressIndicator(
+                    valueColor: AlwaysStoppedAnimation<Color>(Colors.red),
+                  ),
                   SizedBox(height: 16),
                   Text(
                     'Logging In...',

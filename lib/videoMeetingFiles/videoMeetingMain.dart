@@ -25,15 +25,14 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
   RTCVideoRenderer _remoteRenderer = RTCVideoRenderer();
   String? roomId;
   late StreamSubscription<DocumentSnapshot> _subscription;
-
   bool _isTutor = false;
   bool _calleeCameraOpened = false;
   bool _calleeMicOpened = false;
-
   bool _cameraOpened = false;
   bool _micOpened = false;
   String? userId;
   bool _isBeingCalled = false;
+  bool _isCheckingNow = true;
 
   @override
   void initState() {
@@ -51,7 +50,11 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
 
     signaling.openUserMedia(_localRenderer, _remoteRenderer);
 
-    _checkIfBeingCalled();
+    _checkIfBeingCalled().then((_) {
+      setState(() {
+        _isCheckingNow = false;
+      });
+    });
 
     _subscribeToCalls();
 
@@ -105,6 +108,7 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
       }
       else{
         if(_isBeingCalled){
+          signaling.hangUp(_localRenderer);
           dispose();
           Navigator.of(context).pushReplacement(
             FadePageRoute(
@@ -149,6 +153,7 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
   }
 
   Future<void> _checkIfBeingCalled() async {
+    await Future.delayed(Duration(seconds: 1));
     if (userId != null) {
       String? roomIdLocal = await isBeingCalled(userId!);
       if (roomIdLocal != null) {
@@ -166,185 +171,204 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          SizedBox(height: 40),
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Expanded(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.grey),
-                      ),
-                      child: (_isBeingCalled ? _calleeCameraOpened : _cameraOpened)
-                          ?
-                      RTCVideoView(_localRenderer, mirror: true) :
-                      Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.grey),
-                        ),
-                        child: const Center(
-                          child: Text(
-                            'Your camera\nis off',
-                            style: TextStyle(
-                              fontSize: 25,
-                              color: Colors.grey,
+    return WillPopScope(
+        onWillPop: () async {
+          if(_isBeingCalled || roomId != null)
+            return false;
+          else {
+            signaling.hangUp(_localRenderer);
+            dispose();
+            return true;
+          }
+        },
+        child: _isCheckingNow ?
+        Container(
+          color: Colors.white,
+          alignment: Alignment.center,
+          child: CircularProgressIndicator(), // Show loading indicator
+        ) :
+        Scaffold(
+          body: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              SizedBox(height: 40),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey),
+                          ),
+                          child: (_isBeingCalled ? _calleeCameraOpened : _cameraOpened)
+                              ?
+                          RTCVideoView(_localRenderer, mirror: true) :
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey),
                             ),
-                            textAlign: TextAlign.center,
+                            child: const Center(
+                              child: Text(
+                                'Your camera\nis off',
+                                style: TextStyle(
+                                  fontSize: 25,
+                                  color: Colors.grey,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-                  SizedBox(width: 8),
-                  Expanded(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.grey),
-                      ),
-                      child: (_isBeingCalled ? _cameraOpened : _calleeCameraOpened)
-                          ? RTCVideoView(_remoteRenderer)
-                          : Center(
-                        child: Text(
-                          _isTutor ?
-                          'Student\'s camera\nis off' :
-                          'Tutor\'s camera\nis off',
-                          style: TextStyle(
-                            fontSize: 25,
-                            color: Colors.grey,
+                      SizedBox(width: 8),
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey),
                           ),
-                          textAlign: TextAlign.center,
+                          child: (_isBeingCalled ? _cameraOpened : _calleeCameraOpened)
+                              ? RTCVideoView(_remoteRenderer)
+                              : Center(
+                            child: Text(
+                              _isTutor ?
+                              'Student\'s camera\nis off' :
+                              'Tutor\'s camera\nis off',
+                              style: TextStyle(
+                                fontSize: 25,
+                                color: Colors.grey,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
+                    ],
                   ),
-                ],
+                ),
               ),
-            ),
-          ),
-          SizedBox(height: 8),
-          Positioned(
-            bottom: 0,
-            left: 0,
-            right: 0,
-            child: Container(
-              color: Colors.black,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  if(roomId != null)
-                    IconButton(
-                      onPressed: () async{
-                        if(_isBeingCalled){
-                          if (_calleeCameraOpened) {
-                            _calleeCameraOpened = false;
-                            _onCall(roomId!);
-                          } else {
-                            _calleeCameraOpened = true;
-                            _onCall(roomId!);
-                          }
-                        }
-                        else{
-                          if (_cameraOpened) {
-                            _cameraOpened = false;
-                            _onCall(roomId!);
-                          } else {
-                            _cameraOpened = true;
-                            _onCall(roomId!);
-                          }
-                        }
-                        setState(() {
-                        });
-                        },
-                      icon: (_isBeingCalled ? _calleeCameraOpened : _cameraOpened) ? Icon(Icons.videocam) : Icon(Icons.videocam_off),
-                      color: Colors.white,
-                    ),
-                  if(roomId != null)
-                    IconButton(
-                      onPressed: () async{
-                        if(_isBeingCalled) {
-                          if (_calleeMicOpened) {
-                            _calleeMicOpened = false;
-                            _onCall(roomId!);
-                          } else {
-                            _calleeMicOpened = true;
-                            _onCall(roomId!);
-                          }
-                        }
-                        else{
-                          if (_micOpened) {
-                            _micOpened = false;
-                            _onCall(roomId!);
-                          } else {
-                            _micOpened = true;
-                            _onCall(roomId!);
-                          }
-                        }
-                        setState(() {
-                        });
-                      },
-                      icon: (_isBeingCalled ? _calleeMicOpened : _micOpened) ? Icon(Icons.mic) : Icon(Icons.mic_off),
-                      color: Colors.white,
-                    ),
-                  if (!_isBeingCalled && roomId == null)
-                    IconButton(
-                      onPressed: () async {
-                        roomId = await signaling.createRoom(
-                          _remoteRenderer,
-                          userId!,
-                          _cameraOpened,
-                          _micOpened,
-                          widget.calleeId,
-                        );
-                        setState(() {
-                          _subscribeToCalls();
-                        });
-                      },
-                      icon: Icon(Icons.phone),
-                      color: Colors.white,
-                    ),
-                  // IconButton(
-                  //   onPressed: () {
-                  //     signaling.joinRoom(
-                  //       textEditingController.text.trim(),
-                  //       _remoteRenderer,
-                  //     );
-                  //   },
-                  //   icon: Icon(Icons.join_full),
-                  //   color: Colors.white,
-                  // ),
-                  if(roomId != null)
-                    IconButton(
-                      onPressed: () async {
-                        signaling.hangUp(_localRenderer);
-                        await FirebaseFirestore.instance.collection('currentCalls').doc(roomId).delete();
-                        if(_isBeingCalled){
-                          dispose();
-                          Navigator.of(context).pushReplacement(
-                            FadePageRoute(
-                              builder: (context) => const DashboardScreen(),
-                            ),
-                          );
-                        }
-                        else{
-                          Navigator.pop(context);
-                        }
-                      },
-                      icon: Icon(Icons.phone_disabled),
-                      color: Colors.white,
-                    ),
-                ],
+              SizedBox(height: 8),
+              Positioned(
+                bottom: 0,
+                left: 0,
+                right: 0,
+                child: Container(
+                  color: Colors.black,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      if(roomId != null)
+                        IconButton(
+                          onPressed: () async{
+                            if(_isBeingCalled){
+                              if (_calleeCameraOpened) {
+                                _calleeCameraOpened = false;
+                                _onCall(roomId!);
+                              } else {
+                                _calleeCameraOpened = true;
+                                _onCall(roomId!);
+                              }
+                            }
+                            else{
+                              if (_cameraOpened) {
+                                _cameraOpened = false;
+                                _onCall(roomId!);
+                              } else {
+                                _cameraOpened = true;
+                                _onCall(roomId!);
+                              }
+                            }
+                            setState(() {
+                            });
+                          },
+                          icon: (_isBeingCalled ? _calleeCameraOpened : _cameraOpened) ? Icon(Icons.videocam) : Icon(Icons.videocam_off),
+                          color: Colors.white,
+                        ),
+                      if(roomId != null)
+                        IconButton(
+                          onPressed: () async{
+                            if(_isBeingCalled) {
+                              if (_calleeMicOpened) {
+                                _calleeMicOpened = false;
+                                _onCall(roomId!);
+                              } else {
+                                _calleeMicOpened = true;
+                                _onCall(roomId!);
+                              }
+                            }
+                            else{
+                              if (_micOpened) {
+                                _micOpened = false;
+                                _onCall(roomId!);
+                              } else {
+                                _micOpened = true;
+                                _onCall(roomId!);
+                              }
+                            }
+                            setState(() {
+                            });
+                          },
+                          icon: (_isBeingCalled ? _calleeMicOpened : _micOpened) ? Icon(Icons.mic) : Icon(Icons.mic_off),
+                          color: Colors.white,
+                        ),
+                      if (!_isBeingCalled && roomId == null)
+                        IconButton(
+                          onPressed: () async {
+                            roomId = await signaling.createRoom(
+                              _remoteRenderer,
+                              userId!,
+                              _cameraOpened,
+                              _micOpened,
+                              widget.calleeId,
+                            );
+                            setState(() {
+                              _subscribeToCalls();
+                            });
+                          },
+                          icon: Icon(Icons.phone),
+                          color: Colors.white,
+                        ),
+                      // IconButton(
+                      //   onPressed: () {
+                      //     signaling.joinRoom(
+                      //       textEditingController.text.trim(),
+                      //       _remoteRenderer,
+                      //     );
+                      //   },
+                      //   icon: Icon(Icons.join_full),
+                      //   color: Colors.white,
+                      // ),
+                      if(roomId != null)
+                        IconButton(
+                          onPressed: () async {
+                            signaling.hangUp(_localRenderer);
+                            await FirebaseFirestore.instance.collection('currentCalls').doc(roomId).delete();
+                            if(_isBeingCalled){
+                              signaling.hangUp(_localRenderer);
+                              dispose();
+                              Navigator.of(context).pushReplacement(
+                                FadePageRoute(
+                                  builder: (context) => const DashboardScreen(),
+                                ),
+                              );
+                            }
+                            else{
+                              dispose();
+                              signaling.hangUp(_localRenderer);
+                              Navigator.pop(context);
+                            }
+                          },
+                          icon: Icon(Icons.phone_disabled),
+                          color: Colors.white,
+                        ),
+                    ],
+                  ),
+                ),
               ),
-            ),
+            ],
           ),
-        ],
-      ),
-    );
+        ));
   }
 }

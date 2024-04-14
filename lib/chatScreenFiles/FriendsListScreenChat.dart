@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import '../mainTools/APPColors.dart';
+
 class FriendsListScreenChat extends StatefulWidget {
   @override
   _FriendsListScreenChatState createState() => _FriendsListScreenChatState();
@@ -64,7 +66,9 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
               return Container(
                 height: 50.0,
                 alignment: Alignment.center,
-                child: CircularProgressIndicator(),
+                child: CircularProgressIndicator(
+                  valueColor: AlwaysStoppedAnimation<Color>(baseDeepColor),
+                ),
               );
             }
 
@@ -92,11 +96,20 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      CircleAvatar(
-                        backgroundImage: imageChecker
-                            ? NetworkImage(friendImageUrl as String)
-                            : AssetImage('assets/defaultProfilePicture.jpeg') as ImageProvider<Object>,
-                        radius: 30.0,
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.white,
+                            width: 6.0,
+                          ),
+                        ),
+                        child: CircleAvatar(
+                          backgroundImage: imageChecker
+                              ? NetworkImage(friendImageUrl as String)
+                              : AssetImage('assets/defaultProfilePicture.jpeg') as ImageProvider<Object>,
+                          radius: 40.0,
+                        ),
                       ),
                       SizedBox(height: 10.0),
                       Text(
