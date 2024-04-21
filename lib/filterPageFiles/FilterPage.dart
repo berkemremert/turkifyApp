@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FilterPage extends StatefulWidget {
-  const FilterPage({Key? key}) : super(key: key);
+  const FilterPage({super.key});
 
   @override
   State<StatefulWidget> createState() {
@@ -58,7 +58,7 @@ class _FilterState extends State<FilterPage>
                                   Colors.transparent,
                                   Colors.black.withOpacity(0.75),
                                 ],
-                                stops: [0.5, 1.0], 
+                                stops: const [0.5, 1.0],
                               ),
                             ),
                           ),
@@ -73,7 +73,7 @@ class _FilterState extends State<FilterPage>
                                 color: Colors.white,
                                 shadows: <Shadow>[
                                   Shadow(
-                                    offset: Offset(2.0, 2.0),
+                                    offset: const Offset(2.0, 2.0),
                                     blurRadius: 3.0,
                                     color: Colors.black.withOpacity(0.5),
                                   ),
@@ -87,7 +87,7 @@ class _FilterState extends State<FilterPage>
                   ),
                 ),
 
-                SizedBox(height: 40),
+                const SizedBox(height: 40),
                 MyElevatedButton(
                   height: 50,
                   width: 260,
@@ -104,7 +104,7 @@ class _FilterState extends State<FilterPage>
                       color: Colors.white,
                       shadows: <Shadow>[
                           Shadow(
-                            offset: Offset(2.0, 2.0),
+                            offset: const Offset(2.0, 2.0),
                             blurRadius: 3.0,
                             color: Colors.black.withOpacity(0.5),
                           ),
@@ -112,7 +112,7 @@ class _FilterState extends State<FilterPage>
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 MyElevatedButton(
                   height: 50,
                   width: 260,
@@ -129,7 +129,7 @@ class _FilterState extends State<FilterPage>
                       color: Colors.white,
                       shadows: <Shadow>[
                           Shadow(
-                            offset: Offset(2.0, 2.0),
+                            offset: const Offset(2.0, 2.0),
                             blurRadius: 3.0,
                             color: Colors.black.withOpacity(0.5),
                           ),
@@ -138,7 +138,7 @@ class _FilterState extends State<FilterPage>
                   ),
                 ),
                 
-                SizedBox(height: 40),
+                const SizedBox(height: 40),
                 MyElevatedButton(
                     height: 50,
                     width: 260,
@@ -155,7 +155,7 @@ class _FilterState extends State<FilterPage>
                         color: Colors.white,
                         shadows: <Shadow>[
                             Shadow(
-                              offset: Offset(2.0, 2.0),
+                              offset: const Offset(2.0, 2.0),
                               blurRadius: 3.0,
                               color: Colors.black.withOpacity(0.5),
                             ),
@@ -163,7 +163,7 @@ class _FilterState extends State<FilterPage>
                       ),
                     ),
                   ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 MyElevatedButton(
                   height: 50,
                   width: 260,
@@ -180,7 +180,7 @@ class _FilterState extends State<FilterPage>
                       color: Colors.white,
                       shadows: <Shadow>[
                           Shadow(
-                            offset: Offset(2.0, 2.0),
+                            offset: const Offset(2.0, 2.0),
                             blurRadius: 3.0,
                             color: Colors.black.withOpacity(0.5),
                           ),
@@ -189,7 +189,7 @@ class _FilterState extends State<FilterPage>
                   ),
                 ),
                 
-                SizedBox(height: 40), 
+                const SizedBox(height: 40),
                 MyElevatedButton(
                   height: 50,
                   width: 260,
@@ -206,7 +206,7 @@ class _FilterState extends State<FilterPage>
                       color: Colors.white,
                       shadows: <Shadow>[
                           Shadow(
-                            offset: Offset(2.0, 2.0),
+                            offset: const Offset(2.0, 2.0),
                             blurRadius: 3.0,
                             color: Colors.black.withOpacity(0.5),
                           ),
@@ -214,7 +214,7 @@ class _FilterState extends State<FilterPage>
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 MyElevatedButton(
                   height: 50,
                   width: 260,
@@ -231,7 +231,7 @@ class _FilterState extends State<FilterPage>
                       color: Colors.white,
                       shadows: <Shadow>[
                           Shadow(
-                            offset: Offset(2.0, 2.0),
+                            offset: const Offset(2.0, 2.0),
                             blurRadius: 3.0,
                             color: Colors.black.withOpacity(0.5),
                           ),
@@ -257,7 +257,7 @@ class MyElevatedButton extends StatefulWidget {
   final Widget child;
 
   const MyElevatedButton({
-    Key? key,
+    super.key,
     required this.onPressed,
     required this.child,
     this.borderRadius,
@@ -266,7 +266,7 @@ class MyElevatedButton extends StatefulWidget {
     this.startColor = Colors.cyan,
     this.endColor = Colors.indigo,
     this.hoverColor = Colors.red, // Default kırmızı olsun dedim
-  }) : super(key: key);
+  });
 
   @override
   _MyElevatedButtonState createState() => _MyElevatedButtonState();

@@ -17,6 +17,8 @@ class Comment {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,6 +32,8 @@ class MyApp extends StatelessWidget {
 }
 
 class CommentPage extends StatefulWidget {
+  const CommentPage({super.key});
+
   @override
   _CommentPageState createState() => _CommentPageState();
 }
@@ -44,7 +48,7 @@ class _CommentPageState extends State<CommentPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('References'),
+        title: const Text('References'),
       ),
       body: Column(
         children: [
@@ -60,10 +64,10 @@ class _CommentPageState extends State<CommentPage> {
                   title: Row(
                     children: [
                       Text(currentComment.person.name),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       RatingBarIndicator(
                         rating: currentComment.stars,
-                        itemBuilder: (context, index) => Icon(
+                        itemBuilder: (context, index) => const Icon(
                           Icons.star,
                           color: Colors.amber,
                         ),
@@ -79,19 +83,19 @@ class _CommentPageState extends State<CommentPage> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(8.0),
             child: Row(
               children: [
                 Expanded(
                   child: TextField(
                     controller: commentController,
                     //textAlign: TextAlign.center,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       hintText: '  Write a reference',
                     ),
                   ),
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 RatingBar.builder(
                   initialRating: selectedStars,
                   minRating: 1,
@@ -99,7 +103,7 @@ class _CommentPageState extends State<CommentPage> {
                   allowHalfRating: false,
                   itemCount: 5,
                   itemSize: 30.0,
-                  itemBuilder: (context, _) => Icon(
+                  itemBuilder: (context, _) => const Icon(
                     Icons.star,
                     color: Colors.amber,
                   ),
@@ -110,7 +114,7 @@ class _CommentPageState extends State<CommentPage> {
                   },
                 ),
                 IconButton(
-                  icon: Icon(Icons.send),
+                  icon: const Icon(Icons.send),
                   onPressed: () {
                     // Add comment to the list
                     setState(() {

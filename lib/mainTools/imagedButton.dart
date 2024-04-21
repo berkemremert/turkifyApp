@@ -7,19 +7,19 @@ class ImagedButton extends StatelessWidget {
   final bool? isCall;
 
   const ImagedButton({
-    Key? key,
+    super.key,
     required this.imagePath,
     required this.buttonText,
     required this.onTap,
     this.isCall,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 55.0),
+        padding: const EdgeInsets.symmetric(horizontal: 55.0),
         child: Container(
           decoration: BoxDecoration(
             boxShadow: [
@@ -27,7 +27,7 @@ class ImagedButton extends StatelessWidget {
                 color: Colors.black.withOpacity(0.5),
                 spreadRadius: 2,
                 blurRadius: 5,
-                offset: Offset(0, 2),
+                offset: const Offset(0, 2),
               ),
             ],
             borderRadius: BorderRadius.circular(20),
@@ -61,14 +61,14 @@ class ImagedButton extends StatelessWidget {
                           color: Colors.black.withOpacity(0.05),
                           spreadRadius: 10,
                           blurRadius: 7,
-                          offset: Offset(0, 2),
+                          offset: const Offset(0, 2),
                         ),
                       ],
                     ),
                     child: isCall ?? false
                         ? Row(
                             children: [
-                              SizedBox(width: 30),
+                              const SizedBox(width: 30),
                               Image.asset(
                                 'assets/phoneRing.gif',
                                 height: 50,
@@ -82,7 +82,7 @@ class ImagedButton extends StatelessWidget {
                                       Text(
                                         textOrganizer(buttonText)['name'] ?? "",
                                         textAlign: TextAlign.start,
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                           fontFamily: 'Roboto',
                                           color: Colors.white,
                                           fontSize: 36,
@@ -92,7 +92,7 @@ class ImagedButton extends StatelessWidget {
                                       Text(
                                         textOrganizer(buttonText)['text'] ?? "",
                                         textAlign: TextAlign.center,
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                           fontFamily: 'Roboto',
                                           color: Colors.white,
                                           fontSize: 24,
@@ -108,7 +108,7 @@ class ImagedButton extends StatelessWidget {
                         : Text(
                             buttonText,
                             textAlign: TextAlign.center,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontFamily: 'Roboto',
                               color: Colors.white,
                               fontSize: 36,

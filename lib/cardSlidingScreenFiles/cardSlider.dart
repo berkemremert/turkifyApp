@@ -16,7 +16,7 @@ class MyScrollBehavior extends MaterialScrollBehavior {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({super.key, required this.title});
 
   final String title;
 
@@ -104,7 +104,7 @@ const List<String> titles = [
 ];
 
 class ExampleHorizontal extends StatelessWidget {
-  const ExampleHorizontal({Key? key}) : super(key: key);
+  const ExampleHorizontal({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -131,7 +131,7 @@ class ExampleHorizontal extends StatelessWidget {
 }
 
 class ExampleVertical extends StatelessWidget {
-  const ExampleVertical({Key? key}) : super(key: key);
+  const ExampleVertical({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -156,7 +156,7 @@ class ExampleVertical extends StatelessWidget {
 }
 
 class ExampleFraction extends StatelessWidget {
-  const ExampleFraction({Key? key}) : super(key: key);
+  const ExampleFraction({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -201,7 +201,7 @@ class ExampleFraction extends StatelessWidget {
 }
 
 class ExampleCustomPagination extends StatelessWidget {
-  const ExampleCustomPagination({Key? key}) : super(key: key);
+  const ExampleCustomPagination({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -225,6 +225,7 @@ class ExampleCustomPagination extends StatelessWidget {
                     margin: EdgeInsets.zero,
                     builder: SwiperCustomPagination(builder: (context, config) {
                       return ConstrainedBox(
+                        constraints: const BoxConstraints.expand(height: 50.0),
                         child: Container(
                           color: Colors.white,
                           child: Text(
@@ -232,7 +233,6 @@ class ExampleCustomPagination extends StatelessWidget {
                             style: const TextStyle(fontSize: 20.0),
                           ),
                         ),
-                        constraints: const BoxConstraints.expand(height: 50.0),
                       );
                     })),
                 control: const SwiperControl(),
@@ -252,6 +252,7 @@ class ExampleCustomPagination extends StatelessWidget {
                     margin: EdgeInsets.zero,
                     builder: SwiperCustomPagination(builder: (context, config) {
                       return ConstrainedBox(
+                        constraints: const BoxConstraints.expand(height: 50.0),
                         child: Row(
                           children: <Widget>[
                             Text(
@@ -271,7 +272,6 @@ class ExampleCustomPagination extends StatelessWidget {
                             )
                           ],
                         ),
-                        constraints: const BoxConstraints.expand(height: 50.0),
                       );
                     })),
                 control: const SwiperControl(color: Colors.redAccent),
@@ -283,7 +283,7 @@ class ExampleCustomPagination extends StatelessWidget {
 }
 
 class ExamplePhone extends StatelessWidget {
-  const ExamplePhone({Key? key}) : super(key: key);
+  const ExamplePhone({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -333,11 +333,11 @@ class ScaffoldWidget extends StatelessWidget {
   final List<Widget>? actions;
 
   const ScaffoldWidget({
-    Key? key,
+    super.key,
     required this.title,
     required this.child,
     this.actions,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

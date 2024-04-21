@@ -6,7 +6,7 @@ void listingScreenPage() {
 }
 
 class listingScreen extends StatelessWidget {
-  const listingScreen({Key? key}) : super(key: key);
+  const listingScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,7 +16,7 @@ class listingScreen extends StatelessWidget {
       ),
       themeMode: ThemeMode.light,
       darkTheme: ThemeData.dark(),
-      home: ScreenHome(),
+      home: const ScreenHome(),
     );
   }
 }

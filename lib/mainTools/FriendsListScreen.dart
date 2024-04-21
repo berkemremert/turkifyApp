@@ -3,6 +3,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class FriendsListScreen extends StatefulWidget {
+  const FriendsListScreen({super.key});
+
   @override
   _FriendsListScreenState createState() => _FriendsListScreenState();
 }
@@ -49,8 +51,8 @@ class _FriendsListScreenState extends State<FriendsListScreen> {
 
   Widget _buildFriendsList() {
     return GridView.builder(
-      padding: EdgeInsets.all(16.0),
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      padding: const EdgeInsets.all(16.0),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         crossAxisSpacing: 10.0,
         mainAxisSpacing: 10.0,
@@ -64,7 +66,7 @@ class _FriendsListScreenState extends State<FriendsListScreen> {
               return Container(
                 height: 50.0,
                 alignment: Alignment.center,
-                child: CircularProgressIndicator(),
+                child: const CircularProgressIndicator(),
               );
             }
 
@@ -95,13 +97,13 @@ class _FriendsListScreenState extends State<FriendsListScreen> {
                       CircleAvatar(
                         backgroundImage: imageChecker
                             ? NetworkImage(friendImageUrl as String)
-                            : AssetImage('assets/defaultProfilePicture.jpeg') as ImageProvider<Object>,
+                            : const AssetImage('assets/defaultProfilePicture.jpeg') as ImageProvider<Object>,
                         radius: 30.0,
                       ),
-                      SizedBox(height: 10.0),
+                      const SizedBox(height: 10.0),
                       Text(
                         friendName,
-                        style: TextStyle(fontSize: 16.0),
+                        style: const TextStyle(fontSize: 16.0),
                       ),
                     ],
                   ),

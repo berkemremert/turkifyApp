@@ -1,10 +1,8 @@
 import 'dart:async';
-import 'dart:math';
 import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -187,7 +185,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                         color: Colors.black.withOpacity(0.05),
                         spreadRadius: 5,
                         blurRadius: 30,
-                        offset: Offset(0, 2),
+                        offset: const Offset(0, 2),
                       ),
                     ],
                   ),
@@ -246,15 +244,15 @@ class _DashboardScreenState extends State<DashboardScreen>
       onPressed: () async {
         if (identifier == 'chat') {
           _loadingController!.reverse();
-          await Future.delayed(Duration(milliseconds: 1295));
+          await Future.delayed(const Duration(milliseconds: 1295));
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => MyChats()),
+            MaterialPageRoute(builder: (context) => const MyChats()),
           );
         } else if (identifier == 'calendar') {
           //FILL HERE -deniz
           _loadingController!.reverse();
-          await Future.delayed(Duration(milliseconds: 1300));
+          await Future.delayed(const Duration(milliseconds: 1300));
           Navigator.push(
             context,
             MaterialPageRoute(
@@ -268,13 +266,13 @@ class _DashboardScreenState extends State<DashboardScreen>
           // IT'S AVAILABLE
         } else if (identifier == 'match') {
           _loadingController!.reverse();
-          await Future.delayed(Duration(milliseconds: 1300));
+          await Future.delayed(const Duration(milliseconds: 1300));
           Navigator.push(
             context,
             MaterialPageRoute(
               builder: (context) => const ScaffoldWidget(
-                child: listingScreen(),
                 title: "",
+                child: listingScreen(),
               ),
             ),
           );
@@ -290,11 +288,11 @@ class _DashboardScreenState extends State<DashboardScreen>
           );
         } else if (identifier == 'settings') {
           _loadingController!.reverse();
-          await Future.delayed(Duration(milliseconds: 1300));
+          await Future.delayed(const Duration(milliseconds: 1300));
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => ScaffoldWidget(
+              builder: (context) => const ScaffoldWidget(
                 title: 'Settings',
                 child: SettingsPage(),
               ),
@@ -458,7 +456,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                       "NO CALL",
                       onTap: () async {
                         _loadingController!.reverse();
-                        await Future.delayed(Duration(milliseconds: 1300));
+                        await Future.delayed(const Duration(milliseconds: 1300));
                         if (_isBeingCalled) {
                           Navigator.push(
                             context,

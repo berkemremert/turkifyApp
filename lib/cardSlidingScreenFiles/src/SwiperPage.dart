@@ -4,7 +4,7 @@ import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'forms/dictionaryBar.dart';
 
 class SwiperPage extends StatefulWidget {
-  const SwiperPage({Key? key}) : super(key: key);
+  const SwiperPage({super.key});
 
   @override
   State<StatefulWidget> createState() {
@@ -91,7 +91,7 @@ class _SwiperState extends State<SwiperPage>
                         fontWeight: FontWeight.bold,
                         shadows: <Shadow>[
                           Shadow(
-                            offset: Offset(2.0, 2.0),
+                            offset: const Offset(2.0, 2.0),
                             blurRadius: 3.0,
                             color: Colors.black.withOpacity(0.5),
                           ),
@@ -112,7 +112,7 @@ class _SwiperState extends State<SwiperPage>
                         fontWeight: FontWeight.bold,
                         shadows: <Shadow>[
                           Shadow(
-                            offset: Offset(2.0, 2.0),
+                            offset: const Offset(2.0, 2.0),
                             blurRadius: 3.0,
                             color: Colors.black.withOpacity(0.1),
                           ),

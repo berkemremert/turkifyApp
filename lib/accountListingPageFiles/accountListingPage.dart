@@ -22,7 +22,7 @@ class Account {
 class AccountWidget extends StatelessWidget {
   final Account account;
 
-  AccountWidget({required this.account});
+  const AccountWidget({super.key, required this.account});
 
   @override
   Widget build(BuildContext context) {
@@ -57,21 +57,21 @@ class AccountWidget extends StatelessWidget {
             onPressed: () {
               // Contact logic
             },
-            child: Text('Contact'),
+            child: const Text('Contact'),
           ),
           PopupMenuButton(
             itemBuilder: (context) => [
-              PopupMenuItem(
-                child: Text('Report'),
+              const PopupMenuItem(
                 value: 'report',
+                child: Text('Report'),
               ),
-              PopupMenuItem(
-                child: Text('Block'),
+              const PopupMenuItem(
                 value: 'block',
+                child: Text('Block'),
               ),
-              PopupMenuItem(
-                child: Text('Not Interested'),
+              const PopupMenuItem(
                 value: 'not_interested',
+                child: Text('Not Interested'),
               ),
             ],
             onSelected: (value) {
@@ -87,13 +87,13 @@ class AccountWidget extends StatelessWidget {
 class AccountListingPage extends StatelessWidget {
   final List<Account> accounts;
 
-  AccountListingPage({required this.accounts});
+  const AccountListingPage({super.key, required this.accounts});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Account Listing'),
+        title: const Text('Account Listing'),
       ),
       body: ListView.builder(
         itemCount: accounts.length,

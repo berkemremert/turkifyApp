@@ -5,6 +5,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../mainTools/APPColors.dart';
 
 class FriendsListScreenChat extends StatefulWidget {
+  const FriendsListScreenChat({super.key});
+
   @override
   _FriendsListScreenChatState createState() => _FriendsListScreenChatState();
 }
@@ -51,8 +53,8 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
 
   Widget _buildFriendsList() {
     return GridView.builder(
-      padding: EdgeInsets.all(16.0),
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      padding: const EdgeInsets.all(16.0),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         crossAxisSpacing: 10.0,
         mainAxisSpacing: 10.0,
@@ -92,7 +94,7 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
                 ),
                 color: Colors.white,
                 child: Padding(
-                  padding: EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(10.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -107,14 +109,14 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
                         child: CircleAvatar(
                           backgroundImage: imageChecker
                               ? NetworkImage(friendImageUrl as String)
-                              : AssetImage('assets/defaultProfilePicture.jpeg') as ImageProvider<Object>,
+                              : const AssetImage('assets/defaultProfilePicture.jpeg') as ImageProvider<Object>,
                           radius: 40.0,
                         ),
                       ),
-                      SizedBox(height: 10.0),
+                      const SizedBox(height: 10.0),
                       Text(
                         friendName,
-                        style: TextStyle(fontSize: 16.0),
+                        style: const TextStyle(fontSize: 16.0),
                       ),
                     ],
                   ),

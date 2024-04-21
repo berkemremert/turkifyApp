@@ -8,13 +8,12 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:babstrap_settings_screen/babstrap_settings_screen.dart';
-import 'package:flutter/widgets.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/PermCheckers.dart';
 
 class SettingsPage extends StatefulWidget {
-  const SettingsPage({Key? key}) : super(key: key);
+  const SettingsPage({super.key});
 
   @override
   _SettingsPageState createState() => _SettingsPageState();
@@ -62,19 +61,19 @@ class _SettingsPageState extends State<SettingsPage> {
                   alignment: Alignment.center,
                   image: profilePictureUrl != null ?
                   NetworkImage(profilePictureUrl!)
-                        : AssetImage('assets/defaultProfilePicture.jpeg') as ImageProvider<Object>,
+                        : const AssetImage('assets/defaultProfilePicture.jpeg') as ImageProvider<Object>,
                 ),
               ),
               key: ValueKey(profilePictureUrl),
             ),
 
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Text(
               _userData['name'] ?? "Name Surname",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             SettingsGroup(
               items: [
                 SettingsItem(
@@ -173,8 +172,9 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   Future<void> _updateProfilePicture() async {
-    if(!(await checkPermissionsStorage()))
+    if(!(await checkPermissionsStorage())) {
       requestPermissionsStorage();
+    }
 
     String? imageUrl = await updateProfilePicture(context);
 
@@ -199,7 +199,7 @@ class _SettingsPageState extends State<SettingsPage> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text("Preview"),
+            title: const Text("Preview"),
             content: Container(
               width: 200,
               height: 200,
@@ -215,13 +215,13 @@ class _SettingsPageState extends State<SettingsPage> {
                 onPressed: () {
                   Navigator.of(context).pop(null);
                 },
-                child: Text("Cancel"),
+                child: const Text("Cancel"),
               ),
               TextButton(
                 onPressed: () async {
                   Navigator.of(context).pop(await uploadAndCropImage(imageFile));
                 },
-                child: Text("Confirm"),
+                child: const Text("Confirm"),
               ),
             ],
           );
