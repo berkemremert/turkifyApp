@@ -167,6 +167,9 @@ class _SwiperState extends State<SwiperPage>
                       },
                       pagination: const SwiperPagination(
                         alignment: Alignment.topCenter,
+                        builder: const DotSwiperPaginationBuilder(color: Colors.grey, activeColor: Colors.redAccent), //this is for the dots under the cards, I styled them
+                        //alternatively you can remove them completely by using the following:
+                        //builder: SwiperPagination.rect
                       ),
                       itemCount: words.length,
                     ),
