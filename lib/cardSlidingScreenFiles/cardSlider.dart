@@ -342,12 +342,11 @@ class ScaffoldWidget extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
         actions: actions,
-        backgroundColor: Colors.red,
         elevation: 0,
       ),
       body: child,

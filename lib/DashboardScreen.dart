@@ -6,8 +6,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:turkify_bem/chatScreenFiles/FriendsListScreenChat.dart';
 import 'package:turkify_bem/chatScreenFiles/myChats.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
+import 'package:turkify_bem/mainTools/FriendsListScreen.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
 import 'package:turkify_bem/videoMeetingFiles/FriendsListScreenVideoMeeting.dart';
@@ -248,7 +250,12 @@ class _DashboardScreenState extends State<DashboardScreen>
           await Future.delayed(const Duration(milliseconds: 1295));
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const MyChats()),
+            MaterialPageRoute(
+              builder: (context) => ScaffoldWidget(
+                title: "",
+                child: FriendsListScreenChat(),
+              ),
+            ),
           );
         } else if (identifier == 'calendar') {
           //FILL HERE -deniz
