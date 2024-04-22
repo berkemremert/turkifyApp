@@ -24,6 +24,15 @@ class CardContext {
   });
 }
 
+class gay extends StatelessWidget {
+  const gay({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(onPressed: (){}, child: Text("AOAO"));
+  }
+}
+
 class _SwiperState extends State<SwiperPage>
     with TickerProviderStateMixin {
   late AnimationController controller;
@@ -128,7 +137,6 @@ class _SwiperState extends State<SwiperPage>
     );
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -159,10 +167,51 @@ class _SwiperState extends State<SwiperPage>
                       },
                       pagination: const SwiperPagination(
                         alignment: Alignment.topCenter,
+                        builder: const DotSwiperPaginationBuilder(color: Colors.grey, activeColor: Colors.redAccent), //this is for the dots under the cards, I styled them
+                        //alternatively you can remove them completely by using the following:
+                        //builder: SwiperPagination.rect
                       ),
                       itemCount: words.length,
                     ),
                   ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
+                      Padding(padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                        child: SizedBox(
+                          width: 150,
+                          height: 60,
+                          child: ElevatedButton(
+                                  onPressed: (){},
+                                  style: ElevatedButton.styleFrom(
+                                    foregroundColor: Colors.white,
+                                    backgroundColor: Colors.redAccent,
+                                    shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
+                                    elevation: 3,
+                                  ),
+                                  child: Text("Biliyorum"),
+                          ),
+                        ),
+                      ),
+                      Padding(padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                        child: SizedBox(
+                          width: 150,
+                          height: 60,
+                          child: ElevatedButton(
+                            onPressed: (){},
+                            style: ElevatedButton.styleFrom(
+                              foregroundColor: Colors.white,
+                              backgroundColor: Colors.redAccent,
+                              shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
+                              elevation: 3,
+                            ),
+                            child: Text("Bilmiyorum "),
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
                 ],
               );
             }, childCount: 1),
