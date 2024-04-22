@@ -92,19 +92,36 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
         .collection('currentCalls')
         .doc(roomId)
         .snapshots()
-        .listen((snapshot) {
+        .listen((snapshot) async {
       if (snapshot.exists) {
-        setState(() {
-          if(_isBeingCalled){
-            _cameraOpened = snapshot.data()?['callerCamera'];
-            _micOpened = snapshot.data()?['callerMic'];
+        if(_isBeingCalled){
+          _cameraOpened = snapshot.data()?['callerCamera'];
+          _micOpened = snapshot.data()?['callerMic'];
+        }
+        else{
+          _calleeCameraOpened = snapshot.data()?['calleeCamera'];
+          _calleeMicOpened = snapshot.data()?['calleeMic'];
+        }
+        _onCall(roomId!);
+        if(!(snapshot.data()?['isActive'])) {
+          await FirebaseFirestore.instance.collection('currentCalls').doc(roomId).delete();
+          if(!_isBeingCalled){
+            signaling.hangUp(_localRenderer);
+            dispose();
+            Navigator.of(context).pushReplacement(
+              FadePageRoute(
+                builder: (context) => const DashboardScreen(),
+              ),
+            );
           }
           else{
-            _calleeCameraOpened = snapshot.data()?['calleeCamera'];
-            _calleeMicOpened = snapshot.data()?['calleeMic'];
+            dispose();
+            signaling.hangUp(_localRenderer);
+            Navigator.pop(context);
           }
-          _onCall(roomId!);
-        });
+        }
+        setState(() {
+          });
       }
       else{
         if(_isBeingCalled){
@@ -126,7 +143,6 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
       await db.collection('currentCalls').doc(roomId).update({
         'calleeCamera': _calleeCameraOpened,
         'calleeMic': _calleeMicOpened,
-        'isActive' : true,
       });
     }
     else{
@@ -259,6 +275,7 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
+                      // CAMERA BUTTON
                       if(roomId != null)
                         IconButton(
                           onPressed: () async{
@@ -286,6 +303,7 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                           icon: (_isBeingCalled ? _calleeCameraOpened : _cameraOpened) ? Icon(Icons.videocam) : Icon(Icons.videocam_off),
                           color: Colors.white,
                         ),
+                      // MIC BUTTON
                       if(roomId != null)
                         IconButton(
                           onPressed: () async{
@@ -313,6 +331,7 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                           icon: (_isBeingCalled ? _calleeMicOpened : _micOpened) ? Icon(Icons.mic) : Icon(Icons.mic_off),
                           color: Colors.white,
                         ),
+                      // CALL BUTTON
                       if (!_isBeingCalled && roomId == null)
                         IconButton(
                           onPressed: () async {
@@ -340,25 +359,39 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
                       //   icon: Icon(Icons.join_full),
                       //   color: Colors.white,
                       // ),
+
+                      // HANG UP BUTTON
                       if(roomId != null)
                         IconButton(
                           onPressed: () async {
                             signaling.hangUp(_localRenderer);
-                            await FirebaseFirestore.instance.collection('currentCalls').doc(roomId).delete();
-                            if(_isBeingCalled){
-                              signaling.hangUp(_localRenderer);
-                              dispose();
-                              Navigator.of(context).pushReplacement(
-                                FadePageRoute(
-                                  builder: (context) => const DashboardScreen(),
-                                ),
-                              );
-                            }
+                            FirebaseFirestore db = FirebaseFirestore.instance;
+                            await db.collection('currentCalls').doc(roomId).update({
+                              'isActive' : false,
+                            });
+                            if(!_isBeingCalled) {
+                                    await FirebaseFirestore.instance
+                                        .collection('currentCalls')
+                                        .doc(roomId)
+                                        .delete();
+                                    signaling.hangUp(_localRenderer);
+                                    dispose();
+                                    Navigator.of(context).pushReplacement(
+                                      FadePageRoute(
+                                        builder: (context) =>
+                                            const DashboardScreen(),
+                                      ),
+                                    );
+                                  }
                             else{
                               dispose();
-                              signaling.hangUp(_localRenderer);
-                              Navigator.pop(context);
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => DashboardScreen()),
+                              );
                             }
+                                  setState(() async {
+                            });
                           },
                           icon: Icon(Icons.phone_disabled),
                           color: Colors.white,

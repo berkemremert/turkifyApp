@@ -35,7 +35,7 @@ class Signaling {
     DocumentReference roomRef = db.collection('rooms').doc();
 
     await db.collection('currentCalls').doc(roomRef.id).set({
-      'isActive' : false,
+      'isActive' : true,
       'callerId': userId,
       'callerCamera' : callerCamera,
       'callerMic' : callerMic,

@@ -81,6 +81,7 @@ class _DashboardScreenState extends State<DashboardScreen>
         .listen((snapshot) {
       if (snapshot.docs.isNotEmpty) {
         _isBeingCalled = true;
+        isBeingCalled(user!.uid);
       } else {
         _isBeingCalled = false;
       }
