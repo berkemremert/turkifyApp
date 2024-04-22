@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import '../mainTools/APPColors.dart';
+import 'GroupChatScreen.dart';
 
 class FriendsListScreenChat extends StatefulWidget {
   const FriendsListScreenChat({super.key});
@@ -85,7 +86,12 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
 
             return GestureDetector(
               onTap: () {
-              //TODO:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ChatPage(data: friendData!),
+                  ),
+                );
               },
               child: Card(
                 elevation: 3.0,
