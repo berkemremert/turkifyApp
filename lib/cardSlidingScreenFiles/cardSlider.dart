@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
+// import 'package:turkify_bem/APPColors.dart';
 
 import 'src/config.dart';
 
@@ -194,7 +195,7 @@ class ExampleFraction extends StatelessWidget {
               pagination: const SwiperPagination(
                   alignment: Alignment.centerRight,
                   builder: SwiperPagination.fraction),
-            ))
+            )),
           ],
         ));
   }
@@ -276,7 +277,7 @@ class ExampleCustomPagination extends StatelessWidget {
                     })),
                 control: const SwiperControl(color: Colors.redAccent),
               ),
-            )
+            ),
           ],
         ));
   }
@@ -320,9 +321,10 @@ class ExamplePhone extends StatelessWidget {
               ),
               Image.asset('images/3.png', fit: BoxFit.contain)
             ],
-          )
+          ),
         ],
       ),
+      
     );
   }
 }
@@ -345,6 +347,8 @@ class ScaffoldWidget extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
         actions: actions,
+        backgroundColor: Colors.red,
+        elevation: 0,
       ),
       body: child,
     );

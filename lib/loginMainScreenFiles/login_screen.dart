@@ -108,7 +108,7 @@ class LoginScreen extends StatelessWidget {
         TermOfService(
           id: 'general-term',
           mandatory: true,
-          text: 'Term of services',
+          text: 'Terms of service',
           linkUrl: 'https://github.com/berkemremert',
         ),
       ],
@@ -143,13 +143,13 @@ class LoginScreen extends StatelessWidget {
       // hideForgotPasswordButton: true,
       // hideSignUpButton: true,
       // disableCustomPageTransformer: true,
-      // messages: LoginMessages(
+      messages: LoginMessages(
       //   userHint: 'User',
       //   passwordHint: 'Pass',
       //   confirmPasswordHint: 'Confirm',
       //   loginButton: 'LOG IN',
       //   signupButton: 'REGISTER',
-      //   forgotPasswordButton: 'Forgot huh?',
+        forgotPasswordButton: 'Forgot Password?',
       //   recoverPasswordButton: 'HELP ME',
       //   goBackButton: 'GO BACK',
       //   confirmPasswordError: 'Not match!',
@@ -159,7 +159,7 @@ class LoginScreen extends StatelessWidget {
       //   flushbarTitleError: 'Oh no!',
       //   flushbarTitleSuccess: 'Success!',
       //   providersTitle: 'login with'
-      // ),
+      ),
       theme: LoginTheme(
         primaryColor: baseDeepColor,
         pageColorLight: baseLightColor,
@@ -181,6 +181,10 @@ class LoginScreen extends StatelessWidget {
           highlightColor:baseLightColor,
           elevation: 5.0,
         ),
+        bodyStyle: TextStyle(
+          color: baseDeepColor,
+        ),
+
         // beforeHeroFontSize: 50,
         // afterHeroFontSize: 20,
         ),

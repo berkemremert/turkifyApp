@@ -37,7 +37,9 @@ class dictionaryBar extends StatelessWidget {
                     decoration: InputDecoration(
                       border: InputBorder.none,
                       hintText: 'Kelime Ara',
-                      hintStyle: kSearchTextStyle,
+                      hintStyle: TextStyle(
+                        color: Colors.black38
+                      ),
                     ),
                   ),
                 ),
