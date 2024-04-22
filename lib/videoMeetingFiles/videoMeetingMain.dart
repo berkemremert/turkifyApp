@@ -201,7 +201,9 @@ class _VideoMeetingPageState extends State<VideoMeetingPage> {
         Container(
           color: Colors.white,
           alignment: Alignment.center,
-          child: CircularProgressIndicator(), // Show loading indicator
+          child: CircularProgressIndicator(
+            valueColor: AlwaysStoppedAnimation<Color>(Colors.red),
+          ),
         ) :
         Scaffold(
           body: Column(
