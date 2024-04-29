@@ -67,7 +67,7 @@ dependencies:
   flutter_webrtc: ^0.9.45
   cloud_firestore_web: ^3.4.3
   permission_handler: ^10.3.0
-
+  bubble: ^1.2.1
 dev_dependencies:
   flutter_test:
     sdk: flutter

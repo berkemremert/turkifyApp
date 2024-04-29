@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/chatScreenFiles/FriendsListScreenChat.dart';
-import 'package:turkify_bem/chatScreenFiles/myChats.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/FriendsListScreen.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
@@ -251,7 +250,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => ScaffoldWidget(
+              builder: (context) => const ScaffoldWidget(
                 title: "",
                 child: FriendsListScreenChat(),
               ),

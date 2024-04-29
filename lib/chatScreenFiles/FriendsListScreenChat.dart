@@ -81,6 +81,7 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
 
             final friendData = snapshot.data?.data();
             final friendName = friendData?['name'] ?? 'Unnamed';
+            final friendId = _friendUids[index];
             final friendImageUrl = friendData?['profileImageUrl'];
             final bool imageChecker = friendImageUrl != null;
 
@@ -89,7 +90,8 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ChatPage(data: friendData!),
+                    // builder: (context) => ChatPage(data: friendData!, friendId: friendId),
+                    builder: (context) => ChatPage(data: friendData!, friendId: friendId),
                   ),
                 );
               },
