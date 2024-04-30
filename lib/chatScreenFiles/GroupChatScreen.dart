@@ -311,7 +311,7 @@ class _ChatPageState extends State<ChatPage> {
               : baseDeepColor,
           showNip: true,
           borderColor: Colors.transparent,
-          radius: const Radius.circular(12),
+          radius: const Radius.circular(26),
           padding: const BubbleEdges.symmetric(vertical: 0),
           elevation: 0,
           child: child,
