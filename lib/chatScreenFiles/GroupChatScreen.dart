@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
 import 'package:flutter_chat_ui/flutter_chat_ui.dart';
@@ -32,6 +33,8 @@ class _ChatPageState extends State<ChatPage> {
   Map<String, dynamic> get data => widget.data;
   String get friendId => widget.friendId;
   bool _isDarkMode = false;
+  bool _isSelected = false;
+  String _selectedMessageID = "";
 
   @override
   void initState() {
@@ -307,11 +310,11 @@ class _ChatPageState extends State<ChatPage> {
         Bubble(
           color: _user.id != message.author.id ||
               message.type == types.MessageType.image
-              ? (_isDarkMode ? Colors.grey : const Color(0xfff5f5f7))
-              : baseDeepColor,
+              ? (_isDarkMode ? Colors.purple.shade400 : const Color(0xfff5f5f7))
+              : (_selectedMessageID == message.id ? Colors.blueAccent : baseDeepColor),
           showNip: true,
           borderColor: Colors.transparent,
-          radius: const Radius.circular(26),
+          radius: const Radius.circular(35),
           padding: const BubbleEdges.symmetric(vertical: 0),
           elevation: 0,
           child: child,
@@ -332,6 +335,15 @@ class _ChatPageState extends State<ChatPage> {
       _isDarkMode = !_isDarkMode;
     });
   }
+  void _onMessageLongPress(BuildContext context, types.Message p1) {
+    setState(() {
+      if(p1.author.id == _user1!.uid) {
+        _selectedMessageID = p1.id;
+        _isSelected = true;
+      }
+      print("Long press $_isSelected , $_selectedMessageID");
+    });
+  }
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -342,12 +354,23 @@ class _ChatPageState extends State<ChatPage> {
             color: _isDarkMode ? white : Colors.black,
           ),
         ),
-        backgroundColor: _isDarkMode ? const Color.fromRGBO(58, 50, 143, 10) : white,
+        backgroundColor: _isDarkMode ? (_isSelected ? const Color.fromRGBO(28, 20, 143, 10) : const Color.fromRGBO(58, 50, 143, 10)) : (_isSelected ? Color.fromRGBO(176, 224, 230, 10) : white),
         actions: [
+          Visibility(
+            visible: _isSelected,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: IconButton(
+                icon: const Icon(Icons.delete),
+                color: _isDarkMode ? white : kDefaultIconDarkColor,
+                onPressed: _deleteMessage,
+              ),
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: IconButton(
-              icon: Icon(_isDarkMode ? Icons.nightlight_round : Icons.wb_sunny),
+              icon: Icon(_isDarkMode ? Icons.wb_sunny : Icons.nightlight_round),
               color: _isDarkMode ? white : kDefaultIconDarkColor,
               onPressed: _toggleMode,
             ),
@@ -365,7 +388,40 @@ class _ChatPageState extends State<ChatPage> {
         showUserNames: true,
         bubbleBuilder: _bubbleBuilder,
         user: _user,
+        onMessageLongPress: _onMessageLongPress,
+        onBackgroundTap: _onBackgroundTap,
       ),
     );
+  }
+
+  void _onBackgroundTap() {
+    setState(() {
+      _isSelected = false;
+      _selectedMessageID = "";
+      print("Background tap $_isSelected , $_selectedMessageID");
+    });
+  }
+
+  void _deleteMessage() {
+    String wantID = findID();
+
+    final messagesCollection = FirebaseFirestore.instance.collection('messages');
+
+    messagesCollection.doc(wantID).snapshots().listen((snapshot) {
+      if (snapshot.exists) {
+        final messageData = snapshot.data() as Map<String, dynamic>;
+        messageData.forEach((key, value) {
+          if (value['id'] == _selectedMessageID) {
+            messagesCollection.doc(wantID).update({
+              key: FieldValue.delete(),
+            });
+            setState(() {
+              _isSelected = false;
+              _selectedMessageID = "";
+            });
+          }
+        });
+      }
+    });
   }
 }
