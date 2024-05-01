@@ -78,26 +78,26 @@ class _DashboardScreenState extends State<DashboardScreen>
     initNotification();
   }
 
-  Future<void> initNotification() async{
-    await _firebaseMessaging.requestPermission();
+  Future<void> initNotification() async {
+    try {
+      await _firebaseMessaging.requestPermission();
+      final fcmToken = await _firebaseMessaging.getToken();
 
-    final fcmToken = await _firebaseMessaging.getToken();
+      if (fcmToken != null) {
+        final firestore = FirebaseFirestore.instance;
+        final userDoc = await firestore.collection('users').doc(user!.uid).get();
+        final fcmTokenExists = userDoc.exists && userDoc.data()!.containsKey('fcmToken');
 
-    if (fcmToken != null) {
-      final firestore = FirebaseFirestore.instance;
-
-      final userDoc = await firestore.collection('users').doc(user!.uid).get();
-      final fcmTokenExists = userDoc.exists && userDoc.data()!.containsKey('fcmToken');
-
-      if (!fcmTokenExists) {
-        await firestore.collection('users').doc(user!.uid).update({
-          'fcmToken': fcmToken,
-        });
+        if (!fcmTokenExists) {
+          await firestore.collection('users').doc(user!.uid).update({
+            'fcmToken': fcmToken,
+          });
+        }
       } else {
-        print('FCM token already exists for user NOTIFICATION');
+        debugPrint('FCM token is null');
       }
-    } else {
-      print('FCM token is null');
+    } catch (error) {
+      debugPrint('Error initializing notifications: $error');
     }
   }
 

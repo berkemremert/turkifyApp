@@ -125,28 +125,6 @@ class Signaling {
     return roomId;
   }
 
-  Future<void> sendNotificationToUser(String userId, Map<String, dynamic> notificationData) async {
-    final FirebaseFirestore firestore = FirebaseFirestore.instance;
-
-    final userDoc = await firestore.collection('users').doc(userId).get();
-
-    if (userDoc.exists && userDoc.data()!.containsKey('fcmTokens')) {
-      List<String> fcmTokens = List<String>.from(userDoc.data()!['fcmTokens']);
-
-      final message = {
-        'title': notificationData['title'].toString(),
-        'body': notificationData['body'].toString(),
-      };
-
-      for (final token in fcmTokens) {
-        await FirebaseMessaging.instance.sendMessage(
-          to: token,
-          data: message,
-        );
-      }
-    }
-  }
-
   Future<void> joinRoom(String roomId, RTCVideoRenderer remoteVideo) async {
     FirebaseFirestore db = FirebaseFirestore.instance;
     print(roomId);
