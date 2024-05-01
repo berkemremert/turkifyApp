@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_webrtc/flutter_webrtc.dart';
 
 typedef void StreamStateCallback(MediaStream stream);
@@ -122,6 +123,28 @@ class Signaling {
     // Listen for remote ICE candidates above
 
     return roomId;
+  }
+
+  Future<void> sendNotificationToUser(String userId, Map<String, dynamic> notificationData) async {
+    final FirebaseFirestore firestore = FirebaseFirestore.instance;
+
+    final userDoc = await firestore.collection('users').doc(userId).get();
+
+    if (userDoc.exists && userDoc.data()!.containsKey('fcmTokens')) {
+      List<String> fcmTokens = List<String>.from(userDoc.data()!['fcmTokens']);
+
+      final message = {
+        'title': notificationData['title'].toString(),
+        'body': notificationData['body'].toString(),
+      };
+
+      for (final token in fcmTokens) {
+        await FirebaseMessaging.instance.sendMessage(
+          to: token,
+          data: message,
+        );
+      }
+    }
   }
 
   Future<void> joinRoom(String roomId, RTCVideoRenderer remoteVideo) async {
