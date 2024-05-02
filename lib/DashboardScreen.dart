@@ -3,12 +3,12 @@ import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/chatScreenFiles/FriendsListScreenChat.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
-import 'package:turkify_bem/mainTools/FriendsListScreen.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
 import 'package:turkify_bem/videoMeetingFiles/FriendsListScreenVideoMeeting.dart';
@@ -50,10 +50,12 @@ class _DashboardScreenState extends State<DashboardScreen>
   String _callerName = "";
   bool _isLoadingCall = true;
   StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _callStream;
+  final _firebaseMessaging = FirebaseMessaging.instance;
 
   @override
   void initState() {
     super.initState();
+
     gettUserData();
 
     _listenToCallField();
@@ -72,6 +74,31 @@ class _DashboardScreenState extends State<DashboardScreen>
     );
 
     _checkIfBeingCalled();
+
+    initNotification();
+  }
+
+  Future<void> initNotification() async {
+    try {
+      await _firebaseMessaging.requestPermission();
+      final fcmToken = await _firebaseMessaging.getToken();
+
+      if (fcmToken != null) {
+        final firestore = FirebaseFirestore.instance;
+        final userDoc = await firestore.collection('users').doc(user!.uid).get();
+        final fcmTokenExists = userDoc.exists && userDoc.data()!.containsKey('fcmToken');
+
+        if (!fcmTokenExists) {
+          await firestore.collection('users').doc(user!.uid).update({
+            'fcmToken': fcmToken,
+          });
+        }
+      } else {
+        debugPrint('FCM token is null');
+      }
+    } catch (error) {
+      debugPrint('Error initializing notifications: $error');
+    }
   }
 
   Future<void> _listenToCallField() async {
