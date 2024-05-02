@@ -260,38 +260,37 @@ class _ChatPageState extends State<ChatPage> {
   }
   void _loadMessages() {
     String wantID = findID();
-
     final messagesCollection = FirebaseFirestore.instance.collection('messages');
 
     messagesCollection.doc(wantID).snapshots().listen((snapshot) {
       if (snapshot.exists) {
-        final messageData = snapshot.data() as Map<String, dynamic>;
+          final messageData = snapshot.data() as Map<String, dynamic>;
 
-        List<types.Message> messages = [];
+          List<types.Message> messages = [];
 
-        messageData.values.forEach((data) {
-          try {
-            MyTextMessage message = MyTextMessage.fromJson(data);
-            var authorUser = message.authorID == _user.id
-                ? _user
-                : types.User(id: friendId);
-            final textMessage = types.TextMessage(
-              author: authorUser,
-              id: message.id,
-              text: message.text,
-              createdAt: message.createdAt,
-            );
-            messages.add(textMessage);
-          } catch (e) {
-            print("ERROR $e");
-          }
-        });
+          messageData.values.forEach((data) {
+            try {
+              MyTextMessage message = MyTextMessage.fromJson(data);
+              var authorUser = message.authorID == _user.id
+                  ? _user
+                  : types.User(id: friendId);
+              final textMessage = types.TextMessage(
+                author: authorUser,
+                id: message.id,
+                text: message.text,
+                createdAt: message.createdAt,
+              );
+              messages.add(textMessage);
+            } catch (e) {
+              print("ERRORa $e");
+            }
+          });
+          // messageData['isRead'];
+          messages.sort((a, b) => b.createdAt!.compareTo(a.createdAt!));
 
-        messages.sort((a, b) => b.createdAt!.compareTo(a.createdAt!));
-
-        setState(() {
-          _messages = messages;
-        });
+          setState(() {
+            _messages = messages;
+          });
       }
     });
   }
@@ -303,7 +302,9 @@ class _ChatPageState extends State<ChatPage> {
         required nextMessageInGroup,
       }) {
     DateTime datetime = DateTime.fromMillisecondsSinceEpoch(message.createdAt!);
-    String messageTime = '${datetime.hour}:${datetime.minute}';
+    String messageTime = (datetime.minute.toString().length == 2)
+        ? '${datetime.hour}:${datetime.minute}'
+        : '${datetime.hour}:0${datetime.minute}';
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -411,14 +412,18 @@ class _ChatPageState extends State<ChatPage> {
       if (snapshot.exists) {
         final messageData = snapshot.data() as Map<String, dynamic>;
         messageData.forEach((key, value) {
-          if (value['id'] == _selectedMessageID) {
-            messagesCollection.doc(wantID).update({
-              key: FieldValue.delete(),
-            });
-            setState(() {
-              _isSelected = false;
-              _selectedMessageID = "";
-            });
+          try {
+            if (value['id'] == _selectedMessageID) {
+              messagesCollection.doc(wantID).update({
+                key: FieldValue.delete(),
+              });
+              setState(() {
+                _isSelected = false;
+                _selectedMessageID = "";
+              });
+            }
+          } catch(e){
+            print("ERRORA $e");
           }
         });
       }
