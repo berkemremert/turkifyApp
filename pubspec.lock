@@ -209,6 +209,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.4.3+1"
+  dio_cache_interceptor:
+    dependency: transitive
+    description:
+      name: dio_cache_interceptor
+      sha256: fb7905c0d12075d8786a6b63bffd64ae062d053f682cfaf28d145a2686507308
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.5.0"
   dropdown_model_list:
     dependency: "direct main"
     description:
@@ -552,6 +560,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "10.7.0"
+  free_english_dictionary:
+    dependency: "direct main"
+    description:
+      name: free_english_dictionary
+      sha256: "79ae8f405ec5683af992ae6374d7933fdf7b67e940ae5509a73ed8aebb43551b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.3"
   html:
     dependency: transitive
     description:
@@ -564,10 +580,10 @@ packages:
     dependency: "direct main"
     description:
       name: http
-      sha256: "5895291c13fa8a3bd82e76d5627f69e0d85ca6a30dcac95c4ea19a5d555879c2"
+      sha256: "761a297c042deedc1ffbb156d6e2af13886bb305c2a343a4d972504cd67dd938"
       url: "https://pub.dev"
     source: hosted
-    version: "0.13.6"
+    version: "1.2.1"
   http_parser:
     dependency: transitive
     description:
@@ -580,26 +596,26 @@ packages:
     dependency: "direct main"
     description:
       name: image_cropper
-      sha256: "542c3453109d16bcc388e43ae2276044d2cd6a6d20c68bdcff2c94ab9363ea15"
+      sha256: f4bad5ed2dfff5a7ce0dfbad545b46a945c702bb6182a921488ef01ba7693111
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.1"
+    version: "5.0.1"
   image_cropper_for_web:
     dependency: transitive
     description:
       name: image_cropper_for_web
-      sha256: "89c936aa772a35b69ca67b78049ae9fa163a4fb8da2f6dee3893db8883fb49d2"
+      sha256: "865d798b5c9d826f1185b32e5d0018c4183ddb77b7b82a931e1a06aa3b74974e"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.0"
+    version: "3.0.0"
   image_cropper_platform_interface:
     dependency: transitive
     description:
       name: image_cropper_platform_interface
-      sha256: b232175c132b2f7ede3e1f101652bcd635cb4079a77c6dded8e6d32e6578d685
+      sha256: ee160d686422272aa306125f3b6fb1c1894d9b87a5e20ed33fa008e7285da11e
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.0"
+    version: "5.0.0"
   image_picker:
     dependency: "direct main"
     description:
@@ -1128,6 +1144,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.2.0"
+  simplytranslate:
+    dependency: "direct main"
+    description:
+      name: simplytranslate
+      sha256: "6edd2dfd2e8182e741b227acff36b244dc4201ca9c7ae1babe600cff7cc9c7c0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.2"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -1141,14 +1165,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.0"
-  sozluk:
-    dependency: "direct main"
-    description:
-      name: sozluk
-      sha256: "5fb0de3757ea98517be621f8a8603502bb30c95a2ea61ecfdbb7dbbfbd67319c"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.4.0"
   sqflite:
     dependency: transitive
     description:

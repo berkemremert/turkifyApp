@@ -53,7 +53,6 @@ dependencies:
   filter_list: ^1.0.2
   multi_selection_filter: ^0.0.6
   card_swiper: ^3.0.1
-  sozluk: ^2.4.0
   firebase_core: ^2.25.4
   firebase_auth: ^4.17.4
   cloud_firestore: ^4.15.2
@@ -63,12 +62,14 @@ dependencies:
   firebase_storage: ^11.6.9
   cupertino_icons: ^1.0.6
   firebase_app_check: ^0.2.1
-  image_cropper: ^4.0.1
+  image_cropper: ^5.0.1
   flutter_webrtc: ^0.9.45
   cloud_firestore_web: ^3.4.3
   permission_handler: ^10.3.0
   bubble: ^1.2.1
   firebase_messaging: ^14.9.1
+  free_english_dictionary: ^0.0.3
+  simplytranslate: ^2.0.2
 
 dev_dependencies:
   flutter_test:
