@@ -1,6 +1,8 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 
+import '../mainTools/APPColors.dart';
+
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -57,7 +59,7 @@ class _InnerSwiperState extends State<InnerSwiper> {
                   itemCount: 4,
                   itemBuilder: (context, index) {
                     return Container(
-                      color: Colors.greenAccent,
+                      color: greenAccent,
                       child: const Text('jkfjkldsfjd'),
                     );
                   },

@@ -80,7 +80,7 @@ class _SwiperState extends State<SwiperPage>
         borderRadius: BorderRadius.circular(20.0),
         child: Card(
           elevation: 2.0,
-          color: Colors.white,
+          color: white,
           child: Stack(
             children: [
               if (word.isTapped == true)
@@ -96,7 +96,7 @@ class _SwiperState extends State<SwiperPage>
                       word.text,
                       style: TextStyle(
                         fontSize: 40,
-                        color: Colors.white,
+                        color: white,
                         fontWeight: FontWeight.bold,
                         shadows: <Shadow>[
                           Shadow(
@@ -117,7 +117,7 @@ class _SwiperState extends State<SwiperPage>
                       word.text,
                       style: TextStyle(
                         fontSize: 40,
-                        color: Colors.white,
+                        color: white,
                         fontWeight: FontWeight.bold,
                         shadows: <Shadow>[
                           Shadow(
@@ -149,12 +149,12 @@ class _SwiperState extends State<SwiperPage>
                 children: <Widget>[
                   const dictionaryBar(),
                   const SizedBox(height: 20), // Adding a SizedBox for spacing
-                  const Text(
+                  Text(
                     'Kelime Kartları',
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: Colors.redAccent,
+                      color: redAccent,
                     ),
                   ),
                   const SizedBox(height: 20), // Adding another SizedBox for spacing
@@ -165,9 +165,9 @@ class _SwiperState extends State<SwiperPage>
                       itemBuilder: (c, i) {
                         return buildDynamicCard(words[i]);
                       },
-                      pagination: const SwiperPagination(
+                      pagination: SwiperPagination(
                         alignment: Alignment.topCenter,
-                        builder: const DotSwiperPaginationBuilder(color: Colors.grey, activeColor: Colors.redAccent), //this is for the dots under the cards, I styled them
+                        builder: DotSwiperPaginationBuilder(color: Colors.grey, activeColor: redAccent), //this is for the dots under the cards, I styled them
                         //alternatively you can remove them completely by using the following:
                         //builder: SwiperPagination.rect
                       ),
@@ -185,28 +185,28 @@ class _SwiperState extends State<SwiperPage>
                           child: ElevatedButton(
                                   onPressed: (){},
                                   style: ElevatedButton.styleFrom(
-                                    foregroundColor: Colors.white,
-                                    backgroundColor: Colors.redAccent,
-                                    shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
+                                    foregroundColor: white,
+                                    backgroundColor: redAccent,
+                                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                                     elevation: 3,
                                   ),
-                                  child: Text("Biliyorum"),
+                                  child: const Text("Biliyorum"),
                           ),
                         ),
                       ),
-                      Padding(padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                      Padding(padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
                         child: SizedBox(
                           width: 150,
                           height: 60,
                           child: ElevatedButton(
                             onPressed: (){},
                             style: ElevatedButton.styleFrom(
-                              foregroundColor: Colors.white,
-                              backgroundColor: Colors.redAccent,
-                              shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0)),
+                              foregroundColor: white,
+                              backgroundColor: redAccent,
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                               elevation: 3,
                             ),
-                            child: Text("Bilmiyorum "),
+                            child: const Text("Bilmiyorum "),
                           ),
                         ),
                       ),

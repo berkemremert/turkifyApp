@@ -2,21 +2,29 @@ import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui' as ui;
 
+import 'package:babstrap_settings_screen/babstrap_settings_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:babstrap_settings_screen/babstrap_settings_screen.dart';
+import 'package:flutter/painting.dart';
+import 'package:flutter/widgets.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/PermCheckers.dart';
 
 class SettingsPage extends StatefulWidget {
+  static bool isDarkMode = false;
+
   const SettingsPage({super.key});
 
   @override
   _SettingsPageState createState() => _SettingsPageState();
+
+  static bool getIsDarkMode() {
+    return isDarkMode;
+  }
 }
 
 class _SettingsPageState extends State<SettingsPage> {
@@ -27,8 +35,9 @@ class _SettingsPageState extends State<SettingsPage> {
   String? profilePictureUrl;
   Map<String, dynamic> _userData = {};
 
+
   @override
-  void initState(){
+  void initState() {
     super.initState();
     getUserDataa();
   }
@@ -36,7 +45,8 @@ class _SettingsPageState extends State<SettingsPage> {
   void getUserDataa() async {
     User? currentUser = _auth.currentUser;
     if (currentUser != null) {
-      DocumentSnapshot<Map<String, dynamic>> userSnapshot = await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).get();
+      DocumentSnapshot<Map<String, dynamic>> userSnapshot =
+      await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).get();
       setState(() {
         profilePictureUrl = userSnapshot.data()?['profileImageUrl'];
       });
@@ -44,9 +54,9 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   @override
-  Widget build(context) {
+  Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white.withOpacity(.94),
+      backgroundColor: SettingsPage.isDarkMode ? Colors.black : Colors.white, // Step 3
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: ListView(
@@ -59,9 +69,9 @@ class _SettingsPageState extends State<SettingsPage> {
                 image: DecorationImage(
                   fit: BoxFit.contain,
                   alignment: Alignment.center,
-                  image: profilePictureUrl != null ?
-                  NetworkImage(profilePictureUrl!)
-                        : const AssetImage('assets/defaultProfilePicture.jpeg') as ImageProvider<Object>,
+                  image: profilePictureUrl != null
+                      ? NetworkImage(profilePictureUrl!)
+                      : const AssetImage('assets/defaultProfilePicture.jpeg') as ImageProvider<Object>,
                 ),
               ),
               key: ValueKey(profilePictureUrl),
@@ -143,6 +153,33 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
               ],
             ),
+            ListTile(
+              title: Row(
+                children: [
+                  const Icon(Icons.nightlight_round),
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Text(
+                      "Dark Mode",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        color: black,
+                      ),
+                    ),
+                  )
+                ],
+              ),
+              trailing: Switch(
+                value: SettingsPage.isDarkMode,
+                onChanged: (value) {
+                  setState(() {
+                    SettingsPage.isDarkMode = value;
+                  });
+                },
+              ),
+            ),
+
             SettingsGroup(
               settingsGroupTitle: "Account",
               items: [
@@ -172,7 +209,7 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   Future<void> _updateProfilePicture() async {
-    if(!(await checkPermissionsStorage())) {
+    if (!(await checkPermissionsStorage())) {
       requestPermissionsStorage();
     }
 
@@ -184,7 +221,7 @@ class _SettingsPageState extends State<SettingsPage> {
         profilePictureUrl = imageUrl;
       });
     } else {
-      print("profile picture couldnt be uploaded");
+      print("profile picture couldn't be uploaded");
     }
   }
 
@@ -290,64 +327,3 @@ class _SettingsPageState extends State<SettingsPage> {
     return await picture.toImage(targetWidth, targetHeight);
   }
 }
-
-//
-//   void _changeProfilePicture(context) async {
-//     final ImagePicker _picker = ImagePicker();
-//     final XFile? image = await _picker.pickImage(source: ImageSource.gallery);
-//
-//     if (image != null) {
-//       // Upload the selected image to Firebase Storage
-//       String imageUrl = await uploadImageToFirebase(image);
-//
-//       // Save the image URL to Firestore
-//       User? user = FirebaseAuth.instance.currentUser;
-//       if (user != null) {
-//         String userID = user.uid;
-//         await saveProfilePictureUrl(userID, imageUrl);
-//
-//         // Show a message that the profile picture has been updated
-//         ScaffoldMessenger.of(context).showSnackBar(
-//           SnackBar(content: Text('Profile picture updated successfully')),
-//         );
-//       } else {
-//         print('User is not logged in');
-//       }
-//     }
-//   }
-//
-//   Future<String> uploadImageToFirebase(XFile image) async {
-//     try {
-//       Reference ref = FirebaseStorage.instance.ref().child('profile_images').child(image.name);
-//       TaskSnapshot taskSnapshot = await ref.putFile(File(image.path));
-//       String downloadUrl = await taskSnapshot.ref.getDownloadURL();
-//       return downloadUrl;
-//     } catch (e) {
-//       print('Error uploading image to Firebase: $e');
-//       return ''; // Return empty string on failure
-//     }
-//   }
-//
-//   Future<void> saveProfilePictureUrl(String userId, String pictureUrl) async {
-//     try {
-//       await FirebaseFirestore.instance
-//           .collection('users')
-//           .doc(userId)
-//           .update({
-//         'profilePictureUrl': pictureUrl,
-//       });
-//       print('Profile picture URL saved successfully');
-//     } catch (e) {
-//       print('Error saving profile picture URL: $e');
-//     }
-//   }
-//
-//   Future<String?> getUserProfilePictureUrl() async {
-//     User? user = FirebaseAuth.instance.currentUser;
-//     if (user != null) {
-//       return user.photoURL;
-//     } else {
-//       throw Exception('User is not logged in');
-//     }
-//   }
-// }

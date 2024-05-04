@@ -4,6 +4,7 @@ import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 // import 'package:turkify_bem/APPColors.dart';
 
+import '../mainTools/APPColors.dart';
 import 'src/config.dart';
 
 void main() => runApp(const MyApp());
@@ -68,9 +69,9 @@ class _MyHomePageState extends State<MyHomePage> {
       leading: null,
       title: Text(title),
       subtitle: Text(subtitle),
-      trailing: const Icon(
+      trailing: Icon(
         Icons.arrow_right,
-        color: Colors.blueAccent,
+        color: blueAccent,
       ),
     );
   }
@@ -228,7 +229,7 @@ class ExampleCustomPagination extends StatelessWidget {
                       return ConstrainedBox(
                         constraints: const BoxConstraints.expand(height: 50.0),
                         child: Container(
-                          color: Colors.white,
+                          color: white,
                           child: Text(
                             '${titles[config.activeIndex]} ${config.activeIndex + 1}/${config.itemCount}',
                             style: const TextStyle(fontSize: 20.0),
@@ -263,9 +264,9 @@ class ExampleCustomPagination extends StatelessWidget {
                             Expanded(
                               child: Align(
                                 alignment: Alignment.centerRight,
-                                child: const DotSwiperPaginationBuilder(
-                                        color: Colors.black12,
-                                        activeColor: Colors.black,
+                                child: DotSwiperPaginationBuilder(
+                                        color: darkGrey,
+                                        activeColor: black,
                                         size: 10.0,
                                         activeSize: 20.0)
                                     .build(context, config),
@@ -275,7 +276,7 @@ class ExampleCustomPagination extends StatelessWidget {
                         ),
                       );
                     })),
-                control: const SwiperControl(color: Colors.redAccent),
+                control: SwiperControl(color: redAccent),
               ),
             ),
           ],
@@ -303,11 +304,11 @@ class ExamplePhone extends StatelessWidget {
           ),
           Swiper.children(
             autoplay: false,
-            pagination: const SwiperPagination(
-                margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 30.0),
+            pagination: SwiperPagination(
+                margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 30.0),
                 builder: DotSwiperPaginationBuilder(
-                    color: Colors.white30,
-                    activeColor: Colors.white,
+                    color: lightGrey,
+                    activeColor: white,
                     size: 20.0,
                     activeSize: 20.0)),
             children: <Widget>[

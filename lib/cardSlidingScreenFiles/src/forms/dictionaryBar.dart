@@ -57,7 +57,7 @@ class dictionaryBar extends StatelessWidget {
                 color: baseDeepColor,
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: Icon(FontAwesomeIcons.search, color: Colors.white,),
+              child: Icon(FontAwesomeIcons.search, color: white,),
             ),
           ),
         ],

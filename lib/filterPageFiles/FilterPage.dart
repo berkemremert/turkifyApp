@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../mainTools/APPColors.dart';
+
 class FilterPage extends StatefulWidget {
   const FilterPage({super.key});
 
@@ -30,10 +32,10 @@ class _FilterState extends State<FilterPage>
                   width: 260,
                   height: 100,
                   decoration: BoxDecoration(
-                    color: Colors.red,
+                    color: red,
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(
-                      color: Colors.black, // Border color
+                      color: black, // Border color
                       width: 2, // Border width
                     ),
                   ),
@@ -70,7 +72,7 @@ class _FilterState extends State<FilterPage>
                               style: TextStyle(
                                 fontSize: 30,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.white,
+                                color: white,
                                 shadows: <Shadow>[
                                   Shadow(
                                     offset: const Offset(2.0, 2.0),

@@ -100,7 +100,7 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
-                color: Colors.white,
+                color: white,
                 child: Center(
                   child: Stack(
                     children: [
@@ -118,7 +118,7 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                       border: Border.all(
-                                        color: Colors.white,
+                                        color: white,
                                         width: 6.0,
                                       ),
                                     ),
