@@ -84,13 +84,13 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
             final friendId = _friendUids[index];
             final friendImageUrl = friendData?['profileImageUrl'];
             final bool imageChecker = friendImageUrl != null;
+            const bool isRead = true;
 
             return GestureDetector(
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    // builder: (context) => ChatPage(data: friendData!, friendId: friendId),
                     builder: (context) => ChatPage(data: friendData!, friendId: friendId),
                   ),
                 );
@@ -100,31 +100,59 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
-                color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                color: white,
+                child: Center(
+                  child: Stack(
                     children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          border: Border.all(
-                            color: Colors.white,
-                            width: 6.0,
-                          ),
+                      Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            SizedBox(
+                              height: 100.0, // Adjust the height as needed
+                              width: 100.0, // Adjust the width as needed
+                              child: Stack(
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      border: Border.all(
+                                        color: white,
+                                        width: 6.0,
+                                      ),
+                                    ),
+                                    child: CircleAvatar(
+                                      backgroundImage: imageChecker
+                                          ? NetworkImage(friendImageUrl as String)
+                                          : const AssetImage('assets/defaultProfilePicture.jpeg')
+                                      as ImageProvider<Object>,
+                                      radius: 40.0,
+                                    ),
+                                  ),
+                                  if (isRead)
+                                    Positioned(
+                                      top: 10,
+                                      right: 10,
+                                      child: Container(
+                                        width: 20.0,
+                                        height: 20.0,
+                                        decoration: const BoxDecoration(
+                                          color: Color.fromARGB(255, 236, 13, 13),
+                                          shape: BoxShape.circle,
+                                        ),
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(height: 10.0),
+                            Text(
+                              friendName,
+                              style: const TextStyle(fontSize: 16.0),
+                            ),
+                          ],
                         ),
-                        child: CircleAvatar(
-                          backgroundImage: imageChecker
-                              ? NetworkImage(friendImageUrl as String)
-                              : const AssetImage('assets/defaultProfilePicture.jpeg') as ImageProvider<Object>,
-                          radius: 40.0,
-                        ),
-                      ),
-                      const SizedBox(height: 10.0),
-                      Text(
-                        friendName,
-                        style: const TextStyle(fontSize: 16.0),
                       ),
                     ],
                   ),

@@ -1,5 +1,8 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import '../settingsPageFiles/settingsPage.dart';
 
+bool isDarkMode = !SettingsPage.getIsDarkMode();
 Color white = Colors.white;
 Color baseDeepColor = const Color.fromARGB(169, 236, 13, 13);
 Color darkRed = const Color.fromARGB(169, 128, 0, 0);
@@ -8,3 +11,8 @@ Color verLightRed = const Color.fromARGB(169, 255, 224, 224);
 Color loginPageWarnings = const Color.fromARGB(255, 136, 136, 136);
 Color black = Colors.black;
 Color darkGrey = Colors.black12;
+Color lightGrey = Colors.white30;
+Color redAccent = Colors.redAccent;
+Color blueAccent = Colors.blueAccent;
+Color greenAccent = Colors.greenAccent;
+Color red = Colors.red;

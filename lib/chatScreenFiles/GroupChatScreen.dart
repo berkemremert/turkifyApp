@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
 import 'package:flutter_chat_ui/flutter_chat_ui.dart';
@@ -260,38 +259,37 @@ class _ChatPageState extends State<ChatPage> {
   }
   void _loadMessages() {
     String wantID = findID();
-
     final messagesCollection = FirebaseFirestore.instance.collection('messages');
 
     messagesCollection.doc(wantID).snapshots().listen((snapshot) {
       if (snapshot.exists) {
-        final messageData = snapshot.data() as Map<String, dynamic>;
+          final messageData = snapshot.data() as Map<String, dynamic>;
 
-        List<types.Message> messages = [];
+          List<types.Message> messages = [];
 
-        messageData.values.forEach((data) {
-          try {
-            MyTextMessage message = MyTextMessage.fromJson(data);
-            var authorUser = message.authorID == _user.id
-                ? _user
-                : types.User(id: friendId);
-            final textMessage = types.TextMessage(
-              author: authorUser,
-              id: message.id,
-              text: message.text,
-              createdAt: message.createdAt,
-            );
-            messages.add(textMessage);
-          } catch (e) {
-            print("ERROR $e");
-          }
-        });
+          messageData.values.forEach((data) {
+            try {
+              MyTextMessage message = MyTextMessage.fromJson(data);
+              var authorUser = message.authorID == _user.id
+                  ? _user
+                  : types.User(id: friendId);
+              final textMessage = types.TextMessage(
+                author: authorUser,
+                id: message.id,
+                text: message.text,
+                createdAt: message.createdAt,
+              );
+              messages.add(textMessage);
+            } catch (e) {
+              print("ERRORa $e");
+            }
+          });
+          // messageData['isRead'];
+          messages.sort((a, b) => b.createdAt!.compareTo(a.createdAt!));
 
-        messages.sort((a, b) => b.createdAt!.compareTo(a.createdAt!));
-
-        setState(() {
-          _messages = messages;
-        });
+          setState(() {
+            _messages = messages;
+          });
       }
     });
   }
@@ -303,7 +301,9 @@ class _ChatPageState extends State<ChatPage> {
         required nextMessageInGroup,
       }) {
     DateTime datetime = DateTime.fromMillisecondsSinceEpoch(message.createdAt!);
-    String messageTime = '${datetime.hour}:${datetime.minute}';
+    String messageTime = (datetime.minute.toString().length == 2)
+        ? '${datetime.hour}:${datetime.minute}'
+        : '${datetime.hour}:0${datetime.minute}';
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -321,8 +321,8 @@ class _ChatPageState extends State<ChatPage> {
         ),
         Text(
           messageTime,
-          style: const TextStyle(
-            color: Colors.grey,
+          style: TextStyle(
+            color: lightGrey,
             fontSize: 12,
           ),
         ),
@@ -351,7 +351,7 @@ class _ChatPageState extends State<ChatPage> {
         title: Text(
           data['name'],
           style: TextStyle(
-            color: _isDarkMode ? white : Colors.black,
+            color: _isDarkMode ? white : black,
           ),
         ),
         backgroundColor: _isDarkMode ? (_isSelected ? const Color.fromRGBO(28, 20, 143, 10) : const Color.fromRGBO(58, 50, 143, 10)) : (_isSelected ? Color.fromRGBO(176, 224, 230, 10) : white),
@@ -411,14 +411,18 @@ class _ChatPageState extends State<ChatPage> {
       if (snapshot.exists) {
         final messageData = snapshot.data() as Map<String, dynamic>;
         messageData.forEach((key, value) {
-          if (value['id'] == _selectedMessageID) {
-            messagesCollection.doc(wantID).update({
-              key: FieldValue.delete(),
-            });
-            setState(() {
-              _isSelected = false;
-              _selectedMessageID = "";
-            });
+          try {
+            if (value['id'] == _selectedMessageID) {
+              messagesCollection.doc(wantID).update({
+                key: FieldValue.delete(),
+              });
+              setState(() {
+                _isSelected = false;
+                _selectedMessageID = "";
+              });
+            }
+          } catch(e){
+            print("ERRORA $e");
           }
         });
       }
