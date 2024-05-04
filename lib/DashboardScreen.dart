@@ -10,6 +10,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/chatScreenFiles/FriendsListScreenChat.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
+import 'package:turkify_bem/royaPage.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
 import 'package:turkify_bem/videoMeetingFiles/FriendsListScreenVideoMeeting.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
@@ -88,11 +89,10 @@ class _DashboardScreenState extends State<DashboardScreen>
         final userDoc = await firestore.collection('users').doc(user!.uid).get();
         final fcmTokenExists = userDoc.exists && userDoc.data()!.containsKey('fcmToken');
 
-        if (!fcmTokenExists) {
-          await firestore.collection('users').doc(user!.uid).update({
-            'fcmToken': fcmToken,
-          });
-        }
+        await firestore.collection('users').doc(user!.uid).update({
+          'fcmToken': fcmToken,
+        });
+
       } else {
         debugPrint('FCM token is null');
       }
@@ -164,6 +164,8 @@ class _DashboardScreenState extends State<DashboardScreen>
       ],
       backgroundColor: Colors.white,
       elevation: 0,
+      leading: null,
+      automaticallyImplyLeading: false,
     );
   }
 
@@ -297,7 +299,17 @@ class _DashboardScreenState extends State<DashboardScreen>
             ),
           );
         } else if (identifier == 'task') {
-          // IT'S AVAILABLE
+          _loadingController!.reverse();
+          await Future.delayed(const Duration(milliseconds: 1300));
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ScaffoldWidget(
+                title: "",
+                child: royasPage(),
+              ),
+            ),
+          );
         } else if (identifier == 'match') {
           _loadingController!.reverse();
           await Future.delayed(const Duration(milliseconds: 1300));
