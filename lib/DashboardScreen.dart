@@ -226,7 +226,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                         textAlign: TextAlign.center,
                         style: theme.textTheme.displaySmall!.copyWith(
                           fontWeight: FontWeight.w300,
-                          color: darkRed,
+                          color: !SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Colors.white,
                           fontSize: 25,
                         ),
                       ),
@@ -440,7 +440,7 @@ class _DashboardScreenState extends State<DashboardScreen>
         child: Scaffold(
           appBar: _buildAppBar(theme),
           body: Container(
-            color: Colors.white,
+            color: SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Colors.white,
             width: double.infinity,
             height: double.infinity,
             child: Stack(

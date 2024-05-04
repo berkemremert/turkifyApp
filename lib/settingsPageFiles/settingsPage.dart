@@ -9,6 +9,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
@@ -56,7 +57,7 @@ class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: SettingsPage.isDarkMode ? Colors.black : Colors.white, // Step 3
+      backgroundColor: SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Colors.white,
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: ListView(
@@ -80,7 +81,11 @@ class _SettingsPageState extends State<SettingsPage> {
             const SizedBox(height: 15),
             Text(
               _userData['name'] ?? "Name Surname",
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+              style: TextStyle(
+                color: !SettingsPage.isDarkMode ? Colors.black : Colors.white,
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 15),
@@ -92,7 +97,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   },
                   icons: CupertinoIcons.profile_circled,
                   iconStyle: IconStyle(
-                    iconsColor: Colors.white,
+                    iconsColor: white,
                     withBackground: true,
                     backgroundColor: baseDeepColor,
                   ),
@@ -107,7 +112,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   },
                   icons: CupertinoIcons.pencil,
                   iconStyle: IconStyle(
-                    iconsColor: Colors.white,
+                    iconsColor: white,
                     withBackground: true,
                     backgroundColor: baseDeepColor,
                   ),
@@ -120,7 +125,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   onTap: () {},
                   icons: Icons.notifications,
                   iconStyle: IconStyle(
-                    iconsColor: Colors.white,
+                    iconsColor: white,
                     withBackground: true,
                     backgroundColor: baseDeepColor,
                   ),
@@ -131,7 +136,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   onTap: () {},
                   icons: Icons.block,
                   iconStyle: IconStyle(
-                    iconsColor: Colors.white,
+                    iconsColor: white,
                     withBackground: true,
                     backgroundColor: baseDeepColor,
                   ),
@@ -156,7 +161,10 @@ class _SettingsPageState extends State<SettingsPage> {
             ListTile(
               title: Row(
                 children: [
-                  const Icon(Icons.nightlight_round),
+                  Icon(
+                    Icons.nightlight_round,
+                    color: !SettingsPage.isDarkMode ? black : white,
+                  ),
                   Padding(
                     padding: const EdgeInsets.all(20.0),
                     child: Text(
@@ -164,7 +172,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
-                        color: black,
+                        color: !SettingsPage.isDarkMode ? Colors.black : Colors.white,
                       ),
                     ),
                   )
@@ -182,6 +190,11 @@ class _SettingsPageState extends State<SettingsPage> {
 
             SettingsGroup(
               settingsGroupTitle: "Account",
+              settingsGroupTitleStyle: TextStyle(
+                color: !SettingsPage.isDarkMode ? Colors.black : Colors.white,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
               items: [
                 SettingsItem(
                   onTap: () {},

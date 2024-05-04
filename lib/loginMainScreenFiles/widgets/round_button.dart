@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 
+import '../../settingsPageFiles/settingsPage.dart';
+
 class RoundButton extends StatefulWidget {
   const RoundButton({
     super.key,
@@ -97,7 +99,7 @@ class _RoundButtonState extends State<RoundButton>
             Text(
               widget.label!,
               style: theme.textTheme.bodySmall!
-                  .copyWith(color: darkRed),
+                  .copyWith(color: !SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Colors.white),
               textAlign: TextAlign.center,
             ),
           ],
