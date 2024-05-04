@@ -79,6 +79,7 @@ class _SearchBarState extends State<SearchBar> {
   }
 
   Future<String> printMyWord(String word) async {
+    // CHECK meanings by printing, understand its structure.
     final st = SimplyTranslator(EngineType.google);
     var tr = await st.translateSimply(
         word,
