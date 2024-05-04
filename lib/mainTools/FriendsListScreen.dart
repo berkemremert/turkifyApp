@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import 'APPColors.dart';
+
 class FriendsListScreen extends StatefulWidget {
   const FriendsListScreen({super.key});
 
@@ -81,14 +83,14 @@ class _FriendsListScreenState extends State<FriendsListScreen> {
 
             return GestureDetector(
               onTap: () {
-              //TODO:
+                //TODO:
               },
               child: Card(
                 elevation: 3.0,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
-                color: Colors.white,
+                color: white,
                 child: Padding(
                   padding: EdgeInsets.all(10.0),
                   child: Column(

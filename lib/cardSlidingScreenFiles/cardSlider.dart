@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 // import 'package:turkify_bem/APPColors.dart';
 
 import '../mainTools/APPColors.dart';
+import '../settingsPageFiles/settingsPage.dart';
 import 'src/config.dart';
 
 void main() => runApp(const MyApp());
@@ -346,11 +347,20 @@ class ScaffoldWidget extends StatelessWidget {
   Widget build(context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        // backgroundColor: SettingsPage.getIsDarkMode() ? Colors.black : Colors.white,
+        title: Text(
+            title,
+            style: TextStyle(
+              color: !SettingsPage.getIsDarkMode() ? black : white,
+           ),
+        ),
+        iconTheme: IconThemeData(
+          color: !SettingsPage.getIsDarkMode() ? Colors.black : Colors.white,
+        ),
         actions: actions,
         elevation: 0,
       ),
-      body: child,
+      body: child
     );
   }
 }

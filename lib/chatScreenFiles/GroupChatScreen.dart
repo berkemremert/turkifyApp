@@ -16,6 +16,11 @@ import 'package:uuid/uuid.dart';
 import 'package:bubble/bubble.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 
+import '../DashboardScreen.dart';
+import '../loginMainScreenFiles/custom_route.dart';
+import '../settingsPageFiles/settingsPage.dart';
+import '../videoMeetingFiles/videoMeetingMain.dart';
+
 class ChatPage extends StatefulWidget {
   final Map<String, dynamic> data;
   final String friendId;
@@ -31,7 +36,7 @@ class _ChatPageState extends State<ChatPage> {
   final types.User _user = types.User(id: FirebaseAuth.instance.currentUser!.uid);
   Map<String, dynamic> get data => widget.data;
   String get friendId => widget.friendId;
-  bool _isDarkMode = false;
+  bool _isDarkMode = SettingsPage.getIsDarkMode();
   bool _isSelected = false;
   String _selectedMessageID = "";
 
@@ -284,7 +289,6 @@ class _ChatPageState extends State<ChatPage> {
               print("ERRORa $e");
             }
           });
-          // messageData['isRead'];
           messages.sort((a, b) => b.createdAt!.compareTo(a.createdAt!));
 
           setState(() {
@@ -344,56 +348,6 @@ class _ChatPageState extends State<ChatPage> {
       print("Long press $_isSelected , $_selectedMessageID");
     });
   }
-  @override
-  Widget build(BuildContext context){
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          data['name'],
-          style: TextStyle(
-            color: _isDarkMode ? white : black,
-          ),
-        ),
-        backgroundColor: _isDarkMode ? (_isSelected ? const Color.fromRGBO(28, 20, 143, 10) : const Color.fromRGBO(58, 50, 143, 10)) : (_isSelected ? Color.fromRGBO(176, 224, 230, 10) : white),
-        actions: [
-          Visibility(
-            visible: _isSelected,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: IconButton(
-                icon: const Icon(Icons.delete),
-                color: _isDarkMode ? white : kDefaultIconDarkColor,
-                onPressed: _deleteMessage,
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: IconButton(
-              icon: Icon(_isDarkMode ? Icons.wb_sunny : Icons.nightlight_round),
-              color: _isDarkMode ? white : kDefaultIconDarkColor,
-              onPressed: _toggleMode,
-            ),
-          ),
-        ],
-      ),
-      body: Chat(
-        messages: _messages,
-        theme: _isDarkMode ? const DarkChatTheme() : const DefaultChatTheme(),
-        onAttachmentPressed: _handleAttachmentPressed,
-        onMessageTap: _handleMessageTap,
-        onPreviewDataFetched: _handlePreviewDataFetched,
-        onSendPressed: _handleSendPressed,
-        showUserAvatars: true,
-        showUserNames: true,
-        bubbleBuilder: _bubbleBuilder,
-        user: _user,
-        onMessageLongPress: _onMessageLongPress,
-        onBackgroundTap: _onBackgroundTap,
-      ),
-    );
-  }
-
   void _onBackgroundTap() {
     setState(() {
       _isSelected = false;
@@ -401,7 +355,6 @@ class _ChatPageState extends State<ChatPage> {
       print("Background tap $_isSelected , $_selectedMessageID");
     });
   }
-
   void _deleteMessage() {
     String wantID = findID();
 
@@ -428,4 +381,109 @@ class _ChatPageState extends State<ChatPage> {
       }
     });
   }
+
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          data['name'],
+          style: TextStyle(
+              color: _isDarkMode ? white : black
+          ),
+        ),
+        backgroundColor: _isDarkMode ? (_isSelected ? const Color.fromRGBO(28, 20, 143, 10) : const Color.fromRGBO(58, 50, 143, 10)) : (_isSelected ? Color.fromRGBO(176, 224, 230, 10) : white),
+        actions: [
+          Visibility(
+            visible: _isSelected,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: IconButton(
+                icon: const Icon(Icons.delete),
+                color: _isDarkMode ? white : kDefaultIconDarkColor,
+                onPressed: _deleteMessage,
+              ),
+            ),
+          ),
+          IconButton(
+            icon: const Icon(Icons.call),
+            color: _isDarkMode ? white : kDefaultIconDarkColor,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => VideoMeetingPage(calleeId: _user1!.uid),
+                ),
+              );
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.event),
+            color: _isDarkMode ? white : kDefaultIconDarkColor,
+            onPressed: () {
+              openDialog();
+            },
+          ),
+          const SizedBox(width: 12)
+        ],
+      ),
+
+      body: Chat(
+        messages: _messages,
+        theme: _isDarkMode ? const DarkChatTheme() : const DefaultChatTheme(),
+        onAttachmentPressed: _handleAttachmentPressed,
+        onMessageTap: _handleMessageTap,
+        onPreviewDataFetched: _handlePreviewDataFetched,
+        onSendPressed: _handleSendPressed,
+        showUserAvatars: true,
+        showUserNames: true,
+        avatarBuilder: (data['profileImageUrl'] != null) ? _buildAvatarTrue : _buildAvatarFalse,
+        bubbleBuilder: _bubbleBuilder,
+        user: _user,
+        onMessageLongPress: _onMessageLongPress,
+        onBackgroundTap: _onBackgroundTap,
+      ),
+    );
+  }
+
+  Widget _buildAvatarTrue(types.User user) {
+    String url = data['profileImageUrl'] as String;
+    return CircleAvatar(
+      backgroundImage: NetworkImage(url)
+    );
+  }
+  Widget _buildAvatarFalse(types.User user) {
+    return const CircleAvatar(
+      backgroundImage: AssetImage('assets/defaultProfilePicture.jpeg'),
+    );
+  }
+
+  Future openDialog() => showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text("Create an Appointment"),
+        content: const TextField(
+          decoration: InputDecoration(hintText: 'Enter your desired time'),
+        ),
+        actions: [
+          TextButton(
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+            ),
+            onPressed: () {
+              // TODO: Fill here accordingly
+            },
+            child: const Text(
+              "Submit",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          )
+
+        ],
+      ),
+  );
 }
