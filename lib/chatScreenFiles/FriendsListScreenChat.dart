@@ -18,12 +18,11 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
 
   User? _user;
   List<String> _friendUids = [];
-  Map<String, bool> isReadMap = {}; // Changed to Map<String, bool>
+  Map<String, bool> isReadMap = {};
 
   @override
   void initState() {
     super.initState();
-    _printAllMessages(); // Call _printAllMessages in initState
     _getUser();
   }
 
@@ -45,6 +44,9 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
         _friendUids = List<String>.from(userData['friends']);
       });
     }
+
+    // Call _printAllMessages to start listening to real-time updates
+    _printAllMessages();
   }
 
   @override
@@ -56,36 +58,36 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
 
   void _printAllMessages() async {
     final messagesCollection = FirebaseFirestore.instance.collection('messages');
-    final messages = await messagesCollection.get();
+    messagesCollection.snapshots().listen((snapshot) {
+      snapshot.docs.forEach((doc) {
+        final data = doc.data();
+        if (data.containsKey('isRead')) {
+          final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
+          final docId = doc.id;
+          final halfLength = docId.length ~/ 2;
 
-    messages.docs.forEach((doc) {
-      final data = doc.data();
-      if (data.containsKey('isRead')) {
-        final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
-        final docId = doc.id;
-        final halfLength = docId.length ~/ 2;
-
-        String key;
-        if (docId.startsWith(userId)) {
-          key = docId.substring(halfLength);
-          setState(() { // Ensure to call setState to update the UI
-            if (data['isRead'] == 1) {
-              isReadMap[key] = false;
-            } else {
-              isReadMap[key] = true;
-            }
-          });
-        } else {
-          key = docId.substring(0, halfLength);
-          setState(() { // Ensure to call setState to update the UI
-            if (data['isRead'] == 2) {
-              isReadMap[key] = false;
-            } else {
-              isReadMap[key] = true;
-            }
-          });
+          String key;
+          if (docId.startsWith(userId)) {
+            key = docId.substring(halfLength);
+            setState(() {
+              if (data['isRead'] == 1) {
+                isReadMap[key] = false;
+              } else {
+                isReadMap[key] = true;
+              }
+            });
+          } else {
+            key = docId.substring(0, halfLength);
+            setState(() {
+              if (data['isRead'] == 2) {
+                isReadMap[key] = false;
+              } else {
+                isReadMap[key] = true;
+              }
+            });
+          }
         }
-      }
+      });
     });
   }
 
@@ -121,7 +123,7 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
             final friendId = _friendUids[index];
             final friendImageUrl = friendData?['profileImageUrl'];
             final bool imageChecker = friendImageUrl != null;
-            bool isRead = isReadMap[friendId] ?? false; // Use ?? false to handle null values
+            bool isRead = isReadMap[friendId] ?? false;
             print("$friendName ${isReadMap[friendId]}");
             return GestureDetector(
               onTap: () async {
@@ -131,8 +133,8 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
                     builder: (context) => ChatPage(data: friendData!, friendId: friendId),
                   ),
                 );
-                // Call _printAllMessages again when returning from ChatPage
-                _printAllMessages();
+                // Call _fetchFriends again when returning from ChatPage
+                _fetchFriends();
               },
               child: Card(
                 elevation: 3.0,
