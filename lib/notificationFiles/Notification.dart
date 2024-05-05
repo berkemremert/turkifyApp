@@ -37,7 +37,48 @@ class NotificationMethods {
     } catch (error) {
       debugPrint('Error initializing notifications: $error');
     }
+
+    FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+      print('Received message: ${message.notification?.title}');
+    });
+
+    FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
+      print('Message clicked!');
+    });
   }
 
+  // Future<void> sendNotification({
+  //   required String receiverUid,
+  //   required String title,
+  //   required String body,
+  // }) async {
+  //   try {
+  //     // Get FCM token of the receiver from Firestore
+  //     final userDoc = await FirebaseFirestore.instance
+  //         .collection('users')
+  //         .doc(receiverUid)
+  //         .get();
+  //
+  //     if (userDoc.exists) {
+  //       final fcmToken = userDoc.data()?['fcmToken'];
+  //
+  //       // Send notification using FCM
+  //       await _firebaseMessaging.subscribeToTopic(receiverUid);
+  //       await _firebaseMessaging.send(
+  //         messaging.Message(
+  //           notification: messaging.Notification(
+  //             title: title,
+  //             body: body,
+  //           ),
+  //           token: fcmToken,
+  //         ),
+  //       );
+  //     } else {
+  //       print('User document not found for $receiverUid');
+  //     }
+  //   } catch (error) {
+  //     print('Error sending notification: $error');
+  //   }
+  // }
 
 }
