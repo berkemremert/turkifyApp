@@ -22,6 +22,7 @@ import 'listingPageFiles/listingScreen.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
 import 'loginMainScreenFiles/widgets/fade_in.dart';
 import 'loginMainScreenFiles/widgets/round_button.dart';
+import 'notificationFiles/Notification.dart';
 
 class DashboardScreen extends StatefulWidget {
   static const routeName = '/dashboard';
@@ -76,29 +77,8 @@ class _DashboardScreenState extends State<DashboardScreen>
 
     _checkIfBeingCalled();
 
-    initNotification();
-  }
-
-  Future<void> initNotification() async {
-    try {
-      await _firebaseMessaging.requestPermission();
-      final fcmToken = await _firebaseMessaging.getToken();
-
-      if (fcmToken != null) {
-        final firestore = FirebaseFirestore.instance;
-        final userDoc = await firestore.collection('users').doc(user!.uid).get();
-        final fcmTokenExists = userDoc.exists && userDoc.data()!.containsKey('fcmToken');
-
-        await firestore.collection('users').doc(user!.uid).update({
-          'fcmToken': fcmToken,
-        });
-
-      } else {
-        debugPrint('FCM token is null');
-      }
-    } catch (error) {
-      debugPrint('Error initializing notifications: $error');
-    }
+    NotificationMethods().requestPermissions();
+    NotificationMethods().initNotification(user!);
   }
 
   Future<void> _listenToCallField() async {
