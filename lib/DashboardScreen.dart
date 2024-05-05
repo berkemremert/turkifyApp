@@ -53,13 +53,15 @@ class _DashboardScreenState extends State<DashboardScreen>
   bool _isLoadingCall = true;
   StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _callStream;
   final _firebaseMessaging = FirebaseMessaging.instance;
+  Map<String, bool> isReadMap = {};
 
   @override
   void initState() {
     super.initState();
+    print("AAAAAAAAAAAAAAAAA $isReadMap");
 
     gettUserData();
-
+    _createIsRead();
     _listenToCallField();
 
     _loadingController = AnimationController(
@@ -126,7 +128,7 @@ class _DashboardScreenState extends State<DashboardScreen>
   AppBar _buildAppBar(ThemeData theme) {
     final signOutBtn = IconButton(
         icon: const Icon(FontAwesomeIcons.rightFromBracket),
-        color: baseDeepColor,
+        color: textColor(),
         onPressed: () {
           logOut();
           _goToLogin(context);
@@ -142,7 +144,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           child: signOutBtn,
         ),
       ],
-      backgroundColor: backGround(),
+      backgroundColor: backGroundColor(),
       elevation: 0,
       leading: null,
       automaticallyImplyLeading: false,
@@ -193,35 +195,43 @@ class _DashboardScreenState extends State<DashboardScreen>
                   decoration: BoxDecoration(
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.05),
+                        color: Colors.black.withOpacity(0.1),
                         spreadRadius: 5,
                         blurRadius: 30,
                         offset: const Offset(0, 2),
                       ),
                     ],
                   ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        welcoming,
-                        textAlign: TextAlign.center,
-                        style: theme.textTheme.displaySmall!.copyWith(
-                          fontWeight: FontWeight.w300,
-                          color: textColor(),
-                          fontSize: 25,
+                  child: Container(
+                    height: 100,
+                    width: 200,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: welcomeColor(),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          welcoming,
+                          textAlign: TextAlign.center,
+                          style: theme.textTheme.displaySmall!.copyWith(
+                            fontWeight: FontWeight.w300,
+                            color: textColor(),
+                            fontSize: 25,
+                          ),
                         ),
-                      ),
-                      Text(
-                        firstName,
-                        textAlign: TextAlign.center,
-                        style: theme.textTheme.displaySmall!.copyWith(
-                          fontWeight: FontWeight.w400,
-                          color: baseDeepColor,
-                          fontSize: 40,
+                        Text(
+                          firstName,
+                          textAlign: TextAlign.center,
+                          style: theme.textTheme.displaySmall!.copyWith(
+                            fontWeight: FontWeight.w400,
+                            color: textColor(),
+                            fontSize: 40,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ],
@@ -241,92 +251,93 @@ class _DashboardScreenState extends State<DashboardScreen>
   }) {
     _loadingController!.forward();
     return RoundButton(
-      icon: Icon(
-        icon,
-        color: iconColor,
-      ),
-      label: label,
-      loadingController: _loadingController,
-      interval: Interval(
-        interval.begin,
-        interval.end,
-        curve: const ElasticOutCurve(0.42),
-      ),
-      onPressed: () async {
-        if (identifier == 'chat') {
-          _loadingController!.reverse();
-          await Future.delayed(const Duration(milliseconds: 1295));
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const ScaffoldWidget(
-                title: "",
-                child: FriendsListScreenChat(),
-              ),
+    icon: Icon(
+      icon,
+      color: iconColor,
+    ),
+    label: label,
+    loadingController: _loadingController,
+    interval: Interval(
+      interval.begin,
+      interval.end,
+      curve: const ElasticOutCurve(0.42),
+    ),
+    isRead: isReadMap.values.contains(false) && identifier == 'chat',
+    onPressed: () async {
+      if (identifier == 'chat') {
+        _loadingController!.reverse();
+        await Future.delayed(const Duration(milliseconds: 1295));
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const ScaffoldWidget(
+              title: "",
+              child: FriendsListScreenChat(),
             ),
-          );
-        } else if (identifier == 'calendar') {
-          //FILL HERE -deniz
-          _loadingController!.reverse();
-          await Future.delayed(const Duration(milliseconds: 1300));
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const ScaffoldWidget(
-                title: '',
-                child: FilterPage(),
-              ),
+          ),
+        );
+      } else if (identifier == 'calendar') {
+        //FILL HERE -deniz
+        _loadingController!.reverse();
+        await Future.delayed(const Duration(milliseconds: 1300));
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const ScaffoldWidget(
+              title: '',
+              child: FilterPage(),
             ),
-          );
-        } else if (identifier == 'task') {
-          _loadingController!.reverse();
-          await Future.delayed(const Duration(milliseconds: 1300));
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => ScaffoldWidget(
-                title: "",
-                child: royasPage(),
-              ),
+          ),
+        );
+      } else if (identifier == 'task') {
+        _loadingController!.reverse();
+        await Future.delayed(const Duration(milliseconds: 1300));
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ScaffoldWidget(
+              title: "",
+              child: royasPage(),
             ),
-          );
-        } else if (identifier == 'match') {
-          _loadingController!.reverse();
-          await Future.delayed(const Duration(milliseconds: 1300));
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const ScaffoldWidget(
-                title: "",
-                child: listingScreen(),
-              ),
+          ),
+        );
+      } else if (identifier == 'match') {
+        _loadingController!.reverse();
+        await Future.delayed(const Duration(milliseconds: 1300));
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const ScaffoldWidget(
+              title: "",
+              child: listingScreen(),
             ),
-          );
-        } else if (identifier == 'profile') {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const ScaffoldWidget(
-                title: 'Kelime Kartları',
-                child: SwiperPage(),
-              ),
+          ),
+        );
+      } else if (identifier == 'profile') {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const ScaffoldWidget(
+              title: 'Kelime Kartları',
+              child: SwiperPage(),
             ),
-          );
-        } else if (identifier == 'settings') {
-          _loadingController!.reverse();
-          await Future.delayed(const Duration(milliseconds: 1300));
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const ScaffoldWidget(
-                title: 'Settings',
-                child: SettingsPage(),
-              ),
+          ),
+        );
+      } else if (identifier == 'settings') {
+        _loadingController!.reverse();
+        await Future.delayed(const Duration(milliseconds: 1300));
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const ScaffoldWidget(
+              title: 'Settings',
+              child: SettingsPage(),
             ),
-          );
-        }
-      },
-    );
+          ),
+        );
+      }
+    },
+            );
   }
 
   Widget _buildDashboardGrid() {
@@ -425,14 +436,14 @@ class _DashboardScreenState extends State<DashboardScreen>
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    // print("lksdfşkfşlksdlşfkslkdf");
+    print("AAAAAAAAAAAAAAAAA ${isReadMap.containsValue(false)}");
     return PopScope(
       onPopInvoked: (hasPopped) => hasPopped ? _goToLogin(context) : null,
       child: SafeArea(
         child: Scaffold(
           appBar: _buildAppBar(theme),
           body: Container(
-            color: backGround(),
+            color: backGroundColor(),
             width: double.infinity,
             height: double.infinity,
             child: Stack(
@@ -471,7 +482,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                         ),
                       ),
                     )
-              :
+                        :
                     _buildImagedButton(
                       imagePath: _isBeingCalled
                           ? "assets/callGreen.png"
@@ -540,7 +551,7 @@ class _DashboardScreenState extends State<DashboardScreen>
 
       if (userSnapshot.exists) {
         Map<String, dynamic> userData =
-            userSnapshot.data() as Map<String, dynamic>;
+        userSnapshot.data() as Map<String, dynamic>;
         return userData;
       } else {
         return null;
@@ -581,5 +592,40 @@ class _DashboardScreenState extends State<DashboardScreen>
         isCall: _isBeingCalled,
       ),
     );
+  }
+
+  void _createIsRead() async {
+    final messagesCollection = FirebaseFirestore.instance.collection('messages');
+    messagesCollection.snapshots().listen((snapshot) {
+      snapshot.docs.forEach((doc) {
+        final data = doc.data();
+        if (data.containsKey('isRead')) {
+          final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
+          final docId = doc.id;
+          final halfLength = docId.length ~/ 2;
+
+          String key;
+          if (docId.startsWith(userId)) {
+            key = docId.substring(halfLength);
+            setState(() {
+              if (data['isRead'] == 1) {
+                isReadMap[key] = false;
+              } else {
+                isReadMap[key] = true;
+              }
+            });
+          } else {
+            key = docId.substring(0, halfLength);
+            setState(() {
+              if (data['isRead'] == 2) {
+                isReadMap[key] = false;
+              } else {
+                isReadMap[key] = true;
+              }
+            });
+          }
+        }
+      });
+    });
   }
 }

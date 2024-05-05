@@ -39,13 +39,24 @@ class _ChatPageState extends State<ChatPage> {
   bool _isDarkMode = SettingsPage.getIsDarkMode();
   bool _isSelected = false;
   String _selectedMessageID = "";
+  bool isTutor = false;
 
   @override
   void initState() {
     super.initState();
     _loadMessages();
+    _loadCurrentUser();
   }
-
+  void _loadCurrentUser() async {
+    String userId = FirebaseAuth.instance.currentUser?.uid ?? '';
+    if (userId.isNotEmpty) {
+      DocumentSnapshot userSnapshot = await FirebaseFirestore.instance.collection('users').doc(userId).get();
+      Map<String, dynamic>? userData = userSnapshot.data() as Map<String, dynamic>?;
+      setState(() {
+        isTutor = userData?['isTutor'] ?? false;
+      });
+    }
+  }
   Future<void> _addMessage(types.Message message) async {
     String wantID = findID();
     int createdTime = message.createdAt!;
@@ -314,8 +325,8 @@ class _ChatPageState extends State<ChatPage> {
         Bubble(
           color: _user.id != message.author.id ||
               message.type == types.MessageType.image
-              ? (_isDarkMode ? Color.fromARGB(255, 52, 73, 94) : const Color(0xfff5f5f7))
-              : (_isDarkMode ? Color.fromARGB(255, 15, 95, 82) : baseDeepColor),
+              ? (_isDarkMode ? Color.fromARGB(255, 32, 63, 84) : const Color(0xfff5f5f7))
+              : (_isDarkMode ? Color.fromARGB(255, 25, 120, 100) : baseDeepColor),
           // TODO: I sucked at choosing colors. HELP
           showNip: true,
           borderColor: Colors.transparent,
@@ -422,7 +433,9 @@ class _ChatPageState extends State<ChatPage> {
             icon: const Icon(Icons.event),
             color: _isDarkMode ? white : kDefaultIconDarkColor,
             onPressed: () {
-              openDialog();
+              if(isTutor){
+                openDialog();
+              }
             },
           ),
           const SizedBox(width: 12)

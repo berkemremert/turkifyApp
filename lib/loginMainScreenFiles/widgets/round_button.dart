@@ -14,6 +14,7 @@ class RoundButton extends StatefulWidget {
     required this.loadingController,
     this.interval = const Interval(0, 1, curve: Curves.ease),
     this.size = 60,
+    required this.isRead,
   });
 
   final Widget? icon;
@@ -22,6 +23,7 @@ class RoundButton extends StatefulWidget {
   final AnimationController? loadingController;
   final Interval interval;
   final double size;
+  final bool isRead;
 
   @override
   _RoundButtonState createState() => _RoundButtonState();
@@ -74,26 +76,46 @@ class _RoundButtonState extends State<RoundButton>
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            ScaleTransition(
-              scale: _scaleAnimation,
-              child: SizedBox(
-                width: widget.size,
-                height: widget.size,
-                child: FittedBox(
-                  child: FloatingActionButton(
-                    backgroundColor: baseDeepColor,
-                    // allow more than 1 FAB in the same screen (hero tag cannot be duplicated)
-                    heroTag: null,
-                    onPressed: () {
-                      _pressController.forward().then((_) {
-                        _pressController.reverse();
-                      });
-                      widget.onPressed();
-                    },
-                    child: widget.icon,
+            Stack(
+              children: [
+                ScaleTransition(
+                  scale: _scaleAnimation,
+                  child: SizedBox(
+                    width: widget.size,
+                    height: widget.size,
+                    child: FittedBox(
+                      child: FloatingActionButton(
+                        backgroundColor: baseDeepColor,
+                        heroTag: null,
+                        onPressed: () {
+                          _pressController.forward().then((_) {
+                            _pressController.reverse();
+                          });
+                          widget.onPressed();
+                        },
+                        child: widget.icon,
+                      ),
+                    ),
                   ),
                 ),
-              ),
+                Positioned(
+                  top: 0,
+                  right: 0,
+                  child: Container(
+                    width: 15,
+                    height: 15,
+                    child: Icon(
+                      Icons.notifications,
+                      color: widget.isRead ? notificationColor() : Colors.transparent,
+                      size: 25,
+                    ),
+                    // decoration: BoxDecoration(
+                    //   shape: BoxShape.circle,
+                    //   color: (widget.isRead) ? Colors.black : Colors.transparent,
+                    // ),
+                  ),
+                ),
+              ],
             ),
             const SizedBox(height: 10),
             Text(

@@ -18,9 +18,16 @@ Color blueAccent = Colors.blueAccent;
 Color greenAccent = Colors.greenAccent;
 Color red = Colors.red;
 
-Color backGround(){
-  return SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Colors.white;
+Color backGroundColor(){
+  return SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : const Color.fromARGB(255, 245, 235, 230);
 }
 Color textColor(){
   return SettingsPage.isDarkMode ? Colors.white : Colors.black;
+}
+Color notificationColor(){
+  return SettingsPage.isDarkMode ? Colors.white : const Color.fromARGB(255, 128, 0, 0);
+}
+Color welcomeColor(){
+  return SettingsPage.isDarkMode ? baseDeepColor : const Color.fromARGB(255, 245, 235, 230);
+
 }
