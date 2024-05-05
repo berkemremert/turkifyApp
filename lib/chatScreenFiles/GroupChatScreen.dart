@@ -407,7 +407,7 @@ class _ChatPageState extends State<ChatPage> {
             ),
           ),
           IconButton(
-            icon: const Icon(Icons.call),
+            icon: const Icon(Icons.videocam_outlined),
             color: _isDarkMode ? white : kDefaultIconDarkColor,
             onPressed: () {
               Navigator.push(
