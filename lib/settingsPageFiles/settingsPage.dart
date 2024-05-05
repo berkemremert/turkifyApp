@@ -15,6 +15,10 @@ import 'package:image_picker/image_picker.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/PermCheckers.dart';
 
+import '../DashboardScreen.dart';
+import '../cardSlidingScreenFiles/cardSlider.dart';
+import '../loginMainScreenFiles/custom_route.dart';
+
 class SettingsPage extends StatefulWidget {
   static bool isDarkMode = false;
 
@@ -56,6 +60,7 @@ class _SettingsPageState extends State<SettingsPage> {
 
   @override
   Widget build(BuildContext context) {
+    print("AAAAAAAAAAAAAA $isDarkMode");
     return Scaffold(
       backgroundColor: SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Colors.white,
       body: Padding(
@@ -82,7 +87,7 @@ class _SettingsPageState extends State<SettingsPage> {
             Text(
               _userData['name'] ?? "Name Surname",
               style: TextStyle(
-                color: !SettingsPage.isDarkMode ? Colors.black : Colors.white,
+                color: textColor(),
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
@@ -172,7 +177,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
-                        color: !SettingsPage.isDarkMode ? Colors.black : Colors.white,
+                        color: textColor(),
                       ),
                     ),
                   )
@@ -184,6 +189,16 @@ class _SettingsPageState extends State<SettingsPage> {
                   setState(() {
                     SettingsPage.isDarkMode = value;
                   });
+                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ScaffoldWidget(
+                        title: 'Settings',
+                        child: SettingsPage(),
+                      ),
+                    ),
+                  );
                 },
               ),
             ),
@@ -191,7 +206,7 @@ class _SettingsPageState extends State<SettingsPage> {
             SettingsGroup(
               settingsGroupTitle: "Account",
               settingsGroupTitleStyle: TextStyle(
-                color: !SettingsPage.isDarkMode ? Colors.black : Colors.white,
+                color: textColor(),
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),

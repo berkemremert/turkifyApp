@@ -162,7 +162,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           child: signOutBtn,
         ),
       ],
-      backgroundColor: Colors.white,
+      backgroundColor: backGround(),
       elevation: 0,
       leading: null,
       automaticallyImplyLeading: false,
@@ -228,7 +228,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                         textAlign: TextAlign.center,
                         style: theme.textTheme.displaySmall!.copyWith(
                           fontWeight: FontWeight.w300,
-                          color: !SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Colors.white,
+                          color: textColor(),
                           fontSize: 25,
                         ),
                       ),
@@ -445,14 +445,14 @@ class _DashboardScreenState extends State<DashboardScreen>
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-
+    // print("lksdfşkfşlksdlşfkslkdf");
     return PopScope(
       onPopInvoked: (hasPopped) => hasPopped ? _goToLogin(context) : null,
       child: SafeArea(
         child: Scaffold(
           appBar: _buildAppBar(theme),
           body: Container(
-            color: SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Colors.white,
+            color: backGround(),
             width: double.infinity,
             height: double.infinity,
             child: Stack(

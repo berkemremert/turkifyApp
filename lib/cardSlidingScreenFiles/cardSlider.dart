@@ -347,7 +347,7 @@ class ScaffoldWidget extends StatelessWidget {
   Widget build(context) {
     return Scaffold(
       appBar: AppBar(
-        // backgroundColor: SettingsPage.getIsDarkMode() ? Colors.black : Colors.white,
+        backgroundColor: SettingsPage.getIsDarkMode() ? Colors.black : Colors.white,
         title: Text(
             title,
             style: TextStyle(
