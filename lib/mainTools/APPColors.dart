@@ -4,7 +4,6 @@ import '../settingsPageFiles/settingsPage.dart';
 
 bool isDarkMode = !SettingsPage.getIsDarkMode();
 Color white = Colors.white;
-// Color white = isDarkMode ? Colors.white : Colors.black;
 Color baseDeepColor = const Color.fromARGB(169, 236, 13, 13);
 Color darkRed = const Color.fromARGB(169, 128, 0, 0);
 Color baseLightColor = const Color.fromARGB(169, 255, 188, 188);

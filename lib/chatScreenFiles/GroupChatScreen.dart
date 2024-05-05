@@ -64,6 +64,7 @@ class _ChatPageState extends State<ChatPage> {
             'type': 'text',
           }
         });
+        changeIsRead(messagesCollection, 1);
       }
     }
     catch (e) {
@@ -259,7 +260,7 @@ class _ChatPageState extends State<ChatPage> {
     else{
       wantID = friendId + curID;
     }
-    print("wantID: $wantID");
+    // print("wantID: $wantID");
     return wantID;
   }
   void _loadMessages() {
@@ -269,9 +270,8 @@ class _ChatPageState extends State<ChatPage> {
     messagesCollection.doc(wantID).snapshots().listen((snapshot) {
       if (snapshot.exists) {
           final messageData = snapshot.data() as Map<String, dynamic>;
-
           List<types.Message> messages = [];
-
+          changeIsRead(messagesCollection, 0);
           messageData.values.forEach((data) {
             try {
               MyTextMessage message = MyTextMessage.fromJson(data);
@@ -314,8 +314,9 @@ class _ChatPageState extends State<ChatPage> {
         Bubble(
           color: _user.id != message.author.id ||
               message.type == types.MessageType.image
-              ? (_isDarkMode ? Colors.purple.shade400 : const Color(0xfff5f5f7))
-              : (_selectedMessageID == message.id ? Colors.blueAccent : baseDeepColor),
+              ? (_isDarkMode ? Color.fromARGB(255, 52, 73, 94) : const Color(0xfff5f5f7))
+              : (_isDarkMode ? Color.fromARGB(255, 15, 95, 82) : baseDeepColor),
+          // TODO: I sucked at choosing colors. HELP
           showNip: true,
           borderColor: Colors.transparent,
           radius: const Radius.circular(35),
@@ -486,4 +487,44 @@ class _ChatPageState extends State<ChatPage> {
         ],
       ),
   );
+
+  Future<void> changeIsRead(CollectionReference<Map<String, dynamic>> messagesCollection, int mode) async {
+    final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
+    final docId = findID();
+    final DocumentSnapshot<Map<String, dynamic>> docSnapshot = await messagesCollection.doc(docId).get();
+    final halfLength = docId.length ~/ 2;
+
+    if(mode == 0){
+      try {
+        if (docId.startsWith(userId)) {
+          if(docSnapshot.data()?['isRead'] == 1) {
+            await messagesCollection.doc(findID()).update({'isRead': 0});
+          }
+        } else {
+          if(docSnapshot.data()?['isRead'] == 2) {
+            await messagesCollection.doc(findID()).update({'isRead': 0});
+          }
+        }
+
+      } catch (e) {
+        print('Error updating document: $e');
+      }
+    }
+    else if(mode == 1){
+      try {
+        if (docId.startsWith(userId)) {
+          if(docSnapshot.data()?['isRead'] == 0) {
+            await messagesCollection.doc(findID()).update({'isRead': 2});
+          }
+        } else {
+          if(docSnapshot.data()?['isRead'] == 0) {
+            await messagesCollection.doc(findID()).update({'isRead': 1});
+          }
+        }
+
+      } catch (e) {
+        print('Error updating document: $e');
+      }
+    }
+  }
 }

@@ -6,7 +6,7 @@ import '../mainTools/APPColors.dart';
 import 'GroupChatScreen.dart';
 
 class FriendsListScreenChat extends StatefulWidget {
-  const FriendsListScreenChat({super.key});
+  const FriendsListScreenChat({Key? key}) : super(key: key);
 
   @override
   _FriendsListScreenChatState createState() => _FriendsListScreenChatState();
@@ -18,10 +18,12 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
 
   User? _user;
   List<String> _friendUids = [];
+  Map<String, bool> isReadMap = {}; // Changed to Map<String, bool>
 
   @override
   void initState() {
     super.initState();
+    _printAllMessages(); // Call _printAllMessages in initState
     _getUser();
   }
 
@@ -50,6 +52,41 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
     return Scaffold(
       body: _buildFriendsList(),
     );
+  }
+
+  void _printAllMessages() async {
+    final messagesCollection = FirebaseFirestore.instance.collection('messages');
+    final messages = await messagesCollection.get();
+
+    messages.docs.forEach((doc) {
+      final data = doc.data();
+      if (data.containsKey('isRead')) {
+        final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
+        final docId = doc.id;
+        final halfLength = docId.length ~/ 2;
+
+        String key;
+        if (docId.startsWith(userId)) {
+          key = docId.substring(halfLength);
+          setState(() { // Ensure to call setState to update the UI
+            if (data['isRead'] == 1) {
+              isReadMap[key] = false;
+            } else {
+              isReadMap[key] = true;
+            }
+          });
+        } else {
+          key = docId.substring(0, halfLength);
+          setState(() { // Ensure to call setState to update the UI
+            if (data['isRead'] == 2) {
+              isReadMap[key] = false;
+            } else {
+              isReadMap[key] = true;
+            }
+          });
+        }
+      }
+    });
   }
 
   Widget _buildFriendsList() {
@@ -84,16 +121,18 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
             final friendId = _friendUids[index];
             final friendImageUrl = friendData?['profileImageUrl'];
             final bool imageChecker = friendImageUrl != null;
-            const bool isRead = true;
-
+            bool isRead = isReadMap[friendId] ?? false; // Use ?? false to handle null values
+            print("$friendName ${isReadMap[friendId]}");
             return GestureDetector(
-              onTap: () {
-                Navigator.push(
+              onTap: () async {
+                await Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => ChatPage(data: friendData!, friendId: friendId),
                   ),
                 );
+                // Call _printAllMessages again when returning from ChatPage
+                _printAllMessages();
               },
               child: Card(
                 elevation: 3.0,
@@ -110,8 +149,8 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             SizedBox(
-                              height: 100.0, // Adjust the height as needed
-                              width: 100.0, // Adjust the width as needed
+                              height: 100.0,
+                              width: 100.0,
                               child: Stack(
                                 children: [
                                   Container(
@@ -130,7 +169,7 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
                                       radius: 40.0,
                                     ),
                                   ),
-                                  if (isRead)
+                                  if (!isRead)
                                     Positioned(
                                       top: 10,
                                       right: 10,

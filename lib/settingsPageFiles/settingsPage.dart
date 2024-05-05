@@ -60,7 +60,7 @@ class _SettingsPageState extends State<SettingsPage> {
 
   @override
   Widget build(BuildContext context) {
-    print("AAAAAAAAAAAAAA $isDarkMode");
+    // print("AAAAAAAAAAAAAA $isDarkMode");
     return Scaffold(
       backgroundColor: SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Colors.white,
       body: Padding(
