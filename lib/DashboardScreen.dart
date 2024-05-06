@@ -3,7 +3,6 @@ import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -52,14 +51,12 @@ class _DashboardScreenState extends State<DashboardScreen>
   String _callerName = "";
   bool _isLoadingCall = true;
   StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _callStream;
-  final _firebaseMessaging = FirebaseMessaging.instance;
+  // final _firebaseMessaging = FirebaseMessaging.instance;
   Map<String, bool> isReadMap = {};
 
   @override
   void initState() {
     super.initState();
-    print("AAAAAAAAAAAAAAAAA $isReadMap");
-
     gettUserData();
     _createIsRead();
     _listenToCallField();
@@ -153,7 +150,7 @@ class _DashboardScreenState extends State<DashboardScreen>
 
   Widget _buildHeader(ThemeData theme) {
     String firstName = _userData['name'] ?? "Name";
-    String lastName = _userData['surname'] ?? "Surname";
+    // String lastName = _userData['surname'] ?? "Surname";
 
     DateTime now = DateTime.now();
     int currentHour = now.hour;
@@ -277,7 +274,6 @@ class _DashboardScreenState extends State<DashboardScreen>
           ),
         );
       } else if (identifier == 'calendar') {
-        //FILL HERE -deniz
         _loadingController!.reverse();
         await Future.delayed(const Duration(milliseconds: 1300));
         Navigator.push(
@@ -436,7 +432,7 @@ class _DashboardScreenState extends State<DashboardScreen>
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    print("AAAAAAAAAAAAAAAAA ${isReadMap.containsValue(false)}");
+    // print("AAAAAAAAAAAAAAAAA ${isReadMap.containsValue(false)}");
     return PopScope(
       onPopInvoked: (hasPopped) => hasPopped ? _goToLogin(context) : null,
       child: SafeArea(
@@ -457,12 +453,10 @@ class _DashboardScreenState extends State<DashboardScreen>
                         children: [
                           _buildHeader(theme),
                           Positioned.fill(
-                            child: Container(
-                              child: BackdropFilter(
-                                filter: ImageFilter.blur(sigmaX: _isBeingCalled ? 5.0 : 0.0, sigmaY:  _isBeingCalled ? 5.0 : 0.0), // Adjust sigma values for blur intensity
-                                child: Container(
-                                  color: Colors.transparent,
-                                ),
+                            child: BackdropFilter(
+                              filter: ImageFilter.blur(sigmaX: _isBeingCalled ? 5.0 : 0.0, sigmaY:  _isBeingCalled ? 5.0 : 0.0), // Adjust sigma values for blur intensity
+                              child: Container(
+                                color: Colors.transparent,
                               ),
                             ),
                           ),
@@ -568,7 +562,7 @@ class _DashboardScreenState extends State<DashboardScreen>
         .doc(user?.uid)
         .get();
     Map<String, dynamic> userData =
-        (userDoc.data() as Map<String, dynamic>) ?? {};
+        (userDoc.data() as Map<String, dynamic>);
     setState(() {
       _userData = userData;
     });

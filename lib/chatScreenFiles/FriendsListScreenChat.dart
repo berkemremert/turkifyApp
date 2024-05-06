@@ -6,7 +6,7 @@ import '../mainTools/APPColors.dart';
 import 'GroupChatScreen.dart';
 
 class FriendsListScreenChat extends StatefulWidget {
-  const FriendsListScreenChat({Key? key}) : super(key: key);
+  const FriendsListScreenChat({super.key});
 
   @override
   _FriendsListScreenChatState createState() => _FriendsListScreenChatState();
@@ -44,9 +44,7 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
         _friendUids = List<String>.from(userData['friends']);
       });
     }
-
-    // Call _printAllMessages to start listening to real-time updates
-    _printAllMessages();
+    _createIsRead();
   }
 
   @override
@@ -56,7 +54,7 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
     );
   }
 
-  void _printAllMessages() async {
+  void _createIsRead() async {
     final messagesCollection = FirebaseFirestore.instance.collection('messages');
     messagesCollection.snapshots().listen((snapshot) {
       snapshot.docs.forEach((doc) {

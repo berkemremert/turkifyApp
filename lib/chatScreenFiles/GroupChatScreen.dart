@@ -16,8 +16,6 @@ import 'package:uuid/uuid.dart';
 import 'package:bubble/bubble.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 
-import '../DashboardScreen.dart';
-import '../loginMainScreenFiles/custom_route.dart';
 import '../settingsPageFiles/settingsPage.dart';
 import '../videoMeetingFiles/videoMeetingMain.dart';
 
@@ -31,15 +29,16 @@ class ChatPage extends StatefulWidget {
 }
 
 class _ChatPageState extends State<ChatPage> {
-  List<types.Message> _messages = [];
   final _user1 = FirebaseAuth.instance.currentUser;
   final types.User _user = types.User(id: FirebaseAuth.instance.currentUser!.uid);
-  Map<String, dynamic> get data => widget.data;
-  String get friendId => widget.friendId;
-  bool _isDarkMode = SettingsPage.getIsDarkMode();
-  bool _isSelected = false;
   String _selectedMessageID = "";
+  final bool _isDarkMode = SettingsPage.getIsDarkMode();
   bool isTutor = false;
+  bool _isSelected = false;
+  List<types.Message> _messages = [];
+
+  String get friendId => widget.friendId;
+  Map<String, dynamic> get data => widget.data;
 
   @override
   void initState() {
@@ -47,6 +46,8 @@ class _ChatPageState extends State<ChatPage> {
     _loadMessages();
     _loadCurrentUser();
   }
+
+  // HELPER FUNCTIONS vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
   void _loadCurrentUser() async {
     String userId = FirebaseAuth.instance.currentUser?.uid ?? '';
     if (userId.isNotEmpty) {
@@ -57,6 +58,69 @@ class _ChatPageState extends State<ChatPage> {
       });
     }
   }
+  String findID(){
+    String wantID = "";
+    String curID = _user1?.uid ?? "-";
+    if(curID.compareTo(friendId) <= 0){
+      wantID = curID + friendId;
+    }
+    else{
+      wantID = friendId + curID;
+    }
+    return wantID;
+  }
+  Widget _buildAvatarTrue(types.User user) {
+    String url = data['profileImageUrl'] as String;
+    return CircleAvatar(
+        backgroundImage: NetworkImage(url)
+    );
+  }
+  Widget _buildAvatarFalse(types.User user) {
+    return const CircleAvatar(
+      backgroundImage: AssetImage('assets/defaultProfilePicture.jpeg'),
+    );
+  }
+  Future<void> changeIsRead(CollectionReference<Map<String, dynamic>> messagesCollection, int mode) async {
+    final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
+    final docId = findID();
+    final DocumentSnapshot<Map<String, dynamic>> docSnapshot = await messagesCollection.doc(docId).get();
+
+    if(mode == 0){
+      try {
+        if (docId.startsWith(userId)) {
+          if(docSnapshot.data()?['isRead'] == 1) {
+            await messagesCollection.doc(findID()).update({'isRead': 0});
+          }
+        } else {
+          if(docSnapshot.data()?['isRead'] == 2) {
+            await messagesCollection.doc(findID()).update({'isRead': 0});
+          }
+        }
+
+      } catch (e) {
+        print('Error updating document: $e');
+      }
+    }
+    else if(mode == 1){
+      try {
+        if (docId.startsWith(userId)) {
+          if(docSnapshot.data()?['isRead'] == 0) {
+            await messagesCollection.doc(findID()).update({'isRead': 2});
+          }
+        } else {
+          if(docSnapshot.data()?['isRead'] == 0) {
+            await messagesCollection.doc(findID()).update({'isRead': 1});
+          }
+        }
+
+      } catch (e) {
+        print('Error updating document: $e');
+      }
+    }
+  }
+  //HELPER FUNCTIONS ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  // ADD AND LOAD vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
   Future<void> _addMessage(types.Message message) async {
     String wantID = findID();
     int createdTime = message.createdAt!;
@@ -82,6 +146,43 @@ class _ChatPageState extends State<ChatPage> {
       print('Error: $e');
     }
   }
+  void _loadMessages() {
+    String wantID = findID();
+    final messagesCollection = FirebaseFirestore.instance.collection('messages');
+
+    messagesCollection.doc(wantID).snapshots().listen((snapshot) {
+      if (snapshot.exists) {
+        final messageData = snapshot.data() as Map<String, dynamic>;
+        List<types.Message> messages = [];
+        changeIsRead(messagesCollection, 0);
+        messageData.values.forEach((data) {
+          try {
+            MyTextMessage message = MyTextMessage.fromJson(data);
+            var authorUser = message.authorID == _user.id
+                ? _user
+                : types.User(id: friendId);
+            final textMessage = types.TextMessage(
+              author: authorUser,
+              id: message.id,
+              text: message.text,
+              createdAt: message.createdAt,
+            );
+            messages.add(textMessage);
+          } catch (e) {
+            print("ERRORa $e");
+          }
+        });
+        messages.sort((a, b) => b.createdAt!.compareTo(a.createdAt!));
+
+        setState(() {
+          _messages = messages;
+        });
+      }
+    });
+  }
+  // ADD AND LOAD ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  // HANDLES vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
   void _handleAttachmentPressed() {
     showModalBottomSheet<void>(
       context: context,
@@ -124,7 +225,6 @@ class _ChatPageState extends State<ChatPage> {
       ),
     );
   }
-
   void _handleFileSelection() async {
     final result = await FilePicker.platform.pickFiles(
       type: FileType.any,
@@ -144,7 +244,6 @@ class _ChatPageState extends State<ChatPage> {
       _addMessage(message);
     }
   }
-
   void _handleImageSelection() async {
     final result = await ImagePicker().pickImage(
       imageQuality: 70,
@@ -170,7 +269,6 @@ class _ChatPageState extends State<ChatPage> {
       _addMessage(message);
     }
   }
-
   void _handleMessageTap(BuildContext _, types.Message message) async {
     if (message is types.FileMessage) {
       var localPath = message.uri;
@@ -215,7 +313,6 @@ class _ChatPageState extends State<ChatPage> {
       await OpenFilex.open(localPath);
     }
   }
-
   void _handlePreviewDataFetched(
       types.TextMessage message,
       types.PreviewData previewData,
@@ -229,7 +326,6 @@ class _ChatPageState extends State<ChatPage> {
       _messages[index] = updatedMessage;
     });
   }
-
   void _handleSendPressed(types.PartialText message) async {
     String curID = _user1?.uid ?? "-";
     String roomID = "";
@@ -260,96 +356,6 @@ class _ChatPageState extends State<ChatPage> {
     );
 
     _addMessage(textMessage);
-  }
-
-  String findID(){
-    String wantID = "";
-    String curID = _user1?.uid ?? "-";
-    if(curID.compareTo(friendId) <= 0){
-      wantID = curID + friendId;
-    }
-    else{
-      wantID = friendId + curID;
-    }
-    // print("wantID: $wantID");
-    return wantID;
-  }
-  void _loadMessages() {
-    String wantID = findID();
-    final messagesCollection = FirebaseFirestore.instance.collection('messages');
-
-    messagesCollection.doc(wantID).snapshots().listen((snapshot) {
-      if (snapshot.exists) {
-          final messageData = snapshot.data() as Map<String, dynamic>;
-          List<types.Message> messages = [];
-          changeIsRead(messagesCollection, 0);
-          messageData.values.forEach((data) {
-            try {
-              MyTextMessage message = MyTextMessage.fromJson(data);
-              var authorUser = message.authorID == _user.id
-                  ? _user
-                  : types.User(id: friendId);
-              final textMessage = types.TextMessage(
-                author: authorUser,
-                id: message.id,
-                text: message.text,
-                createdAt: message.createdAt,
-              );
-              messages.add(textMessage);
-            } catch (e) {
-              print("ERRORa $e");
-            }
-          });
-          messages.sort((a, b) => b.createdAt!.compareTo(a.createdAt!));
-
-          setState(() {
-            _messages = messages;
-          });
-      }
-    });
-  }
-
-
-  Widget _bubbleBuilder(
-      Widget child, {
-        required message,
-        required nextMessageInGroup,
-      }) {
-    DateTime datetime = DateTime.fromMillisecondsSinceEpoch(message.createdAt!);
-    String messageTime = (datetime.minute.toString().length == 2)
-        ? '${datetime.hour}:${datetime.minute}'
-        : '${datetime.hour}:0${datetime.minute}';
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Bubble(
-          color: _user.id != message.author.id ||
-              message.type == types.MessageType.image
-              ? (_isDarkMode ? Color.fromARGB(255, 32, 63, 84) : const Color(0xfff5f5f7))
-              : (_isDarkMode ? Color.fromARGB(255, 25, 120, 100) : baseDeepColor),
-          // TODO: I sucked at choosing colors. HELP
-          showNip: true,
-          borderColor: Colors.transparent,
-          radius: const Radius.circular(35),
-          padding: const BubbleEdges.symmetric(vertical: 0),
-          elevation: 0,
-          child: child,
-        ),
-        Text(
-          messageTime,
-          style: TextStyle(
-            color: lightGrey,
-            fontSize: 12,
-          ),
-        ),
-      ],
-    );
-  }
-
-  void _toggleMode() {
-    setState(() {
-      _isDarkMode = !_isDarkMode;
-    });
   }
   void _onMessageLongPress(BuildContext context, types.Message p1) {
     setState(() {
@@ -394,6 +400,72 @@ class _ChatPageState extends State<ChatPage> {
     });
   }
 
+  // HANDLES ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  Future openDialog() => showDialog(
+    context: context,
+    builder: (context) => AlertDialog(
+      title: const Text("Create an Appointment"),
+      content: const TextField(
+        decoration: InputDecoration(hintText: 'Enter your desired time'),
+      ),
+      actions: [
+        TextButton(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+          ),
+          onPressed: () {
+            // TODO: Fill here accordingly
+          },
+          child: const Text(
+            "Submit",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        )
+
+      ],
+    ),
+  );
+  Widget _bubbleBuilder(
+      Widget child, {
+        required message,
+        required nextMessageInGroup,
+      }) {
+    DateTime datetime = DateTime.fromMillisecondsSinceEpoch(message.createdAt!);
+    String messageTime = (datetime.minute.toString().length == 2)
+        ? '${datetime.hour}:${datetime.minute}'
+        : '${datetime.hour}:0${datetime.minute}';
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Bubble(
+          color: _user.id != message.author.id ||
+              message.type == types.MessageType.image
+              ? (_isDarkMode ? const Color.fromARGB(255, 32, 63, 84) : const Color(0xfff5f5f7))
+              : (_isDarkMode ? const Color.fromARGB(255, 25, 120, 100) : baseDeepColor),
+          // TODO: I sucked at choosing colors. HELP
+          showNip: true,
+          borderColor: Colors.transparent,
+          radius: const Radius.circular(35),
+          padding: const BubbleEdges.symmetric(vertical: 0),
+          elevation: 0,
+          child: child,
+        ),
+        Text(
+          messageTime,
+          style: TextStyle(
+            color: lightGrey,
+            fontSize: 12,
+          ),
+        ),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -404,7 +476,7 @@ class _ChatPageState extends State<ChatPage> {
               color: _isDarkMode ? white : black
           ),
         ),
-        backgroundColor: _isDarkMode ? (_isSelected ? const Color.fromRGBO(28, 20, 143, 10) : const Color.fromRGBO(58, 50, 143, 10)) : (_isSelected ? Color.fromRGBO(176, 224, 230, 10) : white),
+        backgroundColor: _isDarkMode ? (_isSelected ? const Color.fromRGBO(28, 20, 143, 10) : const Color.fromRGBO(58, 50, 143, 10)) : (_isSelected ? const Color.fromRGBO(176, 224, 230, 10) : white),
         actions: [
           Visibility(
             visible: _isSelected,
@@ -458,86 +530,5 @@ class _ChatPageState extends State<ChatPage> {
         onBackgroundTap: _onBackgroundTap,
       ),
     );
-  }
-
-  Widget _buildAvatarTrue(types.User user) {
-    String url = data['profileImageUrl'] as String;
-    return CircleAvatar(
-      backgroundImage: NetworkImage(url)
-    );
-  }
-  Widget _buildAvatarFalse(types.User user) {
-    return const CircleAvatar(
-      backgroundImage: AssetImage('assets/defaultProfilePicture.jpeg'),
-    );
-  }
-
-  Future openDialog() => showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text("Create an Appointment"),
-        content: const TextField(
-          decoration: InputDecoration(hintText: 'Enter your desired time'),
-        ),
-        actions: [
-          TextButton(
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-            ),
-            onPressed: () {
-              // TODO: Fill here accordingly
-            },
-            child: const Text(
-              "Submit",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          )
-
-        ],
-      ),
-  );
-
-  Future<void> changeIsRead(CollectionReference<Map<String, dynamic>> messagesCollection, int mode) async {
-    final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
-    final docId = findID();
-    final DocumentSnapshot<Map<String, dynamic>> docSnapshot = await messagesCollection.doc(docId).get();
-    final halfLength = docId.length ~/ 2;
-
-    if(mode == 0){
-      try {
-        if (docId.startsWith(userId)) {
-          if(docSnapshot.data()?['isRead'] == 1) {
-            await messagesCollection.doc(findID()).update({'isRead': 0});
-          }
-        } else {
-          if(docSnapshot.data()?['isRead'] == 2) {
-            await messagesCollection.doc(findID()).update({'isRead': 0});
-          }
-        }
-
-      } catch (e) {
-        print('Error updating document: $e');
-      }
-    }
-    else if(mode == 1){
-      try {
-        if (docId.startsWith(userId)) {
-          if(docSnapshot.data()?['isRead'] == 0) {
-            await messagesCollection.doc(findID()).update({'isRead': 2});
-          }
-        } else {
-          if(docSnapshot.data()?['isRead'] == 0) {
-            await messagesCollection.doc(findID()).update({'isRead': 1});
-          }
-        }
-
-      } catch (e) {
-        print('Error updating document: $e');
-      }
-    }
   }
 }
