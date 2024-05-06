@@ -51,7 +51,6 @@ class _DashboardScreenState extends State<DashboardScreen>
   String _callerName = "";
   bool _isLoadingCall = true;
   StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _callStream;
-  // final _firebaseMessaging = FirebaseMessaging.instance;
   Map<String, bool> isReadMap = {};
 
   @override
@@ -200,11 +199,11 @@ class _DashboardScreenState extends State<DashboardScreen>
                     ],
                   ),
                   child: Container(
-                    height: 100,
-                    width: 200,
+                    height: 130,
+                    width: 260,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: welcomeColor(),
+                      color: welcomeColor().withOpacity(0.7),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,

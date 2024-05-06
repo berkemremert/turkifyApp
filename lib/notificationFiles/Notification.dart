@@ -24,8 +24,6 @@ class NotificationMethods {
 
       if (fcmToken != null) {
         final firestore = FirebaseFirestore.instance;
-        final userDoc = await firestore.collection('users').doc(user!.uid).get();
-        final fcmTokenExists = userDoc.exists && userDoc.data()!.containsKey('fcmToken');
 
         await firestore.collection('users').doc(user!.uid).update({
           'fcmToken': fcmToken,
