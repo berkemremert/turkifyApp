@@ -203,7 +203,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                     width: 260,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: welcomeColor().withOpacity(0.7),
+                      color: Colors.white.withOpacity(0.45),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
