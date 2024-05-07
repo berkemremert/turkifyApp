@@ -8,9 +8,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter/painting.dart';
-// import 'package:flutter/rendering.dart';
-// import 'package:flutter/widgets.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/PermCheckers.dart';
@@ -33,8 +30,6 @@ class SettingsPage extends StatefulWidget {
 class _SettingsPageState extends State<SettingsPage> {
   User? user = FirebaseAuth.instance.currentUser;
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  // final FirebaseStorage _storage = FirebaseStorage.instance;
-  // final ImagePicker _picker = ImagePicker();
   String? profilePictureUrl;
   Map<String, dynamic> _userData = {};
 
@@ -50,9 +45,9 @@ class _SettingsPageState extends State<SettingsPage> {
     if (currentUser != null) {
       DocumentSnapshot<Map<String, dynamic>> userSnapshot =
       await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).get();
-      setState(() {
-        profilePictureUrl = userSnapshot.data()?['profileImageUrl'];
-      });
+      profilePictureUrl = userSnapshot.data()?['profileImageUrl'];
+      getUserData();
+      setState(() {});
     }
   }
 
@@ -228,9 +223,8 @@ class _SettingsPageState extends State<SettingsPage> {
   void getUserData() async {
     DocumentSnapshot userDoc = await FirebaseFirestore.instance.collection('users').doc(user?.uid).get();
     Map<String, dynamic> userData = (userDoc.data() as Map<String, dynamic>);
-    setState(() {
-      _userData = userData; // Update user data in the state
-    });
+    _userData = userData;
+    setState(() {});
   }
 
   Future<void> _updateProfilePicture() async {
