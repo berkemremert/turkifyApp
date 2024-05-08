@@ -122,24 +122,23 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   AppBar _buildAppBar(ThemeData theme) {
-    final signOutBtn = IconButton(
-        icon: const Icon(FontAwesomeIcons.rightFromBracket),
+    final text = Text(
+      "Turkify",
+      style: TextStyle(
         color: textColor(),
-        onPressed: () {
-          logOut();
-          _goToLogin(context);
-        });
+        fontSize: 24,
+        fontFamily: 'Pacifico',
+      ),
+    );
 
     return AppBar(
-      actions: <Widget>[
-        FadeIn(
+      title: FadeIn(
           controller: _loadingController,
           offset: .3,
           curve: headerAniInterval,
           fadeDirection: FadeDirection.endToStart,
-          child: signOutBtn,
+          child: text,
         ),
-      ],
       backgroundColor: backGroundColor(),
       elevation: 0,
       leading: null,
@@ -199,10 +198,10 @@ class _DashboardScreenState extends State<DashboardScreen>
                     ],
                   ),
                   child: Container(
-                    height: 130,
-                    width: 260,
+                    height: 100,
+                    width: double.infinity,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
+                      // borderRadius: BorderRadius.circular(20),
                       color: Colors.white.withOpacity(0.45),
                     ),
                     child: Column(
@@ -308,7 +307,8 @@ class _DashboardScreenState extends State<DashboardScreen>
             ),
           ),
         );
-      } else if (identifier == 'profile') {
+      }
+      else if (identifier == 'profile') {
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -318,7 +318,8 @@ class _DashboardScreenState extends State<DashboardScreen>
             ),
           ),
         );
-      } else if (identifier == 'settings') {
+      }
+      else if (identifier == 'settings') {
         _loadingController!.reverse();
         await Future.delayed(const Duration(milliseconds: 1300));
         Navigator.push(
@@ -345,17 +346,18 @@ class _DashboardScreenState extends State<DashboardScreen>
       padding: const EdgeInsets.symmetric(
         horizontal: 32.0,
       ),
+      physics: const NeverScrollableScrollPhysics(),
       childAspectRatio: 1,
       // crossAxisSpacing: 5,
       crossAxisCount: 3,
       children: [
-        _buildButton(
-          icon: FontAwesomeIcons.user,
-          label: 'Profile',
-          interval: const Interval(0, aniInterval),
-          identifier: 'profile',
-          iconColor: iconColor,
-        ),
+        // _buildButton(
+        //   icon: FontAwesomeIcons.user,
+        //   label: 'Profile',
+        //   interval: const Interval(0, aniInterval),
+        //   identifier: 'profile',
+        //   iconColor: iconColor,
+        // ),
         _buildButton(
           icon: FontAwesomeIcons.comments,
           label: 'Group Chat',
@@ -363,20 +365,20 @@ class _DashboardScreenState extends State<DashboardScreen>
           identifier: 'chat',
           iconColor: iconColor,
         ),
-        _buildButton(
-          icon: FontAwesomeIcons.calendar,
-          label: 'Calendar',
-          interval: const Interval(step * 2, aniInterval + step * 2),
-          identifier: 'calendar',
-          iconColor: iconColor,
-        ),
-        _buildButton(
-          icon: FontAwesomeIcons.listCheck,
-          label: 'Tasks',
-          interval: const Interval(0, aniInterval),
-          identifier: 'task',
-          iconColor: iconColor,
-        ),
+        // _buildButton(
+        //   icon: FontAwesomeIcons.calendar,
+        //   label: 'Calendar',
+        //   interval: const Interval(step * 2, aniInterval + step * 2),
+        //   identifier: 'calendar',
+        //   iconColor: iconColor,
+        // ),
+        // _buildButton(
+        //   icon: FontAwesomeIcons.listCheck,
+        //   label: 'Tasks',
+        //   interval: const Interval(0, aniInterval),
+        //   identifier: 'task',
+        //   iconColor: iconColor,
+        // ),
         _buildButton(
           icon: FontAwesomeIcons.personMilitaryToPerson,
           label: 'Match',
@@ -445,9 +447,9 @@ class _DashboardScreenState extends State<DashboardScreen>
               children: <Widget>[
                 Column(
                   children: <Widget>[
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 10),
                     SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      height: MediaQuery.of(context).size.height * 0.2,
                       child: Stack(
                         children: [
                           _buildHeader(theme),
@@ -462,7 +464,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                         ],
                       ),
                     ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 20),
                     _isLoadingCall ?
                     SizedBox(
                       width: 100,
@@ -508,7 +510,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                       },
                       animationController: _loadingController!,
                     ),
-                    const SizedBox(height: 60),
+                    const SizedBox(height: 222),
                     Stack(
                       children: [
                         SizedBox(

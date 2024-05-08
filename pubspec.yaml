@@ -101,6 +101,10 @@ flutter:
           weight: 500
         - asset: assets/fonts/Roboto/Roboto-Bold.ttf
           weight: 700
+    - family: Pacifico
+      fonts:
+        - asset: assets/fonts/Pacifico-Regular.ttf
+
 
   assets:
     - assets/callGrey.png
