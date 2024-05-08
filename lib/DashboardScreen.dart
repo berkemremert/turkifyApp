@@ -201,10 +201,10 @@ class _DashboardScreenState extends State<DashboardScreen>
                   child: Container(
                     height: 100,
                     width: double.infinity,
-                    decoration: const BoxDecoration(
+                    decoration: BoxDecoration(
                       // borderRadius: BorderRadius.circular(20),
                       // color: Colors.white.withOpacity(0.45),
-                      color: Colors.transparent,
+                      color: welcomeColor(),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -458,7 +458,6 @@ class _DashboardScreenState extends State<DashboardScreen>
               children: <Widget>[
                 Column(
                   children: <Widget>[
-                    const SizedBox(height: 10),
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.2,
                       child: Stack(
@@ -475,7 +474,6 @@ class _DashboardScreenState extends State<DashboardScreen>
                         ],
                       ),
                     ),
-                    const SizedBox(height: 20),
                     _isLoadingCall ?
                     SizedBox(
                       width: 100,
@@ -521,7 +519,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                       },
                       animationController: _loadingController!,
                     ),
-                    const SizedBox(height: 222),
+                    const SizedBox(height: 240),
                     Stack(
                       children: [
                         SizedBox(

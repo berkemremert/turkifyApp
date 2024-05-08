@@ -28,6 +28,5 @@ Color notificationColor(){
   return SettingsPage.isDarkMode ? Colors.white : const Color.fromARGB(255, 128, 0, 0);
 }
 Color welcomeColor(){
-  return SettingsPage.isDarkMode ? baseDeepColor : const Color.fromARGB(255, 245, 235, 230);
-
+  return SettingsPage.isDarkMode ? lightGrey : const Color.fromARGB(255, 245, 235, 230);
 }
