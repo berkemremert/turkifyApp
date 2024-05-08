@@ -18,7 +18,7 @@ class _LanguageLevelState extends State<LanguageLevel> {
       body: Center(
         child: Column(
           children: [
-            const SizedBox(height: 100),
+            const SizedBox(height: 30),
             Container(
               height: 50,
               width: double.infinity,

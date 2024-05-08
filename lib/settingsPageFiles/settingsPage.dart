@@ -15,6 +15,7 @@ import 'package:turkify_bem/mainTools/PermCheckers.dart';
 
 import '../cardSlidingScreenFiles/cardSlider.dart';
 import '../filterPageFiles/FilterPage.dart';
+import '../filterPageFiles/languageLevel.dart';
 
 class SettingsPage extends StatefulWidget {
   static bool isDarkMode = false;
@@ -33,6 +34,7 @@ class _SettingsPageState extends State<SettingsPage> {
   User? user = FirebaseAuth.instance.currentUser;
   final FirebaseAuth _auth = FirebaseAuth.instance;
   String? profilePictureUrl;
+  bool? isTutor;
   Map<String, dynamic> _userData = {};
 
 
@@ -48,6 +50,7 @@ class _SettingsPageState extends State<SettingsPage> {
       DocumentSnapshot<Map<String, dynamic>> userSnapshot =
       await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).get();
       profilePictureUrl = userSnapshot.data()?['profileImageUrl'];
+      isTutor = userSnapshot.data()?['isTutor'];
       getUserData();
       setState(() {});
     }
@@ -79,7 +82,7 @@ class _SettingsPageState extends State<SettingsPage> {
 
             const SizedBox(height: 15),
             Text(
-              _userData['name'] ?? "Name Surname",
+              "${_userData['name']} ${_userData['surname']}" ?? "Name Surname",
               style: TextStyle(
                 color: textColor(),
                 fontSize: 24,
@@ -89,69 +92,7 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
             const SizedBox(height: 15),
             SettingsGroup(
-              items: [
-                SettingsItem(
-                  onTap: () async {
-                    _updateProfilePicture();
-                  },
-                  icons: CupertinoIcons.profile_circled,
-                  iconStyle: IconStyle(
-                    iconsColor: white,
-                    withBackground: true,
-                    backgroundColor: baseDeepColor,
-                  ),
-                  title: 'Profile Picture',
-                  subtitle: "Change your profile picture",
-                  titleMaxLine: 1,
-                  subtitleMaxLine: 1,
-                ),
-                SettingsItem(
-                  onTap: () async {
-                    _updateProfilePicture();
-                  },
-                  icons: CupertinoIcons.pencil,
-                  iconStyle: IconStyle(
-                    iconsColor: white,
-                    withBackground: true,
-                    backgroundColor: baseDeepColor,
-                  ),
-                  title: 'Name',
-                  subtitle: "Change your name",
-                  titleMaxLine: 1,
-                  subtitleMaxLine: 1,
-                ),
-                SettingsItem(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const ScaffoldWidget(
-                          title: '',
-                          child: FilterPage(),
-                        ),
-                      ),
-                    );
-                  },
-                  icons: Icons.ac_unit_rounded,
-                  iconStyle: IconStyle(
-                    iconsColor: white,
-                    withBackground: true,
-                    backgroundColor: baseDeepColor,
-                  ),
-                  title: 'FILTER PAGE DENEME',
-                ),
-                SettingsItem(
-                  onTap: () {},
-                  icons: Icons.block,
-                  iconStyle: IconStyle(
-                    iconsColor: white,
-                    withBackground: true,
-                    backgroundColor: baseDeepColor,
-                  ),
-                  title: 'Blocked People',
-                  subtitle: "See blocked accounts",
-                ),
-              ],
+              items: _settingItems(),
             ),
             ListTile(
               title: Row(
@@ -378,5 +319,110 @@ class _SettingsPageState extends State<SettingsPage> {
     return Navigator.of(context)
         .pushReplacementNamed('/auth')
         .then((_) => false);
+  }
+
+  List<SettingsItem> _settingItems(){
+    List<SettingsItem> items = [
+      SettingsItem(
+        onTap: () async {
+          _updateProfilePicture();
+        },
+        icons: CupertinoIcons.profile_circled,
+        iconStyle: IconStyle(
+          iconsColor: white,
+          withBackground: true,
+          backgroundColor: baseDeepColor,
+        ),
+        title: 'Profile Picture',
+        subtitle: "Change your profile picture",
+        titleMaxLine: 1,
+        subtitleMaxLine: 1,
+      ),
+      SettingsItem(
+        onTap: () async {
+          _updateProfilePicture();
+        },
+        icons: CupertinoIcons.pencil,
+        iconStyle: IconStyle(
+          iconsColor: white,
+          withBackground: true,
+          backgroundColor: baseDeepColor,
+        ),
+        title: 'Name',
+        subtitle: "Change your name",
+        titleMaxLine: 1,
+        subtitleMaxLine: 1,
+      ),
+      if(isTutor ?? false)
+      SettingsItem(
+        onTap: () async {
+          _updateProfilePicture();
+        },
+        icons: Icons.info_outlined,
+        iconStyle: IconStyle(
+          iconsColor: white,
+          withBackground: true,
+          backgroundColor: baseDeepColor,
+        ),
+        title: 'Who am I?',
+        subtitle: "Change your abouts",
+        titleMaxLine: 1,
+        subtitleMaxLine: 1,
+      ),
+      if(isTutor ?? false)
+      SettingsItem(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const ScaffoldWidget(
+                title: '',
+                child: LanguageLevel(),
+              ),
+            ),
+          );
+        },
+        icons: Icons.account_balance,
+        iconStyle: IconStyle(
+          iconsColor: white,
+          withBackground: true,
+          backgroundColor: baseDeepColor,
+        ),
+        title: 'Education Level',
+        subtitle: 'Change your preferred level of students',
+      ),
+      SettingsItem(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const ScaffoldWidget(
+                title: '',
+                child: FilterPage(),
+              ),
+            ),
+          );
+        },
+        icons: Icons.ac_unit_rounded,
+        iconStyle: IconStyle(
+          iconsColor: white,
+          withBackground: true,
+          backgroundColor: baseDeepColor,
+        ),
+        title: 'FILTER PAGE DENEME',
+      ),
+      SettingsItem(
+        onTap: () {},
+        icons: Icons.block,
+        iconStyle: IconStyle(
+          iconsColor: white,
+          withBackground: true,
+          backgroundColor: baseDeepColor,
+        ),
+        title: 'Blocked People',
+        subtitle: "See blocked accounts",
+      ),
+    ];
+    return items;
   }
 }

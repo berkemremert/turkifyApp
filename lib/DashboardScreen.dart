@@ -10,6 +10,7 @@ import 'package:turkify_bem/chatScreenFiles/FriendsListScreenChat.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/royaPage.dart';
+import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
 import 'package:turkify_bem/videoMeetingFiles/FriendsListScreenVideoMeeting.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
 
@@ -323,24 +324,24 @@ class _DashboardScreenState extends State<DashboardScreen>
       else if (identifier == 'settings') {
         _loadingController!.reverse();
         await Future.delayed(const Duration(milliseconds: 1300));
-        // Navigator.push(
-        //   context,
-        //   MaterialPageRoute(
-        //     builder: (context) => const ScaffoldWidget(
-        //       title: 'Settings',
-        //       child: SettingsPage(),
-        //     ),
-        //   ),
-        // );
         Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) => const ScaffoldWidget(
-              title: '',
-              child: FilterPage(),
+              title: 'Settings',
+              child: SettingsPage(),
             ),
           ),
         );
+        // Navigator.push(
+        //   context,
+        //   MaterialPageRoute(
+        //     builder: (context) => const ScaffoldWidget(
+        //       title: '',
+        //       child: FilterPage(),
+        //     ),
+        //   ),
+        // );
       }
     },
             );

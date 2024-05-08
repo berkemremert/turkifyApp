@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:turkify_bem/filterPageFiles/languageLevel.dart';
 
+import '../cardSlidingScreenFiles/cardSlider.dart';
 import '../mainTools/APPColors.dart';
 import '../mainTools/imagedButton.dart';
 
@@ -41,7 +42,10 @@ class _FilterState extends State<FilterPage>
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const LanguageLevel(),
+                      builder: (context) => const ScaffoldWidget(
+                        title: '',
+                        child: LanguageLevel(),
+                      ),
                     ),
                   );
                 }),
