@@ -9,10 +9,12 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/PermCheckers.dart';
 
 import '../cardSlidingScreenFiles/cardSlider.dart';
+import '../filterPageFiles/FilterPage.dart';
 
 class SettingsPage extends StatefulWidget {
   static bool isDarkMode = false;
@@ -119,15 +121,24 @@ class _SettingsPageState extends State<SettingsPage> {
                   subtitleMaxLine: 1,
                 ),
                 SettingsItem(
-                  onTap: () {},
-                  icons: Icons.notifications,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ScaffoldWidget(
+                          title: '',
+                          child: FilterPage(),
+                        ),
+                      ),
+                    );
+                  },
+                  icons: Icons.ac_unit_rounded,
                   iconStyle: IconStyle(
                     iconsColor: white,
                     withBackground: true,
                     backgroundColor: baseDeepColor,
                   ),
-                  title: 'Notifications',
-                  subtitle: "Change your notifications settings",
+                  title: 'FILTER PAGE DENEME',
                 ),
                 SettingsItem(
                   onTap: () {},
@@ -139,19 +150,6 @@ class _SettingsPageState extends State<SettingsPage> {
                   ),
                   title: 'Blocked People',
                   subtitle: "See blocked accounts",
-                ),
-              ],
-            ),
-            SettingsGroup(
-              items: [
-                SettingsItem(
-                  onTap: () {},
-                  icons: Icons.info_rounded,
-                  iconStyle: IconStyle(
-                    backgroundColor: baseDeepColor,
-                  ),
-                  title: 'About',
-                  subtitle: "Learn more about Turkify",
                 ),
               ],
             ),
@@ -194,6 +192,19 @@ class _SettingsPageState extends State<SettingsPage> {
                 },
               ),
             ),
+            SettingsGroup(
+              items: [
+                SettingsItem(
+                  onTap: () {},
+                  icons: Icons.info_rounded,
+                  iconStyle: IconStyle(
+                    backgroundColor: baseDeepColor,
+                  ),
+                  title: 'About',
+                  subtitle: "Learn more about Turkify",
+                ),
+              ],
+            ),
 
             SettingsGroup(
               settingsGroupTitle: "Account",
@@ -203,6 +214,18 @@ class _SettingsPageState extends State<SettingsPage> {
                 fontWeight: FontWeight.bold,
               ),
               items: [
+                SettingsItem(
+                  onTap: () {
+                    logOut();
+                    _goToLogin(context);
+                  },
+                  icons: CupertinoIcons.square_arrow_right,
+                  title: "Log Out",
+                  titleStyle: TextStyle(
+                    color: baseDeepColor,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
                 SettingsItem(
                   onTap: () {},
                   icons: CupertinoIcons.delete_solid,
@@ -344,5 +367,16 @@ class _SettingsPageState extends State<SettingsPage> {
     canvas.drawImageRect(image, cropRect, ui.Rect.fromLTRB(0, 0, targetWidth.toDouble(), targetHeight.toDouble()), Paint());
     ui.Picture picture = recorder.endRecording();
     return await picture.toImage(targetWidth, targetHeight);
+  }
+  Future<void> logOut() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.remove('email');
+    await prefs.remove('password');
+    await FirebaseAuth.instance.signOut();
+  }
+  Future<bool> _goToLogin(BuildContext context) {
+    return Navigator.of(context)
+        .pushReplacementNamed('/auth')
+        .then((_) => false);
   }
 }

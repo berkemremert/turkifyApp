@@ -190,7 +190,8 @@ class _DashboardScreenState extends State<DashboardScreen>
                   decoration: BoxDecoration(
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.1),
+                        // color: Colors.black.withOpacity(0.1),
+                        color: Colors.black.withOpacity(0),
                         spreadRadius: 5,
                         blurRadius: 30,
                         offset: const Offset(0, 2),
@@ -200,9 +201,10 @@ class _DashboardScreenState extends State<DashboardScreen>
                   child: Container(
                     height: 100,
                     width: double.infinity,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       // borderRadius: BorderRadius.circular(20),
-                      color: Colors.white.withOpacity(0.45),
+                      // color: Colors.white.withOpacity(0.45),
+                      color: Colors.transparent,
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -347,7 +349,7 @@ class _DashboardScreenState extends State<DashboardScreen>
         horizontal: 32.0,
       ),
       physics: const NeverScrollableScrollPhysics(),
-      childAspectRatio: 1,
+      childAspectRatio: 0.4,
       // crossAxisSpacing: 5,
       crossAxisCount: 3,
       children: [
