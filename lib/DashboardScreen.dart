@@ -519,7 +519,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                       },
                       animationController: _loadingController!,
                     ),
-                    const SizedBox(height: 240),
+                    const SizedBox(height: 220),
                     Stack(
                       children: [
                         SizedBox(

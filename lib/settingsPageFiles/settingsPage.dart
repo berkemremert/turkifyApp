@@ -12,6 +12,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/PermCheckers.dart';
+import 'package:turkify_bem/settingsPageFiles/blockedPeople.dart';
 
 import '../cardSlidingScreenFiles/cardSlider.dart';
 import '../filterPageFiles/FilterPage.dart';
@@ -562,7 +563,17 @@ class _SettingsPageState extends State<SettingsPage> {
         title: 'FILTER PAGE DENEME',
       ),
       SettingsItem(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ScaffoldWidget(
+                title: 'Blocked People',
+                child: BlockedPage(blockedList: _userData['blockedPeople']),
+              ),
+            ),
+          );
+        },
         icons: Icons.block,
         iconStyle: IconStyle(
           iconsColor: white,
