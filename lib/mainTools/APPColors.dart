@@ -30,3 +30,7 @@ Color notificationColor(){
 Color welcomeColor(){
   return SettingsPage.isDarkMode ? lightGrey : const Color.fromARGB(255, 245, 235, 230);
 }
+
+Color endcolor(String text, List<dynamic> langs){
+  return langs.contains(text) ? Colors.blueGrey : Colors.red.withOpacity(0.75);
+}

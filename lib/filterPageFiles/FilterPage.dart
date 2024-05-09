@@ -6,7 +6,8 @@ import '../mainTools/APPColors.dart';
 import '../mainTools/imagedButton.dart';
 
 class FilterPage extends StatefulWidget {
-  const FilterPage({super.key});
+  final Map<String, dynamic> userData;
+  const FilterPage({required this.userData, super.key});
 
   @override
   State<StatefulWidget> createState() {
@@ -42,9 +43,9 @@ class _FilterState extends State<FilterPage>
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const ScaffoldWidget(
+                      builder: (context) => ScaffoldWidget(
                         title: '',
-                        child: LanguageLevel(),
+                        child: LanguageLevel(userData: widget.userData),
                       ),
                     ),
                   );

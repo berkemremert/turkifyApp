@@ -503,9 +503,9 @@ class _SettingsPageState extends State<SettingsPage> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const ScaffoldWidget(
+              builder: (context) => ScaffoldWidget(
                 title: '',
-                child: LanguageLevel(),
+                child: LanguageLevel(userData: _userData),
               ),
             ),
           );
@@ -524,9 +524,9 @@ class _SettingsPageState extends State<SettingsPage> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const ScaffoldWidget(
+              builder: (context) => ScaffoldWidget(
                 title: '',
-                child: FilterPage(),
+                child: FilterPage(userData: _userData),
               ),
             ),
           );

@@ -279,9 +279,9 @@ class _DashboardScreenState extends State<DashboardScreen>
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ScaffoldWidget(
+            builder: (context) => ScaffoldWidget(
               title: '',
-              child: FilterPage(),
+              child: FilterPage(userData: _userData),
             ),
           ),
         );
