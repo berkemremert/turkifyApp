@@ -208,6 +208,134 @@ class _SettingsPageState extends State<SettingsPage> {
     }
   }
 
+  Future<void> _updateName(BuildContext context) async {
+    TextEditingController nameController = TextEditingController();
+    TextEditingController surnameController = TextEditingController();
+
+    return showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text('Enter new name and surname'),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              TextField(
+                controller: nameController,
+                decoration: InputDecoration(
+                  hintText: _userData['name'],
+                ),
+              ),
+              TextField(
+                controller: surnameController,
+                decoration: InputDecoration(
+                  hintText: _userData['surname'],
+                ),
+              ),
+            ],
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: const Text('Submit'),
+              onPressed: () async {
+                String newName = nameController.text;
+                String newSurname = surnameController.text;
+
+                // Update name and surname in Firebase
+                await updateNameInFirebase(newName, newSurname);
+
+                print('New name: $newName, New surname: $newSurname');
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  Future<void> updateNameInFirebase(String newName, String newSurname) async {
+    try {
+      User? currentUser = _auth.currentUser;
+      if (currentUser != null) {
+        await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).update({
+          'name': newName,
+          'surname': newSurname,
+        });
+        // Update local user data
+        _userData['name'] = newName;
+        _userData['surname'] = newSurname;
+        setState(() {});
+        print('Name and surname updated successfully in Firebase.');
+      }
+    } catch (e) {
+      print('Error updating name and surname in Firebase: $e');
+      // Handle error
+    }
+  }
+
+  Future<void> _updateAbout(BuildContext context) async {
+    TextEditingController aboutController = TextEditingController();
+
+    return showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text('Update About'),
+          content: SizedBox(
+            width: double.maxFinite,
+            child: TextField(
+              controller: aboutController,
+              maxLines: null, // Allow multiline input
+              decoration: InputDecoration(
+                hintText: isTutor! ? _userData['tutorMap']['whoamI'] : _userData['studentMap']['whoamI'],
+                alignLabelWithHint: true,
+                contentPadding: const EdgeInsets.symmetric(vertical: 40),
+                border: const OutlineInputBorder(),
+              ),
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: const Text('Submit'),
+              onPressed: () async {
+                String newAbout = aboutController.text;
+                await updateAboutInFirebase(newAbout);
+                print('New about: $newAbout');
+                Navigator.of(context).pop();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ScaffoldWidget(
+                      title: 'Settings',
+                      child: SettingsPage(),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+
+  Future<void> updateAboutInFirebase(String newAbout) async {
+    try {
+      User? currentUser = _auth.currentUser;
+      if (currentUser != null) {
+        await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).update({
+          'tutorMap.whoamI': newAbout,
+        });
+        print('About updated successfully in Firebase.');
+      }
+    } catch (e) {
+      print('Error updating about in Firebase: $e');
+      // Handle error
+    }
+  }
+
   Future<String?> updateProfilePicture(BuildContext context) async {
     try {
       final ImagePicker picker = ImagePicker();
@@ -340,7 +468,7 @@ class _SettingsPageState extends State<SettingsPage> {
       ),
       SettingsItem(
         onTap: () async {
-          _updateProfilePicture();
+          _updateName(context);
         },
         icons: CupertinoIcons.pencil,
         iconStyle: IconStyle(
@@ -356,7 +484,7 @@ class _SettingsPageState extends State<SettingsPage> {
       if(isTutor ?? false)
       SettingsItem(
         onTap: () async {
-          _updateProfilePicture();
+          _updateAbout(context);
         },
         icons: Icons.info_outlined,
         iconStyle: IconStyle(

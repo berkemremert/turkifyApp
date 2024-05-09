@@ -201,10 +201,10 @@ class _DashboardScreenState extends State<DashboardScreen>
                   child: Container(
                     height: 100,
                     width: double.infinity,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       // borderRadius: BorderRadius.circular(20),
-                      // color: Colors.white.withOpacity(0.45),
-                      color: welcomeColor(),
+                      color: Colors.transparent,
+                      // color: welcomeColor(),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
