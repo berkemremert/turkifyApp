@@ -476,7 +476,7 @@ class _ChatPageState extends State<ChatPage> {
               color: _isDarkMode ? white : black
           ),
         ),
-        backgroundColor: _isDarkMode ? (_isSelected ? const Color.fromRGBO(28, 20, 143, 10) : const Color.fromRGBO(58, 50, 143, 10)) : (_isSelected ? const Color.fromRGBO(176, 224, 230, 10) : white),
+        backgroundColor: _isDarkMode ? (_isSelected ? const Color.fromRGBO(28, 20, 143, 10) : const Color.fromRGBO(58, 50, 73, 10)) : (_isSelected ? const Color.fromRGBO(176, 224, 230, 10) : white),
         actions: [
           Visibility(
             visible: _isSelected,

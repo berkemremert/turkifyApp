@@ -519,6 +519,28 @@ class _SettingsPageState extends State<SettingsPage> {
         title: 'Education Level',
         subtitle: 'Change your preferred level of students',
       ),
+      if(!(isTutor ?? true))
+        SettingsItem(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ScaffoldWidget(
+                title: '',
+                child: LanguageLevel(userData: _userData),
+              ),
+            ),
+          );
+        },
+        icons: Icons.account_balance,
+        iconStyle: IconStyle(
+          iconsColor: white,
+          withBackground: true,
+          backgroundColor: baseDeepColor,
+        ),
+        title: 'Desired Education',
+        subtitle: 'Change your preferred level of studies',
+      ),
       SettingsItem(
         onTap: () {
           Navigator.push(

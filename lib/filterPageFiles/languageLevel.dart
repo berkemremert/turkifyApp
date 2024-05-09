@@ -16,14 +16,18 @@ class LanguageLevel extends StatefulWidget {
 
 class _LanguageLevelState extends State<LanguageLevel> {
   List<dynamic> langs = [];
+  String lang = "A1";
   bool isTutor = false;
   @override
   void initState() {
     super.initState();
     isTutor = widget.userData['isTutor'];
-    langs = (isTutor)
-        ? widget.userData['tutorMap']['teachingLevel']
-        : widget.userData['studentMap']['teachingLevel'];
+    if(isTutor) {
+      langs = widget.userData['tutorMap']['teachingLevel'];
+    }
+    else {
+      lang = widget.userData['studentMap']['desiredEducation'];
+    }
   }
   @override
   Widget build(BuildContext context) {
@@ -71,8 +75,8 @@ class _LanguageLevelState extends State<LanguageLevel> {
         ),
       ),
       MyElevatedButton(
-        startColor: langs.contains("A1") ? blueAccent : Colors.red,
         text: "A1",
+        startColor: langs.contains("A1") ? blueAccent : Colors.red,
         endColor: langs.contains("A1") ? Colors.blueGrey : Colors.red.withOpacity(0.75),
         onPressed: () {
           _buttonPressedTutor("A1");
@@ -174,14 +178,20 @@ class _LanguageLevelState extends State<LanguageLevel> {
       ),
       MyElevatedButton(
         text: "A1",
-        endColor: Colors.red.withOpacity(0.75),
-        onPressed: () {},
+        startColor: lang == "A1" ? blueAccent : Colors.red,
+        endColor: lang == "A1" ? Colors.blueGrey : Colors.red.withOpacity(0.75),
+        onPressed: () {
+          _buttonPressedStudent("A1");
+        },
       ),
       const SizedBox(height: 20),
       MyElevatedButton(
         text: "A2",
-        endColor: Colors.red.withOpacity(0.75),
-        onPressed: () {},
+        startColor: lang == "A2" ? blueAccent : Colors.red,
+        endColor: lang == "A2" ? Colors.blueGrey : Colors.red.withOpacity(0.75),
+        onPressed: () {
+          _buttonPressedStudent("A2");
+        },
       ),
 
       const SizedBox(height: 40),
@@ -194,14 +204,20 @@ class _LanguageLevelState extends State<LanguageLevel> {
       ),
       MyElevatedButton(
         text: "B1",
-        endColor: Colors.red.withOpacity(0.75),
-        onPressed: () {},
+        startColor: lang == "B1" ? blueAccent : Colors.red,
+        endColor: lang == "B1" ? Colors.blueGrey : Colors.red.withOpacity(0.75),
+        onPressed: () {
+          _buttonPressedStudent("B1");
+        },
       ),
       const SizedBox(height: 20),
       MyElevatedButton(
         text: "B2",
-        endColor: Colors.red.withOpacity(0.75),
-        onPressed: () {},
+        startColor: lang == "B2" ? blueAccent : Colors.red,
+        endColor: lang == "B2" ? Colors.blueGrey : Colors.red.withOpacity(0.75),
+        onPressed: () {
+          _buttonPressedStudent("B2");
+        },
       ),
       const SizedBox(height: 40),
       const Text(
@@ -213,14 +229,20 @@ class _LanguageLevelState extends State<LanguageLevel> {
       ),
       MyElevatedButton(
         text: "C1",
-        endColor: Colors.red.withOpacity(0.75),
-        onPressed: () {},
+        startColor: lang == "C1" ? blueAccent : Colors.red,
+        endColor: lang == "C1" ? Colors.blueGrey : Colors.red.withOpacity(0.75),
+        onPressed: () {
+          _buttonPressedStudent("C1");
+        },
       ),
       const SizedBox(height: 20),
       MyElevatedButton(
         text: "C2",
-        endColor: Colors.red.withOpacity(0.75),
-        onPressed: () {},
+        startColor: lang == "C2" ? blueAccent : Colors.red,
+        endColor: lang == "C2" ? Colors.blueGrey : Colors.red.withOpacity(0.75),
+        onPressed: () {
+          _buttonPressedStudent("C2");
+        },
       ),
     ];
   }
@@ -244,4 +266,17 @@ class _LanguageLevelState extends State<LanguageLevel> {
     print('Teaching level updated successfully.');
   }
 
+  Future<void> _buttonPressedStudent(String text) async {
+    final FirebaseFirestore firestore = FirebaseFirestore.instance;
+    final DocumentReference userRef = firestore.collection('users').doc(FirebaseAuth.instance.currentUser!.uid);
+    if (lang != text) {
+      setState(() {
+        lang = text;
+      });
+    }
+    Map<String, dynamic> tutorMap = widget.userData['studentMap'];
+    tutorMap['desiredEducation'] = lang;
+    await userRef.update({'studentMap': tutorMap});
+    print('Teaching level updated successfully.');
+  }
 }
