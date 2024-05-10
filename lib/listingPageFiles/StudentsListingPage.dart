@@ -20,7 +20,7 @@ class StudentsListingPage extends StatelessWidget {
               padding: EdgeInsets.all(0),
               child: Container(
                 child: Center(
-                  child: ImagedButton(imagePath: 'assets/tutorsListingPage/yourTutorsRedWhite.png',
+                  child: ImagedButton(imagePath: 'assets/studentsListingPage/chat.png',
                     buttonText: 'Chat',
                     ratio: 1,
                     shadowRadius: 7,
@@ -49,7 +49,7 @@ class StudentsListingPage extends StatelessWidget {
               padding: EdgeInsets.all(0),
               child: Container(
                 child: Center(
-                  child: ImagedButton(imagePath: 'assets/tutorsListingPage/newTutorsRed.png',
+                  child: ImagedButton(imagePath: 'assets/studentsListingPage/video.png',
                     buttonText: 'Video\nMeeting',
                     ratio: 1,
                     shadowRadius: 7,

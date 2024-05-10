@@ -13,14 +13,11 @@ import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/royaPage.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
-import 'package:turkify_bem/videoMeetingFiles/FriendsListScreenVideoMeeting.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
 
 import 'RoyaPageRoya.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
-import 'cardSlidingScreenFiles/src/SwiperPage.dart';
 import 'filterPageFiles/FilterPage.dart';
-import 'listingPageFiles/listingScreen.dart';
 import 'listingPageFiles/presentation/pages/home/view/home.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
 import 'loginMainScreenFiles/widgets/fade_in.dart';

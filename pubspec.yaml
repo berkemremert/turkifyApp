@@ -85,5 +85,7 @@ flutter:
     - assets/tutorsListingPage/yourTutorsMain.png
     - assets/tutorsListingPage/newTutorsRed.png
     - assets/tutorsListingPage/yourTutorsRedWhite.png
+    - assets/studentsListingPage/chat.png
+    - assets/studentsListingPage/video.png
 
 
