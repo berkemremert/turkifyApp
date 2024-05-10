@@ -5,50 +5,30 @@ import '../../../../core/utils/navigator.dart';
 import '../../../../gen/assets.gen.dart';
 import '../../details_page/view/details.dart';
 import 'list_card.dart';
+import '../view/TutorsPresentation.dart';
 
 class CardVerticalSmart extends StatelessWidget {
-  int filter;
+  List<Map<String, dynamic>> tutors;
 
-  CardVerticalSmart({Key? key, this.filter = 0}) : super(key: key);
+  CardVerticalSmart({Key? key, required this.tutors}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        for (int index = 0; index < persons.length; index++)
-          if(isAdd(filter, persons[index]))
+        for (Map<String, dynamic> tutor in tutors)
           Padding(
-            padding: EdgeInsets.only(right: 16), // Adjust spacing between items
+            padding: const EdgeInsets.only(right: 16),
             child: ListCardItem__widget(
               ontap: () => PageNav().push(context,
-                  // ScreenDetails(person: persons[index])
-                Container(),
+                  ScreenDetails(uid: '',)
               ),
-              title: persons[index].name,
-              subText: persons[index].offer1.skill,
-              imageLink: persons[index].imageLink,
+              title: tutor['name']?? '',
+              subText: TutorsPresentationState().getEducationLevels(tutor),
+              imageLink: tutor['profileImageUrl']?? '',
             ),
           ),
       ],
     );
   }
-}
-
-bool isAdd(int filter, Person person){
-  if(person.email == currentUser.email){
-    return false;
-  }
-  else if(filter == 0){
-    return true;
-  }
-  else if(filter == 1 && offerList(person).contains(wishList(currentUser)[0])){
-    return true;
-  }
-  else if(filter == 2 && offerList(person).contains(wishList(currentUser)[1])){
-    return true;
-  }
-  else if(filter == 3 && offerList(person).contains(wishList(currentUser)[2])){
-    return true;
-  }
-  return false;
 }

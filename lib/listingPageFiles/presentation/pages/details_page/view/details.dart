@@ -67,8 +67,8 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                   children: <Widget>[
                     kSizedBoxHeight_16,
                     HeaderImage__widget(
-                      imageLink: _userData['profileImageUrl'],
-                      name: _userData['name'],
+                      imageLink: _userData['profileImageUrl']?? '',
+                      name: _userData['name']?? 'No name',
                       offer: 'A1',
                     ),
                     kSizedBoxHeight_24,
@@ -89,7 +89,7 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                             text: TextSpan(
-                              text: _userData['tutorMap']['whoamI'],
+                              text: (_userData['tutorMap'] != null && _userData['tutorMap'] != []) ?_userData['tutorMap']['whoamI'] : 'No description.',
                               style: kBodySmallTextstylee,
                             ),
                           ),
