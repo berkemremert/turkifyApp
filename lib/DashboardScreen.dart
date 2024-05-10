@@ -55,6 +55,8 @@ class _DashboardScreenState extends State<DashboardScreen>
   bool _isLoadingCall = true;
   StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _callStream;
   Map<String, bool> isReadMap = {};
+  bool _isTutor = false;
+  bool _isThereTutor = false;
 
   @override
   void initState() {
@@ -492,11 +494,11 @@ class _DashboardScreenState extends State<DashboardScreen>
                     _buildImagedButton(
                       imagePath: _isBeingCalled
                           ? "assets/callGreen.png"
-                          : "assets/callLightRed.png",
+                          : "assets/tutorsListingPage/yourTutorsMain.png",
                       buttonText: _isBeingCalled ?
                       "$_callerName\nis calling you"
                           :
-                      "NO CALL",
+                      _isTutor ? "STUDENTS" : "TUTORS",
                       onTap: () async {
                         _loadingController!.reverse();
                         await Future.delayed(const Duration(milliseconds: 1300));
@@ -511,12 +513,8 @@ class _DashboardScreenState extends State<DashboardScreen>
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => MaterialApp(
-                                theme: ThemeData(
-                                  fontFamily: 'Roboto',
-                                ),
-                                home: TutorsListingPage(),
-                              ),
+                              builder: (context) =>
+                                _isThereTutor ? TutorsListingPage() : const ScreenHome(),
                             ),
                           );
                         }
@@ -579,6 +577,12 @@ class _DashboardScreenState extends State<DashboardScreen>
         (userDoc.data() as Map<String, dynamic>);
     setState(() {
       _userData = userData;
+      if(_userData['isTutor'] != null && _userData['friends'] == true) {
+        _isTutor = true;
+      }
+      if(_userData['friends'] != null && _userData['friends'].isNotEmpty){
+        _isThereTutor = true;
+      }
     });
   }
 
@@ -597,6 +601,7 @@ class _DashboardScreenState extends State<DashboardScreen>
         imagePath: imagePath,
         buttonText: buttonText,
         onTap: onTap,
+        letterSpacing: 2.5,
         isCall: _isBeingCalled,
       ),
     );

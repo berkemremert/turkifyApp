@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:turkify_bem/listingPageFiles/presentation/pages/home/view/home.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
+
+import '../cardSlidingScreenFiles/cardSlider.dart';
+import '../chatScreenFiles/FriendsListScreenChat.dart';
 
 class TutorsListingPage extends StatelessWidget {
   @override
@@ -24,7 +28,15 @@ class TutorsListingPage extends StatelessWidget {
                     fontWeight: FontWeight.w800,
                     imageOpacity: 0.45,
                     onTap: () {
-
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ScaffoldWidget(
+                            title: "",
+                            child: FriendsListScreenChat(),
+                          ),
+                        ),
+                      );
                     },
                   ),
                 ),
@@ -36,7 +48,7 @@ class TutorsListingPage extends StatelessWidget {
               padding: EdgeInsets.all(0),
               child: Container(
                 child: Center(
-                  child: ImagedButton(imagePath: 'assets/tutorsListingPage/newTutorsUpdated.png',
+                  child: ImagedButton(imagePath: 'assets/tutorsListingPage/newTutorsRed.png',
                     buttonText: 'Find\nTutors',
                     ratio: 1,
                     shadowRadius: 7,
@@ -45,7 +57,12 @@ class TutorsListingPage extends StatelessWidget {
                     fontWeight: FontWeight.w800,
                     imageOpacity: 0.45,
                     onTap: () {
-
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ScreenHome(),
+                        ),
+                      );
                     },
                   ),
                 ),

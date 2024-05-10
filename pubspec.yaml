@@ -82,12 +82,8 @@ flutter:
     - assets/callGreen.png
     - assets/defaultProfilePicture.jpeg
     - assets/phoneRing.gif
-    - assets/tutorsListingPage/newTutors.png
-    - assets/tutorsListingPage/newTutorsUpdated.png
-    - assets/tutorsListingPage/yourTutors.png
+    - assets/tutorsListingPage/yourTutorsMain.png
     - assets/tutorsListingPage/newTutorsRed.png
-    - assets/tutorsListingPage/yourTutorsRed.png
-    - assets/tutorsListingPage/newTutorsRedWhite.png
     - assets/tutorsListingPage/yourTutorsRedWhite.png
 
 

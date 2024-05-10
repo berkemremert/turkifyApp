@@ -11,6 +11,7 @@ class ImagedButton extends StatelessWidget {
   final double? padding;
   final FontWeight? fontWeight;
   final double? imageOpacity;
+  final double? letterSpacing;
 
   const ImagedButton({
     super.key,
@@ -24,6 +25,7 @@ class ImagedButton extends StatelessWidget {
     this.padding,
     this.fontWeight,
     this.imageOpacity,
+    this.letterSpacing,
   });
 
   @override
@@ -124,6 +126,7 @@ class ImagedButton extends StatelessWidget {
                               fontFamily: 'Roboto',
                               color: Colors.white,
                               fontSize: 36,
+                              letterSpacing: letterSpacing ?? 1,
                               fontWeight: fontWeight ?? FontWeight.w400,
                             ),
                           ),
