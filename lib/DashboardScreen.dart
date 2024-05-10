@@ -18,7 +18,7 @@ import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
 import 'RoyaPageRoya.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
 import 'filterPageFiles/FilterPage.dart';
-import 'listingPageFiles/presentation/pages/home/view/home.dart';
+import 'listingPageFiles/presentation/pages/home/view/TutorsPresentation.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
 import 'loginMainScreenFiles/widgets/fade_in.dart';
 import 'loginMainScreenFiles/widgets/round_button.dart';
@@ -311,7 +311,7 @@ class _DashboardScreenState extends State<DashboardScreen>
             theme: ThemeData(
               fontFamily: 'Roboto',
             ),
-            home: const ScreenHome(),
+            home: const TutorsPresentation(),
             ),
           ),
         );
@@ -512,7 +512,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                             context,
                             MaterialPageRoute(
                               builder: (context) =>
-                                !_isTutor ? (_isThereTutor ? TutorsListingPage() : const ScreenHome()) : StudentsListingPage(),
+                                !_isTutor ? (_isThereTutor ? TutorsListingPage() : const TutorsPresentation()) : StudentsListingPage(),
                             ),
                           );
                         }

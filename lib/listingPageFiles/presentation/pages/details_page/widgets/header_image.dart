@@ -1,22 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import '../../../../../referencePageFiles/referencePage.dart';
 import '../../../../core/utils/navigator.dart';
 
-import '../../../../gen/assets.gen.dart';
 import '../../../components/text.dart';
 import '../../../themes/colors.dart';
 import '../../../themes/config.dart';
-import '../../home/widgets/personDetails.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 
 const double _stackPadding = 20.0;
 
 class HeaderImage__widget extends StatelessWidget {
-  final Person person;
+  final String imageLink;
+  final String name;
+  final String offer;
 
-  const HeaderImage__widget({Key? key, required this.person}) : super(key: key);
+  const HeaderImage__widget({Key? key,
+  required this.imageLink,
+    required this.name,
+    required this.offer,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +34,7 @@ class HeaderImage__widget extends StatelessWidget {
                   fit: BoxFit.cover,
                   image:
                   NetworkImage(
-                    person.imageLink,
+                    imageLink,
                   ),),
             ),
           ),
@@ -63,14 +65,14 @@ class HeaderImage__widget extends StatelessWidget {
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.2), // Shadow color
-                    spreadRadius: 2,  // Shadow spread radius
-                    blurRadius: 4,    // Shadow blur radius
-                    offset: Offset(0, 2), // Offset of the shadow
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 2),
                   ),
                 ],
               ),
-              child: Icon(
+              child: const Icon(
                 FontAwesomeIcons.circleXmark,
                 color: Colors.white,
               ),
@@ -88,10 +90,10 @@ class HeaderImage__widget extends StatelessWidget {
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.2), // Shadow color
-                    spreadRadius: 2,  // Shadow spread radius
-                    blurRadius: 4,    // Shadow blur radius
-                    offset: Offset(0, 2), // Offset of the shadow
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(0, 2),
                   ),
                 ],
               ),
@@ -108,10 +110,10 @@ class HeaderImage__widget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              TitleLarge__text(text: person.name, color: kColorWhite),
+              TitleLarge__text(text: name, color: kColorWhite),
               kSizedBoxHeight_8,
               BodySmall__text(
-                  text: person.offer1.skill,
+                  text: offer,
                   color: kColorText3),
             ],
           ),

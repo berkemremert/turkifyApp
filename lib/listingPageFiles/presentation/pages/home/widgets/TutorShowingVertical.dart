@@ -6,8 +6,8 @@ import '../../../../gen/assets.gen.dart';
 import '../../details_page/view/details.dart';
 import 'list_card.dart';
 
-class CaerdVerticalList__widget extends StatelessWidget {
-  CaerdVerticalList__widget({Key? key}) : super(key: key);
+class TutorShowingVertical extends StatelessWidget {
+  TutorShowingVertical({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,12 +16,15 @@ class CaerdVerticalList__widget extends StatelessWidget {
         Person personn = persons[index];
         return Padding(
           padding: EdgeInsets.only(right: 16), // Adjust spacing between items
-          child: ListCardItem__widget(
-            ontap: () => PageNav().push(context, ScreenDetails(person: personn)),
-            title: personn.name,
-            subText: personn.offer1.skill,
-            imageLink: personn.imageLink,
-          ),
+          child:
+          // ListCardItem__widget(
+          //   ontap: () => PageNav().push(context,
+          //       ScreenDetails(person: personn)),
+          //   title: personn.name,
+          //   subText: personn.offer1.skill,
+          //   imageLink: personn.imageLink,
+          // ),
+          Container(),
         );
       }),
     );

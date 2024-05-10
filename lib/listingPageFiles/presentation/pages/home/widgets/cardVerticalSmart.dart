@@ -20,7 +20,10 @@ class CardVerticalSmart extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(right: 16), // Adjust spacing between items
             child: ListCardItem__widget(
-              ontap: () => PageNav().push(context, ScreenDetails(person: persons[index])),
+              ontap: () => PageNav().push(context,
+                  // ScreenDetails(person: persons[index])
+                Container(),
+              ),
               title: persons[index].name,
               subText: persons[index].offer1.skill,
               imageLink: persons[index].imageLink,

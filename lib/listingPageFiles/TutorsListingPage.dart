@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:turkify_bem/listingPageFiles/presentation/pages/home/view/home.dart';
+import 'package:turkify_bem/listingPageFiles/presentation/pages/home/view/TutorsPresentation.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
 
 import '../cardSlidingScreenFiles/cardSlider.dart';
@@ -60,7 +60,7 @@ class TutorsListingPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ScreenHome(),
+                          builder: (context) => TutorsPresentation(),
                         ),
                       );
                     },
