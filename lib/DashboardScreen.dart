@@ -333,10 +333,7 @@ class _DashboardScreenState extends State<DashboardScreen>
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ScaffoldWidget(
-              title: 'Settings',
-              child: SettingsPage(),
-            ),
+            builder: (context) => SettingsPage(),
           ),
         );
         // Navigator.push(

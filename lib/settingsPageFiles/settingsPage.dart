@@ -60,7 +60,7 @@ class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Colors.white,
+      backgroundColor: SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : backGroundColor(),
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: ListView(
@@ -100,7 +100,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 children: [
                   Icon(
                     Icons.nightlight_round,
-                    color: !SettingsPage.isDarkMode ? black : white,
+                    color: !SettingsPage.isDarkMode ? black : backGroundColor(),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(20.0),
