@@ -5,6 +5,12 @@ class ImagedButton extends StatelessWidget {
   final String buttonText;
   final VoidCallback onTap;
   final bool? isCall;
+  final double? ratio;
+  final double? shadowRadius;
+  final double? blurRadius;
+  final double? padding;
+  final FontWeight? fontWeight;
+  final double? imageOpacity;
 
   const ImagedButton({
     super.key,
@@ -12,6 +18,12 @@ class ImagedButton extends StatelessWidget {
     required this.buttonText,
     required this.onTap,
     this.isCall,
+    this.ratio,
+    this.shadowRadius,
+    this.blurRadius,
+    this.padding,
+    this.fontWeight,
+    this.imageOpacity,
   });
 
   @override
@@ -19,14 +31,14 @@ class ImagedButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 55.0),
+        padding: EdgeInsets.symmetric(horizontal: padding ?? 55.0),
         child: Container(
           decoration: BoxDecoration(
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.5),
-                spreadRadius: 2,
-                blurRadius: 5,
+                spreadRadius: shadowRadius ?? 2,
+                blurRadius: blurRadius ?? 5,
                 offset: const Offset(0, 2),
               ),
             ],
@@ -36,14 +48,14 @@ class ImagedButton extends StatelessWidget {
           child: Stack(
             children: [
               AspectRatio(
-                aspectRatio: 5 / 2,
+                aspectRatio: ratio ?? 5 / 2,
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.black.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(20),
                     image: DecorationImage(
                       colorFilter: ColorFilter.mode(
-                        Colors.black.withOpacity(isCall?? false ? 0.6 : 0.3),
+                        Colors.black.withOpacity(isCall?? false ? 0.6 : (imageOpacity ?? 0.3)),
                         BlendMode.darken,
                       ),
                       fit: BoxFit.cover,
@@ -108,11 +120,11 @@ class ImagedButton extends StatelessWidget {
                         : Text(
                             buttonText,
                             textAlign: TextAlign.center,
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontFamily: 'Roboto',
                               color: Colors.white,
                               fontSize: 36,
-                              fontWeight: FontWeight.w400,
+                              fontWeight: fontWeight ?? FontWeight.w400,
                             ),
                           ),
                   ),

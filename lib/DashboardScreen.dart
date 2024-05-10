@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/chatScreenFiles/FriendsListScreenChat.dart';
+import 'package:turkify_bem/listingPageFiles/TutorsListingPage.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/royaPage.dart';
@@ -14,10 +15,12 @@ import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
 import 'package:turkify_bem/videoMeetingFiles/FriendsListScreenVideoMeeting.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
 
+import 'RoyaPageRoya.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
 import 'cardSlidingScreenFiles/src/SwiperPage.dart';
 import 'filterPageFiles/FilterPage.dart';
 import 'listingPageFiles/listingScreen.dart';
+import 'listingPageFiles/presentation/pages/home/view/home.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
 import 'loginMainScreenFiles/widgets/fade_in.dart';
 import 'loginMainScreenFiles/widgets/round_button.dart';
@@ -303,9 +306,12 @@ class _DashboardScreenState extends State<DashboardScreen>
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ScaffoldWidget(
-              title: "",
-              child: listingScreen(),
+            builder: (context) => MaterialApp(
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(
+              fontFamily: 'Roboto',
+            ),
+            home: const ScreenHome(),
             ),
           ),
         );
@@ -314,9 +320,9 @@ class _DashboardScreenState extends State<DashboardScreen>
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ScaffoldWidget(
+            builder: (context) => ScaffoldWidget(
               title: 'Kelime Kartları',
-              child: SwiperPage(),
+              child: RoyaPageRoya(),
             ),
           ),
         );
@@ -444,7 +450,6 @@ class _DashboardScreenState extends State<DashboardScreen>
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    // print("AAAAAAAAAAAAAAAAA ${isReadMap.containsValue(false)}");
     return PopScope(
       onPopInvoked: (hasPopped) => hasPopped ? _goToLogin(context) : null,
       child: SafeArea(
@@ -509,9 +514,11 @@ class _DashboardScreenState extends State<DashboardScreen>
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => ScaffoldWidget(
-                                title: "",
-                                child: FriendsListScreenVideoMeeting(),
+                              builder: (context) => MaterialApp(
+                                theme: ThemeData(
+                                  fontFamily: 'Roboto',
+                                ),
+                                home: TutorsListingPage(),
                               ),
                             ),
                           );

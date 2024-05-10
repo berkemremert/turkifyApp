@@ -12,10 +12,8 @@ class listingScreen extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'Raleway',
+        fontFamily: 'Roboto',
       ),
-      themeMode: ThemeMode.light,
-      darkTheme: ThemeData.dark(),
       home: const ScreenHome(),
     );
   }

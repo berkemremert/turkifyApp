@@ -19,7 +19,7 @@ Color greenAccent = Colors.greenAccent;
 Color red = Colors.red;
 Color redOpen = Colors.red.withOpacity(0.75);
 Color backGroundColor(){
-  return SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Colors.white;
+  return SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Color.fromARGB(255, 255, 250, 250);
 }
 Color textColor(){
   return SettingsPage.isDarkMode ? Colors.white : Colors.black;
