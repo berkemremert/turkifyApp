@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:turkify_bem/listingPageFiles/presentation/pages/home/view/home.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
+import 'package:turkify_bem/videoMeetingFiles/FriendsListScreenVideoMeeting.dart';
 
 import '../cardSlidingScreenFiles/cardSlider.dart';
 import '../chatScreenFiles/FriendsListScreenChat.dart';
 
-class TutorsListingPage extends StatelessWidget {
+class StudentsListingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +21,7 @@ class TutorsListingPage extends StatelessWidget {
               child: Container(
                 child: Center(
                   child: ImagedButton(imagePath: 'assets/tutorsListingPage/yourTutorsRedWhite.png',
-                    buttonText: 'Your\nTutors',
+                    buttonText: 'Chat',
                     ratio: 1,
                     shadowRadius: 7,
                     blurRadius: 10,
@@ -49,7 +50,7 @@ class TutorsListingPage extends StatelessWidget {
               child: Container(
                 child: Center(
                   child: ImagedButton(imagePath: 'assets/tutorsListingPage/newTutorsRed.png',
-                    buttonText: 'Find\nTutors',
+                    buttonText: 'Video\nMeeting',
                     ratio: 1,
                     shadowRadius: 7,
                     blurRadius: 10,
@@ -60,7 +61,10 @@ class TutorsListingPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ScreenHome(),
+                          builder: (context) => ScaffoldWidget(
+                            title: "Video Meeting",
+                            child: FriendsListScreenVideoMeeting(),
+                          ),
                         ),
                       );
                     },

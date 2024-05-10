@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/chatScreenFiles/FriendsListScreenChat.dart';
+import 'package:turkify_bem/listingPageFiles/StudentsListingPage.dart';
 import 'package:turkify_bem/listingPageFiles/TutorsListingPage.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
@@ -514,7 +515,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                             context,
                             MaterialPageRoute(
                               builder: (context) =>
-                                _isThereTutor ? TutorsListingPage() : const ScreenHome(),
+                                !_isTutor ? (_isThereTutor ? TutorsListingPage() : const ScreenHome()) : StudentsListingPage(),
                             ),
                           );
                         }
@@ -575,14 +576,14 @@ class _DashboardScreenState extends State<DashboardScreen>
         .get();
     Map<String, dynamic> userData =
         (userDoc.data() as Map<String, dynamic>);
+    _userData = userData;
+    if(_userData['isTutor'] != null) {
+      _isTutor = _userData['isTutor'];
+    }
+    if(_userData['friends'] != null && _userData['friends'].isNotEmpty){
+      _isThereTutor = true;
+    }
     setState(() {
-      _userData = userData;
-      if(_userData['isTutor'] != null && _userData['friends'] == true) {
-        _isTutor = true;
-      }
-      if(_userData['friends'] != null && _userData['friends'].isNotEmpty){
-        _isThereTutor = true;
-      }
     });
   }
 
