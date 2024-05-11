@@ -15,6 +15,7 @@ import 'package:turkify_bem/royaPage.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageStudent.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageTutor.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
+import 'package:turkify_bem/welcomingInformationPageFiles/WelcomingInformationPage.dart';
 
 import 'RoyaPageRoya.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
@@ -271,10 +272,7 @@ class _DashboardScreenState extends State<DashboardScreen>
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ScaffoldWidget(
-              title: "",
-              child: FriendsListScreenChat(),
-            ),
+            builder: (context) => WelcomingInformationPage(),
           ),
         );
       } else if (identifier == 'calendar') {
