@@ -9,11 +9,13 @@ class TitleBar__widget extends StatelessWidget {
     required this.title,
     required this.ontap,
     this.visibility = true,
+    this.textToDirect,
   }) : super(key: key);
 
   final String title;
   final ontap;
   final bool visibility;
+  final String? textToDirect;
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +29,8 @@ class TitleBar__widget extends StatelessWidget {
             onTap: ontap,
             child: Visibility(
                 visible: visibility,
-                child: const BodySmall__text(
-                    text: 'See more', color: kColorText2)),
+                child: BodySmall__text(
+                    text: textToDirect?? 'See more', color: kColorText2)),
           ),
         ],
       ),

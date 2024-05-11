@@ -1,32 +1,45 @@
 import 'package:flutter/material.dart';
-import '../../../../core/utils/navigator.dart';
-import '../../../../gen/assets.gen.dart';
-import '../../details_page/view/Details.dart';
-import 'ListCard.dart';
+import 'package:turkify_bem/listingPageFiles/presentation/pages/home/widgets/CardVertical.dart';
+import 'package:turkify_bem/listingPageFiles/presentation/pages/home/widgets/CardVerticalFiltering.dart';
+import '../../../themes/config_files/values.dart';
+import '../view/TutorsPresentation.dart';
 
-class TutorShowingVertical extends StatelessWidget {
+class TutorShowingVertical extends StatefulWidget {
   TutorShowingVertical({Key? key}) : super(key: key);
 
   @override
+  _TutorShowingVerticalState createState() => _TutorShowingVerticalState();
+}
+
+class _TutorShowingVerticalState extends State<TutorShowingVertical> {
+  late List<Map<String, dynamic>> tutors = [];
+  late List<String> tutorUids = [];
+
+  @override
+  void initState() {
+    super.initState();
+    loadTutors();
+  }
+
+  Future<void> loadTutors() async {
+    List<Map<String, dynamic>> loadedTutors = await TutorsPresentationState().getTutorList();
+    tutorUids = await TutorsPresentationState().getAllTutorUids();
+    setState(() {
+      tutors = loadedTutors;
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Column(
-      children: List.generate(
-          // persons.length >= 3 ? 3 : persons.length
-          3
-          , (index) {
-        return Padding(
-          padding: EdgeInsets.only(right: 16), // Adjust spacing between items
-          child:
-          // ListCardItem__widget(
-          //   ontap: () => PageNav().push(context,
-          //       ScreenDetails(person: personn)),
-          //   title: personn.name,
-          //   subText: personn.offer1.skill,
-          //   imageLink: personn.imageLink,
-          // ),
-          Container(),
-        );
-      }),
+    return SafeArea(
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            CardVerticalSmart(tutors: tutors, numberToShow: 6,),
+            kSizedBoxHeight_16,
+          ],
+        ),
+      ),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
 import '../../../../gen/assets.gen.dart';
 import '../../../components/text.dart';
 import '../../../themes/colors.dart';
@@ -31,7 +32,7 @@ class ListCardItem__widget extends StatelessWidget {
               height: 80,
               width: 80,
               decoration: BoxDecoration(
-                color: kColorPrimary,
+                color: baseDeepColor,
                 borderRadius: BorderRadius.circular(16),
                 image: DecorationImage(fit: BoxFit.cover, image: NetworkImage(
                   imageLink,
@@ -51,43 +52,6 @@ class ListCardItem__widget extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-////
-///
-//
-class BedAndBath extends StatelessWidget {
-  const BedAndBath({
-    Key? key,
-    required this.bedCount,
-    required this.bathCount,
-  }) : super(key: key);
-
-  final int bedCount;
-  final int bathCount;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Assets.icons.bed.svg(height: 24, width: 24, color: kColorText2),
-            BodySmall__text(text: '$bedCount Bedroom', color: kColorText2),
-          ],
-        ),
-        kSizedBoxWidth_16,
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Assets.icons.bath.svg(height: 24, width: 24, color: kColorText2),
-            BodySmall__text(text: '$bathCount Bathroom', color: kColorText2),
-          ],
-        ),
-      ],
     );
   }
 }

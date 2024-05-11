@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
 import '../../../../core/utils/navigator.dart';
-import '../../../../gen/assets.gen.dart';
 import '../../../components/text.dart';
 import '../../details_page/view/Details.dart';
 import '../widgets/TutorShowingVertical.dart';
 import '../widgets/AppBar.dart';
-import '../widgets/CardVerticalSmart.dart';
+import '../widgets/CardVertical.dart';
 import '../widgets/SearchAndFilter.dart';
 import '../../../themes/colors.dart';
 import '../../../themes/config.dart';
@@ -50,10 +50,8 @@ class TutorsPresentationState extends State<TutorsPresentation> {
           child: Column(
             children: [
               SizedBox(height: 30,),
-              SearchAndFilter(),
-              kSizedBoxHeight_8,
               TitleBar__widget(
-                title: '   Best tutors for you',
+                title: '  Best tutors for you',
                 ontap: () {
                   Navigator.push(
                     context,
@@ -82,7 +80,7 @@ class TutorsPresentationState extends State<TutorsPresentation> {
                   padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                   child: Row(
                     children: List.generate(
-                      tutors.length,
+                      tutors.length < 3 ? tutors.length : 3,
                           (index) {
                         Map<String, dynamic> tutor = tutors[index];
                         return Padding(
@@ -98,7 +96,7 @@ class TutorsPresentationState extends State<TutorsPresentation> {
                                   width: 200,
                                   height: 250,
                                   decoration: BoxDecoration(
-                                    color: kColorText3,
+                                    color: baseDeepColor,
                                     image: DecorationImage(
                                       fit: BoxFit.cover,
                                       image: NetworkImage(tutor['profileImageUrl']?? profileDefaultBig),
@@ -133,7 +131,6 @@ class TutorsPresentationState extends State<TutorsPresentation> {
                                     ),
                                     child: Row(
                                       children: <Widget>[
-                                        Assets.icons.location.svg(color: kColorWhite),
                                         BodySmall__text(text: tutor['rating']?? 'New Tutor', color: kColorWhite),
                                       ],
                                     ),
@@ -161,7 +158,13 @@ class TutorsPresentationState extends State<TutorsPresentation> {
                 ),
               ),
               kSizedBoxHeight_8,
-              TitleBar__widget(title: '   Friends profiles', ontap: () {}),
+              SearchAndFilter(),
+              kSizedBoxHeight_8,
+              TitleBar__widget(title: '  Filter tutors',
+                  textToDirect: 'Filter',
+                  ontap: () {
+
+              }),
               TutorShowingVertical(),
               kSizedBoxHeight_16,
             ],
