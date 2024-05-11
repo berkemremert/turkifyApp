@@ -36,6 +36,17 @@ class LoginScreen extends StatelessWidget {
 
       await _saveUserInfo(data.name, data.password);
 
+      final FirebaseAuth _auth = FirebaseAuth.instance;
+      User? currentUser = _auth.currentUser;
+
+      if (currentUser != null) {
+        DocumentSnapshot<Map<String, dynamic>> userSnapshot =
+        await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).get();
+        if(!(userSnapshot.data()?['isAccountActive'])){
+          return 'Your account is deleted. Please wait 14 days to create another account with the same email.';
+        }
+      }
+
       if (userCredential.user?.emailVerified == false) {
         return "Email verification pending. Please verify your email address.";
       }
@@ -47,7 +58,6 @@ class LoginScreen extends StatelessWidget {
 
   Future<String?> _signupUser(SignupData data) async {
     try {
-      // Check if email and password are provided
       if (data.name == null || data.password == null || data.name!.isEmpty || data.password!.isEmpty) {
         return "Email and password are required.";
       }
@@ -57,7 +67,6 @@ class LoginScreen extends StatelessWidget {
         password: data.password!,
       );
 
-      // email verification
       await userCredential.user?.sendEmailVerification();
 
       await FirebaseFirestore.instance.collection('users').doc(userCredential.user?.uid).set({
@@ -66,11 +75,18 @@ class LoginScreen extends StatelessWidget {
         'surname': data.additionalSignupData?['Surname'],
         'phoneNumber': data.additionalSignupData?['phone_number'],
         'friends': [],
+        'studentMap': [],
+        'tutorMap': [],
+        'description': 'No description.',
+        'interests': [],
+        'registrationDate': DateTime.now(),
+        'isVerified': false,
+        'isAccountActive': true,
       });
 
       return "Your account is created but you need to verify your email first.";
     } catch (e) {
-      return e.toString(); // ERROR MESSAGE
+      return e.toString();
     }
   }
 

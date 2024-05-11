@@ -16,7 +16,7 @@ import 'package:uuid/uuid.dart';
 import 'package:bubble/bubble.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 
-import '../settingsPageFiles/settingsPage.dart';
+import '../settingsPageFiles/settingsPageTutor.dart';
 import '../videoMeetingFiles/videoMeetingMain.dart';
 
 class ChatPage extends StatefulWidget {
@@ -32,7 +32,7 @@ class _ChatPageState extends State<ChatPage> {
   final _user1 = FirebaseAuth.instance.currentUser;
   final types.User _user = types.User(id: FirebaseAuth.instance.currentUser!.uid);
   String _selectedMessageID = "";
-  final bool _isDarkMode = SettingsPage.getIsDarkMode();
+  final bool _isDarkMode = SettingsPageTutor.getIsDarkMode();
   bool isTutor = false;
   bool _isSelected = false;
   List<types.Message> _messages = [];

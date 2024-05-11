@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 // import 'package:turkify_bem/APPColors.dart';
 
 import '../mainTools/APPColors.dart';
-import '../settingsPageFiles/settingsPage.dart';
+import '../settingsPageFiles/settingsPageTutor.dart';
 import 'src/config.dart';
 
 void main() => runApp(const MyApp());
@@ -347,15 +347,15 @@ class ScaffoldWidget extends StatelessWidget {
   Widget build(context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: SettingsPage.getIsDarkMode() ? Colors.black : Colors.white,
+        backgroundColor: SettingsPageTutor.getIsDarkMode() ? Colors.black : Colors.white,
         title: Text(
             title,
             style: TextStyle(
-              color: !SettingsPage.getIsDarkMode() ? black : white,
+              color: !SettingsPageTutor.getIsDarkMode() ? black : white,
            ),
         ),
         iconTheme: IconThemeData(
-          color: !SettingsPage.getIsDarkMode() ? Colors.black : Colors.white,
+          color: !SettingsPageTutor.getIsDarkMode() ? Colors.black : Colors.white,
         ),
         actions: actions,
         elevation: 0,

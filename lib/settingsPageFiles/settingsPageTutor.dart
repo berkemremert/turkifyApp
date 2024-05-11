@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui' as ui;
@@ -12,26 +13,27 @@ import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/PermCheckers.dart';
+import 'package:turkify_bem/notificationFiles/Notification.dart';
 import 'package:turkify_bem/settingsPageFiles/blockedPeople.dart';
 
 import '../cardSlidingScreenFiles/cardSlider.dart';
 import '../filterPageFiles/FilterPage.dart';
 import '../filterPageFiles/languageLevel.dart';
 
-class SettingsPage extends StatefulWidget {
+class SettingsPageTutor extends StatefulWidget {
   static bool isDarkMode = false;
 
-  const SettingsPage({super.key});
+  const SettingsPageTutor({super.key});
 
   @override
-  _SettingsPageState createState() => _SettingsPageState();
+  _SettingsPageTutorState createState() => _SettingsPageTutorState();
 
   static bool getIsDarkMode() {
     return isDarkMode;
   }
 }
 
-class _SettingsPageState extends State<SettingsPage> {
+class _SettingsPageTutorState extends State<SettingsPageTutor> {
   User? user = FirebaseAuth.instance.currentUser;
   final FirebaseAuth _auth = FirebaseAuth.instance;
   String? profilePictureUrl;
@@ -60,7 +62,7 @@ class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : backGroundColor(),
+      backgroundColor: SettingsPageTutor.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : backGroundColor(),
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: ListView(
@@ -100,7 +102,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 children: [
                   Icon(
                     Icons.nightlight_round,
-                    color: !SettingsPage.isDarkMode ? black : backGroundColor(),
+                    color: !SettingsPageTutor.isDarkMode ? black : backGroundColor(),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(20.0),
@@ -116,10 +118,10 @@ class _SettingsPageState extends State<SettingsPage> {
                 ],
               ),
               trailing: Switch(
-                value: SettingsPage.isDarkMode,
+                value: SettingsPageTutor.isDarkMode,
                 onChanged: (value) {
                   setState(() {
-                    SettingsPage.isDarkMode = value;
+                    SettingsPageTutor.isDarkMode = value;
                   });
                   Navigator.pop(context);
                   Navigator.push(
@@ -127,7 +129,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     MaterialPageRoute(
                       builder: (context) => const ScaffoldWidget(
                         title: 'Settings',
-                        child: SettingsPage(),
+                        child: SettingsPageTutor(),
                       ),
                     ),
                   );
@@ -169,7 +171,45 @@ class _SettingsPageState extends State<SettingsPage> {
                   ),
                 ),
                 SettingsItem(
-                  onTap: () {},
+                  onTap: () {
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          backgroundColor: Colors.white,
+                          title: const Text(
+                            "Delete Account",
+                            style: TextStyle(color: Colors.red),
+                          ),
+                          content: const Text(
+                            "After this action, your account will be deleted permanently!",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                          actions: <Widget>[
+                            TextButton(
+                              child: const Text(
+                                "Cancel",
+                                style: TextStyle(color: Colors.black),
+                              ),
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                            ),
+                            TextButton(
+                              child: const Text(
+                                "Approve",
+                                style: TextStyle(color: Colors.red),
+                              ),
+                              onPressed: () {
+                                deleteAccount();
+                                Navigator.of(context).pop();
+                              },
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  },
                   icons: CupertinoIcons.delete_solid,
                   title: "Delete account",
                   titleStyle: TextStyle(
@@ -309,7 +349,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   MaterialPageRoute(
                     builder: (context) => const ScaffoldWidget(
                       title: 'Settings',
-                      child: SettingsPage(),
+                      child: SettingsPageTutor(),
                     ),
                   ),
                 );
@@ -335,6 +375,30 @@ class _SettingsPageState extends State<SettingsPage> {
       print('Error updating about in Firebase: $e');
       // Handle error
     }
+  }
+
+  Future<void> deleteAccount() async {
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Your account is deleted.'),
+        backgroundColor: Colors.red,
+      ),
+    );
+    try {
+      User? currentUser = _auth.currentUser;
+      if (currentUser != null) {
+        await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).update({
+          'isAccountActive': false,
+          'accountDeleteTime': DateTime.now(),
+        });
+        print('Account deleted successfully in Firebase.');
+      }
+    } catch (e) {
+      print('Error deleting account in Firebase: $e');
+    }
+
+    logOut();
+    _goToLogin(context);
   }
 
   Future<String?> updateProfilePicture(BuildContext context) async {
@@ -443,12 +507,15 @@ class _SettingsPageState extends State<SettingsPage> {
     await prefs.remove('email');
     await prefs.remove('password');
     await FirebaseAuth.instance.signOut();
+
+    NotificationMethods().logOutFirebase(user!);
   }
   Future<bool> _goToLogin(BuildContext context) {
     return Navigator.of(context)
         .pushReplacementNamed('/auth')
         .then((_) => false);
   }
+
 
   List<SettingsItem> _settingItems(){
     List<SettingsItem> items = [
@@ -482,7 +549,6 @@ class _SettingsPageState extends State<SettingsPage> {
         titleMaxLine: 1,
         subtitleMaxLine: 1,
       ),
-      if(isTutor ?? false)
       SettingsItem(
         onTap: () async {
           _updateAbout(context);
@@ -498,7 +564,6 @@ class _SettingsPageState extends State<SettingsPage> {
         titleMaxLine: 1,
         subtitleMaxLine: 1,
       ),
-      if(isTutor ?? false)
       SettingsItem(
         onTap: () {
           Navigator.push(
@@ -519,28 +584,6 @@ class _SettingsPageState extends State<SettingsPage> {
         ),
         title: 'Education Level',
         subtitle: 'Change your preferred level of students',
-      ),
-      if(!(isTutor ?? true))
-        SettingsItem(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => ScaffoldWidget(
-                title: '',
-                child: LanguageLevel(userData: _userData),
-              ),
-            ),
-          );
-        },
-        icons: Icons.account_balance,
-        iconStyle: IconStyle(
-          iconsColor: white,
-          withBackground: true,
-          backgroundColor: baseDeepColor,
-        ),
-        title: 'Desired Education',
-        subtitle: 'Change your preferred level of studies',
       ),
       SettingsItem(
         onTap: () {

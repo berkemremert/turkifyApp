@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -23,6 +24,17 @@ class EntryScreen extends StatelessWidget {
           email: email,
           password: password,
         );
+
+        final FirebaseAuth _auth = FirebaseAuth.instance;
+        User? currentUser = _auth.currentUser;
+
+        if (currentUser != null) {
+          DocumentSnapshot<Map<String, dynamic>> userSnapshot =
+          await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).get();
+          if(!(userSnapshot.data()?['isAccountActive'])){
+            return false;
+          }
+        }
 
         if (userCredential.user?.emailVerified == false) {
           return false;

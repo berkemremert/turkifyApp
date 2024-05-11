@@ -12,7 +12,7 @@ import 'package:turkify_bem/listingPageFiles/TutorsListingPage.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/royaPage.dart';
-import 'package:turkify_bem/settingsPageFiles/settingsPage.dart';
+import 'package:turkify_bem/settingsPageFiles/settingsPageTutor.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
 
 import 'RoyaPageRoya.dart';
@@ -333,7 +333,7 @@ class _DashboardScreenState extends State<DashboardScreen>
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => SettingsPage(),
+            builder: (context) => SettingsPageTutor(),
           ),
         );
         // Navigator.push(

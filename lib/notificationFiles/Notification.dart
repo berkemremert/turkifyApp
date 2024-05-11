@@ -26,7 +26,10 @@ class NotificationMethods {
         final firestore = FirebaseFirestore.instance;
 
         await firestore.collection('users').doc(user!.uid).update({
-          'fcmToken': fcmToken,
+          'fcmToken': {
+            fcmToken: {
+        'isLoggedIn': true,
+        }},
         });
 
       } else {
@@ -45,7 +48,29 @@ class NotificationMethods {
     });
   }
 
-  // Future<void> sendNotification({
+  Future<void> logOutFirebase(User user) async {
+    try {
+      final fcmToken = await _firebaseMessaging.getToken();
+
+      if (fcmToken != null) {
+        final firestore = FirebaseFirestore.instance;
+
+        await firestore.collection('users').doc(user!.uid).update({
+          'fcmToken': {
+            fcmToken: {
+              'isLoggedIn': false,
+            }},
+        });
+
+      } else {
+        debugPrint('FCM token is null');
+      }
+    } catch (error) {
+      debugPrint('Error initializing notifications: $error');
+    }
+  }
+
+// Future<void> sendNotification({
   //   required String receiverUid,
   //   required String title,
   //   required String body,

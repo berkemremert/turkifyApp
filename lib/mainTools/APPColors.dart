@@ -1,8 +1,8 @@
 // import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import '../settingsPageFiles/settingsPage.dart';
+import '../settingsPageFiles/settingsPageTutor.dart';
 
-bool isDarkMode = !SettingsPage.getIsDarkMode();
+bool isDarkMode = !SettingsPageTutor.getIsDarkMode();
 Color white = Colors.white;
 Color baseDeepColor = const Color.fromARGB(169, 236, 13, 13);
 Color darkRed = const Color.fromARGB(169, 128, 0, 0);
@@ -19,16 +19,16 @@ Color greenAccent = Colors.greenAccent;
 Color red = Colors.red;
 Color redOpen = Colors.red.withOpacity(0.75);
 Color backGroundColor(){
-  return SettingsPage.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Color.fromARGB(255, 255, 250, 250);
+  return SettingsPageTutor.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Color.fromARGB(255, 255, 250, 250);
 }
 Color textColor(){
-  return SettingsPage.isDarkMode ? Colors.white : Colors.black;
+  return SettingsPageTutor.isDarkMode ? Colors.white : Colors.black;
 }
 Color notificationColor(){
-  return SettingsPage.isDarkMode ? Colors.white : const Color.fromARGB(255, 128, 0, 0);
+  return SettingsPageTutor.isDarkMode ? Colors.white : const Color.fromARGB(255, 128, 0, 0);
 }
 Color welcomeColor(){
-  return SettingsPage.isDarkMode ? lightGrey : const Color.fromARGB(255, 245, 235, 230);
+  return SettingsPageTutor.isDarkMode ? lightGrey : const Color.fromARGB(255, 245, 235, 230);
 }
 
 Color endcolor(String text, List<dynamic> langs){
