@@ -79,7 +79,14 @@ class LoginScreen extends StatelessWidget {
         'tutorMap': [],
         'description': 'No description.',
         'interests': [],
-        'registrationDate': DateTime.now(),
+        'registrationDate': {
+          'day' : DateTime.now().day,
+          'month' : DateTime.now().month,
+          'year' : DateTime.now().year,
+          'hour' : DateTime.now().hour,
+          'minute' : DateTime.now().minute,
+          'second' : DateTime.now().second,
+        },
         'isVerified': false,
         'isAccountActive': true,
       });

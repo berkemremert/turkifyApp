@@ -136,19 +136,6 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
                 },
               ),
             ),
-            SettingsGroup(
-              items: [
-                SettingsItem(
-                  onTap: () {},
-                  icons: Icons.info_rounded,
-                  iconStyle: IconStyle(
-                    backgroundColor: baseDeepColor,
-                  ),
-                  title: 'About',
-                  subtitle: "Learn more about Turkify",
-                ),
-              ],
-            ),
 
             SettingsGroup(
               settingsGroupTitle: "Account",
@@ -625,6 +612,36 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
         ),
         title: 'Blocked People',
         subtitle: "See blocked accounts",
+      ),
+      SettingsItem(
+        onTap: () {
+          print('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%');
+          print(
+              DateTime.now().day
+          );
+          print(
+              DateTime.now().month
+          );
+          print(
+              DateTime.now().year
+          );
+          print(
+              DateTime.now().hour
+          );
+          print(
+              DateTime.now().minute
+          );
+          print(
+              DateTime.now().second
+          );
+          print('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%');
+        },
+        icons: Icons.info_rounded,
+        iconStyle: IconStyle(
+          backgroundColor: baseDeepColor,
+        ),
+        title: 'About',
+        subtitle: "Learn more about Turkify",
       ),
     ];
     return items;
