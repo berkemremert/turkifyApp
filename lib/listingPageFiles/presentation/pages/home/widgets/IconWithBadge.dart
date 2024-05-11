@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import '../../../themes/config_files/values.dart';
 
-import 'badge.dart';
+import 'Badge.dart';
 
 class IconWithBadge__widget extends StatelessWidget {
   const IconWithBadge__widget({

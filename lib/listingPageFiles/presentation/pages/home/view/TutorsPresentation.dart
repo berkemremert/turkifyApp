@@ -3,15 +3,16 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/utils/navigator.dart';
 import '../../../../gen/assets.gen.dart';
 import '../../../components/text.dart';
-import '../../details_page/view/details.dart';
+import '../../details_page/view/Details.dart';
 import '../widgets/TutorShowingVertical.dart';
-import '../widgets/appbar.dart';
-import '../widgets/cardVerticalSmart.dart';
-import '../widgets/search_and_filter.dart';
+import '../widgets/AppBar.dart';
+import '../widgets/CardVerticalSmart.dart';
+import '../widgets/SearchAndFilter.dart';
 import '../../../themes/colors.dart';
 import '../../../themes/config.dart';
+import '../../../../../mainTools/constLinks.dart';
 
-import '../widgets/title_bar.dart';
+import '../widgets/TitleBar.dart';
 
 class TutorsPresentation extends StatefulWidget {
   const TutorsPresentation({Key? key}) : super(key: key);
@@ -100,7 +101,7 @@ class TutorsPresentationState extends State<TutorsPresentation> {
                                     color: kColorText3,
                                     image: DecorationImage(
                                       fit: BoxFit.cover,
-                                      image: NetworkImage(tutor['profileImageUrl']?? ''),
+                                      image: NetworkImage(tutor['profileImageUrl']?? profileDefaultBig),
                                     ),
                                     borderRadius: BorderRadius.circular(20),
                                   ),
@@ -133,7 +134,7 @@ class TutorsPresentationState extends State<TutorsPresentation> {
                                     child: Row(
                                       children: <Widget>[
                                         Assets.icons.location.svg(color: kColorWhite),
-                                        BodySmall__text(text: tutor['rating']?? 'rating', color: kColorWhite),
+                                        BodySmall__text(text: tutor['rating']?? 'New Tutor', color: kColorWhite),
                                       ],
                                     ),
                                   ),

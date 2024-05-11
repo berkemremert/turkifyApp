@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:turkify_bem/listingPageFiles/presentation/pages/home/widgets/personDetails.dart';
-import '../../../../../mainTools/personList.dart';
 import '../../../../core/utils/navigator.dart';
 import '../../../../gen/assets.gen.dart';
-import '../../details_page/view/details.dart';
-import 'list_card.dart';
+import '../../details_page/view/Details.dart';
+import 'ListCard.dart';
 
 class TutorShowingVertical extends StatelessWidget {
   TutorShowingVertical({Key? key}) : super(key: key);
@@ -12,8 +10,10 @@ class TutorShowingVertical extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: List.generate(persons.length >= 3 ? 3 : persons.length, (index) {
-        Person personn = persons[index];
+      children: List.generate(
+          // persons.length >= 3 ? 3 : persons.length
+          3
+          , (index) {
         return Padding(
           padding: EdgeInsets.only(right: 16), // Adjust spacing between items
           child:

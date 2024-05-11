@@ -1,6 +1,7 @@
 // ignore_for_file: camel_case_types, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
 import '../../../themes/colors.dart';
 
 class Badge__widget extends StatelessWidget {
@@ -11,7 +12,7 @@ class Badge__widget extends StatelessWidget {
       height: 10,
       width: 10,
       decoration: BoxDecoration(
-        color: kColorRed,
+        color: baseDeepColor,
         shape: BoxShape.circle,
       ),
     );

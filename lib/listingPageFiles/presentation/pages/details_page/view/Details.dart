@@ -2,14 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:turkify_bem/listingPageFiles/presentation/pages/home/view/TutorsPresentation.dart';
+import 'package:turkify_bem/mainTools/constLinks.dart';
 import '../../../../../mainTools/APPColors.dart';
-import '../../../../../referencePageFiles/referencePage.dart';
 import '../../../components/button.dart';
 import '../../../components/text.dart';
-import '../widgets/header_image.dart';
-import '../widgets/image_gallery.dart';
-import '../widgets/map.dart';
-import '../widgets/user_profile.dart';
+import '../widgets/HeaderImage.dart';
 import '../../../themes/colors.dart';
 import '../../../themes/config.dart';
 
@@ -68,8 +65,8 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                   children: <Widget>[
                     kSizedBoxHeight_16,
                     HeaderImage__widget(
-                      imageLink: _userData['profileImageUrl']?? '',
-                      name: _userData['name']?? 'No name',
+                      imageLink: _userData['profileImageUrl']?? profileDefaultBig,
+                      name: _userData['name']?? 'Tutor Name',
                       offer: TutorsPresentationState().getEducationLevels(_userData),
                     ),
                     kSizedBoxHeight_24,
@@ -108,7 +105,8 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => CommentPage()),
+                            // REFERENCE PAGE
+                            MaterialPageRoute(builder: (context) => Container()),
                           );
                         },
                         child: const Padding(
@@ -152,7 +150,7 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                       onTap: () {
                         print("aaaa");
                       },
-                      child: const Map__widget(),
+                      child: Container(),
                     )
                   ],
                 ),
@@ -182,7 +180,7 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        BodyMedium__text(text: "${_userData['name']} offering", color: kColorText2),
+                        BodyMedium__text(text: "${_userData['name']} teaches", color: black),
                         kSizedBoxHeight_8,
                         LabelMedium__text(text: TutorsPresentationState().getEducationLevels(_userData)),
                       ],
