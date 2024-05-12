@@ -136,19 +136,6 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
                 },
               ),
             ),
-            SettingsGroup(
-              items: [
-                SettingsItem(
-                  onTap: () {},
-                  icons: Icons.info_rounded,
-                  iconStyle: IconStyle(
-                    backgroundColor: baseDeepColor,
-                  ),
-                  title: 'About',
-                  subtitle: "Learn more about Turkify",
-                ),
-              ],
-            ),
 
             SettingsGroup(
               settingsGroupTitle: "Account",
@@ -625,6 +612,15 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
         ),
         title: 'Blocked People',
         subtitle: "See blocked accounts",
+      ),
+      SettingsItem(
+        onTap: () {},
+        icons: Icons.info_rounded,
+        iconStyle: IconStyle(
+          backgroundColor: baseDeepColor,
+        ),
+        title: 'About',
+        subtitle: "Learn more about Turkify",
       ),
     ];
     return items;
