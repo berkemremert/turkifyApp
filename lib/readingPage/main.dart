@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shop_app/constants.dart';
 import 'package:shop_app/screens/home/home_screen.dart';
 
+// SAYFALARI MAIN DIYE ISIMLENDIRMEYELIM
+
 void main() {
   runApp(MyApp());
 }
