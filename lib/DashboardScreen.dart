@@ -450,7 +450,7 @@ class _DashboardScreenState extends State<DashboardScreen>
       onPopInvoked: (hasPopped) => hasPopped ? _goToLogin(context) : null,
       child: SafeArea(
         child: Scaffold(
-          appBar: _buildAppBar(theme),
+          // appBar: _buildAppBar(theme),
           body: Container(
             color: backGroundColor(),
             width: double.infinity,

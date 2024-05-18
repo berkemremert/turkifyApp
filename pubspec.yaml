@@ -48,7 +48,7 @@ dependencies:
   cloud_firestore_web: ^3.4.3
   permission_handler: ^10.3.0
   bubble: ^1.2.1
-  firebase_messaging: ^14.9.1
+  firebase_messaging: ^14.9.2
   free_english_dictionary: ^0.0.3
   simplytranslate: ^2.0.2
   auto_size_text: 3.0.0
