@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:shop_app/constants.dart';
-import 'package:shop_app/screens/home/CategoryScreen.dart';
+import '../../constants.dart';
+import '../../screens/home/CategoryScreen.dart';
 
 import '../../models/Category.dart';
 import 'components/category_card.dart';
