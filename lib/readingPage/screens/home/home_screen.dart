@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
         elevation: 0,
         leading: IconButton(
           icon: SvgPicture.asset(
-            'assets/icons/back.svg',
+            'assets/readingPage/icons/back.svg',
             color: Colors.blueGrey,
             // colorFilter: ColorFilter.mode(Colors.blueGrey, BlendMode.srcIn),
           ),
@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
         actions: <Widget>[
           IconButton(
             icon: SvgPicture.asset(
-              "assets/icons/search.svg",
+              "assets/readingPage/icons/search.svg",
               color: kTextColor,
               // colorFilter: ColorFilter.mode(kTextColor, BlendMode.srcIn),
             ),

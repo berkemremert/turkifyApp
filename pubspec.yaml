@@ -116,5 +116,7 @@ flutter:
     - assets/tutorsListingPage/yourTutorsRedWhite.png
     - assets/studentsListingPage/chat.png
     - assets/studentsListingPage/video.png
+    - assets/readingPage/icons/
+    - assets/readingPage/images/
 
 

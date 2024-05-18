@@ -21,7 +21,7 @@ class DetailsScreen extends StatelessWidget {
         elevation: 0,
         leading: IconButton(
           icon: SvgPicture.asset(
-            'assets/icons/back.svg',
+            'assets/readingPage/icons/back.svg',
             color: Colors.blueGrey,
             // colorFilter: ColorFilter.mode(Colors.blueGrey, BlendMode.srcIn),
           ),
