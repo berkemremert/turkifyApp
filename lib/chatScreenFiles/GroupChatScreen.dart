@@ -28,40 +28,44 @@ class ChatPage extends StatefulWidget {
   State<ChatPage> createState() => _ChatPageState();
 }
 
+//State of Chat Page
 class _ChatPageState extends State<ChatPage> {
-  final _user1 = FirebaseAuth.instance.currentUser;
-  final types.User _user = types.User(id: FirebaseAuth.instance.currentUser!.uid);
-  String _selectedMessageID = "";
-  final bool _isDarkMode = SettingsPageTutor.getIsDarkMode();
-  bool isTutor = false;
-  bool _isSelected = false;
-  List<types.Message> _messages = [];
+  final _currentUser = FirebaseAuth.instance.currentUser; // current user
+  final types.User _user = types.User(id: FirebaseAuth.instance.currentUser!.uid); // current user
+  String _selectedMessageID = ""; // selected message
+  final bool _isDarkMode = SettingsPageTutor.getIsDarkMode(); // dark mode controller
+  bool isTutor = false; // tutor checker
+  bool _isSelected = false; // selected checker
+  List<types.Message> _messages = []; // message list
+  FirebaseFirestore firebaseInstance = FirebaseFirestore.instance;
+  CollectionReference<Map<String, dynamic>> messagesCollection = FirebaseFirestore.instance.collection('messages');
 
-  String get friendId => widget.friendId;
-  Map<String, dynamic> get data => widget.data;
+  String get friendId => widget.friendId; // other persons id getter
+  Map<String, dynamic> get data => widget.data; // data getter
 
   @override
   void initState() {
     super.initState();
-    _loadMessages();
-    _loadCurrentUser();
+    _loadMessages(); // first load previous messages
+    _loadCurrentUser(); // load current users info
   }
 
   // HELPER FUNCTIONS vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-  void _loadCurrentUser() async {
-    String userId = FirebaseAuth.instance.currentUser?.uid ?? '';
+  void _loadCurrentUser() async { // to initiate isTutor
+    String userId = _currentUser?.uid ?? '';
     if (userId.isNotEmpty) {
-      DocumentSnapshot userSnapshot = await FirebaseFirestore.instance.collection('users').doc(userId).get();
+      DocumentSnapshot userSnapshot = await firebaseInstance.collection('users').doc(userId).get();
       Map<String, dynamic>? userData = userSnapshot.data() as Map<String, dynamic>?;
       setState(() {
         isTutor = userData?['isTutor'] ?? false;
       });
     }
   }
-  String findID(){
+
+  String findID(){ // to find the room id needed. It concatenates two users' ids according to alphabetical order
     String wantID = "";
-    String curID = _user1?.uid ?? "-";
-    if(curID.compareTo(friendId) <= 0){
+    String curID = _currentUser?.uid ?? "-";
+    if(curID.compareTo(friendId) <= 0){ // compare alphabetically
       wantID = curID + friendId;
     }
     else{
@@ -69,18 +73,20 @@ class _ChatPageState extends State<ChatPage> {
     }
     return wantID;
   }
-  Widget _buildAvatarTrue(types.User user) {
+
+  Widget _buildAvatarTrue(types.User user) { // creates avatar if valid url exists
     String url = data['profileImageUrl'] as String;
     return CircleAvatar(
         backgroundImage: NetworkImage(url)
     );
   }
-  Widget _buildAvatarFalse(types.User user) {
+  Widget _buildAvatarFalse(types.User user) { // creates avatar if valid url does not exist
     return const CircleAvatar(
       backgroundImage: AssetImage('assets/defaultProfilePicture.jpeg'),
     );
   }
-  Future<void> changeIsRead(CollectionReference<Map<String, dynamic>> messagesCollection, int mode) async {
+
+  Future<void> changeIsRead(CollectionReference<Map<String, dynamic>> messagesCollection, int mode) async { // function to change isRead
     final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
     final docId = findID();
     final DocumentSnapshot<Map<String, dynamic>> docSnapshot = await messagesCollection.doc(docId).get();
@@ -121,18 +127,17 @@ class _ChatPageState extends State<ChatPage> {
   //HELPER FUNCTIONS ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   // ADD AND LOAD vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-  Future<void> _addMessage(types.Message message) async {
+  Future<void> _addMessage(types.Message message) async { // Add message
     String wantID = findID();
     int createdTime = message.createdAt!;
-    String timeID = (100000000000000 - createdTime).toString();
+    String timeID = (100000000000000 - createdTime).toString(); // for sorting purposes, created time is substracted from 10^14
     try {
-      final messagesCollection = FirebaseFirestore.instance.collection('messages');
       final messageDoc = await messagesCollection.doc(wantID).get();
 
       if (messageDoc.exists) {
         await messagesCollection.doc(wantID).update({
           timeID: {
-            'authorID': _user1?.uid ?? "-",
+            'authorID': _currentUser?.uid ?? "-",
             'createdAt': createdTime,
             'id': message.id,
             'text': (message as types.TextMessage).text,
@@ -148,14 +153,13 @@ class _ChatPageState extends State<ChatPage> {
   }
   void _loadMessages() {
     String wantID = findID();
-    final messagesCollection = FirebaseFirestore.instance.collection('messages');
 
     messagesCollection.doc(wantID).snapshots().listen((snapshot) {
       if (snapshot.exists) {
         final messageData = snapshot.data() as Map<String, dynamic>;
         List<types.Message> messages = [];
         changeIsRead(messagesCollection, 0);
-        messageData.values.forEach((data) {
+        for (var data in messageData.values) {
           try {
             MyTextMessage message = MyTextMessage.fromJson(data);
             var authorUser = message.authorID == _user.id
@@ -171,7 +175,7 @@ class _ChatPageState extends State<ChatPage> {
           } catch (e) {
             print("ERRORa $e");
           }
-        });
+        }
         messages.sort((a, b) => b.createdAt!.compareTo(a.createdAt!));
 
         setState(() {
@@ -327,11 +331,11 @@ class _ChatPageState extends State<ChatPage> {
     });
   }
   void _handleSendPressed(types.PartialText message) async {
-    String curID = _user1?.uid ?? "-";
+    String curID = _currentUser?.uid ?? "-";
     String roomID = "";
 
-    if (_user1 != null) {
-      final curUsernameSnapshot = await FirebaseFirestore.instance
+    if (_currentUser != null) {
+      final curUsernameSnapshot = await firebaseInstance
           .collection('users')
           .doc(curID)
           .get();
@@ -359,7 +363,7 @@ class _ChatPageState extends State<ChatPage> {
   }
   void _onMessageLongPress(BuildContext context, types.Message p1) {
     setState(() {
-      if(p1.author.id == _user1!.uid) {
+      if(p1.author.id == _currentUser!.uid) {
         _selectedMessageID = p1.id;
         _isSelected = true;
       }
@@ -375,9 +379,6 @@ class _ChatPageState extends State<ChatPage> {
   }
   void _deleteMessage() {
     String wantID = findID();
-
-    final messagesCollection = FirebaseFirestore.instance.collection('messages');
-
     messagesCollection.doc(wantID).snapshots().listen((snapshot) {
       if (snapshot.exists) {
         final messageData = snapshot.data() as Map<String, dynamic>;
@@ -447,7 +448,6 @@ class _ChatPageState extends State<ChatPage> {
               message.type == types.MessageType.image
               ? (_isDarkMode ? const Color.fromARGB(255, 32, 63, 84) : const Color(0xfff5f5f7))
               : (_isDarkMode ? const Color.fromARGB(255, 25, 120, 100) : baseDeepColor),
-          // TODO: I sucked at choosing colors. HELP
           showNip: true,
           borderColor: Colors.transparent,
           radius: const Radius.circular(35),
@@ -496,7 +496,7 @@ class _ChatPageState extends State<ChatPage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => VideoMeetingPage(calleeId: _user1!.uid),
+                  builder: (context) => VideoMeetingPage(calleeId: _currentUser!.uid),
                 ),
               );
             },

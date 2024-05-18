@@ -7,6 +7,8 @@ import '../../models/Category.dart';
 import 'components/category_card.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +18,8 @@ class HomeScreen extends StatelessWidget {
         leading: IconButton(
           icon: SvgPicture.asset(
             'assets/icons/back.svg',
-            colorFilter: ColorFilter.mode(Colors.blueGrey, BlendMode.srcIn),
+            color: Colors.blueGrey,
+            // colorFilter: ColorFilter.mode(Colors.blueGrey, BlendMode.srcIn),
           ),
           onPressed: (){},
         ),
@@ -24,12 +27,13 @@ class HomeScreen extends StatelessWidget {
           IconButton(
             icon: SvgPicture.asset(
               "assets/icons/search.svg",
-              colorFilter: ColorFilter.mode(kTextColor, BlendMode.srcIn),
+              color: kTextColor,
+              // colorFilter: ColorFilter.mode(kTextColor, BlendMode.srcIn),
             ),
             onPressed: () {},
           ),
 
-          SizedBox(width: kDefaultPaddin / 2)
+          const SizedBox(width: kDefaultPaddin / 2)
         ],
       ),
       body: Column(
@@ -40,7 +44,7 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: kDefaultPaddin),
               child: GridView.builder(
                 itemCount: category.length,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   mainAxisSpacing: 5,
                   crossAxisSpacing: 3,

@@ -23,7 +23,8 @@ class CategoryScreen extends StatelessWidget {
         leading: IconButton(
           icon: SvgPicture.asset(
             'assets/icons/back.svg',
-            colorFilter: ColorFilter.mode(Colors.blueGrey, BlendMode.srcIn),
+            color: Colors.blueGrey
+            // colorFilter: ColorFilter.mode(Colors.blueGrey, BlendMode.srcIn),
           ),
           onPressed: () => Navigator.pop(context),
         ),
@@ -31,7 +32,8 @@ class CategoryScreen extends StatelessWidget {
           IconButton(
             icon: SvgPicture.asset(
               "assets/icons/search.svg",
-              colorFilter: ColorFilter.mode(kTextColor, BlendMode.srcIn),
+              color: kTextColor,
+              // colorFilter: ColorFilter.mode(kTextColor, BlendMode.srcIn),
             ),
             onPressed: () {},
           ),

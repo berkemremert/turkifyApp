@@ -5,34 +5,37 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../mainTools/APPColors.dart';
 import 'GroupChatScreen.dart';
 
+// Widget for displaying a list of friends for chat
 class FriendsListScreenChat extends StatefulWidget {
   const FriendsListScreenChat({super.key});
-
   @override
   _FriendsListScreenChatState createState() => _FriendsListScreenChatState();
 }
 
+// State class for the FriendsListScreenChat widget
 class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
-  final FirebaseAuth _auth = FirebaseAuth.instance;
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final FirebaseAuth _auth = FirebaseAuth.instance; // Firebase Authentication instance
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance; // Firestore instance
 
-  User? _user;
-  List<String> _friendUids = [];
-  Map<String, bool> isReadMap = {};
+  User? _user; // Current logged-in user
+  List<String> _friendUids = []; // List of friend UIDs
+  Map<String, bool> isReadMap = {}; // Map to track read/unread status of messages
 
   @override
   void initState() {
     super.initState();
-    _getUser();
+    _getUser(); // Get the current user when the widget is initialized
   }
 
+  // Function to get the current user
   void _getUser() async {
     _user = _auth.currentUser;
     if (_user != null) {
-      _fetchFriends();
+      _fetchFriends(); // Fetch friends if the user is logged in
     }
   }
 
+  // Function to fetch friends from Firestore
   void _fetchFriends() async {
     final DocumentSnapshot<Map<String, dynamic>> userSnapshot =
     await _firestore.collection('users').doc(_user!.uid).get();
@@ -41,23 +44,24 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
 
     if (userData != null && userData.containsKey('friends')) {
       setState(() {
-        _friendUids = List<String>.from(userData['friends']);
+        _friendUids = List<String>.from(userData['friends']); // Update friend UIDs
       });
     }
-    _createIsRead();
+    _createIsRead(); // Initialize read/unread status map
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _buildFriendsList(),
+      body: _buildFriendsList(), // Build the friends list UI
     );
   }
 
+  // Function to create and update the isReadMap
   void _createIsRead() async {
     final messagesCollection = FirebaseFirestore.instance.collection('messages');
     messagesCollection.snapshots().listen((snapshot) {
-      snapshot.docs.forEach((doc) {
+      for (var doc in snapshot.docs) {
         final data = doc.data();
         if (data.containsKey('isRead')) {
           final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
@@ -85,10 +89,11 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
             });
           }
         }
-      });
+      }
     });
   }
 
+  // Widget to build the friends list UI
   Widget _buildFriendsList() {
     return GridView.builder(
       padding: const EdgeInsets.all(16.0),
@@ -131,8 +136,7 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
                     builder: (context) => ChatPage(data: friendData!, friendId: friendId),
                   ),
                 );
-                // Call _fetchFriends again when returning from ChatPage
-                _fetchFriends();
+                _fetchFriends(); // Refresh the friends list after returning from chat screen
               },
               child: Card(
                 elevation: 3.0,

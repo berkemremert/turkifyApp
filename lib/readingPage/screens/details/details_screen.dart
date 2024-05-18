@@ -22,7 +22,8 @@ class DetailsScreen extends StatelessWidget {
         leading: IconButton(
           icon: SvgPicture.asset(
             'assets/icons/back.svg',
-            colorFilter: ColorFilter.mode(Colors.blueGrey, BlendMode.srcIn),
+            color: Colors.blueGrey,
+            // colorFilter: ColorFilter.mode(Colors.blueGrey, BlendMode.srcIn),
           ),
           onPressed: () => Navigator.pop(context),
         ),
@@ -42,7 +43,7 @@ class DetailsScreen extends StatelessWidget {
                       right: kDefaultPaddin,
                     ),
                     // height: 500,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(24),
@@ -52,7 +53,7 @@ class DetailsScreen extends StatelessWidget {
                     child: Column(
                       children: <Widget>[
                         Description(book: book),
-                        SizedBox(height: kDefaultPaddin / 2),
+                        const SizedBox(height: kDefaultPaddin / 2),
                       ],
                     ),
                   ),
