@@ -16,6 +16,7 @@ import 'package:uuid/uuid.dart';
 import 'package:bubble/bubble.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 
+import '../mainTools/firebaseMethods.dart';
 import '../settingsPageFiles/settingsPageTutor.dart';
 import '../videoMeetingFiles/videoMeetingMain.dart';
 
@@ -32,13 +33,15 @@ class ChatPage extends StatefulWidget {
 class _ChatPageState extends State<ChatPage> {
   final _currentUser = FirebaseAuth.instance.currentUser; // current user
   final types.User _user = types.User(id: FirebaseAuth.instance.currentUser!.uid); // current user
-  String _selectedMessageID = ""; // selected message
   final bool _isDarkMode = SettingsPageTutor.getIsDarkMode(); // dark mode controller
+
+  late CollectionReference<Map<String, dynamic>> messagesCollection = getMessages();
+  late FirebaseFirestore firebaseInstance;
+
+  String _selectedMessageID = ""; // selected message
   bool isTutor = false; // tutor checker
   bool _isSelected = false; // selected checker
   List<types.Message> _messages = []; // message list
-  FirebaseFirestore firebaseInstance = FirebaseFirestore.instance;
-  CollectionReference<Map<String, dynamic>> messagesCollection = FirebaseFirestore.instance.collection('messages');
 
   String get friendId => widget.friendId; // other persons id getter
   Map<String, dynamic> get data => widget.data; // data getter
@@ -48,14 +51,15 @@ class _ChatPageState extends State<ChatPage> {
     super.initState();
     _loadMessages(); // first load previous messages
     _loadCurrentUser(); // load current users info
+    // messagesCollection = getMessages();
+    firebaseInstance = getInstance();
   }
 
   // HELPER FUNCTIONS vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
   void _loadCurrentUser() async { // to initiate isTutor
     String userId = _currentUser?.uid ?? '';
     if (userId.isNotEmpty) {
-      DocumentSnapshot userSnapshot = await firebaseInstance.collection('users').doc(userId).get();
-      Map<String, dynamic>? userData = userSnapshot.data() as Map<String, dynamic>?;
+      Map<String, dynamic>? userData = getUserData(userId);
       setState(() {
         isTutor = userData?['isTutor'] ?? false;
       });
@@ -87,9 +91,9 @@ class _ChatPageState extends State<ChatPage> {
   }
 
   Future<void> changeIsRead(CollectionReference<Map<String, dynamic>> messagesCollection, int mode) async { // function to change isRead
-    final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
+    final userId = _currentUser?.uid ?? '';
     final docId = findID();
-    final DocumentSnapshot<Map<String, dynamic>> docSnapshot = await messagesCollection.doc(docId).get();
+    final DocumentSnapshot<Map<String, dynamic>> docSnapshot = getMessageDoc(messagesCollection, docId);
 
     if(mode == 0){
       try {
@@ -130,12 +134,11 @@ class _ChatPageState extends State<ChatPage> {
   Future<void> _addMessage(types.Message message) async { // Add message
     String wantID = findID();
     int createdTime = message.createdAt!;
-    String timeID = (100000000000000 - createdTime).toString(); // for sorting purposes, created time is substracted from 10^14
+    String timeID = (100000000000000 - createdTime).toString(); // for sorting purposes, created time is subtracted from 10^14
     try {
-      final messageDoc = await messagesCollection.doc(wantID).get();
-
+      final messageDoc = await getMessageDoc(messagesCollection, wantID); // get the message document with the id wantID
       if (messageDoc.exists) {
-        await messagesCollection.doc(wantID).update({
+        await messagesCollection.doc(wantID).update({ // update according to the map given
           timeID: {
             'authorID': _currentUser?.uid ?? "-",
             'createdAt': createdTime,
@@ -152,33 +155,36 @@ class _ChatPageState extends State<ChatPage> {
     }
   }
   void _loadMessages() {
-    String wantID = findID();
+    String wantID = findID(); // get the wanted ID
 
     messagesCollection.doc(wantID).snapshots().listen((snapshot) {
+      /*
+        Listen to any changes in the chat, reload the messages if any change is detected, uses streams for real time messaging
+       */
       if (snapshot.exists) {
         final messageData = snapshot.data() as Map<String, dynamic>;
         List<types.Message> messages = [];
         changeIsRead(messagesCollection, 0);
-        for (var data in messageData.values) {
+        for (var data in messageData.values) { // for all messages in the snapshot
           try {
-            MyTextMessage message = MyTextMessage.fromJson(data);
-            var authorUser = message.authorID == _user.id
-                ? _user
-                : types.User(id: friendId);
-            final textMessage = types.TextMessage(
+            MyTextMessage message = MyTextMessage.fromJson(data); // create a message in the format that is compatible with the Chat widget
+            var authorUser = message.authorID == _user.id // if this is sent by us
+                ? _user // author is us
+                : types.User(id: friendId); // otherwise the other person
+            final textMessage = types.TextMessage( // creating the text message variable with necessary fields
               author: authorUser,
               id: message.id,
               text: message.text,
               createdAt: message.createdAt,
             );
-            messages.add(textMessage);
+            messages.add(textMessage); // add this to the messages list which will later given to Chat widget
           } catch (e) {
             print("ERRORa $e");
           }
         }
-        messages.sort((a, b) => b.createdAt!.compareTo(a.createdAt!));
+        messages.sort((a, b) => b.createdAt!.compareTo(a.createdAt!)); // reverse sorting so that all messages are shown according to the sended time
 
-        setState(() {
+        setState(() { // set state
           _messages = messages;
         });
       }
@@ -187,7 +193,8 @@ class _ChatPageState extends State<ChatPage> {
   // ADD AND LOAD ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   // HANDLES vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-  void _handleAttachmentPressed() {
+  void _handleAttachmentPressed() { // for handling attachment pressed
+    // Show a bottom sheet with options for selecting an image or a file
     showModalBottomSheet<void>(
       context: context,
       builder: (BuildContext context) => SafeArea(
@@ -196,6 +203,7 @@ class _ChatPageState extends State<ChatPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
+              // Button for selecting a photo
               TextButton(
                 onPressed: () {
                   Navigator.pop(context);
@@ -206,6 +214,7 @@ class _ChatPageState extends State<ChatPage> {
                   child: Text('Photo'),
                 ),
               ),
+              // Button for selecting a file
               TextButton(
                 onPressed: () {
                   Navigator.pop(context);
@@ -216,6 +225,7 @@ class _ChatPageState extends State<ChatPage> {
                   child: Text('File'),
                 ),
               ),
+              // Button for cancelling the operation
               TextButton(
                 onPressed: () => Navigator.pop(context),
                 child: const Align(
@@ -229,11 +239,14 @@ class _ChatPageState extends State<ChatPage> {
       ),
     );
   }
-  void _handleFileSelection() async {
+
+  void _handleFileSelection() async { // for handling file selection
+    // Open file picker and allow the user to select a file
     final result = await FilePicker.platform.pickFiles(
       type: FileType.any,
     );
 
+    // If a file is selected, create a file message and add it to the chat
     if (result != null && result.files.single.path != null) {
       final message = types.FileMessage(
         author: _user,
@@ -248,13 +261,16 @@ class _ChatPageState extends State<ChatPage> {
       _addMessage(message);
     }
   }
-  void _handleImageSelection() async {
+
+  void _handleImageSelection() async { // for handling image selection
+    // Open image picker and allow the user to select an image from the gallery
     final result = await ImagePicker().pickImage(
       imageQuality: 70,
       maxWidth: 1440,
       source: ImageSource.gallery,
     );
 
+    // If an image is selected, create an image message and add it to the chat
     if (result != null) {
       final bytes = await result.readAsBytes();
       final image = await decodeImageFromList(bytes);
@@ -273,12 +289,15 @@ class _ChatPageState extends State<ChatPage> {
       _addMessage(message);
     }
   }
-  void _handleMessageTap(BuildContext _, types.Message message) async {
+
+  void _handleMessageTap(BuildContext _, types.Message message) async { // for handling message tap
     if (message is types.FileMessage) {
       var localPath = message.uri;
 
+      // If the file URI is a remote URL, download the file
       if (message.uri.startsWith('http')) {
         try {
+          // Find the message in the list and mark it as loading
           final index =
           _messages.indexWhere((element) => element.id == message.id);
           final updatedMessage =
@@ -290,17 +309,20 @@ class _ChatPageState extends State<ChatPage> {
             _messages[index] = updatedMessage;
           });
 
+          // Download the file
           final client = http.Client();
           final request = await client.get(Uri.parse(message.uri));
           final bytes = request.bodyBytes;
           final documentsDir = (await getApplicationDocumentsDirectory()).path;
           localPath = '$documentsDir/${message.name}';
 
+          // Save the file locally
           if (!File(localPath).existsSync()) {
             final file = File(localPath);
             await file.writeAsBytes(bytes);
           }
         } finally {
+          // Mark the message as not loading anymore
           final index =
           _messages.indexWhere((element) => element.id == message.id);
           final updatedMessage =
@@ -314,13 +336,16 @@ class _ChatPageState extends State<ChatPage> {
         }
       }
 
+      // Open the file
       await OpenFilex.open(localPath);
     }
   }
+
   void _handlePreviewDataFetched(
       types.TextMessage message,
       types.PreviewData previewData,
       ) {
+    // Find the message in the list and update it with the fetched preview data
     final index = _messages.indexWhere((element) => element.id == message.id);
     final updatedMessage = (_messages[index] as types.TextMessage).copyWith(
       previewData: previewData,
@@ -330,11 +355,13 @@ class _ChatPageState extends State<ChatPage> {
       _messages[index] = updatedMessage;
     });
   }
-  void _handleSendPressed(types.PartialText message) async {
+
+  void _handleSendPressed(types.PartialText message) async { // for handling send pressed
     String curID = _currentUser?.uid ?? "-";
     String roomID = "";
 
     if (_currentUser != null) {
+      // Fetch the current user's username
       final curUsernameSnapshot = await firebaseInstance
           .collection('users')
           .doc(curID)
@@ -344,6 +371,7 @@ class _ChatPageState extends State<ChatPage> {
 
       final String recipientUsername = data['username'];
 
+      // Generate a room ID based on the usernames of the sender and recipient
       if (curUsername.compareTo(recipientUsername) <= 0) {
         roomID = '$curUsername${data['username']}';
       } else {
@@ -351,6 +379,7 @@ class _ChatPageState extends State<ChatPage> {
       }
     }
 
+    // Create a text message and add it to the chat
     final textMessage = types.TextMessage(
       author: _user,
       createdAt: DateTime.now().millisecondsSinceEpoch,
@@ -361,34 +390,45 @@ class _ChatPageState extends State<ChatPage> {
 
     _addMessage(textMessage);
   }
-  void _onMessageLongPress(BuildContext context, types.Message p1) {
+
+  void _onMessageLongPress(BuildContext context, types.Message p1) { // for handling long press on a message
     setState(() {
+      // Check if the long-pressed message is authored by the current user
       if(p1.author.id == _currentUser!.uid) {
+        // Set the selected message ID and mark a message as selected
         _selectedMessageID = p1.id;
         _isSelected = true;
       }
       print("Long press $_isSelected , $_selectedMessageID");
     });
   }
-  void _onBackgroundTap() {
+
+  void _onBackgroundTap() { // for handling tap on background
     setState(() {
+      // Deselect any selected message
       _isSelected = false;
       _selectedMessageID = "";
       print("Background tap $_isSelected , $_selectedMessageID");
     });
   }
-  void _deleteMessage() {
+
+  void _deleteMessage() { // for handling message deletion
+    // Find the document ID that contains the message to be deleted
     String wantID = findID();
     messagesCollection.doc(wantID).snapshots().listen((snapshot) {
       if (snapshot.exists) {
+        // Retrieve message data from the snapshot
         final messageData = snapshot.data() as Map<String, dynamic>;
         messageData.forEach((key, value) {
           try {
+            // Check if the message ID matches the selected message ID
             if (value['id'] == _selectedMessageID) {
+              // Delete the message field from the document
               messagesCollection.doc(wantID).update({
                 key: FieldValue.delete(),
               });
               setState(() {
+                // Deselect the message after deletion
                 _isSelected = false;
                 _selectedMessageID = "";
               });
@@ -401,9 +441,10 @@ class _ChatPageState extends State<ChatPage> {
     });
   }
 
+
   // HANDLES ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Future openDialog() => showDialog(
+  Future openDialog() => showDialog( // for showing dialog to create an appointment
     context: context,
     builder: (context) => AlertDialog(
       title: const Text("Create an Appointment"),
@@ -417,6 +458,7 @@ class _ChatPageState extends State<ChatPage> {
           ),
           onPressed: () {
             // TODO: Fill here accordingly
+            // Action to take when the submit button is pressed
           },
           child: const Text(
             "Submit",
@@ -427,11 +469,11 @@ class _ChatPageState extends State<ChatPage> {
             ),
           ),
         )
-
       ],
     ),
   );
-  Widget _bubbleBuilder(
+
+  Widget _bubbleBuilder( // for building message bubble
       Widget child, {
         required message,
         required nextMessageInGroup,
@@ -467,7 +509,7 @@ class _ChatPageState extends State<ChatPage> {
   }
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) { // for building the chat screen
     return Scaffold(
       appBar: AppBar(
         title: Text(
