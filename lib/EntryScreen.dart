@@ -1,4 +1,3 @@
-import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -8,7 +7,6 @@ import 'DashboardScreen.dart';
 import 'loginMainScreenFiles/constants.dart';
 import 'loginMainScreenFiles/login_screen.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
-import 'mainTools/APPColors.dart';
 
 class EntryScreen extends StatelessWidget {
   const EntryScreen({super.key});
