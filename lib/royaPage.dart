@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:free_english_dictionary/free_english_dictionary.dart';
-import 'package:simplytranslate/simplytranslate.dart';
 
 class royasPage extends StatelessWidget {
   @override
