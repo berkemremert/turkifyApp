@@ -3,7 +3,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
-import 'signaling.dart';
 
 class FriendsListScreenVideoMeeting extends StatefulWidget {
   @override
