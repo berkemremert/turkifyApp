@@ -18,19 +18,20 @@ Color blueAccent = Colors.blueAccent;
 Color greenAccent = Colors.greenAccent;
 Color red = Colors.red;
 Color redOpen = Colors.red.withOpacity(0.75);
-Color backGroundColor(){
+
+Color backGroundColor() {
   return SettingsPageTutor.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Color.fromARGB(255, 255, 250, 250);
 }
-Color textColor(){
+Color textColor() {
   return SettingsPageTutor.isDarkMode ? Colors.white : Colors.black;
 }
-Color notificationColor(){
+Color notificationColor() {
   return SettingsPageTutor.isDarkMode ? Colors.white : const Color.fromARGB(255, 128, 0, 0);
 }
-Color welcomeColor(){
+Color welcomeColor() {
   return SettingsPageTutor.isDarkMode ? lightGrey : const Color.fromARGB(255, 245, 235, 230);
 }
 
-Color endcolor(String text, List<dynamic> langs){
+Color endcolor(String text, List<dynamic> langs) {
   return langs.contains(text) ? Colors.blueGrey : Colors.red.withOpacity(0.75);
 }
