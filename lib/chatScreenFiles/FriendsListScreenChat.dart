@@ -27,70 +27,11 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
     _getUser(); // Get the current user when the widget is initialized
   }
 
-  // Function to get the current user
-  void _getUser() async {
-    _user = _auth.currentUser;
-    if (_user != null) {
-      _fetchFriends(); // Fetch friends if the user is logged in
-    }
-  }
-
-  // Function to fetch friends from Firestore
-  void _fetchFriends() async {
-    final DocumentSnapshot<Map<String, dynamic>> userSnapshot =
-    await _firestore.collection('users').doc(_user!.uid).get();
-
-    final userData = userSnapshot.data();
-
-    if (userData != null && userData.containsKey('friends')) {
-      setState(() {
-        _friendUids = List<String>.from(userData['friends']); // Update friend UIDs
-      });
-    }
-    _createIsRead(); // Initialize read/unread status map
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: _buildFriendsList(), // Build the friends list UI
     );
-  }
-
-  // Function to create and update the isReadMap
-  void _createIsRead() async {
-    final messagesCollection = FirebaseFirestore.instance.collection('messages');
-    messagesCollection.snapshots().listen((snapshot) {
-      for (var doc in snapshot.docs) {
-        final data = doc.data();
-        if (data.containsKey('isRead')) {
-          final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
-          final docId = doc.id;
-          final halfLength = docId.length ~/ 2;
-
-          String key;
-          if (docId.startsWith(userId)) {
-            key = docId.substring(halfLength);
-            setState(() {
-              if (data['isRead'] == 1) {
-                isReadMap[key] = false;
-              } else {
-                isReadMap[key] = true;
-              }
-            });
-          } else {
-            key = docId.substring(0, halfLength);
-            setState(() {
-              if (data['isRead'] == 2) {
-                isReadMap[key] = false;
-              } else {
-                isReadMap[key] = true;
-              }
-            });
-          }
-        }
-      }
-    });
   }
 
   // Widget to build the friends list UI
@@ -206,5 +147,64 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
         );
       },
     );
+  }
+
+  // Function to create and update the isReadMap
+  void _createIsRead() async {
+    final messagesCollection = FirebaseFirestore.instance.collection('messages');
+    messagesCollection.snapshots().listen((snapshot) {
+      for (var doc in snapshot.docs) {
+        final data = doc.data();
+        if (data.containsKey('isRead')) {
+          final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
+          final docId = doc.id;
+          final halfLength = docId.length ~/ 2;
+
+          String key;
+          if (docId.startsWith(userId)) {
+            key = docId.substring(halfLength);
+            setState(() {
+              if (data['isRead'] == 1) {
+                isReadMap[key] = false;
+              } else {
+                isReadMap[key] = true;
+              }
+            });
+          } else {
+            key = docId.substring(0, halfLength);
+            setState(() {
+              if (data['isRead'] == 2) {
+                isReadMap[key] = false;
+              } else {
+                isReadMap[key] = true;
+              }
+            });
+          }
+        }
+      }
+    });
+  }
+
+  // Function to get the current user
+  void _getUser() async {
+    _user = _auth.currentUser;
+    if (_user != null) {
+      _fetchFriends(); // Fetch friends if the user is logged in
+    }
+  }
+
+  // Function to fetch friends from Firestore
+  void _fetchFriends() async {
+    final DocumentSnapshot<Map<String, dynamic>> userSnapshot =
+    await _firestore.collection('users').doc(_user!.uid).get();
+
+    final userData = userSnapshot.data();
+
+    if (userData != null && userData.containsKey('friends')) {
+      setState(() {
+        _friendUids = List<String>.from(userData['friends']); // Update friend UIDs
+      });
+    }
+    _createIsRead(); // Initialize read/unread status map
   }
 }
