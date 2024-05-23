@@ -38,9 +38,9 @@ class _ChatPageState extends State<ChatPage> {
   late CollectionReference<Map<String, dynamic>> messagesCollection = getMessages();
   late FirebaseFirestore firebaseInstance;
 
-  String _selectedMessageID = ""; // selected message
-  bool isTutor = false; // tutor checker
   bool _isSelected = false; // selected checker
+  bool isTutor = false; // tutor checker
+  String _selectedMessageID = ""; // selected message
   List<types.Message> _messages = []; // message list
 
   String get friendId => widget.friendId; // other persons id getter
@@ -51,84 +51,8 @@ class _ChatPageState extends State<ChatPage> {
     super.initState();
     _loadMessages(); // first load previous messages
     _loadCurrentUser(); // load current users info
-    // messagesCollection = getMessages();
     firebaseInstance = getInstance();
   }
-
-  // HELPER FUNCTIONS vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-  void _loadCurrentUser() async { // to initiate isTutor
-    String userId = _currentUser?.uid ?? '';
-    if (userId.isNotEmpty) {
-      Map<String, dynamic>? userData = getUserData(userId);
-      setState(() {
-        isTutor = userData?['isTutor'] ?? false;
-      });
-    }
-  }
-
-  String findID(){ // to find the room id needed. It concatenates two users' ids according to alphabetical order
-    String wantID = "";
-    String curID = _currentUser?.uid ?? "-";
-    if(curID.compareTo(friendId) <= 0){ // compare alphabetically
-      wantID = curID + friendId;
-    }
-    else{
-      wantID = friendId + curID;
-    }
-    return wantID;
-  }
-
-  Widget _buildAvatarTrue(types.User user) { // creates avatar if valid url exists
-    String url = data['profileImageUrl'] as String;
-    return CircleAvatar(
-        backgroundImage: NetworkImage(url)
-    );
-  }
-  Widget _buildAvatarFalse(types.User user) { // creates avatar if valid url does not exist
-    return const CircleAvatar(
-      backgroundImage: AssetImage('assets/defaultProfilePicture.jpeg'),
-    );
-  }
-
-  Future<void> changeIsRead(CollectionReference<Map<String, dynamic>> messagesCollection, int mode) async { // function to change isRead
-    final userId = _currentUser?.uid ?? '';
-    final docId = findID();
-    final DocumentSnapshot<Map<String, dynamic>> docSnapshot = getMessageDoc(messagesCollection, docId);
-
-    if(mode == 0){
-      try {
-        if (docId.startsWith(userId)) {
-          if(docSnapshot.data()?['isRead'] == 1) {
-            await messagesCollection.doc(findID()).update({'isRead': 0});
-          }
-        } else {
-          if(docSnapshot.data()?['isRead'] == 2) {
-            await messagesCollection.doc(findID()).update({'isRead': 0});
-          }
-        }
-
-      } catch (e) {
-        print('Error updating document: $e');
-      }
-    }
-    else if(mode == 1){
-      try {
-        if (docId.startsWith(userId)) {
-          if(docSnapshot.data()?['isRead'] == 0) {
-            await messagesCollection.doc(findID()).update({'isRead': 2});
-          }
-        } else {
-          if(docSnapshot.data()?['isRead'] == 0) {
-            await messagesCollection.doc(findID()).update({'isRead': 1});
-          }
-        }
-
-      } catch (e) {
-        print('Error updating document: $e');
-      }
-    }
-  }
-  //HELPER FUNCTIONS ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   // ADD AND LOAD vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
   Future<void> _addMessage(types.Message message) async { // Add message
@@ -190,9 +114,103 @@ class _ChatPageState extends State<ChatPage> {
       }
     });
   }
-  // ADD AND LOAD ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  // HANDLES vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+  Future openDialog() => showDialog( // for showing dialog to create an appointment
+    context: context,
+    builder: (context) => AlertDialog(
+      title: const Text("Create an Appointment"),
+      content: const TextField(
+        decoration: InputDecoration(hintText: 'Enter your desired time'),
+      ),
+      actions: [
+        TextButton(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+          ),
+          onPressed: () {
+            // TODO: Fill here accordingly
+            // Action to take when the submit button is pressed
+          },
+          child: const Text(
+            "Submit",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        )
+      ],
+    ),
+  );
+
+  @override
+  Widget build(BuildContext context) { // for building the chat screen
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          data['name'],
+          style: TextStyle(
+              color: _isDarkMode ? white : black
+          ),
+        ),
+        backgroundColor: _isDarkMode ? (_isSelected ? const Color.fromRGBO(28, 20, 143, 10) : const Color.fromRGBO(58, 50, 73, 10)) : (_isSelected ? const Color.fromRGBO(176, 224, 230, 10) : white),
+        actions: [
+          Visibility(
+            visible: _isSelected,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: IconButton(
+                icon: const Icon(Icons.delete),
+                color: _isDarkMode ? white : kDefaultIconDarkColor,
+                onPressed: _deleteMessage,
+              ),
+            ),
+          ),
+          IconButton(
+            icon: const Icon(Icons.videocam_outlined),
+            color: _isDarkMode ? white : kDefaultIconDarkColor,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => VideoMeetingPage(calleeId: _currentUser!.uid),
+                ),
+              );
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.event),
+            color: _isDarkMode ? white : kDefaultIconDarkColor,
+            onPressed: () {
+              if(isTutor){
+                openDialog();
+              }
+            },
+          ),
+          const SizedBox(width: 12)
+        ],
+      ),
+
+      body: Chat(
+        messages: _messages,
+        theme: _isDarkMode ? const DarkChatTheme() : const DefaultChatTheme(),
+        onAttachmentPressed: _handleAttachmentPressed,
+        onMessageTap: _handleMessageTap,
+        onPreviewDataFetched: _handlePreviewDataFetched,
+        onSendPressed: _handleSendPressed,
+        showUserAvatars: true,
+        showUserNames: true,
+        avatarBuilder: (data['profileImageUrl'] != null) ? _buildAvatarTrue : _buildAvatarFalse,
+        bubbleBuilder: _bubbleBuilder,
+        user: _user,
+        onMessageLongPress: _onMessageLongPress,
+        onBackgroundTap: _onBackgroundTap,
+      ),
+    );
+  }
+
+
   void _handleAttachmentPressed() { // for handling attachment pressed
     // Show a bottom sheet with options for selecting an image or a file
     showModalBottomSheet<void>(
@@ -441,37 +459,78 @@ class _ChatPageState extends State<ChatPage> {
     });
   }
 
+  void _loadCurrentUser() async { // to initiate isTutor
+    String userId = _currentUser?.uid ?? '';
+    if (userId.isNotEmpty) {
+      Map<String, dynamic>? userData = getUserData(userId);
+      setState(() {
+        isTutor = userData?['isTutor'] ?? false;
+      });
+    }
+  }
 
-  // HANDLES ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  String findID(){ // to find the room id needed. It concatenates two users' ids according to alphabetical order
+    String wantID = "";
+    String curID = _currentUser?.uid ?? "-";
+    if(curID.compareTo(friendId) <= 0){ // compare alphabetically
+      wantID = curID + friendId;
+    }
+    else{
+      wantID = friendId + curID;
+    }
+    return wantID;
+  }
 
-  Future openDialog() => showDialog( // for showing dialog to create an appointment
-    context: context,
-    builder: (context) => AlertDialog(
-      title: const Text("Create an Appointment"),
-      content: const TextField(
-        decoration: InputDecoration(hintText: 'Enter your desired time'),
-      ),
-      actions: [
-        TextButton(
-          style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-          ),
-          onPressed: () {
-            // TODO: Fill here accordingly
-            // Action to take when the submit button is pressed
-          },
-          child: const Text(
-            "Submit",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        )
-      ],
-    ),
-  );
+  Widget _buildAvatarTrue(types.User user) { // creates avatar if valid url exists
+    String url = data['profileImageUrl'] as String;
+    return CircleAvatar(
+        backgroundImage: NetworkImage(url)
+    );
+  }
+  Widget _buildAvatarFalse(types.User user) { // creates avatar if valid url does not exist
+    return const CircleAvatar(
+      backgroundImage: AssetImage('assets/defaultProfilePicture.jpeg'),
+    );
+  }
+
+  Future<void> changeIsRead(CollectionReference<Map<String, dynamic>> messagesCollection, int mode) async { // function to change isRead
+    final userId = _currentUser?.uid ?? '';
+    final docId = findID();
+    final DocumentSnapshot<Map<String, dynamic>> docSnapshot = getMessageDoc(messagesCollection, docId);
+
+    if(mode == 0){
+      try {
+        if (docId.startsWith(userId)) {
+          if(docSnapshot.data()?['isRead'] == 1) {
+            await messagesCollection.doc(findID()).update({'isRead': 0});
+          }
+        } else {
+          if(docSnapshot.data()?['isRead'] == 2) {
+            await messagesCollection.doc(findID()).update({'isRead': 0});
+          }
+        }
+
+      } catch (e) {
+        print('Error updating document: $e');
+      }
+    }
+    else if(mode == 1){
+      try {
+        if (docId.startsWith(userId)) {
+          if(docSnapshot.data()?['isRead'] == 0) {
+            await messagesCollection.doc(findID()).update({'isRead': 2});
+          }
+        } else {
+          if(docSnapshot.data()?['isRead'] == 0) {
+            await messagesCollection.doc(findID()).update({'isRead': 1});
+          }
+        }
+
+      } catch (e) {
+        print('Error updating document: $e');
+      }
+    }
+  }
 
   Widget _bubbleBuilder( // for building message bubble
       Widget child, {
@@ -505,72 +564,6 @@ class _ChatPageState extends State<ChatPage> {
           ),
         ),
       ],
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) { // for building the chat screen
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          data['name'],
-          style: TextStyle(
-              color: _isDarkMode ? white : black
-          ),
-        ),
-        backgroundColor: _isDarkMode ? (_isSelected ? const Color.fromRGBO(28, 20, 143, 10) : const Color.fromRGBO(58, 50, 73, 10)) : (_isSelected ? const Color.fromRGBO(176, 224, 230, 10) : white),
-        actions: [
-          Visibility(
-            visible: _isSelected,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: IconButton(
-                icon: const Icon(Icons.delete),
-                color: _isDarkMode ? white : kDefaultIconDarkColor,
-                onPressed: _deleteMessage,
-              ),
-            ),
-          ),
-          IconButton(
-            icon: const Icon(Icons.videocam_outlined),
-            color: _isDarkMode ? white : kDefaultIconDarkColor,
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => VideoMeetingPage(calleeId: _currentUser!.uid),
-                ),
-              );
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.event),
-            color: _isDarkMode ? white : kDefaultIconDarkColor,
-            onPressed: () {
-              if(isTutor){
-                openDialog();
-              }
-            },
-          ),
-          const SizedBox(width: 12)
-        ],
-      ),
-
-      body: Chat(
-        messages: _messages,
-        theme: _isDarkMode ? const DarkChatTheme() : const DefaultChatTheme(),
-        onAttachmentPressed: _handleAttachmentPressed,
-        onMessageTap: _handleMessageTap,
-        onPreviewDataFetched: _handlePreviewDataFetched,
-        onSendPressed: _handleSendPressed,
-        showUserAvatars: true,
-        showUserNames: true,
-        avatarBuilder: (data['profileImageUrl'] != null) ? _buildAvatarTrue : _buildAvatarFalse,
-        bubbleBuilder: _bubbleBuilder,
-        user: _user,
-        onMessageLongPress: _onMessageLongPress,
-        onBackgroundTap: _onBackgroundTap,
-      ),
     );
   }
 }
