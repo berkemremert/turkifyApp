@@ -16,7 +16,6 @@ import 'package:turkify_bem/notificationFiles/Notification.dart';
 import 'package:turkify_bem/settingsPageFiles/blockedPeople.dart';
 
 import '../cardSlidingScreenFiles/cardSlider.dart';
-import '../filterPageFiles/FilterPage.dart';
 import '../filterPageFiles/languageLevel.dart';
 
 class SettingsPageStudent extends StatefulWidget {
