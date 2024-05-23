@@ -3,7 +3,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:turkify_bem/listingPageFiles/presentation/pages/home/view/TutorsPresentation.dart';
 import 'package:turkify_bem/mainTools/constLinks.dart';
+import '../../../../../chatScreenFiles/GroupChatScreen.dart';
 import '../../../../../mainTools/APPColors.dart';
+import '../../../../../mainTools/firebaseMethods.dart';
 import '../../../components/button.dart';
 import '../../../components/text.dart';
 import '../widgets/HeaderImage.dart';
@@ -165,7 +167,7 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                 gradient: LinearGradient(
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
-                  stops: [0.6, 1.0],
+                  stops: const [0.6, 1.0],
                   colors: [
                     kColorWhite,
                     kColorWhite.withOpacity(0.0),
@@ -190,7 +192,7 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                       decoration: BoxDecoration(boxShadow: [
                         BoxShadow(
                           color: Colors.deepPurple.withOpacity(0.2),
-                          offset: Offset(0, 15),
+                          offset: const Offset(0, 15),
                           blurRadius: 15,
                         ),
                       ]),
@@ -199,8 +201,13 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                         leftIconVisibility: false,
                         rightIconVisibility: false,
                         onTap: () {
-                        //   TODO:
-                        //   DENİZ BURAYA EKLE
+                          print("$_userData");
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ChatPage(data: _userData, friendId: widget.uid),
+                            ),
+                          );
                         },
                       ),
                     )
@@ -214,23 +221,23 @@ class _ScreenDetailsState extends State<ScreenDetails> {
     );
   }
 
-  Future<Map<String, dynamic>?> getUserData(String documentId) async {
-    try {
-      DocumentSnapshot userSnapshot = await FirebaseFirestore.instance
-          .collection('users')
-          .doc(documentId)
-          .get();
-
-      if (userSnapshot.exists) {
-        Map<String, dynamic> userData =
-        userSnapshot.data() as Map<String, dynamic>;
-        return userData;
-      } else {
-        return null;
-      }
-    } catch (e) {
-      print('Error retrieving user data: $e');
-      return null;
-    }
-  }
+  // Future<Map<String, dynamic>?> getUserData(String documentId) async {
+  //   try {
+  //     DocumentSnapshot userSnapshot = await FirebaseFirestore.instance
+  //         .collection('users')
+  //         .doc(documentId)
+  //         .get();
+  //
+  //     if (userSnapshot.exists) {
+  //       Map<String, dynamic> userData =
+  //       userSnapshot.data() as Map<String, dynamic>;
+  //       return userData;
+  //     } else {
+  //       return null;
+  //     }
+  //   } catch (e) {
+  //     print('Error retrieving user data: $e');
+  //     return null;
+  //   }
+  // }
 }
