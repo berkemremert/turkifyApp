@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:free_english_dictionary/free_english_dictionary.dart';
+import 'package:translator/translator.dart';
+
+final translator = GoogleTranslator();
 
 class royasPage extends StatelessWidget {
   @override
@@ -12,6 +16,228 @@ class royasPage extends StatelessWidget {
     );
   }
 }
+
+Future<String> bestFunc(String word) async {
+  var english = await transTrEn(word);
+  var dic = await getDic(english);
+  var tr = await transEnTr(dic);
+  return tr;
+}
+
+Future<String> transTrEn(String word) async {
+  var translation = await translator
+      .translate(word, from: 'tr', to: 'en');
+  return translation.text;
+}
+
+Future<String> transEnTr(String word) async {
+  var translation = await translator
+      .translate(word, from: 'en', to: 'tr');
+  return translation.text;
+}
+
+Future<String> getDic(String word) async {
+  var meanings = await FreeDictionary.getWordMeaning(word: word);
+  if (meanings.isNotEmpty &&
+      meanings[0].meanings != null &&
+      meanings[0].meanings!.isNotEmpty &&
+      meanings[0].meanings![0].definitions != null &&
+      meanings[0].meanings![0].definitions!.isNotEmpty) {
+    return meanings[0].meanings![0].definitions![0].definition!;
+  } else {
+    return "No meaning found";
+  }
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Search Bar Example',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Search Bar Example'),
+      ),
+      body: SearchPage(),
+    );
+  }
+}
+
+class SearchPage extends StatefulWidget {
+  @override
+  _SearchPageState createState() => _SearchPageState();
+}
+
+class _SearchPageState extends State<SearchPage> {
+  TextEditingController _controller = TextEditingController();
+  String _searchWord = '';
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: SearchBar(
+            controller: _controller,
+            onSearch: () {
+              setState(() {
+                _searchWord = _controller.text;
+              });
+            },
+          ),
+        ),
+        Expanded(
+          child: Center(
+            child: _searchWord.isNotEmpty
+                ? FutureBuilder<String>(
+              future: bestFunc(_searchWord),
+              builder: (context, snapshot) {
+                if (snapshot.connectionState ==
+                    ConnectionState.waiting) {
+                  return CircularProgressIndicator(
+                    valueColor: AlwaysStoppedAnimation<Color>(Colors.red),
+                  );
+                } else if (snapshot.hasError) {
+                  print(snapshot.error);
+                  return Text('Error: ${snapshot.error}');
+                } else {
+                  return Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Card(
+                          color: Colors.red,
+                          elevation: 5,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              children: [
+                                Text(
+                                  _searchWord.toUpperCase(),
+                                  style: TextStyle(
+                                    fontSize: 24,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 8),
+                                Container(
+                                  height: 2,
+                                  width: 120,
+                                  color: Colors.white,
+                                ),
+                                SizedBox(height: 8),
+                                Text(
+                                  snapshot.data ?? '',
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                }
+              },
+            )
+                : Text(
+              'Enter a search term',
+              style: TextStyle(fontSize: 20),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+}
+
+class SearchBar extends StatelessWidget {
+  final TextEditingController? controller;
+  final VoidCallback? onSearch;
+
+  const SearchBar({Key? key, this.controller, this.onSearch})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(8.0),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 2,
+            blurRadius: 5,
+            offset: Offset(0, 3),
+          ),
+        ],
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12.0),
+              child: TextField(
+                controller: controller,
+                decoration: InputDecoration(
+                  hintText: 'Search...',
+                  border: InputBorder.none,
+                ),
+              ),
+            ),
+          ),
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: onSearch,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+// import 'package:flutter/material.dart';
+//
+// class royasPage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Search Bar Example',
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
+//       ),
+//       home: MyHomePage(),
+//     );
+//   }
+// }
 //
 // class MyHomePage extends StatelessWidget {
 //   @override
@@ -106,127 +332,127 @@ class royasPage extends StatelessWidget {
 //     super.dispose();
 //   }
 // }
-
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Search Bar Example'),
-      ),
-      body: SearchPage(),
-    );
-  }
-}
-
-class SearchPage extends StatefulWidget {
-  @override
-  _SearchPageState createState() => _SearchPageState();
-}
-
-class _SearchPageState extends State<SearchPage> {
-  TextEditingController _controller = TextEditingController();
-  String _searchWord = '';
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: SearchBar(
-            controller: _controller,
-            onSearch: () {
-              setState(() {
-                _searchWord = _controller.text;
-              });
-            },
-          ),
-        ),
-        Expanded(
-          child: Center(
-            child: _searchWord.isNotEmpty
-                ? Container(
-              width: 200,
-              height: 100,
-              decoration: BoxDecoration(
-                color: Colors.red,
-                borderRadius: BorderRadius.circular(10),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 2,
-                    blurRadius: 5,
-                    offset: Offset(0, 3),
-                  ),
-                ],
-              ),
-              child: Center(
-                child: Text(
-                  _searchWord,
-                  style: TextStyle(fontSize: 20, color: Colors.white),
-                ),
-              ),
-            )
-                : Text(
-              'Enter a search term',
-              style: TextStyle(fontSize: 20),
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-}
-
-class SearchBar extends StatelessWidget {
-  final TextEditingController? controller;
-  final VoidCallback? onSearch;
-
-  const SearchBar({Key? key, this.controller, this.onSearch}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(8.0),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.grey.withOpacity(0.5),
-            spreadRadius: 2,
-            blurRadius: 5,
-            offset: Offset(0, 3),
-          ),
-        ],
-      ),
-      child: Row(
-        children: [
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12.0),
-              child: TextField(
-                controller: controller,
-                decoration: InputDecoration(
-                  hintText: 'Search...',
-                  border: InputBorder.none,
-                ),
-              ),
-            ),
-          ),
-          IconButton(
-            icon: Icon(Icons.search),
-            onPressed: onSearch,
-          ),
-        ],
-      ),
-    );
-  }
-}
+//
+//
+// // class MyHomePage extends StatelessWidget {
+// //   @override
+// //   Widget build(BuildContext context) {
+// //     return Scaffold(
+// //       appBar: AppBar(
+// //         title: Text('Search Bar Example'),
+// //       ),
+// //       body: SearchPage(),
+// //     );
+// //   }
+// // }
+// //
+// // class SearchPage extends StatefulWidget {
+// //   @override
+// //   _SearchPageState createState() => _SearchPageState();
+// // }
+// //
+// // class _SearchPageState extends State<SearchPage> {
+// //   TextEditingController _controller = TextEditingController();
+// //   String _searchWord = '';
+// //
+// //   @override
+// //   Widget build(BuildContext context) {
+// //     return Column(
+// //       children: [
+// //         Padding(
+// //           padding: const EdgeInsets.all(16.0),
+// //           child: SearchBar(
+// //             controller: _controller,
+// //             onSearch: () {
+// //               setState(() {
+// //                 _searchWord = _controller.text;
+// //               });
+// //             },
+// //           ),
+// //         ),
+// //         Expanded(
+// //           child: Center(
+// //             child: _searchWord.isNotEmpty
+// //                 ? Container(
+// //               width: 200,
+// //               height: 100,
+// //               decoration: BoxDecoration(
+// //                 color: Colors.red,
+// //                 borderRadius: BorderRadius.circular(10),
+// //                 boxShadow: [
+// //                   BoxShadow(
+// //                     color: Colors.grey.withOpacity(0.5),
+// //                     spreadRadius: 2,
+// //                     blurRadius: 5,
+// //                     offset: Offset(0, 3),
+// //                   ),
+// //                 ],
+// //               ),
+// //               child: Center(
+// //                 child: Text(
+// //                   _searchWord,
+// //                   style: TextStyle(fontSize: 20, color: Colors.white),
+// //                 ),
+// //               ),
+// //             )
+// //                 : Text(
+// //               'Enter a search term',
+// //               style: TextStyle(fontSize: 20),
+// //             ),
+// //           ),
+// //         ),
+// //       ],
+// //     );
+// //   }
+// //
+// //   @override
+// //   void dispose() {
+// //     _controller.dispose();
+// //     super.dispose();
+// //   }
+// // }
+// //
+// // class SearchBar extends StatelessWidget {
+// //   final TextEditingController? controller;
+// //   final VoidCallback? onSearch;
+// //
+// //   const SearchBar({Key? key, this.controller, this.onSearch}) : super(key: key);
+// //
+// //   @override
+// //   Widget build(BuildContext context) {
+// //     return Container(
+// //       decoration: BoxDecoration(
+// //         color: Colors.white,
+// //         borderRadius: BorderRadius.circular(8.0),
+// //         boxShadow: [
+// //           BoxShadow(
+// //             color: Colors.grey.withOpacity(0.5),
+// //             spreadRadius: 2,
+// //             blurRadius: 5,
+// //             offset: Offset(0, 3),
+// //           ),
+// //         ],
+// //       ),
+// //       child: Row(
+// //         children: [
+// //           Expanded(
+// //             child: Padding(
+// //               padding: const EdgeInsets.symmetric(horizontal: 12.0),
+// //               child: TextField(
+// //                 controller: controller,
+// //                 decoration: InputDecoration(
+// //                   hintText: 'Search...',
+// //                   border: InputBorder.none,
+// //                 ),
+// //               ),
+// //             ),
+// //           ),
+// //           IconButton(
+// //             icon: Icon(Icons.search),
+// //             onPressed: onSearch,
+// //           ),
+// //         ],
+// //       ),
+// //     );
+// //   }
+// // }
