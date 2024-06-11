@@ -1,5 +1,5 @@
 # turkify_bem
 
-by Berk Emre Mert
+by EğiTeam
 
 HERE WE GO AGAIN!!
