@@ -1,6 +1,0 @@
-zom;084707
-zom olmak;084708
-zombi;084709
-zombileşme;084710
-zombileşmek;084711
-zombilik;084712

@@ -1,8 +1,0 @@
-ahu;001139
-ahu gibi;001140
-ahu gözlü;001141
-ahu parçası;001142
-ahududu;001143
-ahududu şerbeti;001144
-ahududu şurubu;001145
-ahuvah;001146

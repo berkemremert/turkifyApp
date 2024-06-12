@@ -1,8 +1,0 @@
-atkaracalar;005571
-atkuyruğu;005572
-atkuyruğugiller;005573
-atkı;005574
-atkı iplik;005575
-atkılama;005576
-atkılamak;005577
-atkılı;005578

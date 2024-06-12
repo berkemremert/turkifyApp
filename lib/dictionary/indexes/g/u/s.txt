@@ -1,5 +1,0 @@
-gusletme;030197
-gusletmek;030198
-gusto;030199
-gusül;030200
-gusülhane;030201

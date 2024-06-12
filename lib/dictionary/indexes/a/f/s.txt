@@ -1,8 +1,0 @@
-afsun;000935
-afsuncu;000936
-afsunculuk;000937
-afsunlama;000938
-afsunlamak;000939
-afsunlanma;000940
-afsunlanmak;000941
-afsunlu;000942

@@ -1,5 +1,0 @@
-otel;059432
-otel faresi;059433
-otelci;059434
-otelcilik;059435
-otelgarni;059436

@@ -1,4 +1,0 @@
-fiber;027197
-fiberglas;027198
-fibrin;027199
-fibrinojen;027200

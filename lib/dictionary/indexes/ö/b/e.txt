@@ -1,5 +1,0 @@
-öbek;088570
-öbeklenme;088571
-öbeklenmek;088572
-öbekleşme;088573
-öbekleşmek;088574

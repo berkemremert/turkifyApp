@@ -1,9 +1,0 @@
-öngörebilme;089124
-öngörebilmek;089125
-öngörme;089126
-öngörmek;089127
-öngörü;089128
-öngörülme;089129
-öngörülmek;089130
-öngörülü;089131
-öngörülülük;089132

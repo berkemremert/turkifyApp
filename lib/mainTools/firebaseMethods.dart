@@ -20,3 +20,7 @@ getMessageDoc(CollectionReference<Map<String, dynamic>> messagesCollection, Stri
   return messagesCollection.doc(wantID).get();
 }
 
+getDictWord(String id) async {
+  DocumentSnapshot wordDoc = await FirebaseFirestore.instance.collection('dictionary').doc(id).get();
+  return wordDoc.data() as Map<String, dynamic>?;
+}

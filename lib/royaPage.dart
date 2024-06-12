@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:free_english_dictionary/free_english_dictionary.dart';
-import 'firebaseFunctionalityFiles/FirebaseMethods.dart';
+import 'package:http/http.dart';
+import '../mainTools/firebaseMethods.dart';
 import 'dart:async';
 import 'dart:io';
 
@@ -46,7 +47,9 @@ Future<String> bestFunc(String wordReq) async {
   }
 
   String searchTxt(String txtPath, String word) {
+    print('Attempting to open file at path: $txtPath');
     File txt = new File(txtPath);
+    print('File exists: ${txt.existsSync()}');
     if (txt.existsSync()){
       List<String> lines = txt.readAsLinesSync();
       for (var line in lines) {
@@ -67,7 +70,13 @@ Future<String> bestFunc(String wordReq) async {
     return "Böyle bir kelime bulunamadı.";
   }
   else{
-    return path;
+    Map<String, dynamic>? dictData = getDictWord(id);
+    List<String> meanings = dictData?["meanings"];
+    String str = "";
+    for (int i = 0; i<meanings.length; i++){
+      str += "$i) ${meanings[i]}\n";
+    }
+    return str;
   }
 
 

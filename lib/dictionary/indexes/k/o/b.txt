@@ -1,6 +1,0 @@
-kobalt;045693
-kobalt bombası;045694
-kobay;045695
-kobaygiller;045696
-kobra;045697
-kobragiller;045698

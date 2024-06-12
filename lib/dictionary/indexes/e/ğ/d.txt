@@ -1,7 +1,0 @@
-eğdirebilme;026080
-eğdirebilmek;026081
-eğdiriş;026082
-eğdirme;026083
-eğdirmek;026084
-eğdirtme;026085
-eğdirtmek;026086

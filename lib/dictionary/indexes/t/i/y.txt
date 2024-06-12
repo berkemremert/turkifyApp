@@ -1,8 +1,0 @@
-tiyatro;075080
-tiyatrocu;075081
-tiyatroculuk;075082
-tiyatrolaştırma;075083
-tiyatrolaştırmak;075084
-tiyatrosever;075085
-tiyatroseverlik;075086
-tiye almak;075087

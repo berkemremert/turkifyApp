@@ -1,4 +1,0 @@
-check-in;016363
-check-out;016364
-check-point;016365
-check-up;016366

@@ -1,7 +1,0 @@
-ongen;058908
-ongun;058909
-ongun;058910
-ongun besi suyu;058911
-onguncu;058912
-ongunculuk;058913
-ongunluk;058914

@@ -1,8 +1,0 @@
-akupunktur;001728
-akupunkturcu;001729
-akupunkturculuk;001730
-akur;001731
-akustik;001732
-akut;001733
-akutluk;001734
-akuzatif;001735

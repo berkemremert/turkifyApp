@@ -1,6 +1,0 @@
-hovarda;035266
-hovardaca;035267
-hovardalaşma;035268
-hovardalaşmak;035269
-hovardalık;035270
-hovardalık etmek;035271

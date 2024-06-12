@@ -1,9 +1,0 @@
-itlaf;038590
-itlaf etmek;038591
-itle dalaşmaktan çalıyı dolaşmak yeğdir;038592
-itle çuvala girilmez;038593
-itlenme;038594
-itlenmek;038595
-itleşme;038596
-itleşmek;038597
-itlik;038598

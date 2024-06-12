@@ -1,5 +1,0 @@
-anma;003774
-anma gerilim;003775
-anma töreni;003776
-anmak;003777
-anmalık;003778

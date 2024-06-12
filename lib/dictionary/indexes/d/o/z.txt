@@ -1,6 +1,0 @@
-doz;021435
-dozaj;021436
-dozer;021437
-dozu kaçmak;021438
-dozunu ayarlamak;021439
-dozunu kaçırmak;021440

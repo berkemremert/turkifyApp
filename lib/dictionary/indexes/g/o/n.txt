@@ -1,6 +1,0 @@
-gonca;030011
-gondol;030012
-gondolcu;030013
-gondolculuk;030014
-gonk;030015
-gonokok;030016

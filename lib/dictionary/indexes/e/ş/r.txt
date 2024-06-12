@@ -1,5 +1,0 @@
-eşraf;026447
-eşraflık;026448
-eşref;026449
-eşref saati;026450
-eşreflik;026451

@@ -1,5 +1,0 @@
-poy;062164
-poyra;062165
-poyraz;062166
-poyrazlama;062167
-poyrazlamak;062168

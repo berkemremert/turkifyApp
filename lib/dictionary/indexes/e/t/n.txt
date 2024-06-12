@@ -1,7 +1,0 @@
-etnik;025644
-etnograf;025645
-etnografik;025646
-etnografya;025647
-etnolog;025648
-etnoloji;025649
-etnolojik;025650

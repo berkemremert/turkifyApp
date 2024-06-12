@@ -1,8 +1,0 @@
-züppe;084843
-züppece;084844
-züppeleşme;084845
-züppeleşmek;084846
-züppeleştirme;084847
-züppeleştirmek;084848
-züppelik;084849
-züppelik etmek;084850

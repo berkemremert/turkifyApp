@@ -1,6 +1,0 @@
-kuçma;048311
-kuçmak;048312
-kuçu kuçu;048313
-kuçukuçu;048314
-kuçuşma;048315
-kuçuşmak;048316

@@ -1,8 +1,0 @@
-zabit;083992
-zabitan;083993
-zabitlik;083994
-zabıt;083995
-zabıt tutmak;083996
-zabıt varakası;083997
-zabıta;083998
-zabıtname;083999

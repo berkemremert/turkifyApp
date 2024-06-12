@@ -1,7 +1,0 @@
-kevel;045003
-kevelci;045004
-keven;045005
-kevgir;045006
-kevgire dönmek;045007
-kevser;045008
-kevser gibi;045009

@@ -1,4 +1,0 @@
-siirt;067317
-siirt battaniyesi;067318
-siirtli;067319
-siirtlilik;067320

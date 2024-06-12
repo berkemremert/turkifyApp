@@ -1,9 +1,0 @@
-jel;039833
-jelatin;039834
-jelatinleme;039835
-jelatinlemek;039836
-jelatinli;039837
-jelatinsiz;039838
-jelleşme;039839
-jelleşmek;039840
-jeloz;039841

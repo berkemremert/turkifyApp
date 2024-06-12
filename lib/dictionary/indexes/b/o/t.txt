@@ -1,7 +1,0 @@
-bot;013362
-bot;013363
-botanik;013364
-botanik bahçesi;013365
-botanik parkı;013366
-botanikçi;013367
-botanikçilik;013368

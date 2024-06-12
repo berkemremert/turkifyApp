@@ -1,7 +1,0 @@
-fehamet;026889
-fehametli;026890
-fehim;026891
-fehmetme;026892
-fehmetmek;026893
-fehva;026894
-fehvasınca;026895

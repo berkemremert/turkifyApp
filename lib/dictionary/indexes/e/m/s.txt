@@ -1,6 +1,0 @@
-emsal;024522
-emsal olmak;024523
-emsal oluşturmak;024524
-emsal vermek;024525
-emsalsiz;024526
-emsalsizlik;024527

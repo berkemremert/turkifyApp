@@ -1,6 +1,0 @@
-cibilliyet;016368
-cibilliyetsiz;016369
-cibilliyetsizlik;016370
-cibin;016371
-cibinlik;016372
-cibre;016373

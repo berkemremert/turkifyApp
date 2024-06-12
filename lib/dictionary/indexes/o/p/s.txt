@@ -1,6 +1,0 @@
-opsiyon;058996
-opsiyonel;058997
-opsiyonellik;058998
-opsiyonlu;058999
-opsiyonlu sözleşme;059000
-opsiyonsuz;059001

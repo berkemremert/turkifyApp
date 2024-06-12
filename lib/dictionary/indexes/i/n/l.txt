@@ -1,7 +1,0 @@
-inleme;037556
-inlemek;037557
-inletme;037558
-inletmek;037559
-inleyebilme;037560
-inleyebilmek;037561
-inleyiş;037562

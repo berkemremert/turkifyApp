@@ -1,7 +1,0 @@
-yobaz;082348
-yobazca;082349
-yobazlaşma;082350
-yobazlaşmak;082351
-yobazlaştırma;082352
-yobazlaştırmak;082353
-yobazlık;082354
