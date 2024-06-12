@@ -1,0 +1,54 @@
+düğme;022729
+düğmeci;022730
+düğmecilik;022731
+düğmek;022732
+düğmeleme;022733
+düğmelemek;022734
+düğmelenme;022735
+düğmelenmek;022736
+düğmeli;022737
+düğmesiz;022738
+düğmük;022739
+düğmük atmak;022740
+düğü;022741
+düğüm;022742
+düğüm atmak;022743
+düğüm düğüm;022744
+düğüm düğüm olmak (veya düğümlenmek);022745
+düğüm noktası;022746
+düğüm vurmak;022747
+düğüm üstüne düğüm vurmak (atmak);022748
+düğümcük;022749
+düğümleme;022750
+düğümlemek;022751
+düğümlenme;022752
+düğümlenmek;022753
+düğümleyebilme;022754
+düğümleyebilmek;022755
+düğümlü;022756
+düğümsüz;022757
+düğümü (veya düğümünü) çözmek;022758
+düğün;022759
+düğün alayı;022760
+düğün aşıyla dost ağırlanmaz;022761
+düğün bayram etmek;022762
+düğün dernek;022763
+düğün dernek, hep bir örnek;022764
+düğün değil bayram değil, eniştem beni niye öptü;022765
+düğün hamamı;022766
+düğün olur iki kişiye, kaygısı düşer deli komşuya;022767
+düğün pilavı;022768
+düğün pilavıyla dost ağırlamak;022769
+düğün salonu;022770
+düğün yahnisi;022771
+düğün çiçeği;022772
+düğün çiçeğigiller;022773
+düğün çorbası;022774
+düğüncü;022775
+düğüncübaşı;022776
+düğüncülük;022777
+düğünevi;022778
+düğünevi gibi;022779
+düğünsüz;022780
+düğününde kalburla (veya elekle) su taşımak;022781
+düğürcük;022782

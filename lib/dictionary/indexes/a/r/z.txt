@@ -1,0 +1,37 @@
+arz;004850
+arz;004851
+arz;004852
+arz cazibesi;004853
+arz dairesi;004854
+arz derecesi;004855
+arz etmek;004856
+arz odası;004857
+arz talep;004858
+arz talep dengesi;004859
+arz talep kanunu;004860
+arzani;004861
+arziyat;004862
+arzu;004863
+arzu duymak;004864
+arzu etmek;004865
+arzuhâl;004866
+arzuhâl gibi (veya kadar);004867
+arzuhâlci;004868
+arzuhâlcilik;004869
+arzulama;004870
+arzulamak;004871
+arzulanma;004872
+arzulanmak;004873
+arzulanış;004874
+arzulatma;004875
+arzulatmak;004876
+arzulayabilme;004877
+arzulayabilmek;004878
+arzulayış;004879
+arzulu;004880
+arzululuk;004881
+arzusu kalmak;004882
+arzusuz;004883
+arzusuzca;004884
+arzusuzluk;004885
+arzıendam;004886

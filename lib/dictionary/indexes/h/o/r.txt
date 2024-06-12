@@ -1,0 +1,84 @@
+hor;035176
+hor bakmak;035177
+hor davranmak;035178
+hor görmek;035179
+hor kullanmak;035180
+hor tutmak;035181
+hora;035182
+hora geçmek;035183
+hora tepmek;035184
+horanta;035185
+horasan;035186
+horasan;035187
+horasani;035188
+horhor;035189
+horlama;035190
+horlamak;035191
+horlamak;035192
+horlanma;035193
+horlanmak;035194
+horlanış;035195
+horlayış;035196
+hormon;035197
+hormonal;035198
+hornblent;035199
+horon;035200
+horon vurmak;035201
+horoz;035202
+horoz akıllı;035203
+horoz ağırlık;035204
+horoz bakışı;035205
+horoz dövüşü;035206
+horoz evlenir, tavuk tellenir;035207
+horoz fasulyesi;035208
+horoz gibi;035209
+horoz ibiği;035210
+horoz kafalı;035211
+horoz mantarı;035212
+horoz sıklet;035213
+horoz vakti;035214
+horoz ölür, gözü çöplükte kalır;035215
+horoz şekeri;035216
+horozayağı;035217
+horozbina;035218
+horozbinagiller;035219
+horozcuk otu;035220
+horozdan kaçmak;035221
+horozgözü;035222
+horozibiği;035223
+horozibiği;035224
+horozibiğigiller;035225
+horozkarası;035226
+horozlanma;035227
+horozlanmak;035228
+horozlanış;035229
+horozlar ötmek;035230
+horozlaşma;035231
+horozlaşmak;035232
+horozsu;035233
+horozu çok olan köyde sabah geç olur;035234
+horozumsu;035235
+horst;035236
+hortlak;035237
+hortlama;035238
+hortlamak;035239
+hortlatma;035240
+hortlatmak;035241
+hortlayış;035242
+hortum;035243
+hortum gibi;035244
+hortum sıkmak;035245
+hortumlama;035246
+hortumlamak;035247
+hortumlanma;035248
+hortumlanmak;035249
+hortumlatma;035250
+hortumlatmak;035251
+hortumlu;035252
+hortumlu böcekler;035253
+hortumlular;035254
+horul horul;035255
+horuldama;035256
+horuldamak;035257
+horuldayış;035258
+horultu;035259

@@ -1,0 +1,15 @@
+cisim;016588
+cisimcik;016589
+cisimlendirme;016590
+cisimlendirmek;016591
+cisimlenme;016592
+cisimlenmek;016593
+cisimleşebilme;016594
+cisimleşebilmek;016595
+cisimleşme;016596
+cisimleşmek;016597
+cisimleştirme;016598
+cisimleştirmek;016599
+cismani;016600
+cismanilik;016601
+cismen;016602

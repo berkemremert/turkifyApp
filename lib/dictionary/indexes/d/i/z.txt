@@ -1,0 +1,130 @@
+diz;020686
+diz ağırşağı;020687
+diz bağı;020688
+diz boyu;020689
+diz dize;020690
+diz kapağı;020691
+diz kapağı kemiği;020692
+diz yastığı;020693
+diz çökmek;020694
+diz üstü;020695
+diz üstü çökmek;020696
+dizanteri;020697
+dizanterili;020698
+dizayn;020699
+dizayncı;020700
+dizayncılık;020701
+dizaynlı;020702
+dizaynsız;020703
+dizdar;020704
+dizdirebilme;020705
+dizdirebilmek;020706
+dizdirilebilme;020707
+dizdirilebilmek;020708
+dizdirilme;020709
+dizdirilmek;020710
+dizdirme;020711
+dizdirmek;020712
+dize;020713
+dize gelmek;020714
+dize getirmek;020715
+dizebilme;020716
+dizebilmek;020717
+dizek;020718
+dizel;020719
+dizel motoru;020720
+dizeleme;020721
+dizelemek;020722
+dizeleşme;020723
+dizeleşmek;020724
+dizeleştirebilme;020725
+dizeleştirebilmek;020726
+dizeleştirme;020727
+dizeleştirmek;020728
+dizelge;020729
+dizeli;020730
+dizelik;020731
+dizem;020732
+dizemli;020733
+dizemsiz;020734
+dizey;020735
+dizge;020736
+dizgeleşme;020737
+dizgeleşmek;020738
+dizgeleştiriş;020739
+dizgeleştirme;020740
+dizgeleştirmek;020741
+dizgeli;020742
+dizgelilik;020743
+dizgesel;020744
+dizgesiz;020745
+dizgi;020746
+dizgi yeri;020747
+dizgici;020748
+dizgicilik;020749
+dizgin;020750
+dizgin boşaltmak;020751
+dizgin vurmak;020752
+dizgine gelmek;020753
+dizginini kesmek;020754
+dizginini çekmek;020755
+dizginleme;020756
+dizginlemek;020757
+dizginlenebilme;020758
+dizginlenebilmek;020759
+dizginleniş;020760
+dizginlenme;020761
+dizginlenmek;020762
+dizginleri (veya dizginlerini) ele almak;020763
+dizginleri ele vermek;020764
+dizginleri gevşetmek;020765
+dizginleri koparmak;020766
+dizginleri salıvermek;020767
+dizginletme;020768
+dizginletmek;020769
+dizginleyebilme;020770
+dizginleyebilmek;020771
+dizginleyiş;020772
+dizginsiz;020773
+dizi;020774
+dizi (veya dizinin) dibinden ayrılmamak;020775
+dizi dizi;020776
+dizi eylem;020777
+dizi film;020778
+dizi pusulası;020779
+dizici;020780
+dizicilik;020781
+dizilebilme;020782
+dizilebilmek;020783
+dizileme;020784
+dizilemek;020785
+dizili;020786
+diziliverme;020787
+dizilivermek;020788
+diziliş;020789
+dizilme;020790
+dizilmek;020791
+dizim;020792
+dizim dizim;020793
+dizin;020794
+dizini (veya dizlerini) dövmek;020795
+dizinleme;020796
+dizinlemek;020797
+dizinlenme;020798
+dizinlenmek;020799
+diziverme;020800
+dizivermek;020801
+diziş;020802
+dizleme;020803
+dizlemek;020804
+dizleri kesilmek (veya tutmamak);020805
+dizlerine kapanmak;020806
+dizlerine kara su inmek;020807
+dizlerinin bağı çözülmek;020808
+dizlik;020809
+dizme;020810
+dizmek;020811
+dizmen;020812
+dizyem;020813
+dizüstü;020814
+dizüstü bilgisayar;020815

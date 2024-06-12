@@ -1,0 +1,164 @@
+gön;030422
+gön yufka yerinden delinir;030423
+göncü;030424
+göncülük;030425
+gönder;030426
+gönderebilme;030427
+gönderebilmek;030428
+gönderge;030429
+gönderi;030430
+gönderici;030431
+gönderilebilme;030432
+gönderilebilmek;030433
+gönderiliş;030434
+gönderilme;030435
+gönderilmek;030436
+gönderim;030437
+gönderiverme;030438
+gönderivermek;030439
+gönderiş;030440
+gönderli;030441
+gönderme;030442
+gönderme belgesi;030443
+gönderme yapmak;030444
+göndermek;030445
+göndertme;030446
+göndertmek;030447
+gönen;030448
+gönen;030449
+gönendirilme;030450
+gönendirilmek;030451
+gönendirme;030452
+gönendirmek;030453
+gönenme;030454
+gönenmek;030455
+gönenç;030456
+gönençli;030457
+gönençlilik;030458
+gönlü akmak;030459
+gönlü bol;030460
+gönlü bolluk;030461
+gönlü bulanmak;030462
+gönlü dar;030463
+gönlü darlık;030464
+gönlü düşmek;030465
+gönlü gani;030466
+gönlü ganilik;030467
+gönlü ile oynamak;030468
+gönlü istemek;030469
+gönlü kalmak;030470
+gönlü kanmak;030471
+gönlü kara;030472
+gönlü karalık;030473
+gönlü kaymak;030474
+gönlü kırılmak;030475
+gönlü olmak;030476
+gönlü olmak;030477
+gönlü razı olmamak;030478
+gönlü takılmak;030479
+gönlü tok;030480
+gönlü tokluk;030481
+gönlü varmamak;030482
+gönlü yaralı;030483
+gönlü yaralılık;030484
+gönlü zengin;030485
+gönlü zenginlik;030486
+gönlü çekmek;030487
+gönlü çelinmek;030488
+gönlü çökmek;030489
+gönlün yazı var, kışı var;030490
+gönlünce;030491
+gönlünde (veya gönüllerde) taht kurmak;030492
+gönlünde kalmak;030493
+gönlünden geçirmek (veya geçmek);030494
+gönlünden kopmak;030495
+gönlüne dokunmak;030496
+gönlüne doğmak;030497
+gönlüne girmek;030498
+gönlüne göre;030499
+gönlünü düşürmek;030500
+gönlünü etmek (veya yapmak);030501
+gönlünü eğlemek;030502
+gönlünü hoş etmek;030503
+gönlünü kaptırmak;030504
+gönlünü karartmak;030505
+gönlünü pazara çıkarmak;030506
+gönlünü serin tutmak;030507
+gönlünü söndürmek;030508
+gönlünü yaralamak;030509
+gönlünü çalmak;030510
+gönlünü çelmek;030511
+gönlünün dümeni bozuk;030512
+gönye;030513
+gönyeleme;030514
+gönyelemek;030515
+gönç;030516
+gönçlük;030517
+gönül;030518
+gönül (veya gönlünü) almak;030519
+gönül (veya gönlünü) avutmak;030520
+gönül (veya gönlünü) eğlendirmek;030521
+gönül (veya gönlünü) yakmak;030522
+gönül akıtmak;030523
+gönül avcısı;030524
+gönül avlamak;030525
+gönül açmak;030526
+gönül bağlamak;030527
+gönül bağı;030528
+gönül belası;030529
+gönül bir sırça saraydır, kırılırsa yapılmaz;030530
+gönül birliği;030531
+gönül birliği etmek;030532
+gönül borcu;030533
+gönül borçlusu;030534
+gönül bulandırmak;030535
+gönül bulantısı;030536
+gönül darlığı;030537
+gönül dilencisi;030538
+gönül eri;030539
+gönül eğlencesi;030540
+gönül ferahlığı;030541
+gönül ferman dinlemez;030542
+gönül gezdirmek;030543
+gönül hoşluğu;030544
+gönül indirmek;030545
+gönül kimi severse güzel odur;030546
+gönül kocamaz;030547
+gönül koymak;030548
+gönül kırmak (veya yıkmak);030549
+gönül maskarası;030550
+gönül meselesi;030551
+gönül okşamak;030552
+gönül okşayıcı;030553
+gönül okşayıcılığı;030554
+gönül rahatlığı;030555
+gönül rızası;030556
+gönül rızası ile;030557
+gönül tokluğu;030558
+gönül uğrusu;030559
+gönül var otluğa, gönül var bokluğa (konar);030560
+gönül verme evliye, eve gider unutur;030561
+gönül vermek;030562
+gönül yarası;030563
+gönül yıkmak;030564
+gönül çekmek;030565
+gönül çöküşü;030566
+gönüldaş;030567
+gönüldaşlık;030568
+gönülden gönüle yol vardır;030569
+gönülden çıkarmamak;030570
+gönülden ırak olmak;030571
+gönüllendirme;030572
+gönüllendirmek;030573
+gönüllenme;030574
+gönüllenmek;030575
+gönüller bir olunca samanlık seyran olur;030576
+gönüllü;030577
+gönüllü gönülsüz;030578
+gönüllüce;030579
+gönüllülük;030580
+gönülsüz;030581
+gönülsüz namaz göğe ağmaz;030582
+gönülsüz yenen aş, ya karın ağrıtır ya baş;030583
+gönülsüzce;030584
+gönülsüzlük;030585

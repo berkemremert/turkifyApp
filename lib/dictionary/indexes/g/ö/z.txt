@@ -1,0 +1,417 @@
+göz;030899
+göz (veya gözler) önüne sermek;030900
+göz (veya gözünün) kuyruğuyla bakmak;030901
+göz (veya gözünün) ucuyla bakmak;030902
+göz (veya gözünün) önünde olmak;030903
+göz (veya gözünün) önüne serilmek;030904
+göz akı;030905
+göz alabildiğine;030906
+göz altı;030907
+göz altı kremi;030908
+göz alıcı;030909
+göz alıcılık;030910
+göz ardı etmek;030911
+göz atmak;030912
+göz açamamak;030913
+göz açtırmamak;030914
+göz açıklığı;030915
+göz açıp kapayıncaya kadar;030916
+göz aşinalığı;030917
+göz aşısı;030918
+göz bankası;030919
+göz banyosu;030920
+göz bağcı;030921
+göz bağcılık;030922
+göz bağı;030923
+göz bebeği;030924
+göz bilimci;030925
+göz bilimi;030926
+göz bilimsel;030927
+göz boncuğu;030928
+göz boyamak;030929
+göz değmek;030930
+göz dikeği;030931
+göz dikmek;030932
+göz dişi;030933
+göz doktoru;030934
+göz doldurmak;030935
+göz doyurmak;030936
+göz emeği;030937
+göz erimi;030938
+göz etmek;030939
+göz etçiği;030940
+göz gezdirmek;030941
+göz gördüğünü ister;030942
+göz göre göre;030943
+göz görmeyince gönül katlanır;030944
+göz görür, gönül katlanır;030945
+göz göz;030946
+göz göz olmak;030947
+göz göze;030948
+göz göze gelmek;030949
+göz gözü görmemek;030950
+göz hakkı;030951
+göz hapsi;030952
+göz hapsine almak;030953
+göz kadehi;030954
+göz kamaştırmak (veya almak);030955
+göz kamaştırıcı;030956
+göz kamaştırıcılık;030957
+göz kapağı;030958
+göz kararı;030959
+göz kaş süzmek;030960
+göz kesesi;030961
+göz kesilmek;030962
+göz koymak;030963
+göz kulak olmak;030964
+göz kırpmadan;030965
+göz kırpmak;030966
+göz kırpmamak;030967
+göz memesi;030968
+göz merceği;030969
+göz nuru;030970
+göz nuru dökmek;030971
+göz pencere;030972
+göz pınarı;030973
+göz sevdası;030974
+göz süzmek;030975
+göz taşı;030976
+göz ucuyla görmek;030977
+göz ucuyla süzmek;030978
+göz var, izan var;030979
+göz yoklaması;030980
+göz yummak;030981
+göz yummamak;030982
+göz yuvarı;030983
+göz yuvası;030984
+göz yıldırmak;030985
+göz zarı yangısı;030986
+göz önü;030987
+göz önünde;030988
+göz önünde tutmak (veya bulundurmak);030989
+göz önüne almak;030990
+göz önüne getirmek;030991
+gözaltı;030992
+gözaltına almak;030993
+gözaltında tutmak;030994
+gözaydın etmek;030995
+gözaydına gelmek;030996
+gözaydına gitmek;030997
+gözcü;030998
+gözcülük;030999
+gözcülük etmek;031000
+gözdağı;031001
+gözdağı vermek;031002
+gözde;031003
+gözdelik;031004
+gözdemiri;031005
+gözden (veya gözünden) düşmek;031006
+gözden (veya gözünden) kaçmak;031007
+gözden (veya gözünden) kaçırmak;031008
+gözden (veya gözünden) sürmeyi çalmak (veya çekmek);031009
+gözden geçirmek;031010
+gözden gönülden çıkarmak;031011
+gözden kaybetmek;031012
+gözden kaybolmak;031013
+gözden nihan olmak;031014
+gözden uzak tutmak;031015
+gözden uzaklaşmak;031016
+gözden çıkarmak;031017
+gözden ırak olan gönülden de ırak olur;031018
+gözden ırak tutmak;031019
+gözden ırak tutulmak;031020
+göze;031021
+göze almak;031022
+göze batmak;031023
+göze bilimi;031024
+göze diken olmak;031025
+göze gelmek;031026
+göze girmek;031027
+göze görünmek;031028
+göze görünmemek;031029
+göze göz;031030
+göze yasak olmaz;031031
+göze yutarlığı;031032
+göze zarı;031033
+göze çarpmak;031034
+gözeler arası;031035
+gözeli;031036
+gözeme;031037
+gözemek;031038
+gözene;031039
+gözenek;031040
+gözenekli;031041
+gözeneklilik;031042
+gözeneksiz;031043
+gözeneksizlik;031044
+gözer;031045
+gözetebilme;031046
+gözetebilmek;031047
+gözetici;031048
+gözeticilik;031049
+gözetilme;031050
+gözetilmek;031051
+gözetim;031052
+gözetim altında tutmak;031053
+gözetime almak;031054
+gözetiş;031055
+gözetleme;031056
+gözetleme deliği;031057
+gözetlemek;031058
+gözetleniş;031059
+gözetlenme;031060
+gözetlenmek;031061
+gözetletme;031062
+gözetletmek;031063
+gözetleyebilme;031064
+gözetleyebilmek;031065
+gözetleyici;031066
+gözetleyicilik;031067
+gözetleyiş;031068
+gözetme;031069
+gözetmek;031070
+gözetmen;031071
+gözetmenlik;031072
+gözettirme;031073
+gözettirmek;031074
+gözevi;031075
+gözgü;031076
+gözle görülür, elle tutulur hâle gelmek;031077
+gözle yemek;031078
+gözlem;031079
+gözlem altına almak;031080
+gözlemci;031081
+gözlemcilik;031082
+gözleme;031083
+gözleme;031084
+gözleme;031085
+gözlemeci;031086
+gözlemecilik;031087
+gözlemek;031088
+gözlemevi;031089
+gözlemleme;031090
+gözlemlemek;031091
+gözlemleyebilme;031092
+gözlemleyebilmek;031093
+gözlemleyiş;031094
+gözlenebilme;031095
+gözlenebilmek;031096
+gözlenme;031097
+gözlenmek;031098
+gözleri bayılmak;031099
+gözleri berraklaşmak;031100
+gözleri buğulanmak (veya bulutlanmak);031101
+gözleri dolmak (veya dolu dolu olmak);031102
+gözleri dönmek;031103
+gözleri fıldır fıldır etmek;031104
+gözleri fıldır fıldır olmak;031105
+gözleri kan çanağına dönmek (veya kanlanmak);031106
+gözleri kapanmak;031107
+gözleri parlamak (veya parıldamak);031108
+gözleri sulanmak;031109
+gözleri süzülmek;031110
+gözleri takılıp kalmak;031111
+gözleri velfecri okumak;031112
+gözleri yaşarmak;031113
+gözleri yuvalarından (veya evinden) fırlamak (veya uğramak);031114
+gözleri çakmak çakmak (olmak);031115
+gözleri çivilenmek;031116
+gözleri çukura gitmek (veya kaçmak);031117
+gözleri ışıklı (olmak);031118
+gözleri şıldır şıldır dönmek;031119
+gözlerinde şimşek çakmak;031120
+gözlerinden okumak;031121
+gözlerine inanamamak;031122
+gözlerine mil çekmek;031123
+gözlerini bayıltmak;031124
+gözlerini belertmek;031125
+gözlerini bitirmek;031126
+gözlerini devirmek;031127
+gözlerini fal taşı gibi açmak;031128
+gözlerini kaçırmak;031129
+gözlerinin içi gülmek;031130
+gözlerinin içine kadar kızarmak;031131
+gözletme;031132
+gözletmek;031133
+gözleyebilme;031134
+gözleyebilmek;031135
+gözleyiş;031136
+gözleği;031137
+gözlü;031138
+gözlük;031139
+gözlük takmak;031140
+gözlüklü;031141
+gözlüklü yılan;031142
+gözlüklülük;031143
+gözlüksüz;031144
+gözlüksüzlük;031145
+gözlükçü;031146
+gözlükçülük;031147
+gözlüye gizli yoktur;031148
+gözsüz;031149
+gözsüzlük;031150
+gözyaşı;031151
+gözyaşı bezeleri;031152
+gözyaşı bezleri;031153
+gözyaşı kemiği;031154
+gözyaşı memesi;031155
+gözyaşı pınarı;031156
+gözyaşına boğulmak;031157
+gözü (veya gözleri) (bir şeyde veya bir şeyin üzerinde) olmak;031158
+gözü (veya gözleri) açılmak;031159
+gözü (veya gözleri) dönmek;031160
+gözü (veya gözleri) kamaşmak;031161
+gözü (veya gözleri) kararmak;031162
+gözü (veya gözleri) kaymak (veya kaçmak);031163
+gözü (veya gözleri) okşamak;031164
+gözü (veya gözleri) takılmak;031165
+gözü (veya gözleri) üstünde kalmak;031166
+gözü akmak;031167
+gözü almamak;031168
+gözü alışmak;031169
+gözü arkada kalmak;031170
+gözü aç;031171
+gözü açlık;031172
+gözü açık;031173
+gözü açık gitmek;031174
+gözü açık olmak;031175
+gözü açıklık;031176
+gözü bağlı;031177
+gözü bağlı olmak;031178
+gözü bağlılık;031179
+gözü bulanmak;031180
+gözü büyükte olmak;031181
+gözü dalmak;031182
+gözü değmek;031183
+gözü doymak;031184
+gözü doymaz;031185
+gözü doymazlık;031186
+gözü dumanlanmak;031187
+gözü dönesi;031188
+gözü dünyayı görmemek;031189
+gözü dışarıda;031190
+gözü gibi sakınmak (veya saklamak veya esirgemek);031191
+gözü gibi sevmek;031192
+gözü gitmek;031193
+gözü gönlü açılmak;031194
+gözü gönlü tok;031195
+gözü görmemek;031196
+gözü görmez olmak;031197
+gözü göz değil;031198
+gözü hiçbir şey görmemek;031199
+gözü ilişmek;031200
+gözü kalmak;031201
+gözü kapalı;031202
+gözü kapalı olmak;031203
+gözü kapalılık;031204
+gözü kara;031205
+gözü kara çıkmak;031206
+gözü karalık;031207
+gözü keskin;031208
+gözü kesmek;031209
+gözü kesmemek;031210
+gözü korkmak;031211
+gözü kör olsun;031212
+gözü kızmak;031213
+gözü olmak;031214
+gözü olmamak;031215
+gözü pek;031216
+gözü pek olmak;031217
+gözü peklik;031218
+gözü su içmemek;031219
+gözü sulu;031220
+gözü sululuk;031221
+gözü sönmek;031222
+gözü tanede olan kuşun ayağı tuzaktan kurtulmaz;031223
+gözü tok;031224
+gözü tokluk;031225
+gözü toprağa bakmak;031226
+gözü tutmak;031227
+gözü uyku tutmamak;031228
+gözü yememek;031229
+gözü yolda;031230
+gözü yolda (veya yollarda) kalmak (veya olmak);031231
+gözü yüksekte;031232
+gözü yüksekte (veya yükseklerde) olmak;031233
+gözü yılmak;031234
+gözü çıkasıca;031235
+gözü önünde;031236
+gözü ısırmak;031237
+gözükebilme;031238
+gözükebilmek;031239
+gözükme;031240
+gözükmek;031241
+gözüküş;031242
+gözüm görmesin;031243
+gözüm çıksın (veya kör olsun);031244
+gözüm!;031245
+gözümün nuru;031246
+gözün ... görsün;031247
+gözün aydın!;031248
+gözünde;031249
+gözünde (veya gözlerinde) şimşek (veya şimşekler) çakmak;031250
+gözünde büyümek;031251
+gözünde büyütmek;031252
+gözünde olmamak;031253
+gözünde tütmek;031254
+gözünden (veya gözlerinden) uyku akmak;031255
+gözünden (veya gözlerinden) yaş (veya yaşlar) boşanmak;031256
+gözünden kıskanmak;031257
+gözüne (veya gözlerine) bakmak;031258
+gözüne batmak;031259
+gözüne diken olmak;031260
+gözüne dizine dursun;031261
+gözüne girmek;031262
+gözüne hiçbir şey görünmemek;031263
+gözüne ilişmek;031264
+gözüne karasu inmek;031265
+gözüne kestirmek;031266
+gözüne sokmak;031267
+gözüne uyku girmemek;031268
+gözüne çarpmak;031269
+gözünü (veya gözlerini) açmak;031270
+gözünü (veya gözlerini) dikmek;031271
+gözünü (veya gözlerini) duman bürümek;031272
+gözünü (veya gözlerini) kan bürümek;031273
+gözünü (veya gözlerini) kapamak;031274
+gözünü (veya gözlerini) kırpmadan;031275
+gözünü (veya gözlerini) oymak;031276
+gözünü ... hırsı bürümek;031277
+gözünü alamamak;031278
+gözünü almak;031279
+gözünü ayırmamak;031280
+gözünü açmak;031281
+gözünü açmak;031282
+gözünü açmak;031283
+gözünü ağartmak;031284
+gözünü bağlamak;031285
+gözünü daldan budaktan (veya çöpten) esirgememek (veya sakınmamak);031286
+gözünü doyurmak;031287
+gözünü dört açmak;031288
+gözünü gözüne dikmek;031289
+gözünü hırs bürümek;031290
+gözünü karartmak;031291
+gözünü kin bürümek;031292
+gözünü korkutmak;031293
+gözünü sevda (veya aşk) bürümek;031294
+gözünü sevdiğim;031295
+gözünü seveyim;031296
+gözünü toprak doyursun;031297
+gözünü yummak;031298
+gözünü yummak;031299
+gözünü yıldırmak;031300
+gözünü çıkarmak;031301
+gözünü üstünden ayırmamak;031302
+gözünün (veya gözlerinin) içine bakmak;031303
+gözünün bebeği gibi sevmek;031304
+gözünün içine baka baka;031305
+gözünün yaşına bakmamak;031306
+gözünün çapağını silmeden;031307
+gözünün önünden geçmek;031308
+gözünün önünden gitmemek;031309
+gözünün önüne gelmek;031310
+gözünün önüne gelmek;031311
+gözünün önünü görmemek;031312
+gözünün üstünde kaşın var dememek;031313
+gözüyle (veya gözleriyle) tartmak;031314
+gözüyle görmek;031315

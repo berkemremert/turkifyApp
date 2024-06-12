@@ -1,0 +1,42 @@
+sim;067494
+sim;067495
+sima;067496
+simaen;067497
+simav;067498
+simetri;067499
+simetrik;067500
+simetriklik;067501
+simetrili;067502
+simetrisiz;067503
+simetrisizlik;067504
+simge;067505
+simgeci;067506
+simgecilik;067507
+simgeleme;067508
+simgelemek;067509
+simgeleşme;067510
+simgeleşmek;067511
+simgeleştirilme;067512
+simgeleştirilmek;067513
+simgeleştirme;067514
+simgeleştirmek;067515
+simgesel;067516
+simgesel mantık;067517
+simgesellik;067518
+simit;067519
+simit fırını;067520
+simit kebabı;067521
+simitçi;067522
+simitçi fırını;067523
+simitçilik;067524
+simsar;067525
+simsariye;067526
+simsarlık;067527
+simsiyah;067528
+simultane;067529
+simurg;067530
+simya;067531
+simyacı;067532
+simyacılık;067533
+simülasyon;067534
+simülatör;067535

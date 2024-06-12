@@ -1,0 +1,47 @@
+graben;030028
+grado;030029
+gradosu düşmek;030030
+grafik;030031
+grafik sanatları;030032
+grafik tasarımcılığı;030033
+grafik tasarımcısı;030034
+grafiker;030035
+grafikerlik;030036
+grafikçi;030037
+grafikçilik;030038
+grafit;030039
+grafiti;030040
+grafitli;030041
+grafitli korozyon;030042
+grafolog;030043
+grafoloji;030044
+grafolojik;030045
+grafometre;030046
+gram;030047
+gramaj;030048
+gramajlı;030049
+gramatik;030050
+gramatikal;030051
+gramağırlık;030052
+gramer;030053
+gramerci;030054
+gramercilik;030055
+gramkuvvet;030056
+gramlık;030057
+gramofon;030058
+gramsantimetre;030059
+grandi;030060
+grandük;030061
+granit;030062
+granit gibi;030063
+granitleşme;030064
+granül;030065
+granülin;030066
+granülit;030067
+gravimetre;030068
+gravite;030069
+gravyer;030070
+gravyer peyniri;030071
+gravür;030072
+gravürcü;030073
+gravürcülük;030074

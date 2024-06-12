@@ -1,0 +1,235 @@
+açı;006909
+açı ölçüm;006910
+açık;006911
+açık alan;006912
+açık ara;006913
+açık artırma;006914
+açık açık;006915
+açık ağıl;006916
+açık ağız aç kalmaz;006917
+açık ağızlı;006918
+açık ağızlılık;006919
+açık bilet;006920
+açık bono;006921
+açık bono vermek;006922
+açık bölge;006923
+açık büfe;006924
+açık celse;006925
+açık ciro;006926
+açık deniz;006927
+açık devre;006928
+açık dolaşım sistemi;006929
+açık durum;006930
+açık duruşma;006931
+açık düşme;006932
+açık düşmek;006933
+açık düşmek;006934
+açık eksiltme;006935
+açık elli;006936
+açık ellilik;006937
+açık etmek;006938
+açık fikirli;006939
+açık fikirlilik;006940
+açık giyim;006941
+açık giyimli;006942
+açık gri;006943
+açık görüş;006944
+açık hava;006945
+açık hava müzesi;006946
+açık hava sineması;006947
+açık hava tiyatrosu;006948
+açık hece;006949
+açık hesap;006950
+açık imza;006951
+açık işletme;006952
+açık kahverengi;006953
+açık kalp ameliyatı;006954
+açık kalpli;006955
+açık kalplilik;006956
+açık kapamak;006957
+açık kapı;006958
+açık kapı bırakmak;006959
+açık kapı hırsızı;006960
+açık kapı politikası;006961
+açık kapı siyaseti;006962
+açık kart;006963
+açık kestane;006964
+açık konuşmak;006965
+açık kredi;006966
+açık kırmızı;006967
+açık liman;006968
+açık lise;006969
+açık maaşı;006970
+açık mavi;006971
+açık mektup;006972
+açık olmak;006973
+açık olmak;006974
+açık ordugâh;006975
+açık oturum;006976
+açık oy;006977
+açık pazar;006978
+açık pembe;006979
+açık piyasa;006980
+açık poliçe;006981
+açık raf;006982
+açık rejim;006983
+açık saman rengi;006984
+açık sarı;006985
+açık sayım;006986
+açık saçık;006987
+açık saçık konuşmak;006988
+açık saçıklık;006989
+açık senet;006990
+açık seçik;006991
+açık seçiklik;006992
+açık söylemek;006993
+açık sözlü;006994
+açık sözlülük;006995
+açık taşıt;006996
+açık teşekkür;006997
+açık tohumlular;006998
+açık toplum;006999
+açık tribün;007000
+açık tutmak;007001
+açık vermek;007002
+açık yara;007003
+açık yaraya tuz ekilmez;007004
+açık yeşil;007005
+açık yol;007006
+açık yürekli;007007
+açık yüreklilik;007008
+açık zaman;007009
+açık çek;007010
+açık önerme;007011
+açık öğretim;007012
+açık şehir;007013
+açıkağız;007014
+açıkgöz;007015
+açıkgözlük;007016
+açıkgözlülük;007017
+açıkgözlülük etmek;007018
+açıklama;007019
+açıklama cümlesi;007020
+açıklama yapmak;007021
+açıklamak;007022
+açıklamalı;007023
+açıklanabilir;007024
+açıklanabilirlik;007025
+açıklanabilme;007026
+açıklanabilmek;007027
+açıklanan;007028
+açıklanma;007029
+açıklanmak;007030
+açıklanış;007031
+açıklar livası;007032
+açıklar livası olmak;007033
+açıklatabilme;007034
+açıklatabilmek;007035
+açıklatma;007036
+açıklatmak;007037
+açıklattırma;007038
+açıklattırmak;007039
+açıklayabilme;007040
+açıklayabilmek;007041
+açıklayan;007042
+açıklayıcı;007043
+açıklayıcılık;007044
+açıklayıverme;007045
+açıklayıvermek;007046
+açıklayış;007047
+açıklaşma;007048
+açıklaşmak;007049
+açıklaştırabilme;007050
+açıklaştırabilmek;007051
+açıklaştırma;007052
+açıklaştırmak;007053
+açıklaştırılma;007054
+açıklaştırılmak;007055
+açıklık;007056
+açıklık getirmek;007057
+açıklık kazanmak;007058
+açıklık politikası;007059
+açıklıkla;007060
+açıklıkölçer;007061
+açıklığa kavuşmak;007062
+açıkta bırakmak;007063
+açıkta kalmak (veya olmak);007064
+açıktan;007065
+açıktan (para) kazanmak;007066
+açıktan almak;007067
+açıktan atama;007068
+açıktan atamak;007069
+açıktan atanma;007070
+açıktan atanmak;007071
+açıktan açığa;007072
+açıktan geçmek;007073
+açıktan para almak;007074
+açıktan tayin;007075
+açıkça;007076
+açıkçası;007077
+açıkçasını söylemek;007078
+açıkçı;007079
+açılabilme;007080
+açılabilmek;007081
+açılama;007082
+açılan solar, ağlayan güler;007083
+açılma;007084
+açılmak;007085
+açılı kaplama;007086
+açılım;007087
+açılıp saçılmak;007088
+açılıverme;007089
+açılıvermek;007090
+açılış;007091
+açılış konuşması;007092
+açılış töreni;007093
+açım;007094
+açımlama;007095
+açımlamak;007096
+açımlanma;007097
+açımlanmak;007098
+açımlanış;007099
+açımlayış;007100
+açın gözü ekmek teknesinde olur;007101
+açın imanı olmaz;007102
+açın karnı doyar, gözü doymaz;007103
+açın koynunda ekmek durmaz;007104
+açın kursağına çörek dayanmaz;007105
+açın uykusu gelmez;007106
+açındırma;007107
+açındırmak;007108
+açınma;007109
+açınmak;007110
+açınsama;007111
+açınsamak;007112
+açınım;007113
+açıortay;007114
+açıortay düzlemi;007115
+açısal;007116
+açısal bölge;007117
+açısal hız;007118
+açısal ivme;007119
+açısal sapma;007120
+açısal uzaklık;007121
+açısal yol;007122
+açısal çap;007123
+açısallık;007124
+açıt;007125
+açıverme;007126
+açıvermek;007127
+açıölçer;007128
+açığa alma;007129
+açığa almak;007130
+açığa alınma;007131
+açığa alınmak;007132
+açığa vurmak;007133
+açığa çıkarmak;007134
+açığa çıkarmak;007135
+açığa çıkarmak;007136
+açığa çıkmak;007137
+açığı çıkmak;007138
+açığını aramak;007139
+açığını bulmak;007140
+açığını kapamak (veya kapatmak);007141
+açış;007142
+açış konuşması;007143

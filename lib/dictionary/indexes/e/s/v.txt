@@ -1,0 +1,4 @@
+esvap;025436
+esvaplı;025437
+esvapsız;025438
+esvapsızlık;025439

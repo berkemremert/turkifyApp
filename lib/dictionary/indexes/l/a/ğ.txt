@@ -1,0 +1,16 @@
+lağvedilme;051098
+lağvedilmek;051099
+lağvetme;051100
+lağvetmek;051101
+lağvolma;051102
+lağvolmak;051103
+lağvolunma;051104
+lağvolunmak;051105
+lağım;051106
+lağım döşemi;051107
+lağım faresi;051108
+lağım çukuru;051109
+lağımcı;051110
+lağımcılık;051111
+lağımla atmak;051112
+lağıv;051113

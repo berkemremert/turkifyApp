@@ -1,0 +1,42 @@
+gömebilme;030380
+gömebilmek;030381
+gömeç;030382
+gömgök;030383
+gömlek;030384
+gömlek değiştirmek;030385
+gömlek eskitmek;030386
+gömlekli;030387
+gömleklik;030388
+gömlekliler;030389
+gömleksiz;030390
+gömlekçi;030391
+gömlekçilik;030392
+gömleğinden (veya gömlekten) geçirmek;030393
+gömme;030394
+gömme ayak;030395
+gömme balkon;030396
+gömme banyo;030397
+gömme dolap;030398
+gömme kilit;030399
+gömmek;030400
+gömü;030401
+gömücü;030402
+gömücülük;030403
+gömük;030404
+gömüldürük;030405
+gömülebilme;030406
+gömülebilmek;030407
+gömüleme;030408
+gömülemek;030409
+gömülme;030410
+gömülmek;030411
+gömültü;030412
+gömülü;030413
+gömülüverme;030414
+gömülüvermek;030415
+gömülüş;030416
+gömüt;030417
+gömütlük;030418
+gömüverme;030419
+gömüvermek;030420
+gömüş;030421

@@ -1,0 +1,164 @@
+sağ;065825
+sağ;065826
+sağ açık;065827
+sağ açıklık;065828
+sağ bek;065829
+sağ elinin verdiğini sol elin görmesin;065830
+sağ eliyle sol kulağını göstermek;065831
+sağ esen;065832
+sağ eğilimli;065833
+sağ eğilimlilik;065834
+sağ gösterip sol vurmak;065835
+sağ gözünü sol gözünden sakınmak;065836
+sağ haf;065837
+sağ iç;065838
+sağ kalmak;065839
+sağ kanat;065840
+sağ kol;065841
+sağ ol;065842
+sağ olsun;065843
+sağ para;065844
+sağ salim;065845
+sağ selamet;065846
+sağ yapmak;065847
+sağ çıkarma;065848
+sağ şerit;065849
+sağa kaymak;065850
+sağa sola;065851
+sağa sola bakmadan;065852
+sağabilme;065853
+sağabilmek;065854
+sağalma;065855
+sağalmak;065856
+sağaltma;065857
+sağaltmak;065858
+sağaltıcı;065859
+sağaltıcılık;065860
+sağaltım;065861
+sağanak;065862
+sağanlar;065863
+sağbeğeni;065864
+sağcı;065865
+sağcılık;065866
+sağdan geri dönmek (veya etmek);065867
+sağduyu;065868
+sağduyulu;065869
+sağduyululuk;065870
+sağdırma;065871
+sağdırmak;065872
+sağdıç;065873
+sağdıç emeği;065874
+sağdıçlık;065875
+sağgörü;065876
+sağgörülü;065877
+sağgörülülük;065878
+sağgörüsüz;065879
+sağgörüsüzlük;065880
+sağistem;065881
+sağkol;065882
+sağlam;065883
+sağlam durmak;065884
+sağlam kazığa bağlamak;065885
+sağlam pabuç (veya ayakkabı) değil;065886
+sağlam para;065887
+sağlama;065888
+sağlama bağlamak;065889
+sağlamak;065890
+sağlamak;065891
+sağlamca;065892
+sağlamcı;065893
+sağlamcılık;065894
+sağlamlama;065895
+sağlamlamak;065896
+sağlamlaşma;065897
+sağlamlaşmak;065898
+sağlamlaştırma;065899
+sağlamlaştırmak;065900
+sağlamlaştırılma;065901
+sağlamlaştırılmak;065902
+sağlamlık;065903
+sağlanabilme;065904
+sağlanabilmek;065905
+sağlanma;065906
+sağlanmak;065907
+sağlanış;065908
+sağlatma;065909
+sağlatmak;065910
+sağlattırma;065911
+sağlattırmak;065912
+sağlayabilme;065913
+sağlayabilmek;065914
+sağlayış;065915
+sağlı sollu;065916
+sağlıcakla;065917
+sağlıcakla kal (veya kalın);065918
+sağlık;065919
+sağlık bilgisi;065920
+sağlık bilimi;065921
+sağlık bilimleri;065922
+sağlık görevlisi;065923
+sağlık havuzu;065924
+sağlık hizmeti;065925
+sağlık karnesi;065926
+sağlık kontrolü;065927
+sağlık kurulu;065928
+sağlık memuru;065929
+sağlık merkezi;065930
+sağlık muayenesi;065931
+sağlık ocağı;065932
+sağlık olsun!;065933
+sağlık raporu;065934
+sağlık sigortası;065935
+sağlık taraması;065936
+sağlık yurdu;065937
+sağlıkevi;065938
+sağlıklama;065939
+sağlıklı;065940
+sağlıklı yaşam;065941
+sağlıklılık;065942
+sağlıksal;065943
+sağlıksız;065944
+sağlıksızlık;065945
+sağlıkçı;065946
+sağlığında;065947
+sağlığınıza;065948
+sağma;065949
+sağmak;065950
+sağmal;065951
+sağmal inek;065952
+sağmallık;065953
+sağrı;065954
+sağrı kemiği;065955
+sağtöre;065956
+sağtöresel;065957
+sağyağ;065958
+sağı;065959
+sağı solu (belli) olmamak;065960
+sağılma;065961
+sağılmak;065962
+sağılış;065963
+sağım;065964
+sağım makinesi;065965
+sağımlı;065966
+sağımlık;065967
+sağın;065968
+sağın bilimler;065969
+sağını solunu bilmemek;065970
+sağır;065971
+sağır dilsiz;065972
+sağır duvar;065973
+sağır kapı;065974
+sağır kef;065975
+sağır mikrofon;065976
+sağır nun;065977
+sağır olmak;065978
+sağır pencere;065979
+sağır pusula;065980
+sağır renk;065981
+sağır sultan bile duydu;065982
+sağır yılan;065983
+sağırlaşma;065984
+sağırlaşmak;065985
+sağırlık;065986
+sağıverme;065987
+sağıvermek;065988

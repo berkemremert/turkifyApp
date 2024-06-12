@@ -1,0 +1,55 @@
+fen;026947
+fen bilimi;026948
+fen bilimleri;026949
+fena;026950
+fena;026951
+fena bulmak;026952
+fena değil (veya sayılmaz);026953
+fena etmek;026954
+fena gözle bakmak;026955
+fena hâlde;026956
+fena kalpli;026957
+fena kalplilik;026958
+fena olmak;026959
+fena yapmak;026960
+fenafillah;026961
+fenalaşma;026962
+fenalaşmak;026963
+fenalaştırma;026964
+fenalaştırmak;026965
+fenalık;026966
+fenalık etmek;026967
+fenalık geçirmek (veya gelmek veya çökmek);026968
+fenasına gitmek;026969
+fenaya sarmak;026970
+fenaya çekmek;026971
+fenci;026972
+fener;026973
+fener alayı;026974
+fener balığı;026975
+fener balığıgiller;026976
+fener çekmek;026977
+fenerci;026978
+fenercilik;026979
+feneri nerede söndürdün;026980
+fenerli;026981
+fenerli burgu;026982
+fenersiz;026983
+fenersiz yakalanmak;026984
+fenik;026985
+fenlenme;026986
+fenlenmek;026987
+fennini almak (veya kapmak);026988
+fennî;026989
+fennî muayene;026990
+fenol;026991
+fenoloji;026992
+fenolojik;026993
+fenomen;026994
+fenomenal;026995
+fenomenist;026996
+fenomenizm;026997
+fenomenoloji;026998
+fenomenolojik;026999
+fent;027000
+fent çevirmek;027001

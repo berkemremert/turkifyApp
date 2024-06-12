@@ -1,0 +1,49 @@
+çembalo;086529
+çember;086530
+çember geçirmek;086531
+çember içine almak (veya çembere almak);086532
+çember kayık;086533
+çember makası;086534
+çember sakal;086535
+çember sakallı;086536
+çember sakallılık;086537
+çemberden dönmek;086538
+çemberi yarmak;086539
+çemberimsi;086540
+çemberleme;086541
+çemberlemek;086542
+çemberlenme;086543
+çemberlenmek;086544
+çemberletme;086545
+çemberletmek;086546
+çemberli;086547
+çembersel bölge;086548
+çembersi;086549
+çembersiz;086550
+çemen;086551
+çemenleme;086552
+çemenlemek;086553
+çemenlenme;086554
+çemenlenmek;086555
+çemenli;086556
+çemensiz;086557
+çemiç;086558
+çemiş;086559
+çemişgezek;086560
+çemişlik;086561
+çemişlik etmek;086562
+çemkirebilme;086563
+çemkirebilmek;086564
+çemkiriverme;086565
+çemkirivermek;086566
+çemkiriş;086567
+çemkirme;086568
+çemkirmek;086569
+çemkirtme;086570
+çemkirtmek;086571
+çemrek;086572
+çemreme;086573
+çemremek;086574
+çemrenme;086575
+çemrenmek;086576
+çemçe;086577

@@ -1,0 +1,10 @@
+abone;000222
+abone etmek;000223
+abone olmak;000224
+abonelik;000225
+abonman;000226
+aborda;000227
+aborda etmek;000228
+aborda olmak;000229
+aborjin;000230
+abosa;000231

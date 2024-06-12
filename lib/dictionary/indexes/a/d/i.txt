@@ -1,0 +1,22 @@
+adi;000692
+adi adım;000693
+adi defter;000694
+adi kesir;000695
+adi palanga;000696
+adi suçlu;000697
+adi suçluluk;000698
+adi ıskarmoz;000699
+adil;000700
+adilane;000701
+adilcevaz;000702
+adileşebilme;000703
+adileşebilmek;000704
+adileşiverme;000705
+adileşivermek;000706
+adileşme;000707
+adileşmek;000708
+adileştirme;000709
+adileştirmek;000710
+adilik;000711
+adillik;000712
+adisyon;000713

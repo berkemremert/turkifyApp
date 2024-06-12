@@ -1,0 +1,20 @@
+erteleme;025120
+ertelemek;025121
+ertelenebilme;025122
+ertelenebilmek;025123
+erteleniş;025124
+ertelenme;025125
+ertelenmek;025126
+erteletebilme;025127
+erteletebilmek;025128
+erteletim;025129
+erteletme;025130
+erteletmek;025131
+ertelettirme;025132
+ertelettirmek;025133
+erteleyebilme;025134
+erteleyebilmek;025135
+erteleyiş;025136
+ertesi;025137
+ertesi gün hapı;025138
+ertesi sabah hapı;025139

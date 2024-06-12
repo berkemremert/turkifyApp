@@ -1,0 +1,258 @@
+har;033104
+har;033105
+har gür;033106
+har har;033107
+har hur;033108
+hara;033109
+hara;033110
+harabat;033111
+harabati;033112
+harabatilik;033113
+harabe;033114
+harabelik;033115
+harabi;033116
+harabilik;033117
+harabiyet;033118
+haraca bağlamak;033119
+haraca kesmek;033120
+harakiri;033121
+harala gürele;033122
+haram;033123
+haram etmek;033124
+haram lokma;033125
+haram olmak;033126
+haram olsun!;033127
+haram para;033128
+haram yemek;033129
+harama uçkur çözmek;033130
+harami;033131
+haramilik;033132
+haramlık;033133
+haramsız;033134
+haramzade;033135
+haramın temeli olmaz;033136
+haranı;033137
+harap;033138
+harap düşmek;033139
+harap etmek;033140
+harap olmak;033141
+haraplaşma;033142
+haraplaşmak;033143
+haraplık;033144
+harar;033145
+harar gibi;033146
+hararet;033147
+hararet basmak;033148
+hararet kesmek (veya söndürmek);033149
+hararet vermek;033150
+hararetlendirme;033151
+hararetlendirmek;033152
+hararetlenme;033153
+hararetlenmek;033154
+hararetli;033155
+hararetlilik;033156
+haraza;033157
+haraza;033158
+haraç;033159
+haraç mezat satmak;033160
+haraç yemek (veya almak);033161
+haraçlı;033162
+haraççı;033163
+haraççılık;033164
+haraşo;033165
+harbe;033166
+harbi;033167
+harbi konuşmak;033168
+harbici;033169
+harbicilik;033170
+harbiden;033171
+harbilik;033172
+harbiye;033173
+harbiyeli;033174
+harbiyelilik;033175
+harbî;033176
+harcama;033177
+harcama kalemi;033178
+harcama yapmak;033179
+harcamak;033180
+harcanabilme;033181
+harcanabilmek;033182
+harcanma;033183
+harcanmak;033184
+harcanılma;033185
+harcanılmak;033186
+harcanış;033187
+harcatma;033188
+harcatmak;033189
+harcatılma;033190
+harcatılmak;033191
+harcayabilme;033192
+harcayabilmek;033193
+harcayıverme;033194
+harcayıvermek;033195
+harcayış;033196
+harcetme;033197
+harcetmek;033198
+harcı olmamak;033199
+harcırah;033200
+harcıâlem;033201
+harcıâlem olmak;033202
+hardal;033203
+hardal gazı;033204
+hardal rengi;033205
+hardal yakısı;033206
+hardaliye;033207
+hardallı;033208
+hardallık;033209
+hardalsı;033210
+hardalsız;033211
+hardalımsı;033212
+hare;033213
+hareke;033214
+hareke koymak;033215
+harekeleme;033216
+harekelemek;033217
+harekeli;033218
+harekesiz;033219
+hareket;033220
+hareket dairesi;033221
+hareket etmek;033222
+hareket hastalığı;033223
+hareket noktası;033224
+harekete geçirmek (veya getirmek);033225
+harekete geçmek;033226
+hareketlendirebilme;033227
+hareketlendirebilmek;033228
+hareketlendirme;033229
+hareketlendirmek;033230
+hareketleniş;033231
+hareketlenme;033232
+hareketlenmek;033233
+hareketli;033234
+hareketlilik;033235
+hareketsiz;033236
+hareketsizlik;033237
+hareki;033238
+harekât;033239
+harelenme;033240
+harelenmek;033241
+hareli;033242
+harem;033243
+harem ağası;033244
+harem kâhyası;033245
+harem selamlık;033246
+harem selamlık olmak;033247
+haremeyn;033248
+haremlik;033249
+haremlik selamlık;033250
+haresiz;033251
+harezmi yolu;033252
+harf;033253
+harf atmak;033254
+harf çevirisi;033255
+harfendaz;033256
+harfendazlık;033257
+harfi harfine;033258
+harfitarif;033259
+harfiyen;033260
+harfleme;033261
+harflemek;033262
+harharyas;033263
+harharyasgiller;033264
+haricen;033265
+hariciye;033266
+hariciye nazırı;033267
+hariciyeci;033268
+hariciyecilik;033269
+haricî;033270
+harika;033271
+harikalar yaratmak;033272
+harikalık;033273
+harikulade;033274
+harikuladelik;033275
+harim;033276
+harimiismet;033277
+harir;033278
+haris;033279
+harislik;033280
+harita;033281
+haritacı;033282
+haritacılık;033283
+haritada olmak;033284
+haritadan silinmek;033285
+haritalık;033286
+hariç;033287
+hariç olmak;033288
+hariçten gazel okumak (veya atmak);033289
+harlak;033290
+harlama;033291
+harlamak;033292
+harlatma;033293
+harlatmak;033294
+harlı;033295
+harman;033296
+harman döven öküzün ağzı bağlanmaz;033297
+harman dövmek;033298
+harman dövmek keçinin işi değil;033299
+harman etmek (veya yapmak);033300
+harman savurmak;033301
+harman sonu;033302
+harman sonu dervişlerin;033303
+harman sonu dervişlerindir;033304
+harman yakarım diyen orağa yetişmemiş;033305
+harman yel ile, düğün el ile;033306
+harman yeri;033307
+harman çevirmek;033308
+harmancı;033309
+harmancık;033310
+harmancılık;033311
+harmanda dirgen yiyen sıpa, yılına kadar acısını unutmaz;033312
+harmandalı;033313
+harmani;033314
+harmanlama;033315
+harmanlamak;033316
+harmanlanma;033317
+harmanlanmak;033318
+harmanlanış;033319
+harmanlatma;033320
+harmanlatmak;033321
+harmanlayış;033322
+harmanlık;033323
+harmanı kaldırmak;033324
+harmoni;033325
+harmonyum;033326
+harnup;033327
+harp;033328
+harp akademisi;033329
+harp açmak;033330
+harp dairesi;033331
+harp gemisi;033332
+harp malulü;033333
+harp okulu;033334
+harp zengini;033335
+harput köftesi;033336
+harran;033337
+harrangürra;033338
+hars;033339
+hart;033340
+hart hurt;033341
+hart hurt etmek;033342
+harta;033343
+hartadak;033344
+hartama;033345
+hartuç;033346
+harç;033347
+harçlı;033348
+harçlık;033349
+harçsız;033350
+harçsızlık;033351
+harı başına vurmak;033352
+harı geçmek;033353
+harıl harıl;033354
+harılanma;033355
+harılanmak;033356
+harıldama;033357
+harıldamak;033358
+harıltı;033359
+harım;033360
+harın;033361

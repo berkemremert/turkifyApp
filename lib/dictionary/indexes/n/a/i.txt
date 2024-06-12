@@ -1,0 +1,5 @@
+naif;056851
+nail;056852
+nail olmak;056853
+naip;056854
+naiplik;056855

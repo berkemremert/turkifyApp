@@ -1,0 +1,98 @@
+kör;048756
+kör alan;048757
+kör baca;048758
+kör bağırsak;048759
+kör boğaz;048760
+kör değneğini beller gibi;048761
+kör duman;048762
+kör dövüşü;048763
+kör fare;048764
+kör faregiller;048765
+kör görmez, sezer;048766
+kör hat;048767
+kör itin öldüğü yer;048768
+kör kadı;048769
+kör kandil;048770
+kör karanlık;048771
+kör kaya;048772
+kör kurttan bile vazgeçmemek;048773
+kör kurşun;048774
+kör kuyu;048775
+kör kör parmağım gözüne;048776
+kör köstebek;048777
+kör nişancı;048778
+kör nişancılık;048779
+kör nokta;048780
+kör ocak;048781
+kör olası (veya olasıca veya olsun);048782
+kör pazara varmasın, pazar körsüz kalmasın;048783
+kör satıcının kör alıcısı olur;048784
+kör sıçan;048785
+kör talih;048786
+kör tapa;048787
+kör topal;048788
+kör uçuş;048789
+kör yılan;048790
+kör yılangiller;048791
+kör çapa;048792
+kör ölür badem gözlü olur, kel ölür sırma saçlı olur;048793
+kör şans;048794
+kör şeytan;048795
+kör şeytandan bulmak;048796
+körağaç;048797
+körcesine;048798
+kördüğüm;048799
+köre;048800
+köre renkten bahsolunmaz;048801
+körebe;048802
+köreliş;048803
+körelme;048804
+körelmek;048805
+köreltebilme;048806
+köreltebilmek;048807
+köreltme;048808
+köreltmek;048809
+köreşe;048810
+körfez;048811
+körfez;048812
+körfezcik;048813
+körkütük;048814
+körle yatan şaşı kalkar;048815
+körlemeden;048816
+körleniş;048817
+körlenme;048818
+körlenmek;048819
+körler mahallesinde ayna satmak;048820
+körler memleketinde şaşılar padişah olur;048821
+körletebilme;048822
+körletebilmek;048823
+körletiş;048824
+körletme;048825
+körletmek;048826
+körleşme;048827
+körleşmek;048828
+körleştiriş;048829
+körleştirme;048830
+körleştirmek;048831
+körlük;048832
+köroğlu;048833
+körpe;048834
+körpecik;048835
+körpelik;048836
+körü körüne;048837
+körük;048838
+körükleme;048839
+körüklemek;048840
+körüklenme;048841
+körüklenmek;048842
+körükleyebilme;048843
+körükleyebilmek;048844
+körükleyici;048845
+körükleyicilik;048846
+körüklü;048847
+körüklü otobüs;048848
+körüksüz;048849
+körükçü;048850
+körükçülük;048851
+körün istediği bir göz, allah verdi iki göz;048852
+körün taşı;048853

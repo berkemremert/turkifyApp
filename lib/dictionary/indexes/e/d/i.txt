@@ -1,0 +1,55 @@
+edi;023200
+edi;023201
+edibane;023202
+edik;023203
+edilebilme;023204
+edilebilmek;023205
+edilgen;023206
+edilgen fiil;023207
+edilgen çatı;023208
+edilgenleşme;023209
+edilgenleşmek;023210
+edilgenleştirme;023211
+edilgenleştirmek;023212
+edilgenleştirtme;023213
+edilgenleştirtmek;023214
+edilgenlik;023215
+edilgenlik eki;023216
+edilgi;023217
+edilgin;023218
+edilginlik;023219
+edilme;023220
+edilmek;023221
+edim;023222
+edim bilimi;023223
+edimli;023224
+edimsel;023225
+edimselci;023226
+edimselcilik;023227
+edimsellik;023228
+edimsiz;023229
+edindirme;023230
+edindirmek;023231
+edinebilme;023232
+edinebilmek;023233
+edinilebilme;023234
+edinilebilmek;023235
+edinilme;023236
+edinilmek;023237
+edinim;023238
+ediniverme;023239
+edinivermek;023240
+edinme;023241
+edinmek;023242
+edinti;023243
+edinç;023244
+edip;023245
+edirne;023246
+edirnekâri;023247
+edirneli;023248
+edirnelilik;023249
+edisyon;023250
+editör;023251
+editörlük;023252
+ediverme;023253
+edivermek;023254

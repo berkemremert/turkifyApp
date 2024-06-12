@@ -1,0 +1,64 @@
+ön;088983
+ön ad;088984
+ön alım;088985
+ön alım hakkı;088986
+ön avurt;088987
+ön avurt ünsüzü;088988
+ön ayak;088989
+ön belirti;088990
+ön bilgi;088991
+ön buharlaşma;088992
+ön büro;088993
+ön damak;088994
+ön damak ünsüzü;088995
+ön denetim;088996
+ön deyi;088997
+ön deyiş;088998
+ön doğru;088999
+ön ek;089000
+ön eleme;089001
+ön gösterim;089002
+ön göğüs;089003
+ön gün;089004
+ön hekim;089005
+ön hekimlik;089006
+ön izleme;089007
+ön içki;089008
+ön kabul;089009
+ön kayıt;089010
+ön kesinti;089011
+ön kol;089012
+ön kol kemiği;089013
+ön koşul;089014
+ön kuluçka;089015
+ön lisans;089016
+ön oda;089017
+ön oluş;089018
+ön proje;089019
+ön rapor;089020
+ön ses;089021
+ön ses düşmesi;089022
+ön ses türemesi;089023
+ön sevişme;089024
+ön seçici;089025
+ön seçim;089026
+ön soruşturma;089027
+ön söz;089028
+ön sözleşme;089029
+ön tasar;089030
+ön tasım;089031
+ön teker;089032
+ön uyum;089033
+ön vurgu;089034
+ön yargı;089035
+ön yargılı;089036
+ön yargılılık;089037
+ön yargısız;089038
+ön yargısızlık;089039
+ön yaylak;089040
+ön yüzbaşı;089041
+ön çalışma;089042
+ön ödeme;089043
+ön ödemeli;089044
+ön ödemesiz;089045
+ön şart;089046

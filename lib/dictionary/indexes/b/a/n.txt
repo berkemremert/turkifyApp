@@ -1,0 +1,100 @@
+ban;008676
+ban ağacı;008677
+ban otu;008678
+ban yağı;008679
+bana;008680
+bana bak!;008681
+bana da ... demesinler;008682
+bana dokunmayan yılan bin yaşasın;008683
+bana mısın dememek;008684
+banabilme;008685
+banabilmek;008686
+banak;008687
+banal;008688
+banallik;008689
+banaz;008690
+banda almak;008691
+bandaj;008692
+bandajlama;008693
+bandajlamak;008694
+bandajlanma;008695
+bandajlanmak;008696
+bandajlatma;008697
+bandajlatmak;008698
+bandana;008699
+bando;008700
+bandocu;008701
+bandoculuk;008702
+bandrol;008703
+bandrollü;008704
+bandrolsüz;008705
+bandıra;008706
+bandırabilme;008707
+bandırabilmek;008708
+bandıralı;008709
+bandırma;008710
+bandırma;008711
+bandırmak;008712
+bangladeşli;008713
+bangır bangır;008714
+bangır bangır bağırmak;008715
+bangırdama;008716
+bangırdamak;008717
+bani;008718
+banilik;008719
+banjo;008720
+bank;008721
+banka;008722
+banka cüzdanı;008723
+banka defteri;008724
+banka gibi;008725
+banka kartı;008726
+bankacı;008727
+bankacılık;008728
+bankadan çekmek (veya almak);008729
+bankamatik;008730
+bankaya yatırmak;008731
+banker;008732
+bankerlik;008733
+bankerzede;008734
+bankerzedelik;008735
+banket;008736
+bankiz;008737
+banknot;008738
+banko;008739
+banko at;008740
+banko geçmek;008741
+banko sayı;008742
+banlama;008743
+banlamak;008744
+banlatma;008745
+banlatmak;008746
+banlattırma;008747
+banlattırmak;008748
+banliyö;008749
+banliyö treni;008750
+banma;008751
+banmak;008752
+bant;008753
+bant doldurmak;008754
+bant zımpara;008755
+bant çözmek;008756
+bantlama;008757
+bantlamak;008758
+bantlayabilme;008759
+bantlayabilmek;008760
+bantlayıcı;008761
+banttan vermek;008762
+banyo;008763
+banyo bataryası;008764
+banyo dolabı;008765
+banyo havlusu;008766
+banyo kabini;008767
+banyo kazanı;008768
+banyo küveti;008769
+banyo sabunu;008770
+banyo takımı;008771
+banyo yapmak;008772
+banyolu;008773
+banyosuz;008774
+banyosuzluk;008775

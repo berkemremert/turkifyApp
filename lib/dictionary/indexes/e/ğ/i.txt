@@ -1,0 +1,85 @@
+eğik;026096
+eğik biçme;026097
+eğik düzlem;026098
+eğik silindir;026099
+eğik yazı;026100
+eğik çizgi;026101
+eğiklik;026102
+eğil;026103
+eğilebilme;026104
+eğilebilmek;026105
+eğilen baş kesilmez;026106
+eğilim;026107
+eğilimli;026108
+eğilimlilik;026109
+eğilimsiz;026110
+eğilimsizlik;026111
+eğilip bükülmek;026112
+eğiliş;026113
+eğilme;026114
+eğilmek;026115
+eğim;026116
+eğimli;026117
+eğimlilik;026118
+eğimsiz;026119
+eğimsizlik;026120
+eğimölçer;026121
+eğin;026122
+eğinik;026123
+eğinme;026124
+eğinmek;026125
+eğinti;026126
+eğir;026127
+eğir kökü;026128
+eğir mumu;026129
+eğir otu;026130
+eğirdir;026131
+eğirme;026132
+eğirmek;026133
+eğirmen;026134
+eğirtme;026135
+eğirtmek;026136
+eğitebilme;026137
+eğitebilmek;026138
+eğitici;026139
+eğitici etkinlik;026140
+eğitici film;026141
+eğitici oyun;026142
+eğiticilik;026143
+eğitilebilme;026144
+eğitilebilmek;026145
+eğitiliş;026146
+eğitilme;026147
+eğitilmek;026148
+eğitim;026149
+eğitim alanı;026150
+eğitim almak;026151
+eğitim bilimci;026152
+eğitim bilimi;026153
+eğitim bilimsel;026154
+eğitim dönemi;026155
+eğitim enstitüsü;026156
+eğitim fakültesi;026157
+eğitim kurumu;026158
+eğitim programı;026159
+eğitim vermek;026160
+eğitimci;026161
+eğitimcilik;026162
+eğitimli;026163
+eğitimlilik;026164
+eğitimsel;026165
+eğitimsiz;026166
+eğitimsizlik;026167
+eğitiş;026168
+eğitme;026169
+eğitmek;026170
+eğitmen;026171
+eğitmenlik;026172
+eğitsel;026173
+eğitsel etkinlik;026174
+eğitsel film;026175
+eğitsel kol;026176
+eğitsel oyun;026177
+eğitsellik;026178
+eğiç;026179
+eğiş;026180

@@ -1,0 +1,5 @@
+ivme;038647
+ivme kazanmak;038648
+ivmek;038649
+ivmeyazar;038650
+ivmeölçer;038651

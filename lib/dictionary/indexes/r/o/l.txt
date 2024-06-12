@@ -1,0 +1,12 @@
+rol;063616
+rol almak;063617
+rol iflası;063618
+rol kesmek;063619
+rol oynamak;063620
+rol yapmak;063621
+rol çalmak;063622
+rol çatışması;063623
+rolcü;063624
+rolcülük;063625
+rolü olmak;063626
+rolüne çıkmak;063627

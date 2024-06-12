@@ -1,0 +1,4 @@
+gütaperka;032000
+gütme;032001
+gütmek;032002
+güttüğüm domuzu bana öğretme;032003

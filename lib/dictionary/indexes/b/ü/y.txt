@@ -1,0 +1,121 @@
+büyü;015126
+büyü bozmak;015127
+büyü bozulmak;015128
+büyü yapmak;015129
+büyücek;015130
+büyücü;015131
+büyücülük;015132
+büyük;015133
+büyük (söz) söylemek;015134
+büyük abdest;015135
+büyük abdesti gelmek;015136
+büyük aile;015137
+büyük amiral;015138
+büyük balık küçük balığı yutar;015139
+büyük başın derdi büyük olur;015140
+büyük boy;015141
+büyük dalga;015142
+büyük defter;015143
+büyük gelmek;015144
+büyük görmek (veya bilmek veya tutmak);015145
+büyük hanım;015146
+büyük harf;015147
+büyük kalori;015148
+büyük kan dolaşımı;015149
+büyük laf etmek;015150
+büyük lokma ye büyük söz söyleme;015151
+büyük mağaza;015152
+büyük mevlit ayı;015153
+büyük orta;015154
+büyük oynamak;015155
+büyük para;015156
+büyük sesli uyumu;015157
+büyük sözüme tövbe!;015158
+büyük tansiyon;015159
+büyük terim;015160
+büyük tövbe ayı;015161
+büyük yemin etmek;015162
+büyük çember;015163
+büyük önerme;015164
+büyük ünlü uyumu;015165
+büyükana;015166
+büyükanne;015167
+büyükannelik;015168
+büyükayı;015169
+büyükbaba;015170
+büyükbabalık;015171
+büyükbaş;015172
+büyükelçi;015173
+büyükelçilik;015174
+büyükle büyük, küçükle küçük olmak;015175
+büyüklenebilme;015176
+büyüklenebilmek;015177
+büyükleniş;015178
+büyüklenme;015179
+büyüklenmek;015180
+büyüklerin ellerinden, küçüklerin gözlerinden öpmek;015181
+büyüklü küçüklü;015182
+büyüklük;015183
+büyüklük göstermek;015184
+büyüklük hastalığı;015185
+büyüklük satmak;015186
+büyüklük sende kalsın;015187
+büyüklük taslamak;015188
+büyükorhan;015189
+büyükpeder;015190
+büyükseme;015191
+büyüksemek;015192
+büyüksü;015193
+büyükten büyüğe;015194
+büyükçe;015195
+büyükçekmece;015196
+büyükşehir;015197
+büyüleme;015198
+büyülemek;015199
+büyülenebilme;015200
+büyülenebilmek;015201
+büyüleniş;015202
+büyülenme;015203
+büyülenmek;015204
+büyüleyebilme;015205
+büyüleyebilmek;015206
+büyüleyiş;015207
+büyültebilme;015208
+büyültebilmek;015209
+büyülteç;015210
+büyültme;015211
+büyültmek;015212
+büyülü;015213
+büyülülük;015214
+büyüme;015215
+büyüme hızı;015216
+büyümek;015217
+büyümseme;015218
+büyümsemek;015219
+büyümüş de küçülmüş;015220
+büyürek;015221
+büyüsel;015222
+büyüsüne kapılmak (veya tutulmak);015223
+büyüsüz;015224
+büyüsüzlük;015225
+büyütebilme;015226
+büyütebilmek;015227
+büyüteç;015228
+büyütken;015229
+büyütken doku;015230
+büyütme;015231
+büyütmek;015232
+büyüttürme;015233
+büyüttürmek;015234
+büyütülebilme;015235
+büyütülebilmek;015236
+büyütülme;015237
+büyütülmek;015238
+büyütülüş;015239
+büyütürlük;015240
+büyütüş;015241
+büyüyebilme;015242
+büyüyebilmek;015243
+büyüyüverme;015244
+büyüyüvermek;015245
+büyüyüş;015246

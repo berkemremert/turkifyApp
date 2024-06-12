@@ -1,0 +1,80 @@
+... -e kuvvet;000005
+... azmanı;000006
+... bir hâl almak (hâle girmek);000007
+... canlısı (olmak);000008
+... damgasını vurmak;000009
+... delisi (olmak);000010
+... demeye getirmek;000011
+... demeye kalmamak;000012
+... den kalır yeri yok;000013
+... durumuna düşmek;000014
+... durumunda olmak (veya bulunmak);000015
+... duygusu uyandırmak;000016
+... düşkünü (olmak);000017
+... elinden çıkmak;000018
+... fırın ekmek yemesi lazım;000019
+... gibi yapmak;000020
+... gözüyle bakmak;000021
+... hastası (olmak);000022
+... hâline gelmek;000023
+... ile beraber;000024
+... kim ... kim;000025
+... kisvesi altında;000026
+... lüksü olmamak;000027
+... meraklısı (olmak);000028
+... nazarıyla bakmak;000029
+... nere ... nere;000030
+... nerede ... orada;000031
+... olsun ... olsun;000032
+... sevdasına düşmek;000033
+... vaziyeti takınmak;000034
+... yaşını sürmek;000035
+... ye kalsa (veya kalırsa);000036
+... yoluna;000037
+... ziyafeti çekmek;000038
+... şerefine;000039
+...-e gelince;000040
+...-in karesi;000041
+...-inde değil;000042
+...-meye görsün (veya gör);000043
+...-nın başında gelmek (veya yer almak);000044
+... -e kuvvet;000005
+... azmanı;000006
+... bir hâl almak (hâle girmek);000007
+... canlısı (olmak);000008
+... damgasını vurmak;000009
+... delisi (olmak);000010
+... demeye getirmek;000011
+... demeye kalmamak;000012
+... den kalır yeri yok;000013
+... durumuna düşmek;000014
+... durumunda olmak (veya bulunmak);000015
+... duygusu uyandırmak;000016
+... düşkünü (olmak);000017
+... elinden çıkmak;000018
+... fırın ekmek yemesi lazım;000019
+... gibi yapmak;000020
+... gözüyle bakmak;000021
+... hastası (olmak);000022
+... hâline gelmek;000023
+... ile beraber;000024
+... kim ... kim;000025
+... kisvesi altında;000026
+... lüksü olmamak;000027
+... meraklısı (olmak);000028
+... nazarıyla bakmak;000029
+... nere ... nere;000030
+... nerede ... orada;000031
+... olsun ... olsun;000032
+... sevdasına düşmek;000033
+... vaziyeti takınmak;000034
+... yaşını sürmek;000035
+... ye kalsa (veya kalırsa);000036
+... yoluna;000037
+... ziyafeti çekmek;000038
+... şerefine;000039
+...-e gelince;000040
+...-in karesi;000041
+...-inde değil;000042
+...-meye görsün (veya gör);000043
+...-nın başında gelmek (veya yer almak);000044

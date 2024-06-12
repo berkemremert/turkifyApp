@@ -1,0 +1,17 @@
+atol;005644
+atom;005645
+atom ağırlığı;005646
+atom bombası;005647
+atom enerjisi;005648
+atom karınca;005649
+atom numarası;005650
+atom reaktörü;005651
+atom santrali;005652
+atom sayısı;005653
+atom çağı;005654
+atom çekirdeği;005655
+atomal;005656
+atomcu;005657
+atomculuk;005658
+atomik;005659
+atonal;005660

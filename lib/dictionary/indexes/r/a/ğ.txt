@@ -1,0 +1,7 @@
+rağbet;063111
+rağbet etmek (veya göstermek);063112
+rağbet görmek (veya kazanmak);063113
+rağbetli;063114
+rağbetsiz;063115
+rağbetsizlik;063116
+rağmen;063117

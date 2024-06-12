@@ -1,0 +1,3 @@
+pagan;059900
+paganizm;059901
+pagoda;059902

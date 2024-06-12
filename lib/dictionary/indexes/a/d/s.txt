@@ -1,0 +1,5 @@
+adsal;000763
+adsız;000764
+adsız parmak;000765
+adsız sansız;000766
+adsızlık;000767

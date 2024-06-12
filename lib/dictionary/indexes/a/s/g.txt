@@ -1,0 +1,4 @@
+asgari;005087
+asgari müşterek;005088
+asgari tutar;005089
+asgari ücret;005090

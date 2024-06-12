@@ -1,0 +1,7 @@
+ruz;063812
+ruziklenme;063813
+ruziklenmek;063814
+ruzname;063815
+ruzname tutmak;063816
+ruznamçe;063817
+ruzuşeb;063818

@@ -1,0 +1,4 @@
+isnaden;038089
+isnat;038090
+isnat etmek;038091
+isnat grubu;038092

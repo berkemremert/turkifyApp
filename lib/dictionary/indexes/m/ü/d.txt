@@ -1,0 +1,44 @@
+müdafaa;055868
+müdafaa etmek;055869
+müdafaaname;055870
+müdafi;055871
+müdahale;055872
+müdahale etmek;055873
+müdahil;055874
+müdahillik;055875
+müdana;055876
+müdana etmemek;055877
+müdara;055878
+müdara etmek;055879
+müdavi;055880
+müdavim;055881
+müdavim olmak;055882
+müdavimlik;055883
+müddea;055884
+müddei;055885
+müddeialeyh;055886
+müddeiumumi;055887
+müddeiumumilik;055888
+müddet;055889
+müddetli;055890
+müddetsiz;055891
+müdebbir;055892
+müdekkik;055893
+müdellel;055894
+müderris;055895
+müderrislik;055896
+müdevven;055897
+müdevvenat;055898
+müdevver;055899
+müdire;055900
+müdrik;055901
+müdrike;055902
+müdriklik;055903
+müdrir;055904
+müdür;055905
+müdür muavini;055906
+müdür yardımcılığı;055907
+müdür yardımcısı;055908
+müdüriyet;055909
+müdürlük;055910
+müdürlük etmek;055911

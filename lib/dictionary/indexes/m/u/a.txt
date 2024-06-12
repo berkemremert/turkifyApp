@@ -1,0 +1,76 @@
+muaccel;055109
+muacciz;055110
+muaddel;055111
+muadele;055112
+muadelet;055113
+muadil;055114
+muadillik;055115
+muaf;055116
+muaf tutmak;055117
+muafiyet;055118
+muafiyet sınavı;055119
+muafiyet tanımak;055120
+muaflık;055121
+muahede;055122
+muahedename;055123
+muaheze;055124
+muaheze etmek;055125
+muahezename;055126
+muahhar;055127
+muahharen;055128
+muakkip;055129
+mualla;055130
+muallak;055131
+muallakta olmak (veya kalmak);055132
+muallel;055133
+muallim;055134
+muallime;055135
+muallimlik;055136
+muamelat;055137
+muamele;055138
+muamele etmek;055139
+muamele görmek;055140
+muamma;055141
+muamma asmak;055142
+muammalı;055143
+muammalık;055144
+muammer;055145
+muammer olmak;055146
+muannit;055147
+muannitlik;055148
+muaraza;055149
+muare;055150
+muarefe;055151
+muarız;055152
+muarızlık;055153
+muasır;055154
+muasırlaşma;055155
+muasırlaşmak;055156
+muasırlaştırma;055157
+muasırlaştırmak;055158
+muasırlık;055159
+muattal;055160
+muattar;055161
+muavenet;055162
+muavenet etmek;055163
+muavin;055164
+muavinlik;055165
+muayede;055166
+muayene;055167
+muayene etmek;055168
+muayene olmak;055169
+muayeneci;055170
+muayenehane;055171
+muayyen;055172
+muayyeniyet;055173
+muayyenlik;055174
+muazzam;055175
+muazzamlık;055176
+muazzep;055177
+muazzep etmek;055178
+muazzep olmak;055179
+muazzez;055180
+muaşaka;055181
+muaşakada olmak;055182
+muaşeret;055183
+muaşeret adabı;055184

@@ -1,0 +1,13 @@
+soda;068002
+sodalı;068003
+sodyum;068004
+sodyum bikarbonat;068005
+sodyum florit;068006
+sodyum fosfat;068007
+sodyum hidroksit;068008
+sodyum hiposülfit;068009
+sodyum karbonat;068010
+sodyum klorür;068011
+sodyum nitrat;068012
+sodyum sülfat;068013
+sodyumlu;068014

@@ -1,0 +1,36 @@
+söylem;069512
+söyleme;069513
+söylemediğini bırakmamak;069514
+söylemek;069515
+söylemesi ayıp;069516
+söylemseme;069517
+söylemsemek;069518
+söylence;069519
+söylenebilme;069520
+söylenebilmek;069521
+söylenilme;069522
+söylenilmek;069523
+söyleniş;069524
+söylenme;069525
+söylenmek;069526
+söylenti;069527
+söyletebilme;069528
+söyletebilmek;069529
+söyletme;069530
+söyletmek;069531
+söylettirme;069532
+söylettirmek;069533
+söylev;069534
+söylev vermek;069535
+söylevci;069536
+söylevcilik;069537
+söyleyebilme;069538
+söyleyebilmek;069539
+söyleyeceği olmak;069540
+söyleyiverme;069541
+söyleyivermek;069542
+söyleyiş;069543
+söyleşi;069544
+söyleşici;069545
+söyleşme;069546
+söyleşmek;069547

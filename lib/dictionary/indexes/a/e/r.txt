@@ -1,0 +1,5 @@
+aerobik;000828
+aerobik solunum;000829
+aerodinamik;000830
+aeroloji;000831
+aerolojik;000832

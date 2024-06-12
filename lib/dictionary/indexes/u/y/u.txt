@@ -1,0 +1,81 @@
+uyuklama;077673
+uyuklamak;077674
+uyuklayış;077675
+uyulma;077676
+uyulmak;077677
+uyum;077678
+uyuma;077679
+uyumak;077680
+uyumlanma;077681
+uyumlanmak;077682
+uyumlu;077683
+uyumluluk;077684
+uyumsal;077685
+uyumsallık;077686
+uyumsuz;077687
+uyumsuzluk;077688
+uyunma;077689
+uyunmak;077690
+uyuntu;077691
+uyur;077692
+uyur göz;077693
+uyur uyanık;077694
+uyurgezer;077695
+uyurgezerlik;077696
+uyutabilme;077697
+uyutabilmek;077698
+uyutma;077699
+uyutmak;077700
+uyutulabilme;077701
+uyutulabilmek;077702
+uyutulma;077703
+uyutulmak;077704
+uyutuluş;077705
+uyuverme;077706
+uyuvermek;077707
+uyuyabilme;077708
+uyuyabilmek;077709
+uyuyakalma;077710
+uyuyakalmak;077711
+uyuyan yılanın kuyruğuna basmak;077712
+uyuyuverme;077713
+uyuyuvermek;077714
+uyuyuş;077715
+uyuz;077716
+uyuz böcekleri;077717
+uyuz böceği;077718
+uyuz etmek;077719
+uyuz ilacı;077720
+uyuz merhemi;077721
+uyuz olmak;077722
+uyuz otu;077723
+uyuz sineği;077724
+uyuzlaşma;077725
+uyuzlaşmak;077726
+uyuzlu;077727
+uyuzluk;077728
+uyuşabilme;077729
+uyuşabilmek;077730
+uyuşkan;077731
+uyuşma;077732
+uyuşma;077733
+uyuşmak;077734
+uyuşmak;077735
+uyuşmazlık;077736
+uyuşmazlık mahkemesi;077737
+uyuşturabilme;077738
+uyuşturabilmek;077739
+uyuşturan balığı;077740
+uyuşturma;077741
+uyuşturmak;077742
+uyuşturmak;077743
+uyuşturucu;077744
+uyuşturucu madde;077745
+uyuşturuculuk;077746
+uyuşturulma;077747
+uyuşturulmak;077748
+uyuşturulmak;077749
+uyuşuk;077750
+uyuşukluk;077751
+uyuşum;077752
+uyuşurluk;077753

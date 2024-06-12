@@ -1,0 +1,184 @@
+çal;085255
+çal;085256
+çalabilme;085257
+çalabilmek;085258
+çalacak;085259
+çalak;085260
+çalakalem;085261
+çalakamçı;085262
+çalakaşık;085263
+çalakürek;085264
+çalakılıç;085265
+çalap;085266
+çalapaça;085267
+çalar;085268
+çalar saat;085269
+çalarma;085270
+çalarmak;085271
+çaldırabilme;085272
+çaldırabilmek;085273
+çaldıran;085274
+çaldırma;085275
+çaldırmak;085276
+çaldırılma;085277
+çaldırılmak;085278
+çaldırış;085279
+çalgı;085280
+çalgı aleti;085281
+çalgı orağı;085282
+çalgı çalmak;085283
+çalgı çağanak;085284
+çalgıcı;085285
+çalgıcı böcek;085286
+çalgıcı otu;085287
+çalgıcılık;085288
+çalgıhane;085289
+çalgılı;085290
+çalgılı çağanaklı;085291
+çalgın;085292
+çalgısal;085293
+çalgısız;085294
+çalgıç;085295
+çalkak;085296
+çalkalama;085297
+çalkalamak;085298
+çalkalanabilme;085299
+çalkalanabilmek;085300
+çalkalanma;085301
+çalkalanmak;085302
+çalkalanış;085303
+çalkalatma;085304
+çalkalatmak;085305
+çalkalatış;085306
+çalkalayabilme;085307
+çalkalayabilmek;085308
+çalkalayış;085309
+çalkama;085310
+çalkamak;085311
+çalkanabilme;085312
+çalkanabilmek;085313
+çalkanma;085314
+çalkanmak;085315
+çalkantı;085316
+çalkantı sacı;085317
+çalkantılı;085318
+çalkantısız;085319
+çalkanış;085320
+çalkar;085321
+çalkatma;085322
+çalkatmak;085323
+çalkayış;085324
+çalkağı;085325
+çalkı;085326
+çalma;085327
+çalma elin kapısını, çalarlar kapını;085328
+çalmacı;085329
+çalmacılık;085330
+çalmadan oynamak;085331
+çalmak;085332
+çalmaç;085333
+çalpara;085334
+çaltı;085335
+çaltılık;085336
+çalyaka;085337
+çalyaka etmek;085338
+çalçene;085339
+çalçenelik;085340
+çalı;085341
+çalı bülbülü;085342
+çalı dikeni;085343
+çalı fasulyesi;085344
+çalı gibi;085345
+çalı horozu;085346
+çalı kakıcı;085347
+çalı kuşu;085348
+çalı kuşugiller;085349
+çalı süpürgesi;085350
+çalı çırpı;085351
+çalık;085352
+çalık kavak;085353
+çalılandırma;085354
+çalılandırmak;085355
+çalılı;085356
+çalılık;085357
+çalım;085358
+çalım atmak (veya yapmak);085359
+çalım satmak;085360
+çalım yemek;085361
+çalımcı;085362
+çalımlama;085363
+çalımlamak;085364
+çalımlanma;085365
+çalımlanmak;085366
+çalımlanış;085367
+çalımlayabilme;085368
+çalımlayabilmek;085369
+çalımlayış;085370
+çalımlı;085371
+çalımlı çalımlı;085372
+çalımlık;085373
+çalımlılık;085374
+çalımsız;085375
+çalımsızlık;085376
+çalımına gelmek (veya getirmek);085377
+çalımından geçilmemek;085378
+çalınabilme;085379
+çalınabilmek;085380
+çalınma;085381
+çalınmak;085382
+çalıntı;085383
+çalınıverme;085384
+çalınıvermek;085385
+çalınış;085386
+çalıp çırpmak;085387
+çalısız;085388
+çalıverme;085389
+çalıvermek;085390
+çalış;085391
+çalışabilme;085392
+çalışabilmek;085393
+çalışan;085394
+çalışkan;085395
+çalışkanlık;085396
+çalışma;085397
+çalışma barışı;085398
+çalışma belgesi;085399
+çalışma dolabı;085400
+çalışma gezisi;085401
+çalışma günü;085402
+çalışma hayatı;085403
+çalışma izni;085404
+çalışma kampı;085405
+çalışma karnesi;085406
+çalışma odası;085407
+çalışma ruhsatı;085408
+çalışma saati;085409
+çalışma yöntemi;085410
+çalışmacı;085411
+çalışmacılık;085412
+çalışmak;085413
+çalıştay;085414
+çalıştırabilme;085415
+çalıştırabilmek;085416
+çalıştıran;085417
+çalıştırma;085418
+çalıştırmak;085419
+çalıştırtma;085420
+çalıştırtmak;085421
+çalıştırıcı;085422
+çalıştırıcılı;085423
+çalıştırıcılık;085424
+çalıştırıcısız;085425
+çalıştırıcısızlık;085426
+çalıştırılabilme;085427
+çalıştırılabilmek;085428
+çalıştırılma;085429
+çalıştırılmak;085430
+çalıştırılış;085431
+çalıştırıverme;085432
+çalıştırıvermek;085433
+çalıştırış;085434
+çalışılma;085435
+çalışılmak;085436
+çalışım;085437
+çalışıp çabalamak;085438

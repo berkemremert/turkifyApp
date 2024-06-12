@@ -1,0 +1,53 @@
+döke saça;022053
+dökebilme;022054
+dökebilmek;022055
+dökme;022056
+dökme demir;022057
+dökme gaz;022058
+dökme su ile değirmen dönmez;022059
+dökme yük;022060
+dökme yük gemisi;022061
+dökme çimento;022062
+dökmeci;022063
+dökmecilik;022064
+dökmek;022065
+döktürebilme;022066
+döktürebilmek;022067
+döktürme;022068
+döktürmek;022069
+döktürtme;022070
+döktürtmek;022071
+döktürüş;022072
+dökük;022073
+döküklük;022074
+dökülebilme;022075
+dökülebilmek;022076
+dökülgen;022077
+dökülme;022078
+dökülmek;022079
+dökülü;022080
+dökülüp saçılmak;022081
+dökülüverme;022082
+dökülüvermek;022083
+dökülüş;022084
+döküm;022085
+döküm (veya dökümünü) almak;022086
+döküm çıkarmak;022087
+dökümcü;022088
+dökümcülük;022089
+dökümevi;022090
+dökümhane;022091
+dökümleme;022092
+dökümlemek;022093
+dökümlü;022094
+dökünme;022095
+dökünmek;022096
+döküntü;022097
+döküntülü;022098
+döküntülük;022099
+döküntüsüz;022100
+dökünüş;022101
+döküp saçmak;022102
+döküverme;022103
+döküvermek;022104
+döküş;022105

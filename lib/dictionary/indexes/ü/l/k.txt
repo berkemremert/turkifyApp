@@ -1,0 +1,18 @@
+ülke;089906
+ülke açmak;089907
+ülkece;089908
+ülkeler arası;089909
+ülkeler coğrafyası;089910
+ülker;089911
+ülkesel;089912
+ülkesellik;089913
+ülkü;089914
+ülkücü;089915
+ülkücülük;089916
+ülküdaş;089917
+ülküdaşlık;089918
+ülküleştirilme;089919
+ülküleştirilmek;089920
+ülküleştirme;089921
+ülküleştirmek;089922
+ülküsel;089923

@@ -1,0 +1,78 @@
+güve;032004
+güve yeniği;032005
+güvela;032006
+güvelenme;032007
+güvelenmek;032008
+güven;032009
+güven duymak (veya beslemek);032010
+güven kazanmak;032011
+güven mektubu;032012
+güven oylaması;032013
+güven vermek;032014
+güven yazısı;032015
+güven ışığı;032016
+güvence;032017
+güvence akçesi;032018
+güvence altına almak;032019
+güvence vermek;032020
+güvenceci;032021
+güvencecilik;032022
+güvenceli;032023
+güvencesiz;032024
+güvencesizlik;032025
+güvenceye bağlamak;032026
+güvendirme;032027
+güvendirmek;032028
+güvendiği dağlara kar yağmak (veya güvendiği dal elinde kalmak);032029
+güvenebilme;032030
+güvenebilmek;032031
+güveni olmak;032032
+güveni sarsılmak;032033
+güvenilebilme;032034
+güvenilebilmek;032035
+güvenilir;032036
+güvenilirlik;032037
+güvenilme;032038
+güvenilmek;032039
+güvenirlik;032040
+güveniş;032041
+güvenli;032042
+güvenlik;032043
+güvenlik borusu;032044
+güvenlik engeli;032045
+güvenlik görevlisi;032046
+güvenlik vanası;032047
+güvenlik şeridi;032048
+güvenlilik;032049
+güvenme;032050
+güvenme dostuna, saman doldurur postuna;032051
+güvenme varlığa, düşersin darlığa;032052
+güvenmek;032053
+güvenmelik;032054
+güvenmelik vermek;032055
+güvenoyu;032056
+güvenoyu almak;032057
+güvenoyu vermek;032058
+güvensiz;032059
+güvensizce;032060
+güvensizlik;032061
+güvensizlik duymak;032062
+güvensizlik önergesi;032063
+güvenç;032064
+güvençli;032065
+güvençsiz;032066
+güvercin;032067
+güvercinboynu;032068
+güvercingiller;032069
+güvercingöğsü;032070
+güvercinler;032071
+güvercinlik;032072
+güverte;032073
+güveyfeneri;032074
+güveyi;032075
+güveyi girmek;032076
+güveyi olmadık ama kapı dışında bekledik;032077
+güveyi yemeği;032078
+güveyilik;032079
+güvez;032080
+güveç;032081

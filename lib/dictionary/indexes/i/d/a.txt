@@ -1,0 +1,33 @@
+idadi;036040
+idam;036041
+idam cezası;036042
+idam etmek;036043
+idam sehpası;036044
+idame;036045
+idame ettirmek;036046
+idamlık;036047
+idare;036048
+idare amiri;036049
+idare etmek;036050
+idare hukuku;036051
+idare kandili;036052
+idare lambası;036053
+idare mahkemesi;036054
+idare meclisi;036055
+idarece;036056
+idareci;036057
+idarecilik;036058
+idarehane;036059
+idareimaslahat;036060
+idareimaslahat etmek;036061
+idareimaslahat politikası;036062
+idareimaslahatçı;036063
+idareimaslahatçılık;036064
+idareli;036065
+idarelilik;036066
+idaresini bilmek;036067
+idaresiz;036068
+idaresizlik;036069
+idareten;036070
+idari;036071
+idari bütçe;036072

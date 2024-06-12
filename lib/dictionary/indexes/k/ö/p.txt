@@ -1,0 +1,85 @@
+köpek;048671
+köpek balıkları;048672
+köpek balığı;048673
+köpek bile yal yediği kaba pislemez;048674
+köpek dişi;048675
+köpek ekmek veren kapıyı tanır;048676
+köpek gibi;048677
+köpek sahibini ısırmaz;048678
+köpek sarımsağı;048679
+köpek soyu;048680
+köpek soğanı;048681
+köpek suya düşmeyince yüzmeyi öğrenmez;048682
+köpek sürünmekle etek kesilmez;048683
+köpek yese kudurur;048684
+köpek üzümü;048685
+köpekayası;048686
+köpekgiller;048687
+köpekkuyruğu;048688
+köpekle yatan pire ile kalkar;048689
+köpekleme;048690
+köpeklemek;048691
+köpekleniş;048692
+köpeklenme;048693
+köpeklenmek;048694
+köpekleşiş;048695
+köpekleşme;048696
+köpekleşmek;048697
+köpekli;048698
+köpeklik;048699
+köpekmemesi;048700
+köpekoğlu;048701
+köpekoğluköpek;048702
+köpeksiz;048703
+köpeksiz köy bulmuş da çomaksız (veya değneksiz) geziyor;048704
+köpeksiz köye (veya sürüye) kurt iner (veya girer);048705
+köpeksiz köye (veya sürüye) kurt iner (veya girer);048706
+köpeksiz sürüye kurt girer;048707
+köpeğe atsan yemez;048708
+köpeğe gem vurma, kendini at sanır;048709
+köpeğe hoşt, kediye pişt dememek;048710
+köpeği bağlasan durmaz;048711
+köpeğin ağzına kemik atmak;048712
+köpoğlu;048713
+köpoğluköpek;048714
+köprü;048715
+köprü kurmak;048716
+köprü yol;048717
+köprü üstü;048718
+köprüaltı çocuğu;048719
+köprübaşı;048720
+köprübaşı;048721
+köprübaşını tutmak;048722
+köprücü;048723
+köprücük;048724
+köprücük kemiği;048725
+köprücülük;048726
+köprüden (veya köprüyü) geçinceye kadar ayıya dayı derler;048727
+köprüköy;048728
+köprüleme;048729
+köprüleme ameliyatı;048730
+köprüleniş;048731
+köprülenme;048732
+köprülenmek;048733
+köprüleri atmak;048734
+köprülü;048735
+köprünün (veya köprülerin) altından çok su (veya sular) aktı (veya geçti);048736
+köpük;048737
+köpük gibi;048738
+köpükleniş;048739
+köpüklenme;048740
+köpüklenmek;048741
+köpüklü;048742
+köpüksüz;048743
+köpüleme;048744
+köpülemek;048745
+köpürebilme;048746
+köpürebilmek;048747
+köpürgen;048748
+köpürgenlik;048749
+köpürme;048750
+köpürmek;048751
+köpürtme;048752
+köpürtmek;048753
+köpürtüş;048754
+köpürüş;048755

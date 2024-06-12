@@ -1,0 +1,11 @@
+uzman;077891
+uzman doktor;077892
+uzman hekim;077893
+uzman jandarma;077894
+uzman jandarmalık;077895
+uzman çavuş;077896
+uzman çavuşluk;077897
+uzmanlaşma;077898
+uzmanlaşmak;077899
+uzmanlık;077900
+uzmanlık belgesi;077901

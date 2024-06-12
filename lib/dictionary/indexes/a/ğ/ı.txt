@@ -1,0 +1,201 @@
+ağı;007525
+ağı ağacı;007526
+ağı gibi;007527
+ağı otu;007528
+ağı çiçeği;007529
+ağıl;007530
+ağıl;007531
+ağılama;007532
+ağılamak;007533
+ağılandırma;007534
+ağılandırmak;007535
+ağılanma;007536
+ağılanmak;007537
+ağılaşma;007538
+ağılaşmak;007539
+ağılda oğlak doğsa ovada otu biter;007540
+ağıllanma;007541
+ağıllanmak;007542
+ağılı;007543
+ağılı böcek;007544
+ağım;007545
+ağımlı;007546
+ağın;007547
+ağına düşürmek;007548
+ağınma;007549
+ağınmak;007550
+ağır;007551
+ağır aksak;007552
+ağır aksaklık;007553
+ağır araç;007554
+ağır ağır;007555
+ağır basar, yeğni kalkar;007556
+ağır basmak;007557
+ağır basmak;007558
+ağır ceza;007559
+ağır ceza mahkemesi;007560
+ağır durmak;007561
+ağır ezgi;007562
+ağır gelmek;007563
+ağır git ki yol alasın;007564
+ağır hapis cezası;007565
+ağır hasta;007566
+ağır hastalık;007567
+ağır hava;007568
+ağır hidrojen;007569
+ağır iş;007570
+ağır işitmek (veya duymak);007571
+ağır kayba uğramak;007572
+ağır kayıp;007573
+ağır kazan geç kaynar;007574
+ağır kaçmak;007575
+ağır kusur;007576
+ağır küre;007577
+ağır makineli;007578
+ağır ol!;007579
+ağır ol, batman gel;007580
+ağır otur ki bey (veya molla) desinler;007581
+ağır oturmak;007582
+ağır para cezası;007583
+ağır sanayi;007584
+ağır su;007585
+ağır söylemek;007586
+ağır söz;007587
+ağır sıklet;007588
+ağır taş yerinden oynamaz;007589
+ağır top;007590
+ağır uyku;007591
+ağır vasıta;007592
+ağır vasıta ehliyeti;007593
+ağır yara;007594
+ağır yara almak;007595
+ağır yağ;007596
+ağır yongayı yel kaldırmaz;007597
+ağır çekim;007598
+ağır çekmek;007599
+ağırayak;007600
+ağırbaşlı;007601
+ağırbaşlılık;007602
+ağırca;007603
+ağırcanlı;007604
+ağırcanlılık;007605
+ağırdan almak;007606
+ağırelli;007607
+ağırellilik;007608
+ağırkanlı;007609
+ağırkanlılık;007610
+ağırlama;007611
+ağırlamak;007612
+ağırlanabilme;007613
+ağırlanabilmek;007614
+ağırlanma;007615
+ağırlanmak;007616
+ağırlanış;007617
+ağırlatabilme;007618
+ağırlatabilmek;007619
+ağırlatma;007620
+ağırlatmak;007621
+ağırlayabilme;007622
+ağırlayabilmek;007623
+ağırlayış;007624
+ağırlaşabilme;007625
+ağırlaşabilmek;007626
+ağırlaşma;007627
+ağırlaşmak;007628
+ağırlaştırabilme;007629
+ağırlaştırabilmek;007630
+ağırlaştırma;007631
+ağırlaştırmak;007632
+ağırlaştırıcı neden;007633
+ağırlaştırıcı sebep;007634
+ağırlaştırılabilme;007635
+ağırlaştırılabilmek;007636
+ağırlaştırılma;007637
+ağırlaştırılmak;007638
+ağırlık;007639
+ağırlık basmak (veya çökmek);007640
+ağırlık merkezi;007641
+ağırlık olmak;007642
+ağırlık yitimi;007643
+ağırlıklı;007644
+ağırlıksız;007645
+ağırlığı olmak;007646
+ağırlığınca altın etmek (veya değmek);007647
+ağırlığını (ortaya) koymak;007648
+ağırsama;007649
+ağırsamak;007650
+ağırına gitmek;007651
+ağırşak;007652
+ağırşaklanma;007653
+ağırşaklanmak;007654
+ağıt;007655
+ağıt yakmak (veya düzmek veya tutturmak);007656
+ağıtlama;007657
+ağıtsal;007658
+ağıtçı;007659
+ağıtçılık;007660
+ağız;007661
+ağız;007662
+ağız (veya ağzını) açmak;007663
+ağız (veya ağzını) büzmek;007664
+ağız alışkanlığı;007665
+ağız aramak (veya yoklamak);007666
+ağız açtırmamak;007667
+ağız ağıza;007668
+ağız ağıza vermek (veya konuşmak);007669
+ağız bağı;007670
+ağız bağı yapmak;007671
+ağız birliği;007672
+ağız birliği etmek;007673
+ağız burun birbirine karışmak;007674
+ağız dalaşı;007675
+ağız değişikliği;007676
+ağız değiştirmek;007677
+ağız dil vermemek;007678
+ağız dolusu;007679
+ağız etmek;007680
+ağız eğmemek;007681
+ağız kalabalığı;007682
+ağız kalabalığına getirmek;007683
+ağız kavafı;007684
+ağız kavgası;007685
+ağız kokusu;007686
+ağız kullanmak;007687
+ağız kuşağı;007688
+ağız nişanı;007689
+ağız satmak;007690
+ağız tadı;007691
+ağız tadıyla;007692
+ağız tamburası çalmak;007693
+ağız tatsızlığı;007694
+ağız tüfeği;007695
+ağız tütünü;007696
+ağız yapmak;007697
+ağız yaymak;007698
+ağız yer, yüz utanır;007699
+ağız ünlüsü;007700
+ağız ünsüzü;007701
+ağız şakası;007702
+ağızcıl;007703
+ağızda dağılmak;007704
+ağızda sakız gibi çiğnemek;007705
+ağızdan;007706
+ağızdan ağıza;007707
+ağızdan ağıza dolaşmak (veya geçmek);007708
+ağızdan burun yakın, kardeşten karın yakın;007709
+ağızdan dolma;007710
+ağızdan kapma;007711
+ağızlama;007712
+ağızlamak;007713
+ağızlaşma;007714
+ağızlaşmak;007715
+ağızlı;007716
+ağızlık;007717
+ağızlıkçı;007718
+ağızlıkçılık;007719
+ağızotu;007720
+ağızsıl;007721
+ağızsıl ünlü;007722
+ağızsız;007723
+ağızsızlık;007724
+ağış;007725

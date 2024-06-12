@@ -1,0 +1,89 @@
+gar;028453
+garabet;028454
+garaip;028455
+garaj;028456
+garajcı;028457
+garajcılık;028458
+garami;028459
+garanti;028460
+garanti altına almak;028461
+garanti etmek;028462
+garanti vermek;028463
+garantileme;028464
+garantilemek;028465
+garantiletme;028466
+garantiletmek;028467
+garantileyebilme;028468
+garantileyebilmek;028469
+garantili;028470
+garantisiz;028471
+garantisizlik;028472
+garantör;028473
+garantörlük;028474
+garaz;028475
+garaz bağlamak;028476
+garazkâr;028477
+garazkârlık;028478
+garazlı;028479
+garazsız;028480
+garazsız ivazsız;028481
+garazsızca;028482
+garazsızlık;028483
+garazı olmak;028484
+garbi;028485
+gard;028486
+gardenparti;028487
+gardenya;028488
+gardiyan;028489
+gardiyanlık;028490
+gardıfren;028491
+gardını almak;028492
+gardırop;028493
+gardıropçu;028494
+gardıropçuluk;028495
+gargar;028496
+gargara;028497
+gargara yapmak;028498
+gargaraya getirmek;028499
+gariban;028500
+garibancık;028501
+garibanlık;028502
+garibe;028503
+garibe bir selam bin altın değer;028504
+garibine gitmek;028505
+garip;028506
+garip bulmak;028507
+garip kuşun yuvasını allah yapar;028508
+garipleşme;028509
+garipleşmek;028510
+gariplik;028511
+gariplik basmak;028512
+garipseme;028513
+garipsemek;028514
+garipsenme;028515
+garipsenmek;028516
+gark;028517
+gark etmek;028518
+gark olmak;028519
+garnitür;028520
+garnitürlü;028521
+garnitürsüz;028522
+garnizon;028523
+garoz;028524
+garp;028525
+garp;028526
+garpkâri;028527
+garplı;028528
+garplılaşma;028529
+garplılaşmak;028530
+garplılaştırma;028531
+garplılaştırmak;028532
+garplılık;028533
+garpçı;028534
+garpçılık;028535
+garsiyat;028536
+garson;028537
+garsoniyer;028538
+garsonluk;028539
+garç gurç;028540
+garç gurç etmek;028541

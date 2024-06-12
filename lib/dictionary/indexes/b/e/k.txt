@@ -1,0 +1,81 @@
+bek;010499
+bek;010500
+bek;010501
+beka;010502
+beka bulmak;010503
+bekar;010504
+bekas;010505
+bekilli;010506
+bekiniş;010507
+bekinme;010508
+bekinmek;010509
+bekitme;010510
+bekitmek;010511
+bekle yârin köşesini!;010512
+bekleme;010513
+bekleme odası;010514
+bekleme salonu;010515
+bekleme süresi;010516
+bekleme yeri;010517
+beklemek;010518
+beklemeli;010519
+beklemeye almak;010520
+beklenebilme;010521
+beklenebilmek;010522
+beklenilme;010523
+beklenilmek;010524
+bekleniş;010525
+beklenme;010526
+beklenmedik;010527
+beklenmek;010528
+beklenmez;010529
+beklenmezlik;010530
+beklenmezlik fiili;010531
+beklenti;010532
+bekletebilme;010533
+bekletebilmek;010534
+bekletilebilme;010535
+bekletilebilmek;010536
+bekletiliş;010537
+bekletilme;010538
+bekletilmek;010539
+bekletiverme;010540
+bekletivermek;010541
+bekletiş;010542
+bekletme;010543
+bekletme süresi;010544
+bekletmek;010545
+bekleyebilme;010546
+bekleyebilmek;010547
+bekleyedurma;010548
+bekleyedurmak;010549
+bekleyekoyma;010550
+bekleyekoymak;010551
+bekleyiverme;010552
+bekleyivermek;010553
+bekleyiş;010554
+bekleşme;010555
+bekleşmek;010556
+bekri;010557
+bekrilik;010558
+bektaşi;010559
+bektaşi babası;010560
+bektaşi dedesi;010561
+bektaşi sırrı;010562
+bektaşi üzümü;010563
+bektaşikavuğu;010564
+bektaşilik;010565
+bekâr;010566
+bekâr gözü, kör gözü;010567
+bekâr kalmak (veya yaşamak);010568
+bekâr odası;010569
+bekâra karı boşaması kolaydır;010570
+bekâret;010571
+bekârhane;010572
+bekârlık;010573
+bekârlık maskaralık;010574
+bekârlık sultanlık;010575
+bekârın yakasını it yer, yakasını bit;010576
+bekçi;010577
+bekçi kalmak;010578
+bekçilik;010579

@@ -1,0 +1,54 @@
+uygar;077547
+uygarca;077548
+uygarlaşma;077549
+uygarlaşmak;077550
+uygarlaştırma;077551
+uygarlaştırmak;077552
+uygarlık;077553
+uygulama;077554
+uygulamak;077555
+uygulamalı;077556
+uygulamalı bilimler;077557
+uygulamalı dil bilimi;077558
+uygulamalı ruh bilimi;077559
+uygulamalı toplum bilimi;077560
+uygulanabilirlik;077561
+uygulanabilme;077562
+uygulanabilmek;077563
+uygulanma;077564
+uygulanmak;077565
+uygulanış;077566
+uygulatabilme;077567
+uygulatabilmek;077568
+uygulatma;077569
+uygulatmak;077570
+uygulattırma;077571
+uygulattırmak;077572
+uygulatılma;077573
+uygulatılmak;077574
+uygulatış;077575
+uygulayabilme;077576
+uygulayabilmek;077577
+uygulayıcı;077578
+uygulayıcılık;077579
+uygulayım;077580
+uygulayım bilimi;077581
+uygulayımcı;077582
+uygulayımcılık;077583
+uygulayış;077584
+uygun;077585
+uygun adım;077586
+uygun bulmak;077587
+uygun değer;077588
+uygun düşmek;077589
+uygun gelmek;077590
+uygun görmek;077591
+uygun katmanlaşma;077592
+uygun olmak;077593
+uygunluk;077594
+uygunsuz;077595
+uygunsuzca;077596
+uygunsuzluk;077597
+uygur;077598
+uygur harfleri;077599
+uygurca;077600

@@ -1,0 +1,15 @@
+asfalt;005072
+asfalt kayağı;005073
+asfaltit;005074
+asfaltlama;005075
+asfaltlamak;005076
+asfaltlanabilme;005077
+asfaltlanabilmek;005078
+asfaltlanma;005079
+asfaltlanmak;005080
+asfaltlatabilme;005081
+asfaltlatabilmek;005082
+asfaltlatma;005083
+asfaltlatmak;005084
+asfaltlayabilme;005085
+asfaltlayabilmek;005086

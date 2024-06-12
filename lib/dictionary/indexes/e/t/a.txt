@@ -1,0 +1,5 @@
+etajer;025462
+etalon;025463
+etamin;025464
+etanol;025465
+etap;025466

@@ -1,0 +1,9 @@
+köfte;048536
+köfte harcı;048537
+köfteci;048538
+köftecilik;048539
+köftehor;048540
+köftelik;048541
+köfter;048542
+köfterlik;048543
+köftün;048544

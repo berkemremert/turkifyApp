@@ -1,0 +1,6 @@
+tüze;076631
+tüzel;076632
+tüzel kişi;076633
+tüzel kişilik;076634
+tüzellik;076635
+tüzük;076636

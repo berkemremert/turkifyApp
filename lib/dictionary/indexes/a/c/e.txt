@@ -1,0 +1,58 @@
+ace;000299
+acele;000300
+acele etmek;000301
+acele ile menzil alınmaz;000302
+acele işe şeytan karışır;000303
+acele posta;000304
+acele yürüyen yolda kalır;000305
+aceleci;000306
+acelecilik;000307
+aceleleşme;000308
+aceleleşmek;000309
+aceleleştirme;000310
+aceleleştirmek;000311
+acelesi olmak;000312
+aceleten;000313
+aceleye gelmek;000314
+aceleye getirmek;000315
+acem;000316
+acem;000317
+acem halayı;000318
+acem işi;000319
+acem kılıcı;000320
+acem kılıcı gibi;000321
+acem lalesi;000322
+acem pilavı;000323
+acemaşiran;000324
+acemborusu;000325
+acembuselik;000326
+acemce;000327
+acemi;000328
+acemi ağası;000329
+acemi birliği;000330
+acemi er;000331
+acemi katır kapı önünde yük indirir;000332
+acemi nalbant gâvur eşeğinde öğrenir;000333
+acemi ocağı;000334
+acemi oğlanı;000335
+acemi çaylak;000336
+acemice;000337
+acemicesine;000338
+acemileşebilme;000339
+acemileşebilmek;000340
+acemileşiverme;000341
+acemileşivermek;000342
+acemileşme;000343
+acemileşmek;000344
+acemilik;000345
+acemilik etmek;000346
+acemilik çekmek;000347
+acemkürdi;000348
+acemleşme;000349
+acemleşmek;000350
+acemleştirme;000351
+acemleştirmek;000352
+acente;000353
+acentelik;000354
+acep;000355
+aceze;000356

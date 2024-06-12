@@ -1,0 +1,58 @@
+gök;030259
+gök ada;030260
+gök atlası;030261
+gök bilimci;030262
+gök bilimi;030263
+gök bilimsel;030264
+gök boylamı;030265
+gök cismi;030266
+gök delinmek;030267
+gök ekseni;030268
+gök eşleği;030269
+gök gözlü;030270
+gök gürlemesi;030271
+gök gürültüsü;030272
+gök kandil;030273
+gök kubbe;030274
+gök kumu;030275
+gök kutbu;030276
+gök küresi;030277
+gök kır;030278
+gök taşı;030279
+gök tırmalayıcı;030280
+gök yakut;030281
+gökdelen;030282
+gökdoğan;030283
+gökevi;030284
+gökgüvercin;030285
+gökkuzgun;030286
+gökkuzgungiller;030287
+gökkuzgunlar;030288
+gökkuzgunumsular;030289
+gökkuşağı;030290
+göklere uçmak;030291
+göklere çıkarmak;030292
+göklere çıkmak;030293
+gökmen;030294
+göksel;030295
+göksoğan;030296
+göksun;030297
+gökte ararken yerde bulmak;030298
+gökten ne yağdı da yer kabul etmedi;030299
+gökten zembille mi indi;030300
+göktürk;030301
+göktürk harfleri;030302
+göktürkçe;030303
+göktırmalayan;030304
+gökyolu;030305
+gökyüzü;030306
+gökyüzü mavisi;030307
+gökyüzünde düğün var deseler kadınlar merdiven kurmaya kalkar;030308
+gökçe;030309
+gökçe yazın;030310
+gökçeada;030311
+gökçebey;030312
+gökçek;030313
+gökçeklik;030314
+gökçül;030315
+gökşin;030316

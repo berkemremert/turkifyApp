@@ -1,0 +1,28 @@
+ay;005945
+ay;005946
+ay;005947
+ay ayakta çoban yatakta, ay yatakta çoban ayakta;005948
+ay aydın, hesap belli;005949
+ay balta;005950
+ay balığı;005951
+ay balığıgiller;005952
+ay başı;005953
+ay dönümü;005954
+ay gibi;005955
+ay gün takvimi;005956
+ay gün yılı;005957
+ay harmanlanmak;005958
+ay hâli;005959
+ay karanlığı;005960
+ay modülü;005961
+ay parçası;005962
+ay takvimi;005963
+ay tutulması;005964
+ay var yılı besler, yıl var ayı beslemez;005965
+ay yıldız;005966
+ay yılı;005967
+ay çekirdeği;005968
+ay çöreği;005969
+ay örümceği;005970
+ay ışığı;005971
+ay ışığında ceviz silkilmez;005972

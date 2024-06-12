@@ -1,0 +1,56 @@
+gala;028349
+galaksi;028350
+galalit;028351
+galat;028352
+galatıhis;028353
+galatımeşhur;028354
+gale;028355
+galebe;028356
+galebe çalmak;028357
+galenit;028358
+galeri;028359
+galerici;028360
+galericilik;028361
+galerya;028362
+galeta;028363
+galeta unu;028364
+galeyan;028365
+galeyan etmek;028366
+galeyana gelmek;028367
+galeyana getirmek;028368
+galeyanlı;028369
+gali;028370
+galiba;028371
+galibarda;028372
+galibiyet;028373
+galip;028374
+galip gelmek;028375
+galiz;028376
+galon;028377
+galop;028378
+galop yapmak;028379
+galoş;028380
+galoşlu;028381
+galoşsuz;028382
+galsame;028383
+galvaniz;028384
+galvanizci;028385
+galvanizcilik;028386
+galvanize;028387
+galvanizleme;028388
+galvanizlemek;028389
+galvanizlenme;028390
+galvanizlenmek;028391
+galvanizletme;028392
+galvanizletmek;028393
+galvanizli;028394
+galvanizm;028395
+galvanizsiz;028396
+galvano;028397
+galvanokoter;028398
+galvanometre;028399
+galvanoplasti;028400
+galvanoskop;028401
+galvanotip;028402
+galyot;028403
+galyum;028404

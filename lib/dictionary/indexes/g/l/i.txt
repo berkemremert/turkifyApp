@@ -1,0 +1,7 @@
+glikojen;029962
+glikol;029963
+glikoz;029964
+glikozit;029965
+glikozlu;029966
+glikozüri;029967
+gliserin;029968

@@ -1,0 +1,31 @@
+köy;048960
+köy ağası;048961
+köy ekmeği;048962
+köy ihtiyar heyeti;048963
+köy ihtiyar meclisi;048964
+köy imamı;048965
+köy koruculuğu;048966
+köy korucusu;048967
+köy meydanı;048968
+köy muhtarı;048969
+köy odası;048970
+köy oyunu;048971
+köy romanı;048972
+köy türküsü;048973
+köy yeri;048974
+köyceğiz;048975
+köycü;048976
+köycülük;048977
+köydeş;048978
+köygöçüren;048979
+köyleşme;048980
+köyleşmek;048981
+köyleştirme;048982
+köyleştirmek;048983
+köylü;048984
+köylü kentli;048985
+köylü kurnazlığı;048986
+köylü çorbası;048987
+köylük;048988
+köylük yer;048989
+köylülük;048990

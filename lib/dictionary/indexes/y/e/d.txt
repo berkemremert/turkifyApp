@@ -1,0 +1,73 @@
+yedek;081458
+yedek (veya yedekte) çekmek;081459
+yedek akçe;081460
+yedek asker;081461
+yedek besinler;081462
+yedek lastik;081463
+yedek oyuncu;081464
+yedek oyunculuk;081465
+yedek parça;081466
+yedek parçacı;081467
+yedek parçacılık;081468
+yedek subay;081469
+yedek subaylık;081470
+yedek teker;081471
+yedekleme;081472
+yedeklemek;081473
+yedekleşme;081474
+yedekleşmek;081475
+yedekli;081476
+yedeklik;081477
+yedekte kalmak;081478
+yedekçi;081479
+yedekçilik;081480
+yedeğe almak (veya takmak);081481
+yedi;081482
+yedi bela;081483
+yedi canlı;081484
+yedi cet;081485
+yedi düvel;081486
+yedi düvelle barışık;081487
+yedi göbek;081488
+yedi gömlek uzak;081489
+yedi iklim dört bucak;081490
+yedi kat el;081491
+yedi kat yerin dibine geçmek;081492
+yedi kubbeli hamam kurmak;081493
+yedi mahalle;081494
+yedialtmışbeşlik;081495
+yediden yetmişe;081496
+yediemin;081497
+yedigen;081498
+yedigir;081499
+yedikardeş;081500
+yedikleri içtikleri ayrı gitmemek;081501
+yedikızkardeş;081502
+yediler;081503
+yedili;081504
+yedilik;081505
+yedilme;081506
+yedilmek;081507
+yedinci;081508
+yedinci sanat;081509
+yedincilik;081510
+yedirebilme;081511
+yedirebilmek;081512
+yediriliş;081513
+yedirilme;081514
+yedirilmek;081515
+yedirip içirmek;081516
+yediriş;081517
+yedirme;081518
+yedirmek;081519
+yedirtme;081520
+yedirtmek;081521
+yedisu;081522
+yediveren;081523
+yediz;081524
+yediği naneye bak!;081525
+yediği önünde, yemediği ardında;081526
+yedişer;081527
+yedişerli;081528
+yedme;081529
+yedmek;081530

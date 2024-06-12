@@ -1,0 +1,61 @@
+etken;025562
+etken fiil;025563
+etken madde;025564
+etkenlik;025565
+etki;025566
+etki bırakmak;025567
+etki etmek;025568
+etkileme;025569
+etkilemek;025570
+etkilenebilme;025571
+etkilenebilmek;025572
+etkileniş;025573
+etkilenme;025574
+etkilenmek;025575
+etkileyebilme;025576
+etkileyebilmek;025577
+etkileyici;025578
+etkileyicilik;025579
+etkileyiş;025580
+etkileşebilme;025581
+etkileşebilmek;025582
+etkileşim;025583
+etkileşimli;025584
+etkileşimlilik;025585
+etkileşimsiz;025586
+etkileşimsizlik;025587
+etkileşme;025588
+etkileşmek;025589
+etkileştirme;025590
+etkileştirmek;025591
+etkili;025592
+etkili madde;025593
+etkili olmak;025594
+etkililik;025595
+etkime;025596
+etkimek;025597
+etkin;025598
+etkin okul;025599
+etkin öğretim;025600
+etkinci;025601
+etkincilik;025602
+etkinleşebilme;025603
+etkinleşebilmek;025604
+etkinleşme;025605
+etkinleşmek;025606
+etkinleştirici;025607
+etkinleştirme;025608
+etkinleştirmek;025609
+etkinlik;025610
+etkinlik merkezi;025611
+etkisini göstermek;025612
+etkisiz;025613
+etkisiz hâle getirmek;025614
+etkisizce;025615
+etkisizleşme;025616
+etkisizleşmek;025617
+etkisizleştirebilme;025618
+etkisizleştirebilmek;025619
+etkisizleştirme;025620
+etkisizleştirmek;025621
+etkisizlik;025622

@@ -1,0 +1,71 @@
+kopabilme;046505
+kopabilmek;046506
+kopal;046507
+kopanaki;046508
+koparabilme;046509
+koparabilmek;046510
+koparan;046511
+koparma;046512
+koparmak;046513
+kopartabilme;046514
+kopartabilmek;046515
+kopartma;046516
+kopartmak;046517
+koparttırma;046518
+koparttırmak;046519
+kopartılma;046520
+kopartılmak;046521
+kopartılış;046522
+kopartış;046523
+koparılma;046524
+koparılmak;046525
+koparılış;046526
+koparıp atmak;046527
+koparıverme;046528
+koparıvermek;046529
+koparış;046530
+kopil;046531
+kopkoyu;046532
+kopma;046533
+kopmak;046534
+kopolimer;046535
+kopolimerleşme;046536
+kopoy;046537
+kopuk;046538
+kopukluk;046539
+kopuksuz;046540
+kopuntu;046541
+kopup gelmek;046542
+kopuverme;046543
+kopuvermek;046544
+kopuz;046545
+kopuzcu;046546
+kopuzculuk;046547
+kopuş;046548
+kopya;046549
+kopya defteri;046550
+kopya etmek;046551
+kopya film;046552
+kopya kalemi;046553
+kopya kâğıdı;046554
+kopya mürekkebi;046555
+kopya vermek;046556
+kopya çekmek;046557
+kopyacı;046558
+kopyacılık;046559
+kopyalama;046560
+kopyalamak;046561
+kopyalanma;046562
+kopyalanmak;046563
+kopyalanış;046564
+kopyalayabilme;046565
+kopyalayabilmek;046566
+kopyalayapıştır;046567
+kopyasını çıkarmak;046568
+kopça;046569
+kopçalama;046570
+kopçalamak;046571
+kopçalanma;046572
+kopçalanmak;046573
+kopçalı;046574
+kopçasız;046575

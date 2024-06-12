@@ -1,0 +1,4 @@
+öptürme;089178
+öptürmek;089179
+öptürtme;089180
+öptürtmek;089181

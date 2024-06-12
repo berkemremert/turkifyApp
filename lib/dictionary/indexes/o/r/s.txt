@@ -1,0 +1,5 @@
+orsa;059188
+orsa alabanda;059189
+orsa boca;059190
+orsalama;059191
+orsalamak;059192

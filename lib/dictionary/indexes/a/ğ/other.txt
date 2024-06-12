@@ -1,0 +1,15 @@
+ağ;007144
+ağ;007145
+ağ atmak (veya bırakmak);007146
+ağ ipliği;007147
+ağ iğnesi;007148
+ağ kayığı;007149
+ağ kepçe;007150
+ağ kurdu;007151
+ağ kurşunu;007152
+ağ mantarlar;007153
+ağ tabaka;007154
+ağ tonoz;007155
+ağ torba;007156
+ağ yatak;007157
+ağ çekmek;007158

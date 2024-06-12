@@ -1,0 +1,53 @@
+ceza;016306
+ceza alanı;016307
+ceza almak;016308
+ceza atışı;016309
+ceza görmek;016310
+ceza hukuku;016311
+ceza kesmek;016312
+ceza reisi;016313
+ceza sahası;016314
+ceza vermek;016315
+ceza vuruşu;016316
+ceza yazmak;016317
+ceza yemek;016318
+ceza çekmek;016319
+cezaevi;016320
+cezai;016321
+cezalandırabilme;016322
+cezalandırabilmek;016323
+cezalandırma;016324
+cezalandırmak;016325
+cezalandırılabilme;016326
+cezalandırılabilmek;016327
+cezalandırılma;016328
+cezalandırılmak;016329
+cezalandırılış;016330
+cezalandırış;016331
+cezalanma;016332
+cezalanmak;016333
+cezalı;016334
+cezasını bulmak;016335
+cezasını çekmek;016336
+cezasız;016337
+cezasızca;016338
+cezasızlık;016339
+cezaya çarptırmak;016340
+cezayir menekşesi;016341
+cezayirli;016342
+cezbe;016343
+cezbediş;016344
+cezbelenme;016345
+cezbelenmek;016346
+cezbeli;016347
+cezbesiz;016348
+cezbetme;016349
+cezbetmek;016350
+cezbeye tutulmak (veya kapılmak);016351
+cezerye;016352
+cezir;016353
+cezire;016354
+cezp;016355
+cezrî;016356
+cezve;016357
+cezve sürmek;016358

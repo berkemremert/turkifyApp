@@ -1,0 +1,32 @@
+car;015803
+car;015804
+car car;015805
+car etmek;015806
+carcar;015807
+carcur;015808
+carcur;015809
+cari;015810
+cari gider;015811
+cari hesap;015812
+cari kur;015813
+cari masraf;015814
+cari para;015815
+cari ücret;015816
+cariye;015817
+cariyelik;015818
+cariyelik etmek;015819
+cariyeniz (veya cariyeleri);015820
+carlama;015821
+carlamak;015822
+carlı;015823
+carsız;015824
+cart;015825
+cart (veya zırt) kaba kâğıt;015826
+cart cart ötmek;015827
+cart curt;015828
+cart curt etmek;015829
+carta;015830
+cartadak;015831
+cartadan;015832
+cartayı çekmek;015833
+cartlak kebabı;015834

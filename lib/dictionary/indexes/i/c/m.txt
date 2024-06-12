@@ -1,0 +1,3 @@
+icma;036026
+icmal;036027
+icmal etmek;036028

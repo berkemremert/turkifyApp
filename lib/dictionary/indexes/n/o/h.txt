@@ -1,0 +1,7 @@
+nohudi;057975
+nohut;057976
+nohut oda, bakla sofa;057977
+nohut rengi;057978
+nohutlu;057979
+nohutsu;057980
+nohutsuz;057981

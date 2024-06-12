@@ -1,0 +1,9 @@
+idrak;036118
+idrak etmek;036119
+idraksiz;036120
+idraksizlik;036121
+idrar;036122
+idrar kesesi;036123
+idrar torbası;036124
+idrar yolu;036125
+idrar zoru;036126

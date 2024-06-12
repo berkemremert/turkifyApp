@@ -1,0 +1,177 @@
+alt;002678
+alt alta;002679
+alt alta üst üste;002680
+alt başlık;002681
+alt bölüm;002682
+alt cins;002683
+alt deri;002684
+alt değirmen güçlü akar;002685
+alt diş;002686
+alt dudak;002687
+alt etmek;002688
+alt familya;002689
+alt gerilim;002690
+alt geçit;002691
+alt güverte;002692
+alt hava yuvarı;002693
+alt karşıt;002694
+alt kat;002695
+alt katman;002696
+alt kavuşum;002697
+alt kurul;002698
+alt olmak;002699
+alt perdeden konuşmak;002700
+alt sınıf;002701
+alt tabaka;002702
+alt takım;002703
+alt tarafı;002704
+alt tür;002705
+alt yanı;002706
+alt yanı çıkmaz sokak;002707
+alt yazı;002708
+alt yazıcı;002709
+alt yazılı;002710
+alt çene;002711
+alt çenesi oynamak;002712
+alt ırk;002713
+alt şube;002714
+altayca;002715
+altayist;002716
+altayistik;002717
+alternatif;002718
+alternatif akım;002719
+alternatifli;002720
+alternatiflik;002721
+alternatiflilik;002722
+alternatifsiz;002723
+alternatifsizlik;002724
+alternatör;002725
+altes;002726
+altimetre;002727
+altlama;002728
+altlamak;002729
+altlı;002730
+altlı üstlü;002731
+altlık;002732
+altmış;002733
+altmışaltı;002734
+altmışaltıya bağlamak;002735
+altmışar;002736
+altmışarlı;002737
+altmışdörtlük;002738
+altmışlık;002739
+altmışıncı;002740
+alto;002741
+altsız;002742
+altta kalanın canı çıksın;002743
+altta kalmak;002744
+altta yok üstte yok;002745
+alttan almak;002746
+alttan alta;002747
+alttan güreşmek;002748
+altunhisar;002749
+altuni;002750
+altyapı;002751
+altyapısal;002752
+altüst;002753
+altüst böreği;002754
+altüst etmek;002755
+altüst olmak;002756
+altı;002757
+altı alay üstü kalay;002758
+altı karış beberuhi;002759
+altı kaval, üstü şişhane (veya şeşhane);002760
+altı okka etmek;002761
+altı olur, yedi olur, hep allah'ın dediği olur;002762
+altı tutmak;002763
+altı yaş olmak;002764
+altı yol;002765
+altı üstü;002766
+altıdan yemek;002767
+altıgen;002768
+altık;002769
+altıkardeş;002770
+altılı;002771
+altılı ganyan;002772
+altılık;002773
+altın;002774
+altın adam;002775
+altın adı pul oldu, kız adı dul oldu;002776
+altın adını bakır etmek;002777
+altın anahtar her kapıyı açar;002778
+altın ateşte, insan mihnette belli olur;002779
+altın bilezik;002780
+altın böcek;002781
+altın eli bıçak kesmez;002782
+altın eşik gümüş eşiğe muhtaç olur;002783
+altın gibi;002784
+altın gol;002785
+altın kaplama;002786
+altın keseği;002787
+altın kesmek;002788
+altın kökü;002789
+altın küpü;002790
+altın leğene kan kusmak;002791
+altın otu;002792
+altın pas tutmaz;002793
+altın rengi;002794
+altın saatler;002795
+altın sarısı;002796
+altın suyu;002797
+altın top gibi;002798
+altın tutsa toprak olur (veya altına yapışsa elinde bakır kesilir);002799
+altın varak;002800
+altın yakalı;002801
+altın yağmurcun;002802
+altın yerde paslanmaz, taş yağmurdan ıslanmaz;002803
+altın yere düşmekle pul olmaz;002804
+altın yumurtlayan tavuk;002805
+altın yürekli;002806
+altın yürekli olmak;002807
+altın yüreklilik;002808
+altın yıl;002809
+altın çağ;002810
+altın çağı;002811
+altın çağını yaşamak;002812
+altına etmek (veya kaçırmak);002813
+altına imza atmak;002814
+altına imza koymak;002815
+altınbaş;002816
+altınbeşik;002817
+altıncı;002818
+altıncı;002819
+altıncı ayak;002820
+altıncı duyu;002821
+altıncı his;002822
+altıncılık;002823
+altında kalmak;002824
+altında kalmamak;002825
+altından girip üstünden çıkmak;002826
+altından kalkamamak;002827
+altından çapanoğlu çıkmak;002828
+altındağ;002829
+altınekin;002830
+altınlaşma;002831
+altınlaşmak;002832
+altınoluk;002833
+altınova;002834
+altınsı;002835
+altıntaş;002836
+altıntop;002837
+altınyayla;002838
+altınözü;002839
+altını değiştirmek;002840
+altını kapatmak;002841
+altını kısmak;002842
+altını çizmek;002843
+altını üstüne getirmek;002844
+altını ıslatmak;002845
+altınımsı;002846
+altının kıymetini sarraf bilir;002847
+altıparmak;002848
+altıparmak;002849
+altıpas;002850
+altıpatlar;002851
+altız;002852
+altışar;002853
+altışarlı;002854

@@ -1,0 +1,80 @@
+kök;048551
+kök;048552
+kök almak;048553
+kök bacaklılar;048554
+kök bilgisi;048555
+kök boyası;048556
+kök doğrayıcısı;048557
+kök hücre;048558
+kök işareti;048559
+kök kaplama;048560
+kök kurdu;048561
+kök kırmızısı;048562
+kök mantar;048563
+kök salmak;048564
+kök sap;048565
+kök saplı;048566
+kök sökmek;048567
+kök söktürmek;048568
+kök örnek;048569
+kökboyası;048570
+kökboyasıgiller;048571
+köken;048572
+köken belgesi;048573
+köken bilgisi;048574
+köken bilimci;048575
+köken bilimi;048576
+köken bilimsel;048577
+kökenlenme;048578
+kökenlenmek;048579
+kökenli;048580
+kökensel;048581
+kökensiz;048582
+kökensizlik;048583
+kökertme;048584
+kökertmek;048585
+kökleme;048586
+köklemek;048587
+köklemek;048588
+köklendiriş;048589
+köklendirme;048590
+köklendirmek;048591
+kökleniş;048592
+köklenme;048593
+köklenmek;048594
+kökleşik;048595
+kökleşme;048596
+kökleşmek;048597
+kökleştiriş;048598
+kökleştirme;048599
+kökleştirmek;048600
+köklü;048601
+köklü aile;048602
+köklülük;048603
+köknar;048604
+köknar reçinesi;048605
+köknar sakızı;048606
+köksel;048607
+köksü;048608
+köksüz;048609
+köksüzlük;048610
+kökten;048611
+kökten dinci;048612
+kökten dincilik;048613
+kökten sürme;048614
+kökten çiçekli;048615
+köktenci;048616
+köktencilik;048617
+kökteş;048618
+kökteşlik;048619
+köktürk;048620
+köktürkçe;048621
+kökçü;048622
+kökçük;048623
+kökçülük;048624
+kökü kazınmak;048625
+kökü kurumak;048626
+kökünden halletmek;048627
+kökünden kazımak;048628
+köküne kıran girmek;048629
+kökünü kazımak;048630

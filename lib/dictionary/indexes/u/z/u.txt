@@ -1,0 +1,47 @@
+uzun;077903
+uzun araç;077904
+uzun atlama;077905
+uzun bacaklılar;077906
+uzun boylu;077907
+uzun boyluluk;077908
+uzun dalga;077909
+uzun diş;077910
+uzun dişli;077911
+uzun etek;077912
+uzun etmek;077913
+uzun far;077914
+uzun hava;077915
+uzun hayvan;077916
+uzun hece;077917
+uzun hikâye;077918
+uzun kafalı;077919
+uzun kulaklı;077920
+uzun kulaktan haber almak;077921
+uzun lafın (veya sözün) kısası;077922
+uzun levrek;077923
+uzun oturmak;077924
+uzun sesli;077925
+uzun uzadıya;077926
+uzun uzun;077927
+uzun vadeli;077928
+uzun vadelilik;077929
+uzun vokal;077930
+uzun yol sürücülüğü;077931
+uzun yol sürücüsü;077932
+uzun yol şoförü;077933
+uzun çizgi;077934
+uzun ömürlü;077935
+uzun ömürlülük;077936
+uzun öykü;077937
+uzun ünlü;077938
+uzunca;077939
+uzundere;077940
+uzuneşek;077941
+uzunkuyruk;077942
+uzunköprü;077943
+uzunlamasına;077944
+uzunluk;077945
+uzunluk ölçüsü;077946
+uzunçalar;077947
+uzuv;077948
+uzuvca;077949

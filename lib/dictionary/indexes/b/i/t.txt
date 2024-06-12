@@ -1,0 +1,137 @@
+bit;012659
+bit kadar;012660
+bit otu;012661
+bit yeniği;012662
+bitap;012663
+bitap düşmek;012664
+bitaplık;012665
+bitaraf;012666
+bitaraflık;012667
+bitebilme;012668
+bitebilmek;012669
+bitek;012670
+biteklik;012671
+bitelge;012672
+bitevi;012673
+biteviye;012674
+biteviyelik;012675
+bitey;012676
+biti kanlanmak;012677
+bitik;012678
+bitiklik;012679
+bitim;012680
+bitimli;012681
+bitimlilik;012682
+bitimsiz;012683
+bitimsizlik;012684
+bitirebilme;012685
+bitirebilmek;012686
+bitirilebilme;012687
+bitirilebilmek;012688
+bitiriliverme;012689
+bitirilivermek;012690
+bitiriliş;012691
+bitirilme;012692
+bitirilmek;012693
+bitirim;012694
+bitirim yeri;012695
+bitirimci;012696
+bitirimcilik;012697
+bitirimhane;012698
+bitirimlik;012699
+bitiriverme;012700
+bitirivermek;012701
+bitiriş;012702
+bitiriş yemi;012703
+bitirme;012704
+bitirme fiili;012705
+bitirmek;012706
+bitirmiş;012707
+bitirmişlik;012708
+bitirtme;012709
+bitirtmek;012710
+bitiverme;012711
+bitivermek;012712
+bitiş;012713
+bitişebilme;012714
+bitişebilmek;012715
+bitişik;012716
+bitişik kelime;012717
+bitişik taç yapraklılar;012718
+bitişik çanak yapraklılar;012719
+bitişiklik;012720
+bitişimli;012721
+bitişiş;012722
+bitişken;012723
+bitişken dil;012724
+bitişkenlik;012725
+bitişme;012726
+bitişmek;012727
+bitiştirebilme;012728
+bitiştirebilmek;012729
+bitiştirilebilme;012730
+bitiştirilebilmek;012731
+bitiştiriliş;012732
+bitiştirilme;012733
+bitiştirilmek;012734
+bitiştiriverme;012735
+bitiştirivermek;012736
+bitiştiriş;012737
+bitiştirme;012738
+bitiştirmek;012739
+bitki;012740
+bitki bilimci;012741
+bitki bilimi;012742
+bitki bitleri;012743
+bitki coğrafyası;012744
+bitki nakli;012745
+bitki patolojisi;012746
+bitki sütü;012747
+bitki topluluğu;012748
+bitki örtüsü;012749
+bitkici;012750
+bitkicil;012751
+bitkicilik;012752
+bitkileşme;012753
+bitkileşmek;012754
+bitkimsi;012755
+bitkimsi hayvanlar;012756
+bitkin;012757
+bitkince;012758
+bitkinleşme;012759
+bitkinleşmek;012760
+bitkinlik;012761
+bitkisel;012762
+bitkisel hayat;012763
+bitkisel kazein;012764
+bitkisel yağ;012765
+bitkisellik;012766
+bitlenebilme;012767
+bitlenebilmek;012768
+bitleniverme;012769
+bitlenivermek;012770
+bitlenme;012771
+bitlenmek;012772
+bitler;012773
+bitli;012774
+bitli (veya kurtlu) baklanın da kör alıcısı olur;012775
+bitli kokuş;012776
+bitlis;012777
+bitlis köftesi;012778
+bitlisli;012779
+bitlislilik;012780
+bitme;012781
+bitmek;012782
+bitmek;012783
+bitmek tükenmek bilmemek;012784
+bitmez (veya bitip) tükenmez;012785
+bitmişi;012786
+bitnik;012787
+bitpazarı;012788
+bittabi;012789
+bitter;012790
+bityeniği;012791
+bitüm;012792
+bitümleme;012793
+bitümlemek;012794
+bitümlü;012795

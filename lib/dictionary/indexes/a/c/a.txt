@@ -1,0 +1,19 @@
+acaba;000279
+acar;000280
+acar;000281
+acara;000282
+acarlaşma;000283
+acarlaşmak;000284
+acarlık;000285
+acayibine gitmek;000286
+acayip;000287
+acayip olmak;000288
+acayipleşebilme;000289
+acayipleşebilmek;000290
+acayipleşiverme;000291
+acayipleşivermek;000292
+acayipleşme;000293
+acayipleşmek;000294
+acayipleştirme;000295
+acayipleştirmek;000296
+acayiplik;000297

@@ -1,0 +1,271 @@
+tek;073305
+tek;073306
+tek adam;073307
+tek anlamlı;073308
+tek anlamlılık;073309
+tek başına;073310
+tek bilek;073311
+tek biçim;073312
+tek dalmak;073313
+tek delikliler;073314
+tek durmak;073315
+tek durmamak;073316
+tek elden;073317
+tek erklik;073318
+tek erkçi;073319
+tek erkçilik;073320
+tek evli;073321
+tek evlilik;073322
+tek eşli;073323
+tek eşlilik;073324
+tek fazlı;073325
+tek geçmek;073326
+tek heceli dil;073327
+tek hücreli;073328
+tek kale oynamak;073329
+tek kişilik;073330
+tek kürekle mehtaba çıkmak;073331
+tek liste;073332
+tek parmaklılar;073333
+tek partili;073334
+tek partililik;073335
+tek pas;073336
+tek pas yapmak;073337
+tek renkli;073338
+tek renklilik;073339
+tek sayı;073340
+tek sesli;073341
+tek seslilik;073342
+tek seçici;073343
+tek seçicilik;073344
+tek sıra olmak;073345
+tek tabanca;073346
+tek tanrıcı;073347
+tek tanrıcılık;073348
+tek tanrılı;073349
+tek taraflı;073350
+tek taraflılık;073351
+tek tük;073352
+tek tırnak işareti;073353
+tek tırnaklılar;073354
+tek vücut;073355
+tek vücut olmak;073356
+tek yanlı;073357
+tek yanlılık;073358
+tek yumurta ikizi;073359
+tek yön;073360
+tek yönlü;073361
+tek yönlü yol;073362
+tek yönlülük;073363
+tek yürek;073364
+tek çekirdekli;073365
+tek çekirdekliler;073366
+tek çenekli;073367
+tek çenekliler;073368
+tek çeneklilik;073369
+tek örnek;073370
+tekabül;073371
+tekabül etmek;073372
+tekaüdiye;073373
+tekaüt;073374
+tekaüt ikramiyesi;073375
+tekaüt maaşı;073376
+tekaüt olmak;073377
+tekaütlük;073378
+tekbenci;073379
+tekbencilik;073380
+tekbir;073381
+tekbir getirmek;073382
+tekdir;073383
+tekdir etmek;073384
+tekdüze;073385
+tekdüzeleşme;073386
+tekdüzeleşmek;073387
+tekdüzelik;073388
+teke;073389
+teke dikeni;073390
+teke tek;073391
+tekebbür;073392
+tekeden süt çıkarmak;073393
+tekeffül;073394
+tekeffül etmek;073395
+tekel;073396
+tekel bayisi;073397
+tekel maddesi;073398
+tekel ürünleri;073399
+tekelci;073400
+tekelci anamalcılık;073401
+tekelcilik;073402
+tekelinde olmak;073403
+tekeline (veya tekellerine) almak;073404
+tekelleşme;073405
+tekelleşmek;073406
+tekelleştirme;073407
+tekelleştirmek;073408
+tekellüf;073409
+tekellüm;073410
+tekemmül;073411
+tekemmül etmek;073412
+teker;073413
+teker meker yuvarlanmak;073414
+teker teker;073415
+teker tüker;073416
+tekercik;073417
+tekere çomak sokmak;073418
+tekerine (veya tekerinin önüne) taş koymak;073419
+tekerlek;073420
+tekerlek kırıldıktan sonra yol gösteren çok olur;073421
+tekerlek pabucu;073422
+tekerlekli;073423
+tekerlekli kayak;073424
+tekerlekli koltuk;073425
+tekerlekli sandalye;073426
+tekerleksiz;073427
+tekerlekçi;073428
+tekerlekçilik;073429
+tekerleme;073430
+tekerlemek;073431
+tekerlenme;073432
+tekerlenmek;073433
+tekerli;073434
+tekerrür;073435
+tekerrür etmek;073436
+tekesakalı;073437
+tekeseme;073438
+tekesemek;073439
+tekessür;073440
+tekessür etmek;073441
+tekevvün;073442
+tekfin;073443
+tekfin etmek;073444
+tekfir;073445
+tekfir etmek;073446
+tekfur;073447
+tekfurluk;073448
+tekgövde;073449
+tekiden;073450
+tekil;073451
+tekila;073452
+tekilacı;073453
+tekillik;073454
+tekin;073455
+tekinsiz;073456
+tekir;073457
+tekirdağ;073458
+tekirdağlı;073459
+tekirdağlılık;073460
+tekit;073461
+tekit etmek;073462
+tekke;073463
+tekkeköy;073464
+tekkeyi bekleyen çorbayı içer;073465
+tekleme;073466
+teklemek;073467
+tekleşme;073468
+tekleşmek;073469
+tekli;073470
+teklif;073471
+teklif etmek;073472
+teklif tekellüf;073473
+teklifli;073474
+teklifsiz;073475
+teklifsiz konuşma;073476
+teklifsizce;073477
+teklifsizlik;073478
+teklik;073479
+teklilik;073480
+tekman;073481
+tekme;073482
+tekme atmak (veya vurmak);073483
+tekme tokat girişmek;073484
+tekme yemek;073485
+tekmeleme;073486
+tekmelemek;073487
+tekmelenme;073488
+tekmelenmek;073489
+tekmeletme;073490
+tekmeletmek;073491
+tekmelik;073492
+tekmil;073493
+tekmil almak;073494
+tekmil haberi;073495
+tekmil olmak;073496
+tekmil vermek;073497
+tekmilleme;073498
+tekmillemek;073499
+tekne;073500
+tekne kazıntısı;073501
+tekneci;073502
+teknecilik;073503
+teknetyum;073504
+teknik;073505
+teknik adam;073506
+teknik direktör;073507
+teknik eğitim;073508
+teknik lise;073509
+teknik okul;073510
+teknik öğretim;073511
+teknik üniversite;073512
+teknik şartname;073513
+tekniker;073514
+teknikçi;073515
+teknikçilik;073516
+teknisyen;073517
+teknokent;073518
+teknokrasi;073519
+teknokrat;073520
+teknokratçılık;073521
+teknolog;073522
+teknoloji;073523
+teknolojik;073524
+teknopark;073525
+tekrar;073526
+tekrar etmek;073527
+tekrar tekrar;073528
+tekrardan;073529
+tekraren;073530
+tekrarlama;073531
+tekrarlamak;073532
+tekrarlanabilme;073533
+tekrarlanabilmek;073534
+tekrarlanma;073535
+tekrarlanmak;073536
+tekrarlanış;073537
+tekrarlatabilme;073538
+tekrarlatabilmek;073539
+tekrarlatma;073540
+tekrarlatmak;073541
+tekrarlayabilme;073542
+tekrarlayabilmek;073543
+tekrarlayış;073544
+tekrarlı;073545
+tekrarlı bağlaç;073546
+tekrarsız;073547
+tekrir;073548
+tekrir etmek;073549
+teksif;073550
+teksif etmek;073551
+teksir;073552
+teksir etmek;073553
+teksir kâğıdı;073554
+teksir makinesi;073555
+tekst;073556
+tekstil;073557
+tekstilci;073558
+tekstilcilik;073559
+tektaş;073560
+tektonik;073561
+tekvando;073562
+tekvin;073563
+tekvin etmek;073564
+tekzip;073565
+tekzip etmek;073566
+tekâlif;073567
+tekâmül;073568
+tekâmül etmek;073569
+tekâpu;073570
+tekâsüf;073571
+tekâsüf etmek;073572
+tekâsül;073573
+tekçi;073574
+tekçilik;073575

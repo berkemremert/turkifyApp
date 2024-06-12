@@ -1,0 +1,96 @@
+ses;066823
+ses aleti;066824
+ses aygıtı;066825
+ses bilgisi;066826
+ses bilimci;066827
+ses bilimi;066828
+ses bilimsel;066829
+ses birimi;066830
+ses dalgaları;066831
+ses değişmesi;066832
+ses duvarı;066833
+ses düşmesi;066834
+ses etmek;066835
+ses getirmek;066836
+ses kakışması;066837
+ses kesilmek;066838
+ses kirişleri;066839
+ses kuşağı;066840
+ses organları;066841
+ses perdesi;066842
+ses seda;066843
+ses seda kesilmek (veya kalmamak);066844
+ses seda yok;066845
+ses seda çıkmamak;066846
+ses soluk;066847
+ses telleri;066848
+ses türemesi;066849
+ses uyumsuzluğu;066850
+ses uyumu;066851
+ses vermek;066852
+ses yitimi;066853
+ses yolu;066854
+ses yönetmeni;066855
+ses çıkarmamak (veya etmemek);066856
+ses çıkmamak;066857
+sesi ayyuka çıkmak;066858
+sesi soluğu çıkmamak (veya kesilmek);066859
+sesi çıkmamak (veya kesilmek);066860
+sesini kesmek;066861
+sesini kısmak;066862
+sesini yükseltmek;066863
+sesini çıkarmamak;066864
+seslem;066865
+sesleme;066866
+seslemek;066867
+seslendirebilme;066868
+seslendirebilmek;066869
+seslendirici;066870
+seslendiricilik;066871
+seslendirilme;066872
+seslendirilmek;066873
+seslendiriş;066874
+seslendirme;066875
+seslendirmek;066876
+seslenebilme;066877
+seslenebilmek;066878
+sesleniş;066879
+seslenme;066880
+seslenmek;066881
+sesletim;066882
+sesletme;066883
+sesletmek;066884
+sesli;066885
+sesli duyuru;066886
+sesli film;066887
+sesli harf;066888
+sesli okuma;066889
+sesli taş;066890
+sesli uyumu;066891
+seslik;066892
+seslikçi;066893
+seslilik;066894
+sessiz;066895
+sessiz film;066896
+sessiz harf;066897
+sessiz okuma;066898
+sessiz sedasız;066899
+sessiz uyumu;066900
+sessiz yürüyüş;066901
+sessizce;066902
+sessizcesine;066903
+sessizleşme;066904
+sessizleşmek;066905
+sessizleştirme;066906
+sessizleştirmek;066907
+sessizlik;066908
+sessizliğe gömülmek;066909
+sesteş;066910
+sesteşlik;066911
+sesyayar;066912
+sesyazar;066913
+sesçi;066914
+sesçil;066915
+sesçil alfabe;066916
+sesçil yazım;066917
+sesçilik;066918

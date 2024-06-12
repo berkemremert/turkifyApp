@@ -1,0 +1,7 @@
+gocuk;029983
+gocuklu;029984
+gocuksuz;029985
+gocundurma;029986
+gocundurmak;029987
+gocunma;029988
+gocunmak;029989

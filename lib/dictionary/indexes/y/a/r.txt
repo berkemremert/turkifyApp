@@ -1,0 +1,350 @@
+yar;080259
+yara;080260
+yara almak;080261
+yara açmak;080262
+yara bandı;080263
+yara bere;080264
+yara işlemek;080265
+yara kapanmak;080266
+yara otu;080267
+yarabilme;080268
+yarabilmek;080269
+yaradan;080270
+yaradan'a kurban (olayım);080271
+yaradan'a sığınıp;080272
+yaradancı;080273
+yaradancılık;080274
+yaradılış;080275
+yaradılışlı;080276
+yaradılıştan;080277
+yarak;080278
+yaralama;080279
+yaralamak;080280
+yaralanabilme;080281
+yaralanabilmek;080282
+yaralanma;080283
+yaralanmak;080284
+yaralanış;080285
+yaralayabilme;080286
+yaralayabilmek;080287
+yaralayış;080288
+yaralı;080289
+yaralı kuşa kurşun sıkılmaz;080290
+yaralı parmağa işememek;080291
+yaralılık;080292
+yarama;080293
+yaramak;080294
+yaramamak;080295
+yaramaz;080296
+yaramaz olmak;080297
+yaramazca;080298
+yaramazlaşma;080299
+yaramazlaşmak;080300
+yaramazlık;080301
+yaramazlık etmek;080302
+yaranabilme;080303
+yaranabilmek;080304
+yarandırma;080305
+yarandırmak;080306
+yaranma;080307
+yaranmak;080308
+yaranış;080309
+yarar;080310
+yararcı;080311
+yararcılık;080312
+yararlanabilme;080313
+yararlanabilmek;080314
+yararlandırma;080315
+yararlandırmak;080316
+yararlandırılma;080317
+yararlandırılmak;080318
+yararlanma;080319
+yararlanmak;080320
+yararlanılabilme;080321
+yararlanılabilmek;080322
+yararlanılma;080323
+yararlanılmak;080324
+yararlanış;080325
+yararlı;080326
+yararlı kılmak;080327
+yararlı olmak;080328
+yararlık;080329
+yararlılık;080330
+yararsız;080331
+yararsızca;080332
+yararsızlık;080333
+yararı dokunmak;080334
+yararı olmak;080335
+yarasa;080336
+yarasalar;080337
+yarası olan gocunur (veya gocunsun);080338
+yarasın!;080339
+yarasını deşmek;080340
+yaratabilme;080341
+yaratabilmek;080342
+yaratma;080343
+yaratmak;080344
+yaratı;080345
+yaratıcı;080346
+yaratıcılık;080347
+yaratık;080348
+yaratılabilme;080349
+yaratılabilmek;080350
+yaratılma;080351
+yaratılmak;080352
+yaratılış;080353
+yaratım;080354
+yaratımcı;080355
+yaratımcılık;080356
+yaratımsal;080357
+yaratıverme;080358
+yaratıvermek;080359
+yaratış;080360
+yaraya merhem olmak;080361
+yaraya tuz biber ekmek;080362
+yarayabilme;080363
+yarayabilmek;080364
+yarayı tazelemek;080365
+yarayış;080366
+yarayışlı;080367
+yarayışlılık;080368
+yarayışsız;080369
+yarayışsızlık;080370
+yaraş;080371
+yaraşma;080372
+yaraşmak;080373
+yaraştırma;080374
+yaraştırmak;080375
+yaraşık;080376
+yaraşık almak;080377
+yaraşıklı;080378
+yaraşıksız;080379
+yaraşır;080380
+yaraşırlık;080381
+yarbay;080382
+yarbaylık;080383
+yarda;080384
+yardak;080385
+yardakçı;080386
+yardakçılık;080387
+yardakçılık etmek;080388
+yardan atmak;080389
+yardım;080390
+yardım etmek;080391
+yardım görmek;080392
+yardım sandığı;080393
+yardım ve yataklık etmek;080394
+yardımcı;080395
+yardımcı ders;080396
+yardımcı doçent;080397
+yardımcı doçentlik;080398
+yardımcı eylem;080399
+yardımcı fiil;080400
+yardımcı hakem;080401
+yardımcı hakemlik;080402
+yardımcı hücre;080403
+yardımcı kitap;080404
+yardımcı madde;080405
+yardımcı olmak;080406
+yardımcı oyuncu;080407
+yardımcı oyunculuk;080408
+yardımcı yargıcı;080409
+yardımcı yargıcılık;080410
+yardımcılık;080411
+yardımcısız;080412
+yardımda bulunmak;080413
+yardımlaşabilme;080414
+yardımlaşabilmek;080415
+yardımlaşma;080416
+yardımlaşmak;080417
+yardımsever;080418
+yardımseverlik;080419
+yardımsız;080420
+yardımsızlık;080421
+yardımına koşmak;080422
+yardırma;080423
+yardırmak;080424
+yardırış;080425
+yargı;080426
+yargı alanı;080427
+yargı denetimi;080428
+yargı erki;080429
+yargı gücü;080430
+yargı organları;080431
+yargı usulü;080432
+yargı yeri;080433
+yargı yetkisi;080434
+yargı yolu;080435
+yargı çevresi;080436
+yargıcı;080437
+yargıcılar kurulu;080438
+yargıcılık;080439
+yargıevi;080440
+yargılama;080441
+yargılama gideri;080442
+yargılama usulü;080443
+yargılamak;080444
+yargılamasız;080445
+yargılanabilme;080446
+yargılanabilmek;080447
+yargılanma;080448
+yargılanmak;080449
+yargılanış;080450
+yargılatabilme;080451
+yargılatabilmek;080452
+yargılatma;080453
+yargılatmak;080454
+yargılayabilme;080455
+yargılayabilmek;080456
+yargılayış;080457
+yargılı;080458
+yargısal;080459
+yargıya başvurmak;080460
+yargıya gitmek;080461
+yargıya varmak;080462
+yargıç;080463
+yargıçlık;080464
+yarka;080465
+yarkurul;080466
+yarlıgama;080467
+yarlıgamak;080468
+yarlık;080469
+yarma;080470
+yarma aşı;080471
+yarma buğday;080472
+yarma gibi;080473
+yarma kereste;080474
+yarma kütüğü;080475
+yarma saldırısı;080476
+yarma taarruzu;080477
+yarma çorbası;080478
+yarma şeftali;080479
+yarmak;080480
+yarmalama;080481
+yarmalamak;080482
+yarmalık;080483
+yarpuz;080484
+yarı;080485
+yarı alan;080486
+yarı asalak;080487
+yarı açık cezaevi;080488
+yarı ağır sıklet;080489
+yarı başkalaşma;080490
+yarı başkanlık;080491
+yarı bel;080492
+yarı belgesel;080493
+yarı buçuk;080494
+yarı final;080495
+yarı finalist;080496
+yarı gece;080497
+yarı geçirgen;080498
+yarı geçirgenlik;080499
+yarı gölge;080500
+yarı göçebe;080501
+yarı göçebelik;080502
+yarı hücre;080503
+yarı iletken;080504
+yarı karanlık;080505
+yarı kurak;080506
+yarı kübik;080507
+yarı küre;080508
+yarı mamul;080509
+yarı orta sıklet;080510
+yarı otomatik;080511
+yarı resmî;080512
+yarı saha;080513
+yarı sanayileşme;080514
+yarı saydam;080515
+yarı saydamlık;080516
+yarı son;080517
+yarı yarıya;080518
+yarı yolda bırakmak;080519
+yarıcı;080520
+yarıcılık;080521
+yarıda kalmak;080522
+yarık;080523
+yarık dudak;080524
+yarıklık;080525
+yarılabilme;080526
+yarılabilmek;080527
+yarılama;080528
+yarılamak;080529
+yarılanma;080530
+yarılanmak;080531
+yarılma;080532
+yarılmak;080533
+yarılıverme;080534
+yarılıvermek;080535
+yarım;080536
+yarım adam;080537
+yarım akıllı;080538
+yarım akıllılık;080539
+yarım altın;080540
+yarım asalak;080541
+yarım ay;080542
+yarım ayak;080543
+yarım ağız;080544
+yarım ağızla;080545
+yarım baş ağrısı;080546
+yarım boy;080547
+yarım daire;080548
+yarım daire kanalları;080549
+yarım doğru;080550
+yarım elma, gönül (veya hatır) alma;080551
+yarım elmanın yarısı o, yarısı bu;080552
+yarım gün;080553
+yarım kafiye;080554
+yarım kalmak;080555
+yarım kanatlılar;080556
+yarım kubbe;080557
+yarım kulak dinlemek;080558
+yarım küre;080559
+yarım mesai;080560
+yarım pabuçlu;080561
+yarım pansiyon;080562
+yarım sağ etmek;080563
+yarım seren;080564
+yarım sol etmek;080565
+yarım uyak;080566
+yarım yamalak;080567
+yarım yırtık;080568
+yarımada;080569
+yarımca;080570
+yarımcı;080571
+yarımcılık;080572
+yarımlama;080573
+yarımlamak;080574
+yarımlık;080575
+yarımşar;080576
+yarın;080577
+yarın öbür gün;080578
+yarından tezi yok;080579
+yarınki;080580
+yarıntı;080581
+yarıyıl;080582
+yarıçap;080583
+yarış;080584
+yarış arabası;080585
+yarış atı;080586
+yarış etmek;080587
+yarış kayığı;080588
+yarış otomobili;080589
+yarış tabancası;080590
+yarışa girmek;080591
+yarışa kalkmak;080592
+yarışabilme;080593
+yarışabilmek;080594
+yarışlık;080595
+yarışma;080596
+yarışmacı;080597
+yarışmacılık;080598
+yarışmak;080599
+yarıştan kopmamak;080600
+yarıştırabilme;080601
+yarıştırabilmek;080602
+yarıştırma;080603
+yarıştırmak;080604
+yarışçı;080605
+yarışçılık;080606
+yarışım;080607
+yarışımcı;080608

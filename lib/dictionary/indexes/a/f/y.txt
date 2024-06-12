@@ -1,0 +1,19 @@
+afyon;000947
+afyon kaymağı;000948
+afyon ruhu;000949
+afyon sakızı;000950
+afyon yutmak;000951
+afyon çekmek;000952
+afyonkarahisar;000953
+afyonkarahisarlı;000954
+afyonkarahisarlılık;000955
+afyonkeş;000956
+afyonkeşlik;000957
+afyonlama;000958
+afyonlamak;000959
+afyonlanma;000960
+afyonlanmak;000961
+afyonlu;000962
+afyonu başına vurmak;000963
+afyonu patlamak;000964
+afyonunu patlatmak;000965

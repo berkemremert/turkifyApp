@@ -1,0 +1,35 @@
+kusabilme;048068
+kusabilmek;048069
+kusayazma;048070
+kusayazmak;048071
+kuskun;048072
+kuskunlu;048073
+kuskunsuz;048074
+kuskunu düşük;048075
+kuskus;048076
+kuskus pilavı;048077
+kuskus çorbası;048078
+kusma;048079
+kusmak;048080
+kusmuk;048081
+kusturabilme;048082
+kusturabilmek;048083
+kusturma;048084
+kusturmak;048085
+kusturucu;048086
+kusturuş;048087
+kusuntu;048088
+kusur;048089
+kusur aramak;048090
+kusur bulmak;048091
+kusur etmek;048092
+kusur etmemek;048093
+kusur işlemek;048094
+kusura bakmamak (veya kalmamak);048095
+kusurlu;048096
+kusurluluk;048097
+kusursuz;048098
+kusursuz dost arayan dostsuz kalır;048099
+kusursuzluk;048100
+kusuverme;048101
+kusuvermek;048102

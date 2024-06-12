@@ -1,0 +1,12 @@
+absent;000238
+absorbe;000239
+absorbe etmek;000240
+absorbe olmak;000241
+abstraksiyon;000242
+abstraksiyonist;000243
+abstraksiyonizm;000244
+abstre;000245
+abstre sanat;000246
+abstre sayı;000247
+absürt;000248
+absürtlük;000249

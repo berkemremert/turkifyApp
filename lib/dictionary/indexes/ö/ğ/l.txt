@@ -1,0 +1,19 @@
+öğle;089752
+öğle arası;089753
+öğle ezanı;089754
+öğle namazı;089755
+öğle paydosu;089756
+öğle tatili;089757
+öğle uykusu;089758
+öğle vakti;089759
+öğle yemeği;089760
+öğlen;089761
+öğlen çemberi;089762
+öğlenci;089763
+öğlencilik;089764
+öğlende;089765
+öğlenleri;089766
+öğleye doğru;089767
+öğleyin;089768
+öğleüstü;089769
+öğleüzeri;089770

@@ -1,0 +1,25 @@
+abu;000250
+abuhava;000251
+abuk;000252
+abuk sabuk;000253
+abuk sabuk konuşmak;000254
+abuk sabukluk;000255
+abuk subuk;000256
+abuk subukluk;000257
+abuklama;000258
+abuklamak;000259
+abuklaşma;000260
+abuklaşmak;000261
+abuklaştırma;000262
+abuklaştırmak;000263
+abukluk;000264
+abukça;000265
+abuli;000266
+abullabut;000267
+abullabutluk;000268
+abullabutluk etmek;000269
+abur cubur;000270
+abur cuburluk;000271
+abus;000272
+abusluk;000273
+abuzambak;000274

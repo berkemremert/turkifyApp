@@ -1,0 +1,4 @@
+uhde;077061
+uhdesinde olmak;077062
+uhdesinden gelmek;077063
+uhdesine almak;077064

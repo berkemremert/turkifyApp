@@ -81,4 +81,14 @@ class FirebaseMethods {
     });
   }
 
+
+  Future<Map<String, dynamic>> getDictWord(String id) async {
+    Map<String, dynamic> wordData;
+
+    DocumentSnapshot wordDoc = await FirebaseFirestore.instance.collection('dictionary').doc(id).get();
+    wordData = (wordDoc.data() as Map<String, dynamic>);
+
+    return wordData;
+  }
+
 }

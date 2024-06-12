@@ -1,0 +1,75 @@
+bed;010402
+bedahet;010403
+bedaheten;010404
+bedava;010405
+bedava sirke baldan tatlıdır;010406
+bedavacı;010407
+bedavacılık;010408
+bedavadan;010409
+bedavadan ucuz;010410
+bedavalaşma;010411
+bedavalaşmak;010412
+bedavalık;010413
+bedavasına;010414
+bedavaya;010415
+bedayi;010416
+bedbaht;010417
+bedbaht etmek;010418
+bedbaht olmak;010419
+bedbahtlık;010420
+bedbin;010421
+bedbin etmek;010422
+bedbin olmak;010423
+bedbinleşme;010424
+bedbinleşmek;010425
+bedbinleştirme;010426
+bedbinleştirmek;010427
+bedbinlik;010428
+beddua;010429
+beddua etmek;010430
+beddua sinmek;010431
+bedduası tutmak;010432
+bedduasını almak;010433
+bedel;010434
+bedel tutmak;010435
+bedel vermek;010436
+bedelci;010437
+bedelli;010438
+bedelli askerlik;010439
+bedelsiz;010440
+bedelsiz ithalat;010441
+bedelsizlik;010442
+beden;010443
+beden cezası;010444
+beden dili;010445
+beden eğitimi;010446
+beden işçisi;010447
+beden terbiyesi;010448
+bedence;010449
+bedenci;010450
+bedenen;010451
+bedenleşme;010452
+bedenleşmek;010453
+bedensel;010454
+bedensellik;010455
+bedenî;010456
+bedesten;010457
+bedevi;010458
+bedevi;010459
+bedevilik;010460
+bedevilik;010461
+bedhah;010462
+bedhahlık;010463
+bedihi;010464
+bedii;010465
+bediileşme;010466
+bediileşmek;010467
+bediilik;010468
+bediiyat;010469
+bedik;010470
+bedir;010471
+bedirik;010472
+bedirlenme;010473
+bedirlenmek;010474
+bednam;010475
+bedük;010476

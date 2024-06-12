@@ -1,0 +1,30 @@
+fetha;027135
+fethedebilme;027136
+fethedebilmek;027137
+fethediş;027138
+fethetme;027139
+fethetmek;027140
+fethettirme;027141
+fethettirmek;027142
+fethiye;027143
+fetih;027144
+fetihname;027145
+fetiş;027146
+fetişist;027147
+fetişizm;027148
+fetret;027149
+fettan;027150
+fettanca;027151
+fettane;027152
+fettanlaşma;027153
+fettanlaşmak;027154
+fettanlık;027155
+fetva;027156
+fetva vermek;027157
+fetva çıkarmak;027158
+fetvacı;027159
+fetvacılık;027160
+fetvahane;027161
+fetvayişerife;027162
+fetvayişerife çıkarmak;027163
+fetüs;027164

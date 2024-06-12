@@ -1,0 +1,84 @@
+süt;070187
+süt asidi;070188
+süt beyaz;070189
+süt danası;070190
+süt dişi;070191
+süt dökmüş kedi gibi;070192
+süt dökmüş kediye dönmek;070193
+süt gibi;070194
+süt ineği;070195
+süt ineği gibi sağmak;070196
+süt izni;070197
+süt kardeşi;070198
+süt kardeşliği;070199
+süt kuzusu;070200
+süt kırı;070201
+süt mavisi;070202
+süt mısır;070203
+süt otu;070204
+süt otugiller;070205
+süt taşı;070206
+süt tozu;070207
+süt vermek;070208
+süt çalmak;070209
+süt çekmek;070210
+süt çocuğu;070211
+süt çorbası;070212
+süt şekeri;070213
+sütana;070214
+sütanalık;070215
+sütanne;070216
+sütannelik;070217
+sütağacı;070218
+sütbaba;070219
+süthane;070220
+sütkız;070221
+sütlaç;070222
+sütlendirme;070223
+sütlendirmek;070224
+sütlenme;070225
+sütlenmek;070226
+sütleğen;070227
+sütleğengiller;070228
+sütliman;070229
+sütlü;070230
+sütlü kahve;070231
+sütlü kengel;070232
+sütlü ot;070233
+sütlüce;070234
+sütlük;070235
+sütnine;070236
+sütninecik;070237
+sütninelik;070238
+sütoğul;070239
+sütre;070240
+sütreleme;070241
+sütrelemek;070242
+sütsü;070243
+sütsüz;070244
+sütsüzce;070245
+sütsüzlük;070246
+sütten ağzı yanan yoğurdu (veya ayranı) üfleyerek yer (veya içer);070247
+sütten ağzı yanmak;070248
+sütten kesilmek;070249
+sütten kesmek;070250
+sütten çıkmış ak kaşık gibi olmak;070251
+sütun;070252
+sütun gibi;070253
+sütuncuk;070254
+sütunlu;070255
+sütununu açmak;070256
+sütyen;070257
+sütyenci;070258
+sütyencilik;070259
+sütçü;070260
+sütçü beygiri gibi;070261
+sütçü beygiri gibi ayakta uyumak;070262
+sütçüler;070263
+sütçülük;070264
+sütölçer;070265
+sütü bozuk;070266
+sütü bozukluk;070267
+sütümsü;070268
+sütüne havale etmek;070269
+sütüne kalmak;070270

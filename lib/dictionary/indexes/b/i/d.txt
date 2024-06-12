@@ -1,0 +1,7 @@
+bidar;011732
+bidat;011733
+bidayet;011734
+bide;011735
+bidon;011736
+bidoncu;011737
+bidonculuk;011738

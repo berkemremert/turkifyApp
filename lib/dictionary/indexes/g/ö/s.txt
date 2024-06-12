@@ -1,0 +1,45 @@
+gösterebilme;030806
+gösterebilmek;030807
+gösteren;030808
+gösterge;030809
+gösterge bilimi;030810
+göstergeç;030811
+gösteri;030812
+gösteri adamı;030813
+gösteri yapmak;030814
+gösteri yürüyüşü;030815
+gösterici;030816
+göstericilik;030817
+gösterilebilme;030818
+gösterilebilmek;030819
+gösterilen;030820
+gösteriliş;030821
+gösterilme;030822
+gösterilmek;030823
+gösterim;030824
+gösterime girmek;030825
+gösteriverme;030826
+gösterivermek;030827
+gösteriş;030828
+gösteriş yapmak;030829
+gösterişe kaçmak;030830
+gösterişli;030831
+gösterişlice;030832
+gösterişlilik;030833
+gösterişsiz;030834
+gösterişsizlik;030835
+gösterişçi;030836
+gösterişçilik;030837
+gösterme;030838
+gösterme hakkı;030839
+gösterme hastalığı;030840
+gösterme parmağı;030841
+gösterme sıfatı;030842
+gösterme zamiri;030843
+gösterme zarfı;030844
+göstermeci;030845
+göstermecilik;030846
+göstermek;030847
+göstermelik;030848
+göstertme;030849
+göstertmek;030850

@@ -1,0 +1,78 @@
+zam;084045
+zam gelmek;084046
+zam görmek;084047
+zam paketi;084048
+zam yapmak;084049
+zaman;084050
+zaman almak;084051
+zaman ayarlı;084052
+zaman aşımı;084053
+zaman belirteci;084054
+zaman bilimi;084055
+zaman bilimsel;084056
+zaman birimi;084057
+zaman bırakmak;084058
+zaman dizini;084059
+zaman eki;084060
+zaman geçirmek;084061
+zaman ile yarışmak;084062
+zaman kazanmak;084063
+zaman kollamak;084064
+zaman tanımak;084065
+zaman tüneli;084066
+zaman vermek;084067
+zaman zaman;084068
+zaman zarfı;084069
+zaman öldürmek;084070
+zamana uymak;084071
+zamandaş;084072
+zamandaşlık;084073
+zamane;084074
+zamane adamı;084075
+zamane çocuğu;084076
+zamanla;084077
+zamanlama;084078
+zamanlamak;084079
+zamanlayabilme;084080
+zamanlayabilmek;084081
+zamanlı;084082
+zamanlı zamansız;084083
+zamansız;084084
+zamansızlık;084085
+zamanı (veya zamanını) geçirmek;084086
+zamanı avlamak;084087
+zamanı dolmak;084088
+zamanı geçmek;084089
+zamanında;084090
+zamazingo;084091
+zambak;084092
+zambakgiller;084093
+zambiyalı;084094
+zambır;084095
+zambırından geçilmemek;084096
+zamir;084097
+zamir;084098
+zamk;084099
+zamk akasyası;084100
+zamk ağacı;084101
+zamk hastalığı;084102
+zamkinos;084103
+zamkinos etmek;084104
+zamklama;084105
+zamklamak;084106
+zamklanma;084107
+zamklanmak;084108
+zamklı;084109
+zamklı kâğıt;084110
+zamkıarabi;084111
+zamlanma;084112
+zamlanmak;084113
+zamlı;084114
+zamme;084115
+zammetme;084116
+zammetmek;084117
+zampara;084118
+zamparalık;084119
+zamparalık etmek;084120
+zamsız;084121
+zamsızlık;084122

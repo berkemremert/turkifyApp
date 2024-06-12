@@ -1,0 +1,41 @@
+keyfekeder;045010
+keyfetme;045011
+keyfetmek;045012
+keyfi bilmek;045013
+keyfi bozulmak;045014
+keyfi gelmek;045015
+keyfi kaçmak;045016
+keyfi oluncaya kadar;045017
+keyfi sıra;045018
+keyfi tıkırında;045019
+keyfi yerinde;045020
+keyfi yerinde olmak;045021
+keyfi yolunda;045022
+keyfince;045023
+keyfinden bayılmak (veya dörtköşe olmak);045024
+keyfine bakmak;045025
+keyfine diyecek olmamak;045026
+keyfini kaçırmak (veya bozmak);045027
+keyfini yapmak;045028
+keyfini çıkarmak;045029
+keyfinin kâhyası olmamak;045030
+keyfiyet;045031
+keyfî;045032
+keyfîlik;045033
+keyif;045034
+keyif benim, köy mehmet ağa'nın;045035
+keyif ehli;045036
+keyif hâli;045037
+keyif sormak;045038
+keyif sürmek;045039
+keyif vermek;045040
+keyif çatmak;045041
+keyiflendirme;045042
+keyiflendirmek;045043
+keyiflenme;045044
+keyiflenmek;045045
+keyifli;045046
+keyiflilik;045047
+keyifsiz;045048
+keyifsizce;045049
+keyifsizlik;045050

@@ -1,0 +1,27 @@
+arp;004700
+arpa;004701
+arpa eken buğday biçmez;004702
+arpa ekmeği;004703
+arpa ektim, darı çıktı;004704
+arpa güvesi;004705
+arpa samanıyla, kömür dumanıyla;004706
+arpa suyu;004707
+arpa unundan kadayıf olmaz;004708
+arpa verilmeyen at, kamçı zoruyla yürümez;004709
+arpa şehriye;004710
+arpacı;004711
+arpacı kumrusu;004712
+arpacı kumrusu gibi düşünmek;004713
+arpacık;004714
+arpacık soğanı;004715
+arpacılık;004716
+arpacıya borç eden ahırını tez satar;004717
+arpalama;004718
+arpalık;004719
+arpalık yapmak;004720
+arpamsı;004721
+arpası çok gelmek;004722
+arpaçay;004723
+arpağan;004724
+arpej;004725
+arpçı;004726

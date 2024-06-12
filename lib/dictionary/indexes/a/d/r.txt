@@ -1,0 +1,9 @@
+adrenalin;000754
+adres;000755
+adres bırakmak (veya vermek);000756
+adres defteri;000757
+adres göstermek;000758
+adres kartı;000759
+adres kitabı;000760
+adres makinesi;000761
+adres rehberi;000762

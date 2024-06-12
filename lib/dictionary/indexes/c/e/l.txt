@@ -1,0 +1,32 @@
+celadet;016023
+celal;016024
+celallenebilme;016025
+celallenebilmek;016026
+celalleniverme;016027
+celallenivermek;016028
+celallenme;016029
+celallenmek;016030
+celalli;016031
+celallice;016032
+celallilik;016033
+celbe;016034
+celbetme;016035
+celbetmek;016036
+celep;016037
+celeplik;016038
+celepçi;016039
+celepçilik;016040
+celi;016041
+celi yazı;016042
+celil;016043
+cellat;016044
+cellat gibi;016045
+cellatlık;016046
+celp;016047
+celp kâğıdı;016048
+celpname;016049
+celse;016050
+celseyi açmak;016051
+celseyi tatil etmek;016052
+celâli;016053
+celâlilik;016054

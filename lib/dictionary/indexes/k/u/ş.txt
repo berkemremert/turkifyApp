@@ -1,0 +1,118 @@
+kuş;048319
+kuş bakışı;048320
+kuş beyinli;048321
+kuş beyinlilik;048322
+kuş bilimci;048323
+kuş bilimi;048324
+kuş dili;048325
+kuş evi;048326
+kuş gibi;048327
+kuş gibi (veya kadar) yemek;048328
+kuş gibi uçup gitmek (veya uçmak);048329
+kuş gibi çırpınmak;048330
+kuş gribi;048331
+kuş iğdesi;048332
+kuş kadar canı olmak;048333
+kuş kafesi;048334
+kuş kafesi gibi;048335
+kuş kanadına kira istemez;048336
+kuş kanadıyla gitmek;048337
+kuş kirazı;048338
+kuş lastiği;048339
+kuş mu konduracak?;048340
+kuş otu;048341
+kuş sütü;048342
+kuş sütü ile beslemek;048343
+kuş sütünden başka her şey var;048344
+kuş tüyü;048345
+kuş tüyü gibi;048346
+kuş uykusu;048347
+kuş uçmaz, kervan geçmez;048348
+kuş uçumu;048349
+kuş uçurmamak (veya uçurtmamak);048350
+kuş uçuşu;048351
+kuş vardır eti yenir, kuş vardır et yedirilir;048352
+kuş yemi;048353
+kuş yuvası;048354
+kuş üzümü;048355
+kuşa benzemek (veya dönmek);048356
+kuşa kafes lazım, boruya nefes;048357
+kuşadası;048358
+kuşak;048359
+kuşak bağlama;048360
+kuşaklama;048361
+kuşaklamak;048362
+kuşaklanma;048363
+kuşaklanmak;048364
+kuşaklı;048365
+kuşaksız;048366
+kuşanabilme;048367
+kuşanabilmek;048368
+kuşandırma;048369
+kuşandırmak;048370
+kuşane;048371
+kuşanma;048372
+kuşanmak;048373
+kuşantı;048374
+kuşanılma;048375
+kuşanılmak;048376
+kuşanış;048377
+kuşatabilme;048378
+kuşatabilmek;048379
+kuşatma;048380
+kuşatmak;048381
+kuşatılma;048382
+kuşatılmak;048383
+kuşatış;048384
+kuşbaz;048385
+kuşbazlık;048386
+kuşbaşı;048387
+kuşbaşılı;048388
+kuşburnu;048389
+kuşdili;048390
+kuşe;048391
+kuşe kâğıdı;048392
+kuşekmeği;048393
+kuşet;048394
+kuşetli;048395
+kuşetsiz;048396
+kuşgömü;048397
+kuşgözü;048398
+kuşhane;048399
+kuşkanadı;048400
+kuşkonmaz;048401
+kuşku;048402
+kuşku beslemek (veya duymak);048403
+kuşku uyanmak;048404
+kuşku yok;048405
+kuşkucu;048406
+kuşkuculuk;048407
+kuşkulanabilme;048408
+kuşkulanabilmek;048409
+kuşkulandırma;048410
+kuşkulandırmak;048411
+kuşkulanma;048412
+kuşkulanmak;048413
+kuşkulanış;048414
+kuşkulu;048415
+kuşkululuk;048416
+kuşkusu kalmamak;048417
+kuşkusuz;048418
+kuşkusuzluk;048419
+kuşkuya düşmek;048420
+kuşlak;048421
+kuşlar;048422
+kuşlokumu;048423
+kuşluk;048424
+kuşluk namazı;048425
+kuşluk vakti;048426
+kuşluk yemeği;048427
+kuşmar;048428
+kuşpalazı;048429
+kuşu kuşla avlarlar;048430
+kuşun kanadıyla haber salmak;048431
+kuşyemi;048432
+kuşça;048433
+kuşçu;048434
+kuşçubaşı;048435
+kuşçuluk;048436

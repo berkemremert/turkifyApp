@@ -1,0 +1,150 @@
+kas;042860
+kas doku;042861
+kas tutukluğu;042862
+kasa;042863
+kasa defteri;042864
+kasa fişi;042865
+kasa sayımı;042866
+kasaba;042867
+kasaba kurnazlığı;042868
+kasabacık;042869
+kasabalı;042870
+kasabalılık;042871
+kasacı;042872
+kasacılık;042873
+kasadar;042874
+kasadarlık;042875
+kasalama;042876
+kasalamak;042877
+kasalanma;042878
+kasalanmak;042879
+kasalı;042880
+kasalık;042881
+kasap;042882
+kasap havası;042883
+kasap, yağı bol bulunca gerisini yağlar;042884
+kasaphane;042885
+kasaplık;042886
+kasaptaki ete soğan doğranmaz;042887
+kasara;042888
+kasatura;042889
+kasavet;042890
+kasavet etmek;042891
+kasavet çekmek;042892
+kasavetlenme;042893
+kasavetlenmek;042894
+kasavetli;042895
+kasavetsiz;042896
+kasavetsiz ağız anahtarsız açılır;042897
+kasavetsizlik;042898
+kasayı devretmek;042899
+kasem;042900
+kaset;042901
+kasetçalar;042902
+kasetçi;042903
+kasetçilik;042904
+kaside;042905
+kasideci;042906
+kasidecilik;042907
+kasidehan;042908
+kasis;042909
+kasiyer;042910
+kask;042911
+kaskatı;042912
+kaskatı kesilmek;042913
+kaskatı olmak;042914
+kaskatılık;042915
+kasket;042916
+kasketli;042917
+kasketsiz;042918
+kasketçi;042919
+kasketçilik;042920
+kasko;042921
+kaskocu;042922
+kaskoculuk;042923
+kaskolama;042924
+kaskolamak;042925
+kaskolatma;042926
+kaskolatmak;042927
+kaskolu;042928
+kaskosuz;042929
+kaslan;042930
+kaslaşma;042931
+kaslaşmak;042932
+kaslı;042933
+kaslılık;042934
+kasma;042935
+kasmak;042936
+kasnak;042937
+kasnak işlemek;042938
+kasnaklama;042939
+kasnaklamak;042940
+kasnakçı;042941
+kasnakçılık;042942
+kasnı;042943
+kassıl;042944
+kassıl duyumlar;042945
+kassız;042946
+kassızlık;042947
+kast;042948
+kastamonu;042949
+kastamonulu;042950
+kastamonululuk;042951
+kastanyet;042952
+kastanyola;042953
+kastanyola yuvası;042954
+kastar;042955
+kastarcı;042956
+kastarcılık;042957
+kastarlama;042958
+kastarlamak;042959
+kastarlanma;042960
+kastarlanmak;042961
+kastarlı;042962
+kasten;042963
+kastetme;042964
+kastetmek;042965
+kasti;042966
+kastor;042967
+kastı olmak;042968
+kastırma;042969
+kastırmak;042970
+kasvet;042971
+kasvet basmak (veya çökmek);042972
+kasvet vermek;042973
+kasvetli;042974
+kasvetlilik;042975
+kasvetsiz;042976
+kasvetsizlik;042977
+kasık;042978
+kasık bağcı;042979
+kasık bağı;042980
+kasık biti;042981
+kasık fıtığı;042982
+kasık otu;042983
+kasık çatlağı;042984
+kasılgan;042985
+kasılganlık;042986
+kasılma;042987
+kasılmak;042988
+kasılış;042989
+kasım;042990
+kasım kasım;042991
+kasımdan on gün evvel ek, on gün sonra ekme;042992
+kasımpatı;042993
+kasınma;042994
+kasınmak;042995
+kasıntı;042996
+kasıntılı;042997
+kasıntısız;042998
+kasınç;042999
+kasıp kavurmak;043000
+kasır;043001
+kasırga;043002
+kasıt;043003
+kasıtlı;043004
+kasıtlıca;043005
+kasıtlılık;043006
+kasıtsız;043007
+kasıtsızca;043008
+kasıtsızlık;043009

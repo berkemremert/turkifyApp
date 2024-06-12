@@ -1,0 +1,58 @@
+işlek;039557
+işlek ek;039558
+işleklik;039559
+işlem;039560
+işlem görmek;039561
+işlem hacmi;039562
+işlemci;039563
+işlemcilik;039564
+işleme;039565
+işleme koymak;039566
+işlemeci;039567
+işlemecilik;039568
+işlemek;039569
+işlemeli;039570
+işlemezlik;039571
+işlemsel;039572
+işlenebilme;039573
+işlenebilmek;039574
+işleniş;039575
+işlenme;039576
+işlenmek;039577
+işlenti;039578
+işler arapsaçına dönmek;039579
+işler açılmak;039580
+işler becermek;039581
+işlerlik;039582
+işletebilme;039583
+işletebilmek;039584
+işletilebilme;039585
+işletilebilmek;039586
+işletiliş;039587
+işletilme;039588
+işletilmek;039589
+işletiş;039590
+işletme;039591
+işletme defteri;039592
+işletme şirketi;039593
+işletmeci;039594
+işletmecilik;039595
+işletmek;039596
+işletmen;039597
+işletmenlik;039598
+işlettirme;039599
+işlettirmek;039600
+işlev;039601
+işlevci;039602
+işlevcilik;039603
+işlevsel;039604
+işlevsellik;039605
+işlevsiz;039606
+işlevsizlik;039607
+işleyebilme;039608
+işleyebilmek;039609
+işleyen demir pas tutmaz (veya ışıldar);039610
+işleyim;039611
+işleyiş;039612
+işli;039613
+işlik;039614

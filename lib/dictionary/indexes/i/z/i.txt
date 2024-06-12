@@ -1,0 +1,22 @@
+izi belirsiz olmak;038795
+izi silinmek;038796
+izin;038797
+izin almak;038798
+izin istemek;038799
+izin koparmak;038800
+izin vermek;038801
+izin çıkmak;038802
+izinden yürümek;038803
+izine basmak;038804
+izine dönmek;038805
+izine düşmek;038806
+izine uymak;038807
+izini düşürmek;038808
+izini kaybetmek;038809
+izinli;038810
+izinli saymak;038811
+izinli çıkmak;038812
+izinlilik;038813
+izinname;038814
+izinsiz;038815
+izinsizlik;038816

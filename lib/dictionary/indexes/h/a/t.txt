@@ -1,0 +1,100 @@
+hat;033506
+hat bekçisi;033507
+hat trick;033508
+hat çekmek;033509
+hata;033510
+hata etmek (veya eylemek veya işlemek);033511
+hatalı;033512
+hatalı yürüme;033513
+hatalılık;033514
+hatasıyla sevabıyla;033515
+hatasız;033516
+hatasız kul olmaz;033517
+hatasızca;033518
+hatasızlık;033519
+hatay;033520
+hataya düşmek;033521
+hataylı;033522
+hataylılık;033523
+hatif;033524
+hatiften gelmek;033525
+hatim;033526
+hatim duası;033527
+hatim indirmek;033528
+hatim sürmek;033529
+hatime;033530
+hatime çekmek;033531
+hatip;033532
+hatiplik;033533
+hatmetme;033534
+hatmetmek;033535
+hatmi;033536
+hatta;033537
+hattat;033538
+hattatlık;033539
+hattıhareket;033540
+hatun;033541
+hatun kişi;033542
+hatuncuk;033543
+hatıl;033544
+hatıllama;033545
+hatıllamak;033546
+hatır;033547
+hatır (veya hatırını) saymak;033548
+hatır almak;033549
+hatır belasına;033550
+hatır eylemek;033551
+hatır gönül bilmek (veya saymak veya tanımak);033552
+hatır gönül yapmak;033553
+hatır gönül yıkmak (veya kırmak);033554
+hatır hatır;033555
+hatır hutur;033556
+hatır için çiğ tavuk yemek;033557
+hatır senedi;033558
+hatır sormak;033559
+hatıra;033560
+hatıra (veya hatır ve hayale) gelmemek;033561
+hatıra defteri;033562
+hatırat;033563
+hatırlama;033564
+hatırlamak;033565
+hatırlanabilme;033566
+hatırlanabilmek;033567
+hatırlanma;033568
+hatırlanmak;033569
+hatırlanış;033570
+hatırlatabilme;033571
+hatırlatabilmek;033572
+hatırlatma;033573
+hatırlatmak;033574
+hatırlatılma;033575
+hatırlatılmak;033576
+hatırlatıverme;033577
+hatırlatıvermek;033578
+hatırlatış;033579
+hatırlayabilme;033580
+hatırlayabilmek;033581
+hatırlayıverme;033582
+hatırlayıvermek;033583
+hatırlayış;033584
+hatırlı;033585
+hatırlılık;033586
+hatırsız;033587
+hatırsızca;033588
+hatırsızlık;033589
+hatırı için;033590
+hatırı kalmak;033591
+hatırı sayılır;033592
+hatırına bir şey gelmesin;033593
+hatırına gelmek;033594
+hatırına getirmek;033595
+hatırında kalmak;033596
+hatırında olmak;033597
+hatırında tutmak;033598
+hatırından (veya hatır ve hayalinden) geçmemek;033599
+hatırından çıkmamak;033600
+hatırını hoş etmek;033601
+hatırını kırmak;033602
+hatırını sormak;033603
+hatırşinas;033604
+hatırşinaslık;033605

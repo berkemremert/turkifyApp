@@ -1,0 +1,48 @@
+ödegeç;088588
+ödem;088589
+ödeme;088590
+ödeme belgesi;088591
+ödeme emri;088592
+ödeme kartı;088593
+ödemek;088594
+ödemeli;088595
+ödemiş;088596
+ödemli;088597
+ödence;088598
+ödence davası;088599
+ödenek;088600
+ödenekli;088601
+ödenekli tiyatro;088602
+ödeneksiz;088603
+ödeneksizlik;088604
+ödeniş;088605
+ödenme;088606
+ödenmek;088607
+ödenti;088608
+ödetebilme;088609
+ödetebilmek;088610
+ödetilme;088611
+ödetilmek;088612
+ödetme;088613
+ödetmek;088614
+ödettirme;088615
+ödettirmek;088616
+ödev;088617
+ödev bilimi;088618
+ödev bilimsel;088619
+ödev bilmek (veya saymak);088620
+ödevcil;088621
+ödevlendirilme;088622
+ödevlendirilmek;088623
+ödevlendirme;088624
+ödevlendirmek;088625
+ödevli;088626
+ödeyebilme;088627
+ödeyebilmek;088628
+ödeyiverme;088629
+ödeyivermek;088630
+ödeyiş;088631
+ödeşme;088632
+ödeşmek;088633
+ödeştirme;088634
+ödeştirmek;088635

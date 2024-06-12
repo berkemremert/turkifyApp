@@ -1,0 +1,87 @@
+yön;083029
+yön belirteci;083030
+yön eki;083031
+yön gösterme eki;083032
+yön vermek;083033
+yön zarfı;083034
+yönbul;083035
+yönder;083036
+yöndeş;083037
+yöndeş açılar;083038
+yöndeşlik;083039
+yönelebilme;083040
+yönelebilmek;083041
+yönelik;083042
+yönelim;083043
+yöneliş;083044
+yönelme;083045
+yönelme durumu;083046
+yönelme hâli;083047
+yönelmek;083048
+yönelmeli;083049
+yönelmeli tümleç;083050
+yöneltebilme;083051
+yöneltebilmek;083052
+yönelteç;083053
+yöneltiliş;083054
+yöneltilme;083055
+yöneltilmek;083056
+yöneltim;083057
+yöneltiş;083058
+yöneltme;083059
+yöneltmek;083060
+yönerge;083061
+yönetebilme;083062
+yönetebilmek;083063
+yönetici;083064
+yönetici asistanı;083065
+yönetici özeti;083066
+yöneticilik;083067
+yönetilebilme;083068
+yönetilebilmek;083069
+yönetilme;083070
+yönetilmek;083071
+yönetim;083072
+yönetim gideri;083073
+yönetim kurulu;083074
+yönetim yeri;083075
+yönetimsel;083076
+yönetiş;083077
+yönetişim;083078
+yönetme;083079
+yönetmek;083080
+yönetmelik;083081
+yönetmen;083082
+yönetmen yardımcılığı;083083
+yönetmen yardımcısı;083084
+yönetmenlik;083085
+yönetsel;083086
+yönettirme;083087
+yönettirmek;083088
+yöneylem;083089
+yöneylem araştırması;083090
+yönlendirebilme;083091
+yönlendirebilmek;083092
+yönlendirici;083093
+yönlendiriliş;083094
+yönlendirilme;083095
+yönlendirilmek;083096
+yönlendiriş;083097
+yönlendirme;083098
+yönlendirmek;083099
+yönleniş;083100
+yönlenme;083101
+yönlenmek;083102
+yönlü;083103
+yönlü doğru;083104
+yönseme;083105
+yönsüz;083106
+yönsüzlük;083107
+yöntem;083108
+yöntem bilgisi;083109
+yöntem bilimi;083110
+yöntem bilimsel;083111
+yöntemli;083112
+yöntemlilik;083113
+yöntemsiz;083114
+yöntemsizlik;083115

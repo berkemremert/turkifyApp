@@ -1,0 +1,28 @@
+sponsor;068741
+sponsorluk;068742
+spontane;068743
+spontaneizm;068744
+spor;068745
+spor;068746
+spor kesesi;068747
+spor kulübü;068748
+spor loto;068749
+spor toto;068750
+sporcu;068751
+sporculuk;068752
+sporlanma;068753
+sporlanmak;068754
+sporlular;068755
+sporsever;068756
+sporseverlik;068757
+sportif;068758
+sportiflik;068759
+sportmen;068760
+sportmenlik;068761
+spot;068762
+spot alım;068763
+spot lambası;068764
+spot mağaza;068765
+spot satım;068766
+spotçu;068767
+spotçuluk;068768

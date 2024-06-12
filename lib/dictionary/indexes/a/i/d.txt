@@ -1,0 +1,3 @@
+aidat;001171
+aidiyet;001172
+aidiyet eki;001173

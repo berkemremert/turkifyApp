@@ -1,0 +1,12 @@
+put;062542
+put;062543
+put gibi;062544
+put kesilmek;062545
+putlaşma;062546
+putlaşmak;062547
+putlaştırma;062548
+putlaştırmak;062549
+putperest;062550
+putperestlik;062551
+putrel;062552
+putrelli;062553

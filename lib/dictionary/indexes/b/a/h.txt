@@ -1,0 +1,117 @@
+bahadır;008127
+bahadırlık;008128
+bahai;008129
+bahailik;008130
+bahane;008131
+bahane aramak;008132
+bahane bulmak;008133
+bahane etmek;008134
+bahaneli;008135
+bahanesiz;008136
+bahanesizlik;008137
+bahar;008138
+bahar;008139
+bahar bayramı;008140
+bahar dönemi;008141
+bahar nezlesi;008142
+baharat;008143
+baharatlandırma;008144
+baharatlandırmak;008145
+baharatlı;008146
+baharatsız;008147
+baharatçı;008148
+baharatçılık;008149
+baharcı;008150
+baharcılık;008151
+bahariye;008152
+baharlı;008153
+baharı başına vurmak;008154
+bahir;008155
+bahis;008156
+bahis açmak;008157
+bahis konusu;008158
+bahis konusu olmak;008159
+bahis mevzusu;008160
+bahis mevzusu olmak;008161
+bahisçi;008162
+bahisçilik;008163
+bahname;008164
+bahri;008165
+bahriye;008166
+bahriye çiftetellisi;008167
+bahriyeli;008168
+bahriyelilik;008169
+bahse girmek (veya tutuşmak);008170
+bahsedebilme;008171
+bahsedebilmek;008172
+bahsediliş;008173
+bahsedilme;008174
+bahsedilmek;008175
+bahsediş;008176
+bahsetme;008177
+bahsetmek;008178
+bahsi geçmek;008179
+bahsi kapamak;008180
+bahsi kaybetmek;008181
+bahsi kazanmak;008182
+bahsi tazelemek;008183
+bahsolunma;008184
+bahsolunmak;008185
+baht;008186
+baht olmayınca başta, ne kuruda biter ne yaşta;008187
+bahtiyar;008188
+bahtiyar olmak;008189
+bahtiyarlık;008190
+bahtlı;008191
+bahtlılık;008192
+bahtsız;008193
+bahtsız olmak;008194
+bahtsızca;008195
+bahtsızcasına;008196
+bahtsızlık;008197
+bahtsızın bağına yağmur, ya taş yağar ya dolu;008198
+bahtı açık;008199
+bahtı açık olmak;008200
+bahtı açıklık;008201
+bahtı açılmak;008202
+bahtı bağlı olmak;008203
+bahtı kapanmak;008204
+bahtı kara;008205
+bahtı kara olmak;008206
+bahtı karalık;008207
+bahtına küsmek;008208
+bahusus;008209
+bahçe;008210
+bahçe;008211
+bahçe domatesi;008212
+bahçe katı;008213
+bahçe kekiği;008214
+bahçe makası;008215
+bahçe nanesi;008216
+bahçeci;008217
+bahçecilik;008218
+bahçeli;008219
+bahçelievler;008220
+bahçelik;008221
+bahçelikli;008222
+bahçemsi;008223
+bahçesaray;008224
+bahçesiz;008225
+bahçesizlik;008226
+bahçıvan;008227
+bahçıvan kebabı;008228
+bahçıvan çorbası;008229
+bahçıvanlı;008230
+bahçıvanlık;008231
+bahçıvansız;008232
+bahçıvansızlık;008233
+bahşedebilme;008234
+bahşedebilmek;008235
+bahşediş;008236
+bahşetme;008237
+bahşetmek;008238
+bahşettirme;008239
+bahşettirmek;008240
+bahşiş;008241
+bahşiş atın dişine (veya yaşına) bakılmaz;008242
+bahşılı;008243

@@ -1,0 +1,250 @@
+can;015552
+can acısı;015553
+can alacak nokta (veya yer);015554
+can alıcı;015555
+can alıcılık;015556
+can alıp can vermek;015557
+can arkadaşı;015558
+can atmak;015559
+can baş üstüne;015560
+can başına sıçramak;015561
+can beslemek;015562
+can borcunu ödemek;015563
+can bostanda bitmez;015564
+can boğazdan gelir (veya geçer);015565
+can bulmak;015566
+can bunaltısı;015567
+can cana, baş başa;015568
+can candan şirindir (veya tatlıdır);015569
+can canın yoldaşıdır;015570
+can cümleden aziz;015571
+can damarı;015572
+can damarına basmak;015573
+can damarından yakalamak;015574
+can dayanmamak;015575
+can derdinde olmak;015576
+can derdine düşmek;015577
+can direği;015578
+can dostu;015579
+can düşmanı;015580
+can eriği;015581
+can feda;015582
+can gelmek;015583
+can havliyle;015584
+can kalmamak;015585
+can kaygısına düşmek;015586
+can korkusu;015587
+can kurban;015588
+can kuşu;015589
+can noktası;015590
+can olmak;015591
+can pahasına;015592
+can pazarı;015593
+can sağlığı;015594
+can simidi;015595
+can simidi olmak;015596
+can sohbeti;015597
+can suyu;015598
+can sıkmak;015599
+can sıkıntısı;015600
+can tahtası;015601
+can vermek;015602
+can yakmak;015603
+can yeleği;015604
+can yoldaşı;015605
+can çabası;015606
+can çekişmek;015607
+can çekişmektense ölmek yeğdir;015608
+can çıkmayınca (veya çıkmadan) huy çıkmaz;015609
+cana;015610
+cana (veya canına) can katmak;015611
+cana gelecek mala gelsin;015612
+cana kıymak;015613
+cana minnet saymak (veya bilmek);015614
+cana yakın;015615
+cana yakınlık;015616
+canan;015617
+cananlık;015618
+canavar;015619
+canavar düdüğü;015620
+canavar gibi;015621
+canavar kesilmek;015622
+canavar otu;015623
+canavar otugiller;015624
+canavarca;015625
+canavarcasına;015626
+canavarlaşabilme;015627
+canavarlaşabilmek;015628
+canavarlaşma;015629
+canavarlaşmak;015630
+canavarlaştırma;015631
+canavarlaştırmak;015632
+canavarlık;015633
+cancağız;015634
+canciğer;015635
+canciğer kuzu sarması;015636
+canciğer olmak;015637
+canciğerlik;015638
+candan;015639
+candan geçmek;015640
+candan yürekten;015641
+candanlık;015642
+candaş;015643
+candaşlık;015644
+canevi;015645
+canevinden vurmak;015646
+canfes;015647
+canfes gibi;015648
+canfeza;015649
+cangıl;015650
+cangıl cungul;015651
+canhıraş;015652
+cani;015653
+canice;015654
+canicesine;015655
+canik;015656
+canilik;015657
+canip;015658
+caniyane;015659
+cankulağı;015660
+cankulağı ile dinlemek;015661
+cankurtaran;015662
+cankurtaran düdüğü;015663
+cankurtaran gemisi;015664
+cankurtaran kulübesi;015665
+cankurtaran salı;015666
+cankurtaran sandalı;015667
+cankurtaran simidi;015668
+cankurtaran yeleği;015669
+cankurtaran çanı;015670
+cankurtaran şamandırası;015671
+cankurtaranlık;015672
+canla başla;015673
+canlanabilme;015674
+canlanabilmek;015675
+canlandırabilme;015676
+canlandırabilmek;015677
+canlandırma;015678
+canlandırmak;015679
+canlandırıcı;015680
+canlandırıcılık;015681
+canlandırılabilme;015682
+canlandırılabilmek;015683
+canlandırılma;015684
+canlandırılmak;015685
+canlandırılış;015686
+canlandırım;015687
+canlandırıverme;015688
+canlandırıvermek;015689
+canlandırış;015690
+canlanma;015691
+canlanmak;015692
+canlanıverme;015693
+canlanıvermek;015694
+canlanış;015695
+canlar!;015696
+canlı;015697
+canlı bomba;015698
+canlı canlı;015699
+canlı cenaze;015700
+canlı cenazeye dönmek;015701
+canlı model;015702
+canlı müzik;015703
+canlı resim;015704
+canlı yayın;015705
+canlı yayın aracı;015706
+canlı özdekçi;015707
+canlı özdekçilik;015708
+canlıcı;015709
+canlıcılık;015710
+canlılık;015711
+cansiparane;015712
+cansız;015713
+cansız düşmek;015714
+cansız hedef;015715
+cansızca;015716
+cansızcasına;015717
+cansızlaşabilme;015718
+cansızlaşabilmek;015719
+cansızlaşma;015720
+cansızlaşmak;015721
+cansızlaştırma;015722
+cansızlaştırmak;015723
+cansızlaştırılma;015724
+cansızlaştırılmak;015725
+cansızlık;015726
+canı acımak;015727
+canı ağzına (veya boğazına) gelmek;015728
+canı bayılmak;015729
+canı burnuna (veya burnundan) gelmek;015730
+canı burnunda;015731
+canı burnundan çıkmak;015732
+canı cana ölçmek;015733
+canı canına (veya içine) sığmamak;015734
+canı cebinde;015735
+canı cehenneme;015736
+canı gelip gitmek;015737
+canı gelmek;015738
+canı gibi sevmek;015739
+canı gitmek;015740
+canı ile oynamak;015741
+canı ile uğraşmak;015742
+canı istemek;015743
+canı isterse;015744
+canı kaymak isteyen mandayı yanında taşır;015745
+canı pek;015746
+canı sağ olsun!;015747
+canı sıkkın;015748
+canı sıkkınlık;015749
+canı sıkılmak;015750
+canı tatlı;015751
+canı tez;015752
+canı tezlik;015753
+canı yanan eşek, attan yüğrük olur;015754
+canı yanmak;015755
+canı yerine gelmek;015756
+canı yok mu?;015757
+canı çekilmek;015758
+canı çekmek;015759
+canı çıkasıca;015760
+canı çıkmak;015761
+canı çıksın!;015762
+canıgönülden;015763
+canım;015764
+canım ciğerim;015765
+canım dese canın çıksın diyor sanmak;015766
+canımı sokakta bulmadım;015767
+canımın içi;015768
+canın isterse;015769
+canına acımamak;015770
+canına değmek;015771
+canına düşkün;015772
+canına ezan okumak;015773
+canına geçmek (veya işlemek veya kâr etmek);015774
+canına kastetmek;015775
+canına kıymak;015776
+canına minnet (olmak);015777
+canına okumak;015778
+canına rahmet;015779
+canına susamak;015780
+canına tak demek (veya etmek);015781
+canına tükürdüğümün (veya üfürdüğümün);015782
+canına yandığım (veya yandığımın);015783
+canına yetmek;015784
+canından bezmek (veya bıkmak veya usanmak);015785
+canından geçmek;015786
+canını acıtmak;015787
+canını almak;015788
+canını bağışlamak;015789
+canını burnundan getirmek;015790
+canını cehenneme göndermek (veya yollamak);015791
+canını dar atmak;015792
+canını dişine almak (veya takmak);015793
+canını sokakta bulmamak;015794
+canını sıkmak;015795
+canını vermek;015796
+canını yakmak;015797
+canını çıkarmak;015798
+canının derdine düşmek;015799
+canının içine sokacağı gelmek;015800
+canıyürekten;015801

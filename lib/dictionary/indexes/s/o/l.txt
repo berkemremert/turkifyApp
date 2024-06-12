@@ -1,0 +1,98 @@
+sol;068101
+sol;068102
+sol;068103
+sol anahtarı;068104
+sol açık;068105
+sol bek;068106
+sol eli beklemek;068107
+sol eğilimli;068108
+sol haf;068109
+sol iç;068110
+sol tarafından kalkmak;068111
+sol yapmak;068112
+sol şerit;068113
+sola kaymak;068114
+solak;068115
+solaklık;068116
+solaryum;068117
+solcu;068118
+solculuk;068119
+solda sıfır;068120
+solda sıfır kalmak;068121
+soldurma;068122
+soldurmak;068123
+solfej;068124
+solgun;068125
+solgunlaşma;068126
+solgunlaşmak;068127
+solgunluk;068128
+solhan;068129
+solidarist;068130
+solidarizm;068131
+solipsizm;068132
+solist;068133
+solistlik;068134
+sollama;068135
+sollama yapmak;068136
+sollamak;068137
+sollayabilme;068138
+sollayabilmek;068139
+sollayış;068140
+solluk;068141
+solma;068142
+solmak;068143
+solo;068144
+solo yapmak (veya atmak);068145
+solocu;068146
+soloculuk;068147
+solucan;068148
+solucan düşürücü;068149
+solucan gibi;068150
+solucan otu;068151
+solucanlar;068152
+soluk;068153
+soluk;068154
+soluk aldırmamak;068155
+soluk almadan;068156
+soluk almak;068157
+soluk benizli;068158
+soluk benizlilik;068159
+soluk borusu;068160
+soluk darlığı;068161
+soluk kesici;068162
+soluk soluğa;068163
+soluk soluğa kalmak;068164
+soluklama;068165
+soluklamak;068166
+soluklandırma;068167
+soluklandırmak;068168
+soluklanma;068169
+soluklanmak;068170
+soluklanış;068171
+soluklaşma;068172
+soluklaşmak;068173
+solukluk;068174
+soluksuz;068175
+soluksuzluk;068176
+soluma;068177
+solumak;068178
+solungaç;068179
+solungaçlı;068180
+solunma;068181
+solunmak;068182
+solunum;068183
+solunum aygıtı;068184
+solunum sistemi;068185
+solunum yetmezliği;068186
+solutma;068187
+solutmak;068188
+soluyabilme;068189
+soluyabilmek;068190
+soluyuş;068191
+soluğan;068192
+soluğan etmek;068193
+soluğu (bir yerde) almak;068194
+soluğu kesilmek (veya tutulmak);068195
+soluğunu kesmek;068196
+soluş;068197
+solüsyon;068198
