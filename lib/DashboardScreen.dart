@@ -18,6 +18,7 @@ import 'package:turkify_bem/welcomingInformationPageFiles/WelcomingInformationPa
 
 import 'RoyaPageRoya.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
+import 'dictionaryPageFiles/WordMeaningPage.dart';
 import 'filterPageFiles/FilterPage.dart';
 import 'listingPageFiles/presentation/pages/home/view/TutorsPresentation.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
@@ -271,7 +272,7 @@ class _DashboardScreenState extends State<DashboardScreen>
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => WelcomingInformationPage(),
+            builder: (context) => DictionaryPage(),
           ),
         );
       } else if (identifier == 'calendar') {
