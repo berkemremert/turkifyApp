@@ -1,0 +1,135 @@
+su;068904
+su;068905
+su akrebi;068906
+su almak;068907
+su altı;068908
+su altı arkeolojisi;068909
+su altı flaşı;068910
+su altı fotoğrafçılığı;068911
+su altı işleri;068912
+su askıları;068913
+su aygırı;068914
+su aygırıgiller;068915
+su baldıranı;068916
+su bardağı;068917
+su baskını;068918
+su basmak;068919
+su basmanı;068920
+su basıncı;068921
+su bidonu;068922
+su bilgisi;068923
+su bilimci;068924
+su bilimi;068925
+su biti;068926
+su bitkileri;068927
+su bombası;068928
+su borusu;068929
+su boyası;068930
+su böceği;068931
+su bölümü çizgisi;068932
+su böreği;068933
+su cenderesi;068934
+su damarı;068935
+su deposu;068936
+su değirmeni;068937
+su dolabı;068938
+su dökmek;068939
+su dökünmek;068940
+su düzeyi;068941
+su etmek;068942
+su gelmek;068943
+su gibi;068944
+su gibi akmak;068945
+su gibi aziz ol!;068946
+su gibi bilmek (veya okumak);068947
+su gibi ezberlemek;068948
+su gibi gitmek;068949
+su gibi olmak;068950
+su gibi terlemek;068951
+su görmemiş;068952
+su götürür yeri olmamak;068953
+su hattı;068954
+su iktiza etmek;068955
+su içinde;068956
+su içinde kalmak;068957
+su kabağı;068958
+su kabı;068959
+su kamışı;068960
+su kamışıgiller;068961
+su kapmak;068962
+su karanfili;068963
+su katılmamış;068964
+su kayağı;068965
+su kaybı;068966
+su kaydırağı;068967
+su kaçırmak;068968
+su keleri;068969
+su kemeri;068970
+su kesesi;068971
+su kesimi;068972
+su kesmek;068973
+su keteni;068974
+su kireci;068975
+su korkusu;068976
+su koyuvermek;068977
+su küre;068978
+su küçüğün, söz (veya sofra veya yemek) büyüğün;068979
+su kızağı;068980
+su mantarları;068981
+su mercimeği;068982
+su mercimeğigiller;068983
+su mermeri;068984
+su muhallebisi;068985
+su nanesi;068986
+su parkı;068987
+su piresi;068988
+su rezenesi;068989
+su saati;068990
+su sabun görmemek;068991
+su samuru;068992
+su sarnıcı;068993
+su sayacı;068994
+su seviyesi;068995
+su sineği;068996
+su sığırı;068997
+su tabakası;068998
+su tankeri;068999
+su tası;069000
+su tavuğu;069001
+su tavuğugiller;069002
+su taşkını;069003
+su tedavisi;069004
+su terazisi;069005
+su teresi;069006
+su testisi;069007
+su testisi su yolunda kırılır;069008
+su topu;069009
+su topçu;069010
+su tulumbası;069011
+su türbini;069012
+su uyur, düşman uyumaz;069013
+su vermek;069014
+su yapmak;069015
+su yatağı;069016
+su yelvesi;069017
+su yolcu;069018
+su yolu;069019
+su yolu yapmak;069020
+su yoncası;069021
+su yosunları;069022
+su yosunu;069023
+su yuvarı;069024
+su yürümek;069025
+su yüzü görmemiş;069026
+su yüzüne (veya üstüne) çıkmak;069027
+su yüzüne çıkmak;069028
+su yılanları;069029
+su yılanı;069030
+su yılanıgiller;069031
+su çekmek;069032
+su çulluğu;069033
+su çıkrığı;069034
+su örümceği;069035
+su örümceğigiller;069036
+su ürünleri;069037
+su ısıtıcısı;069038

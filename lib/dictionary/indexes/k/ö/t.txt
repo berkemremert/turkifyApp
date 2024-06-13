@@ -1,0 +1,62 @@
+kötek;048898
+kötek;048899
+kötek atmak (veya çekmek);048900
+kötek yemek;048901
+kötü;048902
+kötü adam;048903
+kötü göz;048904
+kötü gözle bakmak;048905
+kötü haber;048906
+kötü haber tez duyulur;048907
+kötü huylu;048908
+kötü huyluluk;048909
+kötü kadın;048910
+kötü kalpli;048911
+kötü kalplilik;048912
+kötü kişi olmak;048913
+kötü komşu insanı hacet sahibi eder;048914
+kötü kötü düşünmek;048915
+kötü olmak;048916
+kötü söyleme eşine, ağı katar aşına;048917
+kötü söylemek;048918
+kötü yol;048919
+kötü yola düşmek;048920
+kötü yola sapmak;048921
+kötü yola saptırmak;048922
+kötü yola sürüklemek;048923
+kötücül;048924
+kötücül yazılım;048925
+kötücüllük;048926
+kötüleme;048927
+kötülemek;048928
+kötüleniş;048929
+kötülenme;048930
+kötülenmek;048931
+kötüleyebilme;048932
+kötüleyebilmek;048933
+kötüleyiş;048934
+kötüleşme;048935
+kötüleşmek;048936
+kötüleştiriş;048937
+kötüleştirme;048938
+kötüleştirmek;048939
+kötülük;048940
+kötülük etmek (veya yapmak);048941
+kötülükçü;048942
+kötülükçülük;048943
+kötümseme;048944
+kötümsemek;048945
+kötümser;048946
+kötümserleşme;048947
+kötümserleşmek;048948
+kötümserleştirme;048949
+kötümserleştirmek;048950
+kötümserlik;048951
+kötürüm;048952
+kötürüm olmak (veya kalmak);048953
+kötürümden aksak, hiç yoktan torlak yeğdir;048954
+kötürümleşme;048955
+kötürümleşmek;048956
+kötürümlük;048957
+kötüye kullanmak;048958
+kötüye çekmek;048959

@@ -1,0 +1,299 @@
+bağ;009469
+bağ;009470
+bağ babadan, zeytin dededen kalmalı;009471
+bağ bahçe;009472
+bağ bayırda, tarla çayırda;009473
+bağ bozmak;009474
+bağ bozumu;009475
+bağ budamak;009476
+bağ bıçağı;009477
+bağ doku;009478
+bağ evi;009479
+bağ çubuğu;009480
+bağ-fiil;009481
+bağa;009482
+bağa bak, üzüm olsun, yemeye yüzün olsun;009483
+bağan;009484
+bağboğan;009485
+bağcı;009486
+bağcık;009487
+bağcıklı;009488
+bağcıksız;009489
+bağcılar;009490
+bağcılık;009491
+bağda;009492
+bağdadi;009493
+bağdalama;009494
+bağdalamak;009495
+bağdama;009496
+bağdamak;009497
+bağdat;009498
+bağdaş;009499
+bağdaş kurmak;009500
+bağdaşabilme;009501
+bağdaşabilmek;009502
+bağdaşma;009503
+bağdaşmak;009504
+bağdaşmaz;009505
+bağdaşmazlık;009506
+bağdaştırabilme;009507
+bağdaştırabilmek;009508
+bağdaştırma;009509
+bağdaştırmacı;009510
+bağdaştırmacılık;009511
+bağdaştırmak;009512
+bağdaştırılabilme;009513
+bağdaştırılabilmek;009514
+bağdaştırılma;009515
+bağdaştırılmak;009516
+bağdaşık;009517
+bağdaşıklaşma;009518
+bağdaşıklaşmak;009519
+bağdaşıklaştırma;009520
+bağdaşıklaştırmak;009521
+bağdaşıklık;009522
+bağdaşılma;009523
+bağdaşılmak;009524
+bağdaşım;009525
+bağkesen;009526
+bağlam;009527
+bağlama;009528
+bağlama hattı;009529
+bağlama zarf-fiili;009530
+bağlamacı;009531
+bağlamacılık;009532
+bağlamak;009533
+bağlamalık;009534
+bağlamsal;009535
+bağlamsal anlam;009536
+bağlanabilme;009537
+bağlanabilmek;009538
+bağlanak;009539
+bağlanma;009540
+bağlanmak;009541
+bağlantı;009542
+bağlantı borusu;009543
+bağlantı doku;009544
+bağlantı gücü;009545
+bağlantı kurmak;009546
+bağlantı yapmak;009547
+bağlantı ünlüsü;009548
+bağlantı ünsüzü;009549
+bağlantılı;009550
+bağlantılılık;009551
+bağlantısız;009552
+bağlantısız ülkeler;009553
+bağlantısızlık;009554
+bağlantısızlık politikası;009555
+bağlantısızlık siyaseti;009556
+bağlanım;009557
+bağlanıp kalmak;009558
+bağlanıverme;009559
+bağlanıvermek;009560
+bağlanış;009561
+bağlar;009562
+bağlatabilme;009563
+bağlatabilmek;009564
+bağlatma;009565
+bağlatmak;009566
+bağlattırma;009567
+bağlattırmak;009568
+bağlayabilme;009569
+bağlayabilmek;009570
+bağlayıcı;009571
+bağlayıcı ünlü;009572
+bağlayıcı ünsüz;009573
+bağlayıcılık;009574
+bağlayıverme;009575
+bağlayıvermek;009576
+bağlayış;009577
+bağlaç;009578
+bağlaç grubu;009579
+bağlaç öbeği;009580
+bağlaçlı;009581
+bağlaçlı tamlama;009582
+bağlaşma;009583
+bağlaşmak;009584
+bağlaşık;009585
+bağlaşıklık;009586
+bağlaşım;009587
+bağlaşımlı;009588
+bağlaşımsız;009589
+bağlı;009590
+bağlı kalmak;009591
+bağlı kredi;009592
+bağlı olmak;009593
+bağlı su;009594
+bağlık;009595
+bağlık bahçelik;009596
+bağlılaşma;009597
+bağlılaşmak;009598
+bağlılaşık;009599
+bağlılık;009600
+bağnaz;009601
+bağnazca;009602
+bağnazlaşma;009603
+bağnazlaşmak;009604
+bağnazlaştırma;009605
+bağnazlaştırmak;009606
+bağnazlaştırılma;009607
+bağnazlaştırılmak;009608
+bağnazlık;009609
+bağrı kara;009610
+bağrı yanmak;009611
+bağrı yanık;009612
+bağrı yanıklık;009613
+bağrı yufka;009614
+bağrıkara;009615
+bağrılma;009616
+bağrılmak;009617
+bağrına basmak;009618
+bağrına taş basmak;009619
+bağrını delmek;009620
+bağrını ezmek;009621
+bağrış;009622
+bağrış çağrış;009623
+bağrışa çağrışa;009624
+bağrışabilme;009625
+bağrışabilmek;009626
+bağrışma;009627
+bağrışmak;009628
+bağrıştırma;009629
+bağrıştırmak;009630
+bağsız;009631
+bağsızlık;009632
+bağı;009633
+bağı ağlayanın yüzü güler;009634
+bağıcı;009635
+bağıcılık;009636
+bağıl;009637
+bağıl değer;009638
+bağıl nem;009639
+bağıldak;009640
+bağıllık;009641
+bağım;009642
+bağımlama;009643
+bağımlamak;009644
+bağımlaşma;009645
+bağımlaşmak;009646
+bağımlı;009647
+bağımlı akım kaynağı;009648
+bağımlı sıralı cümle;009649
+bağımlılaşabilme;009650
+bağımlılaşabilmek;009651
+bağımlılaşma;009652
+bağımlılaşmak;009653
+bağımlılaştırma;009654
+bağımlılaştırmak;009655
+bağımlılaştırılma;009656
+bağımlılaştırılmak;009657
+bağımlılık;009658
+bağımsız;009659
+bağımsız bölüm;009660
+bağımsız milletvekili;009661
+bağımsız sıralı cümle;009662
+bağımsızca;009663
+bağımsızcasına;009664
+bağımsızlaşabilme;009665
+bağımsızlaşabilmek;009666
+bağımsızlaşma;009667
+bağımsızlaşmak;009668
+bağımsızlaştırabilme;009669
+bağımsızlaştırabilmek;009670
+bağımsızlaştırma;009671
+bağımsızlaştırmak;009672
+bağımsızlık;009673
+bağın;009674
+bağın vurmak;009675
+bağıntı;009676
+bağıntıcı;009677
+bağıntıcılık;009678
+bağıntılı;009679
+bağıntılılık;009680
+bağır;009681
+bağır yeleği;009682
+bağıra çağıra;009683
+bağırabilme;009684
+bağırabilmek;009685
+bağırdak;009686
+bağırgan;009687
+bağırganlık;009688
+bağırma;009689
+bağırmak;009690
+bağırsak;009691
+bağırsak askısı;009692
+bağırsak düğümlenmesi;009693
+bağırsak düşüklüğü;009694
+bağırsak gazı;009695
+bağırsak iltihabı;009696
+bağırsak ingini;009697
+bağırsak kazıntısı;009698
+bağırsak kurdu;009699
+bağırsak otu;009700
+bağırsak solucanı;009701
+bağırsak spazmı;009702
+bağırsakları bozulmak;009703
+bağırsaklarını deşerim;009704
+bağırtabilme;009705
+bağırtabilmek;009706
+bağırtkan;009707
+bağırtkanlık;009708
+bağırtlak;009709
+bağırtma;009710
+bağırtmak;009711
+bağırttırma;009712
+bağırttırmak;009713
+bağırtı;009714
+bağırıp çağırmak;009715
+bağırıverme;009716
+bağırıvermek;009717
+bağırış;009718
+bağıt;009719
+bağıtlama;009720
+bağıtlamak;009721
+bağıtlanabilme;009722
+bağıtlanabilmek;009723
+bağıtlanma;009724
+bağıtlanmak;009725
+bağıtlanış;009726
+bağıtlayabilme;009727
+bağıtlayabilmek;009728
+bağıtlayış;009729
+bağıtlaşma;009730
+bağıtlaşmak;009731
+bağıtlı;009732
+bağıtsız;009733
+bağıtçı;009734
+bağış;009735
+bağış yapmak;009736
+bağışlama;009737
+bağışlamak;009738
+bağışlamalı;009739
+bağışlamamak;009740
+bağışlamasız;009741
+bağışlanabilme;009742
+bağışlanabilmek;009743
+bağışlanma;009744
+bağışlanmak;009745
+bağışlanış;009746
+bağışlatabilme;009747
+bağışlatabilmek;009748
+bağışlatma;009749
+bağışlatmak;009750
+bağışlatılma;009751
+bağışlatılmak;009752
+bağışlatış;009753
+bağışlayabilme;009754
+bağışlayabilmek;009755
+bağışlayıverme;009756
+bağışlayıvermek;009757
+bağışlayış;009758
+bağışçı;009759
+bağışçılık;009760
+bağışık;009761
+bağışık serum;009762
+bağışıklık;009763
+bağışıklık bilimci;009764
+bağışıklık bilimi;009765
+bağışıklık bilimsel;009766
+bağışıklık kazanmak;009767

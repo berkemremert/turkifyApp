@@ -1,0 +1,51 @@
+alkaevli;002426
+alkali;002427
+alkali metaller;002428
+alkalik;002429
+alkalimetre;002430
+alkaliölçer;002431
+alkaloit;002432
+alkan;002433
+alkarna;002434
+alkarısı;002435
+alkil;002436
+alkol;002437
+alkol duvarını aşmak;002438
+alkolik;002439
+alkoliklik;002440
+alkolizm;002441
+alkolleme;002442
+alkollemek;002443
+alkollü;002444
+alkollülük;002445
+alkolmetre;002446
+alkolsüz;002447
+alkolsüzlük;002448
+alkolölçer;002449
+alkım;002450
+alkış;002451
+alkış almak;002452
+alkış ağası;002453
+alkış kopmak;002454
+alkış toplamak;002455
+alkış tufanı kopmak;002456
+alkış tutmak;002457
+alkışlama;002458
+alkışlamak;002459
+alkışlanabilme;002460
+alkışlanabilmek;002461
+alkışlanma;002462
+alkışlanmak;002463
+alkışlanış;002464
+alkışlatabilme;002465
+alkışlatabilmek;002466
+alkışlatma;002467
+alkışlatmak;002468
+alkışlatış;002469
+alkışlayabilme;002470
+alkışlayabilmek;002471
+alkışlayıverme;002472
+alkışlayıvermek;002473
+alkışlayış;002474
+alkışçı;002475
+alkışçılık;002476

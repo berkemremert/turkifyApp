@@ -1,0 +1,8 @@
+tökezleme;076279
+tökezlemek;076280
+tökezlenme;076281
+tökezlenmek;076282
+tökezletme;076283
+tökezletmek;076284
+tökezme;076285
+tökezmek;076286

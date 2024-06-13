@@ -1,0 +1,64 @@
+kut;048103
+kutan;048104
+kutlama;048105
+kutlamak;048106
+kutlanma;048107
+kutlanmak;048108
+kutlanış;048109
+kutlatma;048110
+kutlatmak;048111
+kutlayabilme;048112
+kutlayabilmek;048113
+kutlayış;048114
+kutlu;048115
+kutlu gün doğuşundan bellidir;048116
+kutlu olsun;048117
+kutlulama;048118
+kutlulamak;048119
+kutlulanma;048120
+kutlulanmak;048121
+kutluluk;048122
+kutnu;048123
+kutsal;048124
+kutsallaşma;048125
+kutsallaşmak;048126
+kutsallaştırma;048127
+kutsallaştırmak;048128
+kutsallaştırış;048129
+kutsallık;048130
+kutsama;048131
+kutsamak;048132
+kutsi;048133
+kutsileşme;048134
+kutsileşmek;048135
+kutsiyet;048136
+kutsuz;048137
+kutsuz kuşun yuvası doğan yanında olur;048138
+kutsuzluk;048139
+kutu;048140
+kutu gibi;048141
+kutu kutu;048142
+kutucu;048143
+kutuculuk;048144
+kutulama;048145
+kutulamak;048146
+kutulanma;048147
+kutulanmak;048148
+kutulanış;048149
+kutulayış;048150
+kutulu;048151
+kutulu telefon;048152
+kutup;048153
+kutup bozkırı;048154
+kutup engel;048155
+kutup iklimi;048156
+kutup yıldızı;048157
+kutuplanma;048158
+kutuplanmak;048159
+kutuplaşma;048160
+kutuplaşmak;048161
+kutuplaştırma;048162
+kutuplaştırmak;048163
+kutupsal;048164
+kutupsallık;048165
+kutur;048166

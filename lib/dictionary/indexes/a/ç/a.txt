@@ -1,0 +1,7 @@
+açabilme;006844
+açabilmek;006845
+açacak;006846
+açadurma;006847
+açadurmak;006848
+açan;006849
+açar;006850

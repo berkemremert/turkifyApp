@@ -1,0 +1,148 @@
+üst;090136
+üst alize;090137
+üst baş;090138
+üst başı;090139
+üst bitken;090140
+üst deri;090141
+üst deri altı;090142
+üst diş;090143
+üst dudak;090144
+üst geçit;090145
+üst geçiş;090146
+üst güverte;090147
+üst insan;090148
+üst kat;090149
+üst katman;090150
+üst kurul;090151
+üst küme;090152
+üst perdeden;090153
+üst perdeden konuşmak;090154
+üst sınıf;090155
+üst tabaka;090156
+üst tarafı;090157
+üst çene;090158
+üst çıkmak (veya gelmek);090159
+üst üste;090160
+üst üste gelmek;090161
+üstadane;090162
+üstat;090163
+üstatlık;090164
+üstatça;090165
+üste;090166
+üste çıkmak;090167
+üstel;090168
+üsteleme;090169
+üstelemek;090170
+üsteleniş;090171
+üstelenme;090172
+üstelenmek;090173
+üsteleyiş;090174
+üstelik;090175
+üstenci;090176
+üstencilik;090177
+üstenme;090178
+üstenmek;090179
+üsteğmen;090180
+üsteğmenlik;090181
+üstlenim;090182
+üstleniş;090183
+üstlenme;090184
+üstlenmek;090185
+üstlü;090186
+üstlük;090187
+üstsubay;090188
+üstsüz;090189
+üstsüzlük;090190
+üstten;090191
+üstten bakmak;090192
+üstyapı;090193
+üstyapısal;090194
+üstçavuş;090195
+üstçavuşluk;090196
+üstü başı dökülmek;090197
+üstü kalsın;090198
+üstü kapalı;090199
+üstübeç;090200
+üstübeç macunu;090201
+üstüme (veya üstümüze veya üstünüze) sağlık (veya iyilik sağlık veya şifalar);090202
+üstün;090203
+üstün;090204
+üstün bulmak (veya görmek);090205
+üstün olmak (veya gelmek);090206
+üstün tutmak;090207
+üstün yapım;090208
+üstün zekâ;090209
+üstün zekâlı;090210
+üstün zekâlılık;090211
+üstünde durmak;090212
+üstünde hakkı olmak;090213
+üstünde kalmak;090214
+üstündeki üstünde, başındaki başında;090215
+üstünden (şu kadar zaman) geçmek;090216
+üstünden akmak;090217
+üstünden atmak;090218
+üstünden başından akmak;090219
+üstünden dökülmek;090220
+üstünden geçmek;090221
+üstünden geçmek;090222
+üstünden kibarlık akmak;090223
+üstünden silindir gibi geçmek;090224
+üstüne;090225
+üstüne almak;090226
+üstüne alınmak;090227
+üstüne atmak;090228
+üstüne basmak;090229
+üstüne başına etmek;090230
+üstüne bir bardak (soğuk) su içmek;090231
+üstüne bir iki güneş doğmak;090232
+üstüne düşmek;090233
+üstüne fenalık gelmek;090234
+üstüne gelmek;090235
+üstüne geçirmek;090236
+üstüne gitmek;090237
+üstüne gül koklamamak;090238
+üstüne güneş doğmamak;090239
+üstüne kalmak;090240
+üstüne kapanmak;090241
+üstüne koymak;090242
+üstüne kuma gelmek;090243
+üstüne kuş kondurmak;090244
+üstüne olmamak;090245
+üstüne oturmak;090246
+üstüne perde çekmek;090247
+üstüne sevmek;090248
+üstüne titremek;090249
+üstüne toz kondurmamak;090250
+üstüne tuz biber ekmek;090251
+üstüne varmak;090252
+üstüne vazife olmamak;090253
+üstüne yaptırmak;090254
+üstüne yatmak;090255
+üstüne yok;090256
+üstüne yüklenmek;090257
+üstüne yürümek;090258
+üstüne yıkmak;090259
+üstüne yıkılmak;090260
+üstüne çekmek;090261
+üstüne çullanmak;090262
+üstüne ölü toprağı serpilmiş gibi;090263
+üstüne üstlük;090264
+üstüne üstüne gitmek;090265
+üstünkörü;090266
+üstünleşme;090267
+üstünleşmek;090268
+üstünlük;090269
+üstünlük derecesi;090270
+üstünlük duygusu;090271
+üstünlük hissi;090272
+üstünlük karmaşası;090273
+üstünlük kompleksi;090274
+üstünseme;090275
+üstünsemek;090276
+üstünü görmek;090277
+üstünüze afiyet (veya sağlık);090278
+üstüpü;090279
+üstüpüleme;090280
+üstüpülemek;090281
+üstüvane;090282
+üstüvani;090283

@@ -1,0 +1,21 @@
+abla;000201
+ablacı;000202
+ablacılık;000203
+ablak;000204
+ablaklık;000205
+ablakça;000206
+ablalık;000207
+ablalık etmek;000208
+ablatif;000209
+ablatya;000210
+ablavut;000211
+ablavutlaşma;000212
+ablavutlaşmak;000213
+ablavutluk;000214
+abli;000215
+abliyi kaçırmak (veya bırakmak veya koyuvermek);000216
+abluka;000217
+abluka altında tutmak;000218
+abluka etmek (veya ablukaya almak);000219
+ablukayı kaldırmak;000220
+ablukayı yarmak;000221

@@ -1,0 +1,6 @@
+acube;000367
+acul;000368
+aculluk;000369
+acun;000370
+acur;000371
+acuze;000372

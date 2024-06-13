@@ -1,0 +1,8 @@
+ah;001000
+ah alan onmaz;001001
+ah almak;001002
+ah etmek;001003
+ah vah;001004
+ah vah etmek (veya demek);001005
+ah yerde kalmaz;001006
+ah çekmek;001007

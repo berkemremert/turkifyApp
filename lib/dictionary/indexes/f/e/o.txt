@@ -1,0 +1,4 @@
+feodal;027002
+feodalite;027003
+feodalizm;027004
+feodallik;027005

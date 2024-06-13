@@ -1,0 +1,173 @@
+bar;008780
+bar;008781
+bar;008782
+bar;008783
+bar;008784
+bar ateşi;008785
+bar bar;008786
+bar bağlamak (veya tutmak);008787
+bar havası;008788
+bar tutmak;008789
+bara;008790
+baraj;008791
+baraj ateşi;008792
+baraj mesafesi;008793
+baraj yapmak (veya kurmak);008794
+barajlı santral;008795
+barajı aşmak;008796
+barak;008797
+baraka;008798
+barakacık;008799
+baran;008800
+barata;008801
+baratarya;008802
+barba;008803
+barbakan;008804
+barbar;008805
+barbarca;008806
+barbarcasına;008807
+barbarizm;008808
+barbarlaşabilme;008809
+barbarlaşabilmek;008810
+barbarlaşma;008811
+barbarlaşmak;008812
+barbarlık;008813
+barbata;008814
+barbaşı;008815
+barbekü;008816
+barbun;008817
+barbunya;008818
+barbunya;008819
+barbunya pilakisi;008820
+barbunyagiller;008821
+barbut;008822
+barbutçu;008823
+barcı;008824
+barcılık;008825
+barda;008826
+bardacık;008827
+bardacık eriği;008828
+bardak;008829
+bardak eriği;008830
+bardakaltı;008831
+bardaktan boşanırcasına yağmak;008832
+bardakçı;008833
+bardakçılık;008834
+bardan;008835
+bardan;008836
+bardağı taşıran damla;008837
+bardağı taşırmak;008838
+bardo;008839
+barem;008840
+baret;008841
+baretlik;008842
+barfiks;008843
+bargam;008844
+bargâh;008845
+barhana;008846
+bari;008847
+barikat;008848
+barikat kurmak;008849
+barikat yapmak;008850
+barikatlama;008851
+barikatlamak;008852
+barisfer;008853
+barit;008854
+baritin;008855
+baritli;008856
+bariton;008857
+bariyer;008858
+bariyerli;008859
+bariyersiz;008860
+bariz;008861
+barizleşme;008862
+barizleşmek;008863
+barizleştirme;008864
+barizleştirmek;008865
+barizlik;008866
+barka;008867
+barkarol;008868
+barkod;008869
+barkodlu;008870
+barkodsuz;008871
+barlam;008872
+barmen;008873
+barmenlik;008874
+baro;008875
+baro başkanı;008876
+barograf;008877
+barok;008878
+barok müzik;008879
+barokçu;008880
+barokçuluk;008881
+barometre;008882
+barometresiz;008883
+baron;008884
+baronluk;008885
+baroskop;008886
+barparalel;008887
+barsam;008888
+barsama;008889
+bartın;008890
+bartınlı;008891
+bartınlılık;008892
+barudi;008893
+barut;008894
+barut esmeri;008895
+barut fıçısı;008896
+barut fıçısı gibi;008897
+barut gibi;008898
+barut hakkı;008899
+barut kabağı;008900
+barut kesilmek (veya olmak);008901
+barut kokusu gelmek;008902
+barut rengi;008903
+baruthane;008904
+barutla oynamak;008905
+barutluk;008906
+barutçu;008907
+barutçuluk;008908
+baryum;008909
+baryum karbonat;008910
+baryum sülfat;008911
+barça;008912
+barçak;008913
+barı;008914
+barınabilme;008915
+barınabilmek;008916
+barınak;008917
+barındırabilme;008918
+barındırabilmek;008919
+barındırma;008920
+barındırmak;008921
+barındırılabilme;008922
+barındırılabilmek;008923
+barındırılma;008924
+barındırılmak;008925
+barınma;008926
+barınmak;008927
+barınılma;008928
+barınılmak;008929
+barınış;008930
+barış;008931
+barış görüş olmak;008932
+barış yapmak;008933
+barışabilme;008934
+barışabilmek;008935
+barışma;008936
+barışmak;008937
+barışsever;008938
+barışseverlik;008939
+barıştırabilme;008940
+barıştırabilmek;008941
+barıştırma;008942
+barıştırmak;008943
+barıştırılma;008944
+barıştırılmak;008945
+barışçı;008946
+barışçıl;008947
+barışçıllık;008948
+barışçılık;008949
+barışık;008950
+barışık olmak;008951
+barışıklık;008952

@@ -1,0 +1,11 @@
+orucunda olmak;059358
+orun;059359
+orunlama;059360
+oruç;059361
+oruç açmak;059362
+oruç bozmak;059363
+oruç tutmak;059364
+oruç yemek;059365
+oruçlu;059366
+oruçluluk;059367
+oruçsuz;059368

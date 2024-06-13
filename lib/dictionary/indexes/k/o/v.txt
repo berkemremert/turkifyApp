@@ -1,0 +1,53 @@
+kov;046797
+kov;046798
+kov etmek;046799
+kova;046800
+kova;046801
+kova;046802
+kova olmak;046803
+kovabilme;046804
+kovabilmek;046805
+kovalama;046806
+kovalamaca;046807
+kovalamak;046808
+kovalanma;046809
+kovalanmak;046810
+kovalanış;046811
+kovalatma;046812
+kovalatmak;046813
+kovalayabilme;046814
+kovalayabilmek;046815
+kovalayış;046816
+kovalık;046817
+kovan;046818
+kovan anahtar;046819
+kovan otu;046820
+kovancılar;046821
+kovanlık;046822
+kovboy;046823
+kovboyculuk;046824
+kovboyluk;046825
+kovcu;046826
+kovculuk;046827
+kovculuk etmek;046828
+kovdurabilme;046829
+kovdurabilmek;046830
+kovdurma;046831
+kovdurmak;046832
+kovdurtma;046833
+kovdurtmak;046834
+kovlama;046835
+kovlamak;046836
+kovma;046837
+kovmak;046838
+kovucuk;046839
+kovuk;046840
+kovulma;046841
+kovulmak;046842
+kovuluş;046843
+kovuntu;046844
+kovuş;046845
+kovuşturma;046846
+kovuşturma açmak;046847
+kovuşturma yapmak;046848
+kovuşturmak;046849

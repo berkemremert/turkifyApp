@@ -1,0 +1,16 @@
+hüccet;035545
+hücre;035546
+hücre bilimi;035547
+hücre bilimsel;035548
+hücre duvarı;035549
+hücre evi;035550
+hücre yutarlığı;035551
+hücre çeperi;035552
+hücreler arası;035553
+hücreli;035554
+hücum;035555
+hücum etmek;035556
+hücum oyuncusu;035557
+hücuma kalkmak;035558
+hücumbot;035559
+hücumcu;035560

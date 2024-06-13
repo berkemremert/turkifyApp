@@ -1,0 +1,257 @@
+istadya;038150
+istanbulin;038151
+istasyon;038152
+istasyon yapmak;038153
+istatistik;038154
+istatistiki;038155
+istatistiksel;038156
+istatistikçi;038157
+istatistikçilik;038158
+istavrit;038159
+istavrit azmanı;038160
+istavroz;038161
+istavroz çıkarmak;038162
+istediği gibi;038163
+istediği gibi at koşturmak (veya oynatmak);038164
+istediğini söyleyen istemediğini işitir;038165
+istek;038166
+istek (veya isteğini) uyandırmak;038167
+istek duymak;038168
+isteka;038169
+isteklendirici;038170
+isteklendirme;038171
+isteklendirmek;038172
+istekleniş;038173
+isteklenme;038174
+isteklenmek;038175
+istekli;038176
+isteklilik;038177
+isteksiz;038178
+isteksizce;038179
+isteksizlik;038180
+istem;038181
+isteme;038182
+isteme kipleri;038183
+istemek;038184
+istemem diyenden korkmalı;038185
+istemesini bilmek;038186
+istemli;038187
+istemlilik;038188
+istemseme;038189
+istemsiz;038190
+istemsizlik;038191
+istenilebilme;038192
+istenilebilmek;038193
+istenilme;038194
+istenilmek;038195
+isteniş;038196
+istenme;038197
+istenmek;038198
+istenmeyen adam;038199
+istenmeyen durum;038200
+istenmeyen kişi;038201
+istenç;038202
+istenç dışı;038203
+istenç yitimi;038204
+istençli;038205
+istençlilik;038206
+istençsiz;038207
+istençsizlik;038208
+istenççi;038209
+istenççilik;038210
+ister;038211
+ister istemez;038212
+ister misin?;038213
+isteri;038214
+isteri nöbeti;038215
+isterik;038216
+istetiş;038217
+istetme;038218
+istetmek;038219
+istettirme;038220
+istettirmek;038221
+isteyebilme;038222
+isteyebilmek;038223
+isteyenin bir yüzü, vermeyenin iki yüzü kara;038224
+isteyiş;038225
+isteşme;038226
+isteşmek;038227
+istiane;038228
+istiane etmek;038229
+istiap;038230
+istiap etmek;038231
+istiap haddi;038232
+istiare;038233
+istibat;038234
+istibat etmek;038235
+istibdat;038236
+istical;038237
+istical etmek;038238
+isticar;038239
+isticar etmek;038240
+isticvap;038241
+istida;038242
+istidaname;038243
+istidat;038244
+istidatlı;038245
+istidatlılık;038246
+istidatsız;038247
+istidatsızlık;038248
+istidlal;038249
+istidlal etmek;038250
+istif;038251
+istif etmek;038252
+istifa;038253
+istifa etmek;038254
+istifade;038255
+istifade etmek;038256
+istifaname;038257
+istifayı basmak;038258
+istifham;038259
+istifini bozmamak;038260
+istifleme;038261
+istiflemek;038262
+istifleniş;038263
+istiflenme;038264
+istiflenmek;038265
+istifleyebilme;038266
+istifleyebilmek;038267
+istifleyiş;038268
+istifra;038269
+istifra etmek;038270
+istifsar;038271
+istifsarıhatır;038272
+istifçi;038273
+istifçilik;038274
+istihale;038275
+istihale etmek;038276
+istihare;038277
+istihareye yatmak;038278
+istihbar;038279
+istihbar etmek;038280
+istihbarat;038281
+istihbarat dairesi;038282
+istihbarat servisi;038283
+istihdaf;038284
+istihdaf etmek;038285
+istihdam;038286
+istihdam etmek;038287
+istihfaf;038288
+istihfaf etmek;038289
+istihkak;038290
+istihkar;038291
+istihkar etmek;038292
+istihkâm;038293
+istihkâm sınıfı;038294
+istihkâmcı;038295
+istihkâmcılık;038296
+istihlak;038297
+istihlak etmek;038298
+istihraç;038299
+istihraç etmek;038300
+istihsal;038301
+istihsal etmek;038302
+istihza;038303
+istihza etmek;038304
+istihzalı;038305
+istihzar;038306
+istihzasız;038307
+istika;038308
+istikamet;038309
+istikamet vermek;038310
+istikbal;038311
+istikbal etmek;038312
+istiklal;038313
+istikra;038314
+istikrah;038315
+istikrah etmek;038316
+istikrar;038317
+istikrar bulmak;038318
+istikrarlı;038319
+istikrarlıca;038320
+istikrarlılık;038321
+istikrarsız;038322
+istikrarsızca;038323
+istikrarsızlık;038324
+istikraz;038325
+istikraz etmek;038326
+istikşaf;038327
+istila;038328
+istila etmek;038329
+istilacı;038330
+istilacılık;038331
+istilzam;038332
+istilzam etmek;038333
+istim;038334
+istim arkadan gelsin;038335
+istim üstünde olmak;038336
+istimal;038337
+istimal etmek;038338
+istimara;038339
+istimator;038340
+istimbot;038341
+istimdat;038342
+istimdat etmek;038343
+istimlak;038344
+istimlak etmek;038345
+istimna;038346
+istimrar;038347
+istimzaç;038348
+istimzaç etmek;038349
+istinabe;038350
+istinaden;038351
+istinaf;038352
+istinaf mahkemesi;038353
+istinas;038354
+istinat;038355
+istinat duvarı;038356
+istinat etmek;038357
+istinatgâh;038358
+istinga;038359
+istinga etmek;038360
+istinkâf;038361
+istinkâf etmek;038362
+istinsah;038363
+istinsah etmek;038364
+istintak;038365
+istintak etmek;038366
+istintaç;038367
+istintaç etmek;038368
+istirahat;038369
+istirahat etmek;038370
+istirdat;038371
+istirham;038372
+istirham etmek;038373
+istirhamda bulunmak;038374
+istiridye;038375
+istiskal;038376
+istiskal etmek;038377
+istismar;038378
+istismar etmek;038379
+istismarcı;038380
+istismarcılık;038381
+istisna;038382
+istisna etmek;038383
+istisnai;038384
+istisnalı;038385
+istisnasız;038386
+istisnasızca;038387
+istisnasızlık;038388
+istitrat;038389
+istiva;038390
+istiva hattı;038391
+istizah;038392
+istizah etmek;038393
+istizan;038394
+istizan etmek (veya eylemek);038395
+istiğfar;038396
+istiğfar etmek;038397
+istiğna;038398
+istiğrak;038399
+istişare;038400
+istişare etmek;038401
+istişare heyeti;038402
+istop;038403
+istop etmek;038404
+istralya;038405
+istrongilos;038406

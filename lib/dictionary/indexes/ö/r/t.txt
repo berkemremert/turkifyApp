@@ -1,0 +1,34 @@
+ört ki ölem;089289
+örtbas;089290
+örtebilme;089291
+örtebilmek;089292
+örtenek;089293
+örtme;089294
+örtmece;089295
+örtmek;089296
+örttürme;089297
+örttürmek;089298
+örtü;089299
+örtük;089300
+örtüklük;089301
+örtülme;089302
+örtülmek;089303
+örtülü;089304
+örtülü omurgalılar;089305
+örtülü ödenek;089306
+örtülülük;089307
+örtülüş;089308
+örtünme;089309
+örtünmek;089310
+örtünüş;089311
+örtüsüz;089312
+örtüverme;089313
+örtüvermek;089314
+örtüye sokmak (veya koymak);089315
+örtüş;089316
+örtüşebilme;089317
+örtüşebilmek;089318
+örtüşme;089319
+örtüşmek;089320
+örtüştürme;089321
+örtüştürmek;089322

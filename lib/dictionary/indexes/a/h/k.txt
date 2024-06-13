@@ -1,0 +1,4 @@
+ahkâm;001078
+ahkâm kesmek;001079
+ahkâm yürütmek;001080
+ahkâm çıkarmak;001081

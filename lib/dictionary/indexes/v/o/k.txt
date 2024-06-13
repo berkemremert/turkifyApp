@@ -1,0 +1,6 @@
+vokabüler;078980
+vokal;078981
+vokal;078982
+vokal müzik;078983
+vokal uyumu;078984
+vokalist;078985

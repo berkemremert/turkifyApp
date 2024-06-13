@@ -1,0 +1,155 @@
+muhabbet;055219
+muhabbet beslemek;055220
+muhabbet etmek;055221
+muhabbet kuşu;055222
+muhabbet tellallığı;055223
+muhabbet tellalı;055224
+muhabbet çiçeği;055225
+muhabbet çiçeğigiller;055226
+muhabbetname;055227
+muhaberat;055228
+muhabere;055229
+muhabere etmek;055230
+muhabere memuru;055231
+muhabere sınıfı;055232
+muhabereci;055233
+muhaberecilik;055234
+muhabir;055235
+muhabirlik;055236
+muhaceret;055237
+muhaceret etmek;055238
+muhacim;055239
+muhacir;055240
+muhacir arabası;055241
+muhacir gitmek;055242
+muhacir olmak;055243
+muhacirlik;055244
+muhaddep;055245
+muhaddis;055246
+muhafaza;055247
+muhafaza altına almak;055248
+muhafaza etmek;055249
+muhafazakâr;055250
+muhafazakârlık;055251
+muhafazalı;055252
+muhafazasız;055253
+muhafız;055254
+muhafız alayı;055255
+muhafızlık;055256
+muhakeme;055257
+muhakeme etmek;055258
+muhakeme usulü;055259
+muhakeme yürütmek;055260
+muhakkak;055261
+muhakkik;055262
+muhakkiklik;055263
+muhal;055264
+muhalefet;055265
+muhalefet etmek;055266
+muhalefet partisi;055267
+muhalefet şerhi;055268
+muhalif;055269
+muhaliflik;055270
+muhallebi;055271
+muhallebi çocuğu;055272
+muhallebici;055273
+muhallebicilik;055274
+muhallik;055275
+muhammedî;055276
+muhammen;055277
+muhammes;055278
+muhammin;055279
+muhannet;055280
+muhannetlik;055281
+muharebe;055282
+muharebeci;055283
+muharebecilik;055284
+muharip;055285
+muharrem;055286
+muharrer;055287
+muharrik;055288
+muharriklik;055289
+muharrir;055290
+muharrirlik;055291
+muharriş;055292
+muhasamat;055293
+muhasara;055294
+muhasara altına almak;055295
+muhasara etmek;055296
+muhasebat;055297
+muhasebe;055298
+muhasebeci;055299
+muhasebecilik;055300
+muhasebesini yapmak;055301
+muhasip;055302
+muhasiplik;055303
+muhassala;055304
+muhassas;055305
+muhassasat;055306
+muhassenat;055307
+muhassıl;055308
+muhasım;055309
+muhasır;055310
+muhat;055311
+muhatap;055312
+muhatap olmak;055313
+muhatara;055314
+muhataralı;055315
+muhatarasız;055316
+muhavere;055317
+muhavere etmek;055318
+muhavvil;055319
+muhayyel;055320
+muhayyer;055321
+muhayyer bırakmak;055322
+muhayyerbuselik;055323
+muhayyerkürdi;055324
+muhayyerlik;055325
+muhayyersümbüle;055326
+muhayyile;055327
+muhbir;055328
+muhbirlik;055329
+muhdes;055330
+muhik;055331
+muhil;055332
+muhip;055333
+muhit;055334
+muhit edinmek;055335
+muhkem;055336
+muhkemlik;055337
+muhlis;055338
+muhlislik;055339
+muhrik;055340
+muhrip;055341
+muhtar;055342
+muhtariyet;055343
+muhtarlık;055344
+muhtasar;055345
+muhtasaran;055346
+muhtaç;055347
+muhtaç etmek;055348
+muhtaç olmak;055349
+muhtaçlık;055350
+muhtekir;055351
+muhtel;055352
+muhtelif;055353
+muhteliflik;055354
+muhtelis;055355
+muhtelit;055356
+muhtemel;055357
+muhtemelen;055358
+muhterem;055359
+muhteremlik;055360
+muhteri;055361
+muhteris;055362
+muhterislik;055363
+muhteriz;055364
+muhtesip;055365
+muhteva;055366
+muhtevalı;055367
+muhtevi;055368
+muhteviyat;055369
+muhteşem;055370
+muhteşemlik;055371
+muhtıra;055372
+muhzır;055373

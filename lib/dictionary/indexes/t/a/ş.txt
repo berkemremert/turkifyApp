@@ -1,0 +1,168 @@
+taş;072836
+taş arabası;072837
+taş atmak;072838
+taş attın da kolun mu yoruldu?;072839
+taş atıp kolu yorulmamak;072840
+taş bademi;072841
+taş balığı;072842
+taş baskı;072843
+taş basmacı;072844
+taş basmacılık;072845
+taş basması;072846
+taş bebek;072847
+taş bebek gibi;072848
+taş bilimi;072849
+taş bilimsel;072850
+taş böceği;072851
+taş devri;072852
+taş dolgu;072853
+taş döşeme;072854
+taş düşürmek;072855
+taş ekmek;072856
+taş fırın;072857
+taş gibi;072858
+taş iliği;072859
+taş kafa;072860
+taş kalpli;072861
+taş kalplilik;072862
+taş kesilmek;072863
+taş koymak;072864
+taş kömürü;072865
+taş küre;072866
+taş kırdırmak;072867
+taş levreği;072868
+taş mantarı;072869
+taş nanesi;072870
+taş ocağı;072871
+taş pamuğu;072872
+taş plak;072873
+taş pudra;072874
+taş sürmek;072875
+taş tahta;072876
+taş taş üstünde bırakmamak;072877
+taş toprak;072878
+taş uykusu;072879
+taş yağar kıyamet koparken;072880
+taş yağı;072881
+taş yerinde ağırdır;072882
+taş yuvarı;072883
+taş yürekli;072884
+taş yüreklilik;072885
+taş çatlasa;072886
+taş çıkarmak (veya çıkartmak);072887
+taşa tutmak;072888
+taşa çekmek;072889
+taşabilme;072890
+taşabilmek;072891
+taşak;072892
+taşaklı;072893
+taşayazma;072894
+taşayazmak;072895
+taşemen;072896
+taşemengiller;072897
+taşeron;072898
+taşeronluk;072899
+taşikardi;072900
+taşizm;072901
+taşkent;072902
+taşköprü;072903
+taşkın;072904
+taşkın ıslahı;072905
+taşkınca;072906
+taşkınlık;072907
+taşkıran;072908
+taşkıran otu;072909
+taşkıran çiçeği;072910
+taşkırangiller;072911
+taşlama;072912
+taşlamacı;072913
+taşlamacılık;072914
+taşlamak;072915
+taşlanma;072916
+taşlanmak;072917
+taşlanmış ipek;072918
+taşlanmış kot;072919
+taşlar yerine oturmak;072920
+taşlatma;072921
+taşlatmak;072922
+taşlayabilme;072923
+taşlayabilmek;072924
+taşlaşma;072925
+taşlaşmak;072926
+taşlı;072927
+taşlık;072928
+taşlıçay;072929
+taşma;072930
+taşmak;072931
+taşova;072932
+taşra;072933
+taşra ağzı;072934
+taşralı;072935
+taşralı kalmak;072936
+taşralılık;072937
+taşsarımsağı;072938
+taşsı;072939
+taşsız;072940
+taşçı;072941
+taşçı tarağı;072942
+taşçıl;072943
+taşçılık;072944
+taşı gediğine koymak;072945
+taşı sıksa suyunu çıkarır;072946
+taşı toprağı altın olmak;072947
+taşı ölçeyim;072948
+taşıl;072949
+taşıl bilimi;072950
+taşıl bilimsel;072951
+taşıllaşma;072952
+taşıllaşmak;072953
+taşıllı;072954
+taşım;072955
+taşıma;072956
+taşıma sayısı;072957
+taşıma su ile değirmen dönmez;072958
+taşımacı;072959
+taşımacılık;072960
+taşımak;072961
+taşımalı eğitim;072962
+taşımalık;072963
+taşımlık;072964
+taşımsı;072965
+taşın altına elini koymak;072966
+taşınabilir;072967
+taşınabilme;072968
+taşınabilmek;072969
+taşınma;072970
+taşınmak;072971
+taşınmaz;072972
+taşınmazlık;072973
+taşıntı;072974
+taşınır;072975
+taşınır bellek;072976
+taşınır değer;072977
+taşınır ev;072978
+taşınırlık;072979
+taşınış;072980
+taşırabilme;072981
+taşırabilmek;072982
+taşırma;072983
+taşırmak;072984
+taşırıverme;072985
+taşırıvermek;072986
+taşıt;072987
+taşıt tutması;072988
+taşıtabilme;072989
+taşıtabilmek;072990
+taşıtma;072991
+taşıtmak;072992
+taşıtçı;072993
+taşıtış;072994
+taşıverme;072995
+taşıvermek;072996
+taşıyabilme;072997
+taşıyabilmek;072998
+taşıyıcı;072999
+taşıyıcılık;073000
+taşıyıverme;073001
+taşıyıvermek;073002
+taşıyış;073003

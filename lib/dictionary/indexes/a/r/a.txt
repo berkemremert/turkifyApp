@@ -1,0 +1,277 @@
+ara;004151
+ara bağlantı;004152
+ara başlık;004153
+ara bono;004154
+ara bozucu;004155
+ara bozuculuk;004156
+ara bulma;004157
+ara bulucu;004158
+ara buluculuk;004159
+ara buluculuk etmek;004160
+ara cümle;004161
+ara deniz;004162
+ara eleman;004163
+ara kapı;004164
+ara kararı;004165
+ara kazanç;004166
+ara kesit;004167
+ara konakçı;004168
+ara konakçılık;004169
+ara mal;004170
+ara nağme;004171
+ara pası;004172
+ara seçim;004173
+ara sokak;004174
+ara söz;004175
+ara sıcak;004176
+ara sınav;004177
+ara sıra;004178
+ara tümce;004179
+ara vermeden;004180
+ara vermek;004181
+ara yerde;004182
+ara yön;004183
+araba;004184
+araba araba;004185
+araba devrilince yol gösteren çok olur;004186
+araba falakası;004187
+araba ile tavşan avlanmaz;004188
+araba kullanmak;004189
+araba mezarlığı;004190
+araba vapuru;004191
+arabacı;004192
+arabacılık;004193
+arabalı;004194
+arabalı vapur;004195
+arabalık;004196
+araban;004197
+araban;004198
+arabankürdi;004199
+arabanın tekerine taş koymak;004200
+arabanın ön tekerleği nereden geçerse art tekerleği de oradan geçer;004201
+arabasını düze çıkarmak;004202
+arabasız;004203
+arabasızlık;004204
+arabaşı;004205
+arabesk;004206
+arabeskleşme;004207
+arabeskleşmek;004208
+arabeskçi;004209
+arabeskçilik;004210
+arabi;004211
+arabist;004212
+arabistan defnesi;004213
+arabistik;004214
+arabizasyon;004215
+arabozan;004216
+arabozanlık;004217
+aracı;004218
+aracı banka;004219
+aracı koymak;004220
+aracılık;004221
+aracılık etmek;004222
+aracılığıyla;004223
+aracısız;004224
+aracısızlık;004225
+arada bir;004226
+arada kalmak;004227
+arada kaynamak;004228
+arada sırada;004229
+arada çıkarmak;004230
+aradan kaldırmak;004231
+aradan sıyrılmak;004232
+aradan çekilmek;004233
+aradan çıkarmak;004234
+aradan çıkmak;004235
+araf;004236
+arafat;004237
+arafat'ta soyulmuş hacıya dönmek;004238
+aragonit;004239
+arak;004240
+arak;004241
+araka;004242
+arakiye;004243
+araklama;004244
+araklamak;004245
+araklanma;004246
+araklanmak;004247
+araklayabilme;004248
+araklayabilmek;004249
+araklayıverme;004250
+araklayıvermek;004251
+araklı;004252
+arakçı;004253
+arakçılık;004254
+aralama;004255
+aralamak;004256
+aralanma;004257
+aralanmak;004258
+aralanış;004259
+araları limoni olmak;004260
+araları şekerrenk (veya serin) olmak;004261
+aralarına kara kedi girmek;004262
+aralarında dağlar kadar fark olmak;004263
+aralarındaki buzları eritmek;004264
+aralarından kara kedi geçmek;004265
+aralarından su sızmamak;004266
+aralatma;004267
+aralatmak;004268
+aralayabilme;004269
+aralayabilmek;004270
+aralayıverme;004271
+aralayıvermek;004272
+aralı;004273
+aralık;004274
+aralık;004275
+aralık korozyonu;004276
+aralık oyunu;004277
+aralık vermek;004278
+aralıkla;004279
+aralıklı;004280
+aralıksız;004281
+aralıkta;004282
+arama;004283
+arama bülteni;004284
+arama emri;004285
+arama izni;004286
+arama kararı;004287
+arama motoru;004288
+arama ruhsatı;004289
+arama tarama;004290
+arama yapmak;004291
+aramak;004292
+aramakla bulunmaz;004293
+arami;004294
+aramice;004295
+aranabilme;004296
+aranabilmek;004297
+aranje;004298
+aranjman;004299
+aranjör;004300
+aranma;004301
+aranmak;004302
+arantı;004303
+aranılma;004304
+aranılmak;004305
+aranıp taranmak;004306
+aranış;004307
+arap;004308
+arap;004309
+arap alfabesi;004310
+arap gibi olmak;004311
+arap olayım;004312
+arap rakamları;004313
+arap sabunu;004314
+arap tavşanı;004315
+arap uyandı (veya arap'ın gözü açıldı);004316
+arap zamkı;004317
+arap'ın yalellisi gibi;004318
+arapgir;004319
+araplaşma;004320
+araplaşmak;004321
+araplaştırma;004322
+araplaştırmak;004323
+araplık;004324
+arapsaçı;004325
+arapsaçı gibi;004326
+arapsaçına dönmek;004327
+arapça;004328
+arapçalaştırma;004329
+arapçalaştırmak;004330
+ararot;004331
+ararot kamışı;004332
+arasat;004333
+arasta;004334
+arası (veya araları) açılmak (veya açık olmak veya bozulmak);004335
+arası geçmeden;004336
+arası hoş (veya iyi) olmamak;004337
+arası hoş (veya iyi) olmamak;004338
+arası olmamak;004339
+arası soğumak;004340
+arasına (veya aralarına) karışmak;004341
+arasını (veya aralarını) açmak (veya bozmak);004342
+arasını (veya aralarını) bulmak;004343
+arasız;004344
+aratabilme;004345
+aratabilmek;004346
+aratma;004347
+aratmak;004348
+aratmamak;004349
+arattırma;004350
+arattırmak;004351
+aratılma;004352
+aratılmak;004353
+aratılış;004354
+aratış;004355
+araya (veya aralarına) soğukluk girmek;004356
+araya almak;004357
+araya girmek;004358
+araya gitmek;004359
+araya kaynayıp gitmek;004360
+araya koymak;004361
+araya vermek;004362
+arayabilme;004363
+arayabilmek;004364
+arayan mevla'sını da bulur, belasını da;004365
+arayüz;004366
+arayı açmak;004367
+arayı soğutmak;004368
+arayı yapmak;004369
+arayıcı;004370
+arayıcı fişeği;004371
+arayıcılık;004372
+arayıp (veya aramak) taramak;004373
+arayıp da bulamamak;004374
+arayıp sormak;004375
+arayıverme;004376
+arayıvermek;004377
+arayış;004378
+araz;004379
+arazbar;004380
+arazbarbuselik;004381
+arazi;004382
+arazi aracı;004383
+arazi açmak;004384
+arazi olmak;004385
+arazi otomobili;004386
+arazi taraması;004387
+arazi yarışı;004388
+araziye uymak;004389
+arazöz;004390
+araç;004391
+araç;004392
+araç gereç;004393
+araç telefonu;004394
+araçlı;004395
+araçlı jimnastik;004396
+araçsal;004397
+araçsallık;004398
+araçsız;004399
+araçsızlık;004400
+araççılık;004401
+araşit;004402
+araşma;004403
+araşmak;004404
+araştırabilme;004405
+araştırabilmek;004406
+araştırma;004407
+araştırma filmi;004408
+araştırma geliştirme;004409
+araştırma görevlisi;004410
+araştırmacı;004411
+araştırmacılık;004412
+araştırmak;004413
+araştırman;004414
+araştırtma;004415
+araştırtmak;004416
+araştırı;004417
+araştırıcı;004418
+araştırıcılık;004419
+araştırılabilme;004420
+araştırılabilmek;004421
+araştırılma;004422
+araştırılmak;004423
+araştırılış;004424
+araştırıverme;004425
+araştırıvermek;004426
+araştırış;004427

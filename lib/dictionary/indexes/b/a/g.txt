@@ -1,0 +1,5 @@
+bagaj;008122
+bagaj kapağı;008123
+bagaj kilidi;008124
+baget;008125
+bagetli;008126

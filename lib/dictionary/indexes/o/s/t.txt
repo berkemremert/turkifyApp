@@ -1,0 +1,4 @@
+osteolog;059400
+osteoloji;059401
+osteolojik;059402
+osteoporoz;059403

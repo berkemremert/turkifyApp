@@ -1,0 +1,19 @@
+ünlem;089991
+ünlem işareti;089992
+ünleme;089993
+ünlemek;089994
+ünleniş;089995
+ünlenme;089996
+ünlenmek;089997
+ünletme;089998
+ünletmek;089999
+ünlü;090000
+ünlü benzeşmesi;090001
+ünlü düşmesi;090002
+ünlü kaynaşması;090003
+ünlü kısalması;090004
+ünlü türemesi;090005
+ünlü uyumu;090006
+ünlü çatışması;090007
+ünlülü;090008
+ünlülük;090009

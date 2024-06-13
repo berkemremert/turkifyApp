@@ -1,0 +1,69 @@
+okul;058454
+okul kaçağı;058455
+okul kooperatifi;058456
+okul sonrası;058457
+okul çocuğu;058458
+okul öncesi;058459
+okuldan ayrılmak;058460
+okuldaş;058461
+okuldaşlık;058462
+okullar arası;058463
+okullaşma;058464
+okullaşmak;058465
+okullu;058466
+okullu olmak;058467
+okullulaşma;058468
+okullulaşmak;058469
+okulluluk;058470
+okulu asmak (veya kırmak);058471
+okuma;058472
+okuma bayramı;058473
+okuma günü;058474
+okuma kitabı;058475
+okuma saati;058476
+okuma vakti;058477
+okuma yazma;058478
+okuma yitimi;058479
+okumak;058480
+okumayı sökmek;058481
+okume;058482
+okumuş;058483
+okumuş olmak;058484
+okumuşluk;058485
+okunabilme;058486
+okunabilmek;058487
+okunaklı;058488
+okunaklılık;058489
+okunaksız;058490
+okunaksızlık;058491
+okunma;058492
+okunmak;058493
+okuntu;058494
+okunulma;058495
+okunulmak;058496
+okunuş;058497
+okur;058498
+okuryazar;058499
+okuryazarlık;058500
+okus pokus;058501
+okutabilme;058502
+okutabilmek;058503
+okutma;058504
+okutmak;058505
+okutman;058506
+okutmanlık;058507
+okutturabilme;058508
+okutturabilmek;058509
+okutturma;058510
+okutturmak;058511
+okutulma;058512
+okutulmak;058513
+okutuş;058514
+okuyabilme;058515
+okuyabilmek;058516
+okuyucu;058517
+okuyuculuk;058518
+okuyup üflemek;058519
+okuyuverme;058520
+okuyuvermek;058521
+okuyuş;058522

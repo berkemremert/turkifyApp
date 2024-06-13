@@ -1,0 +1,5 @@
+işve;039674
+işveli;039675
+işvelilik;039676
+işveren;039677
+işverenlik;039678

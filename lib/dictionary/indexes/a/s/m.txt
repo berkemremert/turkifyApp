@@ -1,0 +1,17 @@
+asma;005228
+asma;005229
+asma bahçe;005230
+asma biti;005231
+asma bıyığı;005232
+asma kabağı;005233
+asma kat;005234
+asma kilit;005235
+asma köprü;005236
+asma merdiven;005237
+asma tavan;005238
+asma yaprağı;005239
+asmagiller;005240
+asmak;005241
+asmalı;005242
+asmalık;005243
+asmolen;005244

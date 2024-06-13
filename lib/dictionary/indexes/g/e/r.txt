@@ -1,0 +1,213 @@
+gercüş;029171
+gerdan;029172
+gerdan kırmak;029173
+gerdaniye;029174
+gerdaniyebuselik;029175
+gerdanlık;029176
+gerdek;029177
+gerdel;029178
+gerdellik;029179
+gerdeğe girmek;029180
+gerdirebilme;029181
+gerdirebilmek;029182
+gerdirilme;029183
+gerdirilmek;029184
+gerdirme;029185
+gerdirmek;029186
+gerdirtme;029187
+gerdirtmek;029188
+gerebilme;029189
+gerebilmek;029190
+gerede;029191
+gerek;029192
+gerek ... gerek ...;029193
+gerek görmek;029194
+gerekirci;029195
+gerekircilik;029196
+gerekli;029197
+gerekli gereksiz;029198
+gerekli görmek;029199
+gerekli kılmak;029200
+gereklik;029201
+gereklilik;029202
+gereklilik kipi;029203
+gerekme;029204
+gerekmek;029205
+gerekseme;029206
+gereksemek;029207
+gereksinim;029208
+gereksinme;029209
+gereksinme duymak;029210
+gereksinmek;029211
+gereksiz;029212
+gereksiz görmek;029213
+gereksiz yere;029214
+gereksizce;029215
+gereksizlik;029216
+gerektirim;029217
+gerektirme;029218
+gerektirmek;029219
+gerekçe;029220
+gerekçe göstermek;029221
+gerekçelendirme;029222
+gerekçelendirmek;029223
+gerekçeli;029224
+gerekçesiz;029225
+gerekçesizlik;029226
+gerelti;029227
+geren;029228
+gereç;029229
+gereği düşünülmek;029230
+gereği gibi;029231
+gereğince;029232
+gergedan;029233
+gergedan böceği;029234
+gergedangiller;029235
+gergef;029236
+gergef işlemek;029237
+gerger;029238
+gergevşet;029239
+gergi;029240
+gergili;029241
+gergin;029242
+gergince;029243
+gerginleşme;029244
+gerginleşmek;029245
+gerginleştirme;029246
+gerginleştirmek;029247
+gerginlik;029248
+gerginlik yaratmak;029249
+gergisiz;029250
+geri;029251
+geri;029252
+geri almak;029253
+geri basmak;029254
+geri besleme;029255
+geri bildirim;029256
+geri durmak;029257
+geri dönmek;029258
+geri dönüşüm;029259
+geri dönüşümlü;029260
+geri dönüşümsüz;029261
+geri geri;029262
+geri geri çekilmek;029263
+geri gitmek;029264
+geri göndermek;029265
+geri hizmet;029266
+geri kafalı;029267
+geri kafalılık;029268
+geri kalmak;029269
+geri kalmamak;029270
+geri kalmış;029271
+geri kalmışlık;029272
+geri komamak;029273
+geri plan;029274
+geri saymak;029275
+geri tepme;029276
+geri vermek;029277
+geri vites;029278
+geri zekâlı;029279
+geri zekâlılık;029280
+geri çekilme;029281
+geri çekilmek;029282
+geri çevirmek;029283
+geri ödeme;029284
+geriatri;029285
+gerici;029286
+gerici;029287
+gericilik;029288
+geriden geriye;029289
+gerilek;029290
+gerileme;029291
+gerilemek;029292
+geriletebilme;029293
+geriletebilmek;029294
+geriletme;029295
+geriletmek;029296
+gerileyebilme;029297
+gerileyebilmek;029298
+gerileyici benzeşme;029299
+gerileyiş;029300
+gerili;029301
+gerilik;029302
+gerilim;029303
+gerilim ölçümü;029304
+gerilimli;029305
+gerilimsiz;029306
+gerilimsizlik;029307
+gerilimölçer;029308
+geriliş;029309
+gerilla;029310
+gerilla savaşı;029311
+gerillacı;029312
+gerillacılık;029313
+gerillalaşma;029314
+gerillalaşmak;029315
+gerillalık;029316
+gerilme;029317
+gerilmek;029318
+gerim;029319
+gerim gerim;029320
+gerine gerine;029321
+geriniş;029322
+gerinme;029323
+gerinmek;029324
+gerisin geri;029325
+gerisin geriye;029326
+geriye bırakmak;029327
+geriye dönmek;029328
+geriye dönüş;029329
+geriye yürümek;029330
+geriz;029331
+gerize taş atmak;029332
+geriş;029333
+germanist;029334
+germanistik;029335
+germanofil;029336
+germanyum;029337
+germe;029338
+germek;029339
+germen;029340
+germencik;029341
+gerontolog;029342
+gerontoloji;029343
+gerundium;029344
+gerze;029345
+gerze tavuğu;029346
+gerzek;029347
+gerzeklik;029348
+gerçek;029349
+gerçek dışı;029350
+gerçek dışılık;029351
+gerçek kişi;029352
+gerçek mantarlar;029353
+gerçek sayı;029354
+gerçek yüzünü göstermek;029355
+gerçekleme;029356
+gerçeklemek;029357
+gerçekleşebilme;029358
+gerçekleşebilmek;029359
+gerçekleşme;029360
+gerçekleşmek;029361
+gerçekleştirebilme;029362
+gerçekleştirebilmek;029363
+gerçekleştirilebilme;029364
+gerçekleştirilebilmek;029365
+gerçekleştirilme;029366
+gerçekleştirilmek;029367
+gerçekleştirme;029368
+gerçekleştirmek;029369
+gerçekli;029370
+gerçeklik;029371
+gerçekte;029372
+gerçekten;029373
+gerçekçi;029374
+gerçekçilik;029375
+gerçeküstü;029376
+gerçeküstücü;029377
+gerçeküstücülük;029378
+gerçeğe aykırı;029379
+gerçeğe aykırılık;029380
+gerçeğe uygun;029381
+gerçeğe uygunluk;029382
+gerçi;029383

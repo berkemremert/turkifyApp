@@ -1,0 +1,44 @@
+asa;005011
+asabi;005012
+asabileşme;005013
+asabileşmek;005014
+asabilik;005015
+asabilme;005016
+asabilmek;005017
+asabiye;005018
+asabiyeci;005019
+asabiyecilik;005020
+asabiyet;005021
+asabına dokunmak;005022
+asal;005023
+asal gazlar;005024
+asal sayı;005025
+asalak;005026
+asalak bilimci;005027
+asalak bilimi;005028
+asalak bilimsel;005029
+asalaklaşma;005030
+asalaklaşmak;005031
+asalaklık;005032
+asalaksavar;005033
+asalet;005034
+asaleten;005035
+asaleten atama;005036
+asaleten atamak;005037
+asaleten atanma;005038
+asaleten atanmak;005039
+asaletli;005040
+asaletlilik;005041
+asallık;005042
+asamble;005043
+asansör;005044
+asansör boşluğu;005045
+asansörcü;005046
+asansörcülük;005047
+asap;005048
+asar;005049
+asar;005050
+asarcık;005051
+asarıatika;005052
+asayiş;005053
+asayiş berkemal;005054

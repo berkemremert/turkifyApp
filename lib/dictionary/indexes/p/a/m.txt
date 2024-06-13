@@ -1,0 +1,25 @@
+pampa;060040
+pamuk;060041
+pamuk atmak;060042
+pamuk balı;060043
+pamuk balığı;060044
+pamuk bezi;060045
+pamuk elması;060046
+pamuk gibi;060047
+pamuk helvası;060048
+pamuk ipliği;060049
+pamuk ipliğiyle bağlamak;060050
+pamuk ipliğiyle bağlanmak;060051
+pamuk ipliğiyle bağlı olmak;060052
+pamuk otu;060053
+pamuk taşı;060054
+pamuk yağı;060055
+pamuk şekeri;060056
+pamukaki;060057
+pamuklanma;060058
+pamuklanmak;060059
+pamuklu;060060
+pamukova;060061
+pamukçu;060062
+pamukçuk;060063
+pamukçuluk;060064

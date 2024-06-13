@@ -1,0 +1,344 @@
+par par;060195
+para;060196
+para akmak;060197
+para aktarımı;060198
+para arzı;060199
+para babası;060200
+para basma;060201
+para basmak;060202
+para birimi;060203
+para bozmak;060204
+para canlısı;060205
+para cezası;060206
+para değişimi;060207
+para dolaşımı;060208
+para dökmek (veya akıtmak);060209
+para dönmek;060210
+para etmek;060211
+para etmemek;060212
+para getirmek;060213
+para ile değil;060214
+para ile değil, sıra ile;060215
+para kesmek;060216
+para kırmak;060217
+para kısıtlaması;060218
+para kısıtlayıcı;060219
+para parayı çeker;060220
+para peşin, kırmızı meşin;060221
+para pul;060222
+para pul tutmamak;060223
+para saymak;060224
+para saçmak;060225
+para sızdırmak (veya koparmak);060226
+para tutmak;060227
+para yapmak;060228
+para yatırmak;060229
+para yedirmek;060230
+para yemek;060231
+para çantası;060232
+para çekmek;060233
+para çıkarmak;060234
+para çıkışmamak;060235
+para şişkinliği;060236
+parabellum;060237
+parabol;060238
+parabolik;060239
+paraboloit;060240
+paraca;060241
+paracı;060242
+paracılık;060243
+paradan çıkmak;060244
+paradi;060245
+paradigma;060246
+paradoks;060247
+paradoksal;060248
+paraf;060249
+parafazi;060250
+parafeleme;060251
+parafelemek;060252
+parafin;060253
+parafinli;060254
+parafinsiz;060255
+paraflama;060256
+paraflamak;060257
+paragraf;060258
+paraguaylı;060259
+paragöz;060260
+paragözlü;060261
+paragözlük;060262
+paragözlülük;060263
+paraketa;060264
+paraketacı;060265
+paralaks;060266
+paralama;060267
+paralamak;060268
+paralanma;060269
+paralanmak;060270
+paralanmak;060271
+paralatma;060272
+paralatmak;060273
+paralel;060274
+paralel akım;060275
+paralel kaidesi;060276
+paralel yüz;060277
+paralelist;060278
+paralelizm;060279
+paralelkenar;060280
+paralelleştirme;060281
+paralelleştirmek;060282
+paralellik;060283
+paralizi;060284
+paralojik;060285
+paralojizm;060286
+paralı;060287
+paralıca;060288
+paralılık;060289
+parametre;060290
+parametreleme;060291
+parametrelemek;060292
+parametreli;060293
+parametrik;060294
+paramnezi;060295
+paramparça;060296
+paramparça etmek;060297
+paramparça olmak;060298
+parankima;060299
+paranoit;060300
+paranoya;060301
+paranoyak;060302
+parantez;060303
+parantez açmak;060304
+parantez kapatmak (veya kapamak);060305
+paranın yüzü sıcaktır;060306
+paranın üstü;060307
+parapent;060308
+parapet;060309
+parapsikoloji;060310
+parapsikolojik;060311
+parasal;060312
+parasempatik;060313
+parasempatik sinir sistemi;060314
+parasını sokağa atmak;060315
+parasını yemek;060316
+parasını çekmek;060317
+parasını çıkarmak;060318
+parasıyla rezil olmak;060319
+parasız;060320
+parasız pulsuz;060321
+parasız yatılı;060322
+parasız yatılılık;060323
+parasızlık;060324
+parasızlık çekmek;060325
+paratiroit bezi;060326
+paratoner;060327
+paratüberküloz;060328
+paravan;060329
+paravan menteşesi;060330
+paravan yapmak;060331
+paravana;060332
+paraya kıymak;060333
+paraya para (veya pul) dememek;060334
+paraya sıkışmak;060335
+paraya çevirmek;060336
+parayı araya değil, paraya vermeli;060337
+parayı basmak (veya bastırmak);060338
+parayı denize atmak;060339
+parayı veren düdüğü çalar;060340
+parazit;060341
+parazitlenme;060342
+parazitlenmek;060343
+parazitli;060344
+parazitlik;060345
+parazitolog;060346
+parazitoloji;060347
+parazitolojik;060348
+parazitsiz;060349
+paraçol;060350
+paraşüt;060351
+paraşüt birlikleri;060352
+paraşüt kulesi;060353
+paraşütlü;060354
+paraşütçü;060355
+paraşütçü birlikler;060356
+paraşütçülük;060357
+pardon;060358
+pardösü;060359
+pardösülü;060360
+pardösüsüz;060361
+pare;060362
+pare pare;060363
+parfüm;060364
+parfümcü;060365
+parfümcülük;060366
+parfümeri;060367
+parite;060368
+park;060369
+park etmek;060370
+park saati;060371
+park sayacı;060372
+park yeri;060373
+parka;060374
+parke;060375
+parke taşı;060376
+parkeci;060377
+parkecilik;060378
+parkeleme;060379
+parkelemek;060380
+parkeletme;060381
+parkeletmek;060382
+parkinson hastalığı;060383
+parkmetre;060384
+parkometre;060385
+parkur;060386
+parkçı;060387
+parkçılık;060388
+parlak;060389
+parlaklaşma;060390
+parlaklaşmak;060391
+parlaklaştırma;060392
+parlaklaştırmak;060393
+parlaklık;060394
+parlama;060395
+parlama noktası;060396
+parlamak;060397
+parlamentarizm;060398
+parlamenter;060399
+parlamenterlik;060400
+parlamento;060401
+parlatabilme;060402
+parlatabilmek;060403
+parlatma;060404
+parlatmak;060405
+parlatıcı;060406
+parlayabilme;060407
+parlayabilmek;060408
+parlayıveriş;060409
+parlayıverme;060410
+parlayıvermek;060411
+parlayış;060412
+parmak;060413
+parmak adam;060414
+parmak alfabesi;060415
+parmak atmak;060416
+parmak basmak;060417
+parmak bozmak;060418
+parmak hesabı;060419
+parmak izi;060420
+parmak kadar;060421
+parmak kaldı;060422
+parmak kaldırmak;060423
+parmak parmak;060424
+parmak tatlısı;060425
+parmak çocuk;060426
+parmak üzümü;060427
+parmak ısırmak;060428
+parmakla gösterilmek;060429
+parmakla sayılacak kadar az olmak;060430
+parmaklama;060431
+parmaklamak;060432
+parmaklarını (birlikte) yemek;060433
+parmaklı;060434
+parmaklık;060435
+parmaklıklı;060436
+parmaklıksız;060437
+parmaksı;060438
+parmaksız;060439
+parmağı ağzında kalmak;060440
+parmağı olmak;060441
+parmağına dolamak;060442
+parmağında oynatmak;060443
+parmağını aramak;060444
+parmağını bile kıpırdatmamak (veya oynatmamak);060445
+parmağını yaranın üzerine basmak;060446
+parmağının ucuyla (veya ucunda) çevirmek;060447
+parmıcan;060448
+parnasizm;060449
+parnasyen;060450
+parodi;060451
+parola;060452
+parpa;060453
+pars;060454
+parsa;060455
+parsayı başkası toplamak;060456
+parsel;060457
+parselasyon;060458
+parselleme;060459
+parsellemek;060460
+parsellenme;060461
+parsellenmek;060462
+parselletme;060463
+parselletmek;060464
+parselli;060465
+part-time;060466
+partal;060467
+partal atmak;060468
+partenogenez;060469
+parter;060470
+parti;060471
+parti;060472
+parti ocağı;060473
+parti vermek;060474
+parti çevirmek;060475
+partici;060476
+particilik;060477
+particilik yapmak;060478
+partikül;060479
+partiküllü;060480
+partilerüstü;060481
+partileşme;060482
+partileşmek;060483
+partileştirme;060484
+partileştirmek;060485
+partili;060486
+partililik;060487
+partisip;060488
+partisiz;060489
+partisizlik;060490
+partisyon;060491
+partiyi kaybetmek;060492
+partiyi vurmak;060493
+partizan;060494
+partizanca;060495
+partizanlık;060496
+partner;060497
+partöner;060498
+parya;060499
+parça;060500
+parça almak;060501
+parça başına;060502
+parça bohçası;060503
+parça bölük;060504
+parça parça;060505
+parça parça etmek;060506
+parça pürçük;060507
+parçacı;060508
+parçacık;060509
+parçacıklı;060510
+parçacılık;060511
+parçalama;060512
+parçalamak;060513
+parçalanma;060514
+parçalanmak;060515
+parçalanış;060516
+parçalatma;060517
+parçalatmak;060518
+parçalattırma;060519
+parçalattırmak;060520
+parçalayabilme;060521
+parçalayabilmek;060522
+parçalayış;060523
+parçalı;060524
+parçalı bohça;060525
+parçalı bohça gibi;060526
+parıl parıl;060527
+parıldama;060528
+parıldamak;060529
+parıldatma;060530
+parıldatmak;060531
+parıldayıcı;060532
+parıldayış;060533
+parıltı;060534
+parıltılı;060535
+parıltısız;060536
+parşömen;060537
+parşömen kâğıdı;060538

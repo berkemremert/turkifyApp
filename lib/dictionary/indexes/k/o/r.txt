@@ -1,0 +1,184 @@
+kor;046576
+kor dökmek;046577
+kor gibi;046578
+kor gibi yanmak;046579
+korakor;046580
+koral;046581
+koramiral;046582
+koramirallik;046583
+kordalılar;046584
+kordiplomatik;046585
+kordon;046586
+kordon altına almak;046587
+kordon boyu;046588
+kordone;046589
+kore;046590
+korece;046591
+korelasyon;046592
+koreli;046593
+koreograf;046594
+koreografi;046595
+korgan;046596
+korgeneral;046597
+korgenerallik;046598
+korgun;046599
+korida;046600
+koridor;046601
+korindon;046602
+korist;046603
+kork allah'tan korkmayandan;046604
+kork aprilin beşinden, öküzü ayırır eşinden;046605
+korkabilme;046606
+korkabilmek;046607
+korkak;046608
+korkak bezirgân ne kâr eder ne zarar (veya ziyan);046609
+korkaklık;046610
+korkaklık etmek;046611
+korkakça;046612
+korkalama;046613
+korkalamak;046614
+korkma;046615
+korkmak;046616
+korkonsül;046617
+korktuğu başına gelmek;046618
+korktuğuna uğramak;046619
+korku;046620
+korku damarı;046621
+korku dağları bekler (veya aşırır);046622
+korku düşmek;046623
+korku salmak;046624
+korku saçmak;046625
+korku vermek;046626
+korkudan çıldırmak;046627
+korkulma;046628
+korkulmak;046629
+korkulu;046630
+korkulu rüya (veya düş) görmektense uyanık yatmak evladır (veya yeğdir);046631
+korkuluk;046632
+korkuluklu;046633
+korkuluksuz;046634
+korkunun ecele faydası yoktur;046635
+korkunç;046636
+korkunçlaşma;046637
+korkunçlaşmak;046638
+korkunçlaştırma;046639
+korkunçlaştırmak;046640
+korkunçluk;046641
+korkusundan altına etmek (veya kaçırmak veya yapmak);046642
+korkusuz;046643
+korkusuzca;046644
+korkusuzluk;046645
+korkut;046646
+korkutabilme;046647
+korkutabilmek;046648
+korkuteli;046649
+korkutma;046650
+korkutmaca;046651
+korkutmak;046652
+korkutuş;046653
+korkuya kapılmak;046654
+korkuya kesmek;046655
+korkuş;046656
+korlanma;046657
+korlanmak;046658
+korlaşma;046659
+korlaşmak;046660
+korluk;046661
+korna;046662
+kornea;046663
+korner;046664
+korner atışı;046665
+korner direği;046666
+korner vuruşu;046667
+kornet;046668
+kornetçi;046669
+kornetçilik;046670
+korniş;046671
+kornişon;046672
+kornişçi;046673
+kornişçilik;046674
+korno;046675
+koro;046676
+koro hâlinde;046677
+korona;046678
+koroner;046679
+korozif;046680
+korozyon;046681
+korozyon akımı;046682
+korozyon derinliği;046683
+korporasyon;046684
+korporatif;046685
+korpus;046686
+korsaj;046687
+korsan;046688
+korsanlık;046689
+korse;046690
+korseci;046691
+korsecilik;046692
+korseli;046693
+korsesiz;046694
+kort;046695
+korte;046696
+korte etmek;046697
+kortej;046698
+korteks;046699
+kortizon;046700
+kortizonlu;046701
+kortizonlu ilaç;046702
+koru;046703
+korucu;046704
+korucuk;046705
+koruculuk;046706
+korugan;046707
+koruk;046708
+koruk lüferi;046709
+koruk suyu;046710
+koruk şerbeti;046711
+koruluk;046712
+koruma;046713
+koruma aracı;046714
+koruma görevlisi;046715
+koruma polisi;046716
+koruma ünsüzü;046717
+korumacı;046718
+korumacılık;046719
+korumak;046720
+korumalı;046721
+korumalık;046722
+korumasız;046723
+korumaya almak;046724
+korun;046725
+korun dokusu;046726
+korunabilme;046727
+korunabilmek;046728
+korunak;046729
+korunaklı;046730
+korunaklılık;046731
+korunaksız;046732
+korunaksızlık;046733
+koruncak;046734
+korunga;046735
+korungalık;046736
+korunma;046737
+korunma görmek;046738
+korunmak;046739
+korunulabilme;046740
+korunulabilmek;046741
+korunulma;046742
+korunulmak;046743
+korunum;046744
+korunumlu;046745
+korunuş;046746
+korutma;046747
+korutmak;046748
+koruyabilme;046749
+koruyabilmek;046750
+koruyucu;046751
+koruyucu aile;046752
+koruyucu hekimlik;046753
+koruyucu kaplama;046754
+koruyucu ünsüz;046755
+koruyuculuk;046756
+koruyuş;046757
+korvet;046758
+korza;046759

@@ -1,0 +1,29 @@
+ağraz;007338
+ağrı;007339
+ağrı;007340
+ağrı kesici;007341
+ağrı kesimi;007342
+ağrı sızı;007343
+ağrı yitimi;007344
+ağrılarda göz ağrısı, her kişinin öz ağrısı;007345
+ağrılı;007346
+ağrılı;007347
+ağrılılık;007348
+ağrılılık;007349
+ağrıma;007350
+ağrıma asalakları;007351
+ağrımak;007352
+ağrısı tutmak;007353
+ağrısız;007354
+ağrısız baş mezarda olur;007355
+ağrısız başına kaşbastı bağlamak;007356
+ağrısızca;007357
+ağrısızlık;007358
+ağrıtabilme;007359
+ağrıtabilmek;007360
+ağrıtma;007361
+ağrıtmak;007362
+ağrıtış;007363
+ağrıyabilme;007364
+ağrıyabilmek;007365
+ağrıyış;007366

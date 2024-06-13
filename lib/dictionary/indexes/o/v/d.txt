@@ -1,0 +1,4 @@
+ovdurma;059610
+ovdurmak;059611
+ovdurtma;059612
+ovdurtmak;059613

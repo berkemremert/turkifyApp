@@ -1,0 +1,31 @@
+seda;066052
+sedalı;066053
+sedalı ünsüz;066054
+sedalılık;066055
+sedasız;066056
+sedasız ünsüz;066057
+sedasızlık;066058
+sedef;066059
+sedef hastalığı;066060
+sedef kakma;066061
+sedef kakmalı;066062
+sedef otu;066063
+sedef otugiller;066064
+sedefimsi;066065
+sedefkâr;066066
+sedefkârlık;066067
+sedefli;066068
+sedefli kalker;066069
+sedefsi;066070
+sedefsi bulut;066071
+sedefçi;066072
+sedefçilik;066073
+sedimantasyon;066074
+sedir;066075
+sedir;066076
+sedirli;066077
+sedye;066078
+sedyeci;066079
+sedyecilik;066080
+sedyelik;066081
+sedyelik olmak;066082

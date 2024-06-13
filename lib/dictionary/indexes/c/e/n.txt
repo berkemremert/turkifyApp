@@ -1,0 +1,54 @@
+cenabet;016090
+cenabetlik;016091
+cenabıhak;016092
+cenah;016093
+cenap;016094
+cenapları;016095
+cenaze;016096
+cenaze alayı;016097
+cenaze duası;016098
+cenaze gibi;016099
+cenaze levazımatı;016100
+cenaze merasimi;016101
+cenaze namazı;016102
+cenaze töreni;016103
+cenazeyi kaldırmak;016104
+cendere;016105
+cendereleşme;016106
+cendereleşmek;016107
+cendereye sokmak;016108
+cengel;016109
+cengâver;016110
+cengâverce;016111
+cengâverlik;016112
+cenin;016113
+ceninisakıt;016114
+cenk;016115
+cenk etmek;016116
+cenkleşme;016117
+cenkleşmek;016118
+cenkçi;016119
+cenkçilik;016120
+cennet;016121
+cennet balığı;016122
+cennet balığıgiller;016123
+cennet biberi;016124
+cennet gibi;016125
+cennet kuşu;016126
+cennet kuşugiller;016127
+cennet taamı;016128
+cennet öküzü;016129
+cennete dönmek;016130
+cennete çevirmek;016131
+cennetleşme;016132
+cennetleşmek;016133
+cennetlik;016134
+cennetmekân;016135
+center;016136
+centilmen;016137
+centilmence;016138
+centilmenlik;016139
+centilmenlik anlaşması;016140
+cenubi;016141
+cenup;016142
+cenuplu;016143

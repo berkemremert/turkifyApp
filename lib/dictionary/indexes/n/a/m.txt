@@ -1,0 +1,76 @@
+nam;056963
+nam almak;056964
+nam kazanmak;056965
+nam salmak;056966
+nam vermek;056967
+namahrem;056968
+namahremlik;056969
+namaz;056970
+namaz (veya namazını) kılmak;056971
+namaz bezi;056972
+namaz niyaz;056973
+namaz vakti;056974
+namaz örtüsü;056975
+namaza durmak;056976
+namaza meyli (veya namazda gözü) olmayanın kulağı ezanda olmaz;056977
+namazbozan;056978
+namazcı;056979
+namazgâh;056980
+namazlağı;056981
+namazlık;056982
+namazsız;056983
+namazsızlık;056984
+namazı kılınmak;056985
+namazında niyazında;056986
+namağlup;056987
+namağlupluk;056988
+namdar;056989
+namdarlık;056990
+name;056991
+name okumak;056992
+nameci;056993
+namerde muhtaç bırakmak;056994
+namerde muhtaç olmak;056995
+namert;056996
+namertlik;056997
+namertçe;056998
+namevcut;056999
+namevcutluk;057000
+namibyalı;057001
+namlu;057002
+namlulu;057003
+namlusuz;057004
+namlı;057005
+namlı;057006
+namlı şanlı;057007
+namus;057008
+namus belası;057009
+namus borcu;057010
+namus cinayeti;057011
+namus davası;057012
+namus sözü;057013
+namuskâr;057014
+namuskârlık;057015
+namuslu;057016
+namusluca;057017
+namusluluk;057018
+namussuz;057019
+namussuzca;057020
+namussuzcasına;057021
+namussuzluk;057022
+namusu iki paralık olmak;057023
+namusu temizlenmek;057024
+namusuna dokunmak;057025
+namusuna sinek kondurmamak;057026
+namusunu temizlemek;057027
+namusuyla yaşamak;057028
+namzet;057029
+namzet göstermek;057030
+namzetlik;057031
+namünasip;057032
+namüsait;057033
+namütenahi;057034
+namütenahilik;057035
+namı nişanı kalmamak;057036
+namıdiğer;057037
+namına;057038

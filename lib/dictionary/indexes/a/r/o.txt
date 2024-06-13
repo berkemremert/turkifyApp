@@ -1,0 +1,5 @@
+aroma;004695
+aromalı;004696
+aromasız;004697
+aromaterapi;004698
+aromatik;004699

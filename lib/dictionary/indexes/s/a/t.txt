@@ -1,0 +1,86 @@
+satabilme;065387
+satabilmek;065388
+satanist;065389
+satanistlik;065390
+satanizm;065391
+satasıya;065392
+sataşabilme;065393
+sataşabilmek;065394
+sataşkan;065395
+sataşma;065396
+sataşmak;065397
+sataşılma;065398
+sataşılmak;065399
+saten;065400
+sathi;065401
+sathileşme;065402
+sathileşmek;065403
+sathileştirme;065404
+sathileştirmek;065405
+sathilik;065406
+satir;065407
+satirik;065408
+satlıcan;065409
+satma;065410
+satmak;065411
+satranç;065412
+satranç tahtası;065413
+satranç takımı;065414
+satranç taşı;065415
+satranç vezni;065416
+satrançlı;065417
+satranççı;065418
+satranççılık;065419
+satrap;065420
+satsuma;065421
+sattırabilme;065422
+sattırabilmek;065423
+sattırma;065424
+sattırmak;065425
+satvet;065426
+satürn;065427
+satı;065428
+satıcı;065429
+satıcılık;065430
+satıh;065431
+satılabilme;065432
+satılabilmek;065433
+satılma;065434
+satılmak;065435
+satılık;065436
+satılık ziftin olsun, selanik'ten kel gelir;065437
+satılığa çıkarmak;065438
+satılış;065439
+satım;065440
+satımcı;065441
+satımcılık;065442
+satımlık;065443
+satın alma;065444
+satın almacı;065445
+satın almacılık;065446
+satın almak;065447
+satıp savmak;065448
+satır;065449
+satır;065450
+satır arası;065451
+satır atmak;065452
+satır başı;065453
+satır satır;065454
+satır sonu;065455
+satıverme;065456
+satıvermek;065457
+satıya çıkarmak;065458
+satış;065459
+satış bedeli;065460
+satış değeri;065461
+satış fiyatı;065462
+satış merkezi;065463
+satış mukavelesi;065464
+satış ruhsatı;065465
+satış sarayı;065466
+satış sözleşmesi;065467
+satış yapmak;065468
+satış yeri;065469
+satış şartnamesi;065470
+satışa gelmek;065471
+satışa çıkarmak;065472

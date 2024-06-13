@@ -1,0 +1,3 @@
+bop;013205
+bopluk;013206
+bopstil;013207

@@ -1,0 +1,32 @@
+orman;059140
+orman dizisi;059141
+orman evi;059142
+orman gibi;059143
+orman gülü;059144
+orman işletmesi;059145
+orman kanunu;059146
+orman kaçkını;059147
+orman kebabı;059148
+orman kibarı;059149
+orman koruma memuru;059150
+orman kuşağı;059151
+orman köylüsü;059152
+orman köyü;059153
+orman sarmaşığı;059154
+orman sıçanı;059155
+orman tavuğu;059156
+orman tavuğugiller;059157
+orman taşlamak;059158
+orman yeşili;059159
+orman çayırı;059160
+ormancı;059161
+ormancık;059162
+ormancılık;059163
+ormanlaşma;059164
+ormanlaşmak;059165
+ormanlaştırma;059166
+ormanlaştırmak;059167
+ormanlık;059168
+ormansız;059169
+ormansızlaşma;059170
+ormansızlaşmak;059171

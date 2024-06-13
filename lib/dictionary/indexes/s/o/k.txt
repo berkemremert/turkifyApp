@@ -1,0 +1,51 @@
+sokabilme;068050
+sokabilmek;068051
+sokak;068052
+sokak kadını;068053
+sokak kapısı;068054
+sokak kızı;068055
+sokak çocuğu;068056
+sokakta kalmak;068057
+sokaktaki adam;068058
+sokaktan toplamak;068059
+sokağa (veya sokaklara) dökülmek;068060
+sokağa (veya sokaklara) düşmek;068061
+sokağa atmak;068062
+sokağa çıkmak;068063
+soket;068064
+soket;068065
+sokma;068066
+sokmak;068067
+sokman;068068
+sokra;068069
+sokranma;068070
+sokranmak;068071
+sokturma;068072
+sokturmak;068073
+soku;068074
+sokucu;068075
+sokulabilme;068076
+sokulabilmek;068077
+sokulgan;068078
+sokulganlık;068079
+sokulma;068080
+sokulmak;068081
+sokulu;068082
+sokuluverme;068083
+sokuluvermek;068084
+sokuluş;068085
+sokum;068086
+sokunma;068087
+sokunmak;068088
+sokur;068089
+sokuverme;068090
+sokuvermek;068091
+sokuş;068092
+sokuşma;068093
+sokuşmak;068094
+sokuşturabilme;068095
+sokuşturabilmek;068096
+sokuşturma;068097
+sokuşturmak;068098
+sokuşturuverme;068099
+sokuşturuvermek;068100

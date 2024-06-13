@@ -1,0 +1,7 @@
+cop;016662
+coplama;016663
+coplamak;016664
+coplanma;016665
+coplanmak;016666
+coplatma;016667
+coplatmak;016668

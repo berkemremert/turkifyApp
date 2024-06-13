@@ -1,0 +1,5 @@
+gotik;030018
+gotik harfler;030019
+gotik sanat;030020
+gotlar;030021
+gotça;030022

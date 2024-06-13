@@ -1,0 +1,5 @@
+iklim;036573
+iklim bilimci;036574
+iklim bilimi;036575
+iklimleme;036576
+iklimleme cihazı;036577

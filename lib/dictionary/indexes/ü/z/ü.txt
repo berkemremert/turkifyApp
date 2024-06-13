@@ -1,0 +1,39 @@
+üzücü;090399
+üzücülük;090400
+üzülebilme;090401
+üzülebilmek;090402
+üzülme;090403
+üzülmek;090404
+üzülüverme;090405
+üzülüvermek;090406
+üzülüş;090407
+üzüm;090408
+üzüm asması;090409
+üzüm hoşafı;090410
+üzüm kompostosu;090411
+üzüm kurusu;090412
+üzüm pekmezi;090413
+üzüm salkımı;090414
+üzüm sirkesi;090415
+üzüm suyu;090416
+üzüm üzüm;090417
+üzüm üzüme baka baka kararır;090418
+üzüm şekeri;090419
+üzüm şırası;090420
+üzümcü;090421
+üzümcülük;090422
+üzümgüneşi;090423
+üzümlü;090424
+üzümlü;090425
+üzümlü kek;090426
+üzümsü;090427
+üzümsüz;090428
+üzümün çöpü armudun sapı var demek;090429
+üzümünü ye de bağını sorma;090430
+üzüntü;090431
+üzüntü vermek;090432
+üzüntülü;090433
+üzüntüsüz;090434
+üzüntüsüzlük;090435
+üzünç;090436
+üzünçlü;090437

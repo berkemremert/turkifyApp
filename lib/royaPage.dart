@@ -21,63 +21,69 @@ class royasPage extends StatelessWidget {
 Future<String> bestFunc(String wordReq) async {
   String word = wordReq.toLowerCase();
 
-  bool isAlNum(String str) {
-    final alNumRegExp = RegExp(r'^[a-zA-Z0-9]+$');
-    return alNumRegExp.hasMatch(str);
-  }
+  // bool isAlNum(String str) {
+  //   final alNumRegExp = RegExp(r'^[a-zA-Z0-9]+$');
+  //   return alNumRegExp.hasMatch(str);
+  // }
+  //
+  // String createPath(String word) {
+  //   String path;
+  //   List<String> chars = [];
+  //   for (int i = 0; i<3; i++){
+  //     try{
+  //       if (!isAlNum(word.substring(i, i+1))){
+  //         chars.add("other");
+  //       }
+  //       else{
+  //         chars.add(word.substring(i, i+1));
+  //       }
+  //     }
+  //     catch (e){
+  //       chars.add("other");
+  //     }
+  //   }
+  //   path = "lib/dictionary/indexes/${chars[0]}/${chars[1]}/${chars[2]}.txt";
+  //   return path;
+  // }
+  //
+  // String searchTxt(String txtPath, String word) {
+  //   print('Attempting to open file at path: $txtPath');
+  //   File txt = new File(txtPath);
+  //   print('File exists: ${txt.existsSync()}');
+  //   if (txt.existsSync()){
+  //     List<String> lines = txt.readAsLinesSync();
+  //     for (var line in lines) {
+  //       List<String> content = line.split(";");
+  //       if (content[0] == word){
+  //         return content[1];
+  //       }
+  //     }
+  //   }
+  //   return "none";  //in case of word does not exists
+  // }
+  //
+  //
+  // String path = createPath(word);
+  // String id = searchTxt(path, word);
 
-  String createPath(String word) {
-    String path;
-    List<String> chars = [];
-    for (int i = 0; i<3; i++){
-      try{
-        if (!isAlNum(word.substring(i, i+1))){
-          chars.add("other");
-        }
-        else{
-          chars.add(word.substring(i, i+1));
-        }
-      }
-      catch (e){
-        chars.add("other");
-      }
-    }
-    path = "lib/dictionary/indexes/${chars[0]}/${chars[1]}/${chars[2]}.txt";
-    return path;
-  }
-
-  String searchTxt(String txtPath, String word) {
-    print('Attempting to open file at path: $txtPath');
-    File txt = new File(txtPath);
-    print('File exists: ${txt.existsSync()}');
-    if (txt.existsSync()){
-      List<String> lines = txt.readAsLinesSync();
-      for (var line in lines) {
-        List<String> content = line.split(";");
-        if (content[0] == word){
-          return content[1];
-        }
-      }
-    }
-    return "none";  //in case of word does not exists
-  }
 
 
-  String path = createPath(word);
-  String id = searchTxt(path, word);
+  // if (id == "none"){
+  //   return "Böyle bir kelime bulunamadı.";
+  // }
+  // else{
+  //   Map<String, dynamic>? dictData = getDictWord(id);
+  //   List<String> meanings = dictData?["meanings"];
+  //   String str = "";
+  //   for (int i = 0; i<meanings.length; i++){
+  //     str += "$i) ${meanings[i]}\n";
+  //   }
+  //   return str;
+  // }
 
-  if (id == "none"){
-    return "Böyle bir kelime bulunamadı.";
-  }
-  else{
-    Map<String, dynamic>? dictData = getDictWord(id);
-    List<String> meanings = dictData?["meanings"];
-    String str = "";
-    for (int i = 0; i<meanings.length; i++){
-      str += "$i) ${meanings[i]}\n";
-    }
-    return str;
-  }
+  var results = await getDictWordByWord(word);
+  print(results['meanings']);
+  return "sa";
 
 
 }

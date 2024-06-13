@@ -1,0 +1,87 @@
+soy;068547
+soy gazlar;068548
+soy ismi;068549
+soy kütüğü;068550
+soy kırımı;068551
+soy oluş;068552
+soy sop;068553
+soy yapısı;068554
+soya;068555
+soya eti;068556
+soya fasulyesi;068557
+soya filizi;068558
+soya loru;068559
+soya sütü;068560
+soya unu;068561
+soya yağı;068562
+soya çekim;068563
+soya çekmek;068564
+soyabilme;068565
+soyabilmek;068566
+soyadı;068567
+soyağacı;068568
+soydaş;068569
+soydaşlık;068570
+soydur çeker, boktur kokar;068571
+soydurma;068572
+soydurmak;068573
+soygun;068574
+soyguncu;068575
+soygunculuk;068576
+soyka;068577
+soyka;068578
+soykırım;068579
+soylu;068580
+soylu erki;068581
+soylu soplu;068582
+soyluluk;068583
+soyma;068584
+soymak;068585
+soymuk;068586
+soysal;068587
+soysuz;068588
+soysuzca;068589
+soysuzlaşma;068590
+soysuzlaşmak;068591
+soysuzlaştırma;068592
+soysuzlaştırmak;068593
+soysuzluk;068594
+soytarı;068595
+soytarılık;068596
+soyulma;068597
+soyulmak;068598
+soyuluş;068599
+soyum;068600
+soyunabilme;068601
+soyunabilmek;068602
+soyundurma;068603
+soyundurmak;068604
+soyunma;068605
+soyunma odası;068606
+soyunmak;068607
+soyuntu;068608
+soyunup dökünmek;068609
+soyunuverme;068610
+soyunuvermek;068611
+soyunuş;068612
+soyup soğana çevirmek;068613
+soyut;068614
+soyut ad;068615
+soyut isim;068616
+soyut sanat;068617
+soyut sayı;068618
+soyutlama;068619
+soyutlamak;068620
+soyutlanma;068621
+soyutlanmak;068622
+soyutlanış;068623
+soyutlayabilme;068624
+soyutlayabilmek;068625
+soyutlaşma;068626
+soyutlaşmak;068627
+soyutlaştırma;068628
+soyutlaştırmak;068629
+soyutluk;068630
+soyutçu;068631
+soyutçuluk;068632
+soyuş;068633

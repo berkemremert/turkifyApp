@@ -1,0 +1,23 @@
+imtihan;037178
+imtihan etmek;037179
+imtihan olmak;037180
+imtihan vermek;037181
+imtihana çekmek;037182
+imtihansız;037183
+imtina;037184
+imtina etmek;037185
+imtisal;037186
+imtisal etmek;037187
+imtisas;037188
+imtiyaz;037189
+imtiyazlı;037190
+imtiyazlıca;037191
+imtiyazlılık;037192
+imtiyazsız;037193
+imtiyazsızca;037194
+imtiyazsızlık;037195
+imtizaç;037196
+imtizaç etmek;037197
+imtizaçlı;037198
+imtizaçsız;037199
+imtizaçsızlık;037200

@@ -1,0 +1,6 @@
+aferin;000859
+aferin almak;000860
+aferist;000861
+afet;000862
+afet istasyonu;000863
+afetzede;000864

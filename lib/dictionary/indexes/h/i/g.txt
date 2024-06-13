@@ -1,0 +1,8 @@
+high-tech;034798
+higrofil;034799
+higrometre;034800
+higrometrik;034801
+higroskop;034802
+higroskopik;034803
+higrostat;034804
+higrotropizm;034805

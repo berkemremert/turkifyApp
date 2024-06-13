@@ -1,0 +1,246 @@
+kat;043010
+kat;043011
+kat görevlisi;043012
+kat irtifakı;043013
+kat kat;043014
+kat yuvarı;043015
+kat çıkmak;043016
+katabilme;043017
+katabilmek;043018
+katabolizma;043019
+katafalk;043020
+katafot;043021
+kataklastik;043022
+kataklaz;043023
+katakofti;043024
+katakomp;043025
+katakulli;043026
+katakulli okumak;043027
+katakulli yapmak;043028
+katakulliye gelmek;043029
+katakulliye getirmek;043030
+katalanca;043031
+katalepsi;043032
+kataleptik;043033
+katalitik;043034
+katalitik soba;043035
+kataliz;043036
+katalizör;043037
+katalog;043038
+kataloglama;043039
+kataloglamak;043040
+kataloglatma;043041
+kataloglatmak;043042
+katalpa;043043
+katamaran;043044
+katana;043045
+katana gibi;043046
+katar;043047
+katarakt;043048
+katarlama;043049
+katarlamak;043050
+katarlanma;043051
+katarlanmak;043052
+katastrof;043053
+katavaşya;043054
+katbekat;043055
+katedebilme;043056
+katedebilmek;043057
+katediş;043058
+katedral;043059
+kategori;043060
+kategorik;043061
+kategorize;043062
+kateter;043063
+katetme;043064
+katetmek;043065
+katgüt;043066
+kati;043067
+kati teminat;043068
+katil;043069
+katil;043070
+katileşme;043071
+katileşmek;043072
+katillik;043073
+katiyen;043074
+katiyet;043075
+katiyetle;043076
+katkı;043077
+katkı maddesi;043078
+katkı payı;043079
+katkıda bulunmak;043080
+katkılanma;043081
+katkılanmak;043082
+katkılı;043083
+katkılılık;043084
+katkısız;043085
+katkısızca;043086
+katkısızlık;043087
+katlama;043088
+katlamak;043089
+katlanabilme;043090
+katlanabilmek;043091
+katlandırma;043092
+katlandırmak;043093
+katlanma;043094
+katlanmak;043095
+katlanılma;043096
+katlanılmak;043097
+katlanış;043098
+katlatma;043099
+katlatmak;043100
+katlayabilme;043101
+katlayabilmek;043102
+katlayış;043103
+katledebilme;043104
+katledebilmek;043105
+katlediş;043106
+katletme;043107
+katletmek;043108
+katlettirme;043109
+katlettirmek;043110
+katliam;043111
+katlı;043112
+katlı kur;043113
+katma;043114
+katma bütçe;043115
+katma değer vergisi;043116
+katmak;043117
+katmalı;043118
+katman;043119
+katman bulut;043120
+katmanlaşma;043121
+katmanlaşmak;043122
+katmanlı;043123
+katmer;043124
+katmer kaldırmak;043125
+katmer katmer;043126
+katmerci;043127
+katmercilik;043128
+katmerlenme;043129
+katmerlenmek;043130
+katmerleşme;043131
+katmerleşmek;043132
+katmerleştirme;043133
+katmerleştirmek;043134
+katmerli;043135
+katmerli badem;043136
+katmerli birleşik zaman;043137
+katmerli iyelik;043138
+katmerli katmerli;043139
+katmerli yalan;043140
+katmersiz;043141
+katolik;043142
+katoliklik;043143
+katolunma;043144
+katolunmak;043145
+katot;043146
+katrak;043147
+katran;043148
+katran ağacı;043149
+katran gibi;043150
+katran ruhu;043151
+katran suyu;043152
+katran taşı;043153
+katran yağı;043154
+katran çamı;043155
+katrancı;043156
+katrancılık;043157
+katrandan olmaz şeker, olsa da cinsine çeker;043158
+katranköpüğü;043159
+katranlama;043160
+katranlamak;043161
+katranlanma;043162
+katranlanmak;043163
+katranlatma;043164
+katranlatmak;043165
+katranlı;043166
+katransız;043167
+katranı kaynatsan olur mu şeker?;043168
+katre;043169
+katresi kalmadı (veya yok);043170
+katrilyon;043171
+katsayı;043172
+katur kutur;043173
+katyon;043174
+katçı;043175
+katı;043176
+katı;043177
+katı atık;043178
+katı kalpli;043179
+katı kalpli olmak;043180
+katı kalplilik;043181
+katı söz;043182
+katı yağ;043183
+katı yumurta;043184
+katı yürekli;043185
+katı yüreklilik;043186
+katık;043187
+katık etmek;043188
+katıklama;043189
+katıklamak;043190
+katıklı;043191
+katıklı aş;043192
+katıksız;043193
+katıksız hapis;043194
+katıksızca;043195
+katıksızlık;043196
+katıla katıla ağlamak;043197
+katıla katıla gülmek;043198
+katılabilme;043199
+katılabilmek;043200
+katılan;043201
+katılaşma;043202
+katılaşmak;043203
+katılaştırma;043204
+katılaştırmak;043205
+katılgan doku;043206
+katılma;043207
+katılma belgesi;043208
+katılmak;043209
+katılmak;043210
+katıltma;043211
+katıltmak;043212
+katılık;043213
+katılım;043214
+katılım belgesi;043215
+katılımcı;043216
+katılımcı demokrasi;043217
+katılımcılık;043218
+katılıverme;043219
+katılıvermek;043220
+katılış;043221
+katım;043222
+katımlık;043223
+katıntı;043224
+katır;043225
+katır boncuğu;043226
+katır gibi;043227
+katır inadı;043228
+katır karı;043229
+katır kutur;043230
+katır kuyruğu gibi kalmak;043231
+katır tepmişe dönmek;043232
+katır yılanı;043233
+katırcı;043234
+katırcılık;043235
+katırkuyruğu;043236
+katırlaşma;043237
+katırlaşmak;043238
+katırlık;043239
+katırtırnağı;043240
+katıverme;043241
+katıvermek;043242
+katışma;043243
+katışmak;043244
+katışmaç;043245
+katıştırma;043246
+katıştırmak;043247
+katıştırılma;043248
+katıştırılmak;043249
+katışık;043250
+katışıklı;043251
+katışıklık;043252
+katışıklılık;043253
+katışıksız;043254
+katışıksızlık;043255

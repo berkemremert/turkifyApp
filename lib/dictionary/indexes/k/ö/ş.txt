@@ -1,0 +1,49 @@
+köşe;048999
+köşe atışı;049000
+köşe bucak;049001
+köşe bucak kaçmak (veya saklanmak);049002
+köşe bucağa dağılmak;049003
+köşe demiri;049004
+köşe dolabı;049005
+köşe dönmeci;049006
+köşe dönmecilik;049007
+köşe dönücü;049008
+köşe dönücülük;049009
+köşe kadısı;049010
+köşe kapmaca;049011
+köşe kapmaca oynamak;049012
+köşe koltuğu;049013
+köşe minderi;049014
+köşe olmak;049015
+köşe penceresi;049016
+köşe rafı;049017
+köşe taşı;049018
+köşe taşı köşede yakışır;049019
+köşe tutmak;049020
+köşe vuruşu;049021
+köşe yastığı;049022
+köşe yazarlığı;049023
+köşe yazarı;049024
+köşe yazısı;049025
+köşebaşı;049026
+köşebaşını tutmak;049027
+köşebent;049028
+köşede bucakta kalmak;049029
+köşegen;049030
+köşek;049031
+köşekleme;049032
+köşeklemek;049033
+köşeleme;049034
+köşelemek;049035
+köşeli;049036
+köşeli ayraç;049037
+köşeli parantez;049038
+köşelik;049039
+köşesine çekilmek;049040
+köşesiz;049041
+köşeyi dönmek;049042
+köşk;049043
+köşk;049044
+köşker;049045
+köşkerlik;049046
+köşklü;049047

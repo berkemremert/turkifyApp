@@ -1,0 +1,29 @@
+akça;001749
+akça;001750
+akça armudu;001751
+akça pakça;001752
+akça yel;001753
+akçaabat;001754
+akçaabat köftesi;001755
+akçaağaç;001756
+akçaağaçgiller;001757
+akçadağ;001758
+akçakale;001759
+akçakavak;001760
+akçakent;001761
+akçakesme;001762
+akçakoca;001763
+akçalama;001764
+akçalamak;001765
+akçalanma;001766
+akçalanmak;001767
+akçasal;001768
+akçe;001769
+akçeli;001770
+akçöpleme;001771
+akçıl;001772
+akçıllanma;001773
+akçıllanmak;001774
+akçıllaşma;001775
+akçıllaşmak;001776
+akçıllık;001777

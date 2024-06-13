@@ -1,0 +1,8 @@
+irdeleme;037886
+irdelemek;037887
+irdeleniş;037888
+irdelenme;037889
+irdelenmek;037890
+irdeleyebilme;037891
+irdeleyebilmek;037892
+irdeleyiş;037893

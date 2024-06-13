@@ -1,0 +1,25 @@
+becayiş;010377
+becayiş etmek;010378
+becelleşme;010379
+becelleşmek;010380
+becerebilme;010381
+becerebilmek;010382
+beceri;010383
+beceri yitimi;010384
+becerikli;010385
+beceriklilik;010386
+beceriksiz;010387
+beceriksizce;010388
+beceriksizleşme;010389
+beceriksizleşmek;010390
+beceriksizlik;010391
+becerilme;010392
+becerilmek;010393
+beceriverme;010394
+becerivermek;010395
+beceriş;010396
+becerme;010397
+becermek;010398
+becertme;010399
+becertmek;010400
+becet;010401

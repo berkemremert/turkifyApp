@@ -1,0 +1,11 @@
+pörsük;062561
+pörsüklük;062562
+pörsüme;062563
+pörsümek;062564
+pörsütme;062565
+pörsütmek;062566
+pörtlek;062567
+pörtleme;062568
+pörtlemek;062569
+pörtletme;062570
+pörtletmek;062571

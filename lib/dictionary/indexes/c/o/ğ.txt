@@ -1,0 +1,5 @@
+coğrafi;016670
+coğrafi durum;016671
+coğrafya;016672
+coğrafyacı;016673
+coğrafyacılık;016674

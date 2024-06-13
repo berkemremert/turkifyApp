@@ -1,0 +1,192 @@
+doğa;021443
+doğa bilgisi;021444
+doğa bilimci;021445
+doğa bilimleri;021446
+doğa dışı;021447
+doğa yasası;021448
+doğa yürüyüşü;021449
+doğabilme;021450
+doğabilmek;021451
+doğacı;021452
+doğacılık;021453
+doğal;021454
+doğal afet;021455
+doğal ayıklanma;021456
+doğal coğrafya;021457
+doğal fiyat;021458
+doğal gaz;021459
+doğal gaz sayacı;021460
+doğal olarak;021461
+doğal sayı;021462
+doğalcı;021463
+doğalcılık;021464
+doğallaşma;021465
+doğallaşmak;021466
+doğallaştırma;021467
+doğallaştırmak;021468
+doğallık;021469
+doğallıkla;021470
+doğan;021471
+doğan anası olma, doğuran anası ol;021472
+doğancı;021473
+doğancılık;021474
+doğanhisar;021475
+doğankent;021476
+doğanyol;021477
+doğanyurt;021478
+doğanşar;021479
+doğanşehir;021480
+doğasever;021481
+doğaseverlik;021482
+doğayazma;021483
+doğayazmak;021484
+doğaç;021485
+doğaçlama;021486
+doğaçlama tiyatro;021487
+doğaçlama yapmak;021488
+doğaçlamak;021489
+doğaçtan;021490
+doğaötesi;021491
+doğaüstü;021492
+doğaüstücü;021493
+doğaüstücülük;021494
+doğdurma;021495
+doğdurmak;021496
+doğduğuna bin pişman;021497
+doğduğuna pişman etmek;021498
+doğduğuna pişman olmak;021499
+doğma;021500
+doğma büyüme;021501
+doğmaca;021502
+doğmadık çocuğa don biçilmez;021503
+doğmak;021504
+doğram;021505
+doğrama;021506
+doğramacı;021507
+doğramacılık;021508
+doğramak;021509
+doğranma;021510
+doğranmak;021511
+doğranış;021512
+doğratma;021513
+doğratmak;021514
+doğrayabilme;021515
+doğrayabilmek;021516
+doğrayış;021517
+doğru;021518
+doğru akım;021519
+doğru açı;021520
+doğru bildiği yoldan ayrılmamak (veya şaşmamak);021521
+doğru bulmak;021522
+doğru doğru dosdoğru;021523
+doğru durmak;021524
+doğru dürüst;021525
+doğru orantı;021526
+doğru orantılı;021527
+doğru oturmak;021528
+doğru parçası;021529
+doğru söyleyeni dokuz köyden kovarlar;021530
+doğru söz acıdır;021531
+doğru söz yemin istemez;021532
+doğru yol;021533
+doğru çıkmak;021534
+doğruca;021535
+doğrucu;021536
+doğrucu davut;021537
+doğruculuk;021538
+doğrudan;021539
+doğrudan doğruya;021540
+doğrulabilme;021541
+doğrulabilmek;021542
+doğrulama;021543
+doğrulamak;021544
+doğrulanma;021545
+doğrulanmak;021546
+doğrulatabilme;021547
+doğrulatabilmek;021548
+doğrulatma;021549
+doğrulatmak;021550
+doğrulayabilme;021551
+doğrulayabilmek;021552
+doğrulayış;021553
+doğrulma;021554
+doğrulmak;021555
+doğrultabilme;021556
+doğrultabilmek;021557
+doğrultma;021558
+doğrultmak;021559
+doğrultman;021560
+doğrultmaç;021561
+doğrultu;021562
+doğrultuş;021563
+doğrulu;021564
+doğruluk;021565
+doğrulum;021566
+doğruluverme;021567
+doğruluvermek;021568
+doğruluş;021569
+doğrunun yardımcısı allah'tır;021570
+doğrusal;021571
+doğrusal denklem;021572
+doğrusu;021573
+doğrusuz;021574
+doğu;021575
+doğu;021576
+doğu bilimci;021577
+doğu bilimi;021578
+doğu bloku;021579
+doğu kayını;021580
+doğu noktası;021581
+doğu türkçesi;021582
+doğubeyazıt;021583
+doğucu;021584
+doğuculuk;021585
+doğulu;021586
+doğuluca;021587
+doğululaşma;021588
+doğululaşmak;021589
+doğululaştırma;021590
+doğululaştırmak;021591
+doğululuk;021592
+doğum;021593
+doğum günü;021594
+doğum ilmühaberi;021595
+doğum izni;021596
+doğum kontrolü;021597
+doğum odası;021598
+doğum oranı;021599
+doğum sancısı;021600
+doğum tarihi;021601
+doğum yapmak;021602
+doğum yeri;021603
+doğumevi;021604
+doğumhane;021605
+doğumlu;021606
+doğumsal;021607
+doğurabilme;021608
+doğurabilmek;021609
+doğuranlar;021610
+doğurgan;021611
+doğurganlaşma;021612
+doğurganlaşmak;021613
+doğurganlaştırma;021614
+doğurganlaştırmak;021615
+doğurganlık;021616
+doğurgu;021617
+doğurma;021618
+doğurmak;021619
+doğurtabilme;021620
+doğurtabilmek;021621
+doğurtma;021622
+doğurtmak;021623
+doğurucu;021624
+doğuruculuk;021625
+doğuruverme;021626
+doğuruvermek;021627
+doğuruş;021628
+doğuverme;021629
+doğuvermek;021630
+doğuş;021631
+doğuştan;021632
+doğuştancı;021633
+doğuştancılık;021634

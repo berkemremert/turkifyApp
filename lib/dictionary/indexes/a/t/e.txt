@@ -1,0 +1,92 @@
+ate;005465
+ateh;005466
+ateh getirmek;005467
+ateist;005468
+ateizm;005469
+atel;005470
+atelye;005471
+aterina;005472
+ateş;005473
+ateş almak;005474
+ateş almaya mı geldin?;005475
+ateş açmak;005476
+ateş bacayı (veya saçağı) sarmak;005477
+ateş balığı;005478
+ateş basmak;005479
+ateş böcekleri;005480
+ateş böceği;005481
+ateş demekle ağız yanmaz;005482
+ateş düştüğü yeri yakar;005483
+ateş düşürücü;005484
+ateş etmek;005485
+ateş gecesi;005486
+ateş gemisi;005487
+ateş gibi;005488
+ateş gibi kesilmek;005489
+ateş gibi yanmak;005490
+ateş hattı;005491
+ateş kayığı;005492
+ateş kesilmek;005493
+ateş kesmek;005494
+ateş küre;005495
+ateş kırmızısı;005496
+ateş olmayan yerden duman çıkmaz;005497
+ateş olsa cirmi kadar yer yakar;005498
+ateş pahası;005499
+ateş parçası;005500
+ateş püskürmek;005501
+ateş saçmak;005502
+ateş tuğlası;005503
+ateş vermek;005504
+ateş yağdırmak;005505
+ateş çiçeği;005506
+ateş çıkmak;005507
+ateş!;005508
+ateşbaz;005509
+ateşbazlık;005510
+ateşe dayanıklı;005511
+ateşe dayanıklılık;005512
+ateşe tutmak;005513
+ateşe vermek;005514
+ateşe vurmak;005515
+ateşe vursa duman vermez;005516
+ateşi başına vurmak;005517
+ateşi düşmek;005518
+ateşi uyandırmak;005519
+ateşi çıkmak (veya yükselmek);005520
+ateşin;005521
+ateşine yanmak;005522
+ateşini almak;005523
+ateşkes;005524
+ateşle barut bir yerde durmaz;005525
+ateşle oynamak;005526
+ateşleme;005527
+ateşlemek;005528
+ateşlendirme;005529
+ateşlendirmek;005530
+ateşlenebilme;005531
+ateşlenebilmek;005532
+ateşleniş;005533
+ateşlenme;005534
+ateşlenmek;005535
+ateşler içinde yanmak;005536
+ateşletme;005537
+ateşletmek;005538
+ateşleyebilme;005539
+ateşleyebilmek;005540
+ateşleyici;005541
+ateşleyicilik;005542
+ateşleyiverme;005543
+ateşleyivermek;005544
+ateşli;005545
+ateşli ateşli;005546
+ateşli silah;005547
+ateşlik;005548
+ateşlilik;005549
+ateşperest;005550
+ateşperestlik;005551
+ateşsiz;005552
+ateşsizlik;005553
+ateşten gömlek;005554
+ateşçi;005555
+ateşçilik;005556

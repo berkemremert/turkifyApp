@@ -1,0 +1,18 @@
+anka;003625
+ankara;003626
+ankara kedisi;003627
+ankara keçisi;003628
+ankara tavşanı;003629
+ankara taşı;003630
+ankara çiğdemi;003631
+ankaralı;003632
+ankaralılık;003633
+ankastre;003634
+ankesörlü telefon;003635
+anket;003636
+anket yapmak;003637
+anketçi;003638
+anketçilik;003639
+anketör;003640
+anketörlük;003641
+ankiloz;003642

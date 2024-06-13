@@ -1,0 +1,165 @@
+orta;059193
+orta;059194
+orta ağırlık;059195
+orta boy;059196
+orta boylu;059197
+orta dalga;059198
+orta damar;059199
+orta deri;059200
+orta dikme;059201
+orta direk;059202
+orta doğu;059203
+orta elçi;059204
+orta hakem;059205
+orta hece düşmesi;059206
+orta hizmeti;059207
+orta hizmetçisi;059208
+orta hâlli;059209
+orta hâllilik;059210
+orta işi;059211
+orta kaldırım;059212
+orta karar;059213
+orta karın;059214
+orta kat;059215
+orta katı kiraya vermek;059216
+orta kulak;059217
+orta kulak boşluğu;059218
+orta kulak iltihabı;059219
+orta kuşak;059220
+orta malı;059221
+orta masası;059222
+orta mektep;059223
+orta nokta;059224
+orta oyunculuğu;059225
+orta oyuncusu;059226
+orta oyunu;059227
+orta parmak;059228
+orta saha;059229
+orta sıklet;059230
+orta tedrisat;059231
+orta terim;059232
+orta uç;059233
+orta uç oyuncusu;059234
+orta yaylak;059235
+orta yaşlı;059236
+orta yaşlılık;059237
+orta yol;059238
+orta yolcu;059239
+orta yolculuk;059240
+orta yuvar;059241
+orta yuvarlak;059242
+orta çağ;059243
+orta şark;059244
+orta şekerli;059245
+ortaca;059246
+ortada;059247
+ortada bırakmak;059248
+ortada fol yok yumurta yok;059249
+ortada kalmak;059250
+ortada olmak;059251
+ortadan kaldırmak;059252
+ortadan kalkmak;059253
+ortadan kaybolmak;059254
+ortadan söylemek;059255
+ortadan sır olmak;059256
+ortak;059257
+ortak (veya kuma) gemisi yürümüş, elti gemisi yürümemiş;059258
+ortak bölen;059259
+ortak dil;059260
+ortak etmek;059261
+ortak fark;059262
+ortak gider;059263
+ortak hesap;059264
+ortak kat;059265
+ortak mülkiyet;059266
+ortak nesne;059267
+ortak olmak;059268
+ortak payda;059269
+ortak tam bölen;059270
+ortak tümleç;059271
+ortak yapım;059272
+ortak yaşama;059273
+ortak yönetim;059274
+ortak yüklem;059275
+ortak çarpan;059276
+ortak ölçülmez sayılar;059277
+ortak özne;059278
+ortaklaşa;059279
+ortaklaşacı;059280
+ortaklaşacılık;059281
+ortaklaşalık;059282
+ortaklaşma;059283
+ortaklaşmak;059284
+ortaklaştırma;059285
+ortaklaştırmak;059286
+ortaklık;059287
+ortaklık etmek;059288
+ortaklık kurmak;059289
+ortaklık senedi;059290
+ortaklık sözleşmesi;059291
+ortakyaşar;059292
+ortakyaşarlık;059293
+ortakça;059294
+ortakçı;059295
+ortakçılık;059296
+ortakçılık etmek;059297
+ortaköy;059298
+ortalama;059299
+ortalamak;059300
+ortalamasına;059301
+ortalatma;059302
+ortalatmak;059303
+ortalayabilme;059304
+ortalayabilmek;059305
+ortalı;059306
+ortalık;059307
+ortalık ağarmak;059308
+ortalık düzelmek;059309
+ortalık kararmak;059310
+ortalık karışmak;059311
+ortalık sütliman olmak;059312
+ortalık yatışmak;059313
+ortalık yer;059314
+ortalıkta;059315
+ortalıkçı;059316
+ortalığı ... götürmek (veya almak);059317
+ortalığı birbirine katmak;059318
+ortalığı gürültüye (veya patırtıya) vermek;059319
+ortalığı kırıp geçirmek;059320
+ortam;059321
+ortam yaratmak;059322
+ortama ayak uydurmak;059323
+ortama uymak;059324
+ortanca;059325
+ortanca;059326
+ortancalı;059327
+ortanın sağı;059328
+ortanın solu;059329
+ortaokul;059330
+ortasını bulmak;059331
+ortay;059332
+ortaya almak;059333
+ortaya atmak;059334
+ortaya atılmak;059335
+ortaya balgam atmak;059336
+ortaya dökmek;059337
+ortaya düşmek;059338
+ortaya konuşmak;059339
+ortaya koymak;059340
+ortaya sürülmek;059341
+ortaya yayılmak;059342
+ortaya çıkarmak;059343
+ortaya çıkmak;059344
+ortaç;059345
+ortaöğrenim;059346
+ortaöğretim;059347
+ortez;059348
+ortodoks;059349
+ortodoksluk;059350
+ortodonti;059351
+ortoklaz;059352
+ortoklazlı;059353
+ortopedi;059354
+ortopedik;059355
+ortopedist;059356
+ortoz;059357

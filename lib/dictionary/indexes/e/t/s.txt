@@ -1,0 +1,3 @@
+etsel;025665
+etsiz;025666
+etsiz kelem;025667

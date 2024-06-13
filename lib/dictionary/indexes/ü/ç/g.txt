@@ -1,0 +1,5 @@
+üçgen;090474
+üçgen piramit;090475
+üçgen prizma;090476
+üçgensel bölge;090477
+üçgül;090478

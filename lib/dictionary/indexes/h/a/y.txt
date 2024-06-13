@@ -1,0 +1,255 @@
+hay;033803
+hay allah!;033804
+hay hayı gitmek vay vayı kalmak;033805
+haya;033806
+hayal;033807
+hayal etmek;033808
+hayal gibi;033809
+hayal gücü;033810
+hayal kurmak;033811
+hayal kırıklığı;033812
+hayal kırıklığına uğramak;033813
+hayal meyal;033814
+hayal olmak;033815
+hayal oyunu;033816
+hayalat;033817
+hayalbaz;033818
+hayalci;033819
+hayalcilik;033820
+hayale dalmak;033821
+hayale kapılmak;033822
+hayalen;033823
+hayalet;033824
+hayalhane;033825
+hayalinden geçirmek;033826
+hayalleme;033827
+hayallemek;033828
+hayalli;033829
+hayalperest;033830
+hayalperestlik;033831
+hayalperver;033832
+hayalperverlik;033833
+hayalsiz;033834
+hayalî;033835
+hayalî fener;033836
+hayalî fenere dönmek;033837
+hayalî ihracat;033838
+hayalîleşme;033839
+hayalîleşmek;033840
+hayalîlik;033841
+hayat;033842
+hayat;033843
+hayat adamı;033844
+hayat arkadaşı;033845
+hayat boyu;033846
+hayat dersi;033847
+hayat dolu;033848
+hayat düzeyi;033849
+hayat felsefesi;033850
+hayat geçirmek;033851
+hayat hikâyesi;033852
+hayat kadınlığı;033853
+hayat kadını;033854
+hayat kavgası;033855
+hayat memat meselesi (yapmak veya olmak);033856
+hayat mücadelesi;033857
+hayat okulu;033858
+hayat pahalılığı;033859
+hayat seviyesi;033860
+hayat sigortası;033861
+hayat standardı;033862
+hayat tarzı;033863
+hayat vermek;033864
+hayat öpücüğü;033865
+hayat öyküsü;033866
+hayat şartları;033867
+hayata atılmak;033868
+hayata bağlamak;033869
+hayata geçirmek;033870
+hayata gözlerini yummak (veya kapamak);033871
+hayata küsmek;033872
+hayatağacı;033873
+hayati;033874
+hayatiyet;033875
+hayatiyetli;033876
+hayatta olmak;033877
+hayatı cehennem etmek;033878
+hayatı kaymak;033879
+hayatına girmek;033880
+hayatından çıkarmak;033881
+hayatını (birine) borçlu olmak;033882
+hayatını kazanmak;033883
+hayatını yaşamak;033884
+hayatının baharında olmak;033885
+hayatının baharını yaşamak;033886
+haybe;033887
+haybeci;033888
+haybecilik;033889
+haybeden;033890
+haybeye kürek çekmek;033891
+haycı;033892
+haycılık;033893
+hayda;033894
+haydalama;033895
+haydalamak;033896
+haydalanma;033897
+haydalanmak;033898
+haydama;033899
+haydamak;033900
+haydan gelen huya gider;033901
+haydari;033902
+haydari yaka;033903
+haydi;033904
+haydi canım sen de;033905
+haydi haydi;033906
+haydi oradan;033907
+haydin;033908
+haydindi;033909
+haydisene;033910
+haydut;033911
+haydut gibi;033912
+haydutluk;033913
+haydutluk etmek;033914
+hayfa;033915
+hayhay;033916
+hayhuy;033917
+haykırabilme;033918
+haykırabilmek;033919
+haykırma;033920
+haykırmak;033921
+haykırtma;033922
+haykırtmak;033923
+haykırtı;033924
+haykırı;033925
+haykırış;033926
+haykırışma;033927
+haykırışmak;033928
+haylama;033929
+haylamak;033930
+haylaz;033931
+haylazca;033932
+haylazlaşma;033933
+haylazlaşmak;033934
+haylazlık;033935
+haylazlık etmek;033936
+hayli;033937
+haymana;033938
+haymana;033939
+haymana beygiri;033940
+haymana mandası;033941
+haymana öküzü;033942
+haymatlos;033943
+hayra alamet değil;033944
+hayra yormak;033945
+hayrabolu;033946
+hayran;033947
+hayran etmek (veya bırakmak);033948
+hayran olmak (veya kalmak);033949
+hayranlık;033950
+hayranlık duymak;033951
+hayrat;033952
+hayrat;033953
+hayret;033954
+hayret etmek;033955
+hayrete (veya hayretlere) düşmek;033956
+hayretle;033957
+hayretme;033958
+hayretmek;033959
+hayrette (veya hayretler içinde) kalmak;033960
+hayrette bırakmak;033961
+hayretten donakalmak;033962
+hayrola;033963
+hayrulhalef;033964
+hayrı dokunmak;033965
+hayrı olmamak;033966
+hayrını gör;033967
+haysiyet;033968
+haysiyet divanı;033969
+haysiyetine dokunmak;033970
+haysiyetiyle;033971
+haysiyetli;033972
+haysiyetlilik;033973
+haysiyetsiz;033974
+haysiyetsizce;033975
+haysiyetsizlik;033976
+hayta;033977
+hayta;033978
+haytalık;033979
+haytalık etmek;033980
+hayvan;033981
+hayvan bilimci;033982
+hayvan bilimi;033983
+hayvan bilimsel;033984
+hayvan gibi;033985
+hayvan koklaşa koklaşa, insan konuşa konuşa;033986
+hayvan kömürü;033987
+hayvan yemi;033988
+hayvanat;033989
+hayvanat bahçesi;033990
+hayvanca;033991
+hayvancasına;033992
+hayvancağız;033993
+hayvancık;033994
+hayvancıl;033995
+hayvancılık;033996
+hayvani;033997
+hayvaniyet;033998
+hayvanlaşma;033999
+hayvanlaşmak;034000
+hayvanlaştırma;034001
+hayvanlaştırmak;034002
+hayvanlık;034003
+hayvanlık etmek;034004
+hayvanoğluhayvan;034005
+hayvansal;034006
+hayvansever;034007
+hayvanseverlik;034008
+hayvansı;034009
+hayvanımsı;034010
+hayvanın alacası dışında, insanın alacası içinde;034011
+hayâ;034012
+hayâlı;034013
+hayâsız;034014
+hayâsızca;034015
+hayâsızcasına;034016
+hayâsızlık;034017
+hayıf;034018
+hayıflanma;034019
+hayıflanmak;034020
+hayıflanış;034021
+hayır;034022
+hayır;034023
+hayır (veya hayrını) görmemek;034024
+hayır beklememek;034025
+hayır dememek;034026
+hayır dile komşuna, hayır gele başına;034027
+hayır dua;034028
+hayır dua etmek;034029
+hayır duasını almak;034030
+hayır gelmemek;034031
+hayır hasenat;034032
+hayır işlemek;034033
+hayır kalmamak;034034
+hayır sahibi;034035
+hayır yok;034036
+hayırdır inşallah;034037
+hayırhah;034038
+hayırhahlık;034039
+hayırla anmak (veya yâd etmek);034040
+hayırlaşma;034041
+hayırlaşmak;034042
+hayırlı;034043
+hayırlı olsun;034044
+hayırlılık;034045
+hayırlısı ile;034046
+hayırlısı olsun;034047
+hayırperver;034048
+hayırperverlik;034049
+hayırsever;034050
+hayırseverlik;034051
+hayırsız;034052
+hayırsızca;034053
+hayırsızlık;034054
+hayıt;034055
+hayız;034056
+hayızdan nifastan kesilmek;034057

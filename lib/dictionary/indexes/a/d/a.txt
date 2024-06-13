@@ -1,0 +1,129 @@
+ada;000539
+ada balığı;000540
+ada bana, adayım sana;000541
+ada gibi;000542
+ada soğanı;000543
+ada tavşanı;000544
+ada tepe;000545
+ada çayı;000546
+adabımuaşeret;000547
+adacyo;000548
+adacık;000549
+adak;000550
+adak adamak;000551
+adaklama;000552
+adaklamak;000553
+adaklanma;000554
+adaklanmak;000555
+adaklı;000556
+adaklı;000557
+adaklık;000558
+adaksız;000559
+adalar;000560
+adale;000561
+adaleli;000562
+adalesiz;000563
+adalet;000564
+adalet dağıtmak;000565
+adalet kapısı;000566
+adalet mahkemesi;000567
+adalet sarayı;000568
+adalet örgütü;000569
+adalete teslim etmek;000570
+adalete teslim olmak;000571
+adaletine sığınmak;000572
+adaletli;000573
+adaletlilik;000574
+adaletsiz;000575
+adaletsizce;000576
+adaletsizlik;000577
+adalı;000578
+adalılık;000579
+adam;000580
+adam adama;000581
+adam adama gerek olur;000582
+adam adama savunma;000583
+adam adama yük değil, can gövdeye mülk değil;000584
+adam adamdan korkmaz, utanır;000585
+adam adamı bir kez aldatır;000586
+adam almamak;000587
+adam başı;000588
+adam başına;000589
+adam beğenmemek;000590
+adam boyu;000591
+adam değilim;000592
+adam etmek;000593
+adam gibi;000594
+adam içine karışmak;000595
+adam içine çıkmak;000596
+adam kullanmak;000597
+adam kıtlığında;000598
+adam olacak çocuk bokundan belli olur;000599
+adam olana bir söz yeter;000600
+adam olana çok bile;000601
+adam olmak;000602
+adam sanmak;000603
+adam sarrafı;000604
+adam sen de!;000605
+adam sendeci;000606
+adam sendecilik;000607
+adam sırasına geçmek (veya girmek);000608
+adam yerine (veya hesabına) koymak;000609
+adam yokluğunda;000610
+adama;000611
+adama benzemek (veya dönmek);000612
+adamak;000613
+adamak kolay, ödemek zordur;000614
+adamakla mal tükenmez;000615
+adamakıllı;000616
+adamca;000617
+adamcasına;000618
+adamcağız;000619
+adamcık;000620
+adamcıl;000621
+adamcıllık;000622
+adamdan saymak;000623
+adamkökü;000624
+adamlık;000625
+adamlık sende kalsın;000626
+adamotu;000627
+adamsız;000628
+adamsızlık;000629
+adamı;000630
+adamın adı çıkacağına canı çıksın;000631
+adamın iyisi işbaşında (veya alışverişte) belli olur;000632
+adamın kötüsü olmaz, meğer züğürt ola;000633
+adamın yere bakanından, suyun yavaş akanından kork;000634
+adamına göre;000635
+adana;000636
+adana kebabı;000637
+adanalı;000638
+adanalılık;000639
+adanma;000640
+adanmak;000641
+adanış;000642
+adap;000643
+adap erkân;000644
+adapazarı;000645
+adaptasyon;000646
+adapte;000647
+adapte etmek;000648
+adapte olmak;000649
+adapte olunmak;000650
+adaptör;000651
+adatma;000652
+adatmak;000653
+adatış;000654
+adavet;000655
+aday;000656
+aday adayı;000657
+aday göstermek;000658
+aday olmak;000659
+adayabilme;000660
+adayabilmek;000661
+adayavrusu;000662
+adaylık;000663
+adaylığını koymak;000664
+adayış;000665
+adaş;000666
+adaşlık;000667

@@ -1,0 +1,17 @@
+gol;029993
+gol atmak;029994
+gol kaçırmak;029995
+gol olmak;029996
+gol toto;029997
+gol yemek;029998
+golcü;029999
+golcülük;030000
+golf;030001
+golf pantolon;030002
+golfstrim;030003
+golfçü;030004
+golfçülük;030005
+gollü;030006
+gollük;030007
+golsüz;030008
+golsüzlük;030009

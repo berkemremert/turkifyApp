@@ -1,0 +1,20 @@
+ibra;035980
+ibra etmek;035981
+ibraname;035982
+ibraz;035983
+ibraz etmek;035984
+ibre;035985
+ibre birinden yana dönmek;035986
+ibret;035987
+ibret almak;035988
+ibret olmak;035989
+ibretamiz;035990
+ibretiâlem;035991
+ibretlik;035992
+ibrik;035993
+ibriktar;035994
+ibriktarlık;035995
+ibrikçi;035996
+ibrikçilik;035997
+ibrişim;035998
+ibrişim kurdu;035999

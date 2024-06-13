@@ -1,0 +1,53 @@
+ispalya;038094
+ispanya;038095
+ispanyolet;038096
+ispanyolet kilit;038097
+ispari;038098
+isparta;038099
+isparta gülü;038100
+isparta halısı;038101
+ispartalı;038102
+ispartalılık;038103
+ispat;038104
+ispat etmek;038105
+ispati;038106
+ispatlama;038107
+ispatlamak;038108
+ispatlanma;038109
+ispatlanmak;038110
+ispatlanış;038111
+ispatlayabilme;038112
+ispatlayabilmek;038113
+ispatlayış;038114
+ispatlı;038115
+ispatlı şahitli;038116
+ispendek;038117
+ispenç;038118
+ispenç horozu;038119
+ispençiyari;038120
+ispermeçet;038121
+ispermeçet balinası;038122
+ispinoz;038123
+ispinozgiller;038124
+ispir;038125
+ispiralya;038126
+ispirto;038127
+ispirto ocağı;038128
+ispirtocu;038129
+ispirtoculuk;038130
+ispirtolu;038131
+ispirtoluk;038132
+ispirtosuz;038133
+ispit;038134
+ispiyon;038135
+ispiyoncu;038136
+ispiyonculuk;038137
+ispiyonlama;038138
+ispiyonlamak;038139
+ispiyonlanma;038140
+ispiyonlanmak;038141
+ispiyonlatma;038142
+ispiyonlatmak;038143
+ispritizma;038144
+ispritizmacı;038145
+ispritizmacılık;038146

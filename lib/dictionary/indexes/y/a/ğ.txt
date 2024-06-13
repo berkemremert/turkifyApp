@@ -1,0 +1,148 @@
+yağ;081187
+yağ aldırma;081188
+yağ bal olsun;081189
+yağ basmak;081190
+yağ bağlamak;081191
+yağ bezi;081192
+yağ bezleri;081193
+yağ doku;081194
+yağ ekletme;081195
+yağ gibi kaymak;081196
+yağ göstergesi;081197
+yağ hücresi;081198
+yağ kesesi;081199
+yağ kutusu;081200
+yağ küpü;081201
+yağ lambası;081202
+yağ mantısı;081203
+yağ marulu;081204
+yağ taşı;081205
+yağ tulumu;081206
+yağ uru;081207
+yağ yakmak;081208
+yağ yakıt;081209
+yağ yedirmek;081210
+yağ çekmek (veya yapmak);081211
+yağ çubuğu;081212
+yağ şalgamı;081213
+yağa bala batırmak;081214
+yağabilme;081215
+yağabilmek;081216
+yağar;081217
+yağcı;081218
+yağcılık;081219
+yağcılık etmek;081220
+yağdanlık;081221
+yağdırabilme;081222
+yağdırabilmek;081223
+yağdırma;081224
+yağdırmak;081225
+yağdırılma;081226
+yağdırılmak;081227
+yağhane;081228
+yağlama;081229
+yağlama yağı;081230
+yağlamak;081231
+yağlanma;081232
+yağlanmak;081233
+yağlanış;081234
+yağlatma;081235
+yağlatmak;081236
+yağlayabilme;081237
+yağlayabilmek;081238
+yağlayıcı;081239
+yağlayıp ballandırmak;081240
+yağlayış;081241
+yağlı;081242
+yağlı ballı;081243
+yağlı ballı olmak;081244
+yağlı bitki;081245
+yağlı boya;081246
+yağlı boyacı;081247
+yağlı güreş;081248
+yağlı güreşçi;081249
+yağlı harç;081250
+yağlı ip;081251
+yağlı kapı;081252
+yağlı kapıya konmak;081253
+yağlı kara;081254
+yağlı kuyruk;081255
+yağlı kâğıt;081256
+yağlı kömür;081257
+yağlı müşteri;081258
+yağlı toprak;081259
+yağlıdere;081260
+yağlık;081261
+yağlıkçı;081262
+yağlılık;081263
+yağma;081264
+yağma;081265
+yağma etmek;081266
+yağma gitmek;081267
+yağma hasan'ın böreği;081268
+yağma yok;081269
+yağmacı;081270
+yağmacılık;081271
+yağmak;081272
+yağmalama;081273
+yağmalamak;081274
+yağmalanma;081275
+yağmalanmak;081276
+yağmalanış;081277
+yağmalatma;081278
+yağmalatmak;081279
+yağmalayabilme;081280
+yağmalayabilmek;081281
+yağmasa da gürlemek;081282
+yağmur;081283
+yağmur bombası;081284
+yağmur borusu;081285
+yağmur boşanmak;081286
+yağmur bulutu;081287
+yağmur duası;081288
+yağmur kapanı;081289
+yağmur kuşağı;081290
+yağmur kuşu;081291
+yağmur kuşugiller;081292
+yağmur mevsimi;081293
+yağmur olsa kimsenin tarlasına düşmez (veya yağmaz);081294
+yağmur ormanları;081295
+yağmur taşı;081296
+yağmur yağarken küpünü doldurmak;081297
+yağmur yemek;081298
+yağmurca;081299
+yağmurdan kaçarken doluya tutulmak;081300
+yağmurlama;081301
+yağmurlamak;081302
+yağmurlayıcı;081303
+yağmurlu;081304
+yağmurluk;081305
+yağmursuz;081306
+yağmursuzluk;081307
+yağmurölçer;081308
+yağrın;081309
+yağsı;081310
+yağsız;081311
+yağsızlık;081312
+yağölçer;081313
+yağı;081314
+yağılaşma;081315
+yağılaşmak;081316
+yağıltı;081317
+yağılık;081318
+yağımsı;081319
+yağıp gürlemek;081320
+yağır;081321
+yağıverme;081322
+yağıvermek;081323
+yağız;081324
+yağız doru;081325
+yağış;081326
+yağış düzeni;081327
+yağış göstergesi;081328
+yağış haritası;081329
+yağışlı;081330
+yağışlılık;081331
+yağışsız;081332
+yağışsızlık;081333
+yağışölçer;081334

@@ -1,0 +1,2 @@
+ibzal;036000
+ibzal etmek;036001

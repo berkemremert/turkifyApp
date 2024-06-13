@@ -1,0 +1,65 @@
+gece;028764
+gece bekçisi;028765
+gece gece;028766
+gece gösterimi;028767
+gece gözü, kör gözü;028768
+gece gündüz;028769
+gece gündüz dememek;028770
+gece hayatı;028771
+gece işi, körler işi;028772
+gece işçiliği;028773
+gece kulübü;028774
+gece kuşu;028775
+gece körlüğü;028776
+gece kıyafeti;028777
+gece mavisi;028778
+gece silahlı, gündüz külahlı;028779
+gece uçuşu;028780
+gece yanığı;028781
+gece yarısı;028782
+gece yatısı;028783
+gece yayı;028784
+gece öğretimi;028785
+gececi;028786
+gececilik;028787
+geceki;028788
+gecekondu;028789
+gecekondu gibi;028790
+gecekonducu;028791
+gecekonduculuk;028792
+gecekondulaşma;028793
+gecekondulaşmak;028794
+geceleme;028795
+gecelemek;028796
+geceler gebedir;028797
+gecelerce;028798
+geceleri;028799
+geceleyebilme;028800
+geceleyebilmek;028801
+geceleyin;028802
+geceleyiş;028803
+geceli gündüzlü;028804
+gecelik;028805
+gecelik entari;028806
+gecenin körü;028807
+gecenin köründe;028808
+gecesefası;028809
+gecesefasıgiller;028810
+geceyi (veya gecesini) gündüze (veya gündüzüne) katmak;028811
+gecikebilme;028812
+gecikebilmek;028813
+gecikilme;028814
+gecikilmek;028815
+gecikiş;028816
+gecikme;028817
+gecikmek;028818
+gecikmeli;028819
+gecikmesiz;028820
+gecikmişlik;028821
+geciktirebilme;028822
+geciktirebilmek;028823
+geciktirilme;028824
+geciktirilmek;028825
+geciktirim;028826
+geciktirme;028827
+geciktirmek;028828

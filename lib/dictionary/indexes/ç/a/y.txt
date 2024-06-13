@@ -1,0 +1,69 @@
+çay;086038
+çay;086039
+çay;086040
+çay bahçesi;086041
+çay bardağı;086042
+çay dökmek;086043
+çay fincanı;086044
+çay kaşığı;086045
+çay kenarında kuyu kazmak;086046
+çay makinesi;086047
+çay ocağı;086048
+çay saati;086049
+çay servisi;086050
+çay takımı;086051
+çay şekeri;086052
+çayan;086053
+çayağacı;086054
+çaybaşı;086055
+çaycuma;086056
+çaycı;086057
+çaycılık;086058
+çaydan geçip derede boğulmak;086059
+çaydanlık;086060
+çaydaçıra;086061
+çayeli;086062
+çayevi;086063
+çaygiller;086064
+çayhane;086065
+çayhaneci;086066
+çayhanecilik;086067
+çaykara;086068
+çaykara;086069
+çaylak;086070
+çaylak fırtınası;086071
+çaylaklaşma;086072
+çaylaklaşmak;086073
+çaylaklık;086074
+çaylakça;086075
+çaylı;086076
+çaylı kek;086077
+çaylık;086078
+çayı geçerken at değiştirilmez;086079
+çayı görmeden paçaları sıvamak;086080
+çayır;086081
+çayır kuşu;086082
+çayır mantarı;086083
+çayır otu;086084
+çayır peyniri;086085
+çayır tavuğu;086086
+çayır teresi;086087
+çayır tirfili;086088
+çayır yulafı;086089
+çayıralan;086090
+çayırgüzeli;086091
+çayırlama;086092
+çayırlamak;086093
+çayırlanma;086094
+çayırlanmak;086095
+çayırlatma;086096
+çayırlatmak;086097
+çayırlaşma;086098
+çayırlaşmak;086099
+çayırlı;086100
+çayırlı;086101
+çayırlık;086102
+çayırmelikesi;086103
+çayırova;086104
+çayırsedefi;086105
+çayırsız;086106

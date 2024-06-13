@@ -1,0 +1,592 @@
+baş;009768
+baş;009769
+baş (veya başı) çekmek;009770
+baş (veya başını) alamamak;009771
+baş (veya başının) belası olmak;009772
+baş altı;009773
+baş ağrısı;009774
+baş ağrıtmak;009775
+baş ağır gerek, kulak sağır;009776
+baş aşağı;009777
+baş aşağı düşmek;009778
+baş aşağı etmek;009779
+baş aşağı gelmek;009780
+baş aşağı gitmek;009781
+baş bağlamak;009782
+baş baş;009783
+baş başa;009784
+baş başa bırakmak;009785
+baş başa kalmak;009786
+baş başa olmak;009787
+baş başa vermek;009788
+baş belası;009789
+baş bezi;009790
+baş bodoslaması;009791
+baş bulmak;009792
+baş bıçağı;009793
+baş dille tartılır;009794
+baş döndürmek;009795
+baş döndürücü;009796
+baş döndürücülük;009797
+baş dönmesi;009798
+baş dümeni;009799
+baş edebilmek;009800
+baş edememek;009801
+baş eldeyken;009802
+baş etmek;009803
+baş eğmek;009804
+baş gelmek;009805
+baş göstermek;009806
+baş göz etmek;009807
+baş göz olmak;009808
+baş halatı;009809
+baş havlusu;009810
+baş kes, yaş kesme;009811
+baş kesmek;009812
+baş koymak;009813
+baş koşmak;009814
+baş kırılır (veya yarılır) fes (veya börk) içinde, kol kırılır yen (veya kürk) içinde;009815
+baş kıç olmak;009816
+baş kıç vurmak;009817
+baş nereye giderse ayak da oraya gider;009818
+baş ol da istersen soğan başı ol;009819
+baş olan boş olmaz;009820
+baş olmak;009821
+baş sallamak;009822
+baş sağlığı, dünya varlığı;009823
+baş tacı;009824
+baş tacı etmek;009825
+baş tutamamak;009826
+baş tutmak;009827
+baş ucu;009828
+baş ucu kitabı;009829
+baş vermek;009830
+baş yakmak;009831
+baş yapmak;009832
+baş yastığı;009833
+baş yastığı baş derdini bilmez;009834
+baş yemek;009835
+baş çevirtmek;009836
+baş üstü dolabı;009837
+baş üstünde tutmak;009838
+baş üstünde yeri var;009839
+başa baş;009840
+başa baş gelmek (veya kalmak);009841
+başa baş noktası;009842
+başa gelen (dert) çekilir;009843
+başa gelmek;009844
+başa gelmeyince bilinmez;009845
+başa güreşmek;009846
+başa vermek;009847
+başa çıkmak;009848
+başa çıkmak;009849
+başak;009850
+başak;009851
+başak bağlamak (veya tutmak);009852
+başak toplamak;009853
+başaklama;009854
+başaklamak;009855
+başaklanma;009856
+başaklanmak;009857
+başaklanış;009858
+başaklı;009859
+başakortçu;009860
+başakortçuluk;009861
+başaktris;009862
+başaktrislik;009863
+başaktör;009864
+başaktörlük;009865
+başakçı;009866
+başakçık;009867
+başakçılık;009868
+başakşehir;009869
+başaltı;009870
+başantrenör;009871
+başantrenörlük;009872
+başarabilme;009873
+başarabilmek;009874
+başarma;009875
+başarmak;009876
+başartma;009877
+başartmak;009878
+başarı;009879
+başarı göstermek (veya kazanmak);009880
+başarılabilme;009881
+başarılabilmek;009882
+başarılma;009883
+başarılmak;009884
+başarılı;009885
+başarılılık;009886
+başarılış;009887
+başarım;009888
+başarısız;009889
+başarısız olmak;009890
+başarısızlık;009891
+başarısızlığa uğramak;009892
+başarıverme;009893
+başarıvermek;009894
+başarış;009895
+başasistan;009896
+başasistanlık;009897
+başat;009898
+başat karakter;009899
+başatlık;009900
+başatlık yasası;009901
+başağaç;009902
+başağrısı;009903
+başağrısı olmak;009904
+başağırlık;009905
+başbakan;009906
+başbakanlık;009907
+başbayan;009908
+başbayi;009909
+başbayilik;009910
+başbuğ;009911
+başdanışman;009912
+başdanışmanlık;009913
+başdekorcu;009914
+başdekorculuk;009915
+başdelege;009916
+başdelegelik;009917
+başdenetmen;009918
+başdenetmenlik;009919
+başdenetçi;009920
+başdenetçilik;009921
+başdizgici;009922
+başdizgicilik;009923
+başdoktor;009924
+başdoktorluk;009925
+başdümenci;009926
+başdümencilik;009927
+başeczacı;009928
+başeczacılık;009929
+başefendi;009930
+başefendilik;009931
+başeksper;009932
+başeksperlik;009933
+başeser;009934
+başeski;009935
+başfiyat;009936
+başgardiyan;009937
+başgardiyanlık;009938
+başgarson;009939
+başgarsonluk;009940
+başgedikli;009941
+başhakem;009942
+başhakemlik;009943
+başhekim;009944
+başhekimlik;009945
+başhemşire;009946
+başhemşirelik;009947
+başhostes;009948
+başhosteslik;009949
+başimam;009950
+başimamlık;009951
+başiskele;009952
+başka;009953
+başka başka;009954
+başka biri;009955
+başka işi yok mu?;009956
+başkaca;009957
+başkafiye;009958
+başkahraman;009959
+başkahramanlık;009960
+başkalaşabilme;009961
+başkalaşabilmek;009962
+başkalaşma;009963
+başkalaşmak;009964
+başkalaştırma;009965
+başkalaştırmak;009966
+başkalaşım;009967
+başkaldırabilme;009968
+başkaldırabilmek;009969
+başkaldırma;009970
+başkaldırmak;009971
+başkaldırtma;009972
+başkaldırtmak;009973
+başkaldırı;009974
+başkaldırıcı;009975
+başkaldırıcılık;009976
+başkaldırış;009977
+başkale;009978
+başkalık;009979
+başkan;009980
+başkan vekili;009981
+başkan yardımcısı;009982
+başkanlık;009983
+başkanlık etmek;009984
+başkanlık makamı;009985
+başkanlık sistemi;009986
+başkarakter;009987
+başkası;009988
+başkatsayı;009989
+başkemancı;009990
+başkemancılık;009991
+başkent;009992
+başkentli;009993
+başkentlik;009994
+başkentlilik;009995
+başkesit;009996
+başkeşiş;009997
+başkeşişlik;009998
+başkilise;009999
+başkişi;010000
+başkomutan;010001
+başkomutanlık;010002
+başkonakçı;010003
+başkonsolos;010004
+başkonsolosluk;010005
+başkumandan;010006
+başkumandanlık;010007
+başkurt;010008
+başkurtça;010009
+başkâtip;010010
+başkâtiplik;010011
+başköşe;010012
+başköşeye kurulmak;010013
+başlahana;010014
+başlama;010015
+başlama atışı;010016
+başlama meridyeni;010017
+başlama vuruşu;010018
+başlama!;010019
+başlamak;010020
+başlanabilme;010021
+başlanabilmek;010022
+başlangıç;010023
+başlangıç noktası;010024
+başlangıç tutmak (veya almak);010025
+başlangıçta;010026
+başlanma;010027
+başlanmak;010028
+başlanılma;010029
+başlanılmak;010030
+başlanış;010031
+başlatabilme;010032
+başlatabilmek;010033
+başlatma;010034
+başlatmak;010035
+başlattırma;010036
+başlattırmak;010037
+başlatılabilme;010038
+başlatılabilmek;010039
+başlatılma;010040
+başlatılmak;010041
+başlatıverme;010042
+başlatıvermek;010043
+başlatış;010044
+başlayabilme;010045
+başlayabilmek;010046
+başlayıcı;010047
+başlayıcılık;010048
+başlayıverme;010049
+başlayıvermek;010050
+başlayış;010051
+başlı;010052
+başlı başına;010053
+başlıca;010054
+başlık;010055
+başlık almak;010056
+başlık atmak (veya koymak);010057
+başlık parası;010058
+başlık vermek;010059
+başlıklı;010060
+başlıksız;010061
+başlıkçı;010062
+başmabeyinci;010063
+başmak;010064
+başmakale;010065
+başmaklık;010066
+başmakçı;010067
+başmakçı;010068
+başmakçılık;010069
+başmal;010070
+başmekân;010071
+başmisafir;010072
+başmuallim;010073
+başmuallimlik;010074
+başmubassır;010075
+başmuharrir;010076
+başmuharrirlik;010077
+başmurakıp;010078
+başmurakıplık;010079
+başmüdür;010080
+başmüdürlük;010081
+başmüezzin;010082
+başmüezzinlik;010083
+başmüfettiş;010084
+başmüfettişlik;010085
+başmühendis;010086
+başmühendislik;010087
+başmürettip;010088
+başmürettiplik;010089
+başmüsevvit;010090
+başmüzakereci;010091
+başmüzakerecilik;010092
+başmüşavir;010093
+başmüşavirlik;010094
+başnokta;010095
+başoda;010096
+başoyuncu;010097
+başoyunculuk;010098
+başpapaz;010099
+başpapazlık;010100
+başparmak;010101
+başpehlivan;010102
+başpehlivanlık;010103
+başpiskopos;010104
+başpiskoposluk;010105
+başrahip;010106
+başrahiplik;010107
+başrejisör;010108
+başrejisörlük;010109
+başrol;010110
+başrolü oynamak;010111
+başsavcı;010112
+başsavcılık;010113
+başsağlığı;010114
+başsağlığı dilemek;010115
+başsağlığında bulunmak;010116
+başspiker;010117
+başspikerlik;010118
+başsız;010119
+başsız bırakmak;010120
+başsız kalmak;010121
+başsızlık;010122
+başta;010123
+başta (veya başında) bulunmak (veya olmak);010124
+başta gelmek;010125
+başta gitmek;010126
+başta taşımak;010127
+baştaban;010128
+baştabip;010129
+baştabiplik;010130
+baştan;010131
+baştan aşağı;010132
+baştan aşmak;010133
+baştan başa;010134
+baştan kara etmek;010135
+baştan kara gitmek;010136
+baştan savma;010137
+baştan savmacı;010138
+baştan savmacılık;010139
+baştan sona;010140
+baştan çıkarmak;010141
+baştan çıkmak;010142
+baştankara;010143
+baştankaragiller;010144
+baştanımaz;010145
+baştanımazlık;010146
+baştarda;010147
+başteknisyen;010148
+başteknisyenlik;010149
+başucu;010150
+başucu noktası;010151
+başucu uzaklığı;010152
+başuzman;010153
+başuzmanlık;010154
+başvekil;010155
+başvekillik;010156
+başvekâlet;010157
+başvezir;010158
+başvezirlik;010159
+başvurabilme;010160
+başvurabilmek;010161
+başvurdurma;010162
+başvurdurmak;010163
+başvurma;010164
+başvurmak;010165
+başvuru;010166
+başvurucu;010167
+başvurulabilme;010168
+başvurulabilmek;010169
+başvurulma;010170
+başvurulmak;010171
+başvuruş;010172
+başyapıt;010173
+başyardımcı;010174
+başyardımcılık;010175
+başyargıcı;010176
+başyargıcılık;010177
+başyaver;010178
+başyaverlik;010179
+başyayla;010180
+başyazar;010181
+başyazarlık;010182
+başyazman;010183
+başyazmanlık;010184
+başyazı;010185
+başyemek;010186
+başyukarı;010187
+başyönetmen;010188
+başyönetmenlik;010189
+başyıldız;010190
+başçavuş;010191
+başçavuşluk;010192
+başçiftlik;010193
+başçı;010194
+başçık;010195
+başörtü;010196
+başörtülü;010197
+başörtülülük;010198
+başörtüsü;010199
+başöğretmen;010200
+başöğretmenlik;010201
+başülke;010202
+başüstü;010203
+başüstüne;010204
+başı açık;010205
+başı açıklık;010206
+başı ağrımak;010207
+başı bağlanmak;010208
+başı bağlı;010209
+başı bağlılık;010210
+başı belada olmak;010211
+başı belaya girmek (veya uğramak);010212
+başı bütün;010213
+başı dara düşmek;010214
+başı daralmak;010215
+başı darda kalmak;010216
+başı derde girmek;010217
+başı dertte;010218
+başı devletli;010219
+başı dik;010220
+başı dik olmak;010221
+başı diklik;010222
+başı dimdik;010223
+başı dinç;010224
+başı dinçlik;010225
+başı dumanlı;010226
+başı dönmek;010227
+başı göğe ermek (veya değmek);010228
+başı havada;010229
+başı hoş olmamak;010230
+başı için;010231
+başı kabak;010232
+başı kalabalık;010233
+başı kazan gibi olmak;010234
+başı nâra yanmak;010235
+başı sağ olsuna gitmek;010236
+başı sıkılmak (veya sıkışmak);010237
+başı sıkıya gelmek;010238
+başı taşa değmek;010239
+başı tutmak;010240
+başı yastık yüzü görmemek;010241
+başı yastığa düşmek;010242
+başı yerde;010243
+başı yerine gelmek;010244
+başı yukarıda;010245
+başı yumuşak;010246
+başı yumuşaklık;010247
+başı zapt olunmamak;010248
+başı çatlamak;010249
+başı önünde;010250
+başı üstünde yeri olmak;010251
+başıbozuk;010252
+başıbozukluk;010253
+başıboş;010254
+başıboş bırakmak;010255
+başıboş kalmak;010256
+başıboşluk;010257
+başım gözüm üstüne;010258
+başımla beraber;010259
+başın başı, başın da başı var;010260
+başına (...) gelmek;010261
+başına balta kesilmek (veya olmak);010262
+başına bela almak;010263
+başına bela açmak;010264
+başına bela olmak (veya kesilmek);010265
+başına bir hâl gelmek;010266
+başına buyruk;010267
+başına buyrukluk;010268
+başına dert açmak;010269
+başına dert olmak (veya kesilmek);010270
+başına devlet (veya talih) kuşu konmak;010271
+başına dikilmek;010272
+başına dikmek;010273
+başına dolamak;010274
+başına dünyanın belasını sarmak;010275
+başına ekşimek;010276
+başına gaile açmak;010277
+başına gelen başmakçıdır;010278
+başına gelmek;010279
+başına gelmek;010280
+başına geçirmek;010281
+başına geçmek;010282
+başına geçmek;010283
+başına güneş geçmek;010284
+başına iş açmak;010285
+başına iş çıkarmak;010286
+başına iş çıkmak;010287
+başına kakmak (veya kakınç etmek);010288
+başına kalmak;010289
+başına kan çıkmak;010290
+başına karalar bağlamak;010291
+başına kâhya kesilmek;010292
+başına oturmak;010293
+başına sarmak;010294
+başına taç etmek;010295
+başına taş düşmek (veya yağmak);010296
+başına vur, ağzından lokmasını al;010297
+başına vurmak;010298
+başına yıkmak;010299
+başına çalmak;010300
+başına çalsın!;010301
+başına çorap örmek;010302
+başına çıkarmak;010303
+başına çıkmak;010304
+başında beklemek (veya durmak);010305
+başında değirmen çevirmek;010306
+başında kavak yeli (veya yelleri) esmek;010307
+başında olmak;010308
+başında paralansın;010309
+başında torbası eksik;010310
+başından almak;010311
+başından atmak;010312
+başından aşağı kaynar sular dökülmek;010313
+başından büyük işlere girişmek (veya kalkışmak);010314
+başından geçmek;010315
+başından kalkmak;010316
+başından korkmak;010317
+başından savmak;010318
+başını acemi berbere teslim eden, pamuğunu cebinden eksik etmez;010319
+başını alıp gitmek;010320
+başını ateşlere yakmak;010321
+başını ağrıtmak;010322
+başını bağlamak;010323
+başını beklemek;010324
+başını belaya sokmak;010325
+başını bir yere bağlamak;010326
+başını bir yere sokmak;010327
+başını boş bırakmak;010328
+başını derde sokmak;010329
+başını dik tutmak;010330
+başını dinlemek;010331
+başını duman almak;010332
+başını döndürmek;010333
+başını ezmek;010334
+başını gözünü yarmak;010335
+başını istemek;010336
+başını kaldırmamak (veya kaldıramamak);010337
+başını kaşımaya (veya kaşıyacak) vakti olmamak;010338
+başını koltuğunun altına almak;010339
+başını kurtarmak;010340
+başını nâra yakmak;010341
+başını ortaya koymak;010342
+başını taştan taşa vurmak;010343
+başını toplamak;010344
+başını uçurmak;010345
+başını vermek;010346
+başını yakmak;010347
+başını yemek;010348
+başını çatmak;010349
+başını çıkarmak;010350
+başının altında;010351
+başının altından çıkmak;010352
+başının derdine düşmek;010353
+başının etini yemek;010354
+başının gözünün sadakası;010355
+başının çaresine bakmak;010356
+başşehir;010357
+başşehirli;010358
+başşehirlilik;010359

@@ -1,0 +1,205 @@
+tel;073576
+tel;073577
+tel cambazı;073578
+tel dikiş;073579
+tel dokuma;073580
+tel dolap;073581
+tel fırça;073582
+tel halat;073583
+tel kadayıf;073584
+tel kafes;073585
+tel kurdu;073586
+tel küf;073587
+tel küflüce;073588
+tel takınmak;073589
+tel tel;073590
+tel tel dökülmek;073591
+tel zımba;073592
+tel çekmek;073593
+tel çekmek;073594
+tel çivi;073595
+tel örgü;073596
+tel şehriye;073597
+tela;073598
+telaffuz;073599
+telaffuz cihazı;073600
+telaffuz etmek;073601
+telaffuz organları;073602
+telafi;073603
+telafi etmek;073604
+telaki;073605
+telakki;073606
+telakki etmek;073607
+telakki olunmak;073608
+telalama;073609
+telalamak;073610
+telaro;073611
+telatin;073612
+telaş;073613
+telaş almak;073614
+telaş etmek;073615
+telaş göstermek;073616
+telaşa düşmek;073617
+telaşa gelmek;073618
+telaşa vermek;073619
+telaşe;073620
+telaşe müdürü;073621
+telaşe nazırı;073622
+telaşlandırma;073623
+telaşlandırmak;073624
+telaşlanma;073625
+telaşlanmak;073626
+telaşlanış;073627
+telaşlı;073628
+telaşlılık;073629
+telaşsız;073630
+telaşsızlık;073631
+telaşına dalmak;073632
+telcik;073633
+telef;073634
+telef etmek;073635
+telef olmak;073636
+telefat;073637
+teleferik;073638
+telefon;073639
+telefon diplomasisi;073640
+telefon direği;073641
+telefon etmek (veya açmak);073642
+telefon hattı;073643
+telefon kabini;073644
+telefon kartı;073645
+telefon kulübesi;073646
+telefon rehberi;073647
+telefon santrali;073648
+telefon sapığı;073649
+telefoncu;073650
+telefonculuk;073651
+telefonlaşma;073652
+telefonlaşmak;073653
+telefonlu;073654
+telefonometre;073655
+telefonsuz;073656
+telefonsuzluk;073657
+telefotografi;073658
+telek;073659
+telekart;073660
+teleke;073661
+telekinezi;073662
+telekli;073663
+telekomünikasyon;073664
+telekonferans;073665
+teleks;073666
+teleksçi;073667
+teleksçilik;073668
+telekız;073669
+telem;073670
+teleme;073671
+teleme peyniri;073672
+teleme peyniri gibi;073673
+telemetre;073674
+telemetri;073675
+teleobjektif;073676
+teleoloji;073677
+teleolojik;073678
+telepati;073679
+telepatik;073680
+teleradar;073681
+teles;073682
+telesekreter;073683
+telesime;073684
+telesimek;073685
+telesinema;073686
+telesiyej;073687
+teleskobik;073688
+teleskop;073689
+televizyon;073690
+televizyon alıcısı;073691
+televizyon bandrolü;073692
+televizyon dizisi;073693
+televizyon filmi;073694
+televizyon oyunu;073695
+televizyon programı;073696
+televizyon verici istasyonu;073697
+televizyon yayını;073698
+televizyoncu;073699
+televizyonculuk;073700
+teleüt;073701
+teleütçe;073702
+telfin;073703
+telgraf;073704
+telgraf direği;073705
+telgraf hattı;073706
+telgraf teli;073707
+telgraf çekmek;073708
+telgraf çiçeği;073709
+telgraf üslubu;073710
+telgrafhane;073711
+telgrafname;073712
+telgrafçı;073713
+telgrafçılık;073714
+telhis;073715
+telhis etmek;073716
+telhisçi;073717
+telhisçilik;073718
+teli kırmak;073719
+telif;073720
+telif etmek;073721
+telif hakkı;073722
+telin;073723
+telin etmek;073724
+telin mitingi;073725
+telis;073726
+telkih;073727
+telkin;073728
+telkin etmek;073729
+telkâri;073730
+tellak;073731
+tellaklık;073732
+tellal;073733
+tellal çağırtmak;073734
+tellaliye;073735
+tellaliye resmi;073736
+tellallık;073737
+telleme;073738
+tellemek;073739
+tellemek;073740
+tellendirebilme;073741
+tellendirebilmek;073742
+tellendirme;073743
+tellendirmek;073744
+tellenme;073745
+tellenmek;073746
+tellenmek;073747
+teller takmak;073748
+telletme;073749
+telletmek;073750
+telleyip pullamak;073751
+telli;073752
+telli balıkçıl;073753
+telli duvaklı;073754
+telli otobüs;073755
+telli pullu;073756
+telli sazlar;073757
+telli turna;073758
+telli çalgılar;073759
+tellice;073760
+tellür;073761
+telmih;073762
+telmih etmek;073763
+telmihen;073764
+telsi;073765
+telsiz;073766
+telsiz;073767
+telsiz bağlantısı;073768
+telsiz telefon;073769
+telsiz telgraf;073770
+telsizci;073771
+telsizcilik;073772
+teltik;073773
+teltikli;073774
+teltiksiz;073775
+telve;073776
+telvis;073777
+telvis etmek;073778
+telyazı;073779
+telyazısı;073780

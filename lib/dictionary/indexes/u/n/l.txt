@@ -1,0 +1,5 @@
+unlama;077261
+unlamak;077262
+unlanma;077263
+unlanmak;077264
+unluk;077265

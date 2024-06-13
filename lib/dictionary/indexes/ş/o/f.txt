@@ -1,0 +1,8 @@
+şofben;092132
+şoför;092133
+şoför ağzı;092134
+şoför koltuğu;092135
+şoför mahalli;092136
+şoför muavini;092137
+şoför okulu;092138
+şoförlük;092139

@@ -1,0 +1,250 @@
+gün;031675
+gün almak;031676
+gün atmak;031677
+gün ağarmak;031678
+gün balı;031679
+gün balığı;031680
+gün batmak;031681
+gün batımı;031682
+gün batısı;031683
+gün boyu;031684
+gün bugün;031685
+gün dikilmesi;031686
+gün doğmadan kimliği söylenmez;031687
+gün doğmadan neler doğar;031688
+gün doğmak;031689
+gün doğmak;031690
+gün doğusu;031691
+gün durumu;031692
+gün dönümü;031693
+gün eylemek;031694
+gün geçer, kin geçmez;031695
+gün geçirmek (veya öldürmek);031696
+gün geçmek;031697
+gün gibi açık;031698
+gün görmemek;031699
+gün gülü;031700
+gün günden;031701
+gün güne uymaz;031702
+gün kavuşmak;031703
+gün koymak;031704
+gün merkezli;031705
+gün meselesi;031706
+gün ola harman ola;031707
+gün olur yılı besler, yıl olur günü beslemez;031708
+gün ortası;031709
+gün saymak;031710
+gün tutulması;031711
+gün tün eşitliği;031712
+gün varken davarını eve götür;031713
+gün yayı;031714
+gün yağmuru;031715
+gün yeli;031716
+gün yemek;031717
+gün yüzü görmemek;031718
+gün yüzü görmemiş (söz veya küfür);031719
+gün çiçeği;031720
+gün ışığı;031721
+gün ışığına çıkmak;031722
+günah;031723
+günah benden gitti (veya gitsin);031724
+günah işlemek;031725
+günah keçisi;031726
+günah keçisi olmak;031727
+günah olmak;031728
+günah çıkarmak;031729
+günaha girmek;031730
+günaha sokmak;031731
+günahkâr;031732
+günahkârlık;031733
+günahlı;031734
+günahlılık;031735
+günahsız;031736
+günahsızca;031737
+günahsızlık;031738
+günahı (veya günahı vebali) boynuna;031739
+günahı kadar sevmemek;031740
+günahına girmek (veya günahını almak);031741
+günahını vermez;031742
+günahını çekmek;031743
+günaydın;031744
+günaşırı;031745
+günbegün;031746
+günberi;031747
+günce;031748
+güncek;031749
+güncel;031750
+güncelik;031751
+güncelleme;031752
+güncellemek;031753
+güncelleniş;031754
+güncellenme;031755
+güncellenmek;031756
+güncelletme;031757
+güncelletmek;031758
+güncelleyebilme;031759
+güncelleyebilmek;031760
+güncelleşme;031761
+güncelleşmek;031762
+güncelleştirebilme;031763
+güncelleştirebilmek;031764
+güncelleştirme;031765
+güncelleştirmek;031766
+güncellik;031767
+güncelliğini korumak;031768
+güncelliğini yitirmek;031769
+günde;031770
+gündedün;031771
+gündelik;031772
+gündelikli;031773
+gündelikçi;031774
+gündelikçilik;031775
+gündeliğe gitmek;031776
+gündem;031777
+gündem dışı;031778
+gündeme almak;031779
+gündeme getirmek;031780
+gündemi değiştirmek;031781
+günden güne;031782
+gündeş;031783
+gündoğmuş;031784
+gündöndü;031785
+gündüz;031786
+gündüz feneri;031787
+gündüz gösterimi;031788
+gündüz gözüyle;031789
+gündüz külahlı, gece silahlı;031790
+gündüz yırtıcıları;031791
+gündüzcü;031792
+gündüzcülük;031793
+gündüzki;031794
+gündüzleri;031795
+gündüzlü;031796
+gündüzlük;031797
+gündüzsefası;031798
+gündüzün;031799
+gündüzün mum yakan geceleyin bulamaz;031800
+güne doğrulum;031801
+güne göre kürk giyinmek gerek;031802
+günebakan;031803
+güney;031804
+güney;031805
+güney karamanı;031806
+güney kutbu;031807
+güney küre;031808
+güney noktası;031809
+güneybalığı;031810
+güneybatı;031811
+güneydoğu;031812
+güneyli;031813
+güneysu;031814
+güneysınır;031815
+güneç;031816
+güneğik;031817
+güneş;031818
+güneş;031819
+güneş almak (veya görmek);031820
+güneş açmak;031821
+güneş balçıkla sıvanmaz;031822
+güneş banyosu;031823
+güneş dil teorisi;031824
+güneş doğmak;031825
+güneş enerjisi;031826
+güneş girmeyen eve doktor girer;031827
+güneş görmek;031828
+güneş gözlüğü;031829
+güneş günü;031830
+güneş hayvancıkları;031831
+güneş kremi;031832
+güneş lekeleri;031833
+güneş lekesi;031834
+güneş paneli;031835
+güneş pili;031836
+güneş saati;031837
+güneş sistemi;031838
+güneş sütü;031839
+güneş tacı;031840
+güneş takvimi;031841
+güneş tekeri;031842
+güneş tutulması;031843
+güneş yanığı;031844
+güneş yağı;031845
+güneş yılı;031846
+güneş çarpmak;031847
+güneş çarpması;031848
+güneş çavmak;031849
+güneş ışınımı;031850
+güneşe karşı işemek;031851
+güneşi üzerine doğdurmamak;031852
+güneşin alnında (veya altında);031853
+güneşleme;031854
+güneşlemek;031855
+güneşlendirme;031856
+güneşlendirmek;031857
+güneşlenebilme;031858
+güneşlenebilmek;031859
+güneşlenme;031860
+güneşlenmek;031861
+güneşletici;031862
+güneşletme;031863
+güneşletmek;031864
+güneşli;031865
+güneşlik;031866
+güneşsel;031867
+güneşsiz;031868
+güneşsizlik;031869
+güneştopu;031870
+güngören;031871
+güngörmez;031872
+güngörmüş;031873
+güngörmüşlük;031874
+günindi;031875
+günleme;031876
+günlemek;031877
+günler günü;031878
+günlerce;031879
+günlerden bir gün;031880
+günleri gece olmak;031881
+günleri sayılı olmak;031882
+günlü;031883
+günlük;031884
+günlük;031885
+günlük ağacı;031886
+günlük defter;031887
+günlük değer;031888
+günlük dil;031889
+günlük güneşlik;031890
+günlük güneşlik görünmek;031891
+günlük konuşma;031892
+günlük tutmak;031893
+günlükçü;031894
+günlükçülük;031895
+günlüğüne;031896
+günsüler;031897
+günsüz;031898
+günyüzü;031899
+günâşık;031900
+günöte;031901
+günü;031902
+günü (veya gününü) kurtarmak;031903
+günü dolmak;031904
+günü geçmiş;031905
+günü gününe;031906
+günü gününe uymaz;031907
+günü yetmek;031908
+günübirlik;031909
+günübirliğine;031910
+günücü;031911
+günücülük;031912
+günüleme;031913
+günülemek;031914
+günülenme;031915
+günülenmek;031916
+günün adamı;031917
+günün birinde;031918
+gününü (veya günlerini) saymak (veya beklemek);031919
+gününü doldurmak;031920
+gününü görmek;031921
+gününü göstermek;031922
+gününü gün etmek;031923
+günısı;031924

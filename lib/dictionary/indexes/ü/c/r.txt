@@ -1,0 +1,9 @@
+ücra;089857
+ücret;089858
+ücretlendirme;089859
+ücretlendirme makinesi;089860
+ücretlendirmek;089861
+ücretli;089862
+ücretlilik;089863
+ücretsiz;089864
+ücretsizlik;089865

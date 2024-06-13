@@ -1,0 +1,4 @@
+ezdirme;026012
+ezdirmek;026013
+ezdirtme;026014
+ezdirtmek;026015

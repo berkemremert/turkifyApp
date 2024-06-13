@@ -1,0 +1,272 @@
+sara;065110
+sarabilme;065111
+sarabilmek;065112
+saraciye;065113
+sarahat;065114
+sarahaten;065115
+sarak;065116
+saraka;065117
+saraka etmek;065118
+sarakacı;065119
+sarakaya almak;065120
+saralı;065121
+sararma;065122
+sararmak;065123
+sarartma;065124
+sarartmak;065125
+sarartı;065126
+sarartış;065127
+sararıp solmak;065128
+sararış;065129
+sarat;065130
+saray;065131
+saray;065132
+saray konut;065133
+saray lokması;065134
+saray menekşesi;065135
+saray çiçeği;065136
+saraydüzü;065137
+saraykent;065138
+sarayköy;065139
+saraylı;065140
+saraypatı;065141
+sarayönü;065142
+saraç;065143
+saraçhane;065144
+saraçlık;065145
+sarban;065146
+sarbanbaşı;065147
+sarbanlık;065148
+sardalya;065149
+sardalya gibi istif olmak;065150
+sardoğan;065151
+sardun;065152
+sardunya;065153
+sardunyagiller;065154
+sardırma;065155
+sardırmak;065156
+sarf;065157
+sarf etmek;065158
+sarfiyat;065159
+sarfınazar;065160
+sarfınazar etmek;065161
+sargaç;065162
+sargı;065163
+sargı bezi;065164
+sargı yeri;065165
+sargılama;065166
+sargılamak;065167
+sargılı;065168
+sargın;065169
+sargın eğitim;065170
+sargısız;065171
+sarhoş;065172
+sarhoş etmek;065173
+sarhoş olmak;065174
+sarhoşlama;065175
+sarhoşlamak;065176
+sarhoşlaşma;065177
+sarhoşlaşmak;065178
+sarhoşluk;065179
+sarhoşluğa vurmak;065180
+sarhoştum aydım, böyle yaşamaktan caydım;065181
+sarhoşça;065182
+sari;065183
+sarig;065184
+sarih;065185
+sarih meful;065186
+sarihlik;065187
+sarkabilme;065188
+sarkabilmek;065189
+sarkaç;065190
+sarkaçlama;065191
+sarkaçlamak;065192
+sarkaçlı;065193
+sarkaçsız;065194
+sarkma;065195
+sarkmak;065196
+sarkom;065197
+sarkık;065198
+sarkıklık;065199
+sarkıl;065200
+sarkıntı;065201
+sarkıntı olmak;065202
+sarkıntılık;065203
+sarkıntılık etmek (veya yapmak);065204
+sarkıt;065205
+sarkıtabilme;065206
+sarkıtabilmek;065207
+sarkıtma;065208
+sarkıtmak;065209
+sarkış;065210
+sarma;065211
+sarma kafiye;065212
+sarmak;065213
+sarmal;065214
+sarmal metot;065215
+sarmal yöntem;065216
+sarmalama;065217
+sarmalamak;065218
+sarmalanma;065219
+sarmalanmak;065220
+sarmalanış;065221
+sarmalayış;065222
+sarmallık;065223
+sarman;065224
+sarmaç;065225
+sarmaş dolaş;065226
+sarmaş dolaş olmak;065227
+sarmaşan;065228
+sarmaşma;065229
+sarmaşmak;065230
+sarmaşık;065231
+sarmaşıkgiller;065232
+sarmaşıklı;065233
+sarmaşıksız;065234
+sarmısak;065235
+sarnıç;065236
+sarnıç gemisi;065237
+sarnıç vagonu;065238
+sarnıçlı;065239
+sarp;065240
+sarpa;065241
+sarpa sarmak (veya çekmek);065242
+sarplaşma;065243
+sarplaşmak;065244
+sarplık;065245
+sarpın;065246
+sarraf;065247
+sarrafiye;065248
+sarraflık;065249
+sarraflık hakkı;065250
+sarsabilme;065251
+sarsabilmek;065252
+sarsak;065253
+sarsak sursak;065254
+sarsaklık;065255
+sarsakça;065256
+sarsalama;065257
+sarsalamak;065258
+sarsma;065259
+sarsmak;065260
+sarsık;065261
+sarsılma;065262
+sarsılmak;065263
+sarsılış;065264
+sarsım;065265
+sarsıntı;065266
+sarsıntı bilimi;065267
+sarsıntı bilimsel;065268
+sarsıntı geçirmek;065269
+sarsıntılı;065270
+sarsıntısız;065271
+sarsış;065272
+saruhanlı;065273
+sarı;065274
+sarı benek;065275
+sarı bez;065276
+sarı kart;065277
+sarı kart görmek;065278
+sarı kart göstermek;065279
+sarı lira;065280
+sarı nokta;065281
+sarı sendika;065282
+sarı sendikacı;065283
+sarı sendikacılık;065284
+sarı sıcak;065285
+sarı yağ;065286
+sarı yağız;065287
+sarı çizmeli mehmet ağa;065288
+sarı çıyan;065289
+sarı ırk;065290
+sarıasma;065291
+sarıasmagiller;065292
+sarıağı;065293
+sarıağız;065294
+sarıbalık;065295
+sarıca;065296
+sarıcakaya;065297
+sarıcalık;065298
+sarıcık;065299
+sarıdiken;065300
+sarıerik;065301
+sarıfiğ;065302
+sarıgöl;065303
+sarıgöz;065304
+sarıhalile;065305
+sarıhani;065306
+sarıhumma;065307
+sarık;065308
+sarıkamış;065309
+sarıkanat;065310
+sarıkaya;065311
+sarıklı;065312
+sarıkuyruk;065313
+sarıkçı;065314
+sarıkız;065315
+sarılabilme;065316
+sarılabilmek;065317
+sarılaşma;065318
+sarılaşmak;065319
+sarılaştırma;065320
+sarılaştırmak;065321
+sarılgan;065322
+sarılgan gövde;065323
+sarılma;065324
+sarılmak;065325
+sarılı;065326
+sarılı;065327
+sarılık;065328
+sarılıklı;065329
+sarılıp kundaklanmak;065330
+sarılıverme;065331
+sarılıvermek;065332
+sarılış;065333
+sarılışma;065334
+sarılışmak;065335
+sarım;065336
+sarımlı;065337
+sarımsak;065338
+sarımsak hardalı;065339
+sarımsak otu;065340
+sarımsak yemedim ki ağzım koksun;065341
+sarımsaklama;065342
+sarımsaklamak;065343
+sarımsaklanma;065344
+sarımsaklanmak;065345
+sarımsaklatma;065346
+sarımsaklatmak;065347
+sarımsaklı;065348
+sarımsağı gelin etmişler de kırk gün kokusu çıkmamış;065349
+sarımsı;065350
+sarımsılık;065351
+sarımtırak;065352
+sarımtıraklık;065353
+sarınabilme;065354
+sarınabilmek;065355
+sarınma;065356
+sarınmak;065357
+sarınış;065358
+sarıoğlan;065359
+sarıp sarmalamak;065360
+sarıpapatya;065361
+sarısabır;065362
+sarısalkım;065363
+sarıveliler;065364
+sarıverme;065365
+sarıvermek;065366
+sarıyahşi;065367
+sarıyer;065368
+sarıyonca;065369
+sarız;065370
+sarızambak;065371
+sarıçalı;065372
+sarıçam;065373
+sarıçam;065374
+sarıçiçek;065375
+sarıçiğdem;065376
+sarığıburma;065377
+sarış;065378
+sarışın;065379
+sarışınca;065380
+sarışınlık;065381

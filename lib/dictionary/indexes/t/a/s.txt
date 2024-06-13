@@ -1,0 +1,129 @@
+tas;072340
+tas gibi;072341
+tas kebabı;072342
+tas tarak;072343
+tasa;072344
+tasa etmek;072345
+tasa çekmek;072346
+tasalanma;072347
+tasalanmak;072348
+tasallut;072349
+tasallut etmek;072350
+tasallüp;072351
+tasalı;072352
+tasannu;072353
+tasar;072354
+tasar çizim;072355
+tasar çizimci;072356
+tasar çizimcilik;072357
+tasarlama;072358
+tasarlamak;072359
+tasarlanabilme;072360
+tasarlanabilmek;072361
+tasarlanma;072362
+tasarlanmak;072363
+tasarlanış;072364
+tasarlatma;072365
+tasarlatmak;072366
+tasarlayabilme;072367
+tasarlayabilmek;072368
+tasarlayış;072369
+tasarruf;072370
+tasarruf bonosu;072371
+tasarruf etmek;072372
+tasarruflu;072373
+tasarrufluluk;072374
+tasarrufçu;072375
+tasarrufçuluk;072376
+tasarı;072377
+tasarı geometri;072378
+tasarım;072379
+tasarımcı;072380
+tasarımcılık;072381
+tasarımlama;072382
+tasarımlamak;072383
+tasarımlanma;072384
+tasarımlanmak;072385
+tasarımlayabilme;072386
+tasarımlayabilmek;072387
+tasarımlı;072388
+tasarımsız;072389
+tasarımsızlık;072390
+tasası sana mı düştü?;072391
+tasasına düşmek;072392
+tasasız;072393
+tasasız olmak;072394
+tasasızlık;072395
+tasavvuf;072396
+tasavvufi;072397
+tasavvur;072398
+tasavvur etmek;072399
+tasdi;072400
+tasdik;072401
+tasdik etmek;072402
+tasdikleme;072403
+tasdiklemek;072404
+tasdikleniş;072405
+tasdiklenme;072406
+tasdiklenmek;072407
+tasdikletebilme;072408
+tasdikletebilmek;072409
+tasdikletilme;072410
+tasdikletilmek;072411
+tasdikletme;072412
+tasdikletmek;072413
+tasdiklettirilme;072414
+tasdiklettirilmek;072415
+tasdiklettirme;072416
+tasdiklettirmek;072417
+tasdikleyebilme;072418
+tasdikleyebilmek;072419
+tasdikli;072420
+tasdikname;072421
+tasdiksiz;072422
+tasfiye;072423
+tasfiye etmek;072424
+tasfiyeci;072425
+tasfiyecilik;072426
+tasfiyehane;072427
+tasgir;072428
+tashih;072429
+tashih etmek;072430
+tashihikarar;072431
+taslak;072432
+taslama;072433
+taslamak;072434
+taslatma;072435
+taslatmak;072436
+taslayabilme;072437
+taslayabilmek;072438
+tasma;072439
+tasmim;072440
+tasmim etmek;072441
+tasni;072442
+tasnif;072443
+tasnif etmek;072444
+tasnifleme;072445
+tasniflemek;072446
+tasrif;072447
+tasrif etmek;072448
+tasrih;072449
+tasrih etmek;072450
+tastamam;072451
+tastir;072452
+tastir etmek;072453
+tasvip;072454
+tasvip etmek;072455
+tasvip görmek;072456
+tasvir;072457
+tasvir etmek;072458
+tasvir gibi;072459
+tasvirci;072460
+tasvircilik;072461
+tasvirî;072462
+tasvirî dil bilgisi;072463
+tasvirî fiil;072464
+tasım;072465
+tasımlama;072466
+tasımlamak;072467
+tasımsal;072468

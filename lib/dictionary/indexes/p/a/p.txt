@@ -1,0 +1,52 @@
+papa;060143
+papak;060144
+papalina;060145
+papalık;060146
+papara;060147
+papara;060148
+papara yemek;060149
+paparazi;060150
+papatya;060151
+papatya falı;060152
+papatyalı;060153
+papatyasız;060154
+papaya;060155
+papaya ağacı;060156
+papaz;060157
+papaz balığı;060158
+papaz balığıgiller;060159
+papaz gibi;060160
+papaz her gün pilav yemez;060161
+papaz olmak;060162
+papaz uçurmak;060163
+papaz yahnisi;060164
+papaza dönmek;060165
+papaza kızıp oruç (veya perhiz) bozmak;060166
+papazi;060167
+papazkarası;060168
+papazkaçtı;060169
+papazlık;060170
+papazlık etmek;060171
+papazı bulmak;060172
+papağan;060173
+papağan anahtarı;060174
+papağan gibi ezberlemek;060175
+papağan gibi tekrarlamak;060176
+papağangiller;060177
+papağanlar;060178
+papağanlaşma;060179
+papağanlaşmak;060180
+papağanlık;060181
+papağanyemi;060182
+papel;060183
+papelci;060184
+papelcilik;060185
+papikçi;060186
+papikçilik;060187
+papirüs;060188
+papirüsgiller;060189
+paprika;060190
+papura;060191
+papyekuşe;060192
+papyon;060193
+papyon kravat;060194

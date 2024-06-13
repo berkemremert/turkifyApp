@@ -1,0 +1,46 @@
+öğrek;089771
+öğrence;089772
+öğrencelik;089773
+öğrenci;089774
+öğrenci belgesi;089775
+öğrenci bileti;089776
+öğrenci kimliği;089777
+öğrenci yurdu;089778
+öğrencilik;089779
+öğrenebilme;089780
+öğrenebilmek;089781
+öğreniliş;089782
+öğrenilme;089783
+öğrenilmek;089784
+öğrenim;089785
+öğrenim belgesi;089786
+öğrenim düzeyi;089787
+öğrenimli;089788
+öğreniverme;089789
+öğrenivermek;089790
+öğreniş;089791
+öğrenme;089792
+öğrenmek;089793
+öğretebilme;089794
+öğretebilmek;089795
+öğreti;089796
+öğretici;089797
+öğreticilik;089798
+öğretiliş;089799
+öğretilme;089800
+öğretilmek;089801
+öğretim;089802
+öğretim bilgisi;089803
+öğretim elemanı;089804
+öğretim görevlisi;089805
+öğretim programı;089806
+öğretim yardımcılığı;089807
+öğretim yardımcısı;089808
+öğretim yılı;089809
+öğretim üyesi;089810
+öğretiş;089811
+öğretme;089812
+öğretmek;089813
+öğretmen;089814
+öğretmenevi;089815
+öğretmenlik;089816

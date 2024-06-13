@@ -1,0 +1,217 @@
+ana;003317
+ana arı;003318
+ana atardamar;003319
+ana avrat küfretmek (veya düz veya dümdüz gitmek);003320
+ana baba;003321
+ana baba bir;003322
+ana baba eline bakmak;003323
+ana baba günü;003324
+ana baba yavrusu;003325
+ana besleme hattı;003326
+ana bilim dalı;003327
+ana bir, baba ayrı;003328
+ana cadde;003329
+ana dal;003330
+ana defter;003331
+ana deniz;003332
+ana deniz bilimi;003333
+ana dil;003334
+ana dili;003335
+ana direk;003336
+ana doğrusu;003337
+ana duvar;003338
+ana düşünce;003339
+ana fikir;003340
+ana gibi yâr olmaz, bağdat gibi diyar olmaz;003341
+ana haber sunucusu;003342
+ana hat;003343
+ana hatlarıyla;003344
+ana ile kız, helva ile koz;003345
+ana kadın;003346
+ana kapı;003347
+ana kara;003348
+ana kent;003349
+ana kitap;003350
+ana kolon hattı;003351
+ana konu;003352
+ana kraliçe;003353
+ana kubbe;003354
+ana kucağı;003355
+ana kuyu;003356
+ana kuzusu;003357
+ana kök;003358
+ana kızına taht kurar, kız bahtı kocadan arar (veya ana kızına taht kurmuş, baht kuramamış);003359
+ana mektebi;003360
+ana menü;003361
+ana motif;003362
+ana muhalefet;003363
+ana ortaklık;003364
+ana rahmi;003365
+ana rahmine düşmek;003366
+ana saat;003367
+ana sanlı;003368
+ana sav;003369
+ana sayaç;003370
+ana sözleşme;003371
+ana sınıfı;003372
+ana toplardamar;003373
+ana vatan;003374
+ana yapı;003375
+ana yarısı;003376
+ana yemek;003377
+ana yol;003378
+ana yurt;003379
+ana yön;003380
+ana yüreği;003381
+ana çizgi;003382
+ana şehir;003383
+anabilme;003384
+anabilmek;003385
+anabolizma;003386
+anaca;003387
+anacık;003388
+anacıl;003389
+anacıllık;003390
+anadan doğma;003391
+anadan doğmuşa dönmek (veya anadan yeni doğmuş gibi olmak);003392
+anadan görme;003393
+anadan üryan;003394
+anadolu;003395
+anadolulu;003396
+anadolululuk;003397
+anadut;003398
+anaerki;003399
+anaerkil;003400
+anaerkillik;003401
+anaerobik;003402
+anafilaksi;003403
+anafor;003404
+anafora kaptırmak;003405
+anaforcu;003406
+anaforculuk;003407
+anafordan;003408
+anaforlama;003409
+anaforlamak;003410
+anaforlu;003411
+anagram;003412
+anahtar;003413
+anahtar ağızlığı;003414
+anahtar bitkiler;003415
+anahtar kelime;003416
+anahtar sözcük;003417
+anahtar taşı;003418
+anahtar uydurmak;003419
+anahtar vermek;003420
+anahtarcı;003421
+anahtarcılık;003422
+anahtarlık;003423
+anahtarı beline takmak;003424
+anakonda;003425
+anakronik;003426
+anakronizm;003427
+anal;003428
+analaştırma;003429
+analaştırmak;003430
+analist;003431
+analistlik;003432
+analitik;003433
+analitik zekâ;003434
+analiz;003435
+analiz etmek;003436
+analizci;003437
+analizcilik;003438
+analizör;003439
+analjezi;003440
+analjezik;003441
+analog;003442
+analoji;003443
+analojik;003444
+analı;003445
+analı kuzu, kınalı kuzu;003446
+analık;003447
+analık etmek;003448
+analık fenalık;003449
+analıkızlı;003450
+anam avradım olsun;003451
+anam babam;003452
+anam!;003453
+anamal;003454
+anamal birikimi;003455
+anamal sahibi;003456
+anamalcı;003457
+anamalcılık;003458
+anamnez;003459
+anamnezi;003460
+anamur;003461
+anamın (veya anasının) ak sütü gibi (helal olsun);003462
+anamın öleceğini bilseydim kulağı dolu darıya satardım;003463
+anan güzel idi hani yeri, baban zengin idi hani evi?;003464
+anan yahşi, baban yahşi;003465
+ananas;003466
+ananasgiller;003467
+anane;003468
+ananeci;003469
+ananecilik;003470
+ananeli;003471
+ananesiz;003472
+ananesizlik;003473
+ananevi;003474
+ananın bahtı kızına;003475
+ananın bastığı yavru incinmez;003476
+anaokulu;003477
+anapara;003478
+anartri;003479
+anarşi;003480
+anarşik;003481
+anarşist;003482
+anarşistleşme;003483
+anarşistleşmek;003484
+anarşistlik;003485
+anarşizm;003486
+anason;003487
+anasonlu;003488
+anasonsuz;003489
+anası ağlamak;003490
+anası danası;003491
+anası kılıklı;003492
+anası turp (veya sarımsak), babası şalgam (veya soğan);003493
+anası yerinde;003494
+anasıl;003495
+anasına avradına sövmek;003496
+anasına bak kızını al, kenarına bak bezini al;003497
+anasından doğduğuna bin pişman;003498
+anasından doğduğuna pişman etmek;003499
+anasından doğduğuna pişman olmak;003500
+anasından emdiği süt burnundan (fitil fitil) gelmek;003501
+anasından emdiği sütü burnundan getirmek;003502
+anasını ağlatmak;003503
+anasını bellemek;003504
+anasını eşek kovalasın!;003505
+anasını sat! (veya satayım!);003506
+anasının gözü;003507
+anasının ipini satmış (veya pazara çıkarmış);003508
+anasının körpe kuzusu;003509
+anasının kızı;003510
+anasının nikâhını istemek;003511
+anasının oğlu;003512
+anasır;003513
+anasız;003514
+anasızlık;003515
+anatomi;003516
+anatomici;003517
+anatomik;003518
+anatomist;003519
+anavaşya;003520
+anayasa;003521
+anayasacı;003522
+anayasacılık;003523
+anayasal;003524
+anayasallaşma;003525
+anayasallaşmak;003526
+anayasallaştırma;003527
+anayasallaştırmak;003528
+anayasallık;003529
+anaç;003530
+anaçlaşma;003531
+anaçlaşmak;003532
+anaçlık;003533

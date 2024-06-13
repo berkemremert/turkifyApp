@@ -1,0 +1,44 @@
+mum;055457
+mum ampul;055458
+mum ağacı;055459
+mum boyası;055460
+mum cilası;055461
+mum dibine ışık vermez;055462
+mum direk;055463
+mum duruşu;055464
+mum etmek;055465
+mum gibi;055466
+mum kesilmek;055467
+mum olmak;055468
+mum palmiyesi;055469
+mum tutturmak;055470
+mum yakmak;055471
+mum yanmayınca pervane dönmez (veya yanmaz);055472
+mum yapıştırmak;055473
+mum çiçeği;055474
+muma döndürmek (veya çevirmek);055475
+mumaileyh;055476
+mumcu;055477
+mumculuk;055478
+mumhane;055479
+mumla aramak;055480
+mumla aratmak;055481
+mumlama;055482
+mumlamak;055483
+mumlanma;055484
+mumlanmak;055485
+mumlayıcı;055486
+mumlaşma;055487
+mumlaşmak;055488
+mumlu;055489
+mumlu kâğıt;055490
+mumluk;055491
+mumsöndü;055492
+mumya;055493
+mumya gibi;055494
+mumyalama;055495
+mumyalamak;055496
+mumyalanma;055497
+mumyalanmak;055498
+mumyalatma;055499
+mumyalatmak;055500

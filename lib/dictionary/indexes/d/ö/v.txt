@@ -1,0 +1,45 @@
+dövdürme;022280
+dövdürmek;022281
+dövdürtme;022282
+dövdürtmek;022283
+dövdürtülme;022284
+dövdürtülmek;022285
+dövdürülme;022286
+dövdürülmek;022287
+dövebilme;022288
+dövebilmek;022289
+döveç;022290
+döviz;022291
+döviz işlemi;022292
+döviz kaçırmak;022293
+döviz kuru;022294
+dövizzede;022295
+dövme;022296
+dövme yapmak;022297
+dövmeci;022298
+dövmecilik;022299
+dövmek;022300
+dövmeli;022301
+dövmelik;022302
+dövmesiz;022303
+dövülgen;022304
+dövülgenlik;022305
+dövülme;022306
+dövülmek;022307
+dövülüş;022308
+dövünme;022309
+dövünmek;022310
+dövünüş;022311
+dövüş;022312
+dövüşebilme;022313
+dövüşebilmek;022314
+dövüşken;022315
+dövüşkenlik;022316
+dövüşme;022317
+dövüşmek;022318
+dövüştürebilme;022319
+dövüştürebilmek;022320
+dövüştürme;022321
+dövüştürmek;022322
+dövüşçü;022323
+dövüşçülük;022324

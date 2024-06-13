@@ -1,0 +1,160 @@
+bay;009277
+bay;009278
+bayan;009279
+bayat;009280
+bayat;009281
+bayat;009282
+bayati;009283
+bayatiaraban;009284
+bayatibuselik;009285
+bayatlama;009286
+bayatlamak;009287
+bayatlatma;009288
+bayatlatmak;009289
+bayatlık;009290
+bayatsı;009291
+bayatsıma;009292
+bayatsımak;009293
+bayatı;009294
+bayağı;009295
+bayağı kaçmak;009296
+bayağı kesir;009297
+bayağılaşma;009298
+bayağılaşmak;009299
+bayağılaştırma;009300
+bayağılaştırmak;009301
+bayağılık;009302
+bayburt;009303
+bayburtlu;009304
+bayburtluluk;009305
+baygın;009306
+baygın baygın bakmak;009307
+baygın düşmek;009308
+baygınlaşma;009309
+baygınlaşmak;009310
+baygınlık;009311
+baygınlık geçirmek;009312
+baygıntı;009313
+bayi;009314
+bayilik;009315
+baykan;009316
+baykuş;009317
+baykuş gibi;009318
+baykuşgiller;009319
+baykuşluk;009320
+baykuşun kısmeti ayağına gelir;009321
+baylan;009322
+baylanlık;009323
+baylanma;009324
+baylanmak;009325
+bayma;009326
+baymak;009327
+baypas;009328
+baypas ameliyatı;009329
+bayrak;009330
+bayrak açmak;009331
+bayrak bilimci;009332
+bayrak bilimi;009333
+bayrak dikmek;009334
+bayrak direği;009335
+bayrak gibi;009336
+bayrak merasimi;009337
+bayrak töreni;009338
+bayrak yarışı;009339
+bayrak çekmek (veya asmak);009340
+bayrakaltı;009341
+bayrakları açmak;009342
+bayraklaşabilme;009343
+bayraklaşabilmek;009344
+bayraklaşma;009345
+bayraklaşmak;009346
+bayraklaştırma;009347
+bayraklaştırmak;009348
+bayraklaştırılma;009349
+bayraklaştırılmak;009350
+bayraklı;009351
+bayraklı;009352
+bayraklık;009353
+bayraktar;009354
+bayraktarlık;009355
+bayraktarlık etmek;009356
+bayraktarlığını yapmak;009357
+bayrakçı;009358
+bayrakçılık;009359
+bayram;009360
+bayram alayı;009361
+bayram ayı;009362
+bayram değil, seyran değil (eniştem beni niye öptü);009363
+bayram etmek (veya yapmak);009364
+bayram gazetesi;009365
+bayram günü;009366
+bayram haftasını mangal tahtası anlamak;009367
+bayram havası;009368
+bayram havası esmek;009369
+bayram hediyesi;009370
+bayram koçu gibi;009371
+bayram namazı;009372
+bayram tebriği;009373
+bayram topu;009374
+bayram yeri;009375
+bayram ziyareti;009376
+bayram çocuğu;009377
+bayram şekeri;009378
+bayramda borç ödeyene ramazan ağır gelir;009379
+bayramda seyranda;009380
+bayramdan bayrama;009381
+bayrami;009382
+bayramilik;009383
+bayramiç;009384
+bayramlaşabilme;009385
+bayramlaşabilmek;009386
+bayramlaşma;009387
+bayramlaşmak;009388
+bayramlık;009389
+bayramlık ad;009390
+bayramlık ağız;009391
+bayrampaşa;009392
+bayramören;009393
+bayramüstü;009394
+bayramüzeri;009395
+bayrağı yarıya indirmek;009396
+bayrı;009397
+bayrılık;009398
+baysal;009399
+baysallık;009400
+baysungur;009401
+baytar;009402
+baytarlık;009403
+bayıla bayıla;009404
+bayılabilme;009405
+bayılabilmek;009406
+bayılayazma;009407
+bayılayazmak;009408
+bayılma;009409
+bayılmak;009410
+bayıltma;009411
+bayıltmak;009412
+bayılttırma;009413
+bayılttırmak;009414
+bayıltılma;009415
+bayıltılmak;009416
+bayılış;009417
+bayındır;009418
+bayındır;009419
+bayındır;009420
+bayındırcı;009421
+bayındırcılık;009422
+bayındırlaşma;009423
+bayındırlaşmak;009424
+bayındırlaştırabilme;009425
+bayındırlaştırabilmek;009426
+bayındırlaştırma;009427
+bayındırlaştırmak;009428
+bayındırlık;009429
+bayır;009430
+bayır aşağı;009431
+bayır kuşu;009432
+bayır turpu;009433
+bayır yukarı;009434
+bayırlaşma;009435
+bayırlaşmak;009436

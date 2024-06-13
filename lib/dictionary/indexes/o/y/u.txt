@@ -1,0 +1,67 @@
+oyuk;059738
+oyuklu;059739
+oyulga;059740
+oyulgalama;059741
+oyulgalamak;059742
+oyulgalanma;059743
+oyulgalanmak;059744
+oyulgama;059745
+oyulgamak;059746
+oyulganma;059747
+oyulganmak;059748
+oyulma;059749
+oyulmak;059750
+oyuluş;059751
+oyum;059752
+oyumlama;059753
+oyumlamak;059754
+oyun;059755
+oyun alanı;059756
+oyun almak;059757
+oyun bağlamak;059758
+oyun bozmak;059759
+oyun dışı kalmak;059760
+oyun ebesi;059761
+oyun etmek;059762
+oyun havası;059763
+oyun kurmak;059764
+oyun kurucu;059765
+oyun kuruculuğu;059766
+oyun kâğıdı;059767
+oyun masası;059768
+oyun oynamak;059769
+oyun sahası;059770
+oyun salonu;059771
+oyun vermek;059772
+oyun yapmak;059773
+oyun yazarlığı;059774
+oyun yazarı;059775
+oyun çıkarmak;059776
+oyuna gelmek;059777
+oyuna getirmek;059778
+oyuna kurban gitmek;059779
+oyuna çıkmak;059780
+oyunbaz;059781
+oyunbazlık;059782
+oyunbozan;059783
+oyunbozanlık;059784
+oyunbozanlık etmek;059785
+oyuncak;059786
+oyuncaklı;059787
+oyuncakçı;059788
+oyuncakçılık;059789
+oyuncu;059790
+oyuncu kadrosu;059791
+oyuncuktan;059792
+oyunculuk;059793
+oyunlaştırma;059794
+oyunlaştırmak;059795
+oyunlaştırılma;059796
+oyunlaştırılmak;059797
+oyunluk;059798
+oyuntu;059799
+oyunu almak;059800
+oyunun kurallarını bilmek;059801
+oyuverme;059802
+oyuvermek;059803
+oyuş;059804

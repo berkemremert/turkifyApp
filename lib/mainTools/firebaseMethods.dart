@@ -24,3 +24,12 @@ getDictWord(String id) async {
   DocumentSnapshot wordDoc = await FirebaseFirestore.instance.collection('dictionary').doc(id).get();
   return wordDoc.data() as Map<String, dynamic>?;
 }
+
+getDictWordByWord(String word) async {
+  var wordDoc = await FirebaseFirestore.instance.collection('dictionary').where('word', isEqualTo: word).get();
+  if (wordDoc.docs.isNotEmpty) {
+    return wordDoc.docs.first.data() as Map<String, dynamic>;
+  } else {
+    return null;
+  }
+}

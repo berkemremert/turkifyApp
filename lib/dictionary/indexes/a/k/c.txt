@@ -1,0 +1,7 @@
+akciğer;001300
+akciğer göbeği;001301
+akciğer kesecikleri;001302
+akciğer lopçuğu;001303
+akciğer peteği;001304
+akciğer zarı;001305
+akciğerliler;001306

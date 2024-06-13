@@ -1,0 +1,63 @@
+inadı tutmak;037240
+inadım inat olmak;037241
+inadına;037242
+inak;037243
+inaksal;037244
+inakçı;037245
+inakçılık;037246
+inal;037247
+inam;037248
+inan;037249
+inan olsun;037250
+inanabilme;037251
+inanabilmek;037252
+inanca;037253
+inanca vermek;037254
+inancı;037255
+inancılık;037256
+inandırabilme;037257
+inandırabilmek;037258
+inandırma;037259
+inandırmak;037260
+inandırıcı;037261
+inandırıcılık;037262
+inandırılma;037263
+inandırılmak;037264
+inandırıverme;037265
+inandırıvermek;037266
+inanlı;037267
+inanma;037268
+inanmak;037269
+inanmamazlık;037270
+inanmazlık;037271
+inansız;037272
+inansızlık;037273
+inanç;037274
+inançlı;037275
+inançlıca;037276
+inançlılık;037277
+inançsız;037278
+inançsızca;037279
+inançsızlık;037280
+inanılma;037281
+inanılmak;037282
+inanılmaz;037283
+inanılmazlık;037284
+inanılır gibi (veya şey) değil;037285
+inanırlık;037286
+inanıverme;037287
+inanıvermek;037288
+inanış;037289
+inat;037290
+inat etmek;037291
+inatla;037292
+inatlaşma;037293
+inatlaşmak;037294
+inatlık;037295
+inatçı;037296
+inatçı keçi;037297
+inatçılık;037298
+inayet;037299
+inayet etmek (veya eylemek);037300
+inayet ola;037301
+inayette bulunmak;037302

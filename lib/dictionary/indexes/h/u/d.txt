@@ -1,0 +1,10 @@
+hudayinabit;035343
+hudut;035344
+hudut boyu;035345
+hudut dışı;035346
+hudut dışı etmek;035347
+hudutlandırma;035348
+hudutlandırmak;035349
+hudutlu;035350
+hudutsuz;035351
+hudutsuzluk;035352

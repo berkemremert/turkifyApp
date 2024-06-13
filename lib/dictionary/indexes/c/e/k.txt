@@ -1,0 +1,4 @@
+ceket;016019
+ceketini alıp çıkmak (veya gitmek);016020
+ceketli;016021
+ceketsiz;016022

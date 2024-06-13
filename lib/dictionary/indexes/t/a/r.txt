@@ -1,0 +1,226 @@
+tar;072114
+taraba;072115
+taraf;072116
+taraf (veya tarafını) tutmak;072117
+taraf gözetmek;072118
+taraf çıkmak (veya olmak);072119
+tarafa olmak (veya çıkmak);072120
+tarafeyn;072121
+tarafgir;072122
+tarafgirlik;072123
+taraflı;072124
+taraflılık;072125
+tarafsız;072126
+tarafsız bölge;072127
+tarafsızca;072128
+tarafsızlaştırma;072129
+tarafsızlaştırmak;072130
+tarafsızlık;072131
+taraftar;072132
+taraftarlık;072133
+taraftarlık etmek;072134
+tarafından;072135
+tarak;072136
+tarak dubası;072137
+tarak işi;072138
+tarak kemiği;072139
+tarak otu;072140
+tarak otugiller;072141
+tarak vurmak;072142
+taraklama;072143
+taraklamak;072144
+taraklı;072145
+taraklı;072146
+taraklılar;072147
+taraksı;072148
+taraksı kas;072149
+taraksız;072150
+tarakçı;072151
+tarakçılık;072152
+taralı;072153
+tarama;072154
+taramak;072155
+taranabilme;072156
+taranabilmek;072157
+taranga;072158
+taranma;072159
+taranmak;072160
+tarantula;072161
+tarantı;072162
+taranış;072163
+tarassut;072164
+tarassut etmek;072165
+taratabilme;072166
+taratabilmek;072167
+taratma;072168
+taratmak;072169
+tarator;072170
+tarattırma;072171
+tarattırmak;072172
+taratış;072173
+taravet;072174
+taravetli;072175
+tarayabilme;072176
+tarayabilmek;072177
+tarayıcı;072178
+tarayıcılık;072179
+tarayış;072180
+taraz;072181
+tarazlama;072182
+tarazlamak;072183
+tarazlanma;072184
+tarazlanmak;072185
+tarazlı;072186
+tarazsız;072187
+taraça;072188
+taraş;072189
+taraşlama;072190
+taraşlamak;072191
+tardedilme;072192
+tardedilmek;072193
+tardetme;072194
+tardetmek;072195
+tardiye;072196
+taret;072197
+tarh;072198
+tarh etmek;072199
+tarhana;072200
+tarhana çorbası;072201
+tarhanalık;072202
+tarhun;072203
+tarif;072204
+tarif etmek;072205
+tarife;072206
+tarife gelmemek;072207
+tarifeli;072208
+tarifesiz;072209
+tariflendirme;072210
+tariflendirmek;072211
+tarifli;072212
+tarifname;072213
+tarifsiz;072214
+tarifsizlik;072215
+tarih;072216
+tarih atmak (veya koymak);072217
+tarih düşürmek;072218
+tarih yanılgısı;072219
+tarih öncesi;072220
+tarihe geçmek;072221
+tarihe karışmak;072222
+tarihen;072223
+tarihlendirme;072224
+tarihlendirmek;072225
+tarihli;072226
+tarihsel;072227
+tarihsel roman;072228
+tarihsel özdekçi;072229
+tarihsel özdekçilik;072230
+tarihsiz;072231
+tarihsizlik;072232
+tarihçe;072233
+tarihçi;072234
+tarihçilik;072235
+tarihî;072236
+tarihî coğrafya;072237
+tarihî eser;072238
+tarihî film;072239
+tarihî maddeci;072240
+tarihî maddecilik;072241
+tarihî roman;072242
+tarihî tiyatro;072243
+tarik;072244
+tarikat;072245
+tarikatçı;072246
+tarikatçılık;072247
+tariz;072248
+tariz etmek;072249
+tarizde bulunmak;072250
+tarla;072251
+tarla açmak;072252
+tarla faresi;072253
+tarla kuşu;072254
+tarla kuşugiller;072255
+tarla sıçanı;072256
+tarlada izi olmayanın harmanda sözü (veya yüzü) olmaz;072257
+tarlakoz;072258
+tarlamsı;072259
+tarlanın taşlısı, karının (veya kadının) saçlısı;072260
+tarlatan;072261
+tarlayı taşlı, kızı kardeşli yerden almalı;072262
+tarpan;072263
+tarsin;072264
+tarsin etmek;072265
+tarsus;072266
+tarsusbeyazı;072267
+tart;072268
+tart;072269
+tart suçu;072270
+tartabilme;072271
+tartabilmek;072272
+tartak martak;072273
+tartaklama;072274
+tartaklamak;072275
+tartaklanma;072276
+tartaklanmak;072277
+tartaklanış;072278
+tartaklayış;072279
+tartar;072280
+tartarak yenme;072281
+tartarat;072282
+tartarik;072283
+tartarik asit;072284
+tartma;072285
+tartma;072286
+tartma tartmak;072287
+tartmak;072288
+tarttırma;072289
+tarttırmak;072290
+tartura;072291
+tartı;072292
+tartıcı;072293
+tartıcılık;072294
+tartıl;072295
+tartılabilme;072296
+tartılabilmek;072297
+tartılma;072298
+tartılmak;072299
+tartılı;072300
+tartılış;072301
+tartım;072302
+tartımlı;072303
+tartımsız;072304
+tartısız;072305
+tartış;072306
+tartışabilme;072307
+tartışabilmek;072308
+tartışma;072309
+tartışma götürmek;072310
+tartışmacı;072311
+tartışmacılık;072312
+tartışmak;072313
+tartışmalı;072314
+tartışmasız;072315
+tartışmaya girmek;072316
+tartıştırma;072317
+tartıştırmak;072318
+tartışılabilme;072319
+tartışılabilmek;072320
+tartışılma;072321
+tartışılmak;072322
+tarumar;072323
+tarumar etmek;072324
+tarumar olmak;072325
+tarumarlık;072326
+tarz;072327
+tarziye;072328
+tarziye vermek;072329
+tarçın;072330
+tarçın rengi;072331
+tarçıni;072332
+tarçınlı;072333
+tarçınsız;072334
+tarım;072335
+tarım coğrafyası;072336
+tarımcı;072337
+tarımcılık;072338
+tarımsal;072339

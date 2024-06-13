@@ -1,0 +1,73 @@
+yorabilme;082580
+yorabilmek;082581
+yordam;082582
+yordama;082583
+yordamak;082584
+yordamlı;082585
+yordamsız;082586
+yordurma;082587
+yordurmak;082588
+yordurmak;082589
+yordurtma;082590
+yordurtmak;082591
+yorga;082592
+yorgalama;082593
+yorgalamak;082594
+yorgan;082595
+yorgan döşek yatmak;082596
+yorgan gitti, kavga bitti;082597
+yorgan ipliği;082598
+yorgan iğnesi;082599
+yorgan kaplamak;082600
+yorgan kavgası;082601
+yorgan yüzü;082602
+yorgan çarşafı;082603
+yorgancı;082604
+yorgancılık;082605
+yorgaya kaldırmak;082606
+yorgun;082607
+yorgun argın;082608
+yorgun düşmek;082609
+yorgun mermi;082610
+yorgunluk;082611
+yorgunluk (veya yorgunluğunu) atmak (veya çıkarmak);082612
+yorgunluk kahvesi;082613
+yorgunluğunu almak;082614
+yorgunu yokuşa sürmek;082615
+yorma;082616
+yormak;082617
+yormak;082618
+yortma;082619
+yortmak;082620
+yortu;082621
+yorulabilme;082622
+yorulabilmek;082623
+yorulma;082624
+yorulmak;082625
+yorulmak;082626
+yoruluverme;082627
+yoruluvermek;082628
+yoruluş;082629
+yorum;082630
+yorum yok;082631
+yorumcu;082632
+yorumculuk;082633
+yorumlama;082634
+yorumlamak;082635
+yorumlanabilme;082636
+yorumlanabilmek;082637
+yorumlanma;082638
+yorumlanmak;082639
+yorumlanış;082640
+yorumlatabilme;082641
+yorumlatabilmek;082642
+yorumlatma;082643
+yorumlatmak;082644
+yorumlattırma;082645
+yorumlattırmak;082646
+yorumlayabilme;082647
+yorumlayabilmek;082648
+yorumlayış;082649
+yorumlu;082650
+yorumsuz;082651
+yorumsuzluk;082652

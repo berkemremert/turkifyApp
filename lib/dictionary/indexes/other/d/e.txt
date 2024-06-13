@@ -1,0 +1,6 @@
+-den yana;000000
+-den yana olmak;000001
+-den yana çıkmak;000002
+-den yana;000000
+-den yana olmak;000001
+-den yana çıkmak;000002

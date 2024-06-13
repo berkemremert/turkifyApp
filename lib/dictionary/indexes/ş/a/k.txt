@@ -1,0 +1,74 @@
+şak;091080
+şak;091081
+şak diye;091082
+şak şak;091083
+şaka;091084
+şaka etmek;091085
+şaka gibi gelmek;091086
+şaka götürmemek;091087
+şaka kaldırmak;091088
+şaka maka;091089
+şaka maka derken;091090
+şaka söylemek;091091
+şaka yapmak;091092
+şaka yollu;091093
+şakacı;091094
+şakacıktan;091095
+şakacılık;091096
+şakadan;091097
+şakak;091098
+şakakları atmak;091099
+şakakları ağarmak (veya beyazlanmak);091100
+şakalaşabilme;091101
+şakalaşabilmek;091102
+şakalaşma;091103
+şakalaşmak;091104
+şakalı;091105
+şakası yok;091106
+şakasız;091107
+şakaya almak;091108
+şakaya gelmek;091109
+şakaya gelmemek;091110
+şakaya getirmek;091111
+şakaya sığınmak;091112
+şakaya vurmak;091113
+şakayken kaka olmak;091114
+şakayı kakaya çevirmek;091115
+şakayık;091116
+şaki;091117
+şakilik;091118
+şakirt;091119
+şakkadak;091120
+şakketme;091121
+şakketmek;091122
+şaklaban;091123
+şaklabanlık;091124
+şaklama;091125
+şaklamak;091126
+şaklatma;091127
+şaklatmak;091128
+şakrak;091129
+şakrak kuşu;091130
+şakraklık;091131
+şakrama;091132
+şakramak;091133
+şakul;091134
+şakuli;091135
+şakulleme;091136
+şakullemek;091137
+şakıldak;091138
+şakıma;091139
+şakımak;091140
+şakır şakır;091141
+şakır şukur;091142
+şakırdama;091143
+şakırdamak;091144
+şakırdatma;091145
+şakırdatmak;091146
+şakırtı;091147
+şakırtılı;091148
+şakırtısız;091149
+şakıyış;091150
+şakşak;091151
+şakşakçı;091152
+şakşakçılık;091153

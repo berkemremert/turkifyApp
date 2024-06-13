@@ -1,0 +1,5 @@
+obelisk;058254
+oberj;058255
+obez;058256
+obezite;058257
+obezlik;058258
