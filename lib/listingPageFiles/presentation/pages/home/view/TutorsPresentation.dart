@@ -24,6 +24,7 @@ class TutorsPresentation extends StatefulWidget {
 class TutorsPresentationState extends State<TutorsPresentation> {
   late List<Map<String, dynamic>> tutors = [];
   late List<String> tutorUids = [];
+  bool _isLoading = true;
 
   @override
   void initState() {
@@ -35,6 +36,8 @@ class TutorsPresentationState extends State<TutorsPresentation> {
     List<Map<String, dynamic>> loadedTutors = await getTutorList();
     tutorUids = await getAllTutorUids();
     setState(() {
+      Future.delayed(Duration(seconds: 3));
+      _isLoading = false;
       tutors = loadedTutors;
     });
   }
@@ -45,135 +48,146 @@ class TutorsPresentationState extends State<TutorsPresentation> {
 
     return Scaffold(
       backgroundColor: kColorScaffold,
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              SizedBox(height: 30,),
-              TitleBar__widget(
-                title: '  Best tutors for you',
-                ontap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Scaffold(
-                      backgroundColor: kColorScaffold,
-                      appBar: appbar__widget(),
-                      body: SafeArea(
-                        child: SingleChildScrollView(
-                          child: Column(
-                            children: [
-                              CardVerticalSmart(tutors: tutors,),
-                              kSizedBoxHeight_16,
-                            ],
+      body: Stack(
+        children: [
+          SafeArea(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  SizedBox(height: 30,),
+                  TitleBar__widget(
+                    title: '  Best tutors for you',
+                    ontap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Scaffold(
+                          backgroundColor: kColorScaffold,
+                          appBar: appbar__widget(),
+                          body: SafeArea(
+                            child: SingleChildScrollView(
+                              child: Column(
+                                children: [
+                                  CardVerticalSmart(tutors: tutors,),
+                                  kSizedBoxHeight_16,
+                                ],
+                              ),
+                            ),
                           ),
+                        )),
+                      );
+                    },
+                  ),
+                  ScrollConfiguration(
+                    behavior: const ScrollBehavior(),
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                      child: Row(
+                        children: List.generate(
+                          tutors.length < 3 ? tutors.length : 3,
+                              (index) {
+                            Map<String, dynamic> tutor = tutors[index];
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 16),
+                              child: GestureDetector(
+                                onTap: () => PageNav().push(
+                                  context,
+                                  ScreenDetails(uid: tutorUids.elementAt(index)),
+                                ),
+                                child: Stack(
+                                  children: [
+                                    Container(
+                                      width: 200,
+                                      height: 250,
+                                      decoration: BoxDecoration(
+                                        color: baseDeepColor,
+                                        image: DecorationImage(
+                                          fit: BoxFit.cover,
+                                          image: NetworkImage(tutor['profileImageUrl']?? profileDefaultBig),
+                                        ),
+                                        borderRadius: BorderRadius.circular(20),
+                                      ),
+                                    ),
+                                    Container(
+                                      width: 200,
+                                      height: 250,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(20),
+                                        gradient: LinearGradient(
+                                          begin: Alignment.bottomCenter,
+                                          end: Alignment.topCenter,
+                                          stops: [0.2, 1.0],
+                                          colors: [
+                                            kColorBlack.withOpacity(0.7),
+                                            kColorWhite.withOpacity(0.0),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      right: 16,
+                                      top: 16,
+                                      child: Container(
+                                        padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
+                                        decoration: BoxDecoration(
+                                          color: kColorBlack.withOpacity(0.25),
+                                          borderRadius: BorderRadius.circular(50),
+                                        ),
+                                        child: Row(
+                                          children: <Widget>[
+                                            BodySmall__text(text: tutor['rating']?? 'New Tutor', color: kColorWhite),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      left: 20,
+                                      bottom: 16,
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          LabelSmall__text(text: tutor['name'], color: kColorWhite),
+                                          kSizedBoxHeight_8,
+                                          BodySmall__text(text: getEducationLevels(tutor), color: kColorText3),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            );
+                          },
                         ),
                       ),
-                    )
-                    ),
-                  );
-                },
-              ),
-              ScrollConfiguration(
-                behavior: const ScrollBehavior(),
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                  child: Row(
-                    children: List.generate(
-                      tutors.length < 3 ? tutors.length : 3,
-                          (index) {
-                        Map<String, dynamic> tutor = tutors[index];
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 16),
-                          child: GestureDetector(
-                            onTap: () => PageNav().push(
-                              context,
-                              ScreenDetails(uid: tutorUids.elementAt(index)),
-                            ),
-                            child: Stack(
-                              children: [
-                                Container(
-                                  width: 200,
-                                  height: 250,
-                                  decoration: BoxDecoration(
-                                    color: baseDeepColor,
-                                    image: DecorationImage(
-                                      fit: BoxFit.cover,
-                                      image: NetworkImage(tutor['profileImageUrl']?? profileDefaultBig),
-                                    ),
-                                    borderRadius: BorderRadius.circular(20),
-                                  ),
-                                ),
-                                Container(
-                                  width: 200,
-                                  height: 250,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(20),
-                                    gradient: LinearGradient(
-                                      begin: Alignment.bottomCenter,
-                                      end: Alignment.topCenter,
-                                      stops: [0.2, 1.0],
-                                      colors: [
-                                        kColorBlack.withOpacity(0.7),
-                                        kColorWhite.withOpacity(0.0),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Positioned(
-                                  right: 16,
-                                  top: 16,
-                                  child: Container(
-                                    padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
-                                    decoration: BoxDecoration(
-                                      color: kColorBlack.withOpacity(0.25),
-                                      borderRadius: BorderRadius.circular(50),
-                                    ),
-                                    child: Row(
-                                      children: <Widget>[
-                                        BodySmall__text(text: tutor['rating']?? 'New Tutor', color: kColorWhite),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Positioned(
-                                  left: 20,
-                                  bottom: 16,
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: <Widget>[
-                                      LabelSmall__text(text: tutor['name'], color: kColorWhite),
-                                      kSizedBoxHeight_8,
-                                      BodySmall__text(text: getEducationLevels(tutor), color: kColorText3),
-                                    ],
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                        );
-                      },
                     ),
                   ),
+                  kSizedBoxHeight_8,
+                  SearchAndFilter(),
+                  kSizedBoxHeight_8,
+                  TitleBar__widget(title: '  Filter tutors',
+                      textToDirect: 'Filter',
+                      ontap: () {
+
+                      }),
+                  TutorShowingVertical(),
+                  kSizedBoxHeight_16,
+                ],
+              ),
+            ),
+          ),
+          if (_isLoading)
+            Container(
+              color: Colors.white,
+              child: Center(
+                child: CircularProgressIndicator(
+                  color: baseDeepColor,
                 ),
               ),
-              kSizedBoxHeight_8,
-              SearchAndFilter(),
-              kSizedBoxHeight_8,
-              TitleBar__widget(title: '  Filter tutors',
-                  textToDirect: 'Filter',
-                  ontap: () {
-
-              }),
-              TutorShowingVertical(),
-              kSizedBoxHeight_16,
-            ],
-          ),
-        ),
+            ),
+        ],
       ),
     );
   }
-
   Future<List<Map<String, dynamic>>> getUserList() async {
     List<Map<String, dynamic>> tutors = [];
     try {

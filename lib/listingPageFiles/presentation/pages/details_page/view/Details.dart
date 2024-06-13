@@ -6,6 +6,8 @@ import 'package:turkify_bem/mainTools/constLinks.dart';
 import '../../../../../chatScreenFiles/GroupChatScreen.dart';
 import '../../../../../mainTools/APPColors.dart';
 import '../../../../../mainTools/firebaseMethods.dart';
+import '../../../../../reviewPageFiles/ReviewPage.dart';
+import '../../../../../reviewPageFiles/demoReview.dart';
 import '../../../components/button.dart';
 import '../../../components/text.dart';
 import '../widgets/HeaderImage.dart';
@@ -113,43 +115,10 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          // REFERENCE PAGE
-                          MaterialPageRoute(builder: (context) => Container()),
+                          MaterialPageRoute(builder: (context) => ReviewPage(tutorUid: widget.uid,)),
                         );
                       },
-                      child: const Padding(
-                        padding: EdgeInsets.all(16),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              'References',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.deepPurple, // Text color
-                              ),
-                            ),
-                            Row(
-                              children: [
-                                Text(
-                                  '3.4',
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.deepPurple, // Text color
-                                  ),
-                                ),
-                                SizedBox(width: 4),
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.amber,
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
+                      child: DemoReview(uidTutor: widget.uid,),
                     ),
                   ),
                   kSizedBoxHeight_24,

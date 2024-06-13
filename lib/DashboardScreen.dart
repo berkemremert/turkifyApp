@@ -273,7 +273,8 @@ class _DashboardScreenState extends State<DashboardScreen>
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => ReviewPage(tutorUid: 'fNRxolmhX2dY2HcwEyJOCaamc7U2'),
+            // builder: (context) => ReviewPage(tutorUid: 'fNRxolmhX2dY2HcwEyJOCaamc7U2'),
+            builder: (context) => royasPage(),
           ),
         );
       } else if (identifier == 'calendar') {
