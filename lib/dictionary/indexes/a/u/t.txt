@@ -1,3 +1,0 @@
-aut;005743
-auta atmak;005744
-auta çıkmak;005745

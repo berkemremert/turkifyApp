@@ -1,7 +1,0 @@
-apse;004102
-apse yapmak;004103
-apseleşme;004104
-apseleşmek;004105
-apseli;004106
-apsent;004107
-apsis;004108

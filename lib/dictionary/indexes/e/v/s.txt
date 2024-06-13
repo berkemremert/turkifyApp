@@ -1,8 +1,0 @@
-evsaf;025883
-evsel atık;025884
-evseme;025885
-evsemek;025886
-evsin;025887
-evsiz;025888
-evsiz barksız;025889
-evsizlik;025890

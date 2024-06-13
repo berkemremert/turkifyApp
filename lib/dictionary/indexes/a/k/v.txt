@@ -1,7 +1,0 @@
-akva;001736
-akvam;001737
-akvarel;001738
-akvarist;001739
-akvaryum;001740
-akvaryumcu;001741
-akvaryumculuk;001742

@@ -1,9 +1,0 @@
-zona;084713
-zonguldak;084714
-zonguldaklı;084715
-zonguldaklılık;084716
-zonk;084717
-zonklama;084718
-zonklamak;084719
-zonklatma;084720
-zonklatmak;084721

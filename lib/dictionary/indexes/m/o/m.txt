@@ -1,2 +1,0 @@
-moment;054942
-momentum;054943

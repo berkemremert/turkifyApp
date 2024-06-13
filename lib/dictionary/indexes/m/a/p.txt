@@ -1,5 +1,0 @@
-mapa;052628
-mapus;052629
-mapusa düşmek;052630
-mapushane;052631
-mapushaneye düşmek;052632

@@ -1,8 +1,0 @@
-atfedebilme;005557
-atfedebilmek;005558
-atfedilme;005559
-atfedilmek;005560
-atfediş;005561
-atfen;005562
-atfetme;005563
-atfetmek;005564

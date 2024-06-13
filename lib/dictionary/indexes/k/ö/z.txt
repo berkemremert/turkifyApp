@@ -1,5 +1,0 @@
-köz;048991
-közleme;048992
-közlemek;048993
-közleşme;048994
-közleşmek;048995

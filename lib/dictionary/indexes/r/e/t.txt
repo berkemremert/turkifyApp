@@ -1,4 +1,0 @@
-ret;063420
-retina;063421
-retorik;063422
-retrospektif;063423

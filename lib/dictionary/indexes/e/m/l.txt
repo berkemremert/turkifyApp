@@ -1,9 +1,0 @@
-emlak;024461
-emlak bürosu;024462
-emlak kredisi;024463
-emlak vergisi;024464
-emlakçı;024465
-emlakçılık;024466
-emleme;024467
-emlemek;024468
-emlik;024469

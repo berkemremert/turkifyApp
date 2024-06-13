@@ -1,7 +1,0 @@
-irs;037942
-irsal;037943
-irsaliye;037944
-irsaliye faturası;037945
-irsen;037946
-irsiyet;037947
-irsî;037948

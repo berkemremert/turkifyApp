@@ -1,7 +1,0 @@
-kispet;045500
-kispet çıkarılması;045501
-kist;045502
-kistleşme;045503
-kistleşmek;045504
-kisve;045505
-kisveye bürünmek;045506

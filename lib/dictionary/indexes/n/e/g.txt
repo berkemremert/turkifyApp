@@ -1,3 +1,0 @@
-negatif;057453
-negatif büyüklük;057454
-negatif sayı;057455

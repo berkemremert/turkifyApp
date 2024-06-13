@@ -1,9 +1,0 @@
-eğe;026087
-eğe;026088
-eğebilme;026089
-eğebilmek;026090
-eğeleme;026091
-eğelemek;026092
-eğelenme;026093
-eğelenmek;026094
-eğer;026095

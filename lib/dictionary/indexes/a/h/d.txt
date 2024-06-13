@@ -1,7 +1,0 @@
-ahd-i atik;001025
-ahd-i cedit;001026
-ahde vefa;001027
-ahde vefa etmek;001028
-ahdetme;001029
-ahdetmek;001030
-ahdî;001031

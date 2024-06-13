@@ -1,9 +1,0 @@
-ritim;063557
-ritim saz;063558
-ritimli;063559
-ritimlilik;063560
-ritimsiz;063561
-ritimsizlik;063562
-ritmik;063563
-ritmik sayma;063564
-ritüel;063565

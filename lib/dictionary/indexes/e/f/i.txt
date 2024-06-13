@@ -1,7 +1,0 @@
-efil efil;023294
-efil efil esmek;023295
-efil efil etmek;023296
-efildeme;023297
-efildemek;023298
-efileme;023299
-efilemek;023300

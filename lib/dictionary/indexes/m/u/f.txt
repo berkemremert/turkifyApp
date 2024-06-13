@@ -1,5 +1,0 @@
-muf;055206
-mufassal;055207
-mufla;055208
-muflon;055209
-muflonlu;055210

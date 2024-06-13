@@ -1,6 +1,0 @@
-ovulma;059623
-ovulmak;059624
-ovunma;059625
-ovunmak;059626
-ovuşturma;059627
-ovuşturmak;059628

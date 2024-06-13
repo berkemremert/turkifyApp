@@ -1,6 +1,0 @@
-enlem;024704
-enlem dairesi;024705
-enlemesine;024706
-enli;024707
-enlice;024708
-enlilik;024709

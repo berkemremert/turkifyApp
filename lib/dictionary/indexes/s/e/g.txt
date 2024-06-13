@@ -1,5 +1,0 @@
-segman;066125
-segman atmak;066126
-segment;066127
-segâh;066128
-segâh perdesi;066129

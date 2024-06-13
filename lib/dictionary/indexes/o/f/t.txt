@@ -1,4 +1,0 @@
-oftalmolog;058381
-oftalmoloji;058382
-oftalmolojik;058383
-oftalmoskop;058384

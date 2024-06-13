@@ -1,7 +1,0 @@
-faal;026465
-faaliyet;026466
-faaliyet göstermek;026467
-faaliyete geçmek;026468
-faaliyette bulunmak;026469
-faaliyetten alıkoymak;026470
-faallik;026471

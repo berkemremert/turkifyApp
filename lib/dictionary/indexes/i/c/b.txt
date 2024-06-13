@@ -1,2 +1,0 @@
-icbar;036023
-icbar etmek;036024

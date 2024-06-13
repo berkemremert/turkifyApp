@@ -1,8 +1,0 @@
-üye;090332
-üye aidatı;090333
-üye olmak;090334
-üye tam sayısı;090335
-üyelik;090336
-üyelik aidatı;090337
-üyelik dondurmak;090338
-üyeliği düşmek;090339

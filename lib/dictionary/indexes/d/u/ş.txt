@@ -1,8 +1,0 @@
-duş;022026
-duş kabini;022027
-duş teknesi;022028
-duşak;022029
-duşaklama;022030
-duşaklamak;022031
-duşlu;022032
-duşsuz;022033

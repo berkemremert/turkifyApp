@@ -1,5 +1,0 @@
-fava;026772
-favori;026773
-favorili;026774
-favorilik;026775
-favorisiz;026776

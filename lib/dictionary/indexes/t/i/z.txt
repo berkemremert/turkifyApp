@@ -1,6 +1,0 @@
-tiz;075088
-tiz ses;075089
-tiz sesli;075090
-tiz seslilik;075091
-tizleşme;075092
-tizleşmek;075093

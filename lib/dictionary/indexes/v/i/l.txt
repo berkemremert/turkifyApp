@@ -1,4 +1,0 @@
-viladi;078869
-vilayet;078870
-vilayet binası;078871
-villa;078872

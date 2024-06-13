@@ -1,8 +1,0 @@
-ayma;006294
-aymak;006295
-aymaz;006296
-aymazlaşabilme;006297
-aymazlaşabilmek;006298
-aymazlaşma;006299
-aymazlaşmak;006300
-aymazlık;006301

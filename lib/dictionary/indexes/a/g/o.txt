@@ -1,3 +1,0 @@
-agop;000980
-agora;000981
-agorafobi;000982

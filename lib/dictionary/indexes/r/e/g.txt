@@ -1,6 +1,0 @@
-regaip gecesi;063204
-regaip kandili;063205
-reglan;063206
-regresyon;063207
-regülasyon;063208
-regülatör;063209

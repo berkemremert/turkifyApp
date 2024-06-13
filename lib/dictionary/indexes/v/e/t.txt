@@ -1,9 +1,0 @@
-veteriner;078794
-veteriner hekim;078795
-veteriner hekimliği;078796
-veterinerlik;078797
-vetire;078798
-veto;078799
-veto etmek;078800
-veto hakkı;078801
-veto yemek;078802

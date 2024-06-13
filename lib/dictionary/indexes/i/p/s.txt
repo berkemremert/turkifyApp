@@ -1,6 +1,0 @@
-ipsi;037841
-ipsi solucanlar;037842
-ipsiler;037843
-ipsiz;037844
-ipsiz sapsız;037845
-ipsizlik;037846

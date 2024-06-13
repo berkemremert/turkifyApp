@@ -1,7 +1,0 @@
-ebru;023104
-ebrucu;023105
-ebruculuk;023106
-ebrulama;023107
-ebrulamak;023108
-ebruli;023109
-ebrulu;023110

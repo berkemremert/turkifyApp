@@ -1,8 +1,0 @@
-legal;051133
-legalleşme;051134
-legalleşmek;051135
-legalleştirme;051136
-legalleştirmek;051137
-legallik;051138
-legato;051139
-legorn;051140

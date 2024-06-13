@@ -1,6 +1,0 @@
-köhne;048545
-köhneleşme;048546
-köhneleşmek;048547
-köhnelik;048548
-köhneme;048549
-köhnemek;048550

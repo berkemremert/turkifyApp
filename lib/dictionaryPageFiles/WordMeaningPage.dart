@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../mainTools/firebaseMethods.dart';
 
 class DictionaryPage extends StatefulWidget {
   @override
@@ -7,18 +8,22 @@ class DictionaryPage extends StatefulWidget {
 
 class _DictionaryPageState extends State<DictionaryPage> {
   String searchQuery = '';
-  List<String> meanings = [];
+  bool searched = false;
+  List<dynamic> meanings = [];
   TextEditingController _searchController = TextEditingController();
 
-  void _onSearch() {
+  void _onSearch() async{
+    searched = true;
+    var result = await getDictWordByWord(searchQuery);
     setState(() {
       searchQuery = _searchController.text;
-      meanings = [
-        '$searchQuery Meaning one. Lorem ipsum.',
-        '$searchQuery Meaning 2. Lorem ipsum',
-        '$searchQuery Meaning 3. Lorem ipsum',
-        '$searchQuery Meaning 4. Lorem ipsum',
-      ];
+      if (result != null){
+        meanings = result["meanings"];
+      }
+      else{
+        meanings = [];
+      }
+
     });
   }
 
@@ -69,8 +74,8 @@ class _DictionaryPageState extends State<DictionaryPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              if (meanings.isNotEmpty) ...[
-                true ?
+              if (searched) ...[
+                meanings.isNotEmpty ?
                 _buildMeaningsCard(meanings)
                 :
                 _buildError(),
@@ -84,7 +89,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
     );
   }
 
-  Widget _buildMeaningsCard(List<String> meanings) {
+  Widget _buildMeaningsCard(List<dynamic> meanings) {
     return Card(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16.0),

@@ -1,4 +1,0 @@
-koala;045689
-koalisyon;045690
-koalisyon hükûmeti;045691
-koaptör;045692

@@ -1,2 +1,0 @@
-jest;039869
-jest yapmak;039870
