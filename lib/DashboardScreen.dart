@@ -10,6 +10,7 @@ import 'package:turkify_bem/listingPageFiles/StudentsListingPage.dart';
 import 'package:turkify_bem/listingPageFiles/TutorsListingPage.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
+import 'package:turkify_bem/reviewPageFiles/ReviewPage.dart';
 import 'package:turkify_bem/royaPage.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageStudent.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageTutor.dart';
@@ -18,6 +19,7 @@ import 'package:turkify_bem/welcomingInformationPageFiles/WelcomingInformationPa
 
 import 'RoyaPageRoya.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
+import 'dictionaryPageFiles/WordMeaningPage.dart';
 import 'filterPageFiles/FilterPage.dart';
 import 'listingPageFiles/presentation/pages/home/view/TutorsPresentation.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
@@ -271,7 +273,8 @@ class _DashboardScreenState extends State<DashboardScreen>
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => WelcomingInformationPage(),
+            // builder: (context) => ReviewPage(tutorUid: 'fNRxolmhX2dY2HcwEyJOCaamc7U2'),
+            builder: (context) => royasPage(),
           ),
         );
       } else if (identifier == 'calendar') {

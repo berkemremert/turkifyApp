@@ -6,6 +6,8 @@ import 'package:turkify_bem/mainTools/constLinks.dart';
 import '../../../../../chatScreenFiles/GroupChatScreen.dart';
 import '../../../../../mainTools/APPColors.dart';
 import '../../../../../mainTools/firebaseMethods.dart';
+import '../../../../../reviewPageFiles/ReviewPage.dart';
+import '../../../../../reviewPageFiles/demoReview.dart';
 import '../../../components/button.dart';
 import '../../../components/text.dart';
 import '../widgets/HeaderImage.dart';
@@ -52,192 +54,142 @@ class _ScreenDetailsState extends State<ScreenDetails> {
     ScreenConfig().init(context);
     return Scaffold(
       backgroundColor: kColorScaffold,
-      body: Stack(
+      body: Column(
         children: [
-          if (_isLoading)
-            Center(child: CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(baseDeepColor),
-            ))
-          else
-            SafeArea(
-              child: SingleChildScrollView(
-                padding: const EdgeInsets.only(left: 16, right: 16, bottom: 80),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    kSizedBoxHeight_16,
-                    HeaderImage__widget(
-                      imageLink: _userData['profileImageUrl']?? profileDefaultBig,
-                      name: _userData['name']?? 'Tutor Name',
-                      offer: TutorsPresentationState().getEducationLevels(_userData),
+          Expanded(
+            child: _isLoading
+                ? Center(
+              child: CircularProgressIndicator(
+                valueColor: AlwaysStoppedAnimation<Color>(baseDeepColor),
+              ),
+            )
+                : SingleChildScrollView(
+              padding: const EdgeInsets.only(left: 16, right: 16, bottom: 80),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  SizedBox(height: 50,),
+                  HeaderImage__widget(
+                    imageLink: _userData['profileImageUrl'] ?? profileDefaultBig,
+                    name: _userData['name'] ?? 'Tutor Name',
+                    offer: TutorsPresentationState().getEducationLevels(_userData),
+                  ),
+                  kSizedBoxHeight_24,
+                  Container(
+                    width: double.infinity,
+                    padding: EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: baseDeepColor.withOpacity(0.6),
+                      borderRadius: BorderRadius.circular(12),
                     ),
-                    kSizedBoxHeight_24,
-                    Container(
-                      width: double.infinity,
-                      padding: EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        color: baseDeepColor.withOpacity(0.6),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const LabelSmall__text(text: 'Who am I?',
-                            color: Colors.white,),
-                          kSizedBoxHeight_16,
-                          RichText(
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                            text: TextSpan(
-                              text: (_userData['tutorMap'] != null && _userData['tutorMap'] != []) ?_userData['tutorMap']['whoamI'] : 'No description.',
-                              style: kBodySmallTextstylee,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    kSizedBoxHeight_24,
-                    Container(
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        color: Colors.black.withOpacity(0.1), // Adjust the opacity as needed
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: TextButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            // REFERENCE PAGE
-                            MaterialPageRoute(builder: (context) => Container()),
-                          );
-                        },
-                        child: const Padding(
-                          padding: EdgeInsets.all(16),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                'References',
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.deepPurple, // Text color
-                                ),
-                              ),
-                              Row(
-                                children: [
-                                  Text(
-                                    '3.4',
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.deepPurple, // Text color
-                                    ),
-                                  ),
-                                  SizedBox(width: 4),
-                                  Icon(
-                                    Icons.star,
-                                    color: Colors.amber,
-                                  ),
-                                ],
-                              ),
-                            ],
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const LabelSmall__text(
+                          text: 'Who am I?',
+                          color: Colors.white,
+                        ),
+                        kSizedBoxHeight_16,
+                        RichText(
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          text: TextSpan(
+                            text: (_userData['tutorMap'] != null &&
+                                _userData['tutorMap'] != [])
+                                ? _userData['tutorMap']['whoamI']
+                                : 'No description.',
+                            style: kBodySmallTextstylee,
                           ),
                         ),
-                      ),
-                    ),
-
-                    kSizedBoxHeight_24,
-                    GestureDetector(
-                      onTap: () {
-                        print("aaaa");
-                      },
-                      child: Container(),
-                    )
-                  ],
-                ),
-              ),
-            ),
-          Positioned(
-            bottom: 0,
-            child: Container(
-              width: ScreenConfig.screenWidth,
-              decoration: BoxDecoration(
-                color: kColorWhite,
-                gradient: LinearGradient(
-                  begin: Alignment.bottomCenter,
-                  end: Alignment.topCenter,
-                  stops: const [0.6, 1.0],
-                  colors: [
-                    kColorWhite,
-                    kColorWhite.withOpacity(0.0),
-                  ],
-                ),
-              ),
-              child: Padding(
-                padding:
-                const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
-                child: Row(
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        BodyMedium__text(text: "${_userData['name']} teaches", color: black),
-                        kSizedBoxHeight_8,
-                        LabelMedium__text(text: TutorsPresentationState().getEducationLevels(_userData)),
                       ],
                     ),
-                    const Spacer(),
-                    Container(
-                      decoration: BoxDecoration(boxShadow: [
-                        BoxShadow(
-                          color: Colors.deepPurple.withOpacity(0.2),
-                          offset: const Offset(0, 15),
-                          blurRadius: 15,
-                        ),
-                      ]),
-                      child: Accent__Button__Medium(
-                        text: 'Send Request',
-                        leftIconVisibility: false,
-                        rightIconVisibility: false,
-                        onTap: () {
-                          print("$_userData");
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => ChatPage(data: _userData, friendId: widget.uid),
-                            ),
-                          );
-                        },
-                      ),
-                    )
-                  ],
-                ),
+                  ),
+                  kSizedBoxHeight_24,
+                  Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.1), // Adjust the opacity as needed
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ReviewPage(tutorUid: widget.uid,)),
+                        );
+                      },
+                      child: DemoReview(uidTutor: widget.uid,),
+                    ),
+                  ),
+                  kSizedBoxHeight_24,
+                  GestureDetector(
+                    onTap: () {
+                      print("aaaa");
+                    },
+                    child: Container(),
+                  )
+                ],
               ),
             ),
-          )
+          ),
+          Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              color: kColorWhite,
+              gradient: LinearGradient(
+                begin: Alignment.bottomCenter,
+                end: Alignment.topCenter,
+                stops: const [0.6, 1.0],
+                colors: [
+                  kColorWhite,
+                  kColorWhite.withOpacity(0.0),
+                ],
+              ),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      BodyMedium__text(text: "${_userData['name']} teaches", color: black),
+                      kSizedBoxHeight_8,
+                      LabelMedium__text(
+                        text: TutorsPresentationState().getEducationLevels(_userData),
+                      ),
+                    ],
+                  ),
+                  const Spacer(),
+                  Container(
+                    decoration: BoxDecoration(boxShadow: [
+                      BoxShadow(
+                        color: Colors.deepPurple.withOpacity(0.2),
+                        offset: const Offset(0, 15),
+                        blurRadius: 15,
+                      ),
+                    ]),
+                    child: Accent__Button__Medium(
+                      text: 'Send Request',
+                      leftIconVisibility: false,
+                      rightIconVisibility: false,
+                      onTap: () {
+                        print("$_userData");
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ChatPage(data: _userData, friendId: widget.uid),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
   }
-
-  // Future<Map<String, dynamic>?> getUserData(String documentId) async {
-  //   try {
-  //     DocumentSnapshot userSnapshot = await FirebaseFirestore.instance
-  //         .collection('users')
-  //         .doc(documentId)
-  //         .get();
-  //
-  //     if (userSnapshot.exists) {
-  //       Map<String, dynamic> userData =
-  //       userSnapshot.data() as Map<String, dynamic>;
-  //       return userData;
-  //     } else {
-  //       return null;
-  //     }
-  //   } catch (e) {
-  //     print('Error retrieving user data: $e');
-  //     return null;
-  //   }
-  // }
 }

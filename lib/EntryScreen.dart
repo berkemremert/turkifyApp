@@ -17,7 +17,7 @@ class EntryScreen extends StatelessWidget {
 
     if (email != null && password != null) {
       try {
-        UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
+        UserCredential? userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
           email: email,
           password: password,
         );
