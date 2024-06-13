@@ -70,7 +70,8 @@ class _DictionaryPageState extends State<DictionaryPage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               if (meanings.isNotEmpty) ...[
-                _buildMeaningsCard(meanings),
+                // _buildMeaningsCard(meanings),
+                _buildError(),
                 SizedBox(height: 16.0),
               ],
               _buildWordOfTheDayCard(),
@@ -92,6 +93,14 @@ class _DictionaryPageState extends State<DictionaryPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Text(
+              searchQuery,
+              style: TextStyle(
+                fontSize: 18.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 12,),
             Text(
               'Meanings',
               style: TextStyle(
@@ -153,6 +162,47 @@ class _DictionaryPageState extends State<DictionaryPage> {
             Text('1. Meaning one. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.'),
             SizedBox(height: 8.0),
             Text('2. Meaning 2. Lorem ipsum'),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildError() {
+    return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16.0),
+      ),
+      color: Colors.grey[50],
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              searchQuery,
+              style: TextStyle(
+                fontSize: 18.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 16,),
+            Container(
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.grey[300],
+                borderRadius: BorderRadius.circular(16.0),
+              ),
+              padding: EdgeInsets.symmetric(vertical: 8.0),
+              child: Text(
+                'Word not found',
+                style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.red[400],
+                ),
+              ),
+            ),
           ],
         ),
       ),

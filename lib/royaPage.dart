@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:free_english_dictionary/free_english_dictionary.dart';
 import 'package:http/http.dart';
@@ -15,6 +16,15 @@ class royasPage extends StatelessWidget {
       ),
       home: MyHomePage(),
     );
+  }
+}
+
+getDictWordByWord(String word) async {
+  var wordDoc = await FirebaseFirestore.instance.collection('dictionary').where('word', isEqualTo: word).get();
+  if (wordDoc.docs.isNotEmpty) {
+    return wordDoc.docs.first.data() as Map<String, dynamic>;
+  } else {
+    return null;
   }
 }
 

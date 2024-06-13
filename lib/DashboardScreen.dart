@@ -274,7 +274,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           context,
           MaterialPageRoute(
             // builder: (context) => ReviewPage(tutorUid: 'fNRxolmhX2dY2HcwEyJOCaamc7U2'),
-            builder: (context) => royasPage(),
+            builder: (context) => DictionaryPage(),
           ),
         );
       } else if (identifier == 'calendar') {
