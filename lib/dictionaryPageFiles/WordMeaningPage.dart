@@ -70,7 +70,9 @@ class _DictionaryPageState extends State<DictionaryPage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               if (meanings.isNotEmpty) ...[
-                // _buildMeaningsCard(meanings),
+                true ?
+                _buildMeaningsCard(meanings)
+                :
                 _buildError(),
                 SizedBox(height: 16.0),
               ],
