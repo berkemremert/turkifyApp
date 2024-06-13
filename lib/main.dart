@@ -1,4 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'mainTools/firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:turkify_bem/EntryScreen.dart';
@@ -17,8 +18,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: EntryScreen(),
+      theme: ThemeData(
+        primaryColor: baseDeepColor,
+        hintColor: baseLightColor,
+      ),
     );
   }
 }
