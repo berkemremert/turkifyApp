@@ -338,9 +338,11 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
               ),
               onPressed: () async {
                 String newAbout = aboutController.text;
-                await updateAboutInFirebase(newAbout);
                 print('New about: $newAbout');
-                Navigator.of(context).pop();
+                if((newAbout.compareTo("") != 0) && newAbout.trim().isNotEmpty) {
+                  await updateAboutInFirebase(newAbout);
+                  Navigator.of(context).pop();
+                }
               },
             ),
           ],

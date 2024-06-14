@@ -332,19 +332,14 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
             TextButton(
               onPressed: () async {
                 String newAbout = aboutController.text;
-                await updateAboutInFirebase(newAbout);
-                print('New about: $newAbout');
-
-                Navigator.of(context).pop();
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (context) => const ScaffoldWidget(
-                //       title: 'Settings',
-                //       child: SettingsPageTutor(),
-                //     ),
-                //   ),
-                // );
+                print('New about: *${newAbout}*');
+                if((newAbout.compareTo("") != 0) && newAbout.trim().isNotEmpty) {
+                  await updateAboutInFirebase(newAbout);
+                  Navigator.of(context).pop();
+                }
+                else{
+                  print("Error");
+                }
               },
               child: Text(
                   'Submit',
