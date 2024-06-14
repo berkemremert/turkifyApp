@@ -13,7 +13,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
   List<dynamic> meanings = [];
   TextEditingController _searchController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
-  Map<String, dynamic> wordOfTheDay = {'word' : 'Word of The Day'};
+  Map<String, dynamic> wordOfTheDay = {'word' : 'Word of The Day', 'meanings' : []};
 
   @override
   void initState() {
@@ -174,7 +174,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
               ),
               padding: EdgeInsets.symmetric(vertical: 8.0),
               child: Text(
-                wordOfTheDay['word'],
+                wordOfTheDay['word'][0].toUpperCase() + wordOfTheDay['word'].substring(1),
                 style: TextStyle(
                   fontSize: 16.0,
                   fontWeight: FontWeight.bold,
@@ -183,9 +183,14 @@ class _DictionaryPageState extends State<DictionaryPage> {
               ),
             ),
             SizedBox(height: 16.0),
-            Text('1. Meaning one. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.'),
-            SizedBox(height: 8.0),
-            Text('2. Meaning 2. Lorem ipsum'),
+            ...wordOfTheDay['meanings'].asMap().entries.map((entry) {
+              int idx = entry.key + 1;
+              String meaning = entry.value;
+              return Padding(
+                padding: const EdgeInsets.only(top: 8.0),
+                child: Text('$idx. $meaning'),
+              );
+            }).toList(),
           ],
         ),
       ),
