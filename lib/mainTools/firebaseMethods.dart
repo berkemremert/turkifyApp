@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:intl/intl.dart';
 
 FirebaseFirestore firebaseInstance = FirebaseFirestore.instance;
 
@@ -32,4 +33,27 @@ getDictWordByWord(String word) async {
   } else {
     return null;
   }
+}
+
+getWordOfTheDay(String date) async {
+  var word = (await FirebaseFirestore.instance.collection('wordOfTheDay').doc(date).get() as Map<String, dynamic>)["word"];
+  var wordDoc = await FirebaseFirestore.instance.collection('dictionary').where('word', isEqualTo: word).get();
+  if (wordDoc.docs.isNotEmpty) {
+    return wordDoc.docs.first.data() as Map<String, dynamic>;
+  } else {
+    return null;
+  }
+}
+
+getAnimalandPicture (int dayOfTheMonth) async {
+  NumberFormat formatter = new NumberFormat("000");
+  var wordDoc = await FirebaseFirestore.instance.collection('dictWithPictures').doc(formatter.format(dayOfTheMonth.toString())).get() as Map<String, dynamic>;
+  return wordDoc;
+
+}
+
+getProverb (int dayOfTheMonth) async {
+  NumberFormat formatter = new NumberFormat("000");
+  var wordDoc = await FirebaseFirestore.instance.collection('proverbs').doc(formatter.format(dayOfTheMonth.toString())).get();
+  return wordDoc;
 }

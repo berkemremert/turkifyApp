@@ -22,7 +22,8 @@ class _DictionaryPageState extends State<DictionaryPage> {
   }
 
   Future<void> initWordOfTheDay() async {
-    wordOfTheDay = await getDictWordByWord('elma') as Map<String, dynamic>;
+
+    wordOfTheDay = await getDictWord('elma') as Map<String, dynamic>;
     setState(() {
 
     });
