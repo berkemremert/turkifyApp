@@ -243,8 +243,8 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
     String currentSurname = _userData['surname'];
     String? errorMessage;
 
-    nameController.text = currentName;
-    surnameController.text = currentSurname;
+    // nameController.text = currentName;
+    // surnameController.text = currentSurname;
 
     return showDialog(
       context: context,
@@ -264,13 +264,13 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: darkRed),
                       ),
-                      enabledBorder: UnderlineInputBorder(
+                      enabledBorder: const UnderlineInputBorder(
                         borderSide: BorderSide(color: Colors.grey),
                       ),
                       errorText: errorMessage == 'name' ? 'Name cannot be empty' : null,
                     ),
                   ),
-                  SizedBox(height: 16), // Add some space between the fields
+                  const SizedBox(height: 16),
                   TextField(
                     controller: surnameController,
                     decoration: InputDecoration(
@@ -278,7 +278,7 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: darkRed),
                       ),
-                      enabledBorder: UnderlineInputBorder(
+                      enabledBorder: const UnderlineInputBorder(
                         borderSide: BorderSide(color: Colors.grey),
                       ),
                       errorText: errorMessage == 'surname' ? 'Surname cannot be empty' : null,
