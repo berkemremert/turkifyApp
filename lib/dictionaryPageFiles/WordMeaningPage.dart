@@ -12,6 +12,21 @@ class _DictionaryPageState extends State<DictionaryPage> {
   bool searched = false;
   List<dynamic> meanings = [];
   TextEditingController _searchController = TextEditingController();
+  final FocusNode _focusNode = FocusNode();
+  Map<String, dynamic> wordOfTheDay = {'word' : 'Word of The Day'};
+
+  @override
+  void initState() {
+    super.initState();
+    initWordOfTheDay();
+  }
+
+  Future<void> initWordOfTheDay() async {
+    wordOfTheDay = await getDictWordByWord('elma') as Map<String, dynamic>;
+    setState(() {
+
+    });
+  }
 
   void _onSearch() async{
     searchQuery = _searchController.text;
@@ -23,12 +38,14 @@ class _DictionaryPageState extends State<DictionaryPage> {
       meanings = [];
     }
     searched = true;
+    _focusNode.unfocus();
     setState(() {});
   }
 
   @override
   void dispose() {
     _searchController.dispose();
+    _focusNode.dispose();
     super.dispose();
   }
 
@@ -49,6 +66,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
             children: [
               Expanded(
                 child: TextField(
+                  focusNode: _focusNode,
                   controller: _searchController,
                   decoration: InputDecoration(
                     hintText: 'Search...',
@@ -100,7 +118,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              searchQuery,
+              searchQuery[0].toUpperCase() + searchQuery.substring(1),
               style: TextStyle(
                 fontSize: 18.0,
                 fontWeight: FontWeight.bold,
@@ -156,7 +174,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
               ),
               padding: EdgeInsets.symmetric(vertical: 8.0),
               child: Text(
-                'Word of the Day',
+                wordOfTheDay['word'],
                 style: TextStyle(
                   fontSize: 16.0,
                   fontWeight: FontWeight.bold,
