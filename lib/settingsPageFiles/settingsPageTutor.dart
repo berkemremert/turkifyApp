@@ -276,7 +276,7 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
                     decoration: InputDecoration(
                       hintText: 'Enter new surname',
                       focusedBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: darkRed)
+                        borderSide: BorderSide(color: darkRed),
                       ),
                       enabledBorder: const UnderlineInputBorder(
                         borderSide: BorderSide(color: Colors.grey),
