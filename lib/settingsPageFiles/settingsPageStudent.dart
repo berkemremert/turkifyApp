@@ -9,6 +9,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:flutter/rendering.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
@@ -263,7 +264,7 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
           ),
           actions: <Widget>[
             TextButton(
-              child: const Text('Submit'),
+              child: const Text('Change'),
               onPressed: () async {
                 String newName = nameController.text;
                 String newSurname = surnameController.text;
@@ -340,15 +341,6 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
                 await updateAboutInFirebase(newAbout);
                 print('New about: $newAbout');
                 Navigator.of(context).pop();
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ScaffoldWidget(
-                      title: 'Settings',
-                      child: SettingsPageStudent(),
-                    ),
-                  ),
-                );
               },
             ),
           ],
@@ -366,6 +358,9 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
           'studentMap.whoamI': newAbout,
         });
         print('About updated successfully in Firebase.');
+        setState(() {
+          _userData['studentMap']['whoamI'] = newAbout;
+        });
       }
     } catch (e) {
       print('Error updating about in Firebase: $e');
@@ -424,13 +419,23 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
                 onPressed: () {
                   Navigator.of(context).pop(null);
                 },
-                child: const Text("Cancel"),
+                child: Text(
+                    "Cancel",
+                  style: TextStyle(
+                    color: baseDeepColor
+                  ),
+                ),
               ),
               TextButton(
                 onPressed: () async {
                   Navigator.of(context).pop(await uploadAndCropImage(imageFile));
                 },
-                child: const Text("Confirm"),
+                child: Text(
+                  "Confirm",
+                  style: TextStyle(
+                      color: baseDeepColor
+                  ),
+                ),
               ),
             ],
           );

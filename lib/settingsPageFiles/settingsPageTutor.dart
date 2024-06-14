@@ -264,7 +264,7 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
           ),
           actions: <Widget>[
             TextButton(
-              child: const Text('Submit'),
+              child: const Text('Change'),
               onPressed: () async {
                 String newName = nameController.text;
                 String newSurname = surnameController.text;
@@ -330,27 +330,28 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
           ),
             actions: <Widget>[
             TextButton(
+              onPressed: () async {
+                String newAbout = aboutController.text;
+                await updateAboutInFirebase(newAbout);
+                print('New about: $newAbout');
+
+                Navigator.of(context).pop();
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) => const ScaffoldWidget(
+                //       title: 'Settings',
+                //       child: SettingsPageTutor(),
+                //     ),
+                //   ),
+                // );
+              },
               child: Text(
                   'Submit',
                 style: TextStyle(
                   color: baseDeepColor
                 ),
               ),
-              onPressed: () async {
-                String newAbout = aboutController.text;
-                await updateAboutInFirebase(newAbout);
-                print('New about: $newAbout');
-                Navigator.of(context).pop();
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ScaffoldWidget(
-                      title: 'Settings',
-                      child: SettingsPageTutor(),
-                    ),
-                  ),
-                );
-              },
             ),
           ],
         );
@@ -359,12 +360,15 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
   }
 
 
-  Future<void> updateAboutInFirebase(String newAbout) async {
+  Future<String?> updateAboutInFirebase(String newAbout) async {
     try {
       User? currentUser = _auth.currentUser;
       if (currentUser != null) {
         await FirebaseFirestore.instance.collection('users').doc(currentUser.uid).update({
           'tutorMap.whoamI': newAbout,
+        });
+        setState(() {
+          _userData['tutorMap']['whoamI'] = newAbout;
         });
         print('About updated successfully in Firebase.');
       }
@@ -372,6 +376,7 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
       print('Error updating about in Firebase: $e');
       // Handle error
     }
+    return newAbout;
   }
 
   Future<void> deleteAccount() async {
