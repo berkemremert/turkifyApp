@@ -99,6 +99,10 @@ class _DictionaryPageState extends State<DictionaryPage> {
                 SizedBox(height: 16.0),
               ],
               _buildWordOfTheDayCard(),
+              SizedBox(height: 16.0),
+              _buildWordOfTheDayImage(),
+              SizedBox(height: 16.0),
+              _buildPhraseOfTheDay(),
             ],
           ),
         ),
@@ -120,7 +124,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
             Text(
               searchQuery[0].toUpperCase() + searchQuery.substring(1),
               style: TextStyle(
-                fontSize: 18.0,
+                fontSize: 20.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -176,9 +180,16 @@ class _DictionaryPageState extends State<DictionaryPage> {
               child: Text(
                 wordOfTheDay['word'][0].toUpperCase() + wordOfTheDay['word'].substring(1),
                 style: TextStyle(
-                  fontSize: 16.0,
+                  fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
+                  shadows: [
+                    Shadow(
+                      offset: Offset(2.0, 2.0),
+                      blurRadius: 5.0,
+                      color: Color.fromARGB(150, 0, 0, 0),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -230,6 +241,120 @@ class _DictionaryPageState extends State<DictionaryPage> {
                   fontWeight: FontWeight.bold,
                   color: Colors.red[400],
                 ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildWordOfTheDayImage() {
+    return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16.0),
+      ),
+      color: Colors.grey[50],
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Word with a Picture',
+              style: TextStyle(
+                fontSize: 18.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 16.0),
+            Container(
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.red[200],
+                borderRadius: BorderRadius.circular(16.0),
+              ),
+              padding: EdgeInsets.symmetric(vertical: 8.0),
+              child: Text(
+                'zürafa'[0].toUpperCase() + 'zürafa'.substring(1),
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  shadows: [
+                    Shadow(
+                      offset: Offset(2.0, 2.0),
+                      blurRadius: 5.0,
+                      color: Color.fromARGB(150, 0, 0, 0),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(height: 16.0),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(16.0),
+              child: Image.network(
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLyANhngulTYoAxEX4xROewRBC4yC8rp124A&s',
+                fit: BoxFit.cover,
+                height: 200.0,
+                width: double.infinity,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildPhraseOfTheDay() {
+    return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16.0),
+      ),
+      color: Colors.grey[50],
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Phrase of the Day',
+              style: TextStyle(
+                fontSize: 18.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 16.0),
+            Container(
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.red[200],
+                borderRadius: BorderRadius.circular(16.0),
+              ),
+              padding: EdgeInsets.symmetric(vertical: 8.0),
+              child: Text(
+                'deden'[0].toUpperCase() + 'deden'.substring(1),
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  shadows: [
+                    Shadow(
+                      offset: Offset(2.0, 2.0),
+                      blurRadius: 5.0,
+                      color: Color.fromARGB(150, 0, 0, 0),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(height: 16.0),
+            Text(
+              'Phraseeeee',
+              style: TextStyle(
+                fontSize: 16.0,
+                color: Colors.black,
               ),
             ),
           ],
