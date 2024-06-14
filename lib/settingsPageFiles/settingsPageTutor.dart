@@ -8,6 +8,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
@@ -84,7 +85,7 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
 
             const SizedBox(height: 15),
             Text(
-              "${_userData['name']} ${_userData['surname']}" ?? "Name Surname",
+              "${_userData['name']} ${_userData['surname']}",
               style: TextStyle(
                 color: textColor(),
                 fontSize: 24,
@@ -313,18 +314,28 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
             width: double.maxFinite,
             child: TextField(
               controller: aboutController,
-              maxLines: null, // Allow multiline input
+              maxLines: null,
               decoration: InputDecoration(
                 hintText: isTutor! ? _userData['tutorMap']['whoamI'] : _userData['studentMap']['whoamI'],
                 alignLabelWithHint: true,
-                contentPadding: const EdgeInsets.symmetric(vertical: 40),
-                border: const OutlineInputBorder(),
+                contentPadding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: darkRed),
+                ),
+                border: OutlineInputBorder(
+                  borderSide: BorderSide(color: darkRed),
+                ),
               ),
             ),
           ),
-          actions: <Widget>[
+            actions: <Widget>[
             TextButton(
-              child: const Text('Submit'),
+              child: Text(
+                  'Submit',
+                style: TextStyle(
+                  color: baseDeepColor
+                ),
+              ),
               onPressed: () async {
                 String newAbout = aboutController.text;
                 await updateAboutInFirebase(newAbout);
