@@ -84,7 +84,31 @@ class HeaderImage__widget extends StatelessWidget {
           right: _stackPadding,
           child: GestureDetector(
             onTap: () {
-              //FILL HERE -BERK
+              final RenderBox overlay = Overlay.of(context).context.findRenderObject() as RenderBox;
+              final Offset offset = Offset(overlay.size.width, 100);
+
+              showMenu(
+                context: context,
+                position: RelativeRect.fromLTRB(offset.dx, offset.dy, 0, 0),
+                items: [
+                  PopupMenuItem<String>(
+                    value: 'Option 1',
+                    child: Text('Option 1'),
+                  ),
+                  PopupMenuItem<String>(
+                    value: 'Option 2',
+                    child: Text('Option 2'),
+                  ),
+                  PopupMenuItem<String>(
+                    value: 'Option 3',
+                    child: Text('Option 3'),
+                  ),
+                ],
+              ).then((value) {
+                if (value != null) {
+                  print(value);
+                }
+              });
             },
             child: Container(
               decoration: BoxDecoration(

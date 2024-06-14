@@ -297,7 +297,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           MaterialPageRoute(
             builder: (context) => ScaffoldWidget(
               title: "",
-              child: royasPage(),
+              child: Container(),
             ),
           ),
         );

@@ -47,7 +47,7 @@ class TutorsPresentationState extends State<TutorsPresentation> {
     ScreenConfig().init(context);
 
     return Scaffold(
-      backgroundColor: kColorScaffold,
+      backgroundColor: backGroundColor(),
       body: Stack(
         children: [
           SafeArea(
@@ -177,7 +177,7 @@ class TutorsPresentationState extends State<TutorsPresentation> {
           ),
           if (_isLoading)
             Container(
-              color: Colors.white,
+              color: backGroundColor(),
               child: Center(
                 child: CircularProgressIndicator(
                   color: baseDeepColor,

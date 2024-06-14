@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import '../mainTools/firebaseMethods.dart';
 
@@ -13,18 +14,16 @@ class _DictionaryPageState extends State<DictionaryPage> {
   TextEditingController _searchController = TextEditingController();
 
   void _onSearch() async{
-    searched = true;
+    searchQuery = _searchController.text;
     var result = await getDictWordByWord(searchQuery);
-    setState(() {
-      searchQuery = _searchController.text;
-      if (result != null){
-        meanings = result["meanings"];
-      }
-      else{
-        meanings = [];
-      }
-
-    });
+    if (result != null){
+      meanings = result["meanings"];
+    }
+    else{
+      meanings = [];
+    }
+    searched = true;
+    setState(() {});
   }
 
   @override
