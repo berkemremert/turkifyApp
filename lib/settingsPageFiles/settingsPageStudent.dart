@@ -239,48 +239,97 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
   Future<void> _updateName(BuildContext context) async {
     TextEditingController nameController = TextEditingController();
     TextEditingController surnameController = TextEditingController();
+    String currentName = _userData['name'];
+    String currentSurname = _userData['surname'];
+    String? errorMessage;
+
+    nameController.text = currentName;
+    surnameController.text = currentSurname;
 
     return showDialog(
       context: context,
       builder: (context) {
-        return AlertDialog(
-          title: const Text('Enter new name and surname'),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                controller: nameController,
-                decoration: InputDecoration(
-                  hintText: _userData['name'],
-                ),
+        return StatefulBuilder(
+          builder: (context, setState) {
+            return AlertDialog(
+              title: const Text('Enter new name and surname'),
+              content: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  TextField(
+                    controller: nameController,
+                    decoration: InputDecoration(
+                      hintText: 'Enter new name',
+                      focusedBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: darkRed),
+                      ),
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey),
+                      ),
+                      errorText: errorMessage == 'name' ? 'Name cannot be empty' : null,
+                    ),
+                  ),
+                  SizedBox(height: 16), // Add some space between the fields
+                  TextField(
+                    controller: surnameController,
+                    decoration: InputDecoration(
+                      hintText: 'Enter new surname',
+                      focusedBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: darkRed),
+                      ),
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey),
+                      ),
+                      errorText: errorMessage == 'surname' ? 'Surname cannot be empty' : null,
+                    ),
+                  ),
+                ],
               ),
-              TextField(
-                controller: surnameController,
-                decoration: InputDecoration(
-                  hintText: _userData['surname'],
+              actions: <Widget>[
+                TextButton(
+                  child: Text(
+                    'Change',
+                    style: TextStyle(
+                      color: baseDeepColor,
+                    ),
+                  ),
+                  onPressed: () async {
+                    String newName = nameController.text.trim();
+                    String newSurname = surnameController.text.trim();
+
+                    if (newName.isEmpty) {
+                      setState(() {
+                        errorMessage = 'name';
+                      });
+                      return;
+                    }
+
+                    if (newSurname.isEmpty) {
+                      setState(() {
+                        errorMessage = 'surname';
+                      });
+                      return;
+                    }
+
+                    setState(() {
+                      errorMessage = null;
+                    });
+
+                    await updateNameInFirebase(newName, newSurname);
+
+                    print('New name: $newName, New surname: $newSurname');
+                    Navigator.of(context).pop();
+                  },
                 ),
-              ),
-            ],
-          ),
-          actions: <Widget>[
-            TextButton(
-              child: const Text('Change'),
-              onPressed: () async {
-                String newName = nameController.text;
-                String newSurname = surnameController.text;
-
-                // Update name and surname in Firebase
-                await updateNameInFirebase(newName, newSurname);
-
-                print('New name: $newName, New surname: $newSurname');
-                Navigator.of(context).pop();
-              },
-            ),
-          ],
+              ],
+            );
+          },
         );
       },
     );
   }
+
 
   Future<void> updateNameInFirebase(String newName, String newSurname) async {
     try {
