@@ -173,7 +173,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
             Container(
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: Colors.red[200],
+                color: Colors.red[300],
                 borderRadius: BorderRadius.circular(16.0),
               ),
               padding: EdgeInsets.symmetric(vertical: 8.0),
@@ -333,8 +333,10 @@ class _DictionaryPageState extends State<DictionaryPage> {
                 borderRadius: BorderRadius.circular(16.0),
               ),
               padding: EdgeInsets.symmetric(vertical: 8.0),
-              child: Text(
-                'deden'[0].toUpperCase() + 'deden'.substring(1),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                'Phrase',
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
@@ -347,11 +349,11 @@ class _DictionaryPageState extends State<DictionaryPage> {
                     ),
                   ],
                 ),
-              ),
+              ),)
             ),
             SizedBox(height: 16.0),
             Text(
-              'Phraseeeee',
+              'Phrase meaning',
               style: TextStyle(
                 fontSize: 16.0,
                 color: Colors.black,
