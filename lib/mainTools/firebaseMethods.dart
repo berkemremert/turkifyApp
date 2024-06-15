@@ -57,3 +57,19 @@ getProverb (int dayOfTheMonth) async {
   var wordDoc = await FirebaseFirestore.instance.collection('proverbs').doc(formatter.format(dayOfTheMonth.toString())).get() as Map<String, dynamic>;
   return wordDoc;
 }
+
+getQuestionsInLevel(String level) async {
+  List<String> all_suitable_id = [];
+  await FirebaseFirestore.instance.collection('quizWords').where('level', isEqualTo: level).get().then((queries) {
+    for (var q in queries.docs){
+      all_suitable_id.add(q.id);
+    }
+  });
+  return all_suitable_id;
+}
+
+getWordForQuiz(String id) async {
+  DocumentSnapshot wordDoc = await FirebaseFirestore.instance.collection('quizWord').doc(id).get();
+  return wordDoc.data() as Map<String, dynamic>?;
+}
+
