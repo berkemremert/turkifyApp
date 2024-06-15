@@ -13,6 +13,7 @@ import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageStudent.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageTutor.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
+import 'package:turkify_bem/wordCardFiles/wordCards.dart';
 
 import 'cardSlidingScreenFiles/cardSlider.dart';
 import 'dictionaryPageFiles/WordMeaningPage.dart';
@@ -270,7 +271,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           context,
           MaterialPageRoute(
             // builder: (context) => ReviewPage(tutorUid: 'fNRxolmhX2dY2HcwEyJOCaamc7U2'),
-            builder: (context) => DictionaryPage(),
+            builder: (context) => WordCards(),
           ),
         );
       } else if (identifier == 'calendar') {
