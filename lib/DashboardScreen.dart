@@ -10,14 +10,10 @@ import 'package:turkify_bem/listingPageFiles/StudentsListingPage.dart';
 import 'package:turkify_bem/listingPageFiles/TutorsListingPage.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
-import 'package:turkify_bem/reviewPageFiles/ReviewPage.dart';
-import 'package:turkify_bem/royaPage.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageStudent.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageTutor.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
-import 'package:turkify_bem/welcomingInformationPageFiles/WelcomingInformationPage.dart';
 
-import 'RoyaPageRoya.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
 import 'dictionaryPageFiles/WordMeaningPage.dart';
 import 'filterPageFiles/FilterPage.dart';
@@ -323,7 +319,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           MaterialPageRoute(
             builder: (context) => ScaffoldWidget(
               title: 'Kelime Kartları',
-              child: RoyaPageRoya(),
+              child: Container(),
             ),
           ),
         );
