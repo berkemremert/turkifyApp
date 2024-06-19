@@ -54,7 +54,7 @@ getWordOfTheDay(String date) async {
 
 getAnimalandPicture (int dayOfTheMonth) async {
   NumberFormat formatter = new NumberFormat("000");
-  var wordDoc = await FirebaseFirestore.instance.collection('dictWithPictures').doc(formatter.format(dayOfTheMonth.toString())).get() as Map<String, dynamic>;
+  var wordDoc = (await FirebaseFirestore.instance.collection('dictWithPictures').doc(formatter.format(dayOfTheMonth.toString())).get()).data() as Map<String, dynamic>;
   return wordDoc;
 
 }
@@ -62,7 +62,7 @@ getAnimalandPicture (int dayOfTheMonth) async {
 
 getProverb (int dayOfTheMonth) async {
   NumberFormat formatter = new NumberFormat("000");
-  var wordDoc = await FirebaseFirestore.instance.collection('proverbs').doc(formatter.format(dayOfTheMonth.toString())).get() as Map<String, dynamic>;
+  var wordDoc = (await FirebaseFirestore.instance.collection('proverbs').doc(formatter.format(dayOfTheMonth.toString())).get()).data() as Map<String, dynamic>;
   return wordDoc;
 }
 
