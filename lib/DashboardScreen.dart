@@ -11,6 +11,7 @@ import 'package:turkify_bem/listingPageFiles/TutorsListingPage.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/readingPage/screens/home/CategoryScreen.dart';
+import 'package:turkify_bem/readingPage/screens/home/CategoryScreenModern.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageStudent.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageTutor.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
@@ -299,7 +300,7 @@ class _DashboardScreenState extends State<DashboardScreen>
             theme: ThemeData(
               fontFamily: 'Roboto',
             ),
-            home: DictionaryPage(),
+            home: CategoryScreenOld(),
             ),
           ),
         );
