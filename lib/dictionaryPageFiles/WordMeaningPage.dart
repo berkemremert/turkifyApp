@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
 import '../mainTools/firebaseMethods.dart';
 
 class DictionaryPage extends StatefulWidget {
@@ -15,30 +16,33 @@ class _DictionaryPageState extends State<DictionaryPage> {
   TextEditingController _searchController = TextEditingController();
   final FocusNode _focusNode = FocusNode();
   Map<String, dynamic> wordOfTheDay = {'word' : 'Word of The Day', 'meanings' : []};
+  Map<String, dynamic> wordWithAPicture= {'word' : 'Word with a Picture', 'pictureLink' : 'link'};
+  Map<String, dynamic> proverbOfTheDay = {'phrase' : 'Proverb of the Day', 'meaning' : 'Meaning of the Proverb'};
 
-  @override
-  void initState() {
-    super.initState();
-    initWordOfTheDay();
+  Future<void> initAll() async {
+    await initWordOfTheDay();
+    await initWordWithAPicture();
+    await initProverbOfTheDay();
   }
 
   Future<void> initWordOfTheDay() async {
-
     wordOfTheDay = await getWordOfTheDay(DateFormat('yyyy-MM-dd').format(DateTime.now())) as Map<String, dynamic>;
-    print('##########');
-    print(wordOfTheDay['word']);
-    setState(() {
-
-    });
   }
 
-  void _onSearch() async{
+  Future<void> initWordWithAPicture() async {
+    wordWithAPicture = await getAnimalandPicture(DateTime.now().day.toInt()) as Map<String, dynamic>;
+  }
+
+  Future<void> initProverbOfTheDay() async {
+    proverbOfTheDay = await getProverb(DateTime.now().day.toInt()) as Map<String, dynamic>;
+  }
+
+  void _onSearch() async {
     searchQuery = _searchController.text;
     var result = await getDictWordByWord(searchQuery);
-    if (result != null){
+    if (result != null) {
       meanings = result["meanings"];
-    }
-    else{
+    } else {
       meanings = [];
     }
     searched = true;
@@ -89,27 +93,39 @@ class _DictionaryPageState extends State<DictionaryPage> {
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              if (searched) ...[
-                meanings.isNotEmpty ?
-                _buildMeaningsCard(meanings)
-                :
-                _buildError(),
-                SizedBox(height: 16.0),
-              ],
-              _buildWordOfTheDayCard(),
-              SizedBox(height: 16.0),
-              _buildWordOfTheDayImage(),
-              SizedBox(height: 16.0),
-              _buildPhraseOfTheDay(),
-            ],
-          ),
-        ),
+      body: FutureBuilder<void>(
+        future: initAll(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(child: CircularProgressIndicator(
+              color: baseDeepColor,
+            ));
+          } else if (snapshot.hasError) {
+            return Center(child: Text('Error loading data'));
+          } else {
+            return SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    if (searched) ...[
+                      meanings.isNotEmpty
+                          ? _buildMeaningsCard(meanings)
+                          : _buildError(),
+                      SizedBox(height: 16.0),
+                    ],
+                    _buildWordOfTheDayCard(),
+                    SizedBox(height: 16.0),
+                    _buildWordOfTheDayImage(),
+                    SizedBox(height: 16.0),
+                    _buildPhraseOfTheDay(),
+                  ],
+                ),
+              ),
+            );
+          }
+        },
       ),
     );
   }
@@ -280,7 +296,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
               ),
               padding: EdgeInsets.symmetric(vertical: 8.0),
               child: Text(
-                'zürafa'[0].toUpperCase() + 'zürafa'.substring(1),
+                wordWithAPicture['word'][0].toUpperCase() + wordWithAPicture['word'].substring(1),
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
@@ -299,7 +315,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
             ClipRRect(
               borderRadius: BorderRadius.circular(16.0),
               child: Image.network(
-                "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg",
+                wordWithAPicture['pictureLink'],
                 fit: BoxFit.cover,
                 height: 200.0,
                 width: double.infinity,
@@ -331,33 +347,34 @@ class _DictionaryPageState extends State<DictionaryPage> {
             ),
             SizedBox(height: 16.0),
             Container(
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: Colors.red[200],
-                borderRadius: BorderRadius.circular(16.0),
-              ),
-              padding: EdgeInsets.symmetric(vertical: 8.0),
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Text(
-                'Phrase',
-                style: TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  shadows: [
-                    Shadow(
-                      offset: Offset(2.0, 2.0),
-                      blurRadius: 5.0,
-                      color: Color.fromARGB(150, 0, 0, 0),
-                    ),
-                  ],
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: Colors.red[100],
+                  borderRadius: BorderRadius.circular(16.0),
                 ),
-              ),)
+                padding: EdgeInsets.symmetric(vertical: 8.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Text(
+                    proverbOfTheDay['phrase'],
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black87,
+                      shadows: [
+                        Shadow(
+                          offset: Offset(2.0, 2.0),
+                          blurRadius: 5.0,
+                          color: Colors.white,
+                        ),
+                      ],
+                    ),
+                  ),)
             ),
             SizedBox(height: 16.0),
             Text(
-              'Phrase meaning',
+              proverbOfTheDay['meaning'],
               style: TextStyle(
                 fontSize: 16.0,
                 color: Colors.black,

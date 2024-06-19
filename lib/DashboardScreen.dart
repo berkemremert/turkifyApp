@@ -10,7 +10,7 @@ import 'package:turkify_bem/listingPageFiles/StudentsListingPage.dart';
 import 'package:turkify_bem/listingPageFiles/TutorsListingPage.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
-import 'package:turkify_bem/readingPage/screens/home/home_screen.dart';
+import 'package:turkify_bem/readingPage/screens/home/CategoryScreen.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageStudent.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageTutor.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
