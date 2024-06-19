@@ -288,18 +288,6 @@ class _DashboardScreenState extends State<DashboardScreen>
             ),
           ),
         );
-      } else if (identifier == 'task') {
-        _loadingController!.reverse();
-        await Future.delayed(const Duration(milliseconds: 1300));
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => ScaffoldWidget(
-              title: "",
-              child: Container(),
-            ),
-          ),
-        );
       } else if (identifier == 'match') {
         _loadingController!.reverse();
         await Future.delayed(const Duration(milliseconds: 1300));
@@ -311,7 +299,7 @@ class _DashboardScreenState extends State<DashboardScreen>
             theme: ThemeData(
               fontFamily: 'Roboto',
             ),
-            home: ReadingPageDemo(),
+            home: DictionaryPage(),
             ),
           ),
         );
