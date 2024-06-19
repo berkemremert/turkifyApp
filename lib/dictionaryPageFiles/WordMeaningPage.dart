@@ -299,7 +299,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
             ClipRRect(
               borderRadius: BorderRadius.circular(16.0),
               child: Image.network(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLyANhngulTYoAxEX4xROewRBC4yC8rp124A&s',
+                "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg",
                 fit: BoxFit.cover,
                 height: 200.0,
                 width: double.infinity,
@@ -323,7 +323,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Phrase of the Day',
+              'Proverb of the Day',
               style: TextStyle(
                 fontSize: 18.0,
                 fontWeight: FontWeight.bold,
