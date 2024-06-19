@@ -75,6 +75,7 @@ class LoginScreen extends StatelessWidget {
         'surname': data.additionalSignupData?['Surname'],
         'phoneNumber': data.additionalSignupData?['phone_number'],
         'friends': [],
+        'blockedPeople': [],
         'studentMap': [],
         'tutorMap': [],
         'description': 'No description.',

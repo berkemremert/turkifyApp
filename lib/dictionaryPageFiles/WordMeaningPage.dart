@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import '../mainTools/firebaseMethods.dart';
 
 class DictionaryPage extends StatefulWidget {
@@ -23,7 +24,9 @@ class _DictionaryPageState extends State<DictionaryPage> {
 
   Future<void> initWordOfTheDay() async {
 
-    wordOfTheDay = await getDictWordByWord('elma') as Map<String, dynamic>;
+    wordOfTheDay = await getWordOfTheDay(DateFormat('yyyy-MM-dd').format(DateTime.now())) as Map<String, dynamic>;
+    print('##########');
+    print(wordOfTheDay['word']);
     setState(() {
 
     });

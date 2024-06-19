@@ -6,8 +6,8 @@ import '../../screens/home/CategoryScreen.dart';
 import '../../models/Category.dart';
 import 'components/category_card.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class ReadingPageDemo extends StatelessWidget {
+  const ReadingPageDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
