@@ -10,6 +10,7 @@ import 'package:turkify_bem/listingPageFiles/StudentsListingPage.dart';
 import 'package:turkify_bem/listingPageFiles/TutorsListingPage.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
+import 'package:turkify_bem/readingPage/screens/home/home_screen.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageStudent.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageTutor.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
@@ -22,6 +23,7 @@ import 'listingPageFiles/presentation/pages/home/view/TutorsPresentation.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
 import 'loginMainScreenFiles/widgets/fade_in.dart';
 import 'loginMainScreenFiles/widgets/round_button.dart';
+import 'mainTools/progressBar.dart';
 import 'notificationFiles/Notification.dart';
 
 class DashboardScreen extends StatefulWidget {
@@ -309,7 +311,7 @@ class _DashboardScreenState extends State<DashboardScreen>
             theme: ThemeData(
               fontFamily: 'Roboto',
             ),
-            home: const TutorsPresentation(),
+            home: ReadingPageDemo(),
             ),
           ),
         );
@@ -443,7 +445,7 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(context) {
     final theme = Theme.of(context);
     return PopScope(
       onPopInvoked: (hasPopped) => hasPopped ? _goToLogin(context) : null,
@@ -517,7 +519,9 @@ class _DashboardScreenState extends State<DashboardScreen>
                       },
                       animationController: _loadingController!,
                     ),
-                    const SizedBox(height: 220),
+                    SizedBox(height: 50,),
+                    // ProgressBar(highlightedButton: 2,),
+                    const SizedBox(height: 50),
                     Stack(
                       children: [
                         SizedBox(
