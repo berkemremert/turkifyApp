@@ -274,7 +274,7 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
                   TextField(
                     controller: surnameController,
                     decoration: InputDecoration(
-                      hintText: 'Enter new surname'
+                      hintText: 'Enter new surname',
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: darkRed),
                       ),
@@ -295,6 +295,7 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
                     ),
                   ),
                   onPressed: () async {
+                    print("AAAAAAAAA");
                     String newName = nameController.text.trim();
                     String newSurname = surnameController.text.trim();
 
@@ -631,26 +632,26 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
         title: 'Education Level',
         subtitle: 'Change your preferred level of students',
       ),
-      SettingsItem(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => ScaffoldWidget(
-                title: '',
-                child: FilterPage(userData: _userData),
-              ),
-            ),
-          );
-        },
-        icons: Icons.ac_unit_rounded,
-        iconStyle: IconStyle(
-          iconsColor: white,
-          withBackground: true,
-          backgroundColor: baseDeepColor,
-        ),
-        title: 'FILTER PAGE DENEME',
-      ),
+      // SettingsItem(
+      //   onTap: () {
+      //     Navigator.push(
+      //       context,
+      //       MaterialPageRoute(
+      //         builder: (context) => ScaffoldWidget(
+      //           title: '',
+      //           child: FilterPage(userData: _userData),
+      //         ),
+      //       ),
+      //     );
+      //   },
+      //   icons: Icons.ac_unit_rounded,
+      //   iconStyle: IconStyle(
+      //     iconsColor: white,
+      //     withBackground: true,
+      //     backgroundColor: baseDeepColor,
+      //   ),
+      //   title: 'FILTER PAGE DENEME',
+      // ),
       SettingsItem(
         onTap: () {
           Navigator.push(
