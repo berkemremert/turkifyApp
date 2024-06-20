@@ -10,14 +10,13 @@ import 'package:turkify_bem/listingPageFiles/StudentsListingPage.dart';
 import 'package:turkify_bem/listingPageFiles/TutorsListingPage.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
-import 'package:turkify_bem/reviewPageFiles/ReviewPage.dart';
-import 'package:turkify_bem/royaPage.dart';
+import 'package:turkify_bem/readingPage/screens/home/CategoryScreen.dart';
+import 'package:turkify_bem/readingPage/screens/home/CategoryScreenModern.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageStudent.dart';
 import 'package:turkify_bem/settingsPageFiles/settingsPageTutor.dart';
 import 'package:turkify_bem/videoMeetingFiles/videoMeetingMain.dart';
-import 'package:turkify_bem/welcomingInformationPageFiles/WelcomingInformationPage.dart';
+import 'package:turkify_bem/wordCardFiles/wordCards.dart';
 
-import 'RoyaPageRoya.dart';
 import 'cardSlidingScreenFiles/cardSlider.dart';
 import 'dictionaryPageFiles/WordMeaningPage.dart';
 import 'filterPageFiles/FilterPage.dart';
@@ -25,6 +24,7 @@ import 'listingPageFiles/presentation/pages/home/view/TutorsPresentation.dart';
 import 'loginMainScreenFiles/transition_route_observer.dart';
 import 'loginMainScreenFiles/widgets/fade_in.dart';
 import 'loginMainScreenFiles/widgets/round_button.dart';
+import 'mainTools/progressBar.dart';
 import 'notificationFiles/Notification.dart';
 
 class DashboardScreen extends StatefulWidget {
@@ -274,7 +274,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           context,
           MaterialPageRoute(
             // builder: (context) => ReviewPage(tutorUid: 'fNRxolmhX2dY2HcwEyJOCaamc7U2'),
-            builder: (context) => DictionaryPage(),
+            builder: (context) => WordCards(),
           ),
         );
       } else if (identifier == 'calendar') {
@@ -289,18 +289,6 @@ class _DashboardScreenState extends State<DashboardScreen>
             ),
           ),
         );
-      } else if (identifier == 'task') {
-        _loadingController!.reverse();
-        await Future.delayed(const Duration(milliseconds: 1300));
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => ScaffoldWidget(
-              title: "",
-              child: Container(),
-            ),
-          ),
-        );
       } else if (identifier == 'match') {
         _loadingController!.reverse();
         await Future.delayed(const Duration(milliseconds: 1300));
@@ -312,7 +300,7 @@ class _DashboardScreenState extends State<DashboardScreen>
             theme: ThemeData(
               fontFamily: 'Roboto',
             ),
-            home: const TutorsPresentation(),
+            home: CategoryScreenOld(),
             ),
           ),
         );
@@ -323,7 +311,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           MaterialPageRoute(
             builder: (context) => ScaffoldWidget(
               title: 'Kelime Kartları',
-              child: RoyaPageRoya(),
+              child: Container(),
             ),
           ),
         );
@@ -446,7 +434,7 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(context) {
     final theme = Theme.of(context);
     return PopScope(
       onPopInvoked: (hasPopped) => hasPopped ? _goToLogin(context) : null,
@@ -520,7 +508,9 @@ class _DashboardScreenState extends State<DashboardScreen>
                       },
                       animationController: _loadingController!,
                     ),
-                    const SizedBox(height: 220),
+                    SizedBox(height: 50,),
+                    // ProgressBar(highlightedButton: 2,),
+                    const SizedBox(height: 50),
                     Stack(
                       children: [
                         SizedBox(

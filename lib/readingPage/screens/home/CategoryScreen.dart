@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../constants.dart';
-import '../../screens/details/details_screen.dart';
-import '../../screens/home/home_screen.dart';
+import '../../screens/home/BookScreen.dart';
 
 import '../../models/Category.dart';
 import 'components/category_card.dart';
-import 'components/BookCard.dart';
 
-
-class CategoryScreen extends StatelessWidget {
-  const CategoryScreen({super.key, required this.books});
-
-  final List<Book> books;
+class CategoryScreenOld extends StatelessWidget {
+  const CategoryScreenOld({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,10 +18,10 @@ class CategoryScreen extends StatelessWidget {
         leading: IconButton(
           icon: SvgPicture.asset(
             'assets/readingPage/icons/back.svg',
-            color: Colors.blueGrey
+            color: Colors.blueGrey,
             // colorFilter: ColorFilter.mode(Colors.blueGrey, BlendMode.srcIn),
           ),
-          onPressed: () => Navigator.pop(context),
+          onPressed: (){},
         ),
         actions: <Widget>[
           IconButton(
@@ -38,7 +33,7 @@ class CategoryScreen extends StatelessWidget {
             onPressed: () {},
           ),
 
-          SizedBox(width: kDefaultPaddin / 2)
+          const SizedBox(width: kDefaultPaddin / 2)
         ],
       ),
       body: Column(
@@ -48,20 +43,20 @@ class CategoryScreen extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: kDefaultPaddin),
               child: GridView.builder(
-                itemCount: books.length,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                itemCount: category.length,
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   mainAxisSpacing: 5,
                   crossAxisSpacing: 3,
-                  childAspectRatio: 0.8,
+                  childAspectRatio: 1.5,
                 ),
-                itemBuilder: (context, index) => BookCard(
-                  book: books[index],
+                itemBuilder: (context, index) => CategoryCard(
+                  category: category[index],
                   press: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-
-                      builder: (context) => DetailsScreen(book: books[index]),
+                      builder: (context) => BookScreen(
+                          books: category[index].books),
                     ),
                   ),
                 ),
