@@ -274,7 +274,7 @@ class _SettingsPageTutorState extends State<SettingsPageTutor> {
                   TextField(
                     controller: surnameController,
                     decoration: InputDecoration(
-                      hintText: 'Enter new surname',
+                      hintText: 'Enter new surname'
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: darkRed),
                       ),
