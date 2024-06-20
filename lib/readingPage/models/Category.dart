@@ -12,7 +12,7 @@ class Category {
       {required this.image,
       required this.title,
       required this.id,
-      required this.color,
+      this.color = Colors.red,
       required this.books
       });
 }
@@ -28,7 +28,7 @@ class Book {
         required this.description,
         required this.price,
         required this.id,
-        required this.color,
+        this.color = Colors.red,
       });
 }
 
