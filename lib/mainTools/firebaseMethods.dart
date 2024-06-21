@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:intl/intl.dart';
 
+import '../readingPage/models/Category.dart';
+
 FirebaseFirestore firebaseInstance = FirebaseFirestore.instance;
 
 CollectionReference<Map<String, dynamic>> getMessages(){
@@ -83,3 +85,13 @@ getWordForQuiz(String id) async {
   return wordDoc.data() as Map<String, dynamic>?;
 }
 
+getCategoryBookList(int c_id) async {
+  List<Book> books = [];
+  NumberFormat formatter = new NumberFormat("000");
+  var all_book = (await FirebaseFirestore.instance.collection('easyReadingsCategory').doc(formatter.format(c_id)).collection("books").get()).docs.map((doc) => doc.data());
+
+  for (var elem in all_book){
+    books.add(Book(image: elem["image"], title: elem["title"], description: elem["description"], price: 0, id: elem["id"]));
+  }
+  return books;
+}

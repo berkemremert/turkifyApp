@@ -9,7 +9,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/listingPageFiles/StudentsListingPage.dart';
 import 'package:turkify_bem/listingPageFiles/TutorsListingPage.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
-import 'package:turkify_bem/mainTools/DebugButtons.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/readingPage/screens/home/CategoryScreen.dart';
 import 'package:turkify_bem/readingPage/screens/home/CategoryScreenModern.dart';
@@ -59,6 +58,10 @@ class _DashboardScreenState extends State<DashboardScreen>
   Map<String, bool> isReadMap = {};
   bool _isTutor = false;
   bool _isThereTutor = false;
+  bool _isSettingsPageOpen = false;
+  bool _isMatchingPageOpen = false;
+  bool _isChatPageOpen = false;
+  bool _isBigButtonOpen = false;
 
   @override
   void initState() {
@@ -269,15 +272,22 @@ class _DashboardScreenState extends State<DashboardScreen>
     isRead: isReadMap.values.contains(false) && identifier == 'chat',
     onPressed: () async {
       if (identifier == 'chat') {
-        _loadingController!.reverse();
-        await Future.delayed(const Duration(milliseconds: 1295));
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            // builder: (context) => ReviewPage(tutorUid: 'fNRxolmhX2dY2HcwEyJOCaamc7U2'),
-            builder: (context) => WordCards(),
-          ),
-        );
+        if(!_isChatPageOpen){
+          setState(() {
+            _isChatPageOpen = true;
+          });
+          _loadingController!.reverse();
+          await Future.delayed(const Duration(milliseconds: 1295));
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              // builder: (context) => ReviewPage(tutorUid: 'fNRxolmhX2dY2HcwEyJOCaamc7U2'),
+              builder: (context) => WordCards(),
+            ),
+          ).then((value) {
+            _isChatPageOpen = false;
+          });
+        }
       } else if (identifier == 'calendar') {
         _loadingController!.reverse();
         await Future.delayed(const Duration(milliseconds: 1300));
@@ -291,20 +301,30 @@ class _DashboardScreenState extends State<DashboardScreen>
           ),
         );
       } else if (identifier == 'match') {
-        _loadingController!.reverse();
-        await Future.delayed(const Duration(milliseconds: 1300));
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => MaterialApp(
-            debugShowCheckedModeBanner: false,
-            theme: ThemeData(
-              fontFamily: 'Roboto',
+        if(!_isMatchingPageOpen){
+          setState(() {
+            _isMatchingPageOpen = true;
+          });
+          _loadingController!.reverse();
+          await Future.delayed(const Duration(milliseconds: 1300));
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => MaterialApp(
+                debugShowCheckedModeBanner: false,
+                theme: ThemeData(
+                  fontFamily: 'Roboto',
+                ),
+                home: CategoryScreenOld(),
+              ),
             ),
-            home: ShowButtons(),
-            ),
-          ),
-        );
+          )
+              .then((value) {
+            setState(() {
+              _isMatchingPageOpen = false;
+            });
+          });
+        }
       }
       else if (identifier == 'profile') {
         Navigator.push(
@@ -318,26 +338,26 @@ class _DashboardScreenState extends State<DashboardScreen>
         );
       }
       else if (identifier == 'settings') {
-        _loadingController!.reverse();
-        await Future.delayed(const Duration(milliseconds: 1300));
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => _isTutor ? SettingsPageTutor() : SettingsPageStudent(),
-          ),
-        );
-        // Navigator.push(
-        //   context,
-        //   MaterialPageRoute(
-        //     builder: (context) => const ScaffoldWidget(
-        //       title: '',
-        //       child: FilterPage(),
-        //     ),
-        //   ),
-        // );
+        if(!_isSettingsPageOpen){
+          setState(() {
+            _isSettingsPageOpen = true;
+          });
+          _loadingController!.reverse();
+          await Future.delayed(const Duration(milliseconds: 1300));
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => _isTutor ? const SettingsPageTutor() : const SettingsPageStudent(),
+            ),
+          ).then((value) {
+            setState(() {
+              _isSettingsPageOpen = false;
+            });
+          });
+        }
       }
     },
-            );
+   );
   }
 
   Widget _buildDashboardGrid() {
@@ -488,23 +508,32 @@ class _DashboardScreenState extends State<DashboardScreen>
                           :
                       _isTutor ? "STUDENTS" : "TUTORS",
                       onTap: () async {
-                        _loadingController!.reverse();
-                        await Future.delayed(const Duration(milliseconds: 1300));
-                        if (_isBeingCalled) {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => VideoMeetingPage(calleeId: user!.uid),
-                            ),
-                          );
-                        } else {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) =>
+                        if(!_isBigButtonOpen){
+                          setState(() {
+                            _isBigButtonOpen = true;
+                          });
+                          _loadingController!.reverse();
+                          await Future.delayed(const Duration(milliseconds: 1300));
+                          if (_isBeingCalled) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => VideoMeetingPage(calleeId: user!.uid),
+                              ),
+                            ).then((value) {
+                              _isBigButtonOpen = false;
+                            });
+                          } else {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
                                 !_isTutor ? (_isThereTutor ? TutorsListingPage() : const TutorsPresentation()) : StudentsListingPage(),
-                            ),
-                          );
+                              ),
+                            ).then((value) {
+                              _isBigButtonOpen = false;
+                            });
+                          }
                         }
                       },
                       animationController: _loadingController!,
