@@ -10,7 +10,7 @@ class CategoryScreen extends StatefulWidget {
 }
 
 class _CategoryScreenState extends State<CategoryScreen> {
-  List<Book> booksOfCategory = [];
+  List<List<Book>> booksOfCategory = [];
 
   @override
   void initState() {
@@ -18,14 +18,21 @@ class _CategoryScreenState extends State<CategoryScreen> {
     _bookInitializer();
   }
 
-  _bookInitializer() async{
-    booksOfCategory = await getCategoryBookList(0);
+  _bookInitializer() async {
+    List<List<Book>> tempBooks = [];
+    for (int i = 0; i < 6; i++) {
+      tempBooks.add(await getCategoryBookList(i)); // Ensure it waits for the async call
+    }
+    setState(() {
+      booksOfCategory = tempBooks;
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text('Categories'),
       ),
       body: Center(
         child: Padding(
@@ -39,7 +46,10 @@ class _CategoryScreenState extends State<CategoryScreen> {
                 mainAxisSpacing: 15.0,
                 childAspectRatio: 1.0,
                 children: List.generate(6, (index) {
-                  return CategoryButton(index: index);
+                  return CategoryButton(
+                    index: index,
+                    books: booksOfCategory.isNotEmpty ? booksOfCategory[index] : [],
+                  );
                 }),
               ),
             ),
@@ -52,6 +62,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
 
 class CategoryButton extends StatelessWidget {
   final int index;
+  final List<Book> books;
   final List<String> buttonTexts = [
     'Türk Kültürü',
     'Fıkralar',
@@ -61,7 +72,7 @@ class CategoryButton extends StatelessWidget {
     'Yapay Zekayla Oluştur'
   ];
 
-  CategoryButton({required this.index});
+  CategoryButton({required this.index, required this.books});
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +82,7 @@ class CategoryButton extends StatelessWidget {
           context,
           MaterialPageRoute(
             builder: (context) => BookScreen(
-              books: getCategoryBookList(index),
+              books: books,
             ),
           ),
         );
@@ -159,7 +170,14 @@ class CategoryButton extends StatelessWidget {
         );
       case 'Yapay Zekayla Oluştur':
         return LinearGradient(
-          colors: [Colors.purple, Colors.blue, Colors.green, Colors.yellow, Colors.orange, Colors.red],
+          colors: [
+            Colors.purple,
+            Colors.blue,
+            Colors.green,
+            Colors.yellow,
+            Colors.orange,
+            Colors.red
+          ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         );
@@ -171,4 +189,10 @@ class CategoryButton extends StatelessWidget {
         );
     }
   }
+}
+
+void main() {
+  runApp(MaterialApp(
+    home: CategoryScreen(),
+  ));
 }
