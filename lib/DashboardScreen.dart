@@ -9,6 +9,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:turkify_bem/listingPageFiles/StudentsListingPage.dart';
 import 'package:turkify_bem/listingPageFiles/TutorsListingPage.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
+import 'package:turkify_bem/mainTools/DebugButtons.dart';
 import 'package:turkify_bem/mainTools/imagedButton.dart';
 import 'package:turkify_bem/readingPage/screens/home/CategoryScreen.dart';
 import 'package:turkify_bem/readingPage/screens/home/CategoryScreenModern.dart';
@@ -315,7 +316,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                 theme: ThemeData(
                   fontFamily: 'Roboto',
                 ),
-                home: CategoryScreenOld(),
+                home: ShowButtons(),
               ),
             ),
           )
