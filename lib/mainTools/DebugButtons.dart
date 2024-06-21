@@ -43,7 +43,7 @@ class _ShowButtonsState extends State<ShowButtons> {
                     theme: ThemeData(
                       fontFamily: 'Roboto',
                     ),
-                    home: CategoryScreenOld(),
+                    home: CategoryScreen(),
                   ),
                 ),
               );

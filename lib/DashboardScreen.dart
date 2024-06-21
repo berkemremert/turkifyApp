@@ -307,7 +307,7 @@ class _DashboardScreenState extends State<DashboardScreen>
             _isMatchingPageOpen = true;
           });
           _loadingController!.reverse();
-          await Future.delayed(const Duration(milliseconds: 1300));
+          // await Future.delayed(const Duration(milliseconds: 1300));
           Navigator.push(
             context,
             MaterialPageRoute(
