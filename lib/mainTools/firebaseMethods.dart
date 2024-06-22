@@ -88,10 +88,11 @@ getWordForQuiz(String id) async {
 getCategoryBookList(int c_id) async {
   List<Book> books = [];
   NumberFormat formatter = new NumberFormat("000");
-  var all_book = (await FirebaseFirestore.instance.collection('easyReadingsCategory').doc(formatter.format(c_id)).collection("books").get()).docs.map((doc) => doc.data());
-
-  for (var elem in all_book){
-    books.add(Book(image: elem["image"], title: elem["title"], description: elem["description"], price: 0, id: elem["id"]));
+  var all_book = (await FirebaseFirestore.instance.collection('easyReadingCategory').doc(formatter.format(c_id)).collection("books").get()).docs;
+  for (var doc in all_book){
+    var data = doc.data();
+    String id = doc.id;
+    books.add(Book(image: data["image"], title: data["title"], description: data["description"], price: 0, id: id));
   }
   return books;
 }

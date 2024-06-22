@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../constants.dart';
 import '../../screens/details/details_screen.dart';
-import '../../screens/home/CategoryScreen.dart';
 
 import '../../models/Category.dart';
 import 'components/category_card.dart';
