@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:turkify_bem/chatScreenFiles/FriendsListScreenChat.dart';
 import 'package:turkify_bem/dictionaryPageFiles/WordMeaningPage.dart';
 import 'package:turkify_bem/listingPageFiles/presentation/pages/home/view/TutorsPresentation.dart';
@@ -6,6 +7,9 @@ import 'package:turkify_bem/readingPage/screens/home/CategoryScreen.dart';
 import 'package:turkify_bem/readingPage/screens/home/CategoryScreenModern.dart';
 import 'package:turkify_bem/videoMeetingFiles/FriendsListScreenVideoMeeting.dart';
 import 'package:turkify_bem/wordCardFiles/wordCards.dart';
+import 'package:google_generative_ai/google_generative_ai.dart';
+
+import '../geminiCodes.dart';
 
 class ShowButtons extends StatefulWidget {
   @override
@@ -151,6 +155,12 @@ class _ShowButtonsState extends State<ShowButtons> {
               );
             },
             child: Text('Welcoming Page'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              talkWithGemini();
+            },
+            child: const Text('Gemini Codes'),
           ),
         ],
       ],
