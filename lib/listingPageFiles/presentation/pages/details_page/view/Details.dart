@@ -38,7 +38,9 @@ class _ScreenDetailsState extends State<ScreenDetails> {
     try {
       Map<String, dynamic>? userData = await getUserData(widget.uid);
       if (userData != null) {
-        _userData = userData;
+        setState(() {
+          _userData = userData;
+        });
       }
     } catch (e) {
       print('Error retrieving user data: $e');
@@ -46,6 +48,24 @@ class _ScreenDetailsState extends State<ScreenDetails> {
       setState(() {
         _isLoading = false;
       });
+    }
+  }
+
+  Future<void> _addFriend(String friendId) async {
+    try {
+      // Update current user's friends list
+      await FirebaseFirestore.instance.collection('users').doc(user!.uid).update({
+        'friends': FieldValue.arrayUnion([friendId]),
+      });
+
+      // Update friend's friends list
+      await FirebaseFirestore.instance.collection('users').doc(friendId).update({
+        'friends': FieldValue.arrayUnion([user!.uid]),
+      });
+
+      print('Added $friendId as a friend.');
+    } catch (e) {
+      print('Error adding friend: $e');
     }
   }
 
@@ -174,7 +194,7 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                       leftIconVisibility: false,
                       rightIconVisibility: false,
                       onTap: () {
-                        print("$_userData");
+                        _addFriend(widget.uid);
                         Navigator.push(
                           context,
                           MaterialPageRoute(

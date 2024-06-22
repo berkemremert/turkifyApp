@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
 import 'package:flutter_chat_ui/flutter_chat_ui.dart';
@@ -42,6 +43,7 @@ class _ChatPageState extends State<ChatPage> {
   bool isTutor = false; // tutor checker
   String _selectedMessageID = ""; // selected message
   List<types.Message> _messages = []; // message list
+  bool isActive = false;
 
   String get friendId => widget.friendId; // other persons id getter
   Map<String, dynamic> get data => widget.data; // data getter
@@ -78,42 +80,89 @@ class _ChatPageState extends State<ChatPage> {
       print('Error: $e');
     }
   }
+
   void _loadMessages() {
-    String wantID = findID(); // get the wanted ID
+    String wantID = findID();
 
-    messagesCollection.doc(wantID).snapshots().listen((snapshot) {
-      /*
-        Listen to any changes in the chat, reload the messages if any change is detected, uses streams for real time messaging
-       */
-      if (snapshot.exists) {
-        final messageData = snapshot.data() as Map<String, dynamic>;
-        List<types.Message> messages = [];
-        changeIsRead(messagesCollection, 0);
-        for (var data in messageData.values) { // for all messages in the snapshot
-          try {
-            MyTextMessage message = MyTextMessage.fromJson(data); // create a message in the format that is compatible with the Chat widget
-            var authorUser = message.authorID == _user.id // if this is sent by us
-                ? _user // author is us
-                : types.User(id: friendId); // otherwise the other person
-            final textMessage = types.TextMessage( // creating the text message variable with necessary fields
-              author: authorUser,
-              id: message.id,
-              text: message.text,
-              createdAt: message.createdAt,
-            );
-            messages.add(textMessage); // add this to the messages list which will later given to Chat widget
-          } catch (e) {
-            print("ERRORa $e");
+    final DocumentReference docRef = messagesCollection.doc(wantID);
+
+    docRef.get().then((docSnapshot) {
+      if (docSnapshot.exists) {
+        docRef.snapshots().listen((snapshot) {
+          if (snapshot.exists) {
+            final messageData = snapshot.data() as Map<String, dynamic>;
+            List<types.Message> messages = [];
+
+            isActive = messageData['isActive'];
+            for (var data in messageData.values) {
+              try {
+                MyTextMessage message = MyTextMessage.fromJson(data);
+                var authorUser =
+                message.authorID == _user.id ? _user : types.User(id: friendId);
+                final textMessage = types.TextMessage(
+                  author: authorUser,
+                  id: message.id,
+                  text: message.text,
+                  createdAt: message.createdAt,
+                );
+                messages.add(textMessage);
+              } catch (e) {
+                print("Error: $e");
+              }
+            }
+            messages.sort((a, b) => b.createdAt!.compareTo(a.createdAt!));
+
+            setState(() {
+              _messages = messages;
+            });
+            _sendInitialMessage();
           }
-        }
-        messages.sort((a, b) => b.createdAt!.compareTo(a.createdAt!)); // reverse sorting so that all messages are shown according to the sended time
+        });
+      } else {
+        docRef.set({
+          'createdAt': DateTime.now(),
+          'isRead': 0,
+          'isActive': false,
+        }).then((_) {
+          docRef.snapshots().listen((snapshot) {
+            if (snapshot.exists) {
+              final messageData = snapshot.data() as Map<String, dynamic>;
+              List<types.Message> messages = [];
 
-        setState(() { // set state
-          _messages = messages;
+              for (var data in messageData.values) {
+                try {
+                  MyTextMessage message = MyTextMessage.fromJson(data);
+                  var authorUser =
+                  message.authorID == _user.id ? _user : types.User(id: friendId);
+                  final textMessage = types.TextMessage(
+                    author: authorUser,
+                    id: message.id,
+                    text: message.text,
+                    createdAt: message.createdAt,
+                  );
+                  messages.add(textMessage);
+                } catch (e) {
+                  print("Error: $e");
+                }
+              }
+              messages.sort((a, b) => b.createdAt!.compareTo(a.createdAt!));
+
+              setState(() {
+                _messages = messages;
+              });
+              _sendInitialMessage();
+            }
+          });
+        }).catchError((error) {
+          print('Failed to create document: $error');
         });
       }
+    }).catchError((error) {
+      print('Failed to check document existence: $error');
     });
   }
+
+
 
   Future openDialog() => showDialog( // for showing dialog to create an appointment
     context: context,
@@ -167,26 +216,57 @@ class _ChatPageState extends State<ChatPage> {
               ),
             ),
           ),
-          IconButton(
-            icon: const Icon(Icons.videocam_outlined),
-            color: _isDarkMode ? white : kDefaultIconDarkColor,
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => VideoMeetingPage(calleeId: _currentUser!.uid),
-                ),
-              );
-            },
+          Visibility(
+            visible: isActive,
+            child: IconButton(
+              icon: const Icon(Icons.videocam_outlined),
+              color: _isDarkMode ? white : kDefaultIconDarkColor,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => VideoMeetingPage(calleeId: _currentUser!.uid),
+                  ),
+                );
+              },
+            ),
           ),
-          IconButton(
-            icon: const Icon(Icons.event),
-            color: _isDarkMode ? white : kDefaultIconDarkColor,
-            onPressed: () {
-              if(isTutor){
-                openDialog();
-              }
-            },
+          Visibility(
+            visible: isActive,
+            child: IconButton(
+              icon: const Icon(Icons.event),
+              color: _isDarkMode ? white : kDefaultIconDarkColor,
+              onPressed: () {
+                if(isTutor){
+                  openDialog();
+                }
+              },
+            ),
+          ),
+          Visibility(
+            visible: (!isActive && isTutor),
+            child: IconButton(
+              icon: const Icon(Icons.check),
+              color: _isDarkMode ? white : kDefaultIconDarkColor,
+              onPressed: () {
+                setState(() {
+                  isActive = true;
+                });
+              },
+            ),
+          ),
+          Visibility(
+            visible: (!isActive && isTutor),
+            child: IconButton(
+              icon: const Icon(Icons.close),
+              color: _isDarkMode ? white : kDefaultIconDarkColor,
+              onPressed: () {
+                setState(() {
+                  _deleteFriend(friendId);
+                  Navigator.pop(context);
+                });
+              },
+            ),
           ),
           const SizedBox(width: 12)
         ],
@@ -566,4 +646,35 @@ class _ChatPageState extends State<ChatPage> {
       ],
     );
   }
+
+  void _sendInitialMessage() {
+    if (_messages.isEmpty) {
+      final initialMessage = types.TextMessage(
+        author: types.User(id: friendId),
+        id: const Uuid().v4(),
+        text: 'Hello, can you teach me Turkish?',
+        createdAt: DateTime.now().millisecondsSinceEpoch,
+      );
+
+      _addMessage(initialMessage);
+    }
+  }
+
+  Future<void> _deleteFriend(String friendId) async {
+    try {
+      await FirebaseFirestore.instance.collection('users').doc(_currentUser!.uid).update({
+        'friends': FieldValue.arrayRemove([friendId]),
+      });
+
+      // Remove current user from friend's friends list
+      await FirebaseFirestore.instance.collection('users').doc(friendId).update({
+        'friends': FieldValue.arrayRemove([_currentUser.uid]),
+      });
+
+      print('Deleted $friendId from friends.');
+    } catch (e) {
+      print('Error deleting friend: $e');
+    }
+  }
+
 }
