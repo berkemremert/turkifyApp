@@ -13,6 +13,7 @@ import 'package:mime/mime.dart';
 import 'package:open_filex/open_filex.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:turkify_bem/chatScreenFiles/Message.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
 import 'package:bubble/bubble.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
@@ -235,14 +236,99 @@ class _ChatPageState extends State<ChatPage> {
             visible: isActive,
             child: IconButton(
               icon: const Icon(Icons.event),
-              color: _isDarkMode ? white : kDefaultIconDarkColor,
-              onPressed: () {
-                if(isTutor){
-                  openDialog();
+              color: black,
+              onPressed: () async {
+                DateTime? pickedDate = await showDatePicker(
+                  context: context,
+                  initialDate: DateTime.now(),
+                  firstDate: DateTime(2000),
+                  lastDate: DateTime(2101),
+                  builder: (BuildContext context, Widget? child) {
+                    return Theme(
+                      data: ThemeData.light().copyWith(
+                        colorScheme: ColorScheme.light(
+                          primary: darkRed,
+                          onPrimary: Colors.white,
+                          surface: white,
+                          onSurface: Colors.black,
+                        ),
+                        dialogBackgroundColor: Colors.white,
+                      ),
+                      child: child!,
+                    );
+                  },
+                );
+
+                if (pickedDate != null) {
+                  TimeOfDay? pickedTime = await showTimePicker(
+                    context: context,
+                    initialTime: TimeOfDay.now(),
+                    builder: (BuildContext context, Widget? child) {
+                      return Theme(
+                        data: ThemeData.light().copyWith(
+                          colorScheme: ColorScheme.light(
+                            primary: darkRed,
+                            onPrimary: white,
+                            surface: white,
+                            onSurface: black,
+                          ),
+                          timePickerTheme: TimePickerThemeData(
+                            dialHandColor: black,
+                            hourMinuteTextColor: black,
+                            dayPeriodTextColor: black,
+                            entryModeIconColor: black,
+                          ),
+                        ),
+                        child: child!,
+                      );
+                    },
+                  );
+
+                  if (pickedTime != null) {
+                    DateTime finalDateTime = DateTime(
+                      pickedDate.year,
+                      pickedDate.month,
+                      pickedDate.day,
+                      pickedTime.hour,
+                      pickedTime.minute,
+                    );
+
+                    print("Selected date and time: $finalDateTime");
+
+                    String title = "Meeting";
+                    String description = "Meeting description goes here.";
+                    String location = "Meeting location";
+
+                    String startTime = finalDateTime.toUtc().toIso8601String();
+                    String endTime = finalDateTime.add(Duration(hours: 1)).toUtc().toIso8601String();
+
+                    String url = "https://www.google.com/calendar/render?action=TEMPLATE"
+                        "&text=${Uri.encodeQueryComponent(title)}"
+                        "&details=${Uri.encodeQueryComponent(description)}"
+                        "&location=${Uri.encodeQueryComponent(location)}"
+                        "&dates=${startTime}/${endTime}";
+                    // if (await canLaunchUrl(url as Uri)) {
+                    //   await launchUrl(url as Uri);
+                    // } else {
+                    //   throw 'Could not launch $url';
+                    // }
+                    print("AAAAAAAA $url");
+                    String textMessage = "Would $finalDateTime be a good time for the meeting? \n\nHere's the Google Calendar event link: $url";
+                    final message = types.TextMessage(
+                      author: types.User(id: friendId),
+                      id: const Uuid().v4(),
+                      text: textMessage,
+                      createdAt: DateTime.now().millisecondsSinceEpoch,
+                    );
+
+                    _addMessage(message);
+                  }
                 }
               },
             ),
           ),
+
+
           Visibility(
             visible: (!isActive && isTutor),
             child: IconButton(
