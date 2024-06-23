@@ -14,25 +14,16 @@ class DetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-      // each book have a color
-      backgroundColor: book.color,
       appBar: AppBar(
-        backgroundColor: book.color,
+        backgroundColor: Colors.transparent,
+        iconTheme: IconThemeData(color: Colors.white),
         elevation: 0,
-        leading: IconButton(
-          icon: SvgPicture.asset(
-            'assets/readingPage/icons/back.svg',
-            color: Colors.blueGrey,
-            // colorFilter: ColorFilter.mode(Colors.blueGrey, BlendMode.srcIn),
-          ),
-          onPressed: () => Navigator.pop(context),
-        ),
       ),
+      backgroundColor: Colors.black54,
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             SizedBox(
-              height: size.height,
               child: Stack(
                 children: <Widget>[
                   Container(

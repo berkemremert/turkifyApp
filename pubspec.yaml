@@ -123,5 +123,6 @@ flutter:
     - assets/studentsListingPage/video.png
     - assets/readingPage/icons/
     - assets/readingPage/images/
+    - assets/loading-gif.gif
 
 

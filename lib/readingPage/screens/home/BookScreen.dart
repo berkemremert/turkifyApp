@@ -17,28 +17,7 @@ class BookScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: IconButton(
-          icon: SvgPicture.asset(
-            'assets/readingPage/icons/back.svg',
-            color: Colors.blueGrey
-            // colorFilter: ColorFilter.mode(Colors.blueGrey, BlendMode.srcIn),
-          ),
-          onPressed: () => Navigator.pop(context),
-        ),
-        actions: <Widget>[
-          IconButton(
-            icon: SvgPicture.asset(
-              "assets/readingPage/icons/search.svg",
-              color: kTextColor,
-              // colorFilter: ColorFilter.mode(kTextColor, BlendMode.srcIn),
-            ),
-            onPressed: () {},
-          ),
-
-          SizedBox(width: kDefaultPaddin / 2)
-        ],
+        backgroundColor: Colors.transparent,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

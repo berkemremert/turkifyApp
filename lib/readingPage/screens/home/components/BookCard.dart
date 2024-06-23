@@ -20,27 +20,30 @@ class BookCard extends StatelessWidget {
             child: Container(
               padding: EdgeInsets.all(kDefaultPaddin),
               decoration: BoxDecoration(
-                color: book.color,
+                color: Colors.grey[200],
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Hero(
                 tag: "${book.id}",
-                child: Image.asset(book.image),
+                child: FadeInImage.assetNetwork(
+                  placeholder: 'assets/loading-gif.gif',
+                  image: book.image,
+                  fit: BoxFit.cover,
+                  width: double.infinity,
+                  height: double.infinity,
+                ),
               ),
             ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin / 4),
             child: Text(
-              // books is out demo list
               book.title,
               style: TextStyle(color: kTextLightColor),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
             ),
           ),
-          Text(
-            "\$${book.price}",
-            style: TextStyle(fontWeight: FontWeight.bold),
-          )
         ],
       ),
     );

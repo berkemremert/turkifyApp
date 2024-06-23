@@ -3,7 +3,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:turkify_bem/DashboardScreen.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
+import 'package:turkify_bem/mainTools/firebaseMethods.dart';
 
 class WordCards extends StatefulWidget {
   @override
@@ -21,11 +23,23 @@ class _WordCardsState extends State<WordCards> {
   int totalQuestions = 0;
   List<Map<String, dynamic>> questions = [];
   User? user;
+  Map<String, dynamic> _userData = {};
 
   @override
   void initState() {
     super.initState();
     initializeUser();
+    userDataGetter();
+  }
+
+  getUserData(String userId) async {
+    DocumentSnapshot userSnapshot = await firebaseInstance.collection('users').doc(userId).get();
+    return userSnapshot.data() as Map<String, dynamic>?;
+  }
+
+  userDataGetter() async {
+    _userData = await getUserData(user!.uid);
+    setState(() {});
   }
 
   Future<void> initializeUser() async {
@@ -76,7 +90,7 @@ class _WordCardsState extends State<WordCards> {
     List<String> usedQuestions = [];
     questions = [];
     for (int i = 0; i < numQuestions; i++) {
-      Map<String, dynamic> questionSet = await createQuestion('A1', usedQuestions);
+      Map<String, dynamic> questionSet = await createQuestion(_userData['studentMap']['desiredEducation'] ?? 'A1', usedQuestions);
       questionSet['answered_correctly'] = false;
       questions.add(questionSet);
     }
@@ -109,6 +123,7 @@ class _WordCardsState extends State<WordCards> {
         .collection('quizzes')
         .doc(quizId)
         .set({
+      'level' : _userData['studentMap']['desiredEducation'] ?? 'A1',
       'results': results,
       'user_info': {
         'user_id': user!.uid,
@@ -200,6 +215,18 @@ class _WordCardsState extends State<WordCards> {
               ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => MaterialApp(
+                        debugShowCheckedModeBanner: false,
+                        theme: ThemeData(
+                          fontFamily: 'Roboto',
+                        ),
+                        home: DashboardScreen(),
+                      ),
+                    ),
+                  );
                 },
                 child: Text(
                   'Exit',

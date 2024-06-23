@@ -27,15 +27,16 @@ class ProductTitleWithImage extends StatelessWidget {
               RichText(
                 text: TextSpan(
                   children: [
-                    TextSpan(text: "Price\n"),
+                    TextSpan(text: "Read\n"),
                     TextSpan(
-                      text: "\$${book.price}",
+                      text: "${book.price}\n",
                       style: Theme.of(context)
                           .textTheme
                           .headlineSmall!
                           .copyWith(
                               color: Colors.white, fontWeight: FontWeight.bold),
                     ),
+                    TextSpan(text: "times\n"),
                   ],
                 ),
               ),
@@ -43,7 +44,7 @@ class ProductTitleWithImage extends StatelessWidget {
               Expanded(
                 child: Hero(
                   tag: "${book.id}",
-                  child: Image.asset(
+                  child: Image.network(
                     book.image,
                     fit: BoxFit.fill,
                   ),

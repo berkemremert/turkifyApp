@@ -1,115 +1,236 @@
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
+import 'package:turkify_bem/mainTools/APPColors.dart';
 
-class ProgressBar extends StatelessWidget {
-  final int highlightedButton;
+import '../wordCardFiles/wordCards.dart';
 
-  ProgressBar({required this.highlightedButton});
+class ProgressBar extends StatefulWidget {
+  final int selectedIndex;
+  final double ratio;
+  final String level;
+
+  ProgressBar({required this.selectedIndex, required this.ratio, required this.level});
+
+  @override
+  _ProgressBarState createState() => _ProgressBarState();
+}
+
+class _ProgressBarState extends State<ProgressBar> {
+  final List<IconData> _icons = [
+    Icons.school,
+    Icons.library_books,
+    Icons.lightbulb,
+    Icons.book,
+    Icons.sunny,
+    Icons.search,
+    Icons.computer,
+  ];
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
+    return Stack(
+      children: [
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 45.0),
+              height: MediaQuery.of(context).size.height / 6,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: _icons.length,
+                itemBuilder: (context, index) {
+                  double offset = (index % 2 == 0) ? -10.0 : 10.0;
+                  bool isClickable = index == widget.selectedIndex;
+                  bool isPink = index < widget.selectedIndex;
+
+                  return Transform.translate(
+                    offset: Offset(0, offset),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: CircleButton(
+                        icon: _icons[index],
+                        isSelected: index == widget.selectedIndex,
+                        isClickable: isClickable,
+                        isPink: isPink,
+                        onTap: () {
+                          if (isClickable) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => MaterialApp(
+                                  debugShowCheckedModeBanner: false,
+                                  theme: ThemeData(
+                                    fontFamily: 'Roboto',
+                                  ),
+                                  home: WordCards(),
+                                ),
+                              ),
+                            );
+                          }
+                        },
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+            SizedBox(height: 15),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 58.0),
+              child: GlassEffectProgressBar(
+                ratio: widget.ratio,
+                level: widget.level,
+              ),
+            ),
+            SizedBox(height: 20,)
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class CircleButton extends StatelessWidget {
+  final IconData icon;
+  final bool isSelected;
+  final bool isClickable;
+  final bool isPink;
+  final VoidCallback? onTap;
+
+  CircleButton({
+    required this.icon,
+    required this.isSelected,
+    required this.isClickable,
+    required this.isPink,
+    this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: isSelected ? baseDeepColor : (isPink ? Colors.red[200] : Colors.grey[300]),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black26,
+              offset: Offset(2, 2),
+              blurRadius: 4,
+            ),
+          ],
+        ),
+        child: Icon(
+          icon,
+          size: 30,
+          color: isSelected ? Colors.white : Colors.black54,
+          shadows: [
+            Shadow(
+              color: Colors.black26,
+              offset: Offset(2, 2),
+              blurRadius: 4,
+            ),
+          ],
+        ),
+        padding: EdgeInsets.all(15),
+      ),
+    );
+  }
+}
+
+class GlassEffectProgressBar extends StatelessWidget {
+  final double ratio;
+  final String level;
+
+  GlassEffectProgressBar({required this.ratio, required this.level});
+
+  String incrementLevel(String level) {
+    if (level == 'A1') {
+      return 'A2';
+    } else if (level == 'A2') {
+      return 'B1';
+    } else if (level == 'B1') {
+      return 'B2';
+    } else if (level == 'B2') {
+      return 'C1';
+    } else if (level == 'C1') {
+      return 'C2';
+    } else {
+      return level;
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 20,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        gradient: LinearGradient(
+          colors: [
+            Colors.white.withOpacity(0.2),
+            Colors.white.withOpacity(0.1),
+          ],
+          stops: [0.0, 1.0],
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.15),
+            blurRadius: 2,
+          ),
+        ],
+      ),
+      child: Stack(
         children: [
-          _buildSemiCircle(curveUpwards: true),
-          _buildSemiCircle(curveUpwards: false),
+          // Main progress bar
+          Container(
+            height: 20,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              gradient: LinearGradient(
+                colors: [
+                  baseDeepColor.withOpacity(0.4),
+                  baseDeepColor.withOpacity(0.2),
+                ],
+                stops: [0.0, 1.0],
+              ),
+            ),
+            width: (ratio) == 0
+                ? (MediaQuery.of(context).size.width - 116) * 0.12
+                : (ratio) * (MediaQuery.of(context).size.width - 116),
+          ),
+          Positioned(
+            left: 0,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: Text(
+                level,
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ),
+          Positioned(
+            right: 0,
+            child: Padding(
+              padding: const EdgeInsets.only(right: 8.0),
+              child: Text(
+                incrementLevel(level),
+                style: TextStyle(color: Colors.black54),
+              ),
+            ),
+          ),
+          Align(
+            alignment: Alignment.centerRight,
+            child: Container(
+              width: 5,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
         ],
       ),
     );
-  }
-
-  Widget _buildSemiCircle({required bool curveUpwards}) {
-    return Container(
-      width: 400,
-      height: 300,
-      child: CustomPaint(
-        painter: ButtonPainter(curveUpwards: curveUpwards),
-        child: Stack(
-          children: curveUpwards ? _buildButtonsUpwards() : _buildButtonsDownwards(),
-        ),
-      ),
-    );
-  }
-
-  List<Widget> _buildButtonsUpwards() {
-    return [
-      _buildButton(0, 9 * math.pi / 8, Icons.fast_forward, Colors.purple),
-      _buildButton(1, 11 * math.pi / 8, Icons.star, Colors.grey),
-      _buildButton(2, 13 * math.pi / 8, Icons.star, Colors.grey),
-      _buildButton(3, 15 * math.pi / 8, Icons.lock, Colors.grey),
-    ];
-  }
-
-  List<Widget> _buildButtonsDownwards() {
-    return [
-      _buildButton(5, 17 * math.pi / 8, Icons.fast_forward, Colors.grey),
-      _buildButton(6, 19 * math.pi / 8, Icons.star, Colors.grey),
-      _buildButton(7, 21 * math.pi / 8, Icons.star, Colors.grey),
-      _buildButton(8, 23 * math.pi / 8, Icons.lock, Colors.grey),
-    ];
-  }
-
-  Widget _buildButton(int index, double angle, IconData icon, Color color) {
-    final radius = 150.0;
-    final x = radius * math.cos(angle);
-    final y = radius * math.sin(angle);
-
-    return Align(
-      alignment: Alignment.center,
-      child: Transform.translate(
-        offset: Offset(x, y),
-        child: ButtonWithIcon(
-          icon: icon,
-          color: highlightedButton == index ? Colors.amber : color,
-          onPressed: () {},
-        ),
-      ),
-    );
-  }
-}
-
-class ButtonWithIcon extends StatelessWidget {
-  final IconData icon;
-  final Color color;
-  final VoidCallback onPressed;
-
-  ButtonWithIcon({required this.icon, required this.color, required this.onPressed});
-
-  @override
-  Widget build(BuildContext context) {
-    return FloatingActionButton(
-      onPressed: onPressed,
-      backgroundColor: color,
-      child: Icon(icon, size: 30),
-    );
-  }
-}
-
-class ButtonPainter extends CustomPainter {
-  final bool curveUpwards;
-
-  ButtonPainter({required this.curveUpwards});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    var paint = Paint()
-      ..color = Colors.transparent
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 2;
-
-    var path = Path();
-    if (curveUpwards) {
-      path.addArc(Rect.fromCircle(center: Offset(size.width / 2, size.height / 2), radius: 150), math.pi, math.pi);
-    } else {
-      path.addArc(Rect.fromCircle(center: Offset(size.width / 2, size.height / 2), radius: 150), 0, math.pi);
-    }
-
-    canvas.drawPath(path, paint);
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return false;
   }
 }

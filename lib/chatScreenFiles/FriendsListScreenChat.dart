@@ -68,7 +68,6 @@ class _FriendsListScreenChatState extends State<FriendsListScreenChat> {
             final friendImageUrl = friendData?['profileImageUrl'];
             final bool imageChecker = friendImageUrl != null;
             bool isRead = isReadMap[friendId] ?? false;
-            print("$friendName ${isReadMap[friendId]}");
             return GestureDetector(
               onTap: () async {
                 await Navigator.push(

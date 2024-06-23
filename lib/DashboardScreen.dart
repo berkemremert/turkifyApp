@@ -62,6 +62,7 @@ class _DashboardScreenState extends State<DashboardScreen>
   bool _isMatchingPageOpen = false;
   bool _isChatPageOpen = false;
   bool _isBigButtonOpen = false;
+  late Map<String, dynamic> progressBarData = {'tests_solved' : 0, 'level' : 'A1', 'progress' : 0.1};
 
   @override
   void initState() {
@@ -87,6 +88,12 @@ class _DashboardScreenState extends State<DashboardScreen>
 
     NotificationMethods().requestPermissions();
     NotificationMethods().initNotification(user!);
+
+    progressBarInitialize();
+  }
+
+  progressBarInitialize() async{
+    progressBarData = await calculateProgress(user!.uid ?? '', _userData['studentMap'] != null ? _userData['studentMap']['desiredEducation'] ?? 'A1' : 'A1');
   }
 
   Future<void> _listenToCallField() async {
@@ -271,7 +278,7 @@ class _DashboardScreenState extends State<DashboardScreen>
     ),
     isRead: isReadMap.values.contains(false) && identifier == 'chat',
     onPressed: () async {
-      if (identifier == 'chat') {
+      if (identifier == 'wordCenter') {
         if(!_isChatPageOpen){
           setState(() {
             _isChatPageOpen = true;
@@ -288,19 +295,7 @@ class _DashboardScreenState extends State<DashboardScreen>
             _isChatPageOpen = false;
           });
         }
-      } else if (identifier == 'calendar') {
-        _loadingController!.reverse();
-        await Future.delayed(const Duration(milliseconds: 1300));
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => ScaffoldWidget(
-              title: '',
-              child: FilterPage(userData: _userData),
-            ),
-          ),
-        );
-      } else if (identifier == 'match') {
+      } else if (identifier == 'easyReadings') {
         if(!_isMatchingPageOpen){
           setState(() {
             _isMatchingPageOpen = true;
@@ -325,17 +320,6 @@ class _DashboardScreenState extends State<DashboardScreen>
             });
           });
         }
-      }
-      else if (identifier == 'profile') {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => ScaffoldWidget(
-              title: 'Kelime Kartları',
-              child: Container(),
-            ),
-          ),
-        );
       }
       else if (identifier == 'settings') {
         if(!_isSettingsPageOpen){
@@ -369,45 +353,24 @@ class _DashboardScreenState extends State<DashboardScreen>
     return GridView.count(
       padding: const EdgeInsets.symmetric(
         horizontal: 32.0,
+        vertical: 0,
       ),
       physics: const NeverScrollableScrollPhysics(),
-      childAspectRatio: 0.4,
       // crossAxisSpacing: 5,
       crossAxisCount: 3,
       children: [
-        // _buildButton(
-        //   icon: FontAwesomeIcons.user,
-        //   label: 'Profile',
-        //   interval: const Interval(0, aniInterval),
-        //   identifier: 'profile',
-        //   iconColor: iconColor,
-        // ),
         _buildButton(
-          icon: FontAwesomeIcons.comments,
-          label: 'Group Chat',
+          icon: FontAwesomeIcons.w,
+          label: 'Word Center',
           interval: const Interval(step, aniInterval + step),
-          identifier: 'chat',
+          identifier: 'wordCenter',
           iconColor: iconColor,
         ),
-        // _buildButton(
-        //   icon: FontAwesomeIcons.calendar,
-        //   label: 'Calendar',
-        //   interval: const Interval(step * 2, aniInterval + step * 2),
-        //   identifier: 'calendar',
-        //   iconColor: iconColor,
-        // ),
-        // _buildButton(
-        //   icon: FontAwesomeIcons.listCheck,
-        //   label: 'Tasks',
-        //   interval: const Interval(0, aniInterval),
-        //   identifier: 'task',
-        //   iconColor: iconColor,
-        // ),
         _buildButton(
-          icon: FontAwesomeIcons.personMilitaryToPerson,
-          label: 'Match',
+          icon: FontAwesomeIcons.book,
+          label: 'Easy Readings',
           interval: const Interval(step * 2, aniInterval + step * 2),
-          identifier: 'match',
+          identifier: 'easyReadings',
           iconColor: iconColor,
         ),
         _buildButton(
@@ -461,7 +424,6 @@ class _DashboardScreenState extends State<DashboardScreen>
       onPopInvoked: (hasPopped) => hasPopped ? _goToLogin(context) : null,
       child: SafeArea(
         child: Scaffold(
-          // appBar: _buildAppBar(theme),
           body: Container(
             color: backGroundColor(),
             width: double.infinity,
@@ -470,6 +432,7 @@ class _DashboardScreenState extends State<DashboardScreen>
               children: <Widget>[
                 Column(
                   children: <Widget>[
+                    SizedBox(height: 8,),
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.2,
                       child: Stack(
@@ -538,13 +501,17 @@ class _DashboardScreenState extends State<DashboardScreen>
                       },
                       animationController: _loadingController!,
                     ),
-                    SizedBox(height: 50,),
-                    // ProgressBar(highlightedButton: 2,),
-                    const SizedBox(height: 50),
+                    SizedBox(height: 45,),
+                    ProgressBar(
+                      selectedIndex: progressBarData['tests_solved'],
+                      ratio: progressBarData['progress'],
+                      level: progressBarData['level'],
+                    ),
+                    SizedBox(height: 45,),
                     Stack(
                       children: [
                         SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.25,
+                          height: MediaQuery.of(context).size.height * 0.15,
                           child: _buildDashboardGrid(),
                         ),
                         ClipRect(
@@ -567,6 +534,56 @@ class _DashboardScreenState extends State<DashboardScreen>
     );
   }
 
+
+  Future<Map<String, dynamic>> calculateProgress(String userId, String level) async {
+    Map<String, dynamic> result = {
+      'level': level,
+      'progress': 0.0,
+      'tests_solved': 0,
+    };
+
+    try {
+      var querySnapshot = await FirebaseFirestore.instance
+          .collection('quizResults')
+          .doc(userId)
+          .collection('quizzes')
+          .where('level', isEqualTo: level)
+          .get();
+
+      if (querySnapshot.docs.isNotEmpty) {
+        int totalQuestions = 0;
+        int correctAnswers = 0;
+        int testsSolved = 0;
+
+        querySnapshot.docs.forEach((doc) {
+          List<Map<String, dynamic>> results = List<Map<String, dynamic>>.from(doc['results']);
+          totalQuestions += results.length;
+
+          int correctCount = results.where((result) => result['answered_correctly'] == true).length;
+
+          if (correctCount >= results.length / 2) {
+            correctAnswers += correctCount;
+            testsSolved++;
+          }
+        });
+
+        if (testsSolved > 0) {
+          double progress = testsSolved / 8;
+          result['progress'] = progress;
+        }
+
+        result['tests_solved'] = testsSolved;
+      } else {
+        print('No quiz results found for level: $level');
+      }
+    } catch (e) {
+      print('Error calculating progress: $e');
+    }
+
+    return result;
+  }
+
+
   Future<Map<String, dynamic>?> getUserData(String documentId) async {
     try {
       DocumentSnapshot userSnapshot = await FirebaseFirestore.instance
@@ -586,6 +603,7 @@ class _DashboardScreenState extends State<DashboardScreen>
       return null;
     }
   }
+
 
   void gettUserData() async {
     DocumentSnapshot userDoc = await FirebaseFirestore.instance

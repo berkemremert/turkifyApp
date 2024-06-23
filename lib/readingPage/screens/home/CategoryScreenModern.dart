@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/firebaseMethods.dart';
 
 import '../../models/Category.dart';
@@ -11,6 +12,7 @@ class CategoryScreen extends StatefulWidget {
 
 class _CategoryScreenState extends State<CategoryScreen> {
   List<List<Book>> booksOfCategory = [];
+  bool isLoading = true;
 
   @override
   void initState() {
@@ -21,36 +23,38 @@ class _CategoryScreenState extends State<CategoryScreen> {
   _bookInitializer() async {
     List<List<Book>> tempBooks = [];
     for (int i = 0; i < 6; i++) {
-      tempBooks.add(await getCategoryBookList(i)); // Ensure it waits for the async call
+      tempBooks.add(await getCategoryBookList(i));
     }
     setState(() {
       booksOfCategory = tempBooks;
+      isLoading = false;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-      ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: Center(
-            child: AspectRatio(
-              aspectRatio: 2 / 3.5,
-              child: GridView.count(
-                crossAxisCount: 2,
-                crossAxisSpacing: 15.0,
-                mainAxisSpacing: 15.0,
-                childAspectRatio: 1.0,
-                children: List.generate(6, (index) {
-                  return CategoryButton(
-                    index: index,
-                    books: booksOfCategory.isNotEmpty ? booksOfCategory[index] : [],
-                  );
-                }),
-              ),
+      appBar: AppBar(),
+      body: isLoading
+          ? Center(
+        child: CircularProgressIndicator(color: baseDeepColor,),
+      )
+          : Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Center(
+          child: AspectRatio(
+            aspectRatio: 2 / 3.5,
+            child: GridView.count(
+              crossAxisCount: 2,
+              crossAxisSpacing: 15.0,
+              mainAxisSpacing: 15.0,
+              childAspectRatio: 1.0,
+              children: List.generate(6, (index) {
+                return CategoryButton(
+                  index: index,
+                  books: booksOfCategory.isNotEmpty ? booksOfCategory[index] : [],
+                );
+              }),
             ),
           ),
         ),
@@ -139,7 +143,7 @@ class CategoryButton extends StatelessWidget {
     switch (text) {
       case 'Türk Kültürü':
         return LinearGradient(
-          colors: [Colors.red, Colors.deepOrange],
+          colors: [baseDeepColor, darkRed],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         );

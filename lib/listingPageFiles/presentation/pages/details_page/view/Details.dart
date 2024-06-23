@@ -69,6 +69,40 @@ class _ScreenDetailsState extends State<ScreenDetails> {
     }
   }
 
+  void _showConfirmationDialog() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          backgroundColor: backGroundColor(),
+          title: Text('Send Request', style: TextStyle(color: baseDeepColor)),
+          content: Text('Do you want to send an automated request message?', style: TextStyle(color: Colors.black54)),
+          actions: <Widget>[
+            TextButton(
+              child: Text('Cancel', style: TextStyle(color: Colors.black54)),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+            TextButton(
+              child: Text('Send', style: TextStyle(color: baseDeepColor)),
+              onPressed: () {
+                Navigator.of(context).pop();
+                _addFriend(widget.uid);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ChatPage(data: _userData, friendId: widget.uid),
+                  ),
+                );
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     ScreenConfig().init(context);
@@ -193,15 +227,7 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                       text: 'Send Request',
                       leftIconVisibility: false,
                       rightIconVisibility: false,
-                      onTap: () {
-                        _addFriend(widget.uid);
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => ChatPage(data: _userData, friendId: widget.uid),
-                          ),
-                        );
-                      },
+                      onTap: _showConfirmationDialog,
                     ),
                   ),
                 ],

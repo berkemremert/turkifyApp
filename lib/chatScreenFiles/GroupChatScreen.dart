@@ -454,7 +454,16 @@ class _ChatPageState extends State<ChatPage> {
     });
   }
 
-  void _handleSendPressed(types.PartialText message) async { // for handling send pressed
+  void _handleSendPressed(types.PartialText message) async {
+    if (!isActive) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('The tutor has not accepted the request yet. Please wait until the tutor accepts.'),
+        ),
+      );
+      return;
+    }
+
     String curID = _currentUser?.uid ?? "-";
     String roomID = "";
 
@@ -542,7 +551,8 @@ class _ChatPageState extends State<ChatPage> {
   void _loadCurrentUser() async { // to initiate isTutor
     String userId = _currentUser?.uid ?? '';
     if (userId.isNotEmpty) {
-      Map<String, dynamic>? userData = getUserData(userId);
+      DocumentSnapshot userSnapshot = await firebaseInstance.collection('users').doc(userId).get();
+      Map<dynamic, dynamic>? userData = userSnapshot.data() as Map<dynamic, dynamic>?;
       setState(() {
         isTutor = userData?['isTutor'] ?? false;
       });
@@ -648,11 +658,13 @@ class _ChatPageState extends State<ChatPage> {
   }
 
   void _sendInitialMessage() {
+    String textMessage = 'Hello, can you teach me Turkish?';
+
     if (_messages.isEmpty) {
       final initialMessage = types.TextMessage(
         author: types.User(id: friendId),
         id: const Uuid().v4(),
-        text: 'Hello, can you teach me Turkish?',
+        text: textMessage,
         createdAt: DateTime.now().millisecondsSinceEpoch,
       );
 
