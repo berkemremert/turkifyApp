@@ -283,6 +283,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           setState(() {
             _isChatPageOpen = true;
           });
+
           _loadingController!.reverse();
           await Future.delayed(const Duration(milliseconds: 1295));
           Navigator.push(
