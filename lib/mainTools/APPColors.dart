@@ -1,5 +1,6 @@
 // import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:turkify_bem/settingsPageFiles/settingsPageStudent.dart';
 import '../settingsPageFiles/settingsPageTutor.dart';
 
 bool isDarkMode = !SettingsPageTutor.getIsDarkMode();
@@ -20,18 +21,64 @@ Color red = Colors.red;
 Color redOpen = Colors.red.withOpacity(0.75);
 
 Color backGroundColor() {
+  if (SettingsPageTutor.isDarkMode || SettingsPageStudent.isDarkMode) {
+    return const Color.fromARGB(255, 31, 28, 55);
+  } else {
+    return Color.fromARGB(255, 255, 250, 250);
+  }
   return SettingsPageTutor.isDarkMode ? const Color.fromARGB(255, 31, 28, 55) : Color.fromARGB(255, 255, 250, 250);
 }
+
 Color textColor() {
-  return SettingsPageTutor.isDarkMode ? Colors.white : Colors.black;
+  if (SettingsPageTutor.isDarkMode || SettingsPageStudent.isDarkMode) {
+    return Colors.white;
+  } else {
+    return Colors.black;
+  }
+  // return SettingsPageTutor.isDarkMode ? Colors.white : Colors.black;
 }
+
 Color notificationColor() {
-  return SettingsPageTutor.isDarkMode ? Colors.white : const Color.fromARGB(255, 128, 0, 0);
+  if (SettingsPageTutor.isDarkMode || SettingsPageStudent.isDarkMode) {
+    return Colors.white;
+  } else {
+    return const Color.fromARGB(255, 128, 0, 0);
+  }
+  // return SettingsPageTutor.isDarkMode ? Colors.white : const Color.fromARGB(255, 128, 0, 0);
 }
+
+Color iconColor() {
+  if (SettingsPageTutor.isDarkMode || SettingsPageStudent.isDarkMode) {
+    return white;
+  } else {
+    return black;
+  }
+  // return SettingsPageTutor.isDarkMode ? lightGrey : const Color.fromARGB(255, 245, 235, 230);
+}
+
 Color welcomeColor() {
-  return SettingsPageTutor.isDarkMode ? lightGrey : const Color.fromARGB(255, 245, 235, 230);
+  if (SettingsPageTutor.isDarkMode || SettingsPageStudent.isDarkMode) {
+    return lightGrey;
+  } else {
+    return const Color.fromARGB(255, 245, 235, 230);
+  }
+  // return SettingsPageTutor.isDarkMode ? lightGrey : const Color.fromARGB(255, 245, 235, 230);
 }
 
 Color endcolor(String text, List<dynamic> langs) {
-  return langs.contains(text) ? Colors.blueGrey : Colors.red.withOpacity(0.75);
+  if (SettingsPageTutor.isDarkMode || SettingsPageStudent.isDarkMode) {
+    return Colors.blueGrey;
+  } else {
+    return Colors.red.withOpacity(0.75);
+  }
+  // return langs.contains(text) ? Colors.blueGrey : Colors.red.withOpacity(0.75);
+}
+
+Color settingsCardBg(String text, List<dynamic> langs) {
+  if (SettingsPageTutor.isDarkMode || SettingsPageStudent.isDarkMode) {
+    return Colors.blueGrey;
+  } else {
+    return Colors.red.withOpacity(0.75);
+  }
+  // return langs.contains(text) ? Colors.blueGrey : Colors.red.withOpacity(0.75);
 }
