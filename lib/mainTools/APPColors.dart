@@ -19,6 +19,7 @@ Color blueAccent = Colors.blueAccent;
 Color greenAccent = Colors.greenAccent;
 Color red = Colors.red;
 Color redOpen = Colors.red.withOpacity(0.75);
+Color wordcardTextHighlight = Colors.red.shade100;
 
 Color backGroundColor() {
   if (SettingsPageTutor.isDarkMode || SettingsPageStudent.isDarkMode) {
@@ -82,3 +83,13 @@ Color settingsCardBg(String text, List<dynamic> langs) {
   }
   // return langs.contains(text) ? Colors.blueGrey : Colors.red.withOpacity(0.75);
 }
+
+Color cardColor() {
+  if (SettingsPageTutor.isDarkMode || SettingsPageStudent.isDarkMode) {
+    return Colors.blueGrey.shade300;
+  } else {
+    return Colors.grey.shade50;
+  }
+  // return SettingsPageTutor.isDarkMode ? Colors.white : const Color.fromARGB(255, 128, 0, 0);
+}
+
