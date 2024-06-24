@@ -139,8 +139,10 @@ class _WordCardsState extends State<WordCards> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Test Your Turkish'),
+        title: Text('Test Your Turkish',
+          style: TextStyle(color: textColor(),),),
         automaticallyImplyLeading: !showResults,
+        backgroundColor: backGroundColor(),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -163,7 +165,10 @@ class _WordCardsState extends State<WordCards> {
             children: [
               Text(
                 'How many questions do you want to answer?',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: textColor(),
+                ),
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 30),
@@ -304,6 +309,7 @@ class _WordCardsState extends State<WordCards> {
           ],
         ),
       ),
+      backgroundColor: backGroundColor(),
     );
   }
 
