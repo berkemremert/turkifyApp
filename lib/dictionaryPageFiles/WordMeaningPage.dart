@@ -38,7 +38,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
   }
 
   void _onSearch() async {
-    searchQuery = _searchController.text;
+    searchQuery = _searchController.text.toLowerCase();
     var result = await getDictWordByWord(searchQuery);
     if (result != null) {
       meanings = result["meanings"];

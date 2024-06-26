@@ -39,7 +39,8 @@ class BookScreen extends StatelessWidget {
                     context,
                     MaterialPageRoute(
 
-                      builder: (context) => DetailsScreen(book: books[index]),
+                      builder: (context) => DetailsScreen(
+                          book: books[index]),
                     ),
                   ),
                 ),

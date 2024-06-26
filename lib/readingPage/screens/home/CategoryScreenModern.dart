@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 import 'package:turkify_bem/mainTools/firebaseMethods.dart';
+import 'package:turkify_bem/readingPage/screens/home/components/aiInput.dart';
 
 import '../../models/Category.dart';
 import 'BookScreen.dart';
@@ -72,7 +73,7 @@ class CategoryButton extends StatelessWidget {
     'Günlük Yaşam',
     'Spor',
     'Sinema',
-    'Yapay Zekayla Oluştur'
+    'Create with AI'
   ];
 
   CategoryButton({required this.index, required this.books});
@@ -81,12 +82,20 @@ class CategoryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
+        index != 5 ?
         Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) => BookScreen(
               books: books,
             ),
+          ),
+        )
+        :
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => AiInput(),
           ),
         );
       },
@@ -171,7 +180,7 @@ class CategoryButton extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         );
-      case 'Yapay Zekayla Oluştur':
+      case 'Create with AI':
         return LinearGradient(
           colors: [
             Colors.purple,

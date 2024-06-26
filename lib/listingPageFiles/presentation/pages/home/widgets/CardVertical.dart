@@ -36,7 +36,7 @@ class _CardVerticalSmartState extends State<CardVerticalSmart> {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return CircularProgressIndicator(
             valueColor: AlwaysStoppedAnimation<Color>(baseDeepColor),
-          ); // Placeholder for loading state
+          );
         } else if (snapshot.hasError) {
           return Text('Error: ${snapshot.error}');
         } else {

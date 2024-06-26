@@ -138,10 +138,6 @@ class _WordCardsState extends State<WordCards> {
     final progress = (currentQuestionIndex + 1) / totalQuestions;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Test Your Turkish'),
-        automaticallyImplyLeading: !showResults,
-      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: showQuestionScreen
@@ -245,6 +241,7 @@ class _WordCardsState extends State<WordCards> {
             : Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SizedBox(height: 80,),
             LinearProgressIndicator(
               value: progress,
               backgroundColor: Colors.grey[300],
