@@ -102,7 +102,7 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
                 children: [
                   Icon(
                     Icons.nightlight_round,
-                    color: !SettingsPageStudent.isDarkMode ? black : backGroundColor(),
+                    color: iconColor(),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(20.0),
@@ -156,6 +156,7 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
                     color: baseDeepColor,
                     fontWeight: FontWeight.bold,
                   ),
+                  backgroundColor: backGroundColor(),
                 ),
                 SettingsItem(
                   onTap: () {
@@ -203,6 +204,7 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
                     color: baseDeepColor,
                     fontWeight: FontWeight.bold,
                   ),
+                  backgroundColor: backGroundColor(),
                 ),
               ],
             ),
@@ -572,6 +574,7 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
   List<SettingsItem> _settingItems(){
     List<SettingsItem> items = [
       SettingsItem(
+        backgroundColor: backGroundColor(),
         onTap: () async {
           _updateProfilePicture();
         },
@@ -587,6 +590,7 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
         subtitleMaxLine: 1,
       ),
       SettingsItem(
+        backgroundColor: backGroundColor(),
         onTap: () async {
           _updateName(context);
         },
@@ -602,6 +606,7 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
         subtitleMaxLine: 1,
       ),
       SettingsItem(
+        backgroundColor: backGroundColor(),
         onTap: () async {
           _updateAbout(context);
         },
@@ -617,6 +622,7 @@ class _SettingsPageStudentState extends State<SettingsPageStudent> {
         subtitleMaxLine: 1,
       ),
         SettingsItem(
+          backgroundColor: backGroundColor(),
         onTap: () {
           Navigator.push(
             context,
