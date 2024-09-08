@@ -47,7 +47,7 @@ Run the app:
 flutter run
 
 Screenshots
-
+![Alt text](https://ibb.co/0Dn2Yst "ScreenshotsOne")
 
 Future Enhancements
 AI-Assisted Language Learning: Further development of AI-based personalized learning paths.
