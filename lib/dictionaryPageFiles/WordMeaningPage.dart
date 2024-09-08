@@ -38,7 +38,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
   }
 
   void _onSearch() async {
-    searchQuery = _searchController.text;
+    searchQuery = _searchController.text.toLowerCase();
     var result = await getDictWordByWord(searchQuery);
     if (result != null) {
       meanings = result["meanings"];
@@ -61,13 +61,14 @@ class _DictionaryPageState extends State<DictionaryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        iconTheme: IconThemeData(color: iconColor()),
+        backgroundColor: backGroundColor(),
         elevation: 0,
         title: Container(
           margin: EdgeInsets.symmetric(horizontal: 8.0),
           padding: EdgeInsets.symmetric(horizontal: 8.0),
           decoration: BoxDecoration(
-            color: Colors.grey[200],
+            color: Colors.grey[400],
             borderRadius: BorderRadius.circular(8.0),
           ),
           child: Row(
@@ -86,7 +87,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
                 ),
               ),
               IconButton(
-                icon: Icon(Icons.search, color: Colors.red),
+                icon: Icon(Icons.search, color: iconColor()),
                 onPressed: _onSearch,
               ),
             ],
@@ -127,6 +128,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
           }
         },
       ),
+      backgroundColor: backGroundColor(),
     );
   }
 
@@ -176,7 +178,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16.0),
       ),
-      color: Colors.grey[50],
+      color: cardColor(),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -187,13 +189,14 @@ class _DictionaryPageState extends State<DictionaryPage> {
               style: TextStyle(
                 fontSize: 18.0,
                 fontWeight: FontWeight.bold,
+
               ),
             ),
             SizedBox(height: 16.0),
             Container(
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: Colors.red[300],
+                color: wordcardTextHighlight,
                 borderRadius: BorderRadius.circular(16.0),
               ),
               padding: EdgeInsets.symmetric(vertical: 8.0),
@@ -233,7 +236,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16.0),
       ),
-      color: Colors.grey[50],
+      color: cardColor(),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -274,7 +277,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16.0),
       ),
-      color: Colors.grey[50],
+      color: cardColor(),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -291,7 +294,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
             Container(
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: Colors.red[200],
+                color: wordcardTextHighlight,
                 borderRadius: BorderRadius.circular(16.0),
               ),
               padding: EdgeInsets.symmetric(vertical: 8.0),
@@ -332,7 +335,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16.0),
       ),
-      color: Colors.grey[50],
+      color: cardColor(),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -349,7 +352,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
             Container(
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  color: Colors.red[100],
+                  color: wordcardTextHighlight,
                   borderRadius: BorderRadius.circular(16.0),
                 ),
                 padding: EdgeInsets.symmetric(vertical: 8.0),
@@ -361,12 +364,12 @@ class _DictionaryPageState extends State<DictionaryPage> {
                     style: TextStyle(
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black87,
+                      color: Colors.white,
                       shadows: [
                         Shadow(
                           offset: Offset(2.0, 2.0),
                           blurRadius: 5.0,
-                          color: Colors.white,
+                          color: Colors.black12,
                         ),
                       ],
                     ),

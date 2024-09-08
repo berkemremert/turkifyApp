@@ -283,13 +283,14 @@ class _DashboardScreenState extends State<DashboardScreen>
           setState(() {
             _isChatPageOpen = true;
           });
+
           _loadingController!.reverse();
           await Future.delayed(const Duration(milliseconds: 1295));
           Navigator.push(
             context,
             MaterialPageRoute(
               // builder: (context) => ReviewPage(tutorUid: 'fNRxolmhX2dY2HcwEyJOCaamc7U2'),
-              builder: (context) => WordCards(),
+              builder: (context) => DictionaryPage(),
             ),
           ).then((value) {
             _isChatPageOpen = false;

@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
@@ -25,11 +27,20 @@ class TutorsPresentationState extends State<TutorsPresentation> {
   late List<Map<String, dynamic>> tutors = [];
   late List<String> tutorUids = [];
   bool _isLoading = true;
+  Random random = Random();
+  late int howLong;
 
   @override
   void initState() {
     super.initState();
     loadTutors();
+    howLongInit();
+  }
+
+  howLongInit(){
+    howLong = random.nextInt(4);
+    if(howLong == 0)
+      howLong = 1;
   }
 
   Future<void> loadTutors() async {
@@ -135,7 +146,8 @@ class TutorsPresentationState extends State<TutorsPresentation> {
                                         ),
                                         child: Row(
                                           children: <Widget>[
-                                            BodySmall__text(text: tutor['rating']?? 'New Tutor', color: kColorWhite),
+                                            // TODO:
+                                            BodySmall__text(text: tutor['howLong']?? '${howLong} Months', color: kColorWhite),
                                           ],
                                         ),
                                       ),

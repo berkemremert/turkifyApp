@@ -12,11 +12,16 @@ Future<String?> talkWithGemini() async{
   return response.text;
 }
 
-Future<String?> talkWithGemini2() async{ // Örnek kullanılmayan fonksiyon
+Future<List<String?>> talkWithGemini2(String prompt, String level) async{
   final model = GenerativeModel(model: 'gemini-pro', apiKey: apiKey!);
-  final message = "Bana A1 seviyesinde, Temel hakkında hakkında bir fıkra anlat"; // TODO: BURAYI İSTEDİĞİNİZ GİBİ EDİTLEYİN
+  final message = "Bana $level seviyesinde, '$prompt' hakkında Türkçe bir hikaye anlat";
   final content = Content.text(message);
   final response = await model.generateContent([content]);
+
+  final title = 'Metne maksimum 5 kelimelik bir başlık yaz (başka hiçbir şey yazma): ' + response.text!;
+  final titleContent = Content.text(title);
+  final titleResponse = await model.generateContent([titleContent]);
+
   print("${response.text}");
-  return response.text;
+  return [response.text, titleResponse.text];
 }

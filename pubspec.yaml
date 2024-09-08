@@ -124,5 +124,4 @@ flutter:
     - assets/readingPage/icons/
     - assets/readingPage/images/
     - assets/loading-gif.gif
-
-
+    - assets/bannedWords.txt

@@ -19,6 +19,7 @@ import 'package:bubble/bubble.dart';
 import 'package:turkify_bem/mainTools/APPColors.dart';
 
 import '../mainTools/firebaseMethods.dart';
+import '../mainTools/spamDetection.dart';
 import '../settingsPageFiles/settingsPageTutor.dart';
 import '../videoMeetingFiles/videoMeetingMain.dart';
 
@@ -541,10 +542,29 @@ class _ChatPageState extends State<ChatPage> {
   }
 
   void _handleSendPressed(types.PartialText message) async {
+    if(await isUserBanned(_currentUser!.uid)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+              'You are banned from chatting because of inappropriate attempts. You cannot send a message to any of tutors.'),
+        ),
+      );
+      return;
+    }
+
     if (!isActive) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('The tutor has not accepted the request yet. Please wait until the tutor accepts.'),
+        ),
+      );
+      return;
+    }
+
+    if(await checkMessage(_currentUser!.uid, message.text)){
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Your message includes sensitive content. Please check your message.'),
         ),
       );
       return;

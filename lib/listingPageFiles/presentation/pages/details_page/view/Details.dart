@@ -145,14 +145,11 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                         ),
                         kSizedBoxHeight_16,
                         RichText(
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
                           text: TextSpan(
                             text: (_userData['tutorMap'] != null &&
                                 _userData['tutorMap'] != [])
-                                ? _userData['tutorMap']['whoamI']
+                                ? _userData['tutorMap']['whoamI'] + '\n\n' + _userData['tutorMap']['whoamIEng']
                                 : 'No description.',
-                            style: kBodySmallTextstylee,
                           ),
                         ),
                       ],
