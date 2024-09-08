@@ -47,7 +47,7 @@ Run the app:
 flutter run
 
 Screenshots
-![Alt text](https://i.ibb.co/0Dn2Yst/ss1.png "ScreenshotsOne")
+![Alt text](https://i.ibb.co/f1XFrDv/ss1.png "ScreenshotsOne")
 
 Future Enhancements
 AI-Assisted Language Learning: Further development of AI-based personalized learning paths.
