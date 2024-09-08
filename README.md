@@ -47,7 +47,7 @@ Run the app:
 flutter run
 
 Screenshots
-![ScreenShot](https://raw.github.com/{berkemremert}/{turkifyApp}/{main}/{assets/screenshots/ss1})
+![ScreenShot](https://raw.github.com/{berkemremert}/{turkifyApp}/{berk}/{assets/screenshots/ss1})
 
 Future Enhancements
 AI-Assisted Language Learning: Further development of AI-based personalized learning paths.
