@@ -47,7 +47,7 @@ Run the app:
 flutter run
 
 Screenshots
-![Alt text](/assets/screenshots/ss1.png?raw=true "Optional Title")
+![Alt text](/assets/ss1.png?raw=true "Optional Title")
 
 Future Enhancements
 AI-Assisted Language Learning: Further development of AI-based personalized learning paths.
