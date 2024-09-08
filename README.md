@@ -47,7 +47,7 @@ Run the app:
 flutter run
 
 Screenshots
-[url=https://ibb.co/0Dn2Yst][img]https://i.ibb.co/ZLfXc2m/ss1.png[/img][/url]
+<a href="https://ibb.co/0Dn2Yst"><img src="https://i.ibb.co/ZLfXc2m/ss1.png" alt="ss1" border="0" /></a>
 
 Future Enhancements
 AI-Assisted Language Learning: Further development of AI-based personalized learning paths.
