@@ -59,4 +59,4 @@ Expanded Cultural Content: Adding more Turkish folklore, traditions, and history
 Partnerships: Collaborations with educational institutions and government bodies to integrate the app into formal language education programs.
 
 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+© 2024 Berk Emre Mert and EğiTeam
