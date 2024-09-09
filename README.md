@@ -47,7 +47,11 @@ Run the app:
 flutter run
 
 Screenshots
-
+![ScreenShot](/assets/ss1.png?raw=true "Screenshot1")
+![ScreenShot](/assets/ss2.png?raw=true "Screenshot2")
+![ScreenShot](/assets/ss3.png?raw=true "Screenshot3")
+![ScreenShot](/assets/ss4.png?raw=true "Screenshot4")
+![ScreenShot](/assets/ss5.png?raw=true "Screenshot5")
 
 Future Enhancements
 AI-Assisted Language Learning: Further development of AI-based personalized learning paths.
