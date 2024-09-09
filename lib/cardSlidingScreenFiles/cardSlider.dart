@@ -363,3 +363,5 @@ class ScaffoldWidget extends StatelessWidget {
     );
   }
 }
+
+// © 2024 Berk Emre Mert and EğiTeam

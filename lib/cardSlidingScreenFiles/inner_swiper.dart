@@ -1,92 +1,374 @@
+import 'dart:ui';
+
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 
 import '../mainTools/APPColors.dart';
+import '../settingsPageFiles/settingsPageTutor.dart';
+import 'src/config.dart';
 
 void main() => runApp(const MyApp());
+
+class MyScrollBehavior extends MaterialScrollBehavior {
+  // This overrides the default scroll behavior to allow touch and mouse scrolling
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+    PointerDeviceKind.touch,
+    PointerDeviceKind.mouse,
+  };
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // Root widget of the application that defines routes and sets up the theme
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: InnerSwiper(),
+    return MaterialApp(
+      scrollBehavior: MyScrollBehavior(),
+      title: 'Flutter Demo',
+      theme: ThemeData.light(),
+      home: const MyHomePage(title: 'Flutter Swiper'),
+      routes: {
+        '/example01': (context) => const ExampleHorizontal(),
+        '/example02': (context) => const ExampleVertical(),
+        '/example03': (context) => const ExampleFraction(),
+        '/example04': (context) => const ExampleCustomPagination(),
+        '/example05': (context) => const ExamplePhone(),
+      },
     );
   }
 }
 
-class InnerSwiper extends StatefulWidget {
-  const InnerSwiper({super.key});
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+
+  final String title;
 
   @override
-  State<StatefulWidget> createState() {
-    return _InnerSwiperState();
-  }
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _InnerSwiperState extends State<InnerSwiper> {
-  late SwiperController controller;
+class _MyHomePageState extends State<MyHomePage> {
+  // Helper function to render the list of swiper examples
+  List<Widget> render(BuildContext context, List<List<String>> children) {
+    return ListTile.divideTiles(
+      context: context,
+      tiles: children.map((data) {
+        return buildListTile(context, data[0], data[1], data[2]);
+      }),
+    ).toList();
+  }
 
-  late List<bool> autoPlayer;
-
-  late List<SwiperController> controllers;
-
-  @override
-  void initState() {
-    controller = SwiperController();
-    autoPlayer = List.generate(10, (index) => false);
-    controllers = List.generate(10, (index) => SwiperController());
-    super.initState();
+  // Creates a ListTile widget that navigates to a specific route when tapped
+  Widget buildListTile(
+      BuildContext context, String title, String subtitle, String url) {
+    return ListTile(
+      onTap: () {
+        Navigator.of(context).pushNamed(url);
+      },
+      isThreeLine: true,
+      dense: false,
+      leading: null,
+      title: Text(title),
+      subtitle: Text(subtitle),
+      trailing: Icon(
+        Icons.arrow_right,
+        color: blueAccent,
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
+    // Main scaffold of the homepage, showing a list of swiper examples
     return Scaffold(
-      body: Swiper(
-        loop: false,
-        itemCount: 10,
-        controller: controller,
-        pagination: const SwiperPagination(),
-        itemBuilder: (context, index) {
-          return Column(
-            children: <Widget>[
-              SizedBox(
-                height: 300.0,
-                child: Swiper(
-                  controller: controllers[index],
-                  pagination: const SwiperPagination(),
-                  itemCount: 4,
-                  itemBuilder: (context, index) {
-                    return Container(
-                      color: greenAccent,
-                      child: const Text('jkfjkldsfjd'),
-                    );
-                  },
-                  autoplay: autoPlayer[index],
-                ),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  setState(() {
-                    autoPlayer[index] = true;
-                  });
-                },
-                child: const Text('Start autoplay'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  setState(() {
-                    autoPlayer[index] = false;
-                  });
-                },
-                child: const Text('End autoplay'),
-              ),
-              Text('is autoplay: ${autoPlayer[index]}')
-            ],
-          );
-        },
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: ListView(
+        children: render(context, [
+          ['Horizontal', 'Scroll Horizontal', '/example01'],
+          ['Vertical', 'Scroll Vertical', '/example02'],
+          ['Fraction', 'Fraction style', '/example03'],
+          ['Custom Pagination', 'Custom Pagination', '/example04'],
+          ['Phone', 'Phone view', '/example05'],
+          ['ScrollView ', 'In a ScrollView', '/example06'],
+          ['Custom', 'Custom all properties', '/example07']
+        ]),
       ),
     );
   }
 }
+
+const List<String> titles = [
+  'Flutter Swiper is awesome',
+  'Really nice',
+  'Yeah'
+];
+
+// Horizontal swiper example with auto-play functionality
+class ExampleHorizontal extends StatelessWidget {
+  const ExampleHorizontal({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('ExampleHorizontal'),
+      ),
+      body: Swiper(
+        itemBuilder: (context, index) {
+          final image = images[index];
+          return Image.asset(
+            image,
+            fit: BoxFit.fill,
+          );
+        },
+        indicatorLayout: PageIndicatorLayout.COLOR,
+        autoplay: true,
+        itemCount: images.length,
+        pagination: const SwiperPagination(),
+        control: const SwiperControl(),
+      ),
+    );
+  }
+}
+
+// Vertical swiper example with auto-play and custom pagination alignment
+class ExampleVertical extends StatelessWidget {
+  const ExampleVertical({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('ExampleVertical'),
+        ),
+        body: Swiper(
+          itemBuilder: (context, index) {
+            return Image.asset(
+              images[index],
+              fit: BoxFit.fill,
+            );
+          },
+          autoplay: true,
+          itemCount: images.length,
+          scrollDirection: Axis.vertical,
+          pagination: const SwiperPagination(alignment: Alignment.centerRight),
+          control: const SwiperControl(),
+        ));
+  }
+}
+
+// Fraction pagination style swiper example
+class ExampleFraction extends StatelessWidget {
+  const ExampleFraction({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('ExampleFraction'),
+        ),
+        body: Column(
+          children: <Widget>[
+            Expanded(
+                child: Swiper(
+                  itemBuilder: (context, index) {
+                    return Image.asset(
+                      images[index],
+                      fit: BoxFit.fill,
+                    );
+                  },
+                  autoplay: true,
+                  itemCount: images.length,
+                  pagination:
+                  const SwiperPagination(builder: SwiperPagination.fraction),
+                  control: const SwiperControl(),
+                )),
+            Expanded(
+                child: Swiper(
+                  itemBuilder: (context, index) {
+                    return Image.asset(
+                      images[index],
+                      fit: BoxFit.fill,
+                    );
+                  },
+                  autoplay: true,
+                  itemCount: images.length,
+                  scrollDirection: Axis.vertical,
+                  pagination: const SwiperPagination(
+                      alignment: Alignment.centerRight,
+                      builder: SwiperPagination.fraction),
+                )),
+          ],
+        ));
+  }
+}
+
+// Custom pagination swiper example with text labels and dot pagination
+class ExampleCustomPagination extends StatelessWidget {
+  const ExampleCustomPagination({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('Custom Pagination'),
+        ),
+        body: Column(
+          children: <Widget>[
+            Expanded(
+              child: Swiper(
+                itemBuilder: (context, index) {
+                  return Image.asset(
+                    images[index],
+                    fit: BoxFit.fill,
+                  );
+                },
+                autoplay: true,
+                itemCount: images.length,
+                pagination: SwiperPagination(
+                    margin: EdgeInsets.zero,
+                    builder: SwiperCustomPagination(builder: (context, config) {
+                      return ConstrainedBox(
+                        constraints: const BoxConstraints.expand(height: 50.0),
+                        child: Container(
+                          color: white,
+                          child: Text(
+                            '${titles[config.activeIndex]} ${config.activeIndex + 1}/${config.itemCount}',
+                            style: const TextStyle(fontSize: 20.0),
+                          ),
+                        ),
+                      );
+                    })),
+                control: const SwiperControl(),
+              ),
+            ),
+            Expanded(
+              child: Swiper(
+                itemBuilder: (context, index) {
+                  return Image.asset(
+                    images[index],
+                    fit: BoxFit.fill,
+                  );
+                },
+                autoplay: true,
+                itemCount: images.length,
+                pagination: SwiperPagination(
+                    margin: EdgeInsets.zero,
+                    builder: SwiperCustomPagination(builder: (context, config) {
+                      return ConstrainedBox(
+                        constraints: const BoxConstraints.expand(height: 50.0),
+                        child: Row(
+                          children: <Widget>[
+                            Text(
+                              '${titles[config.activeIndex]} ${config.activeIndex + 1}/${config.itemCount}',
+                              style: const TextStyle(fontSize: 20.0),
+                            ),
+                            Expanded(
+                              child: Align(
+                                alignment: Alignment.centerRight,
+                                child: DotSwiperPaginationBuilder(
+                                    color: darkGrey,
+                                    activeColor: black,
+                                    size: 10.0,
+                                    activeSize: 20.0)
+                                    .build(context, config),
+                              ),
+                            )
+                          ],
+                        ),
+                      );
+                    })),
+                control: SwiperControl(color: redAccent),
+              ),
+            ),
+          ],
+        ));
+  }
+}
+
+// Phone view swiper example with stacked images
+class ExamplePhone extends StatelessWidget {
+  const ExamplePhone({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Phone'),
+      ),
+      body: Stack(
+        children: <Widget>[
+          ConstrainedBox(
+            constraints: const BoxConstraints.expand(),
+            child: Image.asset(
+              'images/bg.jpeg',
+              fit: BoxFit.fill,
+            ),
+          ),
+          Swiper.children(
+            autoplay: false,
+            pagination: SwiperPagination(
+                margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 30.0),
+                builder: DotSwiperPaginationBuilder(
+                    color: lightGrey,
+                    activeColor: white,
+                    size: 20.0,
+                    activeSize: 20.0)),
+            children: <Widget>[
+              Image.asset(
+                'images/1.png',
+                fit: BoxFit.contain,
+              ),
+              Image.asset(
+                'images/2.png',
+                fit: BoxFit.contain,
+              ),
+              Image.asset('images/3.png', fit: BoxFit.contain)
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// Reusable ScaffoldWidget to provide a consistent scaffold structure across pages
+class ScaffoldWidget extends StatelessWidget {
+  final Widget child;
+  final String title;
+  final List<Widget>? actions;
+
+  const ScaffoldWidget({
+    super.key,
+    required this.title,
+    required this.child,
+    this.actions,
+  });
+
+  @override
+  Widget build(context) {
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: SettingsPageTutor.getIsDarkMode() ? Colors.black : Colors.white,
+          title: Text(
+            title,
+            style: TextStyle(
+              color: !SettingsPageTutor.getIsDarkMode() ? black : white,
+            ),
+          ),
+          iconTheme: IconThemeData(
+            color: !SettingsPageTutor.getIsDarkMode() ? Colors.black : Colors.white,
+          ),
+          actions: actions,
+          elevation: 0,
+        ),
+        body: child
+    );
+  }
+}
+
+// © 2024 Berk Emre Mert and EğiTeam

@@ -147,7 +147,8 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                         RichText(
                           text: TextSpan(
                             text: (_userData['tutorMap'] != null &&
-                                _userData['tutorMap'] != [])
+                                _userData['tutorMap'] != []
+                            && _userData['tutorMap']['whoamI'] != null)
                                 ? _userData['tutorMap']['whoamI'] + '\n\n' + _userData['tutorMap']['whoamIEng']
                                 : 'No description.',
                           ),

@@ -24,50 +24,25 @@ class CardContext {
   });
 }
 
-class gay extends StatelessWidget {
-  const gay({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return ElevatedButton(onPressed: (){}, child: Text("AOAO"));
-  }
-}
-
-class _SwiperState extends State<SwiperPage>
-    with TickerProviderStateMixin {
-  late AnimationController controller;
-  late Animation<double> _animation10;
-  late Animation<double> _animation11;
-  late Animation<double> _animation12;
-  late Animation<double> _animation13;
-
-  List<CardContext> words= [
-    CardContext(text: "Elma", imageLink: "https://images.pexels.com/photos/206959/pexels-photo-206959.jpeg?auto=compress&cs=tinysrgb&w=800"),
-    CardContext(text: "Armut", imageLink: "https://images.pexels.com/photos/7214835/pexels-photo-7214835.jpeg?auto=compress&cs=tinysrgb&w=800"),
-    CardContext(text: "Karpuz", imageLink: "https://images.pexels.com/photos/5946081/pexels-photo-5946081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"),
-    CardContext(text: "Kokonat", imageLink: "https://images.pexels.com/photos/3986706/pexels-photo-3986706.jpeg?auto=compress&cs=tinysrgb&w=800"),
-
+class _SwiperState extends State<SwiperPage> {
+  List<CardContext> words = [
+    CardContext(
+        text: "Elma",
+        imageLink:
+        "https://images.pexels.com/photos/206959/pexels-photo-206959.jpeg?auto=compress&cs=tinysrgb&w=800"),
+    CardContext(
+        text: "Armut",
+        imageLink:
+        "https://images.pexels.com/photos/7214835/pexels-photo-7214835.jpeg?auto=compress&cs=tinysrgb&w=800"),
+    CardContext(
+        text: "Karpuz",
+        imageLink:
+        "https://images.pexels.com/photos/5946081/pexels-photo-5946081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"),
+    CardContext(
+        text: "Kokonat",
+        imageLink:
+        "https://images.pexels.com/photos/3986706/pexels-photo-3986706.jpeg?auto=compress&cs=tinysrgb&w=800"),
   ];
-
-  _SwiperState();
-
-  @override
-  void dispose() {
-    controller.dispose();
-
-    super.dispose();
-  }
-
-  @override
-  void initState() {
-    controller = AnimationController(vsync: this);
-    _animation10 = Tween(begin: 0.0, end: 1.0).animate(controller);
-    _animation11 = Tween(begin: 0.0, end: 1.0).animate(controller);
-    _animation12 = Tween(begin: 0.0, end: 1.0).animate(controller);
-    _animation13 = Tween(begin: 0.0, end: 1.0).animate(controller);
-    controller.animateTo(1.0, duration: const Duration(seconds: 3));
-    super.initState();
-  }
 
   Widget buildDynamicCard(CardContext word) {
     return InkWell(
@@ -83,7 +58,7 @@ class _SwiperState extends State<SwiperPage>
           color: white,
           child: Stack(
             children: [
-              if (word.isTapped == true)
+              if (word.isTapped)
                 Container(
                   decoration: BoxDecoration(
                     image: DecorationImage(
@@ -139,15 +114,15 @@ class _SwiperState extends State<SwiperPage>
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: CustomScrollView(
-        slivers: <Widget>[
-          SliverList(
-            delegate: SliverChildBuilderDelegate((c, i) {
+    return CustomScrollView(
+      slivers: <Widget>[
+        SliverList(
+          delegate: SliverChildBuilderDelegate(
+                (c, i) {
               return Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  const dictionaryBar(),
+                  const DictionaryBar(),
                   const SizedBox(height: 20), // Adding a SizedBox for spacing
                   Text(
                     'Kelime Kartları',
@@ -167,46 +142,49 @@ class _SwiperState extends State<SwiperPage>
                       },
                       pagination: SwiperPagination(
                         alignment: Alignment.topCenter,
-                        builder: DotSwiperPaginationBuilder(color: Colors.grey, activeColor: redAccent), //this is for the dots under the cards, I styled them
-                        //alternatively you can remove them completely by using the following:
-                        //builder: SwiperPagination.rect
+                        builder: DotSwiperPaginationBuilder(
+                            color: Colors.grey,
+                            activeColor: redAccent), // Styled dots
                       ),
                       itemCount: words.length,
                     ),
                   ),
                   Row(
-                    mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
-                      Padding(padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
                         child: SizedBox(
                           width: 150,
                           height: 60,
                           child: ElevatedButton(
-                                  onPressed: (){},
-                                  style: ElevatedButton.styleFrom(
-                                    foregroundColor: white,
-                                    backgroundColor: redAccent,
-                                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                                    elevation: 3,
-                                  ),
-                                  child: const Text("Biliyorum"),
-                          ),
-                        ),
-                      ),
-                      Padding(padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
-                        child: SizedBox(
-                          width: 150,
-                          height: 60,
-                          child: ElevatedButton(
-                            onPressed: (){},
+                            onPressed: () {},
                             style: ElevatedButton.styleFrom(
                               foregroundColor: white,
                               backgroundColor: redAccent,
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0)),
                               elevation: 3,
                             ),
-                            child: const Text("Bilmiyorum "),
+                            child: const Text("Biliyorum"),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
+                        child: SizedBox(
+                          width: 150,
+                          height: 60,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              foregroundColor: white,
+                              backgroundColor: redAccent,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0)),
+                              elevation: 3,
+                            ),
+                            child: const Text("Bilmiyorum"),
                           ),
                         ),
                       ),
@@ -214,10 +192,13 @@ class _SwiperState extends State<SwiperPage>
                   )
                 ],
               );
-            }, childCount: 1),
-          )
-        ],
-      ),
+            },
+            childCount: 1,
+          ),
+        ),
+      ],
     );
   }
 }
+
+// © 2024 Berk Emre Mert and EğiTeam
